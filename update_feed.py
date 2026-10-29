@@ -5,6 +5,7 @@ import time
 import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime
+from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -16,9 +17,11 @@ from deep_translator import GoogleTranslator
 
 POSTS_FILE = Path("posts.json")
 SINGAPORE = ZoneInfo("Asia/Singapore")
+UTC = ZoneInfo("UTC")
 MAX_POSTS = 200
-MAX_TRANSLATIONS_PER_RUN = 5
+MAX_TRANSLATED_POSTS_PER_RUN = 5
 TRANSLATION_DELAY_SECONDS = 8
+REQUEST_DELAY_SECONDS = 2
 
 HEADERS = {
     "User-Agent": (
@@ -28,7 +31,6 @@ HEADERS = {
     ),
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
 }
-
 
 SOURCES = [
     {
@@ -55,6 +57,14 @@ SOURCES = [
         "official": False,
         "type": "google_news",
     },
+    {
+        "name": "Hou Minghao X List",
+        "source": "Hou Minghao X Updates",
+        "platform": "X",
+        "url": "https://rss.app/feeds/k375DGhHRMrZ3Ju2.xml",
+        "official": False,
+        "type": "rss_feed",
+    },
 ]
 
 
@@ -66,7 +76,7 @@ def clean_text(value):
     if not value:
         return ""
 
-    value = unescape(value)
+    value = unescape(str(value))
     value = BeautifulSoup(value, "html.parser").get_text(" ", strip=True)
     value = re.sub(r"\s+", " ", value)
     return value.strip()
@@ -74,212 +84,92 @@ def clean_text(value):
 
 def shorten(value, maximum=220):
     value = clean_text(value)
-
     if len(value) <= maximum:
         return value
-
     return value[: maximum - 1].rstrip() + "…"
 
+
 def contains_chinese(text):
-    if not text:
-        return False
+    return bool(re.search(r"[\u3400-\u4dbf\u4e00-\u9fff]", text or ""))
 
-    return bool(
-        re.search(
-            r"[\u3400-\u4dbf\u4e00-\u9fff]",
-            text,
-        )
-    )
 
-def translate_to_english(text):
-    text = clean_text(text)
-
-    if not text:
-        return {
-            "translation": "",
-            "rate_limited": False,
-        }
-
-    if not contains_chinese(text):
-        return {
-            "translation": text,
-            "rate_limited": False,
-        }
-
-    try:
-        translated = GoogleTranslator(
-            source="auto",
-            target="en",
-        ).translate(text=text)
-
-        return {
-            "translation": clean_text(translated),
-            "rate_limited": False,
-        }
-
-    except Exception as error:
-        error_name = type(error).__name__
-        error_message = str(error)
-
-        print(
-            "Translation failed:",
-            error_name,
-            error_message[:200],
-        )
-
-        is_rate_limited = (
-            error_name == "TooManyRequests"
-            or "too many requests" in error_message.lower()
-            or "429" in error_message
-        )
-
-        return {
-            "translation": "",
-            "rate_limited": is_rate_limited,
-        }
-    text = clean_text(text)
-
-    if not text:
-        return ""
-
-    if not contains_chinese(text):
-        return text
-
-    try:
-        translated = GoogleTranslator(
-            source="auto",
-            target="en",
-        ).translate(text=text)
-
-        return clean_text(translated)
-
-    except Exception as error:
-        print(
-            "Translation failed:",
-            type(error).__name__,
-            str(error)[:150],
-        )
-
-        return ""
-        
 def make_id(platform, source, title, url):
     value = "|".join(
-        [
-            platform or "",
-            source or "",
-            title or "",
-            url or "",
-        ]
+        [platform or "", source or "", title or "", url or ""]
     )
-
     return hashlib.sha256(value.encode("utf-8")).hexdigest()[:20]
 
 
 def determine_category(text, platform):
+    text = text or ""
     lowered = text.lower()
 
-    if any(word in text for word in ["演唱会", "活动", "见面会", "盛典"]):
-        return "Event"
-
-    if any(word in text for word in ["代言", "品牌", "大使"]):
-        return "Endorsement"
-
-    if any(word in text for word in ["歌曲", "新歌", "音乐", "上线"]):
-        return "Music"
-
-    if any(word in text for word in ["视频", "花絮", "直播"]):
-        return "Video"
-
-    if any(word in text for word in ["照片", "写真", "大片", "造型"]):
-        return "Photos"
-
-    if any(word in text for word in ["电视剧", "电影", "角色", "定档"]):
-        return "Drama"
-
-    if "interview" in lowered or "采访" in text:
-        return "Interview"
-
+    if platform == "X":
+        return "X Update"
     if platform == "News":
         return "News"
-
+    if any(word in text for word in ["演唱会", "活动", "见面会", "盛典"]):
+        return "Event"
+    if any(word in text for word in ["代言", "品牌", "大使"]):
+        return "Endorsement"
+    if any(word in text for word in ["歌曲", "新歌", "音乐", "上线"]):
+        return "Music"
+    if any(word in text for word in ["视频", "花絮", "直播"]):
+        return "Video"
+    if any(word in text for word in ["照片", "写真", "大片", "造型"]):
+        return "Photos"
+    if any(word in text for word in ["电视剧", "电影", "角色", "定档"]):
+        return "Drama"
+    if "interview" in lowered or "采访" in text:
+        return "Interview"
     return "Official"
 
 
 def load_existing_data():
+    default = {
+        "lastUpdated": None,
+        "status": "Initial setup",
+        "translationStatus": {},
+        "sourceStatus": [],
+        "posts": [],
+    }
+
     if not POSTS_FILE.exists():
-        return {
-            "lastUpdated": None,
-            "status": "Initial setup",
-            "sourceStatus": [],
-            "posts": [],
-        }
+        return default
 
     try:
         with POSTS_FILE.open("r", encoding="utf-8") as file:
             data = json.load(file)
-
         if not isinstance(data, dict):
             raise ValueError("posts.json must contain a JSON object")
-
         data.setdefault("posts", [])
         data.setdefault("sourceStatus", [])
         return data
-
     except Exception as error:
         print("Could not read posts.json:", error)
-
-        return {
-            "lastUpdated": None,
-            "status": "Recovered from an invalid posts.json file",
-            "sourceStatus": [],
-            "posts": [],
-        }
+        return default
 
 
 def parse_possible_date(text):
     now = singapore_now()
 
-    patterns = [
-        r"(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})",
-        r"(\d{1,2})月(\d{1,2})日",
-    ]
-
-    full_date = re.search(patterns[0], text)
-
+    full_date = re.search(
+        r"(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})日?", text or ""
+    )
     if full_date:
         year, month, day = map(int, full_date.groups())
-
         try:
-            return datetime(
-                year,
-                month,
-                day,
-                12,
-                0,
-                tzinfo=SINGAPORE,
-            ).isoformat()
+            return datetime(year, month, day, 12, 0, tzinfo=SINGAPORE).isoformat()
         except ValueError:
             pass
 
-    month_day = re.search(patterns[1], text)
-
+    month_day = re.search(r"(\d{1,2})月(\d{1,2})日", text or "")
     if month_day:
         month, day = map(int, month_day.groups())
-        year = now.year
-
         try:
-            candidate = datetime(
-                year,
-                month,
-                day,
-                12,
-                0,
-                tzinfo=SINGAPORE,
-            )
-
+            candidate = datetime(now.year, month, day, 12, 0, tzinfo=SINGAPORE)
             if candidate > now.replace(hour=23, minute=59):
-                candidate = candidate.replace(year=year - 1)
-
+                candidate = candidate.replace(year=now.year - 1)
             return candidate.isoformat()
         except ValueError:
             pass
@@ -287,17 +177,36 @@ def parse_possible_date(text):
     return now.isoformat()
 
 
+def parse_feed_date(value):
+    value = clean_text(value)
+    if not value:
+        return singapore_now().isoformat()
+
+    try:
+        parsed = parsedate_to_datetime(value)
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=UTC)
+        return parsed.astimezone(SINGAPORE).isoformat()
+    except Exception:
+        pass
+
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=UTC)
+        return parsed.astimezone(SINGAPORE).isoformat()
+    except Exception:
+        return singapore_now().isoformat()
+
+
 def collect_sina_account(source_config):
     response = requests.get(
-        source_config["url"],
-        headers=HEADERS,
-        timeout=30,
+        source_config["url"], headers=HEADERS, timeout=30
     )
     response.raise_for_status()
 
     soup = BeautifulSoup(response.text, "html.parser")
     candidates = []
-
     selectors = [
         "article",
         ".card",
@@ -320,59 +229,50 @@ def collect_sina_account(source_config):
     for element in candidates:
         text = clean_text(element.get_text(" ", strip=True))
 
-        if len(text) < 25 or len(text) > 1500:
+        if len(text) < 25 or len(text) > 1800:
             continue
-
         if text in seen_text:
             continue
-
         if "侯明昊" not in text and source_config["source"] not in text:
             continue
 
         seen_text.add(text)
-
         link_element = element.find("a", href=True)
         post_url = source_config["url"]
 
         if link_element:
             post_url = urllib.parse.urljoin(
-                source_config["url"],
-                link_element.get("href"),
+                source_config["url"], link_element.get("href")
             )
 
         title_text = re.sub(
-            r"^\s*(侯明昊工作室|侯明昊)\s*",
-            "",
-            text,
+            r"^\s*(侯明昊工作室|侯明昊)\s*", "", text
         )
+        title = shorten(title_text, 120)
+        excerpt = shorten(text, 320)
 
-        title = shorten(title_text, 90)
-        excerpt = shorten(text, 240)
-        date_value = parse_possible_date(text)
-
-        post = {
-            "id": make_id(
-                source_config["platform"],
-                source_config["source"],
-                title,
-                post_url,
-            ),
-            "platform": source_config["platform"],
-            "source": source_config["source"],
-            "title": title or "New official Hou Minghao update",
-            "excerpt": excerpt,
-            "category": determine_category(
-                text,
-                source_config["platform"],
-            ),
-            "date": date_value,
-            "url": post_url,
-            "official": source_config["official"],
-            "verified": True,
-            "collectionMethod": "Automatic",
-        }
-
-        collected.append(post)
+        collected.append(
+            {
+                "id": make_id(
+                    source_config["platform"],
+                    source_config["source"],
+                    title,
+                    post_url,
+                ),
+                "platform": source_config["platform"],
+                "source": source_config["source"],
+                "title": title or "New official Hou Minghao update",
+                "excerpt": excerpt,
+                "category": determine_category(
+                    text, source_config["platform"]
+                ),
+                "date": parse_possible_date(text),
+                "url": post_url,
+                "official": source_config["official"],
+                "verified": True,
+                "collectionMethod": "Automatic",
+            }
+        )
 
         if len(collected) >= 15:
             break
@@ -382,22 +282,13 @@ def collect_sina_account(source_config):
 
 def collect_google_news(source_config):
     encoded_query = urllib.parse.quote(source_config["query"])
-
     feed_url = (
         "https://news.google.com/rss/search"
-        f"?q={encoded_query}"
-        "&hl=zh-CN"
-        "&gl=CN"
-        "&ceid=CN:zh-Hans"
+        f"?q={encoded_query}&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
     )
 
-    response = requests.get(
-        feed_url,
-        headers=HEADERS,
-        timeout=30,
-    )
+    response = requests.get(feed_url, headers=HEADERS, timeout=30)
     response.raise_for_status()
-
     root = ET.fromstring(response.content)
     collected = []
 
@@ -406,48 +297,123 @@ def collect_google_news(source_config):
         link = clean_text(item.findtext("link"))
         description = clean_text(item.findtext("description"))
         publication_date = clean_text(item.findtext("pubDate"))
-        publisher = "News source"
-
         source_element = item.find("source")
-
-        if source_element is not None and source_element.text:
-            publisher = clean_text(source_element.text)
-
-        try:
-            parsed_date = datetime.strptime(
-                publication_date,
-                "%a, %d %b %Y %H:%M:%S %Z",
-            )
-            parsed_date = parsed_date.replace(
-                tzinfo=ZoneInfo("UTC")
-            ).astimezone(SINGAPORE)
-            date_value = parsed_date.isoformat()
-        except Exception:
-            date_value = singapore_now().isoformat()
+        publisher = (
+            clean_text(source_element.text)
+            if source_element is not None and source_element.text
+            else "News source"
+        )
 
         if not title or not link:
             continue
 
-        post = {
-            "id": make_id(
-                source_config["platform"],
-                publisher,
-                title,
-                link,
-            ),
-            "platform": "News",
-            "source": publisher,
-            "title": shorten(title, 130),
-            "excerpt": shorten(description, 240),
-            "category": determine_category(title, "News"),
-            "date": date_value,
-            "url": link,
-            "official": False,
-            "verified": True,
-            "collectionMethod": "Automatic",
-        }
+        collected.append(
+            {
+                "id": make_id("News", publisher, title, link),
+                "platform": "News",
+                "source": publisher,
+                "title": shorten(title, 150),
+                "excerpt": shorten(description, 300),
+                "category": "News",
+                "date": parse_feed_date(publication_date),
+                "url": link,
+                "official": False,
+                "verified": True,
+                "collectionMethod": "Automatic",
+            }
+        )
 
-        collected.append(post)
+    return collected
+
+
+def find_atom_text(item, field):
+    atom = "{http://www.w3.org/2005/Atom}"
+    return item.findtext(atom + field) or item.findtext(field)
+
+
+def collect_rss_feed(source_config):
+    response = requests.get(
+        source_config["url"], headers=HEADERS, timeout=30
+    )
+    response.raise_for_status()
+    root = ET.fromstring(response.content)
+
+    items = root.findall(".//item")
+    is_atom = False
+
+    if not items:
+        items = root.findall(".//{http://www.w3.org/2005/Atom}entry")
+        is_atom = True
+
+    collected = []
+
+    for item in items[:25]:
+        if is_atom:
+            title = clean_text(find_atom_text(item, "title"))
+            description = clean_text(
+                find_atom_text(item, "content")
+                or find_atom_text(item, "summary")
+            )
+            publication_date = clean_text(
+                find_atom_text(item, "published")
+                or find_atom_text(item, "updated")
+            )
+            author = clean_text(find_atom_text(item, "author"))
+            link = ""
+            for link_element in item.findall(
+                "{http://www.w3.org/2005/Atom}link"
+            ):
+                candidate = clean_text(link_element.get("href", ""))
+                if candidate:
+                    link = candidate
+                    break
+        else:
+            title = clean_text(item.findtext("title"))
+            description = clean_text(
+                item.findtext("description") or item.findtext("content")
+            )
+            publication_date = clean_text(
+                item.findtext("pubDate")
+                or item.findtext("published")
+                or item.findtext("updated")
+            )
+            author = clean_text(
+                item.findtext("author")
+                or item.findtext(
+                    "{http://purl.org/dc/elements/1.1/}creator"
+                )
+            )
+            link = clean_text(item.findtext("link"))
+
+        if not title and description:
+            title = shorten(description, 150)
+        if not title or not link:
+            continue
+
+        account_match = re.search(
+            r"@([A-Za-z0-9_]+)", f"{author} {title} {description}"
+        )
+        source_name = (
+            "@" + account_match.group(1)
+            if account_match
+            else author or source_config["source"]
+        )
+
+        collected.append(
+            {
+                "id": make_id("X", source_name, title, link),
+                "platform": "X",
+                "source": source_name,
+                "title": shorten(title, 180),
+                "excerpt": shorten(description, 350),
+                "category": "X Update",
+                "date": parse_feed_date(publication_date),
+                "url": link,
+                "official": False,
+                "verified": True,
+                "collectionMethod": "Automatic",
+            }
+        )
 
     return collected
 
@@ -455,10 +421,10 @@ def collect_google_news(source_config):
 def collect_source(source_config):
     if source_config["type"] == "sina_account":
         return collect_sina_account(source_config)
-
     if source_config["type"] == "google_news":
         return collect_google_news(source_config)
-
+    if source_config["type"] == "rss_feed":
+        return collect_rss_feed(source_config)
     return []
 
 
@@ -489,6 +455,134 @@ def post_timestamp(post):
         return 0
 
 
+def translate_to_english(text):
+    text = clean_text(text)
+
+    if not text:
+        return {"translation": "", "rate_limited": False}
+    if not contains_chinese(text):
+        return {"translation": text, "rate_limited": False}
+
+    try:
+        translated = GoogleTranslator(
+            source="auto", target="en"
+        ).translate(text=text)
+        return {
+            "translation": clean_text(translated),
+            "rate_limited": False,
+        }
+    except Exception as error:
+        error_name = type(error).__name__
+        error_message = str(error)
+        print("Translation failed:", error_name, error_message[:200])
+        rate_limited = (
+            error_name == "TooManyRequests"
+            or "too many requests" in error_message.lower()
+            or "429" in error_message
+        )
+        return {"translation": "", "rate_limited": rate_limited}
+
+
+def add_translations(posts):
+    translations_added = 0
+    posts_translated = 0
+    rate_limited = False
+
+    print()
+    print("Checking English translations...")
+
+    for index, post in enumerate(posts, start=1):
+        original_title = clean_text(
+            post.get("titleOriginal") or post.get("title", "")
+        )
+        original_excerpt = clean_text(
+            post.get("excerptOriginal") or post.get("excerpt", "")
+        )
+
+        post["titleOriginal"] = original_title
+        post["excerptOriginal"] = original_excerpt
+
+        title_english = clean_text(post.get("titleEnglish", ""))
+        excerpt_english = clean_text(post.get("excerptEnglish", ""))
+
+        title_needs_translation = (
+            contains_chinese(original_title) and not title_english
+        )
+        excerpt_needs_translation = (
+            contains_chinese(original_excerpt) and not excerpt_english
+        )
+
+        if not contains_chinese(original_title) and not title_english:
+            post["titleEnglish"] = original_title
+        if not contains_chinese(original_excerpt) and not excerpt_english:
+            post["excerptEnglish"] = original_excerpt
+
+        if not title_needs_translation and not excerpt_needs_translation:
+            continue
+
+        if posts_translated >= MAX_TRANSLATED_POSTS_PER_RUN:
+            print(
+                "Translation limit reached. Remaining posts will be "
+                "handled during a future run."
+            )
+            break
+
+        print(f"Translating post {index}/{len(posts)}")
+
+        title_marker = "[[[TITLE]]]"
+        excerpt_marker = "[[[EXCERPT]]]"
+        combined_text = (
+            f"{title_marker}\n{original_title if title_needs_translation else ''}"
+            f"\n{excerpt_marker}\n"
+            f"{original_excerpt if excerpt_needs_translation else ''}"
+        )
+
+        result = translate_to_english(combined_text)
+
+        if result["rate_limited"]:
+            rate_limited = True
+            print(
+                "Translation service rate limit reached. "
+                "Stopping translations for this run."
+            )
+            break
+
+        translated = result["translation"]
+        if not translated:
+            time.sleep(TRANSLATION_DELAY_SECONDS)
+            continue
+
+        translated_title = ""
+        translated_excerpt = ""
+
+        if "[[[EXCERPT]]]" in translated:
+            before, after = translated.split("[[[EXCERPT]]]", 1)
+            translated_title = clean_text(
+                before.replace("[[[TITLE]]]", "")
+            )
+            translated_excerpt = clean_text(after)
+        else:
+            # Some translation services alter marker punctuation.
+            parts = re.split(r"\[+EXCERPT\]+|EXCERPT", translated, maxsplit=1)
+            translated_title = clean_text(
+                parts[0].replace("[[[TITLE]]]", "").replace("TITLE", "")
+            )
+            if len(parts) > 1:
+                translated_excerpt = clean_text(parts[1])
+
+        if title_needs_translation and translated_title:
+            post["titleEnglish"] = translated_title
+            translations_added += 1
+        if excerpt_needs_translation and translated_excerpt:
+            post["excerptEnglish"] = translated_excerpt
+            translations_added += 1
+
+        posts_translated += 1
+        time.sleep(TRANSLATION_DELAY_SECONDS)
+
+    return translations_added, posts_translated, rate_limited
+
+
 def main():
     data = load_existing_data()
     existing_posts = [
@@ -501,247 +595,87 @@ def main():
     source_status = []
 
     for source_config in SOURCES:
-        started = singapore_now()
+        checked_at = singapore_now()
+        print(f"Checking {source_config['name']}...")
 
         try:
-            print(f"Checking {source_config['name']}...")
-
-            posts = collect_source(source_config)
-            collected_posts.extend(posts)
-
+            source_posts = collect_source(source_config)
+            collected_posts.extend(source_posts)
             source_status.append(
                 {
                     "source": source_config["name"],
                     "status": "Success",
-                    "itemsFound": len(posts),
-                    "checkedAt": started.isoformat(),
+                    "itemsFound": len(source_posts),
+                    "checkedAt": checked_at.isoformat(),
                 }
             )
-
             print(
                 f"{source_config['name']}: "
-                f"{len(posts)} items found"
+                f"{len(source_posts)} items found"
             )
-
         except Exception as error:
             print(
                 f"{source_config['name']} failed: "
                 f"{type(error).__name__}: {error}"
             )
-
             source_status.append(
                 {
                     "source": source_config["name"],
                     "status": "Failed",
                     "itemsFound": 0,
-                    "checkedAt": started.isoformat(),
+                    "checkedAt": checked_at.isoformat(),
                     "message": str(error)[:200],
                 }
             )
 
-        time.sleep(2)
+        time.sleep(REQUEST_DELAY_SECONDS)
 
     combined = existing_posts + collected_posts
     deduplicated = {}
 
     for post in combined:
-        post_id = post.get("id")
-
-        if not post_id:
-            post_id = make_id(
-                post.get("platform", ""),
-                post.get("source", ""),
-                post.get("title", ""),
-                post.get("url", ""),
-            )
-            post["id"] = post_id
-
+        post = normalize_existing_post(post)
+        post_id = post["id"]
         if post_id not in deduplicated:
+            deduplicated[post_id] = post
+        else:
+            # Preserve previously stored translations when a fresh copy is found.
+            existing = deduplicated[post_id]
+            for field in [
+                "titleOriginal",
+                "excerptOriginal",
+                "titleEnglish",
+                "excerptEnglish",
+            ]:
+                if existing.get(field) and not post.get(field):
+                    post[field] = existing[field]
             deduplicated[post_id] = post
 
     final_posts = sorted(
-        deduplicated.values(),
-        key=post_timestamp,
-        reverse=True,
+        deduplicated.values(), key=post_timestamp, reverse=True
     )[:MAX_POSTS]
 
-    print()
-    print("Checking English translations...")
-
-    translations_added = 0
-    posts_translated_this_run = 0
-    translation_rate_limited = False
-
-    for index, post in enumerate(final_posts, start=1):
-        original_title = clean_text(
-            post.get("titleOriginal")
-            or post.get("title", "")
-        )
-
-        original_excerpt = clean_text(
-            post.get("excerptOriginal")
-            or post.get("excerpt", "")
-        )
-
-        post["titleOriginal"] = original_title
-        post["excerptOriginal"] = original_excerpt
-
-        existing_title_translation = clean_text(
-            post.get("titleEnglish", "")
-        )
-
-        existing_excerpt_translation = clean_text(
-            post.get("excerptEnglish", "")
-        )
-
-        title_needs_translation = (
-            contains_chinese(original_title)
-            and not existing_title_translation
-        )
-
-        excerpt_needs_translation = (
-            contains_chinese(original_excerpt)
-            and not existing_excerpt_translation
-        )
-
-        if (
-            not contains_chinese(original_title)
-            and not existing_title_translation
-        ):
-            post["titleEnglish"] = original_title
-
-        if (
-            not contains_chinese(original_excerpt)
-            and not existing_excerpt_translation
-        ):
-            post["excerptEnglish"] = original_excerpt
-
-        if not (
-            title_needs_translation
-            or excerpt_needs_translation
-        ):
-            continue
-
-        if (
-            posts_translated_this_run
-            >= MAX_TRANSLATIONS_PER_RUN
-        ):
-            print(
-                "Translation limit reached. "
-                "Remaining posts will be handled "
-                "during a future run."
-            )
-            break
-
-        print(
-            f"Translating post "
-            f"{index}/{len(final_posts)}"
-        )
-
-        separator = "\n\n---EXCERPT---\n\n"
-
-        combined_parts = []
-
-        if title_needs_translation:
-            combined_parts.append(original_title)
-        else:
-            combined_parts.append("")
-
-        if excerpt_needs_translation:
-            combined_parts.append(original_excerpt)
-        else:
-            combined_parts.append("")
-
-        combined_text = separator.join(combined_parts)
-
-        result = translate_to_english(combined_text)
-
-        if result["rate_limited"]:
-            translation_rate_limited = True
-
-            print(
-                "Translation service rate limit reached. "
-                "Stopping translations for this run."
-            )
-
-            break
-
-        translated_text = result["translation"]
-
-        if not translated_text:
-            print(
-                "No translation returned. "
-                "Moving to the next post."
-            )
-
-            time.sleep(
-                TRANSLATION_DELAY_SECONDS
-            )
-
-            continue
-
-        translated_parts = translated_text.split(
-            "---EXCERPT---",
-            1,
-        )
-
-        translated_title = clean_text(
-            translated_parts[0]
-            if translated_parts
-            else ""
-        )
-
-        translated_excerpt = clean_text(
-            translated_parts[1]
-            if len(translated_parts) > 1
-            else ""
-        )
-
-        if title_needs_translation and translated_title:
-            post["titleEnglish"] = translated_title
-            translations_added += 1
-
-        if (
-            excerpt_needs_translation
-            and translated_excerpt
-        ):
-            post["excerptEnglish"] = translated_excerpt
-            translations_added += 1
-
-        posts_translated_this_run += 1
-
-        time.sleep(
-            TRANSLATION_DELAY_SECONDS
-        )
-
-    successful_sources = sum(
-        1
-        for source in source_status
-        if source["status"] == "Success"
+    translations_added, posts_translated, translation_rate_limited = (
+        add_translations(final_posts)
     )
 
+    successful_sources = sum(
+        1 for source in source_status if source["status"] == "Success"
+    )
     failed_sources = sum(
-        1
-        for source in source_status
-        if source["status"] == "Failed"
+        1 for source in source_status if source["status"] == "Failed"
     )
 
     output = {
-        "lastUpdated": singapore_now().isoformat(
-            timespec="seconds"
-        ),
+        "lastUpdated": singapore_now().isoformat(timespec="seconds"),
         "status": (
             f"Completed: {successful_sources} sources successful, "
             f"{failed_sources} failed"
         ),
         "translationStatus": {
             "translationsAdded": translations_added,
-            "postsTranslatedThisRun": (
-                posts_translated_this_run
-            ),
-            "maximumPostsPerRun": (
-                MAX_TRANSLATIONS_PER_RUN
-            ),
+            "postsTranslatedThisRun": posts_translated,
+            "maximumPostsPerRun": MAX_TRANSLATED_POSTS_PER_RUN,
             "rateLimited": translation_rate_limited,
         },
         "sourceStatus": source_status,
@@ -749,12 +683,7 @@ def main():
     }
 
     with POSTS_FILE.open("w", encoding="utf-8") as file:
-        json.dump(
-            output,
-            file,
-            ensure_ascii=False,
-            indent=2,
-        )
+        json.dump(output, file, ensure_ascii=False, indent=2)
 
     print()
     print("Collection completed")
@@ -763,15 +692,9 @@ def main():
     print("Successful sources:", successful_sources)
     print("Failed sources:", failed_sources)
     print("Translations added:", translations_added)
-    print(
-        "Posts translated this run:",
-        posts_translated_this_run,
-    )
+    print("Posts translated this run:", posts_translated)
+    print("Translation rate limited:", translation_rate_limited)
 
-    print(
-        "Translation rate limited:",
-        translation_rate_limited,
-    )
 
 if __name__ == "__main__":
     main()
