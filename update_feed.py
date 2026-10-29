@@ -64,15 +64,29 @@ def clean_text(value):
 
 
 def normalize_image_url(url, base_url=""):
-    """Return an absolute HTTP image URL, or an empty string."""
-    url = unescape(clean_text(url))
+    """Return a clean absolute image URL, including recovery from accidental HTML anchors."""
     if not url:
         return ""
-    if url.startswith("//"):
-        url = "https:" + url
-    elif url.startswith("/") and base_url:
-        url = urllib.parse.urljoin(base_url, url)
-    return url if url.startswith(("http://", "https://")) else ""
+    raw = unescape(str(url)).strip().replace("\/", "/")
+    if "<" in raw and ">" in raw:
+        soup = BeautifulSoup(raw, "html.parser")
+        anchor = soup.find("a", href=True)
+        image = soup.find("img")
+        if anchor and anchor.get("href"):
+            raw = anchor.get("href")
+        elif image:
+            raw = image.get("src") or image.get("data-src") or image.get("data-original") or ""
+        else:
+            raw = soup.get_text(" ", strip=True)
+    match = re.search(r"https?://[^\s\"'<>]+", raw)
+    if match:
+        raw = match.group(0)
+    raw = raw.strip().rstrip(").,;]")
+    if raw.startswith("//"):
+        raw = "https:" + raw
+    elif raw.startswith("/") and base_url:
+        raw = urllib.parse.urljoin(base_url, raw)
+    return raw if raw.startswith(("http://", "https://")) else ""
 
 
 def extract_image_urls(html_content, base_url=""):
@@ -629,6 +643,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
