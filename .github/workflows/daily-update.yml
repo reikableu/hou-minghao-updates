@@ -11,6 +11,7 @@ permissions:
 jobs:
   update-feed:
     runs-on: ubuntu-latest
+
     steps:
       - name: Download repository files
         uses: actions/checkout@v4
@@ -27,60 +28,7 @@ jobs:
 
       - name: Check Python syntax
         run: python -m py_compile update_feed.py
-      - name: Reset old cached images once
-        run: |
-          rm -rf media
 
-          python - <<'PY'
-          import json
-          from pathlib import Path
-
-          posts_file = Path("posts.json")
-
-          if not posts_file.exists():
-              print("posts.json does not exist. Nothing to clean.")
-              raise SystemExit(0)
-
-          data = json.loads(
-              posts_file.read_text(
-                  encoding="utf-8"
-              )
-          )
-
-          posts = data.get("posts", [])
-          cleared_count = 0
-
-          for post in posts:
-              existing_images = post.get(
-                  "images",
-                  [],
-              )
-
-              if existing_images:
-                  cleared_count += 1
-
-              post["images"] = []
-
-          posts_file.write_text(
-              json.dumps(
-                  data,
-                  ensure_ascii=False,
-                  indent=2,
-              ),
-              encoding="utf-8",
-          )
-
-          print(
-              "Image references cleared from",
-              cleared_count,
-              "posts.",
-          )
-          print(
-              "Posts preserved:",
-              len(posts),
-          )
-          PY
-          
       - name: Run Hou Minghao feed collector
         run: python update_feed.py
 
@@ -88,7 +36,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add posts.json media/
+
+          git add posts.json
+
+          if [ -d "media" ]; then
+            git add media/
+          fi
+
           if git diff --cached --quiet; then
             echo "No feed or image changes to save."
           else
