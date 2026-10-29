@@ -18,7 +18,7 @@ POSTS_FILE = Path("posts.json")
 SINGAPORE = ZoneInfo("Asia/Singapore")
 UTC = ZoneInfo("UTC")
 MAX_POSTS = 200
-MAX_TRANSLATED_POSTS_PER_RUN = 10  # Successful posts; Weibo is prioritized so News cannot use the whole allowance.
+MAX_TRANSLATED_POSTS_PER_RUN = 10  # Successful posts; Weibo is prioritized.
 TRANSLATION_DELAY_SECONDS = 5
 REQUEST_DELAY_SECONDS = 2
 WEIBO_POST_LIMIT = 15  # Maximum matching Weibo posts across all accounts per Singapore calendar day.
@@ -67,11 +67,8 @@ def clean_weibo_content(text):
     """Strip out timestamps, view counts, short links, and engagement stats from Weibo text."""
     if not text:
         return ""
-    # Remove leading timestamps like '2026-10-29 18:05'
     text = re.sub(r"^\d{4}[-/.年]\d{1,2}[-/.月]\d{1,2}[日]?\s*\d{1,2}:\d{2}\s*", "", text)
-    # Remove t.cn short links
     text = re.sub(r"https?://t\.cn/[a-z0-9]+", "", text, flags=re.IGNORECASE)
-    # Remove trailing chains of numbers, interaction stats, and view metrics (e.g. '4611 3864 2.2万')
     text = re.sub(r"[\d\s万w\.,]+$", "", text)
     return clean_text(text)
 
@@ -91,7 +88,6 @@ def make_id(platform, source, title, url):
 
 
 def canonical_post_url(url):
-    """Normalize URLs for duplicate detection without dropping meaningful IDs."""
     url = clean_text(url)
     if not url:
         return ""
@@ -113,12 +109,11 @@ def is_profile_url(url):
 
 
 def normalize_weibo_text(text):
-    text = clean_weibo_text(text).lower()
+    text = clean_weibo_content(text).lower()
     return re.sub(r"[\W_]+", "", text, flags=re.UNICODE)
 
 
 def duplicate_key(post):
-    """Prefer a post-specific URL; fall back to normalized Weibo text when only a profile URL exists."""
     url = canonical_post_url(post.get("url", ""))
     if url and not is_profile_url(url):
         return f"url:{url}"
@@ -131,7 +126,6 @@ def duplicate_key(post):
 
 
 def deduplicate_posts(posts):
-    """Merge duplicate posts while preserving translations already saved."""
     result = {}
     for raw in posts:
         post = normalize_existing_post(raw)
@@ -155,7 +149,6 @@ def deduplicate_posts(posts):
 def determine_category(text, platform):
     lowered = (text or "").lower()
     if platform == "X": return "X Update"
-    if platform == "News": return "News"
     if any(w in text for w in ["演唱会", "活动", "见面会", "盛典"]): return "Event"
     if any(w in text for w in ["代言", "品牌", "大使"]): return "Endorsement"
     if any(w in text for w in ["歌曲", "新歌", "音乐", "上线"]): return "Music"
@@ -259,7 +252,6 @@ def collect_sina_account(source_config):
         link_element = element.find("a", href=True)
         post_url = urllib.parse.urljoin(source_config["url"], link_element.get("href")) if link_element else source_config["url"]
         
-        # Clean content so it only contains the core update text
         cleaned_content = clean_weibo_content(raw_text)
         title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", cleaned_content), 120)
 
@@ -276,24 +268,6 @@ def collect_sina_account(source_config):
             "verified": True,
             "collectionMethod": "Automatic",
         })
-    return collected
-
-
-def collect_google_news(source_config):
-    encoded = urllib.parse.quote(source_config["query"])
-    url = f"https://news.google.com/rss/search?q={encoded}&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
-    response = requests.get(url, headers=HEADERS, timeout=30); response.raise_for_status()
-    root = ET.fromstring(response.content); collected = []
-    for item in root.findall(".//item")[:25]:
-        title, link = clean_text(item.findtext("title")), clean_text(item.findtext("link"))
-        desc, pub = clean_text(item.findtext("description")), clean_text(item.findtext("pubDate"))
-        source_el = item.find("source")
-        publisher = clean_text(source_el.text) if source_el is not None and source_el.text else "News source"
-        if not title or not link: continue
-        collected.append({"id": make_id("News", publisher, title, link), "platform": "News", "source": publisher,
-                          "title": shorten(title, 150), "excerpt": shorten(desc, 300), "category": "News",
-                          "date": parse_feed_date(pub), "url": link, "official": False, "verified": True,
-                          "collectionMethod": "Automatic"})
     return collected
 
 
@@ -345,7 +319,6 @@ def collect_rss_feed(source_config):
 def collect_source(source_config):
     kind = source_config["type"]
     if kind == "sina_account": return collect_sina_account(source_config)
-    if kind == "google_news": return collect_google_news(source_config)
     if kind == "rss_feed": return collect_rss_feed(source_config)
     return []
 
@@ -490,7 +463,7 @@ def add_translations(posts):
 def main():
     data = load_existing_data()
     existing = deduplicate_posts([p for p in data.get("posts", [])
-                                  if isinstance(p, dict) and p.get("platform") != "News"])
+                                  if isinstance(p, dict)])
     collected, statuses = [], []
     for config in SOURCES:
         checked = singapore_now(); print(f"Checking {config['name']}...")
@@ -517,8 +490,8 @@ def main():
 
     existing_today_keys = {duplicate_key(p) for p in existing if is_weibo_today(p)}
     slots = max(0, WEIBO_POST_LIMIT - len(existing_today_keys))
-    new_weibo = [p for p in collected if p.get("platform"] == "Weibo"]
-    other_new = [p for p in collected if p.get("platform"] not in {"Weibo", "News"}]
+    new_weibo = [p for p in collected if p.get("platform") == "Weibo"]
+    other_new = [p for p in collected if p.get("platform") != "Weibo"]
     unique_weibo = deduplicate_posts(new_weibo)
     ordered_weibo = sorted(unique_weibo, key=post_timestamp, reverse=True)
     accepted_weibo = [p for p in ordered_weibo if duplicate_key(p) not in existing_today_keys][:slots]
@@ -550,7 +523,6 @@ def main():
                                     "providersUsed": translation_providers,
                                     "priority": "Weibo only",
                                     "platformsTranslated": ["Weibo"],
-                                    "newsPostsRemoved": True,
                                     "backupProvider": "MyMemory"},
               "sourceStatus": statuses, "posts": final_posts}
     with POSTS_FILE.open("w", encoding="utf-8") as f: json.dump(output, f, ensure_ascii=False, indent=2)
@@ -563,3 +535,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
