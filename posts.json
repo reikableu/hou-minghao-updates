@@ -1,24 +1,30 @@
 {
-  "lastUpdated": "2026-10-29T12:56:16+08:00",
+  "lastUpdated": "2026-10-29T13:28:12+08:00",
   "status": "Completed: 3 sources successful, 0 failed",
+  "translationStatus": {
+    "translationsAdded": 0,
+    "postsTranslatedThisRun": 0,
+    "maximumPostsPerRun": 5,
+    "rateLimited": true
+  },
   "sourceStatus": [
     {
       "source": "Hou Minghao Weibo",
       "status": "Success",
       "itemsFound": 15,
-      "checkedAt": "2026-10-29T12:53:13.335925+08:00"
+      "checkedAt": "2026-10-29T13:28:01.514998+08:00"
     },
     {
       "source": "Hou Minghao Studio Weibo",
       "status": "Success",
       "itemsFound": 15,
-      "checkedAt": "2026-10-29T12:53:17.679922+08:00"
+      "checkedAt": "2026-10-29T13:28:05.449605+08:00"
     },
     {
       "source": "Google News",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-10-29T12:53:21.700025+08:00"
+      "checkedAt": "2026-10-29T13:28:09.214932+08:00"
     }
   ],
   "posts": [
@@ -142,6 +148,19 @@
       "excerptEnglish": ""
     },
     {
+      "id": "cad59bf0ce7e30d3c51a",
+      "platform": "News",
+      "source": "微博",
+      "title": "许凯在公司地位变化+侯明昊拒演不合规情侣戏 - 微博",
+      "excerpt": "许凯在公司地位变化+侯明昊拒演不合规情侣戏 微博",
+      "category": "News",
+      "date": "2026-10-28T13:41:57+08:00",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfUTJpQlJWUkp1QUE3WG45b04xeWpDSkV6TmZvdTJiOHBNeFF5QWJYSnJNbnVjTmdyc3dlQXcwdDlsNmpadGJRMXJRN0l2ZS1BSE9rWE9kRmdvd1FnSUVxRE1ESWVNRm1lM2dB?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "adc7565d82b08dc3946d",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -191,6 +210,19 @@
       "excerptOriginal": "侯明昊工作室 2026-10-28 00:12 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “赴” 藏匿灵动玩趣，定格不可复制的活力色彩。 ​ 4059 3623 6.1万",
       "titleEnglish": "",
       "excerptEnglish": ""
+    },
+    {
+      "id": "ea1daf9023b08819fb3e",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-28 00:12 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “赴” 藏匿灵动玩趣，定格不可复制的活力色彩。 ​ 4071 3640 6.1万",
+      "excerpt": "侯明昊工作室 2026-10-28 00:12 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “赴” 藏匿灵动玩趣，定格不可复制的活力色彩。 ​ 4071 3640 6.1万",
+      "category": "Official",
+      "date": "2026-10-28T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "267816048f70f556dfd6",
@@ -276,6 +308,19 @@
       "excerptOriginal": "侯明昊无支撑攀岩，整个过程身轻如燕，范丞丞震撼：你不愧姓侯啊 手机新浪网",
       "titleEnglish": "",
       "excerptEnglish": ""
+    },
+    {
+      "id": "8735188a7b26c2abf765",
+      "platform": "News",
+      "source": "手机新浪网",
+      "title": "侯明昊白发大妖造型客串《百妖谱》，梦回赵远舟两周年 - 手机新浪网",
+      "excerpt": "侯明昊白发大妖造型客串《百妖谱》，梦回赵远舟两周年 手机新浪网",
+      "category": "Photos",
+      "date": "2026-10-27T22:27:34+08:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQblpmMGRLM1JsaFdhdDlZZU5Za0w5OXB1VjFQWDI4VzFkRVRrcVR0QWFFWlMtLXFsd1laSUxNVWo0QkgxMml2bHZIMl8wM2V0NmdlVk5yQTN6S1ptSk9EMHV3UFpPMHZCSVNGVnlJZHBhd0ZQQ2E4OEZ5MTVNWTY2Rg?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "33780829e2855ed51581",
@@ -448,6 +493,19 @@
       "excerptEnglish": ""
     },
     {
+      "id": "b075ee59e056bf69a6e0",
+      "platform": "News",
+      "source": "新浪网",
+      "title": "侯明昊 - 新浪网",
+      "excerpt": "侯明昊 新浪网",
+      "category": "News",
+      "date": "2026-10-26T20:12:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5sN25BTDd3cUtoR2Z6OVpPY1Zxa0pBNVFaVVlGTGV6MUJONmhyQmdhSUxVMEVrTUE4MGVyczl6eVNQS1RRMUpuWnVoR0FXRjJ5S3F5Y3ZyN0RsUDJzWWRjQ211Yw?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "5725c6cf9a50587e8735",
       "platform": "News",
       "source": "手机新浪网",
@@ -584,6 +642,32 @@
       "excerptEnglish": ""
     },
     {
+      "id": "4006dad78639c7f3e9e2",
+      "platform": "News",
+      "source": "手机新浪网",
+      "title": "侯明昊登音乐节歌手2026舞台 唱归零与追梦青春和解 - 手机新浪网",
+      "excerpt": "侯明昊登音乐节歌手2026舞台 唱归零与追梦青春和解 手机新浪网",
+      "category": "Music",
+      "date": "2026-10-26T09:43:34+08:00",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Vak14ak5jaWFGRzBrcjlwQkc2enpNNlVOWGY4eGNEYUZRZWFKWXFuU1ZDNzJyaFA0bmY5VjBUYUh1d2tocFBYM2JzWXc4SUNkdHhNLXBicFFlbW1kZzY3MlV4NXZZRkJtTm9IRzRoZ0VmdXM?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "1119d037d556d0b5e28f",
+      "platform": "News",
+      "source": "手机新浪网",
+      "title": "#侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊“一段” 在旷野留白处，取一帧复古的静，走向远方。 ​ - 手机新浪网",
+      "excerpt": "#侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊“一段” 在旷野留白处，取一帧复古的静，走向远方。 ​ 手机新浪网",
+      "category": "News",
+      "date": "2026-10-25T18:34:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA0WW1hb0JqR1VEaHU5bjVkXy1fWV9jVVkySGkzdlAwb1dhVXZtRW5SLUJwblk4Q29pWHIwUkFWYjlfMWsweTc5MkVSRVRoOXhiQ05aWlVKYS1jQUd0S0R3a0N4Yw?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "54f36a086f44696f1727",
       "platform": "Weibo",
       "source": "侯明昊工作室",
@@ -618,6 +702,19 @@
       "excerptEnglish": ""
     },
     {
+      "id": "c73e221c812e3e26aaf6",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-25 18:34 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “一段” 在旷野留白处，取一帧复古的静，走向远方。 ​ 6131 5505 7.3万",
+      "excerpt": "侯明昊工作室 2026-10-25 18:34 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “一段” 在旷野留白处，取一帧复古的静，走向远方。 ​ 6131 5505 7.3万",
+      "category": "Official",
+      "date": "2026-10-25T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "ccd9ce11ea2b8a603ea5",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -650,6 +747,71 @@
       "excerptOriginal": "侯明昊 2026-10-24 16:05 追寻流动的灵感，在Prada武汉SKP精品店，找到属于我的秋日节奏。 ​ 53.7万 12.5万 66.6万",
       "titleEnglish": "",
       "excerptEnglish": ""
+    },
+    {
+      "id": "8f17ebd9f08400429820",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-24 16:05 追寻流动的灵感，在Prada武汉SKP精品店，找到属于我的秋日节奏。 ​ 53.8万 12.5万 66.6万",
+      "excerpt": "侯明昊 2026-10-24 16:05 追寻流动的灵感，在Prada武汉SKP精品店，找到属于我的秋日节奏。 ​ 53.8万 12.5万 66.6万",
+      "category": "Official",
+      "date": "2026-10-24T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "a503934a8379900ca927",
+      "platform": "News",
+      "source": "手机新浪网",
+      "title": "侯明昊出席PRADA 武汉 SKP 周年庆典活动|侯明昊|PRADA|和颂传媒 - 手机新浪网",
+      "excerpt": "侯明昊出席PRADA 武汉 SKP 周年庆典活动|侯明昊|PRADA|和颂传媒 手机新浪网",
+      "category": "Event",
+      "date": "2026-10-23T20:32:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8ycWNwM09LZ2pkN3BxYnhlUWdqQTUxZEJFTjY2WmZVOGdnYktPZkhFWUlpNjlhNGFaYXRqVFRGYXdYQVFCc3c1R0VtbERHWUQtTmk3WEx2YWtKb3FhMUIxelctNA?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "5427224597bffe504ec7",
+      "platform": "News",
+      "source": "手机新浪网",
+      "title": "李现、侯明昊武汉Prada活动生图 - 手机新浪网",
+      "excerpt": "李现、侯明昊武汉Prada活动生图 手机新浪网",
+      "category": "Event",
+      "date": "2026-10-23T17:04:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5EcWwzUEtfNERETzJpZ0NOZ09UTTdBLXJyQzNoY0tZdThFLUozSnVrc2g1aW5PdVY2WlhxVU9hN2wxeEFTZzB1NXQ1MFNvdGgzYS1OYlZXTFZFcnVNQkpmV1R4Yw?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "b1a88e6dc32170b62b96",
+      "platform": "News",
+      "source": "手机新浪网",
+      "title": "ComfitCupid丨侯明昊 - 手机新浪网",
+      "excerpt": "ComfitCupid丨侯明昊 手机新浪网",
+      "category": "News",
+      "date": "2026-10-23T16:38:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAwdG5rcE5ibTJpc1V0a3lwME9fdm56eDgzVVdwemRtb3ZtbjZ2QWc1TDlkcDlFNlBXallyak5pdzhnSVpBVmk3NWZMX0w1TXhtSDdiaG1CUjEzLXB4R0U0RjNhOA?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "451993b0fc14a2994321",
+      "platform": "News",
+      "source": "手机新浪网",
+      "title": "回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会##微博演出季# ​ - 手机新浪网",
+      "excerpt": "回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会##微博演出季# ​ 手机新浪网",
+      "category": "Event",
+      "date": "2026-10-23T13:18:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBIUFU2dGZFSEMxekFXUXVFZkdyQUpkWjFTdWZ5VUNvUHJzUlBwY0lLWEVtRXBsM2tIMElUS3BGOEpOc2gweTZMbUsyVjNsYjZseVFhRlRsWmlTTThuTy1xbmZCYw?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "17d9547179a7be325523",
@@ -720,6 +882,19 @@
       "excerptEnglish": ""
     },
     {
+      "id": "61bffddea539b542bee4",
+      "platform": "News",
+      "source": "SocialBeta",
+      "title": "侯明昊成为雪中飞全球品牌代言人 - SocialBeta",
+      "excerpt": "侯明昊成为雪中飞全球品牌代言人 SocialBeta",
+      "category": "Endorsement",
+      "date": "2026-10-23T11:32:21+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4tdjVnYkRlRU1CTUU3ajNVaHAxTWdINXplOXdCcmZ6dlFXNFNqam5OWmRCZURkYWZxWEJTM3I4Ykh3MUhSWlRjcnhNVU1wdw?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "44a3d80bd064135a7ffe",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -771,6 +946,19 @@
       "excerptEnglish": ""
     },
     {
+      "id": "fb916a2536e3ab60e4b2",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-22 21:01 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 夜间福利，请欣赏美食吃播家🐈的品鉴日常～ http://t.cn/AXjLCgsl ​ 3420 3…",
+      "excerpt": "侯明昊工作室 2026-10-22 21:01 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 夜间福利，请欣赏美食吃播家🐈的品鉴日常～ http://t.cn/AXjLCgsl ​ 3420 3235 6.3万",
+      "category": "Official",
+      "date": "2026-10-22T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "63d18312343b5d1345a8",
       "platform": "Weibo",
       "source": "侯明昊工作室",
@@ -820,6 +1008,32 @@
       "excerptOriginal": "侯明昊工作室 2026-10-21 22:39 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 新鲜出炉～ ​ 5904 4518 7.4万",
       "titleEnglish": "",
       "excerptEnglish": ""
+    },
+    {
+      "id": "c68584a4f3a76c8ea33a",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-21 22:39 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 新鲜出炉～ ​ 5913 4523 7.4万",
+      "excerpt": "侯明昊工作室 2026-10-21 22:39 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 新鲜出炉～ ​ 5913 4523 7.4万",
+      "category": "Official",
+      "date": "2026-10-21T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "0f232069fddaa6e0a08b",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-21 21:51 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “听” 喧嚣沉底，克制蓄力，刚好听见空气让出的那一寸。 ​ 3692 3836 6.9万",
+      "excerpt": "侯明昊工作室 2026-10-21 21:51 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “听” 喧嚣沉底，克制蓄力，刚好听见空气让出的那一寸。 ​ 3692 3836 6.9万",
+      "category": "Official",
+      "date": "2026-10-21T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "14332a396472e48eee63",
@@ -958,6 +1172,19 @@
       "excerptEnglish": ""
     },
     {
+      "id": "3391895be54da8882c63",
+      "platform": "News",
+      "source": "finance.sina.com.cn",
+      "title": "凌晨4点，男星侯明昊工作室连发6个感叹号 - finance.sina.com.cn",
+      "excerpt": "凌晨4点，男星侯明昊工作室连发6个感叹号 finance.sina.com.cn",
+      "category": "News",
+      "date": "2026-10-12T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16WTJFdkVWUVJmLXYxWnh5ckp2QldVTXprZTFCeUduYU45OUZ0QmlGMDluVW1qSTFNdG1ZWUdRelVOTkhnS19XQWhUYUV4ZXUyNm5uTU5Uc2hOMTJHUkNEeXN6QWU3T280a184SVEyaGt0dEtRSFpxUQ?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "71498d395b0c7b1426da",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -992,6 +1219,19 @@
       "excerptEnglish": ""
     },
     {
+      "id": "2ac274d4e006df00b90a",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-09-30 11:03 #侯明昊[超话]# 漫渡金风时序，暮色启开新的篇章。 @侯明昊 十月行程送达 ​ 5579 6009 7.9万",
+      "excerpt": "侯明昊工作室 2026-09-30 11:03 #侯明昊[超话]# 漫渡金风时序，暮色启开新的篇章。 @侯明昊 十月行程送达 ​ 5579 6009 7.9万",
+      "category": "Official",
+      "date": "2026-09-30T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "6da5c9ab5c80e7c68d28",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -1009,6 +1249,110 @@
       "excerptEnglish": ""
     },
     {
+      "id": "e79933da9c331fd86464",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-08-31 13:18 郑州见💚 #侯明昊属于我们的演唱会##微博演出季# ​ 100万 84.2万 29.5万",
+      "excerpt": "侯明昊 2026-08-31 13:18 郑州见💚 #侯明昊属于我们的演唱会##微博演出季# ​ 100万 84.2万 29.5万",
+      "category": "Event",
+      "date": "2026-08-31T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "ff9cd374c7575f512baa",
+      "platform": "News",
+      "source": "上观新闻",
+      "title": "冲上热搜！知名女星被警方约谈，本月6日演员侯明昊也曝出被约谈 - 上观新闻",
+      "excerpt": "冲上热搜！知名女星被警方约谈，本月6日演员侯明昊也曝出被约谈 上观新闻",
+      "category": "News",
+      "date": "2026-08-28T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmcW1wSURnempLTWFRZW1uenBKWldiUlRoUFhTakpRLVhfSDhScDlFWUJ6T1BNZWFuZmsxMjh6azFfNmpMM2RkYzl4c3dGck5XNDVvbm1JM0Q3a2c?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "732f9a9b838972a2b3d1",
+      "platform": "News",
+      "source": "新京报",
+      "title": "侯明昊将首登《歌手2026》：希望让更多人认识歌手侯明昊 - 新京报",
+      "excerpt": "侯明昊将首登《歌手2026》：希望让更多人认识歌手侯明昊 新京报",
+      "category": "News",
+      "date": "2026-08-13T22:39:29+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jeTQySTV6cXVaZmZVcWtBRzFLRUZnNU51SnRHbGVIVEF1UUI0UFFwYXliSHEwV08yN0Nkd0NaZUxEM2VTQTVUc1NRZkZpRFdfVDR2bldzZFEyVjdkUjlFMkp3?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "d2c0c7dbfef9e7eaf58a",
+      "platform": "News",
+      "source": "温州新闻",
+      "title": "“演员侯明昊违反交规被约谈”冲上热搜，警方回应 - 温州新闻",
+      "excerpt": "“演员侯明昊违反交规被约谈”冲上热搜，警方回应 温州新闻",
+      "category": "News",
+      "date": "2026-08-07T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1uTkZSVGQxeFRYemhaNVRGX3BobmdWOTBuOFU3QkVVZkczQTA4RHpoTzM0bF84NXNUV2tJei1Vc2NjeTJlMW1mencwQ0FpTTFYNURIcHhFcGRWN0EzeWJRMDRjX2NCZw?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "60d3e1e185695d143dd6",
+      "platform": "News",
+      "source": "新浪财经",
+      "title": "男星侯明昊被曝违反交规被约谈？乘车期间将身体探出车辆与粉丝打招呼，当地交警回应 - 新浪财经",
+      "excerpt": "男星侯明昊被曝违反交规被约谈？乘车期间将身体探出车辆与粉丝打招呼，当地交警回应 新浪财经",
+      "category": "News",
+      "date": "2026-08-06T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBib095dFB2NkRVQXhxaXJfeThZcm44Vl9mVEZkVGdOVFVUMHNRdi14ZWlvZVA3RHpNLWNvNVlCaXpWWXllOXo4aTRRTGJiTF9sODkwaWZoQU1NN0VvR1lvNDR1ZklwZktIbGVuUzUzZHY5a2I2bUJVYw?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "b0fdf2dfa249de0f698c",
+      "platform": "News",
+      "source": "新浪新闻_手机新浪网",
+      "title": "侯明昊回应“跨界”参加《歌手》：希望更多人认识歌手侯明昊 - 新浪新闻_手机新浪网",
+      "excerpt": "侯明昊回应“跨界”参加《歌手》：希望更多人认识歌手侯明昊 新浪新闻_手机新浪网",
+      "category": "News",
+      "date": "2026-06-17T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBtWUtGRk1EOFVxcTVfVDg2cGg2OWZKeXZSNHNfbmR0Z2NkZ25LZFNyWTkyMmN5WVYwUUZKUi1JMHFuVTdmaFdqZGU0b0JCanN6Qm5sdFRPajdmdldEUWFLbXJFWEQ5OGZOTHNYRjJSX3g2blI0?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "1b4d60c5d1381aa9660c",
+      "platform": "News",
+      "source": "封面新闻",
+      "title": "侯明昊回应参加“歌手”：希望可以有一个代表舞台！ - 封面新闻",
+      "excerpt": "侯明昊回应参加“歌手”：希望可以有一个代表舞台！ 封面新闻",
+      "category": "News",
+      "date": "2026-06-16T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5Da2JscGxXMUJjQ0FLeDh6enJpV1RXQUxGOFd1dkY5SGVfZFQ3bERnbWZScjVXVEJvVy1YcFZBSC1Pa0JQZElYQTc3SFhKaFFYcGkzWkM2eUZzeWRJQzhYQ1pQRTZwNVBTbnYycDAyVjNXY3BhTFFj?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "90c4834e8d99c307847d",
+      "platform": "News",
+      "source": "新浪新闻_手机新浪网",
+      "title": "演员侯明昊将补位歌手加盟《歌手2026》新的月度赛，本人回应：自己其实最开始是以歌手身份出道的，一直都没有放弃音乐 - 新浪新闻_手机新浪网",
+      "excerpt": "演员侯明昊将补位歌手加盟《歌手2026》新的月度赛，本人回应：自己其实最开始是以歌手身份出道的，一直都没有放弃音乐 新浪新闻_手机新浪网",
+      "category": "Music",
+      "date": "2026-06-16T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Tc3FQdXdYWm1hakJHRFl0d0hfOEZCVWxDSTNIQzVHN1MwaTlPSVVfdzRoTjdoSVZCLVRpWTFwTkhiWERJdElqa29wRGVZcDh1MXFyNUNWbjdIa1FDbjBkamM4V25ieF9QUHE1TnJiTXdSemVX?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "254c2124f5fe54ae2185",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -1024,6 +1368,32 @@
       "excerptOriginal": "侯明昊 2026-05-05 00:19 “期待去证明我们的未来” ​ 100万 100万 62.7万",
       "titleEnglish": "",
       "excerptEnglish": ""
+    },
+    {
+      "id": "5d6ab087991b8a5ed7bd",
+      "platform": "News",
+      "source": "新浪财经",
+      "title": "侯明昊演唱会舞美设计被指抄袭檀健次，主办方回应争议：均为原创设计 - 新浪财经",
+      "excerpt": "侯明昊演唱会舞美设计被指抄袭檀健次，主办方回应争议：均为原创设计 新浪财经",
+      "category": "Event",
+      "date": "2026-04-24T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE56VzNDZDJqVEpCaUZ0N1hUZ3JObkdmc2FRSXk4bGstZFF3dnJlbXNsdVpVRFdKb3Vtb2dsM1dFSnNtSFNNMnpqbDg1cmx1TXVlZ3lGbldpUHZrVGRlWnJVbTBPcXlKLWk3S0VNY2xiXzhGQUgwZUJYRA?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "228f91a76671a4d5f8b9",
+      "platform": "News",
+      "source": "上观新闻",
+      "title": "侯明昊来了，为了另一个他！_上观新闻 - 上观新闻",
+      "excerpt": "侯明昊来了，为了另一个他！_上观新闻 上观新闻",
+      "category": "News",
+      "date": "2026-04-22T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKcVkzTUw2YmhsNF9tal92a3RKTnl6VlNyY3QzNG5tcXdHS1ZUVzgxWFhxUE9PZXpPaDA4T0ZXaTljYzkwN0s1eXNFbXBYUVlZS2gyTnYxMGM?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
     }
   ]
 }
