@@ -235,6 +235,99 @@ def localize_post_images(posts):
     return cached, failed
 
 
+def extract_weibo_post_images(element, base_url=""):
+    """Extract post media while excluding profile photos, avatars, icons, and badges."""
+    if element is None:
+        return []
+
+    candidates = []
+    avatar_markers = (
+        "avatar", "head", "face", "user", "profile", "author",
+        "portrait", "icon", "logo", "badge", "verified", "vip",
+    )
+    media_markers = (
+        "pic", "photo", "media", "image", "content", "feed",
+        "weibo", "album", "gallery", "thumbnail",
+    )
+
+    for image in element.find_all("img"):
+        classes = " ".join(image.get("class", []))
+        parent_classes = " ".join(
+            " ".join(parent.get("class", []))
+            for parent in image.parents
+            if getattr(parent, "get", None)
+        )
+        context = f"{classes} {parent_classes} {image.get('alt', '')}".lower()
+
+        width_text = str(image.get("width", "")).strip()
+        height_text = str(image.get("height", "")).strip()
+        width = int(width_text) if width_text.isdigit() else 0
+        height = int(height_text) if height_text.isdigit() else 0
+
+        # Explicitly reject common avatar containers and small square images.
+        if any(marker in context for marker in avatar_markers) and not any(
+            marker in context for marker in media_markers
+        ):
+            continue
+        if width and height and width <= 120 and height <= 120:
+            continue
+
+        urls = [
+            image.get("data-original"),
+            image.get("data-lazy-src"),
+            image.get("data-src"),
+            image.get("data-url"),
+            image.get("src"),
+        ]
+        srcset = image.get("srcset")
+        if srcset:
+            urls.extend(
+                part.strip().split(" ")[0]
+                for part in srcset.split(",")
+                if part.strip()
+            )
+
+        for raw_url in urls:
+            image_url = normalize_image_url(raw_url, base_url)
+            if not image_url:
+                continue
+            lowered = image_url.lower()
+
+            if any(marker in lowered for marker in (
+                "avatar", "profile", "portrait", "head", "icon",
+                "logo", "badge", "verified", "qrcode", "emoji",
+            )):
+                continue
+            # Weibo profile images commonly expose tiny crop dimensions in the path.
+            if re.search(r"/(?:30|40|50|60|80|100|120)x(?:30|40|50|60|80|100|120)/", lowered):
+                continue
+            if re.search(r"/(?:30|40|50|60|80|100|120)/", lowered) and "sinaimg" in lowered:
+                continue
+
+            candidates.append(image_url)
+
+    # CSS/JSON fallback, but only keep likely full post-media URLs.
+    raw_html = unescape(str(element)).replace("\/", "/")
+    for raw_url in re.findall(
+        r"(?:https?:)?//[^\s\"'<>]+?\.(?:jpe?g|png|gif|webp)(?:\?[^\s\"'<>]*)?",
+        raw_html,
+        flags=re.IGNORECASE,
+    ):
+        image_url = normalize_image_url(raw_url, base_url)
+        lowered = image_url.lower()
+        if not image_url or any(marker in lowered for marker in avatar_markers):
+            continue
+        if re.search(r"/(?:30|40|50|60|80|100|120)x(?:30|40|50|60|80|100|120)/", lowered):
+            continue
+        candidates.append(image_url)
+
+    result = []
+    for image_url in candidates:
+        if image_url not in result:
+            result.append(image_url)
+    return result[:9]
+
+
 def clean_weibo_content(text):
     """Strip out timestamps, view counts, short links, and engagement stats from Weibo text."""
     if not text:
@@ -430,7 +523,7 @@ def collect_sina_account(source_config):
         link_element = element.find("a", href=True)
         post_url = urllib.parse.urljoin(source_config["url"], link_element.get("href")) if link_element else source_config["url"]
         
-        image_urls = extract_image_urls(str(element), source_config["url"])
+        image_urls = extract_weibo_post_images(element, source_config["url"])
         cleaned_content = clean_weibo_content(raw_text)
         title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", cleaned_content), 120)
 
@@ -720,6 +813,20 @@ def main():
 
     merged = deduplicate_posts(existing + collected)
     final_posts = sorted(merged, key=post_timestamp, reverse=True)[:MAX_POSTS]
+
+    # sourceStatus.itemsFound is the number matched during this run, not the number
+    # ultimately shown. Add savedItems so the dashboard can display both clearly.
+    saved_counts = {}
+    for post in final_posts:
+        source_name = clean_text(post.get("source", ""))
+        if source_name:
+            saved_counts[source_name] = saved_counts.get(source_name, 0) + 1
+
+    for status in statuses:
+        source_name = clean_text(status.get("source", ""))
+        status["savedItems"] = saved_counts.get(source_name, 0)
+        status["countMeaning"] = "itemsFound is matched during scan; savedItems is currently saved in dashboard feed"
+
     images_cached, image_cache_failures = localize_post_images(final_posts)
     added, translated, limited, translation_providers = add_translations(final_posts)
     success = sum(s["status"] == "Success" for s in statuses); failed = len(statuses) - success
@@ -745,5 +852,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
