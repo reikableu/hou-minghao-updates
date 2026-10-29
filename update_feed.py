@@ -15,6 +15,9 @@ from bs4 import BeautifulSoup
 from deep_translator import GoogleTranslator
 
 POSTS_FILE = Path("posts.json")
+IMAGE_DIR = Path("media")
+RAW_MEDIA_BASE = "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media"
+MAX_IMAGE_DOWNLOADS_PER_RUN = 40
 SINGAPORE = ZoneInfo("Asia/Singapore")
 UTC = ZoneInfo("UTC")
 MAX_POSTS = 200
@@ -135,6 +138,101 @@ def extract_feed_media(item, html_content, base_url=""):
             if url and url not in images:
                 images.append(url)
     return images[:9]
+
+
+def image_extension(url, content_type=""):
+    content_type = (content_type or "").lower()
+    if "png" in content_type:
+        return ".png"
+    if "gif" in content_type:
+        return ".gif"
+    if "webp" in content_type:
+        return ".webp"
+    if "jpeg" in content_type or "jpg" in content_type:
+        return ".jpg"
+    path = urllib.parse.urlsplit(url).path.lower()
+    match = re.search(r"\.(jpe?g|png|gif|webp)$", path)
+    return "." + match.group(1).replace("jpeg", "jpg") if match else ".jpg"
+
+
+def cache_remote_image(image_url, post_url=""):
+    """Download an external image into the repository and return its raw GitHub URL."""
+    image_url = normalize_image_url(image_url)
+    if not image_url:
+        return ""
+    if image_url.startswith(RAW_MEDIA_BASE + "/"):
+        return image_url
+
+    IMAGE_DIR.mkdir(exist_ok=True)
+    digest = hashlib.sha256(image_url.encode("utf-8")).hexdigest()[:24]
+
+    for existing in IMAGE_DIR.glob(digest + ".*"):
+        return f"{RAW_MEDIA_BASE}/{existing.name}"
+
+    request_headers = dict(HEADERS)
+    request_headers["Accept"] = "image/avif,image/webp,image/apng,image/*,*/*;q=0.8"
+    if post_url:
+        request_headers["Referer"] = post_url
+
+    response = requests.get(
+        image_url,
+        headers=request_headers,
+        timeout=30,
+        allow_redirects=True,
+    )
+    response.raise_for_status()
+
+    content_type = (response.headers.get("Content-Type") or "").lower()
+    if not content_type.startswith("image/"):
+        raise ValueError(f"Not an image response: {content_type or 'unknown content type'}")
+    if not response.content or len(response.content) > 12 * 1024 * 1024:
+        raise ValueError("Image is empty or larger than 12 MB")
+
+    extension = image_extension(image_url, content_type)
+    filename = digest + extension
+    (IMAGE_DIR / filename).write_bytes(response.content)
+    return f"{RAW_MEDIA_BASE}/{filename}"
+
+
+def localize_post_images(posts):
+    """Cache a limited number of remote images in GitHub for reliable dashboard display."""
+    downloads = 0
+    cached = 0
+    failed = 0
+
+    for post in posts:
+        cleaned_images = []
+        for raw_image in post.get("images", [])[:9]:
+            image_url = normalize_image_url(raw_image)
+            if not image_url:
+                continue
+
+            if image_url.startswith(RAW_MEDIA_BASE + "/"):
+                final_url = image_url
+            elif downloads >= MAX_IMAGE_DOWNLOADS_PER_RUN:
+                # Keep the cleaned remote URL for a future retry.
+                final_url = image_url
+            else:
+                downloads += 1
+                try:
+                    final_url = cache_remote_image(image_url, post.get("url", ""))
+                    cached += 1
+                except Exception as error:
+                    failed += 1
+                    final_url = image_url
+                    print(
+                        "Image cache failed:",
+                        type(error).__name__,
+                        str(error)[:160],
+                    )
+
+            if final_url and final_url not in cleaned_images:
+                cleaned_images.append(final_url)
+
+        post["images"] = cleaned_images[:9]
+
+    print(f"Images cached: {cached}; image cache failures: {failed}")
+    return cached, failed
 
 
 def clean_weibo_content(text):
@@ -622,6 +720,7 @@ def main():
 
     merged = deduplicate_posts(existing + collected)
     final_posts = sorted(merged, key=post_timestamp, reverse=True)[:MAX_POSTS]
+    images_cached, image_cache_failures = localize_post_images(final_posts)
     added, translated, limited, translation_providers = add_translations(final_posts)
     success = sum(s["status"] == "Success" for s in statuses); failed = len(statuses) - success
     output = {"lastUpdated": singapore_now().isoformat(timespec="seconds"),
@@ -632,6 +731,9 @@ def main():
                                     "priority": "Weibo only",
                                     "platformsTranslated": ["Weibo"],
                                     "backupProvider": "MyMemory"},
+              "imageStatus": {"cachedThisRun": images_cached,
+                              "cacheFailures": image_cache_failures,
+                              "maximumDownloadsPerRun": MAX_IMAGE_DOWNLOADS_PER_RUN},
               "sourceStatus": statuses, "posts": final_posts}
     with POSTS_FILE.open("w", encoding="utf-8") as f: json.dump(output, f, ensure_ascii=False, indent=2)
     print("\nCollection completed")
@@ -643,5 +745,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
