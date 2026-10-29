@@ -1,9 +1,10 @@
-name: Hou Minghao Daily Update
+name: Hou Minghao Feed Update
 
 on:
   workflow_dispatch:
+
   schedule:
-   - cron: "0 */4 * * *"
+    - cron: "0 */4 * * *"
 
 permissions:
   contents: write
@@ -46,6 +47,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No feed or image changes to save."
           else
-            git commit -m "Daily Hou Minghao feed and image update"
+            git commit -m "Automated Hou Minghao feed and image update"
             git push
           fi
