@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-30T06:40:13+08:00",
+  "lastUpdated": "2026-10-30T06:48:08+08:00",
   "status": "Completed: 14 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -16,90 +16,95 @@
     ],
     "backupProvider": "MyMemory"
   },
+  "imageStatus": {
+    "cachedThisRun": 40,
+    "cacheFailures": 0,
+    "maximumDownloadsPerRun": 40
+  },
   "sourceStatus": [
     {
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-10-30T06:39:27.636437+08:00"
+      "checkedAt": "2026-10-30T06:47:10.450417+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-10-30T06:39:31.286656+08:00"
+      "checkedAt": "2026-10-30T06:47:14.242127+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-10-30T06:39:34.670215+08:00"
+      "checkedAt": "2026-10-30T06:47:17.986572+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T06:39:38.189010+08:00"
+      "checkedAt": "2026-10-30T06:47:21.912904+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-10-30T06:39:41.578705+08:00"
+      "checkedAt": "2026-10-30T06:47:27.144986+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-10-30T06:39:45.046642+08:00"
+      "checkedAt": "2026-10-30T06:47:32.051019+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T06:39:48.563126+08:00"
+      "checkedAt": "2026-10-30T06:47:35.880949+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-10-30T06:39:51.483246+08:00"
+      "checkedAt": "2026-10-30T06:47:39.195238+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T06:39:54.646547+08:00"
+      "checkedAt": "2026-10-30T06:47:42.454112+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-10-30T06:39:57.829915+08:00"
+      "checkedAt": "2026-10-30T06:47:46.202473+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
       "itemsFound": 15,
-      "checkedAt": "2026-10-30T06:40:01.035186+08:00"
+      "checkedAt": "2026-10-30T06:47:49.735544+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-10-30T06:40:04.316167+08:00"
+      "checkedAt": "2026-10-30T06:47:54.791018+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 35,
-      "checkedAt": "2026-10-30T06:40:07.322033+08:00"
+      "checkedAt": "2026-10-30T06:47:58.390815+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-10-30T06:40:10.784583+08:00"
+      "checkedAt": "2026-10-30T06:48:02.172386+08:00"
     }
   ],
   "posts": [
@@ -117,7 +122,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVzTrjoXUAEjp1h.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/dedb731f8f4b19e382c99271.jpg"
       ]
     },
     {
@@ -134,7 +139,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVyrFLjbMAADpcn.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bd9eb48d5d7f85491bba17dd.jpg"
       ]
     },
     {
@@ -229,8 +234,8 @@
       "titleEnglish": "2026-10-29 18:05 # Hou Minghao [super talk] # # | @ Hou Minghao surprise delivery, capture a🐈 boss to work record ~ ​",
       "excerptEnglish": "Hou Minghao Studio 2026-10-29 18:05 # Hou Minghao [super talk] # Hou Minghao | @ Hou Minghao surprise release, capture a record of the boss🐈 at work ~ ​",
       "images": [
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/006i3hfEly8ig8fqlf3yij30u00u0mz1.jpg?KID=imgbed,tva&Expires=1793323415&ssig=Qk1tCVne42",
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/006i3hfEly8ig8fqlf3yij30u00u0mz1.jpg?KID=imgbed,tva&Expires=1793324368&ssig=CEUigvuWIm"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c9c9ee3bf2daa86e502c2918.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9c00ce18b821b78094f1edac.jpg"
       ]
     },
     {
@@ -250,8 +255,9 @@
       "titleEnglish": "Pufuyen 2026-10-29 18:00 From the iPhone client Xiaohou tour Zhengzhou field is coming🎉 October 30 - November 1, Xiao Yan and old friend Xiao Qu in 4 Zhengzhou Watsons stores, prepared for the kiwis super cute surrounding💚 ✨to get spokesperson customized stickers! Consumption has a chance...",
       "excerptEnglish": "Pufuyen 2026-10-29 18:00 From the iPhone client Xiaohou tour Zhengzhou field is coming🎉 October 30 - November 1, Xiao Yan and old friend Xiao Qu in 4 Zhengzhou Watsons stores, prepared for the kiwis super cute surrounding💚 ✨to get spokesperson customized stickers! Consumption has the opportunity to unlock the surrounding 🔽packages of different grades Please check🫡 # Hou Minghao [super talk] # # Puffyan Healthy Barrier # # Hou Minghao Puffyan Brand Global Repair Spokesperson # ​",
       "images": [
-        "https://tvax2.sinaimg.cn/crop.0.0.1080.1080.50/007zNDWply8iaa3ege0d3j30u00u03z2.jpg?KID=imgbed,tva&Expires=1793323431&ssig=TlPPIUFTRk",
-        "https://tvax2.sinaimg.cn/crop.0.0.1080.1080.50/007zNDWply8iaa3ege0d3j30u00u03z2.jpg?KID=imgbed,tva&Expires=1793324382&ssig=JWZezDdE1Q"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1eec3d4590cda570cafea4ca.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8fe670bdf650b02197d89687.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/01918230052b731986387d0f.jpg"
       ]
     },
     {
@@ -271,8 +277,9 @@
       "titleEnglish": "Xue Zhongfei 2026-10-29 16:17 From Huawei Pura 80 Pro + Beijing | Shanghai | Chengdu | Hangzhou | Shenyang | Changchun | Dalian 7 City Landmarks Large Screen Launches Highlight Review [Call] Above the giant screen, Hou Minghao's snowfield lights up a large area of the urban business district. The rows of faces are full, and the handsome ace players on the slopes...",
       "excerptEnglish": "Xue Zhongfei 2026-10-29 16:17 From Huawei Pura 80 Pro + Beijing | Shanghai | Chengdu | Hangzhou | Shenyang | Changchun | Dalian 7 City Landmarks Large Screen Launches Highlight Review [Call] Above the giant screen, Hou Minghao's snowfield lights up a large area of the city business district, and the handsome ace players on the slopes continue! [Shy] The punched partner can share the live experience in the comment area and treasure the memory of the snow season together ~ [Love] # Hou Minghao [Overstatement] # # Hou Minghao Flying in the Snow Global Brand Spokesperson # ​",
       "images": [
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793323458&ssig=wCcUtfUPVa",
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324408&ssig=LQFYj93kPH"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7066559b1b3083da579f5f5c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1fe3044587d5998890166b22.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/66137b9f5a7e9cc4835f3310.jpg"
       ]
     },
     {
@@ -319,7 +326,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVtCfnDWoAAxJMI.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3a366603222d33b2e5e7ac0c.jpg"
       ]
     },
     {
@@ -351,7 +358,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVt9qvwbsAAeNgY.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/42500eb2809f71c72343db32.jpg"
       ]
     },
     {
@@ -368,7 +375,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVtxU3zaoAEejR-.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5e5c3f31c35babee950d5c7e.jpg"
       ]
     },
     {
@@ -385,7 +392,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVtlF2lbcAEubPD.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9851cee6ea9156eca07c7ba7.jpg"
       ]
     },
     {
@@ -402,7 +409,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVr5sJ0bEAAErhs.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/48fb9b19e8d42b1f32b4ab88.jpg"
       ]
     },
     {
@@ -434,7 +441,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVsL-4-aIAAeOJ_.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f1956555c56be151a542ad1c.jpg"
       ]
     },
     {
@@ -469,8 +476,8 @@
       "titleEnglish": "2026-10-28 00:12 # Hou Minghao [super talk] # # | @ Hou Minghao \"go\" to hide smart and fun, freezing unrepeatable vibrant colors. ​",
       "excerptEnglish": "Hou Minghao Studio 2026-10-28 00:12 # Hou Minghao [Chaoyang] # # Hou Minghao | @ Hou Minghao \"go\" to hide the vibrant fun, freezing the vibrant colors that can not be copied. ​",
       "images": [
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/006i3hfEly8ig8fqlf3yij30u00u0mz1.jpg?KID=imgbed,tva&Expires=1793323415&ssig=Qk1tCVne42",
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/006i3hfEly8ig8fqlf3yij30u00u0mz1.jpg?KID=imgbed,tva&Expires=1793324368&ssig=CEUigvuWIm"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c9c9ee3bf2daa86e502c2918.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9c00ce18b821b78094f1edac.jpg"
       ]
     },
     {
@@ -490,8 +497,9 @@
       "titleEnglish": "2026-10-28 10:00 Hooked up, thankfully in place Hooked up😋, the party is more happy✌️ Ready to join me, Hooked up Hooked on melon seeds? I am very happy to be the spokesperson of Baili Pick One brand. I look forward to working with @ Xudong Baili Pick One brand to continue the 42 years of insistence on good quality and good melon seeds. Come to [] and try the same # Hou...",
       "excerptEnglish": "Hou Minghao 10/28/2026 10:00 A little bit. Luckily, I😋'm in place. The party is even happier.✌️ Are you ready to join me and get high on melon seeds? I am very happy to be the spokesperson of Baili Pick One brand. I look forward to working with @ Xudong Baili Pick One brand to continue the 42 years of insistence on good quality and good melon seeds. Come to [] and try the same # Hou Minghao Baili Pick a Brand Spokesperson # # Baili Pick a Watermelon Seed 50 billion pieces sold in 1 year # ​",
       "images": [
-        "https://tvax4.sinaimg.cn/crop.0.0.1080.1080.50/6d2b400bly8ig8kr00bbgj20u00u0my5.jpg?KID=imgbed,tva&Expires=1793323424&ssig=RqC4xZd8Ub",
-        "https://tvax4.sinaimg.cn/crop.0.0.1080.1080.50/6d2b400bly8ig8kr00bbgj20u00u0my5.jpg?KID=imgbed,tva&Expires=1793324021&ssig=PRYj11iTU%2F"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1d2cbd0b2a661405be40a098.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1fc605ef12f0c4ffac33a6fb.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/da401af5d7755da4960976ba.jpg"
       ]
     },
     {
@@ -511,8 +519,9 @@
       "titleEnglish": "CASETiFY 2026-10-28 12:00 Claim from iPhone 14 Pro # Hou Minghao [Over the phone] #! The familiar [Kitty Brother] on the Tmall Starfleet Captain's ID is CASETiFY spokesperson @ Hou Minghao! # Tmall Double 11 Starfleet Carnival # is about to start, and the kiwis are ready to play...",
       "excerptEnglish": "CASETiFY 2026-10-28 12:00 Claim from iPhone 14 Pro # Hou Minghao [Over the phone] #! The familiar [Kitty Brother] on the Tmall Starfleet Captain's ID is CASETiFY spokesperson @ Hou Minghao! # Tmall Double 11 Starfleet Carnival # is about to start, are the kiwis ready to play? Search [Hou Minghao] on Taobao on 10.28-10.30 to book an event, sign in for 3 consecutive days, and win double Carnival points! # Tmall All-Star Program # Taobao is even more discounted on Double 11, and the official discount coupon is 72% off! Flagship-class Ding Dong ~ # Tmall Double 11 Starfleet Carnival # is about to open! Ben Meow is secretly crafting the 100 Star Captain's Card. Guess who🤫 the TAs are ~ On October 31st, the # Tmall All-Star Program # will officially open, and the new Star Badge Illustrated Book will be waiting for you to collect ~ Chance to win ten thousand red envelopes and flagship store thousand yuan gifts! Who will get the first VSSR Star badge...",
       "images": [
-        "https://tvax4.sinaimg.cn/crop.0.0.260.260.50/008qZUmHly8i8z5dnl4pyj3078078a9w.jpg?KID=imgbed,tva&Expires=1793323450&ssig=8H70O3XCly",
-        "https://tvax4.sinaimg.cn/crop.0.0.260.260.50/008qZUmHly8i8z5dnl4pyj3078078a9w.jpg?KID=imgbed,tva&Expires=1793324401&ssig=8qW3s0fd0a"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/99e174a336432dcb3f15467d.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cc748ffddbf701baff8d3b93.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7a08daa27acf3e9ed12ca7df.jpg"
       ]
     },
     {
@@ -532,8 +541,9 @@
       "titleEnglish": "Flying in the Snow 2026-10-28 15:30 From the Weibo web version, it was pinched by Hou Minghao's winter clothes.🥹 Long, gentle and cold-resistant❄️ | Ski to the mountains⛰️ | Printed short, cool and attractive.👀 Different scenes can find the right flying star in the snow. Let's greet the winter together ~ # Hou Minghao [super talk] # # Flying in the snow...",
       "excerptEnglish": "Flying in the Snow 2026-10-28 15:30 From the Weibo web version, it is pinched by Hou Minghao's winter clothes🥹 Long models gentle and cold❄️ | Ski style runs to the mountains⛰️ | Printed short models cool and attractive👀 Different scenes can find the right one flying star in the snow The same style, greet the winter together ~ # Hou Minghao [super talk] # # Flying in the snow global brand spokesperson Hou Minghao # # How to play It's flying in the snow # # Snow ACE players Hou Minghao # # Ski characteristic fashion outdoor # # Flying stars in the snow ski group # ​",
       "images": [
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793323458&ssig=wCcUtfUPVa",
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324408&ssig=LQFYj93kPH"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7066559b1b3083da579f5f5c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1fe3044587d5998890166b22.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/66137b9f5a7e9cc4835f3310.jpg"
       ]
     },
     {
@@ -550,7 +560,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVrxFJ8bwAA84BV.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9d4dc2eda21c4368925c48f0.jpg"
       ]
     },
     {
@@ -597,7 +607,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVp1xVba8AAfIhA.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/29af466b90f57c6d316ebe16.jpg"
       ]
     },
     {
@@ -614,7 +624,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVp1B4XbYAEBk20.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/09f8b3d6614bb6c86d0daae2.jpg"
       ]
     },
     {
@@ -631,7 +641,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVpz8LBbwAEfRT6.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/974806d4707427370820b0b7.jpg"
       ]
     },
     {
@@ -648,7 +658,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": [
-        "https://pbs.twimg.com/media/HVpMTZ9aAAATlcM.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d5fed702578c741ec20fa1da.jpg"
       ]
     },
     {
@@ -668,8 +678,9 @@
       "titleEnglish": "Tian Mei Yi official microblogging 2026-10-27 15:32 From the urban nomad and wilderness station on the microblogging website, the appointment with Xiao Hou's wilderness! ✨ Arrive at # Tianmei Urban Nomad Wilderness Station with # HouMingHaoTian MeiYi Brand Spokesperson # to the urban wilderness about # Tianmei Urban Nomad Wilderness Station # The city is the border, the wilderness is the border, and you are in an immersive wilderness space...",
       "excerptEnglish": "Tian Mei Yi official microblogging 2026-10-27 15:32 From the urban nomad and wilderness station on the microblogging website, the appointment with Xiao Hou's wilderness! ✨ Arrive in the urban wilderness with # HouMingHaoTian MeiYi brand spokesperson # TianMeiYi Urban Nomadic Wilderness Station # The wilderness is the boundary of the city, immersed in the immersive wilderness space Put on # TianMingYi Sunset Boulevard # Western boots to unlock the new style of autumn, walk in the wind, and explore the infinite new ideas at the boundary of the castle wilderness This wilderness meets with surprises and looks forward to the new journey ​",
       "images": [
-        "https://tvax1.sinaimg.cn/crop.0.0.1000.1000.50/7038e9aely8iclcqpnnj6j20rs0rs0sz.jpg?KID=imgbed,tva&Expires=1793323447&ssig=y6OdS9JAmP",
-        "https://tvax1.sinaimg.cn/crop.0.0.1000.1000.50/7038e9aely8iclcqpnnj6j20rs0rs0sz.jpg?KID=imgbed,tva&Expires=1793324398&ssig=%2FwFanxqM5L"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4ccd64ff9ed33fa705133d16.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0c9d77eb46069542e27c3c15.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5d8a111fd8d0c38f12746816.jpg"
       ]
     },
     {
@@ -689,8 +700,9 @@
       "titleEnglish": "Tianmei Yi official Weibo 2026-10-27 10:10 From the Weibo web version Tianmei Yi Hou Minghao meetup big group photo come! Find out where you are going to Tianmei Yi x Hou Minghao Urban Wilderness Arrival📍 Urban Nomad, Wilderness Station🏜️ Freeze and the two-way rush of the girls to🥝 retain the memory of the heart Expect to follow the same frequency, go to the next warm journey together...",
       "excerptEnglish": "Tianmei Yi official Weibo 2026-10-27 10:10 From the Weibo web version Tianmei Yi Hou Minghao meetup big group photo come! Looking for where you are going to Tianmeiyi x Hou Minghao Urban Wilderness Arrival📍 Urban Nomads and Wilderness Stations🏜️ Freeze with the two-way rush of the Tomei to🥝 keep the heartbeat and expect the same frequency, and go to the next hot scene✨ # Hou Minghao Tianmei brand spokesperson # # teenmix Tianmei # # Follow the Hou to chase the wind # # Tianmei Urban Nomad Wilderness Station # # Tianmei Hou Minghao Meet # ​",
       "images": [
-        "https://tvax1.sinaimg.cn/crop.0.0.1000.1000.50/7038e9aely8iclcqpnnj6j20rs0rs0sz.jpg?KID=imgbed,tva&Expires=1793323447&ssig=y6OdS9JAmP",
-        "https://tvax1.sinaimg.cn/crop.0.0.1000.1000.50/7038e9aely8iclcqpnnj6j20rs0rs0sz.jpg?KID=imgbed,tva&Expires=1793324398&ssig=%2FwFanxqM5L"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4ccd64ff9ed33fa705133d16.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0c9d77eb46069542e27c3c15.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5d8a111fd8d0c38f12746816.jpg"
       ]
     },
     {
@@ -710,8 +722,9 @@
       "titleEnglish": "Xue Zhongfei 2026-10-27 15:29 From the Weibo web version 🔥Wednesday Favorite Fan Day Draw Benefits Open on time🎉 🎁Prizes: Brand custom insulated cups, member points ✅Members draw the same model of 👕Hou Minghao 3 times for free, buy and give away peripherals ​",
       "excerptEnglish": "Xue Zhongfei 2026-10-27 15:29 From the Weibo web version 🔥Wednesday Favorite Fan Day Draw Benefits Open on time🎉 🎁Prizes: Brand custom insulated cups, member points ✅Members draw the same model of 👕Hou Minghao 3 times for free, buy and give away peripherals ​",
       "images": [
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793323458&ssig=wCcUtfUPVa",
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324408&ssig=LQFYj93kPH"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7066559b1b3083da579f5f5c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1fe3044587d5998890166b22.jpg",
+        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324879&ssig=yCxq2JLDzr"
       ]
     },
     {
@@ -730,7 +743,8 @@
       "excerptOriginal": "雪中飞 2026-10-27 14:00 来自 微博网页版 万米高空的专属浪漫，雪中飞x侯明昊主题航空正式起航！[飞机] 机舱各种惊喜布置，让每一次云端飞行都有了雪道ACE玩家的温暖相伴。 如果你刚好搭乘这趟班次，记得留下专属的高空打卡照哦。[不愧是你] #侯明昊[超话]# #侯明昊雪中飞全球品牌代言人# #怎么玩都对这很雪中飞# #雪道ACE玩家侯明昊# ​",
       "images": [
         "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793323458&ssig=wCcUtfUPVa",
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324408&ssig=LQFYj93kPH"
+        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324408&ssig=LQFYj93kPH",
+        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324879&ssig=yCxq2JLDzr"
       ],
       "titleEnglish": "Xue Zhongfei 2026-10-27 14:00 Exclusive romance from the Weibo web version ten thousand meters high, Xue Zhongfei x Hou Minghao theme airline officially set sail! [Airplane] Every cloud flight is accompanied by the warmth of ACE players in the airplane cabin. If you happen to be on this flight, remember to leave your own high-altitude card photo...",
       "excerptEnglish": "Xue Zhongfei 2026-10-27 14:00 Exclusive romance from the Weibo web version ten thousand meters high, Xue Zhongfei x Hou Minghao theme airline officially set sail! [Airplane] Every cloud flight is accompanied by the warmth of ACE players in the airplane cabin. If you happen to be on this flight, remember to leave your own high-altitude check-in photo. [As expected of you] # Hou Minghao [super talk] # # Hou Minghao flying in the snow global brand spokesperson # # how to play are flying in the snow # # snow Ace player Hou Minghao # ​"
@@ -749,7 +763,8 @@
       "collectionMethod": "Automatic",
       "images": [
         "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793323458&ssig=wCcUtfUPVa",
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324408&ssig=LQFYj93kPH"
+        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324408&ssig=LQFYj93kPH",
+        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324879&ssig=yCxq2JLDzr"
       ],
       "titleOriginal": "雪中飞 2026-10-27 11:21 来自 微博网页版 手里的周边怎么玩才够秀？「侯」物爆改局正式开启！[不愧是你] 无论是释放DIY创意脑洞，还是带着打卡牌去地标拍大片，收到周边的桃妹们可以尽情发挥想象力[思考] 即日起至11月15…",
       "excerptOriginal": "雪中飞 2026-10-27 11:21 来自 微博网页版 手里的周边怎么玩才够秀？「侯」物爆改局正式开启！[不愧是你] 无论是释放DIY创意脑洞，还是带着打卡牌去地标拍大片，收到周边的桃妹们可以尽情发挥想象力[思考] 即日起至11月15日，带话题#侯明昊雪中飞全球品牌代言人# #怎么玩都对这很雪中飞# #雪中飞侯明昊周边二创# 发布作品并@雪中飞 官方账号 ​",
@@ -770,7 +785,8 @@
       "collectionMethod": "Automatic",
       "images": [
         "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793323458&ssig=wCcUtfUPVa",
-        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324408&ssig=LQFYj93kPH"
+        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324408&ssig=LQFYj93kPH",
+        "https://tvax1.sinaimg.cn/crop.0.0.1080.1080.50/9fe59b53ly8glqwm7zhfcj20u00u0wfn.jpg?KID=imgbed,tva&Expires=1793324879&ssig=yCxq2JLDzr"
       ],
       "titleOriginal": "雪中飞 2026-10-27 10:00 来自 微博网页版 ❄️解锁侯明昊三套雪中飞冬日造型✨ 雪场酷飒⛷️、日常简约、松弛暖感，风格随心切换 年轻人的第一套滑雪服，就选雪中飞 天猫｜抖音｜京东｜微信小程序火热预售中🔥，pick侯明昊同款…",
       "excerptOriginal": "雪中飞 2026-10-27 10:00 来自 微博网页版 ❄️解锁侯明昊三套雪中飞冬日造型✨ 雪场酷飒⛷️、日常简约、松弛暖感，风格随心切换 年轻人的第一套滑雪服，就选雪中飞 天猫｜抖音｜京东｜微信小程序火热预售中🔥，pick侯明昊同款绿色滑雪套装，赴雪季之约 #侯明昊[超话]# #雪中飞全球品牌代言人侯明昊# #怎么玩都对这很雪中飞# ​",
