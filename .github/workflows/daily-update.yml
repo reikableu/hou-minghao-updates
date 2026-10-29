@@ -2,9 +2,11 @@ name: Update Feed
 
 on:
   schedule:
-    # Runs every 4 hours (at minute 0 past every 4th hour)
     - cron: '0 */4 * * *'
-  workflow_dispatch: # Allows manual triggers from GitHub
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update:
