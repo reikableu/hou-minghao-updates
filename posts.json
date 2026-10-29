@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-29T13:28:12+08:00",
-  "status": "Completed: 3 sources successful, 0 failed",
+  "lastUpdated": "2026-10-29T13:56:48+08:00",
+  "status": "Completed: 4 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -12,22 +12,90 @@
       "source": "Hou Minghao Weibo",
       "status": "Success",
       "itemsFound": 15,
-      "checkedAt": "2026-10-29T13:28:01.514998+08:00"
+      "checkedAt": "2026-10-29T13:56:35.824075+08:00"
     },
     {
       "source": "Hou Minghao Studio Weibo",
       "status": "Success",
       "itemsFound": 15,
-      "checkedAt": "2026-10-29T13:28:05.449605+08:00"
+      "checkedAt": "2026-10-29T13:56:39.911350+08:00"
     },
     {
       "source": "Google News",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-10-29T13:28:09.214932+08:00"
+      "checkedAt": "2026-10-29T13:56:43.566933+08:00"
+    },
+    {
+      "source": "Hou Minghao X List",
+      "status": "Success",
+      "itemsFound": 20,
+      "checkedAt": "2026-10-29T13:56:45.868281+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "20af1c2f9ee2018ba1ba",
+      "platform": "X",
+      "source": "@PopMinghao",
+      "title": "HouMinghao Base: RT @ncybear: Recharge with Houhou’s laughter and vote #HouMinghao x One In A Hundred for day 2 😙",
+      "excerpt": "RT @ncybear: Recharge with Houhou’s laughter and vote #HouMinghao x One In A Hundred for day 2 😙 — @PopMinghao Oct 29, 2026",
+      "category": "X Update",
+      "date": "2026-10-29T13:44:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2115681211641446901",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "HouMinghao Base: RT @ncybear: Recharge with Houhou’s laughter and vote #HouMinghao x One In A Hundred for day 2 😙",
+      "excerptOriginal": "RT @ncybear: Recharge with Houhou’s laughter and vote #HouMinghao x One In A Hundred for day 2 😙 — @PopMinghao Oct 29, 2026",
+      "titleEnglish": "HouMinghao Base: RT @ncybear: Recharge with Houhou’s laughter and vote #HouMinghao x One In A Hundred for day 2 😙",
+      "excerptEnglish": "RT @ncybear: Recharge with Houhou’s laughter and vote #HouMinghao x One In A Hundred for day 2 😙 — @PopMinghao Oct 29, 2026"
+    },
+    {
+      "id": "fb815c251828b55c318e",
+      "platform": "X",
+      "source": "@neohou_feed",
+      "title": "Hou Minghao Feed: RT @ncybear: “Hello everyone, I’m One In A Hundred brand spokesperson Hou Minghao. I choose One In A Hundred because it upholds quality, never settling for less.…",
+      "excerpt": "RT @ncybear: “Hello everyone, I’m One In A Hundred brand spokesperson Hou Minghao. I choose One In A Hundred because it upholds quality, never settling for less. Be meticulous in your work; be particular in your life. Every seed that gets put in your mouth deserves to be taken seriously. I’ve already tried this carefully selected deliciousness for…",
+      "category": "X Update",
+      "date": "2026-10-29T12:45:00+08:00",
+      "url": "https://x.com/neohou_feed/status/2115666190668369991",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "Hou Minghao Feed: RT @ncybear: “Hello everyone, I’m One In A Hundred brand spokesperson Hou Minghao. I choose One In A Hundred because it upholds quality, never settling for less.…",
+      "excerptOriginal": "RT @ncybear: “Hello everyone, I’m One In A Hundred brand spokesperson Hou Minghao. I choose One In A Hundred because it upholds quality, never settling for less. Be meticulous in your work; be particular in your life. Every seed that gets put in your mouth deserves to be taken seriously. I’ve already tried this carefully selected deliciousness for…",
+      "titleEnglish": "Hou Minghao Feed: RT @ncybear: “Hello everyone, I’m One In A Hundred brand spokesperson Hou Minghao. I choose One In A Hundred because it upholds quality, never settling for less.…",
+      "excerptEnglish": "RT @ncybear: “Hello everyone, I’m One In A Hundred brand spokesperson Hou Minghao. I choose One In A Hundred because it upholds quality, never settling for less. Be meticulous in your work; be particular in your life. Every seed that gets put in your mouth deserves to be taken seriously. I’ve already tried this carefully selected deliciousness for…"
+    },
+    {
+      "id": "52b4d0a524051e9cd6e4",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: Xudong x Hou Minghao 261029 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Xudong x Hou Minghao 261029 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 29, 2026",
+      "category": "X Update",
+      "date": "2026-10-29T10:47:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115636527279837350",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "Hou Minghao Record: Xudong x Hou Minghao 261029 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerptOriginal": "Xudong x Hou Minghao 261029 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 29, 2026"
+    },
+    {
+      "id": "9bc39d932efddff29df9",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: No acting cute segment? Literally no time *not* to act cute 🥹 #HouMinghaoBelongsToUs2026 Concert Tour 261028 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiao…",
+      "excerpt": "No acting cute segment? Literally no time *not* to act cute 🥹 #HouMinghaoBelongsToUs2026 Concert Tour 261028 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 29, 2026",
+      "category": "X Update",
+      "date": "2026-10-29T10:42:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115635444159492157",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "bcfacbdc1e344d999bd2",
       "platform": "News",
@@ -58,9 +126,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "侯明昊终于不演恋爱脑了，就喜欢这种事业心强女人爱情我都要的 侯明昊丨#雀骨[超话]# ​ - 手机新浪网",
-      "excerptOriginal": "侯明昊终于不演恋爱脑了，就喜欢这种事业心强女人爱情我都要的 侯明昊丨#雀骨[超话]# ​ 手机新浪网",
-      "titleEnglish": "",
-      "excerptEnglish": ""
+      "excerptOriginal": "侯明昊终于不演恋爱脑了，就喜欢这种事业心强女人爱情我都要的 侯明昊丨#雀骨[超话]# ​ 手机新浪网"
     },
     {
       "id": "51372c82c70f673eb106",
@@ -131,6 +197,97 @@
       "excerptEnglish": ""
     },
     {
+      "id": "d2f10a5663365db493d5",
+      "platform": "X",
+      "source": "@PopMinghao",
+      "title": "HouMinghao Base: RT @twoketchups: 짤로 첨 봣을 땐 저 남자가 따파이 보고 윙크를? 볼빵빵 애교를? 햇는데 그냥 눈감는거. 한숨쉬는거.엿음 귀척재능 ㅁㅊ",
+      "excerpt": "RT @twoketchups: 짤로 첨 봣을 땐 저 남자가 따파이 보고 윙크를? 볼빵빵 애교를? 햇는데 그냥 눈감는거. 한숨쉬는거.엿음 귀척재능 ㅁㅊ — @PopMinghao Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-29T00:45:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2115485215351251352",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "31f6da3bf96577b8211f",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: RT @LemonAesthete: [ENG] 261028 Hou Minghao as Baili Tiaoyi Brand Spokesperson. #HouMinghao #侯明昊",
+      "excerpt": "RT @LemonAesthete: [ENG] 261028 Hou Minghao as Baili Tiaoyi Brand Spokesperson. #HouMinghao #侯明昊 https://t.co/NBUbKXTvtG — @HMH_Record Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T20:38:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115422881236807833",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "73b15d8f4cc66577a03a",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: ELLEMEN Magazine Preview 261028 | \"ELLEMEN\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "ELLEMEN Magazine Preview 261028 | \"ELLEMEN\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T20:37:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115422635156967832",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "6e0965e64cb6d8fa1d43",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: Magazine | ELLEMEN #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Magazine | ELLEMEN #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T19:43:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115409063614074992",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "cc50b8f8173e4c3a3cfa",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: 📣 New Endorsement Coming! #HouMinghao #侯明昊 #후명호",
+      "excerpt": "📣 New Endorsement Coming! #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T18:49:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115395623050420442",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "c30c8e6e0fb4772bd99f",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: RT @ncybear: Vote 7 days in a row for #HouMinghao and Xudong One In A Hundred! Link:",
+      "excerpt": "RT @ncybear: Vote 7 days in a row for #HouMinghao and Xudong One In A Hundred! Link: https://t.co/NlfPJhbD3r — @HMH_Record Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T18:45:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115394543868940594",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "46c0c1cde4dfa207ee1e",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: RT @LemonAesthete: [ENG] 261024 #HouMinghao's looks for Zilang Litchi & Nanjing Finless Porpoise Music Festivals by Shi Hui. #侯明昊 #HouMinghaoMusicFestival",
+      "excerpt": "RT @LemonAesthete: [ENG] 261024 #HouMinghao's looks for Zilang Litchi & Nanjing Finless Porpoise Music Festivals by Shi Hui. #侯明昊 #HouMinghaoMusicFestival — @HMH_Record Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T18:45:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115394527116857469",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "837b3fbc41e1835218f1",
       "platform": "News",
       "source": "手机新浪网",
@@ -156,6 +313,32 @@
       "category": "News",
       "date": "2026-10-28T13:41:57+08:00",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBfUTJpQlJWUkp1QUE3WG45b04xeWpDSkV6TmZvdTJiOHBNeFF5QWJYSnJNbnVjTmdyc3dlQXcwdDlsNmpadGJRMXJRN0l2ZS1BSE9rWE9kRmdvd1FnSUVxRE1ESWVNRm1lM2dB?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "e74337ec44bebd752993",
+      "platform": "X",
+      "source": "@PopMinghao",
+      "title": "HouMinghao Base: time to eat melon seeds",
+      "excerpt": "time to eat melon seeds — @PopMinghao Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T12:20:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2115297632243597627",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "cbeb2f229566542434e8",
+      "platform": "X",
+      "source": "@PopMinghao",
+      "title": "HouMinghao Base: is he already in zhengzhou for concert rehearsals? i haven’t seen him heading there yet #houminghao #侯明昊",
+      "excerpt": "is he already in zhengzhou for concert rehearsals? i haven’t seen him heading there yet #houminghao #侯明昊 — @PopMinghao Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T12:04:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2115293571263971796",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
@@ -225,6 +408,58 @@
       "collectionMethod": "Automatic"
     },
     {
+      "id": "517c9cf5b7fca03fce3b",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-28 10:00 嗑一下，小确幸到位😋 嗑一下，聚会更开心✌️ 准备好和我一起，嗑嗑嗑嗑嗑瓜籽了吗？ 很高兴成为百里挑一品牌代言人，期待和@旭东百里挑一 一起，延续42年来对好品质、好瓜籽的坚持。 快来【http://t.…",
+      "excerpt": "侯明昊 2026-10-28 10:00 嗑一下，小确幸到位😋 嗑一下，聚会更开心✌️ 准备好和我一起，嗑嗑嗑嗑嗑瓜籽了吗？ 很高兴成为百里挑一品牌代言人，期待和@旭东百里挑一 一起，延续42年来对好品质、好瓜籽的坚持。 快来【http://t.cn/AXjIDnt7】嗑一下同款 #侯明昊百里挑一品牌代言人##百里挑一西瓜籽1年售出500亿颗# ​ 34.7万 14.3万 48.5万",
+      "category": "Endorsement",
+      "date": "2026-10-28T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "21a7b35cd6db7929c125",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-28 00:12 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “赴” 藏匿灵动玩趣，定格不可复制的活力色彩。 ​ 4078 3644 6.1万",
+      "excerpt": "侯明昊工作室 2026-10-28 00:12 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “赴” 藏匿灵动玩趣，定格不可复制的活力色彩。 ​ 4078 3644 6.1万",
+      "category": "Official",
+      "date": "2026-10-28T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "5b0813cc68456ca2f249",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: Welcome Hou Minghao as the new brand spokesperson for the \"Bai Li Tiao Yi\" brand. What makes him unable to resist sharing? What makes him so fond of it? That's…",
+      "excerpt": "Welcome Hou Minghao as the new brand spokesperson for the \"Bai Li Tiao Yi\" brand. What makes him unable to resist sharing? What makes him so fond of it? That's right, Xiao Hou is serious about eating sunflower seeds! 261028 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T10:23:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115268066926059717",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "e11f4fad7a819f235154",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: Hou Minghao Announced as Brand Spokesperson for Xudong Bai Li Tiao Yi, Congratulations! 🥳 261028 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Hou Minghao Announced as Brand Spokesperson for Xudong Bai Li Tiao Yi, Congratulations! 🥳 261028 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 28, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T10:13:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115265749703065684",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "267816048f70f556dfd6",
       "platform": "News",
       "source": "手机新浪网",
@@ -257,6 +492,58 @@
       "excerptOriginal": "侯明昊客串百目妖君，两集不到10分钟就领盒饭 手机新浪网",
       "titleEnglish": "",
       "excerptEnglish": ""
+    },
+    {
+      "id": "38c03172b74938e622ec",
+      "platform": "X",
+      "source": "@PopMinghao",
+      "title": "HouMinghao Base: RT @xoxo_d78: 슛 들어가기전에는 눈 왕커 차카니 후명호 얼굴이다가 20초에 슛 들어가면 홍엽 눈빛이시고..컷하면 또 돌아오시고....",
+      "excerpt": "RT @xoxo_d78: 슛 들어가기전에는 눈 왕커 차카니 후명호 얼굴이다가 20초에 슛 들어가면 홍엽 눈빛이시고..컷하면 또 돌아오시고.... — @PopMinghao Oct 27, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T03:32:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2115164646328127913",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "5196dd1808aa2be05a64",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [3/3]",
+      "excerpt": "Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [3/3] — @HMH_Record Oct 27, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T01:26:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115133140725588266",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "734abd3c3f9694f1b460",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [2/3]",
+      "excerpt": "Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [2/3] — @HMH_Record Oct 27, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T01:23:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115132211775369432",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "bc9e92e3e76be68a2723",
+      "platform": "X",
+      "source": "@HMH_Record",
+      "title": "Hou Minghao Record: Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [1/3]",
+      "excerpt": "Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [1/3] — @HMH_Record Oct 27, 2026",
+      "category": "X Update",
+      "date": "2026-10-28T01:19:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2115131174838497769",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "9955f095c1678fea33dd",
@@ -310,12 +597,25 @@
       "excerptEnglish": ""
     },
     {
+      "id": "6dcf68eba98c8f4f59e6",
+      "platform": "X",
+      "source": "@PopMinghao",
+      "title": "HouMinghao Base: RT @myo_mmyom: 근데 진짜 1세대보다가 오늘버전 타오메이보면 장족의 발전임 사람의 형태를 점점 가지고 있음ㅋㅋㅋㅋㅋㅋ",
+      "excerpt": "RT @myo_mmyom: 근데 진짜 1세대보다가 오늘버전 타오메이보면 장족의 발전임 사람의 형태를 점점 가지고 있음ㅋㅋㅋㅋㅋㅋ — @PopMinghao Oct 27, 2026",
+      "category": "X Update",
+      "date": "2026-10-27T22:51:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2115094150995730692",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "8735188a7b26c2abf765",
       "platform": "News",
       "source": "手机新浪网",
       "title": "侯明昊白发大妖造型客串《百妖谱》，梦回赵远舟两周年 - 手机新浪网",
       "excerpt": "侯明昊白发大妖造型客串《百妖谱》，梦回赵远舟两周年 手机新浪网",
-      "category": "Photos",
+      "category": "News",
       "date": "2026-10-27T22:27:34+08:00",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQblpmMGRLM1JsaFdhdDlZZU5Za0w5OXB1VjFQWDI4VzFkRVRrcVR0QWFFWlMtLXFsd1laSUxNVWo0QkgxMml2bHZIMl8wM2V0NmdlVk5yQTN6S1ptSk9EMHV3UFpPMHZCSVNGVnlJZHBhd0ZQQ2E4OEZ5MTVNWTY2Rg?oc=5",
       "official": false,
@@ -396,16 +696,14 @@
       "source": "虎嗅",
       "title": "明星宠物成品牌商务新入口，软植入难解宠物服饰转化与规模难题 - 虎嗅",
       "excerpt": "明星宠物成品牌商务新入口，软植入难解宠物服饰转化与规模难题 虎嗅",
-      "category": "Endorsement",
+      "category": "News",
       "date": "2026-10-27T12:03:28+08:00",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8wdnFKdnVyZWpVZkctRThMVjlfZXhnQU1oQUp5SFZFVzJlWW44d20tcWdjdGQ2VlZrc3czbEd6S0g3U0Qta3Q1MDhwOC13YmdXVm44SQ?oc=5",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "明星宠物成品牌商务新入口，软植入难解宠物服饰转化与规模难题 - 虎嗅",
-      "excerptOriginal": "明星宠物成品牌商务新入口，软植入难解宠物服饰转化与规模难题 虎嗅",
-      "titleEnglish": "",
-      "excerptEnglish": ""
+      "excerptOriginal": "明星宠物成品牌商务新入口，软植入难解宠物服饰转化与规模难题 虎嗅"
     },
     {
       "id": "e39918bb748b05dcc3fe",
@@ -430,16 +728,14 @@
       "source": "手机新浪网",
       "title": "侯明昊超话花絮掉落，杨无间台词引喜感 - 手机新浪网",
       "excerpt": "侯明昊超话花絮掉落，杨无间台词引喜感 手机新浪网",
-      "category": "Video",
+      "category": "News",
       "date": "2026-10-26T23:44:45+08:00",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE45RWdzUmVLZ2dJSnJpanBJQ2NNUGliVk91XzlTdWtHZ3Vnd3E3WEt5dk9jNUZKQVZtemlZNm5WTzZGRFdid0lwRlo3aDQzMnBXcXNuSC1qdVJhNVl1SkEyd21KYTNqcUhhUnlkRzhVNkMxaG8?oc=5",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "侯明昊超话花絮掉落，杨无间台词引喜感 - 手机新浪网",
-      "excerptOriginal": "侯明昊超话花絮掉落，杨无间台词引喜感 手机新浪网",
-      "titleEnglish": "",
-      "excerptEnglish": ""
+      "excerptOriginal": "侯明昊超话花絮掉落，杨无间台词引喜感 手机新浪网"
     },
     {
       "id": "f588fff25f78836e70c8",
@@ -454,9 +750,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "侯明昊赵远舟共述我是妖 人世潮汐化雨润地 - 手机新浪网",
-      "excerptOriginal": "侯明昊赵远舟共述我是妖 人世潮汐化雨润地 手机新浪网",
-      "titleEnglish": "",
-      "excerptEnglish": ""
+      "excerptOriginal": "侯明昊赵远舟共述我是妖 人世潮汐化雨润地 手机新浪网"
     },
     {
       "id": "2f9aaf740f4952e69891",
@@ -518,9 +812,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "侯明昊陈钰琪演绎痴情妖等待一世 - 手机新浪网",
-      "excerptOriginal": "侯明昊陈钰琪演绎痴情妖等待一世 手机新浪网",
-      "titleEnglish": "",
-      "excerptEnglish": ""
+      "excerptOriginal": "侯明昊陈钰琪演绎痴情妖等待一世 手机新浪网"
     },
     {
       "id": "e863072c88d05612f337",
@@ -603,9 +895,46 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "2026-10-26 20:12 十月要从头见到尾了🎙️#秋天过期不候# ​ 7.4万 3.4万 26.3万",
-      "excerptOriginal": "侯明昊 2026-10-26 20:12 十月要从头见到尾了🎙️#秋天过期不候# ​ 7.4万 3.4万 26.3万",
-      "titleEnglish": "",
-      "excerptEnglish": ""
+      "excerptOriginal": "侯明昊 2026-10-26 20:12 十月要从头见到尾了🎙️#秋天过期不候# ​ 7.4万 3.4万 26.3万"
+    },
+    {
+      "id": "0ddfed561d82fd3742a2",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-26 22:23 #纪念红军长征胜利90周年主题长卷# 有些路是走出来的，不是说出来的。他们走过的万水千山，今天都成了烟火人间。铭记，就是最好的致敬。#这幅长卷送给每一位正在赶路的人# 一起在新的长征路上阔步前行！ 【#纪…",
+      "excerpt": "侯明昊 2026-10-26 22:23 #纪念红军长征胜利90周年主题长卷# 有些路是走出来的，不是说出来的。他们走过的万水千山，今天都成了烟火人间。铭记，就是最好的致敬。#这幅长卷送给每一位正在赶路的人# 一起在新的长征路上阔步前行！ 【#纪念红军长征胜利90周年主题长卷#｜万水千山】90多年前，红军用脚步作笔，把万水千山写成了通往未来的史诗。今天，我们每个人也有自己的那座山、那条河。#这幅长卷送给每一位正在赶路的人#，一起在新的长征路上阔步前行！ ​ 5569 7914 4.5万",
+      "category": "Official",
+      "date": "2026-10-26T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "c0502ee55be79300c25d",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-26 22:26 山河记得他们来过。#纪念红军长征胜利90周年主题长卷#//@侯明昊:#纪念红军长征胜利90周年主题长卷# 有些路是走出来的，不是说出来的。他们走过的万水千山，今天都成了烟火人间。铭记，就是最好的致敬。#这…",
+      "excerpt": "侯明昊工作室 2026-10-26 22:26 山河记得他们来过。#纪念红军长征胜利90周年主题长卷#//@侯明昊:#纪念红军长征胜利90周年主题长卷# 有些路是走出来的，不是说出来的。他们走过的万水千山，今天都成了烟火人间。铭记，就是最好的致敬。#这幅长卷送给每一位正在赶路的人# 一起在新的长征路上阔步前行！ 【#纪念红军长征胜利90周年主题长卷#｜万水千山】90多年前，红军用脚步作笔，把万水千山写成了通往未来的史诗。今天，我们每个人也有自己的那座山、那条河。#这幅长卷送给每一位正在赶路的人#，一起在新的长征路上阔步前行！ ​ 208 347 4335",
+      "category": "Official",
+      "date": "2026-10-26T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "1c93cf75c0449dbfd8e5",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-26 14:10 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 花絮掉落📷 ，和重磅嘉宾的贴贴互动时刻✅～ http://t.cn/AXj6cdp6 ​ 402 2179 1.5万",
+      "excerpt": "侯明昊工作室 2026-10-26 14:10 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 花絮掉落📷 ，和重磅嘉宾的贴贴互动时刻✅～ http://t.cn/AXj6cdp6 ​ 402 2179 1.5万",
+      "category": "Video",
+      "date": "2026-10-26T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "acfe0c1f7ee00ff15b48",
@@ -715,6 +1044,32 @@
       "collectionMethod": "Automatic"
     },
     {
+      "id": "4eb9494e0a03edfa13da",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-25 22:01 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “等” 一刹归停，安放风尘羁绊，静待再度启程。 http://t.cn/AXjxNej7 ​ 3949 3241 6.4万",
+      "excerpt": "侯明昊工作室 2026-10-25 22:01 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “等” 一刹归停，安放风尘羁绊，静待再度启程。 http://t.cn/AXjxNej7 ​ 3949 3241 6.4万",
+      "category": "Official",
+      "date": "2026-10-25T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "2dfd64b38274bbcae51b",
+      "platform": "News",
+      "source": "新浪网",
+      "title": "杀青后无交集也能被造谣？粉丝这句“腰杆硬起来”太清醒|虞书欣|侯明昊_新浪新闻 - 新浪网",
+      "excerpt": "杀青后无交集也能被造谣？粉丝这句“腰杆硬起来”太清醒|虞书欣|侯明昊_新浪新闻 新浪网",
+      "category": "News",
+      "date": "2026-10-25T00:18:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5qNlQtRGlNY1V2ODhkeUpwOFVXNHgwc29jSi02RGtONVpyZW5LVHdDc3FmWVFMRGRLYlV2amFvWVlJcG16TGQ2bXlLODNFWGYyTXRyUWxBMTI2YnlsQjRNTkRSWQ?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "ccd9ce11ea2b8a603ea5",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -762,12 +1117,38 @@
       "collectionMethod": "Automatic"
     },
     {
+      "id": "dc493b5551290e9f8ab8",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-24 18:15 #志愿军出国作战76年了#我们没有忘记，也不会忘记！ #志愿军出国作战76年了#【#向英雄致敬迎英雄回家#】76年前，这群年轻人跨过鸭绿江，保家卫国。在无数舍生忘死的日夜里，很多人把青春留在了那片战场，家…",
+      "excerpt": "侯明昊 2026-10-24 18:15 #志愿军出国作战76年了#我们没有忘记，也不会忘记！ #志愿军出国作战76年了#【#向英雄致敬迎英雄回家#】76年前，这群年轻人跨过鸭绿江，保家卫国。在无数舍生忘死的日夜里，很多人把青春留在了那片战场，家人等了一辈子也没等到他们回家。今天，站在他们用生命换来的和平里，请告诉他们：我们没有忘记，也不会忘记！向英雄致敬，迎英雄回家！ ​ 7509 9444 5.4万",
+      "category": "Official",
+      "date": "2026-10-24T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "57347b5842f30294b47c",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-24 16:05 追寻流动的灵感，在Prada武汉SKP精品店，找到属于我的秋日节奏。 ​ 53.9万 12.5万 66.6万",
+      "excerpt": "侯明昊 2026-10-24 16:05 追寻流动的灵感，在Prada武汉SKP精品店，找到属于我的秋日节奏。 ​ 53.9万 12.5万 66.6万",
+      "category": "Official",
+      "date": "2026-10-24T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "a503934a8379900ca927",
       "platform": "News",
       "source": "手机新浪网",
       "title": "侯明昊出席PRADA 武汉 SKP 周年庆典活动|侯明昊|PRADA|和颂传媒 - 手机新浪网",
       "excerpt": "侯明昊出席PRADA 武汉 SKP 周年庆典活动|侯明昊|PRADA|和颂传媒 手机新浪网",
-      "category": "Event",
+      "category": "News",
       "date": "2026-10-23T20:32:00+08:00",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE8ycWNwM09LZ2pkN3BxYnhlUWdqQTUxZEJFTjY2WmZVOGdnYktPZkhFWUlpNjlhNGFaYXRqVFRGYXdYQVFCc3c1R0VtbERHWUQtTmk3WEx2YWtKb3FhMUIxelctNA?oc=5",
       "official": false,
@@ -780,7 +1161,7 @@
       "source": "手机新浪网",
       "title": "李现、侯明昊武汉Prada活动生图 - 手机新浪网",
       "excerpt": "李现、侯明昊武汉Prada活动生图 手机新浪网",
-      "category": "Event",
+      "category": "News",
       "date": "2026-10-23T17:04:00+08:00",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5EcWwzUEtfNERETzJpZ0NOZ09UTTdBLXJyQzNoY0tZdThFLUozSnVrc2g1aW5PdVY2WlhxVU9hN2wxeEFTZzB1NXQ1MFNvdGgzYS1OYlZXTFZFcnVNQkpmV1R4Yw?oc=5",
       "official": false,
@@ -806,7 +1187,7 @@
       "source": "手机新浪网",
       "title": "回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会##微博演出季# ​ - 手机新浪网",
       "excerpt": "回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会##微博演出季# ​ 手机新浪网",
-      "category": "Event",
+      "category": "News",
       "date": "2026-10-23T13:18:00+08:00",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBIUFU2dGZFSEMxekFXUXVFZkdyQUpkWjFTdWZ5VUNvUHJzUlBwY0lLWEVtRXBsM2tIMElUS3BGOEpOc2gweTZMbUsyVjNsYjZseVFhRlRsWmlTTThuTy1xbmZCYw?oc=5",
       "official": false,
@@ -826,9 +1207,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "2026-10-23 13:18 回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会##微博演出季# ​ 6.4万 2.7万 25.7万",
-      "excerptOriginal": "侯明昊 2026-10-23 13:18 回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会##微博演出季# ​ 6.4万 2.7万 25.7万",
-      "titleEnglish": "",
-      "excerptEnglish": ""
+      "excerptOriginal": "侯明昊 2026-10-23 13:18 回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会##微博演出季# ​ 6.4万 2.7万 25.7万"
     },
     {
       "id": "9f009108dd691a5fab2e",
@@ -860,9 +1239,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "2026-10-23 19:08 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “共” 敛蓄克制，风格自明。 ​ 1047 2725 1.6万",
-      "excerptOriginal": "侯明昊工作室 2026-10-23 19:08 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “共” 敛蓄克制，风格自明。 ​ 1047 2725 1.6万",
-      "titleEnglish": "",
-      "excerptEnglish": ""
+      "excerptOriginal": "侯明昊工作室 2026-10-23 19:08 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “共” 敛蓄克制，风格自明。 ​ 1047 2725 1.6万"
     },
     {
       "id": "f7ee00e5eb8dfbe9653b",
@@ -882,14 +1259,53 @@
       "excerptEnglish": ""
     },
     {
+      "id": "dd0d75f49296ea0d9ea2",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-23 21:22 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “循” 克制凝光，释放成序，繁世之中，经典沉淀回响。 http://t.cn/AXjG5Qz9 ​ 5018 3761 6.8万",
+      "excerpt": "侯明昊工作室 2026-10-23 21:22 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 “循” 克制凝光，释放成序，繁世之中，经典沉淀回响。 http://t.cn/AXjG5Qz9 ​ 5018 3761 6.8万",
+      "category": "Official",
+      "date": "2026-10-23T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "b48f19b92d342e0450de",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-23 13:19 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜@侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 侯明昊「属于我们的…」巡回演唱会北京·收官站官宣📢 年少时期许下的…",
+      "excerpt": "侯明昊工作室 2026-10-23 13:19 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜@侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 侯明昊「属于我们的…」巡回演唱会北京·收官站官宣📢 年少时期许下的浪漫心愿，在此刻终于迎来回 ​ 1100 1407 5.4万",
+      "category": "Event",
+      "date": "2026-10-23T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "61bffddea539b542bee4",
       "platform": "News",
       "source": "SocialBeta",
       "title": "侯明昊成为雪中飞全球品牌代言人 - SocialBeta",
       "excerpt": "侯明昊成为雪中飞全球品牌代言人 SocialBeta",
-      "category": "Endorsement",
+      "category": "News",
       "date": "2026-10-23T11:32:21+08:00",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4tdjVnYkRlRU1CTUU3ajNVaHAxTWdINXplOXdCcmZ6dlFXNFNqam5OWmRCZURkYWZxWEJTM3I4Ykh3MUhSWlRjcnhNVU1wdw?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "f3a161fc61a31ab03d17",
+      "platform": "News",
+      "source": "手机新浪网",
+      "title": "侯明昊坚持平番出演长生骨,新剧按新规播出 - 手机新浪网",
+      "excerpt": "侯明昊坚持平番出演长生骨,新剧按新规播出 手机新浪网",
+      "category": "News",
+      "date": "2026-10-23T09:14:27+08:00",
+      "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxNMlMzWUJPdGZvZlJvMk5zb1VJVmxjaHVjcC1BbGtTNFkwUHVyRVFKMnl0LVd5OGs3MExMQzVFNGROdlp4X2theGpRTEdTbFg2akNpaklITjM1M3ZUSTlobnI2NmQzTUVheU1IM0NYanVCOFNiSklubHZWemJYaGlSNFNLUjlNYU16eVoxanNoRzlWN2d5M3M5NFpfcGFCeUlvQ1ZBWE9jSHdmY1U5SW5ZalhyVGhXMGNfX1N0WnBEZmdmeHRKNU1wUGZzTlowNDNFME85bmp0ZFhlWnYwS1luN3NMQ2ZFck1PNWRoVGV5TnhkWDY5ZWgybHd4RU5VLWVaeTNKWjRJeGczZHgxd1dINl9VWDVKT3UySm9NVE9ENFZxSjBHd3BLdXhNeGx1d181NUhzakhBMlN1UTk0T0xhTGJLSlV0akl5Nk1SRUVuNE1vSHRoOE0wNnNUZkVjdw?oc=5",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
@@ -951,6 +1367,32 @@
       "source": "侯明昊工作室",
       "title": "2026-10-22 21:01 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 夜间福利，请欣赏美食吃播家🐈的品鉴日常～ http://t.cn/AXjLCgsl ​ 3420 3…",
       "excerpt": "侯明昊工作室 2026-10-22 21:01 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 夜间福利，请欣赏美食吃播家🐈的品鉴日常～ http://t.cn/AXjLCgsl ​ 3420 3235 6.3万",
+      "category": "Official",
+      "date": "2026-10-22T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "6e0e95e2481b2a3af464",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-22 10:00 滑过雪道的风，也走过山野的路 滑雪的专业与时尚，不该只留在雪场 —— 从山顶到街头，它都能扛 很高兴成为@雪中飞 全球品牌代言人 更专业，时刻温暖防护；更时尚，怎么拍都出片 跟我一起换上新装备，向野而飞！…",
+      "excerpt": "侯明昊 2026-10-22 10:00 滑过雪道的风，也走过山野的路 滑雪的专业与时尚，不该只留在雪场 —— 从山顶到街头，它都能扛 很高兴成为@雪中飞 全球品牌代言人 更专业，时刻温暖防护；更时尚，怎么拍都出片 跟我一起换上新装备，向野而飞！这个冬天我穿雪中飞！ http://t.cn/AXjhFvdT #侯明昊[超话]##侯明昊雪中飞全球品牌代言人# ​ 29.6万 32.7万 39万",
+      "category": "Endorsement",
+      "date": "2026-10-22T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "d515b3f8e389968e7a88",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-22 21:01 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 夜间福利，请欣赏美食吃播家🐈的品鉴日常～ http://t.cn/AXjLCgsl ​ 3426 3238 6.3万",
+      "excerpt": "侯明昊工作室 2026-10-22 21:01 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 夜间福利，请欣赏美食吃播家🐈的品鉴日常～ http://t.cn/AXjLCgsl ​ 3426 3238 6.3万",
       "category": "Official",
       "date": "2026-10-22T12:00:00+08:00",
       "url": "https://sina.cn/media/5763552342",
@@ -1036,6 +1478,19 @@
       "collectionMethod": "Automatic"
     },
     {
+      "id": "c8b6da857ce5055cd67b",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-21 22:39 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 新鲜出炉～ ​ 5920 4528 7.4万",
+      "excerpt": "侯明昊工作室 2026-10-21 22:39 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 新鲜出炉～ ​ 5920 4528 7.4万",
+      "category": "Official",
+      "date": "2026-10-21T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "14332a396472e48eee63",
       "platform": "Weibo",
       "source": "侯明昊工作室",
@@ -1053,6 +1508,19 @@
       "excerptEnglish": ""
     },
     {
+      "id": "a18b33687834af7d6d3d",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-17 14:13 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 秋意渐浓，再度启程，相逢有期！ 侯明昊「属于我们的…」巡回演唱…",
+      "excerpt": "侯明昊工作室 2026-10-17 14:13 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 秋意渐浓，再度启程，相逢有期！ 侯明昊「属于我们的…」巡回演唱会 郑州站 即将正式开票 ​ 1962 2341 6.1万",
+      "category": "Event",
+      "date": "2026-10-17T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "af0fe952e3360c13d253",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -1068,6 +1536,19 @@
       "excerptOriginal": "侯明昊 2026-10-16 17:26 支持闫桉《嫁金钗》！一起来看“腹黑”陆濯陆世子[doge] #嫁金钗开播##嫁金钗不养闲人海报# 责任在肩，事务拉满，本世子主打一个全年无休[开摆]#嫁金钗# ​ 4866 1.4万 11.2万",
       "titleEnglish": "",
       "excerptEnglish": ""
+    },
+    {
+      "id": "a713b152a5d72b2fbb53",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-16 17:26 支持闫桉《嫁金钗》！一起来看“腹黑”陆濯陆世子[doge] #嫁金钗开播##嫁金钗不养闲人海报# 责任在肩，事务拉满，本世子主打一个全年无休[开摆]#嫁金钗# ​ 4867 1.4万 11.2万",
+      "excerpt": "侯明昊 2026-10-16 17:26 支持闫桉《嫁金钗》！一起来看“腹黑”陆濯陆世子[doge] #嫁金钗开播##嫁金钗不养闲人海报# 责任在肩，事务拉满，本世子主打一个全年无休[开摆]#嫁金钗# ​ 4867 1.4万 11.2万",
+      "category": "Official",
+      "date": "2026-10-16T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "d46ccf3203d7e8347837",
@@ -1121,6 +1602,45 @@
       "excerptEnglish": ""
     },
     {
+      "id": "f692aa921330db9d4fc8",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-15 20:03 一次被引力拉长的对视 一段以退场写成的成全 一起来听《Galaxy Far Far Away》🎵 #七号打歌中心# QQ音乐 http://t.cn/AXlONMPO 酷狗音乐 http://t.cn/A…",
+      "excerpt": "侯明昊 2026-10-15 20:03 一次被引力拉长的对视 一段以退场写成的成全 一起来听《Galaxy Far Far Away》🎵 #七号打歌中心# QQ音乐 http://t.cn/AXlONMPO 酷狗音乐 http://t.cn/AXlONMPW 酷我音乐 http://t.cn/AXlONMPl ​ 18.1万 5.7万 10.3万",
+      "category": "Music",
+      "date": "2026-10-15T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "d96842ebde753d6267d5",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-15 20:08 #侯明昊[超话]# 🥝 #侯明昊新歌迢迢星河# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 星空为喻，遥寄思念 感念每一程跨越山海的奔赴 #七号打歌中心# QQ音乐 http://t.cn/AXlONMPO 酷狗音乐 htt…",
+      "excerpt": "侯明昊工作室 2026-10-15 20:08 #侯明昊[超话]# 🥝 #侯明昊新歌迢迢星河# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 星空为喻，遥寄思念 感念每一程跨越山海的奔赴 #七号打歌中心# QQ音乐 http://t.cn/AXlONMPO 酷狗音乐 http://t.cn/AXlONMPW 酷我音乐 http://t.cn/AXlONMPl http://t.cn/AXlODtcf ​ 2163 1778 2.1万",
+      "category": "Music",
+      "date": "2026-10-15T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "05015cc846c5dd622412",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-15 20:03 #侯明昊[超话]# 🥝 #侯明昊新歌迢迢星河# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 星空为喻，遥寄思念 感念每一程跨越山海的奔赴 #七号打歌中心# QQ音乐 http://t.cn/AXlONMPO 酷狗音乐 htt…",
+      "excerpt": "侯明昊工作室 2026-10-15 20:03 #侯明昊[超话]# 🥝 #侯明昊新歌迢迢星河# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 星空为喻，遥寄思念 感念每一程跨越山海的奔赴 #七号打歌中心# QQ音乐 http://t.cn/AXlONMPO 酷狗音乐 http://t.cn/AXlONMPW 酷我音乐 http://t.cn/AXlONMPl ​ 769 977 1.3万",
+      "category": "Music",
+      "date": "2026-10-15T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "eb6f50b2e9a9de6938f2",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -1155,6 +1675,32 @@
       "excerptEnglish": ""
     },
     {
+      "id": "7379dbbd6e5e7864dcb9",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-14 20:05 无法寄出的字句，散落成了银河坐标 所谓遥远，不过是另一种咫尺 10月15日 20:03⏰敬请期待 #侯明昊新歌迢迢星河##七号打歌中心# 【Q音】http://t.cn/AXlxi2hJ 【酷狗】http…",
+      "excerpt": "侯明昊 2026-10-14 20:05 无法寄出的字句，散落成了银河坐标 所谓遥远，不过是另一种咫尺 10月15日 20:03⏰敬请期待 #侯明昊新歌迢迢星河##七号打歌中心# 【Q音】http://t.cn/AXlxi2hJ 【酷狗】http://t.cn/AXlxv2yr 【酷我】http://t.cn/AXlxi2hi ​ 7.3万 1.8万 8.5万",
+      "category": "Music",
+      "date": "2026-10-14T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "d3a939b58298ac361cd1",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-14 20:03 距离《Galaxy Far Far Away》上线还有🥝 天 10月15日 20:03，敬请期待！#七号打歌中心# 【Q音】http://t.cn/AXlxi2hJ 【酷狗】http://t.cn/AXl…",
+      "excerpt": "侯明昊 2026-10-14 20:03 距离《Galaxy Far Far Away》上线还有🥝 天 10月15日 20:03，敬请期待！#七号打歌中心# 【Q音】http://t.cn/AXlxi2hJ 【酷狗】http://t.cn/AXlxv2yr 【酷我】http://t.cn/AXlxi2hi http://t.cn/AXlCVmjG ​ 8.3万 1.1万 6.3万",
+      "category": "Music",
+      "date": "2026-10-14T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "9cc4933fda9ae65f9103",
       "platform": "Weibo",
       "source": "侯明昊",
@@ -1172,6 +1718,19 @@
       "excerptEnglish": ""
     },
     {
+      "id": "5e7ee4ffbd9cde695274",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-13 20:03 距离《Galaxy Far Far Away》上线还有🌛🌛天 10月15日 20:03，敬请期待！#七号打歌中心# 【Q音】http://t.cn/AXlxi2hJ 【酷狗】http://t.cn/AXl…",
+      "excerpt": "侯明昊 2026-10-13 20:03 距离《Galaxy Far Far Away》上线还有🌛🌛天 10月15日 20:03，敬请期待！#七号打歌中心# 【Q音】http://t.cn/AXlxi2hJ 【酷狗】http://t.cn/AXlxv2yr 【酷我】http://t.cn/AXlxi2hi http://t.cn/AXlaaFYY ​ 8.4万 1.8万 8.7万",
+      "category": "Music",
+      "date": "2026-10-13T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "3391895be54da8882c63",
       "platform": "News",
       "source": "finance.sina.com.cn",
@@ -1180,6 +1739,32 @@
       "category": "News",
       "date": "2026-10-12T15:00:00+08:00",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16WTJFdkVWUVJmLXYxWnh5ckp2QldVTXprZTFCeUduYU45OUZ0QmlGMDluVW1qSTFNdG1ZWUdRelVOTkhnS19XQWhUYUV4ZXUyNm5uTU5Uc2hOMTJHUkNEeXN6QWU3T280a184SVEyaGt0dEtRSFpxUQ?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "ba4ec18dcff1c8d37620",
+      "platform": "News",
+      "source": "新浪财经",
+      "title": "凌晨4点，男星侯明昊工作室连发6个感叹号 - 新浪财经",
+      "excerpt": "凌晨4点，男星侯明昊工作室连发6个感叹号 新浪财经",
+      "category": "News",
+      "date": "2026-10-12T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE16WTJFdkVWUVJmLXYxWnh5ckp2QldVTXprZTFCeUduYU45OUZ0QmlGMDluVW1qSTFNdG1ZWUdRelVOTkhnS19XQWhUYUV4ZXUyNm5uTU5Uc2hOMTJHUkNEeXN6QWU3T280a184SVEyaGt0dEtRSFpxUQ?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "dfb341f459e69a723fce",
+      "platform": "News",
+      "source": "新浪财经",
+      "title": "凌晨4点，男星侯明昊工作室连发6个感叹号 - 新浪财经",
+      "excerpt": "凌晨4点，男星侯明昊工作室连发6个感叹号 新浪财经",
+      "category": "News",
+      "date": "2026-10-12T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9paHNlU3JSZVI2VlliXzhKZGdUQU9rOXpSMEVTdUQ4cllaSTZvZWR5OXBLV1B3a0xnTERvb2R1VmM0YjlBREo0RkVIUGJLeUdVMGNaMFJkWWs4UXludHdZQmFjSEloOEx3YmFVaHJQT19ZcnFySDdwRw?oc=5",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
@@ -1200,6 +1785,19 @@
       "excerptOriginal": "侯明昊 2026-10-12 20:05 距离《Galaxy Far Far Away》上线 还有 💚 💚 💚 天 10月15日 20:03，敬请期待！ #七号打歌中心# 【Q音】http://t.cn/AXlxi2hJ 【酷狗】http://t.cn/AXlxv2yr 【酷我】http://t.cn/AXlxi2hi http://t.cn/AXlxkf55 ​ 6.7万 1.8万 8.2万",
       "titleEnglish": "",
       "excerptEnglish": ""
+    },
+    {
+      "id": "8e26d42eb7bf8a287fe4",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-12 20:05 距离《Galaxy Far Far Away》上线 还有 💚 💚 💚 天 10月15日 20:03，敬请期待！ #七号打歌中心# 【Q音】http://t.cn/AXlxi2hJ 【酷狗】http://t…",
+      "excerpt": "侯明昊 2026-10-12 20:05 距离《Galaxy Far Far Away》上线 还有 💚 💚 💚 天 10月15日 20:03，敬请期待！ #七号打歌中心# 【Q音】http://t.cn/AXlxi2hJ 【酷狗】http://t.cn/AXlxv2yr 【酷我】http://t.cn/AXlxi2hi http://t.cn/AXlxkf55 ​ 6.7万 1.8万 8.2万",
+      "category": "Music",
+      "date": "2026-10-12T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "81173a4a1ba4ec103b59",
@@ -1224,6 +1822,19 @@
       "source": "侯明昊工作室",
       "title": "2026-09-30 11:03 #侯明昊[超话]# 漫渡金风时序，暮色启开新的篇章。 @侯明昊 十月行程送达 ​ 5579 6009 7.9万",
       "excerpt": "侯明昊工作室 2026-09-30 11:03 #侯明昊[超话]# 漫渡金风时序，暮色启开新的篇章。 @侯明昊 十月行程送达 ​ 5579 6009 7.9万",
+      "category": "Official",
+      "date": "2026-09-30T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "a16e0d342f5a21799452",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-09-30 11:03 #侯明昊[超话]# 漫渡金风时序，暮色启开新的篇章。 @侯明昊 十月行程送达 ​ 5579 6010 7.9万",
+      "excerpt": "侯明昊工作室 2026-09-30 11:03 #侯明昊[超话]# 漫渡金风时序，暮色启开新的篇章。 @侯明昊 十月行程送达 ​ 5579 6010 7.9万",
       "category": "Official",
       "date": "2026-09-30T12:00:00+08:00",
       "url": "https://sina.cn/media/5763552342",
@@ -1345,7 +1956,7 @@
       "source": "新浪新闻_手机新浪网",
       "title": "演员侯明昊将补位歌手加盟《歌手2026》新的月度赛，本人回应：自己其实最开始是以歌手身份出道的，一直都没有放弃音乐 - 新浪新闻_手机新浪网",
       "excerpt": "演员侯明昊将补位歌手加盟《歌手2026》新的月度赛，本人回应：自己其实最开始是以歌手身份出道的，一直都没有放弃音乐 新浪新闻_手机新浪网",
-      "category": "Music",
+      "category": "News",
       "date": "2026-06-16T15:00:00+08:00",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1Tc3FQdXdYWm1hakJHRFl0d0hfOEZCVWxDSTNIQzVHN1MwaTlPSVVfdzRoTjdoSVZCLVRpWTFwTkhiWERJdElqa29wRGVZcDh1MXFyNUNWbjdIa1FDbjBkamM4V25ieF9QUHE1TnJiTXdSemVX?oc=5",
       "official": false,
@@ -1365,9 +1976,7 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "2026-05-05 00:19 “期待去证明我们的未来” ​ 100万 100万 62.7万",
-      "excerptOriginal": "侯明昊 2026-05-05 00:19 “期待去证明我们的未来” ​ 100万 100万 62.7万",
-      "titleEnglish": "",
-      "excerptEnglish": ""
+      "excerptOriginal": "侯明昊 2026-05-05 00:19 “期待去证明我们的未来” ​ 100万 100万 62.7万"
     },
     {
       "id": "5d6ab087991b8a5ed7bd",
@@ -1378,6 +1987,19 @@
       "category": "Event",
       "date": "2026-04-24T15:00:00+08:00",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE56VzNDZDJqVEpCaUZ0N1hUZ3JObkdmc2FRSXk4bGstZFF3dnJlbXNsdVpVRFdKb3Vtb2dsM1dFSnNtSFNNMnpqbDg1cmx1TXVlZ3lGbldpUHZrVGRlWnJVbTBPcXlKLWk3S0VNY2xiXzhGQUgwZUJYRA?oc=5",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "d09e5ca9f54262865f36",
+      "platform": "News",
+      "source": "上观新闻",
+      "title": "这个“春日驿站”打造潮流时尚体验，侯明昊邀你“共赴HAO春光” - 上观新闻",
+      "excerpt": "这个“春日驿站”打造潮流时尚体验，侯明昊邀你“共赴HAO春光” 上观新闻",
+      "category": "News",
+      "date": "2026-04-23T15:00:00+08:00",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9CTXo2aHhVRkhVMGFNTjV0cWVucFhYRlZUVXFndzJfVFRIMm1BaEVpdUNLR0xnVE9JelhTVDh2d21xSUJSbGgyRXdTTzhiU19aLWJsWndZb0F2cUU?oc=5",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
