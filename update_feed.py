@@ -517,7 +517,7 @@ def main():
         reverse=True,
     )[:MAX_POSTS]
 
-        print()
+    print()
     print("Checking English translations...")
 
     translations_added = 0
@@ -551,8 +551,8 @@ def main():
                 f"{index}/{len(final_posts)}"
             )
 
-            post["titleEnglish"] = (
-                translate_to_english(original_title)
+            post["titleEnglish"] = translate_to_english(
+                original_title
             )
 
             if post["titleEnglish"]:
@@ -572,8 +572,8 @@ def main():
                 f"{index}/{len(final_posts)}"
             )
 
-            post["excerptEnglish"] = (
-                translate_to_english(original_excerpt)
+            post["excerptEnglish"] = translate_to_english(
+                original_excerpt
             )
 
             if post["excerptEnglish"]:
@@ -583,7 +583,7 @@ def main():
 
         elif not contains_chinese(original_excerpt):
             post["excerptEnglish"] = original_excerpt
-            
+    
     successful_sources = sum(
         1
         for source in source_status
