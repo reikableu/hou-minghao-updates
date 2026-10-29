@@ -20,7 +20,7 @@ SINGAPORE = ZoneInfo("Asia/Singapore")
 UTC = ZoneInfo("UTC")
 MAX_POSTS = 200
 MAX_TRANSLATED_POSTS_PER_RUN = 5
-TRANSLATION_DELAY_SECONDS = 8
+TRANSLATION_DELAY_SECONDS = 3
 REQUEST_DELAY_SECONDS = 2
 
 HEADERS = {
@@ -456,6 +456,7 @@ def post_timestamp(post):
 
 
 def translate_to_english(text):
+    """Translate one field at a time so separators cannot be mistranslated."""
     text = clean_text(text)
 
     if not text:
@@ -463,24 +464,32 @@ def translate_to_english(text):
     if not contains_chinese(text):
         return {"translation": text, "rate_limited": False}
 
-    try:
-        translated = GoogleTranslator(
-            source="auto", target="en"
-        ).translate(text=text)
-        return {
-            "translation": clean_text(translated),
-            "rate_limited": False,
-        }
-    except Exception as error:
-        error_name = type(error).__name__
-        error_message = str(error)
-        print("Translation failed:", error_name, error_message[:200])
-        rate_limited = (
-            error_name == "TooManyRequests"
-            or "too many requests" in error_message.lower()
-            or "429" in error_message
-        )
-        return {"translation": "", "rate_limited": rate_limited}
+    last_error = None
+    for attempt in range(2):
+        try:
+            translated = GoogleTranslator(source="auto", target="en").translate(text)
+            translated = clean_text(translated)
+            if translated:
+                return {"translation": translated, "rate_limited": False}
+            last_error = "Translation service returned an empty result"
+        except Exception as error:
+            last_error = f"{type(error).__name__}: {error}"
+            message = str(error).lower()
+            rate_limited = (
+                type(error).__name__ == "TooManyRequests"
+                or "too many requests" in message
+                or "429" in message
+                or "rate limit" in message
+            )
+            print("Translation failed:", last_error[:200])
+            if rate_limited:
+                return {"translation": "", "rate_limited": True}
+        if attempt == 0:
+            time.sleep(2)
+
+    if last_error:
+        print("Giving up on this field:", last_error[:200])
+    return {"translation": "", "rate_limited": False}
 
 
 def add_translations(posts):
@@ -505,12 +514,8 @@ def add_translations(posts):
         title_english = clean_text(post.get("titleEnglish", ""))
         excerpt_english = clean_text(post.get("excerptEnglish", ""))
 
-        title_needs_translation = (
-            contains_chinese(original_title) and not title_english
-        )
-        excerpt_needs_translation = (
-            contains_chinese(original_excerpt) and not excerpt_english
-        )
+        title_needs_translation = contains_chinese(original_title) and not title_english
+        excerpt_needs_translation = contains_chinese(original_excerpt) and not excerpt_english
 
         if not contains_chinese(original_title) and not title_english:
             post["titleEnglish"] = original_title
@@ -528,57 +533,34 @@ def add_translations(posts):
             break
 
         print(f"Translating post {index}/{len(posts)}")
+        post_had_translation = False
 
-        title_marker = "[[[TITLE]]]"
-        excerpt_marker = "[[[EXCERPT]]]"
-        combined_text = (
-            f"{title_marker}\n{original_title if title_needs_translation else ''}"
-            f"\n{excerpt_marker}\n"
-            f"{original_excerpt if excerpt_needs_translation else ''}"
-        )
+        # Translate title and excerpt separately; Google Translate can alter
+        # marker strings when both fields are sent as one combined request.
+        for field_name, original_text, needs_translation in (
+            ("titleEnglish", original_title, title_needs_translation),
+            ("excerptEnglish", original_excerpt, excerpt_needs_translation),
+        ):
+            if not needs_translation:
+                continue
 
-        result = translate_to_english(combined_text)
+            result = translate_to_english(original_text)
+            if result["rate_limited"]:
+                rate_limited = True
+                print("Translation service rate limit reached; stopping this run.")
+                break
 
-        if result["rate_limited"]:
-            rate_limited = True
-            print(
-                "Translation service rate limit reached. "
-                "Stopping translations for this run."
-            )
-            break
-
-        translated = result["translation"]
-        if not translated:
+            translated_text = result["translation"]
+            if translated_text:
+                post[field_name] = translated_text
+                translations_added += 1
+                post_had_translation = True
             time.sleep(TRANSLATION_DELAY_SECONDS)
-            continue
 
-        translated_title = ""
-        translated_excerpt = ""
-
-        if "[[[EXCERPT]]]" in translated:
-            before, after = translated.split("[[[EXCERPT]]]", 1)
-            translated_title = clean_text(
-                before.replace("[[[TITLE]]]", "")
-            )
-            translated_excerpt = clean_text(after)
-        else:
-            # Some translation services alter marker punctuation.
-            parts = re.split(r"\[+EXCERPT\]+|EXCERPT", translated, maxsplit=1)
-            translated_title = clean_text(
-                parts[0].replace("[[[TITLE]]]", "").replace("TITLE", "")
-            )
-            if len(parts) > 1:
-                translated_excerpt = clean_text(parts[1])
-
-        if title_needs_translation and translated_title:
-            post["titleEnglish"] = translated_title
-            translations_added += 1
-        if excerpt_needs_translation and translated_excerpt:
-            post["excerptEnglish"] = translated_excerpt
-            translations_added += 1
-
-        posts_translated += 1
-        time.sleep(TRANSLATION_DELAY_SECONDS)
+        if rate_limited:
+            break
+        if post_had_translation:
+            posts_translated += 1
 
     return translations_added, posts_translated, rate_limited
 
