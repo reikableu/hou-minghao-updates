@@ -63,6 +63,19 @@ def clean_text(value):
     return re.sub(r"\s+", " ", value).strip()
 
 
+def clean_weibo_content(text):
+    """Strip out timestamps, view counts, short links, and engagement stats from Weibo text."""
+    if not text:
+        return ""
+    # Remove leading timestamps like '2026-10-29 18:05'
+    text = re.sub(r"^\d{4}[-/.年]\d{1,2}[-/.月]\d{1,2}[日]?\s*\d{1,2}:\d{2}\s*", "", text)
+    # Remove t.cn short links
+    text = re.sub(r"https?://t\.cn/[a-z0-9]+", "", text, flags=re.IGNORECASE)
+    # Remove trailing chains of numbers, interaction stats, and view metrics (e.g. '4611 3864 2.2万')
+    text = re.sub(r"[\d\s万w\.,]+$", "", text)
+    return clean_text(text)
+
+
 def shorten(value, maximum=220):
     value = clean_text(value)
     return value if len(value) <= maximum else value[:maximum - 1].rstrip() + "…"
@@ -84,9 +97,10 @@ def canonical_post_url(url):
         return ""
     parts = urllib.parse.urlsplit(url)
     host = (parts.netloc or "").lower()
+    if host in {"sina.cn", "m.weibo.cn", "weibo.com"}:
+        host = "weibo.com"
     path = re.sub(r"/+$", "", parts.path or "")
     query_items = urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
-    # Remove common tracking parameters but preserve post IDs and other meaningful query data.
     query_items = [(k, v) for k, v in query_items if not k.lower().startswith("utm_")
                    and k.lower() not in {"from", "source", "ref", "share_source"}]
     query = urllib.parse.urlencode(sorted(query_items))
@@ -98,16 +112,21 @@ def is_profile_url(url):
     return bool(re.search(r"/(media|u)/\d+$", path)) or path.endswith("/mygroups")
 
 
+def normalize_weibo_text(text):
+    text = clean_weibo_text(text).lower()
+    return re.sub(r"[\W_]+", "", text, flags=re.UNICODE)
+
+
 def duplicate_key(post):
     """Prefer a post-specific URL; fall back to normalized Weibo text when only a profile URL exists."""
     url = canonical_post_url(post.get("url", ""))
     if url and not is_profile_url(url):
         return f"url:{url}"
     if post.get("platform") == "Weibo":
-        text = clean_text(f"{post.get('titleOriginal') or post.get('title', '')} {post.get('excerptOriginal') or post.get('excerpt', '')}").lower()
-        text = re.sub(r"[\W_]+", "", text, flags=re.UNICODE)
-        if text:
-            return "weibo-text:" + hashlib.sha256(text.encode("utf-8")).hexdigest()
+        combined = f"{post.get('titleOriginal') or post.get('title', '')} {post.get('excerptOriginal') or post.get('excerpt', '')}"
+        norm_text = normalize_weibo_text(combined)
+        if norm_text:
+            return "weibo-text:" + hashlib.sha256(norm_text.encode("utf-8")).hexdigest()
     return "id:" + str(post.get("id") or make_id(post.get("platform", ""), post.get("source", ""), post.get("title", ""), url))
 
 
@@ -121,7 +140,6 @@ def deduplicate_posts(posts):
             result[key] = post
             continue
         old = result[key]
-        # Prefer the post with a more specific URL or longer text, but preserve prior translations.
         preferred = post if len(clean_text(post.get("excerpt", ""))) > len(clean_text(old.get("excerpt", ""))) else old
         for field in ["titleOriginal", "excerptOriginal", "titleEnglish", "excerptEnglish"]:
             if old.get(field) and not preferred.get(field):
@@ -198,7 +216,6 @@ def parse_feed_date(value):
 
 
 def extract_weibo_display_name(soup, account_id):
-    """Best-effort extraction of the visible Weibo account name from its profile page."""
     candidates = []
     for selector, attr in [
         ("meta[property='og:title']", "content"),
@@ -235,20 +252,28 @@ def collect_sina_account(source_config):
     if not candidates: candidates = soup.find_all(["div", "li"])
     collected, seen_text = [], set()
     for element in candidates:
-        text = clean_text(element.get_text(" ", strip=True))
-        if len(text) < 25 or len(text) > 1800 or text in seen_text: continue
-        # Strict requirement: the post text itself must contain Hou Minghao's name.
-        if "侯明昊" not in text: continue
-        seen_text.add(text)
+        raw_text = clean_text(element.get_text(" ", strip=True))
+        if len(raw_text) < 25 or len(raw_text) > 1800 or raw_text in seen_text: continue
+        if "侯明昊" not in raw_text: continue
+        seen_text.add(raw_text)
         link_element = element.find("a", href=True)
         post_url = urllib.parse.urljoin(source_config["url"], link_element.get("href")) if link_element else source_config["url"]
-        title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", text), 120)
+        
+        # Clean content so it only contains the core update text
+        cleaned_content = clean_weibo_content(raw_text)
+        title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", cleaned_content), 120)
+
         collected.append({
             "id": make_id(source_config["platform"], source_config["source"], title, post_url),
-            "platform": source_config["platform"], "source": source_config["source"],
-            "title": title or "New official Hou Minghao update", "excerpt": shorten(text, 320),
-            "category": determine_category(text, source_config["platform"]), "date": parse_possible_date(text),
-            "url": post_url, "official": source_config["official"], "verified": True,
+            "platform": source_config["platform"], 
+            "source": source_config["source"],
+            "title": title or "New official Hou Minghao update", 
+            "excerpt": shorten(cleaned_content, 320),
+            "category": determine_category(cleaned_content, source_config["platform"]), 
+            "date": parse_possible_date(raw_text),
+            "url": post_url, 
+            "official": source_config["official"], 
+            "verified": True,
             "collectionMethod": "Automatic",
         })
     return collected
@@ -296,12 +321,24 @@ def collect_rss_feed(source_config):
             author = clean_text(item.findtext("author") or item.findtext("{http://purl.org/dc/elements/1.1/}creator")); link = clean_text(item.findtext("link"))
         if not title and desc: title = shorten(desc, 150)
         if not title or not link: continue
+        
         match = re.search(r"@([A-Za-z0-9_]+)", f"{author} {title} {desc}")
-        source_name = "@" + match.group(1) if match else author or source_config["source"]
-        collected.append({"id": make_id("X", source_name, title, link), "platform": "X", "source": source_name,
-                          "title": shorten(title, 180), "excerpt": shorten(desc, 350), "category": "X Update",
-                          "date": parse_feed_date(pub), "url": link, "official": False, "verified": True,
-                          "collectionMethod": "Automatic"})
+        author_name = "@" + match.group(1) if match else author or source_config["source"]
+
+        collected.append({
+            "id": make_id("X", source_config["source"], title, link),
+            "platform": "X",
+            "source": source_config["source"],
+            "author": author_name,
+            "title": shorten(title, 180),
+            "excerpt": shorten(desc, 350),
+            "category": "X Update",
+            "date": parse_feed_date(pub),
+            "url": link,
+            "official": False,
+            "verified": True,
+            "collectionMethod": "Automatic"
+        })
     return collected
 
 
@@ -326,7 +363,6 @@ def post_timestamp(post):
 
 
 def translate_with_mymemory(text):
-    """Fallback translation service. It has its own usage limits and is not guaranteed."""
     response = requests.get(
         "https://api.mymemory.translated.net/get",
         params={"q": text, "langpair": "zh-CN|en"},
@@ -339,8 +375,6 @@ def translate_with_mymemory(text):
     status = payload.get("responseStatus")
     if status not in (None, 200, "200"):
         raise RuntimeError(f"MyMemory response status {status}")
-    # Accept mixed-script output (e.g. names may remain Chinese), but reject
-    # empty or effectively unchanged Chinese output.
     if not translated:
         return ""
     normalized_input = re.sub(r"\s+", "", text).lower()
@@ -353,7 +387,6 @@ def translate_with_mymemory(text):
 
 
 def translate_to_english(text):
-    """Try Google first, then MyMemory if Google fails or rate-limits."""
     text = clean_text(text)
     if not text:
         return {"translation": "", "rate_limited": False, "provider": "none"}
@@ -384,7 +417,6 @@ def translate_to_english(text):
 
 
 def add_translations(posts):
-    """Translate Weibo posts only; remove English translation fields from all other platforms."""
     translations_added = 0
     posts_translated = 0
     posts_attempted = 0
@@ -392,14 +424,11 @@ def add_translations(posts):
     translation_providers = {"Google": 0, "MyMemory": 0}
     print("\nChecking English translations (Weibo only)...")
 
-    # Explicitly remove previously saved English fields from News, X, and any other
-    # non-Weibo items, so the dashboard will no longer display their translations.
     for post in posts:
         if post.get("platform") != "Weibo":
             post.pop("titleEnglish", None)
             post.pop("excerptEnglish", None)
 
-    # Work only on Weibo entries. Non-Weibo posts are never sent to a translator.
     weibo_posts = [post for post in posts if post.get("platform") == "Weibo"]
 
     def translation_priority(post):
@@ -419,8 +448,6 @@ def add_translations(posts):
         title_need = contains_chinese(original_title) and not title_en
         excerpt_need = contains_chinese(original_excerpt) and not excerpt_en
 
-        # For Weibo text that is already English or has no Chinese characters, do not
-        # call a translation service; keep its English field equal to the source text.
         if not contains_chinese(original_title) and not title_en:
             post["titleEnglish"] = original_title
         if not contains_chinese(original_excerpt) and not excerpt_en:
@@ -460,11 +487,10 @@ def add_translations(posts):
     return translations_added, posts_translated, rate_limited, translation_providers
 
 
-
 def main():
     data = load_existing_data()
     existing = deduplicate_posts([p for p in data.get("posts", [])
-                                  if isinstance(p, dict) and p.get("platform") != "News"])
+                                  if isinstance(p, dict) and p.get("platform"] != "News"])
     collected, statuses = [], []
     for config in SOURCES:
         checked = singapore_now(); print(f"Checking {config['name']}...")
@@ -477,7 +503,6 @@ def main():
             statuses.append({"source": config["name"], "status": "Failed", "itemsFound": 0, "checkedAt": checked.isoformat(), "message": str(error)[:200]})
         time.sleep(REQUEST_DELAY_SECONDS)
 
-    # Enforce one daily limit across all Weibo accounts, even if Actions runs repeatedly.
     today = singapore_now().date()
     def is_weibo_today(post):
         if post.get("platform") != "Weibo":
@@ -492,8 +517,8 @@ def main():
 
     existing_today_keys = {duplicate_key(p) for p in existing if is_weibo_today(p)}
     slots = max(0, WEIBO_POST_LIMIT - len(existing_today_keys))
-    new_weibo = [p for p in collected if p.get("platform") == "Weibo"]
-    other_new = [p for p in collected if p.get("platform") not in {"Weibo", "News"}]
+    new_weibo = [p for p in collected if p.get("platform"] == "Weibo"]
+    other_new = [p for p in collected if p.get("platform"] not in {"Weibo", "News"}]
     unique_weibo = deduplicate_posts(new_weibo)
     ordered_weibo = sorted(unique_weibo, key=post_timestamp, reverse=True)
     accepted_weibo = [p for p in ordered_weibo if duplicate_key(p) not in existing_today_keys][:slots]
@@ -501,7 +526,6 @@ def main():
     print(f"Weibo daily limit: {len(existing_today_keys)} already saved today; "
           f"accepted {len(accepted_weibo)} new matching posts (limit {WEIBO_POST_LIMIT}).")
 
-    # Upgrade previously saved numeric Weibo source labels when profile names were found.
     account_names = {}
     for config in SOURCES:
         if config.get("type") == "sina_account":
