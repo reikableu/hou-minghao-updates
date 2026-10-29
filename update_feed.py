@@ -18,7 +18,7 @@ POSTS_FILE = Path("posts.json")
 SINGAPORE = ZoneInfo("Asia/Singapore")
 UTC = ZoneInfo("UTC")
 MAX_POSTS = 200
-MAX_TRANSLATED_POSTS_PER_RUN = 5  # Successful posts; Weibo is prioritized so News cannot use the whole allowance.
+MAX_TRANSLATED_POSTS_PER_RUN = 10  # Successful posts; Weibo is prioritized so News cannot use the whole allowance.
 TRANSLATION_DELAY_SECONDS = 5
 REQUEST_DELAY_SECONDS = 2
 WEIBO_POST_LIMIT = 15  # Maximum matching Weibo posts across all accounts per Singapore calendar day.
@@ -46,8 +46,6 @@ SOURCES = [
     }
     for account_id in WEIBO_ACCOUNT_IDS
 ] + [
-    {"name": "Google News", "source": "Google News", "platform": "News",
-     "query": "侯明昊", "official": False, "type": "google_news"},
     {"name": "Hou Minghao X List", "source": "Hou Minghao X Updates", "platform": "X",
      "url": "https://rss.app/feeds/k375DGhHRMrZ3Ju2.xml", "official": False, "type": "rss_feed"},
 ]
@@ -386,23 +384,33 @@ def translate_to_english(text):
 
 
 def add_translations(posts):
+    """Translate Weibo posts only; remove English translation fields from all other platforms."""
     translations_added = 0
     posts_translated = 0
     posts_attempted = 0
     rate_limited = False
     translation_providers = {"Google": 0, "MyMemory": 0}
-    print("\\nChecking English translations (Weibo prioritized)...")
+    print("\nChecking English translations (Weibo only)...")
+
+    # Explicitly remove previously saved English fields from News, X, and any other
+    # non-Weibo items, so the dashboard will no longer display their translations.
+    for post in posts:
+        if post.get("platform") != "Weibo":
+            post.pop("titleEnglish", None)
+            post.pop("excerptEnglish", None)
+
+    # Work only on Weibo entries. Non-Weibo posts are never sent to a translator.
+    weibo_posts = [post for post in posts if post.get("platform") == "Weibo"]
 
     def translation_priority(post):
-        platform_priority = 0 if post.get("platform") == "Weibo" else 1
         text = clean_text(
             f"{post.get('titleOriginal') or post.get('title', '')} "
             f"{post.get('excerptOriginal') or post.get('excerpt', '')}"
         )
         needs_translation = 0 if contains_chinese(text) else 1
-        return (platform_priority, needs_translation, -post_timestamp(post))
+        return (needs_translation, -post_timestamp(post))
 
-    for index, post in enumerate(sorted(posts, key=translation_priority), 1):
+    for index, post in enumerate(sorted(weibo_posts, key=translation_priority), 1):
         original_title = clean_text(post.get("titleOriginal") or post.get("title", ""))
         original_excerpt = clean_text(post.get("excerptOriginal") or post.get("excerpt", ""))
         post["titleOriginal"], post["excerptOriginal"] = original_title, original_excerpt
@@ -411,6 +419,8 @@ def add_translations(posts):
         title_need = contains_chinese(original_title) and not title_en
         excerpt_need = contains_chinese(original_excerpt) and not excerpt_en
 
+        # For Weibo text that is already English or has no Chinese characters, do not
+        # call a translation service; keep its English field equal to the source text.
         if not contains_chinese(original_title) and not title_en:
             post["titleEnglish"] = original_title
         if not contains_chinese(original_excerpt) and not excerpt_en:
@@ -419,11 +429,11 @@ def add_translations(posts):
         if not title_need and not excerpt_need:
             continue
         if posts_attempted >= MAX_TRANSLATED_POSTS_PER_RUN:
-            print("Translation attempt limit reached; remaining posts will be handled in a future run.")
+            print("Translation attempt limit reached; remaining Weibo posts will be handled in a future run.")
             break
 
         posts_attempted += 1
-        print(f"Translating {post.get('platform', 'post')} post {index}/{len(posts)}")
+        print(f"Translating Weibo post {index}/{len(weibo_posts)}")
         had_translation = False
         for field, original, needed in [
             ("titleEnglish", original_title, title_need),
@@ -443,16 +453,18 @@ def add_translations(posts):
                     translation_providers[provider] += 1
                 time.sleep(TRANSLATION_DELAY_SECONDS)
             else:
-                print(f"Translation unavailable for {field}; will retry on a later run.")
+                print(f"Weibo translation unavailable for {field}; will retry on a later run.")
         if had_translation:
             posts_translated += 1
+
     return translations_added, posts_translated, rate_limited, translation_providers
 
 
 
 def main():
     data = load_existing_data()
-    existing = deduplicate_posts([p for p in data.get("posts", []) if isinstance(p, dict)])
+    existing = deduplicate_posts([p for p in data.get("posts", [])
+                                  if isinstance(p, dict) and p.get("platform") != "News"])
     collected, statuses = [], []
     for config in SOURCES:
         checked = singapore_now(); print(f"Checking {config['name']}...")
@@ -481,7 +493,7 @@ def main():
     existing_today_keys = {duplicate_key(p) for p in existing if is_weibo_today(p)}
     slots = max(0, WEIBO_POST_LIMIT - len(existing_today_keys))
     new_weibo = [p for p in collected if p.get("platform") == "Weibo"]
-    other_new = [p for p in collected if p.get("platform") != "Weibo"]
+    other_new = [p for p in collected if p.get("platform") not in {"Weibo", "News"}]
     unique_weibo = deduplicate_posts(new_weibo)
     ordered_weibo = sorted(unique_weibo, key=post_timestamp, reverse=True)
     accepted_weibo = [p for p in ordered_weibo if duplicate_key(p) not in existing_today_keys][:slots]
@@ -512,7 +524,9 @@ def main():
               "translationStatus": {"translationsAdded": added, "postsTranslatedThisRun": translated,
                                     "maximumPostsPerRun": MAX_TRANSLATED_POSTS_PER_RUN, "rateLimited": limited,
                                     "providersUsed": translation_providers,
-                                    "priority": "Weibo first",
+                                    "priority": "Weibo only",
+                                    "platformsTranslated": ["Weibo"],
+                                    "newsPostsRemoved": True,
                                     "backupProvider": "MyMemory"},
               "sourceStatus": statuses, "posts": final_posts}
     with POSTS_FILE.open("w", encoding="utf-8") as f: json.dump(output, f, ensure_ascii=False, indent=2)
