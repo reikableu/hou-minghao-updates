@@ -17,6 +17,8 @@ from deep_translator import GoogleTranslator
 POSTS_FILE = Path("posts.json")
 SINGAPORE = ZoneInfo("Asia/Singapore")
 MAX_POSTS = 200
+MAX_TRANSLATIONS_PER_RUN = 5
+TRANSLATION_DELAY_SECONDS = 8
 
 HEADERS = {
     "User-Agent": (
@@ -90,6 +92,51 @@ def contains_chinese(text):
     )
 
 def translate_to_english(text):
+    text = clean_text(text)
+
+    if not text:
+        return {
+            "translation": "",
+            "rate_limited": False,
+        }
+
+    if not contains_chinese(text):
+        return {
+            "translation": text,
+            "rate_limited": False,
+        }
+
+    try:
+        translated = GoogleTranslator(
+            source="auto",
+            target="en",
+        ).translate(text=text)
+
+        return {
+            "translation": clean_text(translated),
+            "rate_limited": False,
+        }
+
+    except Exception as error:
+        error_name = type(error).__name__
+        error_message = str(error)
+
+        print(
+            "Translation failed:",
+            error_name,
+            error_message[:200],
+        )
+
+        is_rate_limited = (
+            error_name == "TooManyRequests"
+            or "too many requests" in error_message.lower()
+            or "429" in error_message
+        )
+
+        return {
+            "translation": "",
+            "rate_limited": is_rate_limited,
+        }
     text = clean_text(text)
 
     if not text:
@@ -518,18 +565,22 @@ def main():
         reverse=True,
     )[:MAX_POSTS]
 
-    print()
+        print()
     print("Checking English translations...")
 
     translations_added = 0
+    posts_translated_this_run = 0
+    translation_rate_limited = False
 
     for index, post in enumerate(final_posts, start=1):
         original_title = clean_text(
-            post.get("title", "")
+            post.get("titleOriginal")
+            or post.get("title", "")
         )
 
         original_excerpt = clean_text(
-            post.get("excerpt", "")
+            post.get("excerptOriginal")
+            or post.get("excerpt", "")
         )
 
         post["titleOriginal"] = original_title
@@ -543,48 +594,126 @@ def main():
             post.get("excerptEnglish", "")
         )
 
-        if (
+        title_needs_translation = (
             contains_chinese(original_title)
             and not existing_title_translation
+        )
+
+        excerpt_needs_translation = (
+            contains_chinese(original_excerpt)
+            and not existing_excerpt_translation
+        )
+
+        if (
+            not contains_chinese(original_title)
+            and not existing_title_translation
         ):
-            print(
-                f"Translating title "
-                f"{index}/{len(final_posts)}"
-            )
-
-            post["titleEnglish"] = translate_to_english(
-                original_title
-            )
-
-            if post["titleEnglish"]:
-                translations_added += 1
-
-            time.sleep(1)
-
-        elif not contains_chinese(original_title):
             post["titleEnglish"] = original_title
 
         if (
-            contains_chinese(original_excerpt)
+            not contains_chinese(original_excerpt)
             and not existing_excerpt_translation
         ):
-            print(
-                f"Translating excerpt "
-                f"{index}/{len(final_posts)}"
-            )
-
-            post["excerptEnglish"] = translate_to_english(
-                original_excerpt
-            )
-
-            if post["excerptEnglish"]:
-                translations_added += 1
-
-            time.sleep(1)
-
-        elif not contains_chinese(original_excerpt):
             post["excerptEnglish"] = original_excerpt
-    
+
+        if not (
+            title_needs_translation
+            or excerpt_needs_translation
+        ):
+            continue
+
+        if (
+            posts_translated_this_run
+            >= MAX_TRANSLATIONS_PER_RUN
+        ):
+            print(
+                "Translation limit reached. "
+                "Remaining posts will be handled "
+                "during a future run."
+            )
+            break
+
+        print(
+            f"Translating post "
+            f"{index}/{len(final_posts)}"
+        )
+
+        separator = "\n\n---EXCERPT---\n\n"
+
+        combined_parts = []
+
+        if title_needs_translation:
+            combined_parts.append(original_title)
+        else:
+            combined_parts.append("")
+
+        if excerpt_needs_translation:
+            combined_parts.append(original_excerpt)
+        else:
+            combined_parts.append("")
+
+        combined_text = separator.join(combined_parts)
+
+        result = translate_to_english(combined_text)
+
+        if result["rate_limited"]:
+            translation_rate_limited = True
+
+            print(
+                "Translation service rate limit reached. "
+                "Stopping translations for this run."
+            )
+
+            break
+
+        translated_text = result["translation"]
+
+        if not translated_text:
+            print(
+                "No translation returned. "
+                "Moving to the next post."
+            )
+
+            time.sleep(
+                TRANSLATION_DELAY_SECONDS
+            )
+
+            continue
+
+        translated_parts = translated_text.split(
+            "---EXCERPT---",
+            1,
+        )
+
+        translated_title = clean_text(
+            translated_parts[0]
+            if translated_parts
+            else ""
+        )
+
+        translated_excerpt = clean_text(
+            translated_parts[1]
+            if len(translated_parts) > 1
+            else ""
+        )
+
+        if title_needs_translation and translated_title:
+            post["titleEnglish"] = translated_title
+            translations_added += 1
+
+        if (
+            excerpt_needs_translation
+            and translated_excerpt
+        ):
+            post["excerptEnglish"] = translated_excerpt
+            translations_added += 1
+
+        posts_translated_this_run += 1
+
+        time.sleep(
+            TRANSLATION_DELAY_SECONDS
+        )
+
     successful_sources = sum(
         1
         for source in source_status
@@ -605,6 +734,16 @@ def main():
             f"Completed: {successful_sources} sources successful, "
             f"{failed_sources} failed"
         ),
+        "translationStatus": {
+            "translationsAdded": translations_added,
+            "postsTranslatedThisRun": (
+                posts_translated_this_run
+            ),
+            "maximumPostsPerRun": (
+                MAX_TRANSLATIONS_PER_RUN
+            ),
+            "rateLimited": translation_rate_limited,
+        },
         "sourceStatus": source_status,
         "posts": final_posts,
     }
@@ -624,6 +763,15 @@ def main():
     print("Successful sources:", successful_sources)
     print("Failed sources:", failed_sources)
     print("Translations added:", translations_added)
+    print(
+        "Posts translated this run:",
+        posts_translated_this_run,
+    )
+
+    print(
+        "Translation rate limited:",
+        translation_rate_limited,
+    )
 
 if __name__ == "__main__":
     main()
