@@ -15,9 +15,6 @@ from bs4 import BeautifulSoup
 from deep_translator import GoogleTranslator
 
 POSTS_FILE = Path("posts.json")
-IMAGE_DIR = Path("media")
-RAW_MEDIA_BASE = "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media"
-MAX_IMAGE_DOWNLOADS_PER_RUN = 40
 SINGAPORE = ZoneInfo("Asia/Singapore")
 UTC = ZoneInfo("UTC")
 MAX_POSTS = 200
@@ -64,268 +61,6 @@ def clean_text(value):
     value = unescape(str(value))
     value = BeautifulSoup(value, "html.parser").get_text(" ", strip=True)
     return re.sub(r"\s+", " ", value).strip()
-
-
-def normalize_image_url(url, base_url=""):
-    """Return a clean absolute image URL, including recovery from accidental HTML anchors."""
-    if not url:
-        return ""
-    raw = unescape(str(url)).strip().replace("\/", "/")
-    if "<" in raw and ">" in raw:
-        soup = BeautifulSoup(raw, "html.parser")
-        anchor = soup.find("a", href=True)
-        image = soup.find("img")
-        if anchor and anchor.get("href"):
-            raw = anchor.get("href")
-        elif image:
-            raw = image.get("src") or image.get("data-src") or image.get("data-original") or ""
-        else:
-            raw = soup.get_text(" ", strip=True)
-    match = re.search(r"https?://[^\s\"'<>]+", raw)
-    if match:
-        raw = match.group(0)
-    raw = raw.strip().rstrip(").,;]")
-    if raw.startswith("//"):
-        raw = "https:" + raw
-    elif raw.startswith("/") and base_url:
-        raw = urllib.parse.urljoin(base_url, raw)
-    return raw if raw.startswith(("http://", "https://")) else ""
-
-
-def extract_image_urls(html_content, base_url=""):
-    """Extract post images from normal and lazy-loaded HTML image tags."""
-    if not html_content:
-        return []
-    soup = BeautifulSoup(str(html_content), "html.parser")
-    found = []
-    for image in soup.find_all("img"):
-        candidates = [image.get(name) for name in (
-            "src", "data-src", "data-original", "data-lazy-src", "data-url"
-        )]
-        if image.get("srcset"):
-            candidates.extend(part.strip().split(" ")[0] for part in image["srcset"].split(",") if part.strip())
-        for candidate in candidates:
-            url = normalize_image_url(candidate, base_url)
-            if not url:
-                continue
-            lowered = url.lower()
-            if any(marker in lowered for marker in (
-                "avatar", "profile_image", "emoji", "icon", "logo",
-                "default", "placeholder", "favicon"
-            )):
-                continue
-            if url not in found:
-                found.append(url)
-    return found[:9]
-
-
-def extract_feed_media(item, html_content, base_url=""):
-    """Extract images from RSS HTML, enclosures, and Media RSS."""
-    images = extract_image_urls(html_content, base_url)
-    enclosure = item.find("enclosure")
-    if enclosure is not None:
-        url = normalize_image_url(enclosure.get("url"), base_url)
-        media_type = (enclosure.get("type") or "").lower()
-        if url and (media_type.startswith("image/") or re.search(r"\.(?:jpe?g|png|gif|webp)(?:$|\?)", url, re.I)):
-            if url not in images:
-                images.append(url)
-    for tag in (
-        "{http://search.yahoo.com/mrss/}content",
-        "{http://search.yahoo.com/mrss/}thumbnail",
-    ):
-        for media in item.findall(".//" + tag):
-            url = normalize_image_url(media.get("url"), base_url)
-            if url and url not in images:
-                images.append(url)
-    return images[:9]
-
-
-def image_extension(url, content_type=""):
-    content_type = (content_type or "").lower()
-    if "png" in content_type:
-        return ".png"
-    if "gif" in content_type:
-        return ".gif"
-    if "webp" in content_type:
-        return ".webp"
-    if "jpeg" in content_type or "jpg" in content_type:
-        return ".jpg"
-    path = urllib.parse.urlsplit(url).path.lower()
-    match = re.search(r"\.(jpe?g|png|gif|webp)$", path)
-    return "." + match.group(1).replace("jpeg", "jpg") if match else ".jpg"
-
-
-def cache_remote_image(image_url, post_url=""):
-    """Download an external image into the repository and return its raw GitHub URL."""
-    image_url = normalize_image_url(image_url)
-    if not image_url:
-        return ""
-    if image_url.startswith(RAW_MEDIA_BASE + "/"):
-        return image_url
-
-    IMAGE_DIR.mkdir(exist_ok=True)
-    digest = hashlib.sha256(image_url.encode("utf-8")).hexdigest()[:24]
-
-    for existing in IMAGE_DIR.glob(digest + ".*"):
-        return f"{RAW_MEDIA_BASE}/{existing.name}"
-
-    request_headers = dict(HEADERS)
-    request_headers["Accept"] = "image/avif,image/webp,image/apng,image/*,*/*;q=0.8"
-    if post_url:
-        request_headers["Referer"] = post_url
-
-    response = requests.get(
-        image_url,
-        headers=request_headers,
-        timeout=30,
-        allow_redirects=True,
-    )
-    response.raise_for_status()
-
-    content_type = (response.headers.get("Content-Type") or "").lower()
-    if not content_type.startswith("image/"):
-        raise ValueError(f"Not an image response: {content_type or 'unknown content type'}")
-    if not response.content or len(response.content) > 12 * 1024 * 1024:
-        raise ValueError("Image is empty or larger than 12 MB")
-
-    extension = image_extension(image_url, content_type)
-    filename = digest + extension
-    (IMAGE_DIR / filename).write_bytes(response.content)
-    return f"{RAW_MEDIA_BASE}/{filename}"
-
-
-def localize_post_images(posts):
-    """Cache a limited number of remote images in GitHub for reliable dashboard display."""
-    downloads = 0
-    cached = 0
-    failed = 0
-
-    for post in posts:
-        cleaned_images = []
-        for raw_image in post.get("images", [])[:9]:
-            image_url = normalize_image_url(raw_image)
-            if not image_url:
-                continue
-
-            if image_url.startswith(RAW_MEDIA_BASE + "/"):
-                final_url = image_url
-            elif downloads >= MAX_IMAGE_DOWNLOADS_PER_RUN:
-                # Keep the cleaned remote URL for a future retry.
-                final_url = image_url
-            else:
-                downloads += 1
-                try:
-                    final_url = cache_remote_image(image_url, post.get("url", ""))
-                    cached += 1
-                except Exception as error:
-                    failed += 1
-                    final_url = image_url
-                    print(
-                        "Image cache failed:",
-                        type(error).__name__,
-                        str(error)[:160],
-                    )
-
-            if final_url and final_url not in cleaned_images:
-                cleaned_images.append(final_url)
-
-        post["images"] = cleaned_images[:9]
-
-    print(f"Images cached: {cached}; image cache failures: {failed}")
-    return cached, failed
-
-
-def extract_weibo_post_images(element, base_url=""):
-    """Extract post media while excluding profile photos, avatars, icons, and badges."""
-    if element is None:
-        return []
-
-    candidates = []
-    avatar_markers = (
-        "avatar", "head", "face", "user", "profile", "author",
-        "portrait", "icon", "logo", "badge", "verified", "vip",
-    )
-    media_markers = (
-        "pic", "photo", "media", "image", "content", "feed",
-        "weibo", "album", "gallery", "thumbnail",
-    )
-
-    for image in element.find_all("img"):
-        classes = " ".join(image.get("class", []))
-        parent_classes = " ".join(
-            " ".join(parent.get("class", []))
-            for parent in image.parents
-            if getattr(parent, "get", None)
-        )
-        context = f"{classes} {parent_classes} {image.get('alt', '')}".lower()
-
-        width_text = str(image.get("width", "")).strip()
-        height_text = str(image.get("height", "")).strip()
-        width = int(width_text) if width_text.isdigit() else 0
-        height = int(height_text) if height_text.isdigit() else 0
-
-        # Explicitly reject common avatar containers and small square images.
-        if any(marker in context for marker in avatar_markers) and not any(
-            marker in context for marker in media_markers
-        ):
-            continue
-        if width and height and width <= 120 and height <= 120:
-            continue
-
-        urls = [
-            image.get("data-original"),
-            image.get("data-lazy-src"),
-            image.get("data-src"),
-            image.get("data-url"),
-            image.get("src"),
-        ]
-        srcset = image.get("srcset")
-        if srcset:
-            urls.extend(
-                part.strip().split(" ")[0]
-                for part in srcset.split(",")
-                if part.strip()
-            )
-
-        for raw_url in urls:
-            image_url = normalize_image_url(raw_url, base_url)
-            if not image_url:
-                continue
-            lowered = image_url.lower()
-
-            if any(marker in lowered for marker in (
-                "avatar", "profile", "portrait", "head", "icon",
-                "logo", "badge", "verified", "qrcode", "emoji",
-            )):
-                continue
-            # Weibo profile images commonly expose tiny crop dimensions in the path.
-            if re.search(r"/(?:30|40|50|60|80|100|120)x(?:30|40|50|60|80|100|120)/", lowered):
-                continue
-            if re.search(r"/(?:30|40|50|60|80|100|120)/", lowered) and "sinaimg" in lowered:
-                continue
-
-            candidates.append(image_url)
-
-    # CSS/JSON fallback, but only keep likely full post-media URLs.
-    raw_html = unescape(str(element)).replace("\/", "/")
-    for raw_url in re.findall(
-        r"(?:https?:)?//[^\s\"'<>]+?\.(?:jpe?g|png|gif|webp)(?:\?[^\s\"'<>]*)?",
-        raw_html,
-        flags=re.IGNORECASE,
-    ):
-        image_url = normalize_image_url(raw_url, base_url)
-        lowered = image_url.lower()
-        if not image_url or any(marker in lowered for marker in avatar_markers):
-            continue
-        if re.search(r"/(?:30|40|50|60|80|100|120)x(?:30|40|50|60|80|100|120)/", lowered):
-            continue
-        candidates.append(image_url)
-
-    result = []
-    for image_url in candidates:
-        if image_url not in result:
-            result.append(image_url)
-    return result[:9]
 
 
 def clean_weibo_content(text):
@@ -407,12 +142,6 @@ def deduplicate_posts(posts):
                 preferred[field] = post[field]
         if is_profile_url(preferred.get("url", "")) and not is_profile_url(old.get("url", "")):
             preferred["url"] = old["url"]
-        combined_images = []
-        for image_url in old.get("images", []) + post.get("images", []):
-            image_url = normalize_image_url(image_url)
-            if image_url and image_url not in combined_images:
-                combined_images.append(image_url)
-        preferred["images"] = combined_images[:9]
         result[key] = preferred
     return list(result.values())
 
@@ -523,7 +252,6 @@ def collect_sina_account(source_config):
         link_element = element.find("a", href=True)
         post_url = urllib.parse.urljoin(source_config["url"], link_element.get("href")) if link_element else source_config["url"]
         
-        image_urls = extract_weibo_post_images(element, source_config["url"])
         cleaned_content = clean_weibo_content(raw_text)
         title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", cleaned_content), 120)
 
@@ -533,7 +261,6 @@ def collect_sina_account(source_config):
             "source": source_config["source"],
             "title": title or "New official Hou Minghao update", 
             "excerpt": shorten(cleaned_content, 320),
-            "images": image_urls,
             "category": determine_category(cleaned_content, source_config["platform"]), 
             "date": parse_possible_date(raw_text),
             "url": post_url, 
@@ -550,50 +277,28 @@ def find_atom_text(item, field):
 
 
 def collect_rss_feed(source_config):
-    response = requests.get(source_config["url"], headers=HEADERS, timeout=30)
-    response.raise_for_status()
-    root = ET.fromstring(response.content)
-    items = root.findall(".//item")
-    is_atom = False
+    response = requests.get(source_config["url"], headers=HEADERS, timeout=30); response.raise_for_status()
+    root = ET.fromstring(response.content); items = root.findall(".//item"); is_atom = False
     if not items:
-        items = root.findall(".//{http://www.w3.org/2005/Atom}entry")
-        is_atom = True
-
+        items = root.findall(".//{http://www.w3.org/2005/Atom}entry"); is_atom = True
     collected = []
     for item in items[:25]:
         if is_atom:
-            title = clean_text(find_atom_text(item, "title"))
-            raw_description = find_atom_text(item, "content") or find_atom_text(item, "summary") or ""
-            desc = clean_text(raw_description)
-            pub = clean_text(find_atom_text(item, "published") or find_atom_text(item, "updated"))
-            author_node = item.find("{http://www.w3.org/2005/Atom}author")
-            author = clean_text(author_node.findtext("{http://www.w3.org/2005/Atom}name") or author_node.text) if author_node is not None else ""
+            title = clean_text(find_atom_text(item, "title")); desc = clean_text(find_atom_text(item, "content") or find_atom_text(item, "summary"))
+            pub = clean_text(find_atom_text(item, "published") or find_atom_text(item, "updated")); author = clean_text(find_atom_text(item, "author"))
             link = ""
-            for link_element in item.findall("{http://www.w3.org/2005/Atom}link"):
-                if link_element.get("href"):
-                    link = clean_text(link_element.get("href"))
-                    break
+            for le in item.findall("{http://www.w3.org/2005/Atom}link"):
+                if le.get("href"): link = clean_text(le.get("href")); break
         else:
-            title = clean_text(item.findtext("title"))
-            raw_description = (
-                item.findtext("description")
-                or item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded")
-                or item.findtext("content")
-                or ""
-            )
-            desc = clean_text(raw_description)
+            title = clean_text(item.findtext("title")); desc = clean_text(item.findtext("description") or item.findtext("content"))
             pub = clean_text(item.findtext("pubDate") or item.findtext("published") or item.findtext("updated"))
-            author = clean_text(item.findtext("author") or item.findtext("{http://purl.org/dc/elements/1.1/}creator"))
-            link = clean_text(item.findtext("link"))
-
-        if not title and desc:
-            title = shorten(desc, 150)
-        if not title or not link:
-            continue
-
-        image_urls = extract_feed_media(item, raw_description, source_config["url"])
+            author = clean_text(item.findtext("author") or item.findtext("{http://purl.org/dc/elements/1.1/}creator")); link = clean_text(item.findtext("link"))
+        if not title and desc: title = shorten(desc, 150)
+        if not title or not link: continue
+        
         match = re.search(r"@([A-Za-z0-9_]+)", f"{author} {title} {desc}")
         author_name = "@" + match.group(1) if match else author or source_config["source"]
+
         collected.append({
             "id": make_id("X", source_config["source"], title, link),
             "platform": "X",
@@ -601,15 +306,15 @@ def collect_rss_feed(source_config):
             "author": author_name,
             "title": shorten(title, 180),
             "excerpt": shorten(desc, 350),
-            "images": image_urls,
             "category": "X Update",
             "date": parse_feed_date(pub),
             "url": link,
             "official": False,
             "verified": True,
-            "collectionMethod": "Automatic",
+            "collectionMethod": "Automatic"
         })
     return collected
+
 
 def collect_source(source_config):
     kind = source_config["type"]
@@ -622,10 +327,6 @@ def normalize_existing_post(post):
     post.setdefault("id", make_id(post.get("platform", ""), post.get("source", ""), post.get("title", ""), post.get("url", "")))
     post.setdefault("excerpt", ""); post.setdefault("category", "Other"); post.setdefault("official", False)
     post.setdefault("verified", False); post.setdefault("collectionMethod", "Manual")
-    raw_images = post.get("images", [])
-    if not isinstance(raw_images, list):
-        raw_images = [raw_images] if raw_images else []
-    post["images"] = [url for url in (normalize_image_url(value) for value in raw_images) if url][:9]
     return post
 
 
@@ -814,20 +515,16 @@ def main():
     merged = deduplicate_posts(existing + collected)
     final_posts = sorted(merged, key=post_timestamp, reverse=True)[:MAX_POSTS]
 
-    # sourceStatus.itemsFound is the number matched during this run, not the number
-    # ultimately shown. Add savedItems so the dashboard can display both clearly.
-    saved_counts = {}
+    # The public Sina profile pages expose account avatars more reliably than
+    # actual post media. Suppress Weibo images so profile photos are never
+    # presented as if they were attached to a post. X/RSS images are preserved.
+    suppressed_weibo_images = 0
     for post in final_posts:
-        source_name = clean_text(post.get("source", ""))
-        if source_name:
-            saved_counts[source_name] = saved_counts.get(source_name, 0) + 1
+        if post.get("platform") == "Weibo" and post.get("images"):
+            post["images"] = []
+            suppressed_weibo_images += 1
 
-    for status in statuses:
-        source_name = clean_text(status.get("source", ""))
-        status["savedItems"] = saved_counts.get(source_name, 0)
-        status["countMeaning"] = "itemsFound is matched during scan; savedItems is currently saved in dashboard feed"
-
-    images_cached, image_cache_failures = localize_post_images(final_posts)
+    print("Suppressed unreliable Weibo image sets:", suppressed_weibo_images)
     added, translated, limited, translation_providers = add_translations(final_posts)
     success = sum(s["status"] == "Success" for s in statuses); failed = len(statuses) - success
     output = {"lastUpdated": singapore_now().isoformat(timespec="seconds"),
@@ -838,9 +535,6 @@ def main():
                                     "priority": "Weibo only",
                                     "platformsTranslated": ["Weibo"],
                                     "backupProvider": "MyMemory"},
-              "imageStatus": {"cachedThisRun": images_cached,
-                              "cacheFailures": image_cache_failures,
-                              "maximumDownloadsPerRun": MAX_IMAGE_DOWNLOADS_PER_RUN},
               "sourceStatus": statuses, "posts": final_posts}
     with POSTS_FILE.open("w", encoding="utf-8") as f: json.dump(output, f, ensure_ascii=False, indent=2)
     print("\nCollection completed")
