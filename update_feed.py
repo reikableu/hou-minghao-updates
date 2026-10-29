@@ -490,7 +490,7 @@ def add_translations(posts):
 def main():
     data = load_existing_data()
     existing = deduplicate_posts([p for p in data.get("posts", [])
-                                  if isinstance(p, dict) and p.get("platform"] != "News"])
+                                  if isinstance(p, dict) and p.get("platform") != "News"])
     collected, statuses = [], []
     for config in SOURCES:
         checked = singapore_now(); print(f"Checking {config['name']}...")
