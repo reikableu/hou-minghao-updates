@@ -565,7 +565,7 @@ def main():
         reverse=True,
     )[:MAX_POSTS]
 
-        print()
+    print()
     print("Checking English translations...")
 
     translations_added = 0
