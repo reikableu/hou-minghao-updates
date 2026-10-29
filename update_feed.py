@@ -18,7 +18,7 @@ POSTS_FILE = Path("posts.json")
 SINGAPORE = ZoneInfo("Asia/Singapore")
 UTC = ZoneInfo("UTC")
 MAX_POSTS = 200
-MAX_TRANSLATED_POSTS_PER_RUN = 5
+MAX_TRANSLATED_POSTS_PER_RUN = 5  # Successful posts; Weibo is prioritized so News cannot use the whole allowance.
 TRANSLATION_DELAY_SECONDS = 5
 REQUEST_DELAY_SECONDS = 2
 WEIBO_POST_LIMIT = 15  # Maximum matching Weibo posts across all accounts per Singapore calendar day.
@@ -199,10 +199,38 @@ def parse_feed_date(value):
     return singapore_now().isoformat()
 
 
+def extract_weibo_display_name(soup, account_id):
+    """Best-effort extraction of the visible Weibo account name from its profile page."""
+    candidates = []
+    for selector, attr in [
+        ("meta[property='og:title']", "content"),
+        ("meta[name='twitter:title']", "content"),
+    ]:
+        node = soup.select_one(selector)
+        if node and node.get(attr):
+            candidates.append(clean_text(node.get(attr)))
+    if soup.title and soup.title.string:
+        candidates.append(clean_text(soup.title.string))
+
+    for candidate in candidates:
+        candidate = re.sub(r"\s*[-_|｜].*$", "", candidate).strip()
+        candidate = re.sub(r"^(微博|新浪微博)\s*[-_|｜:]?\s*", "", candidate).strip()
+        candidate = re.sub(r"的微博(?:主页|)?$", "", candidate).strip()
+        candidate = re.sub(r"\s*的个人主页$", "", candidate).strip()
+        if (candidate and candidate not in {account_id, "新浪微博", "微博", "Sina Visitor System"}
+                and len(candidate) <= 60 and not re.fullmatch(r"\d+", candidate)):
+            return candidate
+    return f"Weibo @{account_id}"
+
+
 def collect_sina_account(source_config):
     response = requests.get(source_config["url"], headers=HEADERS, timeout=30)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
+    account_id = source_config["url"].rstrip("/").split("/")[-1]
+    display_name = extract_weibo_display_name(soup, account_id)
+    source_config["source"] = display_name
+    source_config["name"] = display_name
     candidates = []
     for selector in ["article", ".card", ".feed-card", ".weibo-item", ".m-panel", ".content", "section"]:
         candidates.extend(soup.select(selector))
@@ -313,8 +341,15 @@ def translate_with_mymemory(text):
     status = payload.get("responseStatus")
     if status not in (None, 200, "200"):
         raise RuntimeError(f"MyMemory response status {status}")
-    # Reject empty or clearly unchanged Chinese output; leave it for a later run instead.
-    if not translated or contains_chinese(translated):
+    # Accept mixed-script output (e.g. names may remain Chinese), but reject
+    # empty or effectively unchanged Chinese output.
+    if not translated:
+        return ""
+    normalized_input = re.sub(r"\s+", "", text).lower()
+    normalized_output = re.sub(r"\s+", "", translated).lower()
+    if normalized_output == normalized_input:
+        return ""
+    if contains_chinese(translated) and not re.search(r"[A-Za-z]", translated):
         return ""
     return translated
 
@@ -351,40 +386,68 @@ def translate_to_english(text):
 
 
 def add_translations(posts):
-    translations_added = posts_translated = 0; rate_limited = False
+    translations_added = 0
+    posts_translated = 0
+    posts_attempted = 0
+    rate_limited = False
     translation_providers = {"Google": 0, "MyMemory": 0}
-    print("\nChecking English translations...")
-    for index, post in enumerate(posts, 1):
+    print("\\nChecking English translations (Weibo prioritized)...")
+
+    def translation_priority(post):
+        platform_priority = 0 if post.get("platform") == "Weibo" else 1
+        text = clean_text(
+            f"{post.get('titleOriginal') or post.get('title', '')} "
+            f"{post.get('excerptOriginal') or post.get('excerpt', '')}"
+        )
+        needs_translation = 0 if contains_chinese(text) else 1
+        return (platform_priority, needs_translation, -post_timestamp(post))
+
+    for index, post in enumerate(sorted(posts, key=translation_priority), 1):
         original_title = clean_text(post.get("titleOriginal") or post.get("title", ""))
         original_excerpt = clean_text(post.get("excerptOriginal") or post.get("excerpt", ""))
         post["titleOriginal"], post["excerptOriginal"] = original_title, original_excerpt
-        title_en, excerpt_en = clean_text(post.get("titleEnglish", "")), clean_text(post.get("excerptEnglish", ""))
+        title_en = clean_text(post.get("titleEnglish", ""))
+        excerpt_en = clean_text(post.get("excerptEnglish", ""))
         title_need = contains_chinese(original_title) and not title_en
         excerpt_need = contains_chinese(original_excerpt) and not excerpt_en
-        if not contains_chinese(original_title) and not title_en: post["titleEnglish"] = original_title
-        if not contains_chinese(original_excerpt) and not excerpt_en: post["excerptEnglish"] = original_excerpt
-        if not title_need and not excerpt_need: continue
-        if posts_translated >= MAX_TRANSLATED_POSTS_PER_RUN:
-            print("Translation limit reached; remaining posts will be handled during a future run."); break
-        print(f"Translating post {index}/{len(posts)}")
+
+        if not contains_chinese(original_title) and not title_en:
+            post["titleEnglish"] = original_title
+        if not contains_chinese(original_excerpt) and not excerpt_en:
+            post["excerptEnglish"] = original_excerpt
+
+        if not title_need and not excerpt_need:
+            continue
+        if posts_attempted >= MAX_TRANSLATED_POSTS_PER_RUN:
+            print("Translation attempt limit reached; remaining posts will be handled in a future run.")
+            break
+
+        posts_attempted += 1
+        print(f"Translating {post.get('platform', 'post')} post {index}/{len(posts)}")
         had_translation = False
-        for field, original, needed in [("titleEnglish", original_title, title_need), ("excerptEnglish", original_excerpt, excerpt_need)]:
-            if not needed: continue
+        for field, original, needed in [
+            ("titleEnglish", original_title, title_need),
+            ("excerptEnglish", original_excerpt, excerpt_need),
+        ]:
+            if not needed:
+                continue
             result = translate_to_english(original)
             if result["rate_limited"]:
                 rate_limited = True
-                print("Google rate limit reached and backup unavailable; leaving remaining translations for a future run.")
-                break
             if result["translation"]:
                 post[field] = result["translation"]
                 translations_added += 1
                 had_translation = True
-                if result.get("provider") in translation_providers:
-                    translation_providers[result["provider"]] += 1
-            time.sleep(TRANSLATION_DELAY_SECONDS)
-        if rate_limited: break
-        if had_translation: posts_translated += 1
+                provider = result.get("provider")
+                if provider in translation_providers:
+                    translation_providers[provider] += 1
+                time.sleep(TRANSLATION_DELAY_SECONDS)
+            else:
+                print(f"Translation unavailable for {field}; will retry on a later run.")
+        if had_translation:
+            posts_translated += 1
     return translations_added, posts_translated, rate_limited, translation_providers
+
 
 
 def main():
@@ -426,6 +489,20 @@ def main():
     print(f"Weibo daily limit: {len(existing_today_keys)} already saved today; "
           f"accepted {len(accepted_weibo)} new matching posts (limit {WEIBO_POST_LIMIT}).")
 
+    # Upgrade previously saved numeric Weibo source labels when profile names were found.
+    account_names = {}
+    for config in SOURCES:
+        if config.get("type") == "sina_account":
+            account_id = config.get("url", "").rstrip("/").split("/")[-1]
+            name = config.get("source", "")
+            if account_id and name and not re.fullmatch(r"Weibo @?\d+", name):
+                account_names[account_id] = name
+    for post in existing:
+        if post.get("platform") == "Weibo":
+            match = re.search(r"Weibo @?(\d+)", str(post.get("source", "")))
+            if match and match.group(1) in account_names:
+                post["source"] = account_names[match.group(1)]
+
     merged = deduplicate_posts(existing + collected)
     final_posts = sorted(merged, key=post_timestamp, reverse=True)[:MAX_POSTS]
     added, translated, limited, translation_providers = add_translations(final_posts)
@@ -435,6 +512,7 @@ def main():
               "translationStatus": {"translationsAdded": added, "postsTranslatedThisRun": translated,
                                     "maximumPostsPerRun": MAX_TRANSLATED_POSTS_PER_RUN, "rateLimited": limited,
                                     "providersUsed": translation_providers,
+                                    "priority": "Weibo first",
                                     "backupProvider": "MyMemory"},
               "sourceStatus": statuses, "posts": final_posts}
     with POSTS_FILE.open("w", encoding="utf-8") as f: json.dump(output, f, ensure_ascii=False, indent=2)
