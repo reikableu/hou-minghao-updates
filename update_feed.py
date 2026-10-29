@@ -10,7 +10,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
-from bs4 import BeautifulSoup
+from deep_translator import GoogleTranslator
 
 
 POSTS_FILE = Path("posts.json")
@@ -77,7 +77,43 @@ def shorten(value, maximum=220):
 
     return value[: maximum - 1].rstrip() + "…"
 
+def contains_chinese(text):
+    if not text:
+        return False
 
+    return bool(
+        re.search(
+            r"[\u3400-\u4dbf\u4e00-\u9fff]",
+            text,
+        )
+    )
+
+def translate_to_english(text):
+    text = clean_text(text)
+
+    if not text:
+        return ""
+
+    if not contains_chinese(text):
+        return text
+
+    try:
+        translated = GoogleTranslator(
+            source="auto",
+            target="en",
+        ).translate(text=text)
+
+        return clean_text(translated)
+
+    except Exception as error:
+        print(
+            "Translation failed:",
+            type(error).__name__,
+            str(error)[:150],
+        )
+
+        return ""
+        
 def make_id(platform, source, title, url):
     value = "|".join(
         [
@@ -481,6 +517,73 @@ def main():
         reverse=True,
     )[:MAX_POSTS]
 
+        print()
+    print("Checking English translations...")
+
+    translations_added = 0
+
+    for index, post in enumerate(final_posts, start=1):
+        original_title = clean_text(
+            post.get("title", "")
+        )
+
+        original_excerpt = clean_text(
+            post.get("excerpt", "")
+        )
+
+        post["titleOriginal"] = original_title
+        post["excerptOriginal"] = original_excerpt
+
+        existing_title_translation = clean_text(
+            post.get("titleEnglish", "")
+        )
+
+        existing_excerpt_translation = clean_text(
+            post.get("excerptEnglish", "")
+        )
+
+        if (
+            contains_chinese(original_title)
+            and not existing_title_translation
+        ):
+            print(
+                f"Translating title "
+                f"{index}/{len(final_posts)}"
+            )
+
+            post["titleEnglish"] = (
+                translate_to_english(original_title)
+            )
+
+            if post["titleEnglish"]:
+                translations_added += 1
+
+            time.sleep(1)
+
+        elif not contains_chinese(original_title):
+            post["titleEnglish"] = original_title
+
+        if (
+            contains_chinese(original_excerpt)
+            and not existing_excerpt_translation
+        ):
+            print(
+                f"Translating excerpt "
+                f"{index}/{len(final_posts)}"
+            )
+
+            post["excerptEnglish"] = (
+                translate_to_english(original_excerpt)
+            )
+
+            if post["excerptEnglish"]:
+                translations_added += 1
+
+            time.sleep(1)
+
+        elif not contains_chinese(original_excerpt):
+            post["excerptEnglish"] = original_excerpt
+            
     successful_sources = sum(
         1
         for source in source_status
@@ -519,7 +622,7 @@ def main():
     print("Total saved:", len(final_posts))
     print("Successful sources:", successful_sources)
     print("Failed sources:", failed_sources)
-
+    print("Translations added:", translations_added)
 
 if __name__ == "__main__":
     main()
