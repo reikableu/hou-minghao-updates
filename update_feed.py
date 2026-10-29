@@ -63,6 +63,66 @@ def clean_text(value):
     return re.sub(r"\s+", " ", value).strip()
 
 
+def normalize_image_url(url, base_url=""):
+    """Return an absolute HTTP image URL, or an empty string."""
+    url = unescape(clean_text(url))
+    if not url:
+        return ""
+    if url.startswith("//"):
+        url = "https:" + url
+    elif url.startswith("/") and base_url:
+        url = urllib.parse.urljoin(base_url, url)
+    return url if url.startswith(("http://", "https://")) else ""
+
+
+def extract_image_urls(html_content, base_url=""):
+    """Extract post images from normal and lazy-loaded HTML image tags."""
+    if not html_content:
+        return []
+    soup = BeautifulSoup(str(html_content), "html.parser")
+    found = []
+    for image in soup.find_all("img"):
+        candidates = [image.get(name) for name in (
+            "src", "data-src", "data-original", "data-lazy-src", "data-url"
+        )]
+        if image.get("srcset"):
+            candidates.extend(part.strip().split(" ")[0] for part in image["srcset"].split(",") if part.strip())
+        for candidate in candidates:
+            url = normalize_image_url(candidate, base_url)
+            if not url:
+                continue
+            lowered = url.lower()
+            if any(marker in lowered for marker in (
+                "avatar", "profile_image", "emoji", "icon", "logo",
+                "default", "placeholder", "favicon"
+            )):
+                continue
+            if url not in found:
+                found.append(url)
+    return found[:9]
+
+
+def extract_feed_media(item, html_content, base_url=""):
+    """Extract images from RSS HTML, enclosures, and Media RSS."""
+    images = extract_image_urls(html_content, base_url)
+    enclosure = item.find("enclosure")
+    if enclosure is not None:
+        url = normalize_image_url(enclosure.get("url"), base_url)
+        media_type = (enclosure.get("type") or "").lower()
+        if url and (media_type.startswith("image/") or re.search(r"\.(?:jpe?g|png|gif|webp)(?:$|\?)", url, re.I)):
+            if url not in images:
+                images.append(url)
+    for tag in (
+        "{http://search.yahoo.com/mrss/}content",
+        "{http://search.yahoo.com/mrss/}thumbnail",
+    ):
+        for media in item.findall(".//" + tag):
+            url = normalize_image_url(media.get("url"), base_url)
+            if url and url not in images:
+                images.append(url)
+    return images[:9]
+
+
 def clean_weibo_content(text):
     """Strip out timestamps, view counts, short links, and engagement stats from Weibo text."""
     if not text:
@@ -142,6 +202,12 @@ def deduplicate_posts(posts):
                 preferred[field] = post[field]
         if is_profile_url(preferred.get("url", "")) and not is_profile_url(old.get("url", "")):
             preferred["url"] = old["url"]
+        combined_images = []
+        for image_url in old.get("images", []) + post.get("images", []):
+            image_url = normalize_image_url(image_url)
+            if image_url and image_url not in combined_images:
+                combined_images.append(image_url)
+        preferred["images"] = combined_images[:9]
         result[key] = preferred
     return list(result.values())
 
@@ -252,6 +318,7 @@ def collect_sina_account(source_config):
         link_element = element.find("a", href=True)
         post_url = urllib.parse.urljoin(source_config["url"], link_element.get("href")) if link_element else source_config["url"]
         
+        image_urls = extract_image_urls(str(element), source_config["url"])
         cleaned_content = clean_weibo_content(raw_text)
         title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", cleaned_content), 120)
 
@@ -261,6 +328,7 @@ def collect_sina_account(source_config):
             "source": source_config["source"],
             "title": title or "New official Hou Minghao update", 
             "excerpt": shorten(cleaned_content, 320),
+            "images": image_urls,
             "category": determine_category(cleaned_content, source_config["platform"]), 
             "date": parse_possible_date(raw_text),
             "url": post_url, 
@@ -277,28 +345,50 @@ def find_atom_text(item, field):
 
 
 def collect_rss_feed(source_config):
-    response = requests.get(source_config["url"], headers=HEADERS, timeout=30); response.raise_for_status()
-    root = ET.fromstring(response.content); items = root.findall(".//item"); is_atom = False
+    response = requests.get(source_config["url"], headers=HEADERS, timeout=30)
+    response.raise_for_status()
+    root = ET.fromstring(response.content)
+    items = root.findall(".//item")
+    is_atom = False
     if not items:
-        items = root.findall(".//{http://www.w3.org/2005/Atom}entry"); is_atom = True
+        items = root.findall(".//{http://www.w3.org/2005/Atom}entry")
+        is_atom = True
+
     collected = []
     for item in items[:25]:
         if is_atom:
-            title = clean_text(find_atom_text(item, "title")); desc = clean_text(find_atom_text(item, "content") or find_atom_text(item, "summary"))
-            pub = clean_text(find_atom_text(item, "published") or find_atom_text(item, "updated")); author = clean_text(find_atom_text(item, "author"))
+            title = clean_text(find_atom_text(item, "title"))
+            raw_description = find_atom_text(item, "content") or find_atom_text(item, "summary") or ""
+            desc = clean_text(raw_description)
+            pub = clean_text(find_atom_text(item, "published") or find_atom_text(item, "updated"))
+            author_node = item.find("{http://www.w3.org/2005/Atom}author")
+            author = clean_text(author_node.findtext("{http://www.w3.org/2005/Atom}name") or author_node.text) if author_node is not None else ""
             link = ""
-            for le in item.findall("{http://www.w3.org/2005/Atom}link"):
-                if le.get("href"): link = clean_text(le.get("href")); break
+            for link_element in item.findall("{http://www.w3.org/2005/Atom}link"):
+                if link_element.get("href"):
+                    link = clean_text(link_element.get("href"))
+                    break
         else:
-            title = clean_text(item.findtext("title")); desc = clean_text(item.findtext("description") or item.findtext("content"))
+            title = clean_text(item.findtext("title"))
+            raw_description = (
+                item.findtext("description")
+                or item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded")
+                or item.findtext("content")
+                or ""
+            )
+            desc = clean_text(raw_description)
             pub = clean_text(item.findtext("pubDate") or item.findtext("published") or item.findtext("updated"))
-            author = clean_text(item.findtext("author") or item.findtext("{http://purl.org/dc/elements/1.1/}creator")); link = clean_text(item.findtext("link"))
-        if not title and desc: title = shorten(desc, 150)
-        if not title or not link: continue
-        
+            author = clean_text(item.findtext("author") or item.findtext("{http://purl.org/dc/elements/1.1/}creator"))
+            link = clean_text(item.findtext("link"))
+
+        if not title and desc:
+            title = shorten(desc, 150)
+        if not title or not link:
+            continue
+
+        image_urls = extract_feed_media(item, raw_description, source_config["url"])
         match = re.search(r"@([A-Za-z0-9_]+)", f"{author} {title} {desc}")
         author_name = "@" + match.group(1) if match else author or source_config["source"]
-
         collected.append({
             "id": make_id("X", source_config["source"], title, link),
             "platform": "X",
@@ -306,15 +396,15 @@ def collect_rss_feed(source_config):
             "author": author_name,
             "title": shorten(title, 180),
             "excerpt": shorten(desc, 350),
+            "images": image_urls,
             "category": "X Update",
             "date": parse_feed_date(pub),
             "url": link,
             "official": False,
             "verified": True,
-            "collectionMethod": "Automatic"
+            "collectionMethod": "Automatic",
         })
     return collected
-
 
 def collect_source(source_config):
     kind = source_config["type"]
@@ -327,6 +417,10 @@ def normalize_existing_post(post):
     post.setdefault("id", make_id(post.get("platform", ""), post.get("source", ""), post.get("title", ""), post.get("url", "")))
     post.setdefault("excerpt", ""); post.setdefault("category", "Other"); post.setdefault("official", False)
     post.setdefault("verified", False); post.setdefault("collectionMethod", "Manual")
+    raw_images = post.get("images", [])
+    if not isinstance(raw_images, list):
+        raw_images = [raw_images] if raw_images else []
+    post["images"] = [url for url in (normalize_image_url(value) for value in raw_images) if url][:9]
     return post
 
 
