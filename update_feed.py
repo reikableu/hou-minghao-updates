@@ -1,71 +1,541 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hou Minghao Update Hub</title><style>
-:root{--bg:#f6f1ea;--card:#fffdf9;--ink:#211b17;--muted:#746b63;--line:#e8ddd2;--accent:#98583e}*{box-sizing:border-box}body{margin:0;background-color:var(--bg);background-image:linear-gradient(rgba(246,241,234,.72),rgba(246,241,234,.82)),url('https://drive.google.com/thumbnail?id=1rU_kAxxe_UnUayJpFDYvKS2qCjtA5IhO&sz=w2560');background-size:cover;background-position:center top;background-attachment:fixed;background-repeat:no-repeat;color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,sans-serif}body:before{content:'';position:fixed;inset:0;z-index:-1;background:linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,245,235,.08));pointer-events:none}.wrap{max-width:1050px;margin:auto;padding:25px 16px 60px}header{display:flex;align-items:center;gap:13px}.logo{width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,#8d4f38,#ddb07b);color:white;display:grid;place-items:center;font-weight:900}h1{font-family:Georgia,serif;margin:0;font-size:clamp(1.6rem,4vw,2.5rem)}.sub,.muted{color:var(--muted)}.hero,.status,.card,.side{background:rgba(255,253,249,.90);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(232,221,210,.85);border-radius:23px;box-shadow:0 12px 35px #3c291512}.hero{margin:22px 0;padding:clamp(24px,5vw,43px);display:grid;grid-template-columns:1fr auto;gap:25px;align-items:end}.hero h2{font-family:Georgia,serif;font-size:clamp(2.1rem,7vw,4.8rem);line-height:.95;margin:8px 0 14px}.stats{display:grid;grid-template-columns:repeat(2,120px);gap:9px}.stat{padding:15px;border:1px solid var(--line);border-radius:16px}.stat b{font-size:1.45rem;display:block}.status{padding:15px 18px;display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:15px}.tools{display:grid;grid-template-columns:1fr auto;gap:9px;margin:16px 0}.tools input{padding:13px 15px;border:1px solid var(--line);border-radius:14px;background:var(--card);font:inherit}.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:13px;padding:11px 14px;font-weight:700;cursor:pointer}.btn.primary{background:var(--accent);border-color:var(--accent);color:white}.filters{display:flex;gap:7px;overflow:auto;margin-bottom:16px}.filters button{white-space:nowrap}.filters .on{background:var(--ink);color:var(--bg)}main{display:grid;grid-template-columns:1fr 280px;gap:18px}.feed{display:grid;gap:12px}.card{padding:19px}.meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.78rem;color:var(--muted)}.tag{padding:5px 8px;border-radius:8px;background:#f2e7dc;color:#84492f;font-weight:800;text-transform:uppercase}.card h3{font-family:Georgia,serif;font-size:1.22rem;margin:12px 0 7px}.card p{line-height:1.55;margin:0;color:var(--muted)}.actions{display:flex;align-items:center;gap:8px;margin-top:15px}.actions a{text-decoration:none}.star{border:0;background:none;font-size:1.2rem;color:#aaa;cursor:pointer}.star.on{color:#d18d22}.side{padding:17px;align-self:start}.side h3{margin-top:0}.source{font-size:.82rem;padding:9px 0;border-bottom:1px solid var(--line);cursor:pointer}.source:hover{color:var(--accent)}.empty{text-align:center;padding:45px;color:var(--muted)}.calendar-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}.calendar-head button{padding:7px 10px}.calendar-title{font-weight:800;font-size:.9rem;text-align:center}.week,.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.week span{text-align:center;font-size:.67rem;color:var(--muted);font-weight:800}.day{min-height:34px;border:0;border-radius:9px;background:transparent;color:var(--ink);cursor:pointer;font-size:.78rem;position:relative}.day:hover{background:#f2e7dc}.day.has{font-weight:900;background:#f5e5d7}.day.has:after{content:'';position:absolute;width:5px;height:5px;border-radius:50%;background:var(--accent);left:50%;bottom:3px;transform:translateX(-50%)}.day.selected{background:var(--accent);color:white}.day.selected:after{background:white}.day.blank{cursor:default}.calendar-clear{width:100%;margin-top:10px;padding:8px}.translation{margin-top:14px;padding:13px 14px;border-left:3px solid var(--accent);background:rgba(152,88,62,.06);border-radius:0 12px 12px 0}.translation-label{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:900;color:var(--accent);margin-bottom:6px}.translation h4{font-family:Georgia,serif;margin:0 0 6px;font-size:1.04rem}.translation p{margin:0}.selected-date{font-size:.8rem;color:var(--accent);font-weight:800;margin:8px 0 0}@media(max-width:760px){.hero,main{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}main aside{grid-row:1}}@media(max-width:480px){.tools{grid-template-columns:1fr}.status{align-items:flex-start;flex-direction:column}}
-.source-link{background:none;border:none;color:var(--accent);cursor:pointer;padding:0;font:inherit;font-weight:bold;text-decoration:underline;}
-</style></head><body><div class="wrap"><header><div class="logo">HM</div><div><h1>Hou Minghao Update Hub</h1><div class="sub">Daily feed from GitHub</div></div></header><section class="hero"><div><div class="muted">STAY IN THE LOOP</div><h2>All updates.<br>One calm space.</h2><p class="muted">Public updates remain linked to their original publishers.</p></div><div class="stats"><div class="stat"><b id="total">0</b><span class="muted">updates</span></div><div class="stat"><b id="official">0</b><span class="muted">official</span></div><div class="stat"><b id="saved">0</b><span class="muted">saved</span></div><div class="stat"><b id="sources">0</b><span class="muted">sources</span></div></div></section><section class="status"><div><b id="statusTitle">Connecting to GitHub feed...</b><div class="muted" id="statusText">Loading posts.json</div></div><button class="btn" id="refresh">Refresh feed</button></section><div class="tools"><input id="search" placeholder="Search posts, sources, or categories"><button class="btn" id="clear">Clear search</button></div><div class="filters" id="filters"></div><main><section class="feed" id="feed"></section><aside><div class="side"><div class="calendar-head"><button class="btn" id="prevMonth" aria-label="Previous month">‹</button><div class="calendar-title" id="calendarTitle"></div><button class="btn" id="nextMonth" aria-label="Next month">›</button></div><div class="week"><span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span></div><div class="days" id="calendarDays"></div><div class="selected-date" id="selectedDateText">Showing all dates</div><button class="btn calendar-clear" id="clearDate">Clear date filter</button></div><div class="side"><h3>Source status</h3><div id="sourceStatus" class="muted">Waiting for feed...</div><p class="muted" style="font-size:.78rem">Automatic posts come from your public GitHub feed. Favorites are stored only in this browser.</p></div></aside></main></div><script>
-const FEED_URL='https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/posts.json';
-let posts=[], active='All', selectedDate='', calendarCursor=new Date(), saved=new Set(JSON.parse(localStorage.getItem('hm_saved')||'[]')), meta={};
-const $=s=>document.querySelector(s), esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]||c));
-function niceDate(v){try{return new Intl.DateTimeFormat(undefined,{dateStyle:'medium',timeStyle:'short'}).format(new Date(v))}catch{return v||''}}
-function localKey(v){const d=new Date(v);if(Number.isNaN(d.getTime()))return '';const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
-function renderCalendar(){const y=calendarCursor.getFullYear(),m=calendarCursor.getMonth();$('#calendarTitle').textContent=new Intl.DateTimeFormat(undefined,{month:'long',year:'numeric'}).format(calendarCursor);const counts={};posts.forEach(p=>{const k=localKey(p.date);if(k)counts[k]=(counts[k]||0)+1});const first=new Date(y,m,1).getDay(), total=new Date(y,m+1,0).getDate();let html='';for(let i=0;i<first;i++)html+='<button class="day blank" disabled></button>';for(let d=1;d<=total;d++){const k=`${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;html+=`<button class="day ${counts[k]?'has':''} ${selectedDate===k?'selected':''}" data-date="${k}" title="${counts[k]||0} update${counts[k]===1?'':'s'}">${d}</button>`}$('#calendarDays').innerHTML=html;document.querySelectorAll('[data-date]').forEach(b=>b.onclick=()=>{selectedDate=b.dataset.date;$('#selectedDateText').textContent='Showing '+new Intl.DateTimeFormat(undefined,{dateStyle:'long'}).format(new Date(selectedDate+'T12:00:00'));render()})}
-function render(){
- const cats=['All','Weibo / Official','X','Saved'];
- const activeIsSource = active.startsWith('source:');
- const sourceNameFiltered = activeIsSource ? active.replace('source:', '') : '';
+import hashlib
+import json
+import re
+import time
+import urllib.parse
+import xml.etree.ElementTree as ET
+from datetime import datetime
+from email.utils import parsedate_to_datetime
+from html import unescape
+from pathlib import Path
+from zoneinfo import ZoneInfo
 
- $('#filters').innerHTML= cats.map(c=>`<button class="btn ${active===c?'on':''}" data-f="${esc(c)}">${esc(c)}</button>`).join('') +
-   (activeIsSource ? `<button class="btn on" data-f="clear-source">Source: ${esc(sourceNameFiltered)} (×)</button>` : '');
+import requests
+from bs4 import BeautifulSoup
+from deep_translator import GoogleTranslator
 
- document.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{
-  if(b.dataset.f === 'clear-source') { active='All'; }
-  else { active=b.dataset.f; }
-  render();
- });
+POSTS_FILE = Path("posts.json")
+SINGAPORE = ZoneInfo("Asia/Singapore")
+UTC = ZoneInfo("UTC")
+MAX_POSTS = 200
+MAX_TRANSLATED_POSTS_PER_RUN = 10  # Successful posts; Weibo is prioritized so News cannot use the whole allowance.
+TRANSLATION_DELAY_SECONDS = 5
+REQUEST_DELAY_SECONDS = 2
+WEIBO_POST_LIMIT = 15  # Maximum matching Weibo posts across all accounts per Singapore calendar day.
 
- const q=$('#search').value.toLowerCase().trim();
- const filtered=posts.filter(p=>{
-  const pSource = p.source || '';
-  const pAuthor = p.author || '';
-  const typeMatch= active==='All'||
-                   (active==='Weibo / Official'&&(p.platform==='Weibo'||p.official))||
-                   (active==='X'&&p.platform==='X')||
-                   (active==='Saved'&&saved.has(p.id))||
-                   (activeIsSource && (pSource === sourceNameFiltered || pAuthor === sourceNameFiltered || pSource.toLowerCase() === sourceNameFiltered.toLowerCase()));
-  return (!q||JSON.stringify(p).toLowerCase().includes(q))&&typeMatch&&(!selectedDate||localKey(p.date)===selectedDate)
- }).sort((a,b)=>new Date(b.date)-new Date(a.date));
-
- $('#feed').innerHTML=filtered.length?filtered.map(p=>{
-  const originalTitle=p.titleOriginal||p.title||'Hou Minghao update', originalExcerpt=p.excerptOriginal||p.excerpt||'', englishTitle=p.titleEnglish||'', englishExcerpt=p.excerptEnglish||'';
-  const showTranslation=(englishTitle&&englishTitle!==originalTitle)||(englishExcerpt&&englishExcerpt!==originalExcerpt);
-  const displaySource = p.source || p.author || 'Source';
-  return `<article class="card"><div class="meta"><span class="tag">${esc(p.platform||'Update')}</span>${p.official?'<span class="tag">Official</span>':''}<span>${esc(niceDate(p.date))}</span></div><h3>${esc(originalTitle)}</h3><p><button class="source-link" data-source="${esc(displaySource)}">${esc(displaySource)}</button>${originalExcerpt?'<br>'+esc(originalExcerpt):''}</p>${showTranslation?`<div class="translation"><div class="translation-label">English translation</div>${englishTitle?`<h4>${esc(englishTitle)}</h4>`:''}${englishExcerpt?`<p>${esc(englishExcerpt)}</p>`:''}</div>`:''}<div class="actions"><a class="btn primary" target="_blank" rel="noopener" href="${esc(p.url)}">View original</a><button class="star ${saved.has(p.id)?'on':''}" data-save="${esc(p.id)}">★</button></div></article>`
- }).join(''):'<div class="empty">No matching posts found for this selection.</div>';
-
- document.querySelectorAll('[data-save]').forEach(b=>b.onclick=()=>{saved.has(b.dataset.save)?saved.delete(b.dataset.save):saved.add(b.dataset.save);localStorage.setItem('hm_saved',JSON.stringify([...saved]));render()});
- document.querySelectorAll('[data-source]').forEach(b=>b.onclick=()=>{active='source:'+b.dataset.source;render()});
-
- $('#total').textContent=posts.length;$('#official').textContent=posts.filter(p=>p.official).length;$('#saved').textContent=saved.size;$('#sources').textContent=new Set(posts.map(p=>p.platform)).size;renderCalendar()
+HEADERS = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                   "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
 }
-async function load(){
- const btn=$('#refresh');btn.disabled=true;$('#statusTitle').textContent='Checking GitHub feed...';$('#statusText').textContent='Requesting the latest posts.json';
- try{
-  const r=await fetch(FEED_URL+'?t='+Date.now(),{cache:'no-store'});
-  if(!r.ok)throw new Error('HTTP '+r.status);
-  meta=await r.json();posts=Array.isArray(meta.posts)?meta.posts:[];
-  $('#statusTitle').textContent='GitHub feed connected';$('#statusText').textContent=`Last updated ${niceDate(meta.lastUpdated)}. ${posts.length} posts loaded. ${meta.status||''}`;
-  
-  const ss=Array.isArray(meta.sourceStatus)?meta.sourceStatus:[];
-  $('#sourceStatus').innerHTML=ss.length?ss.map(x=>`<div class="source" data-source-filter="${esc(x.source)}"><b>${esc(x.source)}</b><br>${x.status==='Success'?'●':'!'} ${esc(x.status)} · ${Number(x.itemsFound||0)} items</div>`).join(''):'No source status was provided.';
-  
-  // Make sidebar sources clickable to filter
-  document.querySelectorAll('[data-source-filter]').forEach(el=>{
-   el.onclick=()=>{ active='source:'+el.dataset.sourceFilter; render(); }
-  });
+WEIBO_ACCOUNT_IDS = [
+    "5763552342", "7954477778", "1831550987", "7431934486",
+    "6941933193", "5919565877", "9072975151", "6609562381",
+    "5894691419", "1882778030", "7728002071", "7854683575",
+    "2682624851",
+]
 
-  render();
- }catch(e){
-  $('#statusTitle').textContent='Could not load GitHub feed';$('#statusText').textContent=e.message+'. Confirm the repository is public and posts.json is on the main branch.';$('#sourceStatus').textContent='Feed unavailable.';render();
- }finally{btn.disabled=false}
-}
-$('#refresh').onclick=load;$('#search').oninput=render;$('#clear').onclick=()=>{$('#search').value='';render()};$('#prevMonth').onclick=()=>{calendarCursor=new Date(calendarCursor.getFullYear(),calendarCursor.getMonth()-1,1);renderCalendar()};$('#nextMonth').onclick=()=>{calendarCursor=new Date(calendarCursor.getFullYear(),calendarCursor.getMonth()+1,1);renderCalendar()};$('#clearDate').onclick=()=>{selectedDate='';$('#selectedDateText').textContent='Showing all dates';render()};render();load();
-</script></body></html>
+SOURCES = [
+    {
+        "name": f"Weibo account {account_id}",
+        "source": f"Weibo @{account_id}",
+        "platform": "Weibo",
+        "url": f"https://sina.cn/media/{account_id}",
+        "official": account_id in {"1831550987", "5763552342"},
+        "type": "sina_account",
+    }
+    for account_id in WEIBO_ACCOUNT_IDS
+] + [
+    {"name": "Hou Minghao X List", "source": "Hou Minghao X Updates", "platform": "X",
+     "url": "https://rss.app/feeds/k375DGhHRMrZ3Ju2.xml", "official": False, "type": "rss_feed"},
+]
+
+
+def singapore_now():
+    return datetime.now(SINGAPORE)
+
+
+def clean_text(value):
+    if not value:
+        return ""
+    value = unescape(str(value))
+    value = BeautifulSoup(value, "html.parser").get_text(" ", strip=True)
+    return re.sub(r"\s+", " ", value).strip()
+
+
+def shorten(value, maximum=220):
+    value = clean_text(value)
+    return value if len(value) <= maximum else value[:maximum - 1].rstrip() + "…"
+
+
+def contains_chinese(text):
+    return bool(re.search(r"[\u3400-\u4dbf\u4e00-\u9fff]", text or ""))
+
+
+def make_id(platform, source, title, url):
+    value = "|".join([platform or "", source or "", title or "", url or ""])
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()[:20]
+
+
+def canonical_post_url(url):
+    """Normalize URLs for duplicate detection without dropping meaningful IDs."""
+    url = clean_text(url)
+    if not url:
+        return ""
+    parts = urllib.parse.urlsplit(url)
+    host = (parts.netloc or "").lower()
+    path = re.sub(r"/+$", "", parts.path or "")
+    query_items = urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+    # Remove common tracking parameters but preserve post IDs and other meaningful query data.
+    query_items = [(k, v) for k, v in query_items if not k.lower().startswith("utm_")
+                   and k.lower() not in {"from", "source", "ref", "share_source"}]
+    query = urllib.parse.urlencode(sorted(query_items))
+    return urllib.parse.urlunsplit((parts.scheme.lower() or "https", host, path, query, ""))
+
+
+def is_profile_url(url):
+    path = urllib.parse.urlsplit(canonical_post_url(url)).path.lower()
+    return bool(re.search(r"/(media|u)/\d+$", path)) or path.endswith("/mygroups")
+
+
+def duplicate_key(post):
+    """Prefer a post-specific URL; fall back to normalized Weibo text when only a profile URL exists."""
+    url = canonical_post_url(post.get("url", ""))
+    if url and not is_profile_url(url):
+        return f"url:{url}"
+    if post.get("platform") == "Weibo":
+        text = clean_text(f"{post.get('titleOriginal') or post.get('title', '')} {post.get('excerptOriginal') or post.get('excerpt', '')}").lower()
+        text = re.sub(r"[\W_]+", "", text, flags=re.UNICODE)
+        if text:
+            return "weibo-text:" + hashlib.sha256(text.encode("utf-8")).hexdigest()
+    return "id:" + str(post.get("id") or make_id(post.get("platform", ""), post.get("source", ""), post.get("title", ""), url))
+
+
+def deduplicate_posts(posts):
+    """Merge duplicate posts while preserving translations already saved."""
+    result = {}
+    for raw in posts:
+        post = normalize_existing_post(raw)
+        key = duplicate_key(post)
+        if key not in result:
+            result[key] = post
+            continue
+        old = result[key]
+        # Prefer the post with a more specific URL or longer text, but preserve prior translations.
+        preferred = post if len(clean_text(post.get("excerpt", ""))) > len(clean_text(old.get("excerpt", ""))) else old
+        for field in ["titleOriginal", "excerptOriginal", "titleEnglish", "excerptEnglish"]:
+            if old.get(field) and not preferred.get(field):
+                preferred[field] = old[field]
+            if post.get(field) and not preferred.get(field):
+                preferred[field] = post[field]
+        if is_profile_url(preferred.get("url", "")) and not is_profile_url(old.get("url", "")):
+            preferred["url"] = old["url"]
+        result[key] = preferred
+    return list(result.values())
+
+
+def determine_category(text, platform):
+    lowered = (text or "").lower()
+    if platform == "X": return "X Update"
+    if platform == "News": return "News"
+    if any(w in text for w in ["演唱会", "活动", "见面会", "盛典"]): return "Event"
+    if any(w in text for w in ["代言", "品牌", "大使"]): return "Endorsement"
+    if any(w in text for w in ["歌曲", "新歌", "音乐", "上线"]): return "Music"
+    if any(w in text for w in ["视频", "花絮", "直播"]): return "Video"
+    if any(w in text for w in ["照片", "写真", "大片", "造型"]): return "Photos"
+    if any(w in text for w in ["电视剧", "电影", "角色", "定档"]): return "Drama"
+    if "interview" in lowered or "采访" in text: return "Interview"
+    return "Official"
+
+
+def load_existing_data():
+    default = {"lastUpdated": None, "status": "Initial setup", "translationStatus": {}, "sourceStatus": [], "posts": []}
+    if not POSTS_FILE.exists(): return default
+    try:
+        with POSTS_FILE.open(encoding="utf-8") as f:
+            data = json.load(f)
+        if not isinstance(data, dict): raise ValueError("posts.json must contain a JSON object")
+        data.setdefault("posts", []); data.setdefault("sourceStatus", [])
+        return data
+    except Exception as error:
+        print("Could not read posts.json:", error)
+        return default
+
+
+def parse_possible_date(text):
+    now = singapore_now()
+    match = re.search(r"(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})日?", text or "")
+    if match:
+        try:
+            y, m, d = map(int, match.groups())
+            return datetime(y, m, d, 12, tzinfo=SINGAPORE).isoformat()
+        except ValueError: pass
+    match = re.search(r"(\d{1,2})月(\d{1,2})日", text or "")
+    if match:
+        try:
+            m, d = map(int, match.groups())
+            candidate = datetime(now.year, m, d, 12, tzinfo=SINGAPORE)
+            if candidate > now.replace(hour=23, minute=59): candidate = candidate.replace(year=now.year - 1)
+            return candidate.isoformat()
+        except ValueError: pass
+    return now.isoformat()
+
+
+def parse_feed_date(value):
+    value = clean_text(value)
+    if value:
+        try:
+            parsed = parsedate_to_datetime(value)
+            if parsed.tzinfo is None: parsed = parsed.replace(tzinfo=UTC)
+            return parsed.astimezone(SINGAPORE).isoformat()
+        except Exception: pass
+        try:
+            parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+            if parsed.tzinfo is None: parsed = parsed.replace(tzinfo=UTC)
+            return parsed.astimezone(SINGAPORE).isoformat()
+        except Exception: pass
+    return singapore_now().isoformat()
+
+
+def extract_weibo_display_name(soup, account_id):
+    """Best-effort extraction of the visible Weibo account name from its profile page."""
+    candidates = []
+    for selector, attr in [
+        ("meta[property='og:title']", "content"),
+        ("meta[name='twitter:title']", "content"),
+    ]:
+        node = soup.select_one(selector)
+        if node and node.get(attr):
+            candidates.append(clean_text(node.get(attr)))
+    if soup.title and soup.title.string:
+        candidates.append(clean_text(soup.title.string))
+
+    for candidate in candidates:
+        candidate = re.sub(r"\s*[-_|｜].*$", "", candidate).strip()
+        candidate = re.sub(r"^(微博|新浪微博)\s*[-_|｜:]?\s*", "", candidate).strip()
+        candidate = re.sub(r"的微博(?:主页|)?$", "", candidate).strip()
+        candidate = re.sub(r"\s*的个人主页$", "", candidate).strip()
+        if (candidate and candidate not in {account_id, "新浪微博", "微博", "Sina Visitor System"}
+                and len(candidate) <= 60 and not re.fullmatch(r"\d+", candidate)):
+            return candidate
+    return f"Weibo @{account_id}"
+
+
+def collect_sina_account(source_config):
+    response = requests.get(source_config["url"], headers=HEADERS, timeout=30)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, "html.parser")
+    account_id = source_config["url"].rstrip("/").split("/")[-1]
+    display_name = extract_weibo_display_name(soup, account_id)
+    source_config["source"] = display_name
+    source_config["name"] = display_name
+    candidates = []
+    for selector in ["article", ".card", ".feed-card", ".weibo-item", ".m-panel", ".content", "section"]:
+        candidates.extend(soup.select(selector))
+    if not candidates: candidates = soup.find_all(["div", "li"])
+    collected, seen_text = [], set()
+    for element in candidates:
+        text = clean_text(element.get_text(" ", strip=True))
+        if len(text) < 25 or len(text) > 1800 or text in seen_text: continue
+        # Strict requirement: the post text itself must contain Hou Minghao's name.
+        if "侯明昊" not in text: continue
+        seen_text.add(text)
+        link_element = element.find("a", href=True)
+        post_url = urllib.parse.urljoin(source_config["url"], link_element.get("href")) if link_element else source_config["url"]
+        title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", text), 120)
+        collected.append({
+            "id": make_id(source_config["platform"], source_config["source"], title, post_url),
+            "platform": source_config["platform"], "source": source_config["source"],
+            "title": title or "New official Hou Minghao update", "excerpt": shorten(text, 320),
+            "category": determine_category(text, source_config["platform"]), "date": parse_possible_date(text),
+            "url": post_url, "official": source_config["official"], "verified": True,
+            "collectionMethod": "Automatic",
+        })
+    return collected
+
+
+def collect_google_news(source_config):
+    encoded = urllib.parse.quote(source_config["query"])
+    url = f"https://news.google.com/rss/search?q={encoded}&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+    response = requests.get(url, headers=HEADERS, timeout=30); response.raise_for_status()
+    root = ET.fromstring(response.content); collected = []
+    for item in root.findall(".//item")[:25]:
+        title, link = clean_text(item.findtext("title")), clean_text(item.findtext("link"))
+        desc, pub = clean_text(item.findtext("description")), clean_text(item.findtext("pubDate"))
+        source_el = item.find("source")
+        publisher = clean_text(source_el.text) if source_el is not None and source_el.text else "News source"
+        if not title or not link: continue
+        collected.append({"id": make_id("News", publisher, title, link), "platform": "News", "source": publisher,
+                          "title": shorten(title, 150), "excerpt": shorten(desc, 300), "category": "News",
+                          "date": parse_feed_date(pub), "url": link, "official": False, "verified": True,
+                          "collectionMethod": "Automatic"})
+    return collected
+
+
+def find_atom_text(item, field):
+    atom = "{http://www.w3.org/2005/Atom}"
+    return item.findtext(atom + field) or item.findtext(field)
+
+
+def collect_rss_feed(source_config):
+    response = requests.get(source_config["url"], headers=HEADERS, timeout=30); response.raise_for_status()
+    root = ET.fromstring(response.content); items = root.findall(".//item"); is_atom = False
+    if not items:
+        items = root.findall(".//{http://www.w3.org/2005/Atom}entry"); is_atom = True
+    collected = []
+    for item in items[:25]:
+        if is_atom:
+            title = clean_text(find_atom_text(item, "title")); desc = clean_text(find_atom_text(item, "content") or find_atom_text(item, "summary"))
+            pub = clean_text(find_atom_text(item, "published") or find_atom_text(item, "updated")); author = clean_text(find_atom_text(item, "author"))
+            link = ""
+            for le in item.findall("{http://www.w3.org/2005/Atom}link"):
+                if le.get("href"): link = clean_text(le.get("href")); break
+        else:
+            title = clean_text(item.findtext("title")); desc = clean_text(item.findtext("description") or item.findtext("content"))
+            pub = clean_text(item.findtext("pubDate") or item.findtext("published") or item.findtext("updated"))
+            author = clean_text(item.findtext("author") or item.findtext("{http://purl.org/dc/elements/1.1/}creator")); link = clean_text(item.findtext("link"))
+        if not title and desc: title = shorten(desc, 150)
+        if not title or not link: continue
+        match = re.search(r"@([A-Za-z0-9_]+)", f"{author} {title} {desc}")
+        source_name = "@" + match.group(1) if match else author or source_config["source"]
+        collected.append({"id": make_id("X", source_name, title, link), "platform": "X", "source": source_name,
+                          "title": shorten(title, 180), "excerpt": shorten(desc, 350), "category": "X Update",
+                          "date": parse_feed_date(pub), "url": link, "official": False, "verified": True,
+                          "collectionMethod": "Automatic"})
+    return collected
+
+
+def collect_source(source_config):
+    kind = source_config["type"]
+    if kind == "sina_account": return collect_sina_account(source_config)
+    if kind == "google_news": return collect_google_news(source_config)
+    if kind == "rss_feed": return collect_rss_feed(source_config)
+    return []
+
+
+def normalize_existing_post(post):
+    post.setdefault("id", make_id(post.get("platform", ""), post.get("source", ""), post.get("title", ""), post.get("url", "")))
+    post.setdefault("excerpt", ""); post.setdefault("category", "Other"); post.setdefault("official", False)
+    post.setdefault("verified", False); post.setdefault("collectionMethod", "Manual")
+    return post
+
+
+def post_timestamp(post):
+    try: return datetime.fromisoformat(post.get("date", "").replace("Z", "+00:00")).timestamp()
+    except Exception: return 0
+
+
+def translate_with_mymemory(text):
+    """Fallback translation service. It has its own usage limits and is not guaranteed."""
+    response = requests.get(
+        "https://api.mymemory.translated.net/get",
+        params={"q": text, "langpair": "zh-CN|en"},
+        headers=HEADERS,
+        timeout=20,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    translated = clean_text((payload.get("responseData") or {}).get("translatedText", ""))
+    status = payload.get("responseStatus")
+    if status not in (None, 200, "200"):
+        raise RuntimeError(f"MyMemory response status {status}")
+    # Accept mixed-script output (e.g. names may remain Chinese), but reject
+    # empty or effectively unchanged Chinese output.
+    if not translated:
+        return ""
+    normalized_input = re.sub(r"\s+", "", text).lower()
+    normalized_output = re.sub(r"\s+", "", translated).lower()
+    if normalized_output == normalized_input:
+        return ""
+    if contains_chinese(translated) and not re.search(r"[A-Za-z]", translated):
+        return ""
+    return translated
+
+
+def translate_to_english(text):
+    """Try Google first, then MyMemory if Google fails or rate-limits."""
+    text = clean_text(text)
+    if not text:
+        return {"translation": "", "rate_limited": False, "provider": "none"}
+    if not contains_chinese(text):
+        return {"translation": text, "rate_limited": False, "provider": "not_needed"}
+
+    google_limited = False
+    try:
+        translated = clean_text(GoogleTranslator(source="auto", target="en").translate(text))
+        if translated:
+            return {"translation": translated, "rate_limited": False, "provider": "Google"}
+    except Exception as error:
+        message = str(error).lower()
+        google_limited = type(error).__name__ == "TooManyRequests" or any(
+            marker in message for marker in ["too many requests", "429", "rate limit"]
+        )
+        print("Google translation failed:", f"{type(error).__name__}: {error}"[:200])
+
+    try:
+        translated = translate_with_mymemory(text)
+        if translated:
+            print("Translation backup used: MyMemory")
+            return {"translation": translated, "rate_limited": False, "provider": "MyMemory"}
+    except Exception as error:
+        print("MyMemory backup failed:", f"{type(error).__name__}: {error}"[:200])
+
+    return {"translation": "", "rate_limited": google_limited, "provider": "unavailable"}
+
+
+def add_translations(posts):
+    """Translate Weibo posts only; remove English translation fields from all other platforms."""
+    translations_added = 0
+    posts_translated = 0
+    posts_attempted = 0
+    rate_limited = False
+    translation_providers = {"Google": 0, "MyMemory": 0}
+    print("\nChecking English translations (Weibo only)...")
+
+    # Explicitly remove previously saved English fields from News, X, and any other
+    # non-Weibo items, so the dashboard will no longer display their translations.
+    for post in posts:
+        if post.get("platform") != "Weibo":
+            post.pop("titleEnglish", None)
+            post.pop("excerptEnglish", None)
+
+    # Work only on Weibo entries. Non-Weibo posts are never sent to a translator.
+    weibo_posts = [post for post in posts if post.get("platform") == "Weibo"]
+
+    def translation_priority(post):
+        text = clean_text(
+            f"{post.get('titleOriginal') or post.get('title', '')} "
+            f"{post.get('excerptOriginal') or post.get('excerpt', '')}"
+        )
+        needs_translation = 0 if contains_chinese(text) else 1
+        return (needs_translation, -post_timestamp(post))
+
+    for index, post in enumerate(sorted(weibo_posts, key=translation_priority), 1):
+        original_title = clean_text(post.get("titleOriginal") or post.get("title", ""))
+        original_excerpt = clean_text(post.get("excerptOriginal") or post.get("excerpt", ""))
+        post["titleOriginal"], post["excerptOriginal"] = original_title, original_excerpt
+        title_en = clean_text(post.get("titleEnglish", ""))
+        excerpt_en = clean_text(post.get("excerptEnglish", ""))
+        title_need = contains_chinese(original_title) and not title_en
+        excerpt_need = contains_chinese(original_excerpt) and not excerpt_en
+
+        # For Weibo text that is already English or has no Chinese characters, do not
+        # call a translation service; keep its English field equal to the source text.
+        if not contains_chinese(original_title) and not title_en:
+            post["titleEnglish"] = original_title
+        if not contains_chinese(original_excerpt) and not excerpt_en:
+            post["excerptEnglish"] = original_excerpt
+
+        if not title_need and not excerpt_need:
+            continue
+        if posts_attempted >= MAX_TRANSLATED_POSTS_PER_RUN:
+            print("Translation attempt limit reached; remaining Weibo posts will be handled in a future run.")
+            break
+
+        posts_attempted += 1
+        print(f"Translating Weibo post {index}/{len(weibo_posts)}")
+        had_translation = False
+        for field, original, needed in [
+            ("titleEnglish", original_title, title_need),
+            ("excerptEnglish", original_excerpt, excerpt_need),
+        ]:
+            if not needed:
+                continue
+            result = translate_to_english(original)
+            if result["rate_limited"]:
+                rate_limited = True
+            if result["translation"]:
+                post[field] = result["translation"]
+                translations_added += 1
+                had_translation = True
+                provider = result.get("provider")
+                if provider in translation_providers:
+                    translation_providers[provider] += 1
+                time.sleep(TRANSLATION_DELAY_SECONDS)
+            else:
+                print(f"Weibo translation unavailable for {field}; will retry on a later run.")
+        if had_translation:
+            posts_translated += 1
+
+    return translations_added, posts_translated, rate_limited, translation_providers
+
+
+
+def main():
+    data = load_existing_data()
+    existing = deduplicate_posts([p for p in data.get("posts", [])
+                                  if isinstance(p, dict) and p.get("platform") != "News"])
+    collected, statuses = [], []
+    for config in SOURCES:
+        checked = singapore_now(); print(f"Checking {config['name']}...")
+        try:
+            posts = collect_source(config); collected.extend(posts)
+            statuses.append({"source": config["name"], "status": "Success", "itemsFound": len(posts), "checkedAt": checked.isoformat()})
+            print(f"{config['name']}: {len(posts)} items found")
+        except Exception as error:
+            print(f"{config['name']} failed: {type(error).__name__}: {error}")
+            statuses.append({"source": config["name"], "status": "Failed", "itemsFound": 0, "checkedAt": checked.isoformat(), "message": str(error)[:200]})
+        time.sleep(REQUEST_DELAY_SECONDS)
+
+    # Enforce one daily limit across all Weibo accounts, even if Actions runs repeatedly.
+    today = singapore_now().date()
+    def is_weibo_today(post):
+        if post.get("platform") != "Weibo":
+            return False
+        try:
+            stamp = datetime.fromisoformat(post.get("date", "").replace("Z", "+00:00"))
+            if stamp.tzinfo is None:
+                stamp = stamp.replace(tzinfo=UTC)
+            return stamp.astimezone(SINGAPORE).date() == today
+        except Exception:
+            return False
+
+    existing_today_keys = {duplicate_key(p) for p in existing if is_weibo_today(p)}
+    slots = max(0, WEIBO_POST_LIMIT - len(existing_today_keys))
+    new_weibo = [p for p in collected if p.get("platform") == "Weibo"]
+    other_new = [p for p in collected if p.get("platform") not in {"Weibo", "News"}]
+    unique_weibo = deduplicate_posts(new_weibo)
+    ordered_weibo = sorted(unique_weibo, key=post_timestamp, reverse=True)
+    accepted_weibo = [p for p in ordered_weibo if duplicate_key(p) not in existing_today_keys][:slots]
+    collected = accepted_weibo + other_new
+    print(f"Weibo daily limit: {len(existing_today_keys)} already saved today; "
+          f"accepted {len(accepted_weibo)} new matching posts (limit {WEIBO_POST_LIMIT}).")
+
+    # Upgrade previously saved numeric Weibo source labels when profile names were found.
+    account_names = {}
+    for config in SOURCES:
+        if config.get("type") == "sina_account":
+            account_id = config.get("url", "").rstrip("/").split("/")[-1]
+            name = config.get("source", "")
+            if account_id and name and not re.fullmatch(r"Weibo @?\d+", name):
+                account_names[account_id] = name
+    for post in existing:
+        if post.get("platform") == "Weibo":
+            match = re.search(r"Weibo @?(\d+)", str(post.get("source", "")))
+            if match and match.group(1) in account_names:
+                post["source"] = account_names[match.group(1)]
+
+    merged = deduplicate_posts(existing + collected)
+    final_posts = sorted(merged, key=post_timestamp, reverse=True)[:MAX_POSTS]
+    added, translated, limited, translation_providers = add_translations(final_posts)
+    success = sum(s["status"] == "Success" for s in statuses); failed = len(statuses) - success
+    output = {"lastUpdated": singapore_now().isoformat(timespec="seconds"),
+              "status": f"Completed: {success} sources successful, {failed} failed",
+              "translationStatus": {"translationsAdded": added, "postsTranslatedThisRun": translated,
+                                    "maximumPostsPerRun": MAX_TRANSLATED_POSTS_PER_RUN, "rateLimited": limited,
+                                    "providersUsed": translation_providers,
+                                    "priority": "Weibo only",
+                                    "platformsTranslated": ["Weibo"],
+                                    "newsPostsRemoved": True,
+                                    "backupProvider": "MyMemory"},
+              "sourceStatus": statuses, "posts": final_posts}
+    with POSTS_FILE.open("w", encoding="utf-8") as f: json.dump(output, f, ensure_ascii=False, indent=2)
+    print("\nCollection completed")
+    print("Newly collected:", len(collected)); print("Total saved:", len(final_posts))
+    print("Successful sources:", success); print("Failed sources:", failed)
+    print("Translations added:", added); print("Posts translated this run:", translated)
+    print("Translation rate limited:", limited)
+
+
+if __name__ == "__main__":
+    main()
