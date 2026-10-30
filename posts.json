@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-10-30T18:55:57+08:00",
+  "lastUpdated": "2026-10-31T02:02:34+08:00",
   "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 10,
-    "postsTranslatedThisRun": 5,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "maximumPostsPerRun": 10,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 10
+      "MyMemory": 2
     },
     "priority": "Weibo only",
     "platformsTranslated": [
@@ -21,100 +21,230 @@
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-10-30T18:53:05.540857+08:00"
+      "checkedAt": "2026-10-31T02:00:54.767815+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-10-30T18:53:09.117841+08:00"
+      "checkedAt": "2026-10-31T02:00:58.292545+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-10-30T18:53:12.659992+08:00"
+      "checkedAt": "2026-10-31T02:01:01.871740+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T18:53:16.606062+08:00"
+      "checkedAt": "2026-10-31T02:01:05.564023+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-10-30T18:53:19.670785+08:00"
+      "checkedAt": "2026-10-31T02:01:09.835888+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-10-30T18:53:22.971580+08:00"
+      "checkedAt": "2026-10-31T02:01:12.964048+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T18:53:26.045304+08:00"
+      "checkedAt": "2026-10-31T02:01:16.270647+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-10-30T18:53:28.722293+08:00"
+      "checkedAt": "2026-10-31T02:01:19.009101+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T18:53:32.262927+08:00"
+      "checkedAt": "2026-10-31T02:01:22.667028+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-10-30T18:53:35.354659+08:00"
+      "checkedAt": "2026-10-31T02:01:26.043259+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
       "itemsFound": 16,
-      "checkedAt": "2026-10-30T18:53:38.494114+08:00"
+      "checkedAt": "2026-10-31T02:01:29.673823+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-10-30T18:53:41.661629+08:00"
+      "checkedAt": "2026-10-31T02:01:33.208070+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 35,
-      "checkedAt": "2026-10-30T18:53:45.053499+08:00"
+      "checkedAt": "2026-10-31T02:01:36.714688+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-10-30T18:53:48.149027+08:00"
+      "checkedAt": "2026-10-31T02:01:40.091493+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T18:53:50.501196+08:00"
+      "checkedAt": "2026-10-31T02:01:42.470931+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T18:54:09.319696+08:00"
+      "checkedAt": "2026-10-31T02:02:01.034219+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "2bfc98e161ee80802433",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: tomorrow belong to us in zhengzhou! i’m ready to scream in front of my screen just like them. 😭🎤 31.10.2026 — 01.11.2026 #houminghao #侯明昊",
+      "excerpt": "tomorrow belong to us in zhengzhou! i’m ready to scream in front of my screen just like them. 😭🎤 31.10.2026 — 01.11.2026 #houminghao #侯明昊 — @PopMinghao Oct 30, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T00:12:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116201508312355208",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "d06c57d8de2dac7c9007",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Shi Hui BTS Vlog | Hou Minghao 'Belongs To Us' Shenzhen Stop 261030 | \"Shi Hui (侍慧)\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
+      "excerpt": "Shi Hui BTS Vlog | Hou Minghao 'Belongs To Us' Shenzhen Stop 261030 | \"Shi Hui (侍慧)\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊 — @HMH_Record Oct 30, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-30T19:33:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116131287241244735",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "8c6c82538e8e9727b648",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: ⏳ Zhengzhou Stop Countdown 👍 day left #HouMinghaoBelongsToUs2026 Concert Tour 261030 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMingh…",
+      "excerpt": "⏳ Zhengzhou Stop Countdown 👍 day left #HouMinghaoBelongsToUs2026 Concert Tour 261030 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 30, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6d771717a94354657031cdfe.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T19:11:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116125723031449767",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "f36e37b3e42315417921",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: \"See you tomorrow\" 261030 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1/4]",
+      "excerpt": "\"See you tomorrow\" 261030 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1/4] — @HMH_Record Oct 30, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/35125387de70cbafcb6424ff.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T19:06:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116124463213498751",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "21a8ba602f1c339fd25e",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: \"See you tomorrow\" 261030 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [3/4]",
+      "excerpt": "\"See you tomorrow\" 261030 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [3/4] — @HMH_Record Oct 30, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a8d9351a907e0eaee4232ac7.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T19:06:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116124542477463830",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "465b53b9922c8854350b",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: \"See you tomorrow\" 261030 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [4/4]",
+      "excerpt": "\"See you tomorrow\" 261030 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [4/4] — @HMH_Record Oct 30, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/efbcdc013ee3ccf21600c8d9.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T19:06:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116124582696632518",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "8bfbbb3aa67cf918bbce",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Memories of Zhengzhou | Story Continues 1 Day until Hou Minghao 'Belongs To Us' Zhengzhou Stop 261030 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호…",
+      "excerpt": "Memories of Zhengzhou | Story Continues 1 Day until Hou Minghao 'Belongs To Us' Zhengzhou Stop 261030 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 — @HMH_Record Oct 30, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-30T19:03:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116123735853760741",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "444ea2eefdefb7a27cac",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: 🔹 261030 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "🔹 261030 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 30, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3b80e3e3d5d1619803eb10b4.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T18:57:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116122389004362175",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "e55209ac40447256429c",
       "platform": "X",
@@ -337,6 +467,24 @@
       "excerptOriginal": "CASETiFY 2026-10-30 16:56 来自 iPhone 14 Pro #天猫双11星舰狂欢#倒计时一天！#侯明昊[超话]#已上淘宝搜索CASETiFY代言人@侯明昊 并连签3天！期待明天能与各位猕猴桃们一起参与#天猫全明星计划#解锁的侯明昊SSR专属明星徽章！我们还准备了超多福利哦～侯明昊亲签、价值千元的CASETiFY天猫限定礼盒等你来赢！ 双11上淘宝更优惠，官方立减叠券7.2折起 📣全体注意！#天猫双11星舰狂欢# 倒计时1天❗️ 本喵震惊😱 「早猫票」预热连签火爆，人气值累计已破160万！ 最后一天的签到大家不要忘记！上淘宝搜索你猜到的「明星名字」，10.28-10.30连续3天签到，赢翻倍狂欢积分～ ⏰明…",
       "titleEnglish": "CASETiFY 2026-10-30 16:56 From iPhone 14 Pro #TmallDouble11StarshipCarnival# One day countdown! #HouMinghao[SuperTopic]# I've already searched for CASETiFY spokesperson @HouMinghao on Taobao and signed up for 3 days in a row! Looking forward to participating in #TmallAllStars# with all my fellow fans tomorrow…",
       "excerptEnglish": "CASETiFY 2026-10-30 16:56 From iPhone 14 Pro #TmallDouble11StarshipCarnival# Countdown 1 day! #HouMinghao[SuperTopic]# is now available on Taobao! Search for CASETiFY spokesperson @HouMinghao and sign for 3 consecutive days! Looking forward to participating in the #TmallAllStarPlan# with all our fans tomorrow to unlock Hou Minghao's exclusive SSR star badge! We've also prepared tons of benefits~ Hou Minghao's autographed gift box and a CASETiFY Tmall limited edition gift box worth thousands of yuan are waiting for you to win! Double 11 on Taobao offers even more discounts, official instant discounts and coupons up to 72% off📣Attention everyone! #TmallDouble11StarshipCarnival# Countdown 1 day❗️ This cat is shocked😱 The \"Early Cat Ticket\" pre-signing sign-in is incredibly popular, with the cumulative popularity value exceeding 1.6 million! Don't forget to sign in on the last day! Search for the \"celebrity name\" you guessed on Taobao, check in for 3 consecutive days from October 28th to 30th, and win double points! ⏰"
+    },
+    {
+      "id": "e3ddcf03186dee07ea2c",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-30 18:50 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 夜色收拢最后一缕暮光 灯火为奔赴点亮坐标 倒计时1天，舞台见！…",
+      "excerpt": "侯明昊工作室 2026-10-30 18:50 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 夜色收拢最后一缕暮光 灯火为奔赴点亮坐标 倒计时1天，舞台见！ ​",
+      "images": [],
+      "category": "Event",
+      "date": "2026-10-30T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "2026-10-30 18:50 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 夜色收拢最后一缕暮光 灯火为奔赴点亮坐标 倒计时1天，舞台见！…",
+      "excerptOriginal": "侯明昊工作室 2026-10-30 18:50 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 夜色收拢最后一缕暮光 灯火为奔赴点亮坐标 倒计时1天，舞台见！ ​",
+      "titleEnglish": "2026-10-30 18:50 # Hou Minghao [overstated] # # Hou Minghao's concert tour # Hou Minghao's concert 🥝 # Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #!",
+      "excerptEnglish": "Hou Minghao Studio 2026-10-30 18:50 # Hou Minghao [overstated] # # Hou Minghao's concert tour # Hou Minghao's concert 🥝 # Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | @ Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert tour # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # # Hou Minghao's concert # # # Hou Minghao's concert # # Hou Minghao's concert # # # Hou Mingha's concert # ​"
     },
     {
       "id": "7011c0246ddbd38c5ec3",
