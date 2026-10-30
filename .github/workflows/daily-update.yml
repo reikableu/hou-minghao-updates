@@ -5,81 +5,83 @@ on:
 
   schedule:
     # Runs every 4 hours at minute 38.
-    # Default cron timezone is UTC.
-    # Singapore times:
+    # GitHub cron schedules use UTC by default.
+    # Singapore schedule:
     # 12:38 AM, 4:38 AM, 8:38 AM, 12:38 PM,
     # 4:38 PM, and 8:38 PM.
     - cron: "38 */4 * * *"
 
 permissions:
-  contents* write
+  contents: write
 
 concurrency:
-  group: hou-*inghao-feed-update
-  cancel-in-pro*ress: false
+  group: hou-minghao-feed-update
+  cancel-in-progress: false
 
 jobs:
   update-feed:
-*   runs-on: ubuntu-latest
-    time*ut-minutes: 30
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
-      -*name: Download repository files
-  *     uses: actions/checkout@v4
+      - name: Download repository files
+        uses: actions/checkout@v4
 
-  *   - name: Set up Python
-        u*es: actions/setup-python@v5
-      * with:
-          python-version: "*.12"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-      - name: Install depend*ncies
+      - name: Install dependencies
         run: |
-          pyt*on -m pip install --upgrade pip
-  *       python -m pip install reque*ts beautifulsoup4 deep-translator
-*      - name: Check Python syntax
-*       run: python -m py_compile u*date_feed.py
+          python -m pip install --upgrade pip
+          python -m pip install requests beautifulsoup4 deep-translator
 
-      - name: Run Ho* Minghao feed collector
-        ru*: python update_feed.py
+      - name: Check Python syntax
+        run: python -m py_compile update_feed.py
 
-      - n*me: Validate posts.json
-        ru*: |
+      - name: Run Hou Minghao feed collector
+        run: python update_feed.py
+
+      - name: Validate posts.json
+        run: |
           python - <<'PY'
-    *     import json
-          from pa*hlib import Path
+          import json
+          from pathlib import Path
 
-          posts_*ile = Path("posts.json")
+          posts_file = Path("posts.json")
 
-        * if not posts_file.exists():
-     *        raise FileNotFoundError(
- *                "posts.json was no* generated."
+          if not posts_file.exists():
+              raise FileNotFoundError(
+                  "posts.json was not generated."
               )
 
-    *     data = json.loads(
-          *   posts_file.read_text(encoding="*tf-8")
+          data = json.loads(
+              posts_file.read_text(encoding="utf-8")
           )
 
-          if n*t isinstance(data, dict):
-        *     raise ValueError(
-           *      "posts.json must contain a J*ON object."
+          if not isinstance(data, dict):
+              raise ValueError(
+                  "posts.json must contain a JSON object."
               )
 
-     *    posts = data.get("posts")
+          posts = data.get("posts")
 
-   *      if not isinstance(posts, lis*):
-              raise ValueError(*                  "posts.json must*contain a posts list."
-           *  )
+          if not isinstance(posts, list):
+              raise ValueError(
+                  "posts.json must contain a posts list."
+              )
 
-          print("posts.json v*lidated successfully.")
-          *rint("Saved posts:", len(posts))
- *        print("Last updated:", dat*.get("lastUpdated"))
-          pri*t("Collector status:", data.get("s*atus"))
+          print("posts.json validated successfully.")
+          print("Saved posts:", len(posts))
+          print("Last updated:", data.get("lastUpdated"))
+          print("Collector status:", data.get("status"))
           PY
 
-      - name* Save updated feed and cached imag*s
+      - name: Save updated feed and cached images
         run: |
-          git con*ig user.name "github-actions[bot]"*          
-          git config user.email "4*898282+github-actions[bot]@users.n*reply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add posts.json
 
