@@ -1,5 +1,6 @@
 import hashlib
 import json
+import os
 import re
 import time
 import urllib.parse
@@ -31,6 +32,23 @@ HEADERS = {
                    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
 }
+XHS_PROFILES = [
+    {
+        "name": "XHS Official 680f4160",
+        "source": "XHS Official 680f4160",
+        "profile_id": "680f416000000000080147b4",
+        "url": "https://www.rednote.com/user/profile/680f416000000000080147b4",
+    },
+    {
+        "name": "XHS Official 5bc495df",
+        "source": "XHS Official 5bc495df",
+        "profile_id": "5bc495dfec27fc0001bd4010",
+        "url": "https://www.rednote.com/user/profile/5bc495dfec27fc0001bd4010",
+    },
+]
+XHS_POST_LIMIT_PER_PROFILE = 12
+XHS_PAGE_TIMEOUT_MS = 60000
+
 WEIBO_ACCOUNT_IDS = [
     "5763552342", "7954477778", "1831550987", "7431934486",
     "6941933193", "5919565877", "9072975151", "6609562381",
@@ -51,6 +69,14 @@ SOURCES = [
 ] + [
     {"name": "Hou Minghao X List", "source": "Hou Minghao X Updates", "platform": "X",
      "url": "https://rss.app/feeds/k375DGhHRMrZ3Ju2.xml", "official": False, "type": "rss_feed"},
+] + [
+    {
+        **profile,
+        "platform": "XHS",
+        "official": True,
+        "type": "xhs_profile",
+    }
+    for profile in XHS_PROFILES
 ]
 
 
@@ -342,6 +368,7 @@ def deduplicate_posts(posts):
 def determine_category(text, platform):
     lowered = (text or "").lower()
     if platform == "X": return "X Update"
+    if platform == "XHS": return "XHS Update"
     if any(w in text for w in ["演唱会", "活动", "见面会", "盛典"]): return "Event"
     if any(w in text for w in ["代言", "品牌", "大使"]): return "Endorsement"
     if any(w in text for w in ["歌曲", "新歌", "音乐", "上线"]): return "Music"
@@ -516,10 +543,162 @@ def collect_rss_feed(source_config):
         })
     return collected
 
+def load_xhs_cookies():
+    """Load and normalize Playwright cookies from the GitHub Actions secret."""
+    raw = os.environ.get("XHS_COOKIES_JSON", "").strip()
+    if not raw:
+        return []
+    try:
+        cookies = json.loads(raw)
+    except json.JSONDecodeError as error:
+        raise ValueError(f"XHS_COOKIES_JSON is invalid JSON: {error}") from error
+    if not isinstance(cookies, list) or not cookies:
+        raise ValueError("XHS_COOKIES_JSON must be a non-empty JSON array")
+    allowed = {
+        "name", "value", "url", "domain", "path", "expires",
+        "httpOnly", "secure", "sameSite", "partitionKey",
+    }
+    normalized = []
+    for index, raw_cookie in enumerate(cookies, start=1):
+        if not isinstance(raw_cookie, dict):
+            raise ValueError(f"XHS cookie {index} must be a JSON object")
+        cookie = {key: value for key, value in raw_cookie.items() if key in allowed}
+        if not cookie.get("name") or cookie.get("value") is None:
+            raise ValueError(f"XHS cookie {index} requires name and value")
+        if not cookie.get("url") and not (cookie.get("domain") and cookie.get("path")):
+            cookie["domain"] = ".rednote.com"
+            cookie["path"] = "/"
+        same_site = str(cookie.get("sameSite", "Lax")).capitalize()
+        cookie["sameSite"] = same_site if same_site in {"Strict", "Lax", "None"} else "Lax"
+        normalized.append(cookie)
+    return normalized
+
+
+def canonical_xhs_post_url(value):
+    """Return a clean RedNote post URL without temporary tracking parameters."""
+    url = urllib.parse.urljoin("https://www.rednote.com", clean_text(value))
+    parts = urllib.parse.urlsplit(url)
+    if parts.netloc.lower() not in {"www.rednote.com", "rednote.com"}:
+        return ""
+    match = re.search(r"/(?:explore|discovery/item)/([A-Za-z0-9]+)", parts.path)
+    if not match:
+        return ""
+    return f"https://www.rednote.com/explore/{match.group(1)}"
+
+
+def collect_xhs_profile(source_config):
+    """Collect public cards from one RedNote profile with a logged-in Playwright session."""
+    cookies = load_xhs_cookies()
+    if not cookies:
+        print(f"{source_config['name']}: XHS_COOKIES_JSON is missing; skipping XHS.")
+        return []
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError as error:
+        raise RuntimeError("Playwright is not installed") from error
+
+    collected = []
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
+        context = browser.new_context(
+            locale="en-SG",
+            timezone_id="Asia/Singapore",
+            viewport={"width": 1440, "height": 1200},
+            user_agent=HEADERS["User-Agent"],
+        )
+        context.add_cookies(cookies)
+        page = context.new_page()
+        page.goto(source_config["url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
+        page.wait_for_timeout(5000)
+
+        profile_name = source_config["source"]
+        for selector in ["h1", "[class*='user-name']", "[class*='username']", "[class*='nickname']"]:
+            try:
+                text = clean_text(page.locator(selector).first.inner_text(timeout=1500))
+                if text and len(text) <= 80:
+                    profile_name = text
+                    break
+            except Exception:
+                pass
+        source_config["source"] = profile_name
+        source_config["name"] = profile_name
+
+        seen_urls = set()
+        no_growth_rounds = 0
+        previous_count = 0
+        for _ in range(6):
+            links = page.locator("a[href*='/explore/'], a[href*='/discovery/item/']")
+            count = links.count()
+            for index in range(count):
+                if len(collected) >= XHS_POST_LIMIT_PER_PROFILE:
+                    break
+                link = links.nth(index)
+                try:
+                    href = link.get_attribute("href") or ""
+                    post_url = canonical_xhs_post_url(href)
+                    if not post_url or post_url in seen_urls:
+                        continue
+                    seen_urls.add(post_url)
+                    card = link.locator("xpath=ancestor::*[self::section or self::article or self::li or self::div][1]")
+                    text = clean_text(card.inner_text(timeout=1500)) or clean_text(link.inner_text(timeout=1000))
+                    image_urls = []
+                    images = card.locator("img")
+                    for image_index in range(min(images.count(), 9)):
+                        image = images.nth(image_index)
+                        for attribute in ("src", "data-src", "data-original"):
+                            image_url = normalize_image_url(image.get_attribute(attribute), source_config["url"])
+                            if image_url and image_url not in image_urls:
+                                image_urls.append(image_url)
+                                break
+                    post_date = singapore_now().isoformat()
+                    try:
+                        time_node = card.locator("time").first
+                        date_value = time_node.get_attribute("datetime") or time_node.inner_text(timeout=500)
+                        if date_value:
+                            post_date = parse_feed_date(date_value)
+                    except Exception:
+                        pass
+                    title = shorten(text, 150) or "New XHS update"
+                    collected.append({
+                        "id": make_id("XHS", profile_name, title, post_url),
+                        "platform": "XHS",
+                        "source": profile_name,
+                        "title": title,
+                        "excerpt": shorten(text, 350),
+                        "images": image_urls[:9],
+                        "category": "XHS Update",
+                        "date": post_date,
+                        "url": post_url,
+                        "official": True,
+                        "verified": True,
+                        "collectionMethod": "Playwright",
+                        "profileId": source_config.get("profile_id", ""),
+                    })
+                except Exception as error:
+                    print("XHS card skipped:", type(error).__name__, str(error)[:120])
+            if len(collected) >= XHS_POST_LIMIT_PER_PROFILE:
+                break
+            page.mouse.wheel(0, 1800)
+            page.wait_for_timeout(1800)
+            if len(collected) == previous_count:
+                no_growth_rounds += 1
+            else:
+                no_growth_rounds = 0
+            previous_count = len(collected)
+            if no_growth_rounds >= 2:
+                break
+        browser.close()
+    return collected
+
+
 def collect_source(source_config):
     kind = source_config["type"]
     if kind == "sina_account": return collect_sina_account(source_config)
     if kind == "rss_feed": return collect_rss_feed(source_config)
+    if kind == "xhs_profile": return collect_xhs_profile(source_config)
     return []
 
 
