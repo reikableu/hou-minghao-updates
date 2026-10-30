@@ -1,210 +1,63 @@
-name: Hou Minghao Feed Update
+name: Update Hou Minghao feed and gallery
 
 on:
   workflow_dispatch:
-
   schedule:
-    # Runs every 4 hours at minute 38.
-    # GitHub cron uses UTC by default.
-    # Singapore schedule:
-    # 12:38 AM, 4:38 AM, 8:38 AM, 12:38 PM,
-    # 4:38 PM, and 8:38 PM.
-    - cron: "38 */4 * * *"
+    # Every 4 hours. GitHub Actions cron uses UTC.
+    - cron: "17 */4 * * *"
 
 permissions:
   contents: write
 
 concurrency:
-  group: hou-minghao-feed-update
+  group: hou-minghao-daily-update
   cancel-in-progress: false
 
 jobs:
-  update-feed:
+  update-feed-and-gallery:
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
     steps:
-      - name: Download repository files
+      - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
 
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install requests beautifulsoup4 deep-translator playwright
+          pip install requests beautifulsoup4 deep-translator playwright
+          playwright install --with-deps chromium
 
-      - name: Install Chromium for XHS collection
-        run: |
-          python -m playwright install --with-deps chromium
-
-      - name: Check Python syntax
-        run: |
-          python -m py_compile update_feed.py
-
-      - name: Check XHS secret availability
+      - name: Run feed collector
         env:
           XHS_COOKIES_JSON: ${{ secrets.XHS_COOKIES_JSON }}
+        run: python update_feed.py
+
+      - name: Generate gallery from collected feed images
+        run: python update_gallery.py
+
+      - name: Validate generated JSON files
         run: |
-          python - <<'PY'
-          import json
-          import os
+          python -m json.tool posts.json > /dev/null
+          python -m json.tool gallery.json > /dev/null
 
-          raw = os.environ.get("XHS_COOKIES_JSON", "").strip()
-
-          if not raw:
-              print("XHS_COOKIES_JSON is not configured.")
-              print("XHS collection will be skipped.")
-              print("Weibo and X collection can still continue.")
-              raise SystemExit(0)
-
-          try:
-              cookies = json.loads(raw)
-          except json.JSONDecodeError as error:
-              raise SystemExit(
-                  f"XHS_COOKIES_JSON is not valid JSON: {error}"
-              )
-
-          if not isinstance(cookies, list):
-              raise SystemExit(
-                  "XHS_COOKIES_JSON must contain a JSON array."
-              )
-
-          if not cookies:
-              raise SystemExit(
-                  "XHS_COOKIES_JSON must not be an empty array."
-              )
-
-          required_fields = {"name", "value"}
-
-          for index, cookie in enumerate(cookies, start=1):
-              if not isinstance(cookie, dict):
-                  raise SystemExit(
-                      f"Cookie {index} must be a JSON object."
-                  )
-
-              missing_fields = required_fields - cookie.keys()
-
-              if missing_fields:
-                  raise SystemExit(
-                      f"Cookie {index} is missing required fields: "
-                      f"{sorted(missing_fields)}"
-                  )
-
-              has_url = bool(cookie.get("url"))
-
-              has_domain_and_path = bool(
-                  cookie.get("domain")
-                  and cookie.get("path")
-              )
-
-              if not has_url and not has_domain_and_path:
-                  raise SystemExit(
-                      f"Cookie {index} must contain either 'url', "
-                      "or both 'domain' and 'path'."
-                  )
-
-          print(
-              "XHS cookie secret is present and structurally valid."
-          )
-          print("Cookie count:", len(cookies))
-          print(
-              "Cookie names:",
-              [
-                  cookie.get("name")
-                  for cookie in cookies
-              ],
-          )
-          PY
-
-      - name: Run Hou Minghao feed collector
-        env:
-          XHS_COOKIES_JSON: ${{ secrets.XHS_COOKIES_JSON }}
-        run: |
-          python update_feed.py
-
-      - name: Validate posts.json
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-
-          posts_file = Path("posts.json")
-
-          if not posts_file.exists():
-              raise FileNotFoundError(
-                  "posts.json was not generated."
-              )
-
-          data = json.loads(
-              posts_file.read_text(encoding="utf-8")
-          )
-
-          if not isinstance(data, dict):
-              raise ValueError(
-                  "posts.json must contain a JSON object."
-              )
-
-          posts = data.get("posts")
-
-          if not isinstance(posts, list):
-              raise ValueError(
-                  "posts.json must contain a posts list."
-              )
-
-          platform_counts = {}
-
-          for post in posts:
-              if not isinstance(post, dict):
-                  raise ValueError(
-                      "Every item in the posts list "
-                      "must be a JSON object."
-                  )
-
-              platform = str(
-                  post.get("platform") or "Unknown"
-              ).strip()
-
-              platform_counts[platform] = (
-                  platform_counts.get(platform, 0) + 1
-              )
-
-          xhs_count = (
-              platform_counts.get("XHS", 0)
-              + platform_counts.get("Xiaohongshu", 0)
-          )
-
-          print("posts.json validated successfully.")
-          print("Saved posts:", len(posts))
-          print("Last updated:", data.get("lastUpdated"))
-          print("Collector status:", data.get("status"))
-          print("Platform counts:", platform_counts)
-          print("XHS posts:", xhs_count)
-          PY
-
-      - name: Show repository changes
-        run: |
-          echo "Files changed by the collector:"
-          git status --short
-
-      - name: Save updated feed and cached media
+      - name: Commit generated updates
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add posts.json
-
-          if [ -d "media" ]; then
-            git add -A media/
-          fi
-
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add posts.json gallery.json media update_feed.py update_gallery.py
           if git diff --cached --quiet; then
-            echo "No feed or cached-media changes to save."
+            echo "No feed or gallery changes detected."
           else
-            git commit -m "Update Hou Minghao feed and media"
-            git push
+            git commit -m "Update Hou Minghao feed and gallery"
+            git pull --rebase origin main
+            git push origin main
           fi
