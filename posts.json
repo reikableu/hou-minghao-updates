@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-10-30T12:26:02+08:00",
+  "lastUpdated": "2026-10-30T18:55:57+08:00",
   "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 10,
+    "postsTranslatedThisRun": 5,
     "maximumPostsPerRun": 10,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 10
     },
     "priority": "Weibo only",
     "platformsTranslated": [
@@ -21,100 +21,215 @@
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-10-30T12:24:40.222257+08:00"
+      "checkedAt": "2026-10-30T18:53:05.540857+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-10-30T12:24:44.082453+08:00"
+      "checkedAt": "2026-10-30T18:53:09.117841+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-10-30T12:24:47.417950+08:00"
+      "checkedAt": "2026-10-30T18:53:12.659992+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T12:24:50.645467+08:00"
+      "checkedAt": "2026-10-30T18:53:16.606062+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-10-30T12:24:54.014059+08:00"
+      "checkedAt": "2026-10-30T18:53:19.670785+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-10-30T12:24:58.245837+08:00"
+      "checkedAt": "2026-10-30T18:53:22.971580+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T12:25:01.707668+08:00"
+      "checkedAt": "2026-10-30T18:53:26.045304+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-10-30T12:25:04.764444+08:00"
+      "checkedAt": "2026-10-30T18:53:28.722293+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T12:25:08.490459+08:00"
+      "checkedAt": "2026-10-30T18:53:32.262927+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
-      "itemsFound": 27,
-      "checkedAt": "2026-10-30T12:25:11.532583+08:00"
+      "itemsFound": 28,
+      "checkedAt": "2026-10-30T18:53:35.354659+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
-      "itemsFound": 15,
-      "checkedAt": "2026-10-30T12:25:14.792963+08:00"
+      "itemsFound": 16,
+      "checkedAt": "2026-10-30T18:53:38.494114+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-10-30T12:25:17.935427+08:00"
+      "checkedAt": "2026-10-30T18:53:41.661629+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 35,
-      "checkedAt": "2026-10-30T12:25:20.907524+08:00"
+      "checkedAt": "2026-10-30T18:53:45.053499+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-10-30T12:25:24.013425+08:00"
+      "checkedAt": "2026-10-30T18:53:48.149027+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T12:25:26.317632+08:00"
+      "checkedAt": "2026-10-30T18:53:50.501196+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T12:25:44.786899+08:00"
+      "checkedAt": "2026-10-30T18:54:09.319696+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "e55209ac40447256429c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: RT @YueHao_14: So adorable and handsome at the same time 😍 #houminghao #侯明昊 #neohou #후명호 #โหวหมิงฮ่าว",
+      "excerpt": "RT @YueHao_14: So adorable and handsome at the same time 😍 #houminghao #侯明昊 #neohou #후명호 #โหวหมิงฮ่าว — @PopMinghao Oct 30, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-30T16:48:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116089888210833900",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "4832780865987f59a642",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Lay's x Hou Minghao Eating potato chips without making a sound challenge 261030 | \"Lay's (乐事官方微博)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Lay's x Hou Minghao Eating potato chips without making a sound challenge 261030 | \"Lay's (乐事官方微博)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 30, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-30T16:02:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116078265131741294",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "7cb6f9bba3afd6d847fd",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: \"As autumn draws to a close and early winter begins, the story returns to where it all started.\" Hou Minghao's 'Belongs To Us' Concert Tour Final Stop: Beijing…",
+      "excerpt": "\"As autumn draws to a close and early winter begins, the story returns to where it all started.\" Hou Minghao's 'Belongs To Us' Concert Tour Final Stop: Beijing. Pre-Sale is about to begin! 🗓️ November 4, 2026 For date 11/28 tickets will open at 13:18 For date 11/29 tickets will open at 13:58 261030 | \"Hou Minghao Studio\" Weibo Update #HouMinghaoBe…",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/707348b33f32152a3bb22d06.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T14:04:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116048474252710116",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "6b1d35e68a511dab4827",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Ticket Selling | Hou Minghao 'Belongs To Us' Beijing Stop 🗓️ November 4, 2026 For date 11/28 tickets will open at 13:18 For date 11/29 tickets will open at 13:…",
+      "excerpt": "Ticket Selling | Hou Minghao 'Belongs To Us' Beijing Stop 🗓️ November 4, 2026 For date 11/28 tickets will open at 13:18 For date 11/29 tickets will open at 13:58 261030 | \"Youling Culture (幽伶文化)\" Weibo Update #HouMinghaoBelongsToUs2026 #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 30, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/60a14b44b9a75302c0042cba.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T13:48:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116044516709007715",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "f77cd59be3eb9147d32d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Hou Minghao | Rehearsal Pics 'Belongs To Us' in Zhengzhou 261030 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
+      "excerpt": "Hou Minghao | Rehearsal Pics 'Belongs To Us' in Zhengzhou 261030 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 — @HMH_Record Oct 30, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/781d2efd0d787cfb21483a3a.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T13:08:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116034537188966773",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "f1df734fb12c68509abf",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@neohou_feed",
+      "title": "Hou Minghao Feed: Business Chart Update #HouMinghao Currently Holds 20 Commercial Endorsements #侯明昊",
+      "excerpt": "Business Chart Update #HouMinghao Currently Holds 20 Commercial Endorsements #侯明昊 — @neohou_feed Oct 30, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/44939cc673ef6cae445d3419.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T12:38:00+08:00",
+      "url": "https://x.com/neohou_feed/status/2116026879882797126",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "81b44591c82d7b41aa6f",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Prada Re-Cashmere & Re-Wool 261030 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Prada Re-Cashmere & Re-Wool 261030 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 30, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f4de9848c07a3006c2afb561.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-30T12:35:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116026089101553973",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "2a39b29718fb1aa54979",
       "platform": "Weibo",
@@ -132,6 +247,96 @@
       "excerptOriginal": "侯明昊 2026-10-30 09:30 这乐事，藏不住了！ 很高兴成为 @乐事官方微博 品牌代言人 想要把每一份乐事都分享给你们！ 特别是这款乐事新一代烘焙零食 咔咔上头的乐事轻享薯脆～ 空气感十足，咔咔酥脆！ 烘焙非油炸，咔咔轻盈！ 好吃还不腻，咔咔够味！ 快来戳同款乐事薯脆 和我一起咔一下吧！ #乐事薯脆# ​",
       "titleEnglish": "2026-10-30 09:30 This joy can't be hidden! I'm so happy to be the official Weibo brand ambassador for @ HappyEvents, and I want to share everything with you! Especially this new generation of bakery snacks, click on the top of the fun to enjoy the crispy sweet potatoes ~ the air is full of feeling, click crispy! Baking is not fried, click light! Isn't it delicious...",
       "excerptEnglish": "Hou Minghao 2026-10-30 09:30 This joy can't be hidden! I'm so happy to be the official Weibo brand ambassador for @ HappyEvents, and I want to share everything with you! Especially this new generation of bakery snacks, click on the top of the fun to enjoy the crispy sweet potatoes ~ the air is full of feeling, click crispy! Baking is not fried, click light! Isn't it tasty? Cracking is delicious! Come poke the same fun potato crisp and click with me! # Lucky crispy # ​"
+    },
+    {
+      "id": "59ac67f4eb4dcb6e17a5",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-30 13:45 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜@侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 秋末收笔，初冬启幕 故事回到开始的地方 侯明昊「属于我们的…」巡回…",
+      "excerpt": "侯明昊工作室 2026-10-30 13:45 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜@侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 秋末收笔，初冬启幕 故事回到开始的地方 侯明昊「属于我们的…」巡回演唱会 北京·收官站 预售即将开 ​",
+      "images": [],
+      "category": "Event",
+      "date": "2026-10-30T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "2026-10-30 13:45 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜@侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 秋末收笔，初冬启幕 故事回到开始的地方 侯明昊「属于我们的…」巡回…",
+      "excerptOriginal": "侯明昊工作室 2026-10-30 13:45 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜@侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 秋末收笔，初冬启幕 故事回到开始的地方 侯明昊「属于我们的…」巡回演唱会 北京·收官站 预售即将开 ​",
+      "titleEnglish": "2026-10-30 13:45 🥝 # Hou Minghao [overstated] # # Hou Minghao's concert tour # Hou Minghao's concert tour | @ Hou Minghao's concert tour",
+      "excerptEnglish": "Hou Minghao Studio 2026-10-30 13:45 # Hou Minghao [super talk] # # Hou Minghao belongs to our tour concert # # # # # # # # # # # # # # # 🥝 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # Ming # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ​"
+    },
+    {
+      "id": "0bf2e9c4345f85fa3de3",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-10-30 12:59 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 声纹漫渡，时序向近 静待同频交汇 ​",
+      "excerpt": "侯明昊工作室 2026-10-30 12:59 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 声纹漫渡，时序向近 静待同频交汇 ​",
+      "images": [],
+      "category": "Event",
+      "date": "2026-10-30T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "2026-10-30 12:59 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 声纹漫渡，时序向近 静待同频交汇 ​",
+      "excerptOriginal": "侯明昊工作室 2026-10-30 12:59 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 声纹漫渡，时序向近 静待同频交汇 ​",
+      "titleEnglish": "2026-10-30 12:59 # Hou Minghao [overstated] 🥝 # # Hou Minghao's concert tour # Hou Minghao's concert # Hou Minghao's concert | @ Hou Minghao's voiceprint crossing, time sequence waiting for the same frequency to converge ​",
+      "excerptEnglish": "Hou Minghao Studio 2026-10-30 12:59 # Hou Minghao [overstated] 🥝 # # Hou Minghao's concert tour # Hou Minghao's concert # Hou Minghao's concert # Hou Minghao's concert | Hou Minghao's concert | @ Hou Minghao's concert | Hou Minghao's concert ​"
+    },
+    {
+      "id": "ded7093dd2c5f0570494",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-30 18:42 明天见 ​",
+      "excerpt": "侯明昊 2026-10-30 18:42 明天见 ​",
+      "images": [],
+      "category": "Official",
+      "date": "2026-10-30T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "2026-10-30 18:42 明天见 ​",
+      "excerptOriginal": "侯明昊 2026-10-30 18:42 明天见 ​",
+      "titleEnglish": "2026-10-30 18:42 See you tomorrow ​",
+      "excerptEnglish": "Hou Minghao 2026-10-30 18:42 See you tomorrow ​"
+    },
+    {
+      "id": "19b688898aedb9762882",
+      "platform": "Weibo",
+      "source": "天美意官方微博",
+      "title": "天美意官方微博 2026-10-30 17:30 来自 微博网页版 旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款#天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不…",
+      "excerpt": "天美意官方微博 2026-10-30 17:30 来自 微博网页版 旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款#天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ​",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-10-30T12:00:00+08:00",
+      "url": "https://sina.cn/media/1882778030",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "天美意官方微博 2026-10-30 17:30 来自 微博网页版 旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款#天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不…",
+      "excerptOriginal": "天美意官方微博 2026-10-30 17:30 来自 微博网页版 旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款#天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ​",
+      "titleEnglish": "Tianmei's official Weibo account, October 30, 2026, 17:30: From Weibo Web Version: Travel and wear the same shoes as Xiao Hou! Easily meet your KPIs for great photos. If you can only bring one pair of shoes on a trip, it has to be Xiao Hou's! #TianmeiSunsetBoulderWesternBoots. Delicate leather paired with suede cowhide patchwork, full of retro style. Built-in pigskin insole, soft and comfortable on the feet, even after a long walk...",
+      "excerptEnglish": "Teenmix Official Weibo, October 30, 2026, 17:30: Travel and wear the same shoes as Hou Minghao! Easily achieve your KPIs! If you can only bring one pair of shoes on a trip, it has to be Hou Minghao's! #TeenmixSunsetBoulderWesternBoots Delicate leather paired with suede cowhide patchwork, full of retro feel. Built-in pigskin insole, soft and comfortable on the feet, won't tire you out even after long walks. Combining style, photogenic appeal with comfort, one pair of boots is all you need for city strolls and travel. #HouMinghaoTeenmixBrandAmbassador #teenmix #FollowHouToChaseTheWind"
+    },
+    {
+      "id": "7d9a8cdb9372f6ad3dfb",
+      "platform": "Weibo",
+      "source": "CASETiFY",
+      "title": "CASETiFY 2026-10-30 16:56 来自 iPhone 14 Pro #天猫双11星舰狂欢#倒计时一天！#侯明昊[超话]#已上淘宝搜索CASETiFY代言人@侯明昊 并连签3天！期待明天能与各位猕猴桃们一起参与#天猫全明星…",
+      "excerpt": "CASETiFY 2026-10-30 16:56 来自 iPhone 14 Pro #天猫双11星舰狂欢#倒计时一天！#侯明昊[超话]#已上淘宝搜索CASETiFY代言人@侯明昊 并连签3天！期待明天能与各位猕猴桃们一起参与#天猫全明星计划#解锁的侯明昊SSR专属明星徽章！我们还准备了超多福利哦～侯明昊亲签、价值千元的CASETiFY天猫限定礼盒等你来赢！ 双11上淘宝更优惠，官方立减叠券7.2折起 📣全体注意！#天猫双11星舰狂欢# 倒计时1天❗️ 本喵震惊😱 「早猫票」预热连签火爆，人气值累计已破160万！ 最后一天的签到大家不要忘记！上淘宝搜索你猜到的「明星名字」，10.28-10.30连续3天签到，赢翻倍狂欢积分～ ⏰明…",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-10-30T12:00:00+08:00",
+      "url": "https://sina.cn/media/7728002071",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "CASETiFY 2026-10-30 16:56 来自 iPhone 14 Pro #天猫双11星舰狂欢#倒计时一天！#侯明昊[超话]#已上淘宝搜索CASETiFY代言人@侯明昊 并连签3天！期待明天能与各位猕猴桃们一起参与#天猫全明星…",
+      "excerptOriginal": "CASETiFY 2026-10-30 16:56 来自 iPhone 14 Pro #天猫双11星舰狂欢#倒计时一天！#侯明昊[超话]#已上淘宝搜索CASETiFY代言人@侯明昊 并连签3天！期待明天能与各位猕猴桃们一起参与#天猫全明星计划#解锁的侯明昊SSR专属明星徽章！我们还准备了超多福利哦～侯明昊亲签、价值千元的CASETiFY天猫限定礼盒等你来赢！ 双11上淘宝更优惠，官方立减叠券7.2折起 📣全体注意！#天猫双11星舰狂欢# 倒计时1天❗️ 本喵震惊😱 「早猫票」预热连签火爆，人气值累计已破160万！ 最后一天的签到大家不要忘记！上淘宝搜索你猜到的「明星名字」，10.28-10.30连续3天签到，赢翻倍狂欢积分～ ⏰明…",
+      "titleEnglish": "CASETiFY 2026-10-30 16:56 From iPhone 14 Pro #TmallDouble11StarshipCarnival# One day countdown! #HouMinghao[SuperTopic]# I've already searched for CASETiFY spokesperson @HouMinghao on Taobao and signed up for 3 days in a row! Looking forward to participating in #TmallAllStars# with all my fellow fans tomorrow…",
+      "excerptEnglish": "CASETiFY 2026-10-30 16:56 From iPhone 14 Pro #TmallDouble11StarshipCarnival# Countdown 1 day! #HouMinghao[SuperTopic]# is now available on Taobao! Search for CASETiFY spokesperson @HouMinghao and sign for 3 consecutive days! Looking forward to participating in the #TmallAllStarPlan# with all our fans tomorrow to unlock Hou Minghao's exclusive SSR star badge! We've also prepared tons of benefits~ Hou Minghao's autographed gift box and a CASETiFY Tmall limited edition gift box worth thousands of yuan are waiting for you to win! Double 11 on Taobao offers even more discounts, official instant discounts and coupons up to 72% off📣Attention everyone! #TmallDouble11StarshipCarnival# Countdown 1 day❗️ This cat is shocked😱 The \"Early Cat Ticket\" pre-signing sign-in is incredibly popular, with the cumulative popularity value exceeding 1.6 million! Don't forget to sign in on the last day! Search for the \"celebrity name\" you guessed on Taobao, check in for 3 consecutive days from October 28th to 30th, and win double points! ⏰"
     },
     {
       "id": "7011c0246ddbd38c5ec3",
