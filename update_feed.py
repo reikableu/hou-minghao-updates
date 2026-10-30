@@ -35,12 +35,13 @@ HEADERS = {
 XHS_PROFILES = [
     {"name": "XHS Official 680f4160", "source": "XHS Official 680f4160",
      "profile_id": "680f416000000000080147b4",
-     "url": "https://www.rednote.com/user/profile/680f416000000000080147b4?xsec_token=ABvIk97fz2vBAKgqNwvzALYPVlCS89d0xDhWg6AKhBmBc%3D&xsec_source=pc_search"},
+     "url": "https://www.rednote.com/user/profile/680f416000000000080147b4?xsec_token=ABWkblVPjeFy4aBEb0ZYh9RytBI67Xzp2Q7bPVUxdsIB4%3D&xsec_source=pc_note"},
     {"name": "XHS Official 5bc495df", "source": "XHS Official 5bc495df",
      "profile_id": "5bc495dfec27fc0001bd4010",
      "url": "https://www.rednote.com/user/profile/5bc495dfec27fc0001bd4010?xsec_token=ABVa0xZWa2vz4oYG34o70kY-if281iBw4p6RJwJ9_5K2I%3D&xsec_source=pc_search"},
 ]
 XHS_POST_LIMIT_PER_PROFILE = 12
+XHS_MAX_PROFILE_CANDIDATES = 40
 XHS_PAGE_TIMEOUT_MS = 60000
 
 WEIBO_ACCOUNT_IDS = [
@@ -540,13 +541,12 @@ def load_xhs_cookies():
         raise ValueError(f"XHS_COOKIES_JSON is invalid JSON: {error}") from error
     if not isinstance(cookies, list) or not cookies:
         raise ValueError("XHS_COOKIES_JSON must be a non-empty JSON array")
-    allowed = {"name", "value", "url", "domain", "path", "expires",
-               "httpOnly", "secure", "sameSite", "partitionKey"}
+    allowed = {"name", "value", "url", "domain", "path", "expires", "httpOnly", "secure", "sameSite", "partitionKey"}
     result = []
-    for index, raw_cookie in enumerate(cookies, 1):
-        if not isinstance(raw_cookie, dict):
+    for index, item in enumerate(cookies, 1):
+        if not isinstance(item, dict):
             raise ValueError(f"XHS cookie {index} must be an object")
-        cookie = {k: v for k, v in raw_cookie.items() if k in allowed}
+        cookie = {key: value for key, value in item.items() if key in allowed}
         if not cookie.get("name") or cookie.get("value") is None:
             raise ValueError(f"XHS cookie {index} requires name and value")
         if not cookie.get("url") and not (cookie.get("domain") and cookie.get("path")):
@@ -563,105 +563,36 @@ def canonical_xhs_post_url(value):
         return ""
     url = urllib.parse.urljoin("https://www.rednote.com", raw)
     parts = urllib.parse.urlsplit(url)
-    if parts.netloc.lower() not in {"www.rednote.com", "rednote.com",
-                                    "www.xiaohongshu.com", "xiaohongshu.com"}:
+    if parts.netloc.lower() not in {"www.rednote.com", "rednote.com", "www.xiaohongshu.com", "xiaohongshu.com"}:
         return ""
-    for pattern in (r"/explore/([A-Za-z0-9_-]+)",
-                    r"/discovery/item/([A-Za-z0-9_-]+)",
-                    r"/note/([A-Za-z0-9_-]+)", r"/item/([A-Za-z0-9_-]+)"):
+    for pattern in (r"/explore/([A-Za-z0-9_-]+)", r"/discovery/item/([A-Za-z0-9_-]+)", r"/note/([A-Za-z0-9_-]+)", r"/item/([A-Za-z0-9_-]+)"):
         match = re.search(pattern, parts.path, re.I)
         if match:
-            return f"https://www.rednote.com/explore/{match.group(1)}"
-    query = urllib.parse.parse_qs(parts.query)
-    for key in ("note_id", "noteId", "item_id", "itemId"):
-        if query.get(key):
-            note_id = clean_text(query[key][0])
-            if re.fullmatch(r"[A-Za-z0-9_-]{8,64}", note_id):
-                return f"https://www.rednote.com/explore/{note_id}"
+            return f"https://www.rednote.com/discovery/item/{match.group(1)}"
     return ""
 
 
-def parse_xhs_timestamp(value):
-    if value in (None, ""):
-        return singapore_now().isoformat()
-    try:
-        number = float(value)
-        if number > 10_000_000_000:
-            number /= 1000
-        return datetime.fromtimestamp(number, tz=UTC).astimezone(SINGAPORE).isoformat()
-    except (TypeError, ValueError, OSError):
-        return parse_feed_date(str(value))
-
-
-def xhs_images(value):
-    found = []
-    keys = {"url", "urlDefault", "urlPre", "url_default", "url_pre", "imageList",
-            "images", "cover", "thumbnail", "originUrl", "originalUrl", "infoList"}
-    def walk(node, parent=""):
-        if len(found) >= 9: return
-        if isinstance(node, dict):
-            for key, item in node.items():
-                if key in keys and isinstance(item, str):
-                    url = normalize_image_url(item)
-                    if url and not any(x in url.lower() for x in ("avatar", "profile", "portrait")) and url not in found:
-                        found.append(url)
-                elif isinstance(item, (dict, list)): walk(item, key)
-        elif isinstance(node, list):
-            for item in node: walk(item, parent)
-    walk(value)
-    return found[:9]
-
-
-def extract_xhs_posts_from_json(payload, source_config, profile_name):
-    posts, seen = [], set()
-    def note_id(obj):
-        for key in ("noteId", "note_id", "id"):
-            value = obj.get(key)
-            if isinstance(value, (str, int)) and re.fullmatch(r"[A-Za-z0-9_-]{12,64}", str(value)):
-                return str(value)
+def parse_xhs_display_date(value):
+    value = clean_text(value)
+    if not value:
         return ""
-    def text(obj, keys):
-        for key in keys:
-            if isinstance(obj.get(key), str) and clean_text(obj[key]): return clean_text(obj[key])
-        return ""
-    def add(raw):
-        obj = raw.get("noteCard") if isinstance(raw.get("noteCard"), dict) else raw
-        nid = note_id(obj) or note_id(raw)
-        if not nid: return
-        url = f"https://www.rednote.com/explore/{nid}"
-        if url in seen: return
-        title = text(obj, ("displayTitle", "title", "name"))
-        excerpt = text(obj, ("desc", "description", "content", "title", "displayTitle"))
-        if not title: title = shorten(excerpt, 150) or "New XHS update"
-        if not excerpt: excerpt = title
-        date_value = next((obj.get(k) for k in ("time", "publishTime", "publish_time", "timestamp", "createTime", "create_time", "lastUpdateTime") if obj.get(k) not in (None, "")), None)
-        date_source = "payload"
-        if date_value in (None, "") and re.fullmatch(r"[0-9a-fA-F]{24}", nid):
-            try:
-                date_value = int(nid[:8], 16)
-                date_source = "note_id"
-            except ValueError:
-                date_value = None
-        post_date = parse_xhs_timestamp(date_value) if date_value not in (None, "") else ""
-        seen.add(url)
-        posts.append({"id": make_id("XHS", profile_name, title, url), "platform": "XHS",
-                      "source": profile_name, "title": shorten(title, 180),
-                      "excerpt": shorten(excerpt, 350), "images": xhs_images(obj),
-                      "category": "XHS Update", "date": post_date,
-                      "dateSource": date_source if post_date else "unknown", "url": url, "official": True, "verified": True,
-                      "collectionMethod": "Playwright captured JSON",
-                      "profileId": source_config.get("profile_id", "")})
-    def walk(node):
-        if len(posts) >= 100: return
-        if isinstance(node, dict):
-            keys = set(node)
-            if note_id(node) and keys.intersection({"displayTitle", "title", "desc", "noteCard", "cover", "imageList", "images"}): add(node)
-            for item in node.values():
-                if isinstance(item, (dict, list)): walk(item)
-        elif isinstance(node, list):
-            for item in node: walk(item)
-    walk(payload)
-    return posts
+    now = singapore_now()
+    match = re.search(r"(?:Yesterday|昨天)[,，]?\s*(\d{1,2}):(\d{2})", value, re.I)
+    if match:
+        yesterday = now.date().fromordinal(now.date().toordinal() - 1)
+        return datetime(yesterday.year, yesterday.month, yesterday.day, int(match.group(1)), int(match.group(2)), tzinfo=SINGAPORE).isoformat()
+    match = re.search(r"(?:Today|今天)[,，]?\s*(\d{1,2}):(\d{2})", value, re.I)
+    if match:
+        return datetime(now.year, now.month, now.day, int(match.group(1)), int(match.group(2)), tzinfo=SINGAPORE).isoformat()
+    match = re.search(r"(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})日?(?:\s+(\d{1,2}):(\d{2}))?", value)
+    if match:
+        year, month, day, hour, minute = match.groups()
+        return datetime(int(year), int(month), int(day), int(hour or 12), int(minute or 0), tzinfo=SINGAPORE).isoformat()
+    match = re.search(r"(\d{1,2})[-/.月](\d{1,2})日?(?:\s+(\d{1,2}):(\d{2}))?", value)
+    if match:
+        month, day, hour, minute = match.groups()
+        return datetime(now.year, int(month), int(day), int(hour or 12), int(minute or 0), tzinfo=SINGAPORE).isoformat()
+    return ""
 
 
 def collect_xhs_profile(source_config):
@@ -670,118 +601,140 @@ def collect_xhs_profile(source_config):
         print(f"{source_config['name']}: XHS_COOKIES_JSON missing; skipping XHS")
         return []
     from playwright.sync_api import sync_playwright
-    collected, seen = [], set()
     with sync_playwright() as pw:
         browser = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"])
-        context = browser.new_context(locale="zh-CN", timezone_id="Asia/Shanghai",
-                                      viewport={"width": 1440, "height": 1000},
-                                      user_agent=HEADERS["User-Agent"],
-                                      extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]})
+        context = browser.new_context(locale="zh-CN", timezone_id="Asia/Shanghai", viewport={"width": 1440, "height": 1100}, user_agent=HEADERS["User-Agent"], extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]})
         context.add_cookies(cookies)
         page = context.new_page()
-        payloads = []
-        def capture(response):
-            try:
-                if "json" not in (response.headers.get("content-type") or "").lower(): return
-                url = response.url.lower()
-                if not any(x in url for x in ("/api/sns/web/", "user_post", "note_list", "notelist", "profile")): return
-                data = response.json()
-                if isinstance(data, (dict, list)): payloads.append((response.url, data))
-            except Exception: pass
-        page.on("response", capture)
         page.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined});")
         response = page.goto(source_config["url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
-        page.wait_for_timeout(8000)
+        page.wait_for_timeout(7000)
         status = response.status if response else 0
         print("XHS HTTP status:", status)
         print("XHS final URL:", page.url)
         print("XHS page title:", clean_text(page.title())[:150])
-        if status >= 400: raise RuntimeError(f"XHS profile returned HTTP {status}")
+        if status >= 400:
+            browser.close()
+            raise RuntimeError(f"XHS profile returned HTTP {status}")
         profile_name = source_config["source"]
         for selector in ("h1", "[class*='user-name']", "[class*='username']", "[class*='nickname']"):
             try:
                 value = clean_text(page.locator(selector).first.inner_text(timeout=1200))
-                if value and len(value) <= 80: profile_name = value; break
-            except Exception: pass
-        source_config["source"] = source_config["name"] = profile_name
-        print("XHS captured JSON responses:", len(payloads))
-        for api_url, payload in payloads:
-            for post in extract_xhs_posts_from_json(payload, source_config, profile_name):
-                if post["url"] not in seen:
-                    seen.add(post["url"]); collected.append(post)
-        print("XHS posts from captured responses:", len(collected))
-        # Robust DOM fallback: inspect all anchors and their nearest meaningful card.
-        for _ in range(7):
-            anchors = page.locator("a[href]")
-            print("XHS candidate DOM links:", anchors.count())
-            for i in range(anchors.count()):
-                if len(collected) >= XHS_POST_LIMIT_PER_PROFILE: break
-                link = anchors.nth(i)
-                try:
-                    url = canonical_xhs_post_url(link.get_attribute("href") or "")
-                    if not url or url in seen: continue
-                    card = link.locator("xpath=ancestor::*[self::section or self::article or self::li or self::div][1]")
-                    body = clean_text(card.inner_text(timeout=1000)) or clean_text(link.inner_text(timeout=700))
-                    if not body: continue
-                    images=[]
-                    for j in range(min(card.locator("img").count(),9)):
-                        img=card.locator("img").nth(j)
-                        for attr in ("src","data-src","data-original"):
-                            image_url=normalize_image_url(img.get_attribute(attr),source_config["url"])
-                            if image_url and image_url not in images: images.append(image_url); break
-                    title=shorten(body,150)
-                    seen.add(url)
-                    collected.append({"id":make_id("XHS",profile_name,title,url),"platform":"XHS",
-                        "source":profile_name,"title":title,"excerpt":shorten(body,350),"images":images,
-                        "category":"XHS Update","date":"","dateSource":"unknown","url":url,
-                        "official":True,"verified":True,"collectionMethod":"Playwright DOM",
-                        "profileId":source_config.get("profile_id","")})
-                except Exception as error:
-                    print("XHS card skipped:",type(error).__name__,str(error)[:120])
-            if len(collected)>=XHS_POST_LIMIT_PER_PROFILE: break
-            page.mouse.wheel(0,1600); page.wait_for_timeout(2000)
-        # Scrolling can load additional JSON responses. Parse every captured payload again,
-        # then deduplicate and select the newest notes instead of the first notes encountered.
-        for api_url, payload in payloads:
-            for post in extract_xhs_posts_from_json(payload, source_config, profile_name):
-                if post["url"] not in seen:
-                    seen.add(post["url"])
-                    collected.append(post)
-
-        def xhs_sort_key(post):
-            value = post.get("date", "")
-            try:
-                return datetime.fromisoformat(value.replace("Z", "+00:00")).timestamp()
+                if value and len(value) <= 80:
+                    profile_name = value
+                    break
             except Exception:
-                match = re.search(r"/explore/([0-9a-fA-F]{24})", post.get("url", ""))
-                if match:
+                pass
+        source_config["source"] = source_config["name"] = profile_name
+
+        candidates, seen = [], set()
+        stagnant = 0
+        previous = 0
+        for _ in range(10):
+            anchors = page.locator("a[href*='/discovery/item/'], a[href*='/explore/']")
+            print("XHS current note links:", anchors.count())
+            for index in range(anchors.count()):
+                try:
+                    link = anchors.nth(index)
+                    raw_href = link.get_attribute("href") or ""
+                    original_url = urllib.parse.urljoin("https://www.rednote.com", raw_href)
+                    canonical_url = canonical_xhs_post_url(original_url)
+                    if not canonical_url or canonical_url in seen:
+                        continue
+                    seen.add(canonical_url)
+                    card = link.locator("xpath=ancestor::*[self::section or self::article or self::li or self::div][1]")
+                    card_text = clean_text(card.inner_text(timeout=1200)) or clean_text(link.inner_text(timeout=700))
+                    images = []
+                    for image_index in range(min(card.locator("img").count(), 9)):
+                        image = card.locator("img").nth(image_index)
+                        for attribute in ("src", "data-src", "data-original"):
+                            image_url = normalize_image_url(image.get_attribute(attribute), source_config["url"])
+                            if image_url and image_url not in images:
+                                images.append(image_url)
+                                break
+                    candidates.append({"canonical_url": canonical_url, "original_url": original_url, "card_text": card_text, "images": images})
+                except Exception as error:
+                    print("XHS profile candidate skipped:", type(error).__name__, str(error)[:120])
+            if len(candidates) >= XHS_MAX_PROFILE_CANDIDATES:
+                break
+            page.mouse.wheel(0, 1700)
+            page.wait_for_timeout(1800)
+            stagnant = stagnant + 1 if len(candidates) == previous else 0
+            previous = len(candidates)
+            if stagnant >= 3:
+                break
+        print("XHS unique current profile candidates:", len(candidates))
+
+        posts = []
+        for candidate in candidates:
+            if len(posts) >= XHS_MAX_PROFILE_CANDIDATES:
+                break
+            note_page = context.new_page()
+            try:
+                note_response = note_page.goto(candidate["original_url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
+                note_page.wait_for_timeout(2500)
+                if note_response and note_response.status >= 400:
+                    raise RuntimeError(f"HTTP {note_response.status}")
+                body = clean_text(note_page.locator("body").inner_text(timeout=5000))
+                title = candidate["card_text"]
+                for selector in ("h1", "[class*='note-title']", "[class*='title']"):
                     try:
-                        return float(int(match.group(1)[:8], 16))
-                    except ValueError:
+                        value = clean_text(note_page.locator(selector).first.inner_text(timeout=800))
+                        if value and len(value) <= 200:
+                            title = value
+                            break
+                    except Exception:
                         pass
+                post_date = ""
+                for selector in ("time", "[class*='date']", "[class*='publish']", "[class*='time']"):
+                    try:
+                        node = note_page.locator(selector).first
+                        raw_date = clean_text(node.get_attribute("datetime") or node.inner_text(timeout=700))
+                        post_date = parse_xhs_display_date(raw_date)
+                        if post_date:
+                            break
+                    except Exception:
+                        pass
+                if not post_date:
+                    date_patterns = [r"(?:Yesterday|昨天)[,，]?\s*\d{1,2}:\d{2}", r"(?:Today|今天)[,，]?\s*\d{1,2}:\d{2}", r"20\d{2}[-/.年]\d{1,2}[-/.月]\d{1,2}日?(?:\s+\d{1,2}:\d{2})?", r"\d{1,2}[-/.月]\d{1,2}日?(?:\s+\d{1,2}:\d{2})?"]
+                    for pattern in date_patterns:
+                        match = re.search(pattern, body, re.I)
+                        if match:
+                            post_date = parse_xhs_display_date(match.group(0))
+                            if post_date:
+                                break
+                images = list(candidate["images"])
+                for image_index in range(min(note_page.locator("img").count(), 25)):
+                    image = note_page.locator("img").nth(image_index)
+                    for attribute in ("src", "data-src", "data-original"):
+                        image_url = normalize_image_url(image.get_attribute(attribute), candidate["original_url"])
+                        if image_url and not any(marker in image_url.lower() for marker in ("avatar", "profile", "portrait")) and image_url not in images:
+                            images.append(image_url)
+                            break
+                clean_title = shorten(title or candidate["card_text"], 180) or "New XHS update"
+                posts.append({"id": make_id("XHS", profile_name, clean_title, candidate["canonical_url"]), "platform": "XHS", "source": profile_name, "title": clean_title, "excerpt": shorten(body or candidate["card_text"], 350), "images": images[:9], "category": "XHS Update", "date": post_date, "dateSource": "note detail" if post_date else "unknown", "url": candidate["original_url"], "canonicalUrl": candidate["canonical_url"], "official": True, "verified": True, "collectionMethod": "Playwright note detail", "profileId": source_config.get("profile_id", "")})
+            except Exception as error:
+                print("XHS note enrichment failed:", candidate["canonical_url"], type(error).__name__, str(error)[:120])
+            finally:
+                note_page.close()
+
+        deduped = {}
+        for post in posts:
+            key = post.get("canonicalUrl") or canonical_xhs_post_url(post.get("url", "")) or post.get("id")
+            old = deduped.get(key)
+            if old is None or (post.get("date") and not old.get("date")):
+                deduped[key] = post
+        def sort_key(post):
+            try:
+                return datetime.fromisoformat(post.get("date", "").replace("Z", "+00:00")).timestamp()
+            except Exception:
                 return 0
-
-        collected = sorted(
-            deduplicate_posts(collected),
-            key=xhs_sort_key,
-            reverse=True,
-        )
-        dated_count = sum(bool(post.get("date")) for post in collected)
-        print("XHS total unique candidates:", len(collected))
-        print("XHS candidates with dates:", dated_count)
-        if collected:
-            print("XHS newest candidate date:", collected[0].get("date") or "unknown")
-
-        if not collected:
-            hrefs=[]
-            for i in range(min(page.locator("a[href]").count(),250)):
-                href=page.locator("a[href]").nth(i).get_attribute("href") or ""
-                if href and href not in hrefs: hrefs.append(href)
-                if len(hrefs)>=30: break
-            print("XHS diagnostic sample hrefs:",hrefs)
-            print("XHS diagnostic body preview:",clean_text(page.locator("body").inner_text())[:500])
+        final_posts = sorted(deduped.values(), key=sort_key, reverse=True)
+        print("XHS enriched profile posts:", len(final_posts))
+        print("XHS newest profile title:", final_posts[0].get("title") if final_posts else "none")
+        print("XHS newest profile date:", final_posts[0].get("date") if final_posts else "none")
         browser.close()
-    return collected[:XHS_POST_LIMIT_PER_PROFILE]
+        return final_posts[:XHS_POST_LIMIT_PER_PROFILE]
 
 
 def collect_source(source_config):
