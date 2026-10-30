@@ -33,26 +33,12 @@ HEADERS = {
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
 }
 XHS_PROFILES = [
-    {
-        "name": "XHS Official 680f4160",
-        "source": "XHS Official 680f4160",
-        "profile_id": "680f416000000000080147b4",
-        "url": (
-            "https://www.rednote.com/user/profile/680f416000000000080147b4"
-            "?xsec_token=ABvIk97fz2vBAKgqNwvzALYPVlCS89d0xDhWg6AKhBmBc%3D"
-            "&xsec_source=pc_search"
-        ),
-    },
-    {
-        "name": "XHS Official 5bc495df",
-        "source": "XHS Official 5bc495df",
-        "profile_id": "5bc495dfec27fc0001bd4010",
-        "url": (
-            "https://www.rednote.com/user/profile/5bc495dfec27fc0001bd4010"
-            "?xsec_token=ABVa0xZWa2vz4oYG34o70kY-if281iBw4p6RJwJ9_5K2I%3D"
-            "&xsec_source=pc_search"
-        ),
-    },
+    {"name": "XHS Official 680f4160", "source": "XHS Official 680f4160",
+     "profile_id": "680f416000000000080147b4",
+     "url": "https://www.rednote.com/user/profile/680f416000000000080147b4?xsec_token=ABvIk97fz2vBAKgqNwvzALYPVlCS89d0xDhWg6AKhBmBc%3D&xsec_source=pc_search"},
+    {"name": "XHS Official 5bc495df", "source": "XHS Official 5bc495df",
+     "profile_id": "5bc495dfec27fc0001bd4010",
+     "url": "https://www.rednote.com/user/profile/5bc495dfec27fc0001bd4010?xsec_token=ABVa0xZWa2vz4oYG34o70kY-if281iBw4p6RJwJ9_5K2I%3D&xsec_source=pc_search"},
 ]
 XHS_POST_LIMIT_PER_PROFILE = 12
 XHS_PAGE_TIMEOUT_MS = 60000
@@ -77,15 +63,8 @@ SOURCES = [
 ] + [
     {"name": "Hou Minghao X List", "source": "Hou Minghao X Updates", "platform": "X",
      "url": "https://rss.app/feeds/k375DGhHRMrZ3Ju2.xml", "official": False, "type": "rss_feed"},
-] + [
-    {
-        **profile,
-        "platform": "XHS",
-        "official": True,
-        "type": "xhs_profile",
-    }
-    for profile in XHS_PROFILES
-]
+] + [{**profile, "platform": "XHS", "official": True, "type": "xhs_profile"}
+     for profile in XHS_PROFILES]
 
 
 def singapore_now():
@@ -552,7 +531,6 @@ def collect_rss_feed(source_config):
     return collected
 
 def load_xhs_cookies():
-    """Load and normalize Playwright cookies from the GitHub Actions secret."""
     raw = os.environ.get("XHS_COOKIES_JSON", "").strip()
     if not raw:
         return []
@@ -562,80 +540,48 @@ def load_xhs_cookies():
         raise ValueError(f"XHS_COOKIES_JSON is invalid JSON: {error}") from error
     if not isinstance(cookies, list) or not cookies:
         raise ValueError("XHS_COOKIES_JSON must be a non-empty JSON array")
-    allowed = {
-        "name", "value", "url", "domain", "path", "expires",
-        "httpOnly", "secure", "sameSite", "partitionKey",
-    }
-    normalized = []
-    for index, raw_cookie in enumerate(cookies, start=1):
+    allowed = {"name", "value", "url", "domain", "path", "expires",
+               "httpOnly", "secure", "sameSite", "partitionKey"}
+    result = []
+    for index, raw_cookie in enumerate(cookies, 1):
         if not isinstance(raw_cookie, dict):
-            raise ValueError(f"XHS cookie {index} must be a JSON object")
-        cookie = {key: value for key, value in raw_cookie.items() if key in allowed}
+            raise ValueError(f"XHS cookie {index} must be an object")
+        cookie = {k: v for k, v in raw_cookie.items() if k in allowed}
         if not cookie.get("name") or cookie.get("value") is None:
             raise ValueError(f"XHS cookie {index} requires name and value")
         if not cookie.get("url") and not (cookie.get("domain") and cookie.get("path")):
-            cookie["domain"] = ".rednote.com"
-            cookie["path"] = "/"
+            cookie["domain"], cookie["path"] = ".rednote.com", "/"
         same_site = str(cookie.get("sameSite", "Lax")).capitalize()
         cookie["sameSite"] = same_site if same_site in {"Strict", "Lax", "None"} else "Lax"
-        normalized.append(cookie)
-    return normalized
+        result.append(cookie)
+    return result
 
 
 def canonical_xhs_post_url(value):
-    """Return a clean RedNote post URL without temporary tracking parameters."""
-    url = urllib.parse.urljoin("https://www.rednote.com", clean_text(value))
+    raw = clean_text(value)
+    if not raw:
+        return ""
+    url = urllib.parse.urljoin("https://www.rednote.com", raw)
     parts = urllib.parse.urlsplit(url)
-    if parts.netloc.lower() not in {
-        "www.rednote.com", "rednote.com", "www.xiaohongshu.com", "xiaohongshu.com"
-    }:
+    if parts.netloc.lower() not in {"www.rednote.com", "rednote.com",
+                                    "www.xiaohongshu.com", "xiaohongshu.com"}:
         return ""
-    match = re.search(r"/(?:explore|discovery/item)/([A-Za-z0-9]+)", parts.path)
-    if not match:
-        return ""
-    return f"https://www.rednote.com/explore/{match.group(1)}"
-
-
-def xhs_image_urls(value):
-    """Recursively collect likely XHS image URLs from a JSON value."""
-    found = []
-    image_keys = {
-        "url", "urlDefault", "urlPre", "url_default", "url_pre",
-        "traceId", "infoList", "imageList", "images", "cover",
-        "thumbnail", "avatar", "originUrl", "originalUrl",
-    }
-
-    def add(candidate):
-        url = normalize_image_url(candidate)
-        if not url:
-            return
-        lowered = url.lower()
-        if any(marker in lowered for marker in ("avatar", "profile", "portrait", "head")):
-            return
-        if url not in found:
-            found.append(url)
-
-    def walk(node, parent_key=""):
-        if len(found) >= 9:
-            return
-        if isinstance(node, dict):
-            for key, item in node.items():
-                if key in image_keys and isinstance(item, str):
-                    add(item)
-                elif isinstance(item, (dict, list)):
-                    walk(item, key)
-        elif isinstance(node, list):
-            for item in node:
-                walk(item, parent_key)
-        elif isinstance(node, str) and parent_key in image_keys:
-            add(node)
-
-    walk(value)
-    return found[:9]
+    for pattern in (r"/explore/([A-Za-z0-9_-]+)",
+                    r"/discovery/item/([A-Za-z0-9_-]+)",
+                    r"/note/([A-Za-z0-9_-]+)", r"/item/([A-Za-z0-9_-]+)"):
+        match = re.search(pattern, parts.path, re.I)
+        if match:
+            return f"https://www.rednote.com/explore/{match.group(1)}"
+    query = urllib.parse.parse_qs(parts.query)
+    for key in ("note_id", "noteId", "item_id", "itemId"):
+        if query.get(key):
+            note_id = clean_text(query[key][0])
+            if re.fullmatch(r"[A-Za-z0-9_-]{8,64}", note_id):
+                return f"https://www.rednote.com/explore/{note_id}"
+    return ""
 
 
 def parse_xhs_timestamp(value):
-    """Convert milliseconds, seconds, or date text to Singapore ISO time."""
     if value in (None, ""):
         return singapore_now().isoformat()
     try:
@@ -647,310 +593,154 @@ def parse_xhs_timestamp(value):
         return parse_feed_date(str(value))
 
 
-def extract_xhs_posts_from_state(state, source_config, profile_name):
-    """Find note-like objects anywhere inside RedNote's initial page state."""
-    collected = []
-    seen_urls = set()
-    profile_id = source_config.get("profile_id", "")
+def xhs_images(value):
+    found = []
+    keys = {"url", "urlDefault", "urlPre", "url_default", "url_pre", "imageList",
+            "images", "cover", "thumbnail", "originUrl", "originalUrl", "infoList"}
+    def walk(node, parent=""):
+        if len(found) >= 9: return
+        if isinstance(node, dict):
+            for key, item in node.items():
+                if key in keys and isinstance(item, str):
+                    url = normalize_image_url(item)
+                    if url and not any(x in url.lower() for x in ("avatar", "profile", "portrait")) and url not in found:
+                        found.append(url)
+                elif isinstance(item, (dict, list)): walk(item, key)
+        elif isinstance(node, list):
+            for item in node: walk(item, parent)
+    walk(value)
+    return found[:9]
 
-    def text_from(obj, keys):
-        for key in keys:
-            value = obj.get(key)
-            if isinstance(value, str) and clean_text(value):
-                return clean_text(value)
-        return ""
 
-    def note_id_from(obj):
+def extract_xhs_posts_from_json(payload, source_config, profile_name):
+    posts, seen = [], set()
+    def note_id(obj):
         for key in ("noteId", "note_id", "id"):
             value = obj.get(key)
-            if isinstance(value, (str, int)):
-                candidate = str(value).strip()
-                if re.fullmatch(r"[A-Za-z0-9]{12,40}", candidate):
-                    return candidate
+            if isinstance(value, (str, int)) and re.fullmatch(r"[A-Za-z0-9_-]{12,64}", str(value)):
+                return str(value)
         return ""
-
-    def looks_like_note(obj):
-        note_id = note_id_from(obj)
-        if not note_id:
-            return False
-        keys = set(obj)
-        return bool(keys.intersection({
-            "displayTitle", "title", "desc", "description", "noteCard",
-            "cover", "imageList", "images", "type", "time", "publishTime",
-        }))
-
-    def add_note(raw):
+    def text(obj, keys):
+        for key in keys:
+            if isinstance(obj.get(key), str) and clean_text(obj[key]): return clean_text(obj[key])
+        return ""
+    def add(raw):
         obj = raw.get("noteCard") if isinstance(raw.get("noteCard"), dict) else raw
-        note_id = note_id_from(obj) or note_id_from(raw)
-        if not note_id:
-            return
-        post_url = f"https://www.rednote.com/explore/{note_id}"
-        if post_url in seen_urls:
-            return
-        title = text_from(obj, ("displayTitle", "title", "name"))
-        excerpt = text_from(obj, ("desc", "description", "content", "title", "displayTitle"))
-        if not title:
-            title = shorten(excerpt, 150) or "New XHS update"
-        if not excerpt:
-            excerpt = title
-        date_value = None
-        for key in ("time", "publishTime", "publish_time", "timestamp", "createTime", "create_time"):
-            if obj.get(key) not in (None, ""):
-                date_value = obj.get(key)
-                break
-        images = xhs_image_urls(obj)
-        seen_urls.add(post_url)
-        collected.append({
-            "id": make_id("XHS", profile_name, title, post_url),
-            "platform": "XHS",
-            "source": profile_name,
-            "title": shorten(title, 180),
-            "excerpt": shorten(excerpt, 350),
-            "images": images,
-            "category": "XHS Update",
-            "date": parse_xhs_timestamp(date_value),
-            "url": post_url,
-            "official": True,
-            "verified": True,
-            "collectionMethod": "Playwright initial state",
-            "profileId": profile_id,
-        })
-
+        nid = note_id(obj) or note_id(raw)
+        if not nid: return
+        url = f"https://www.rednote.com/explore/{nid}"
+        if url in seen: return
+        title = text(obj, ("displayTitle", "title", "name"))
+        excerpt = text(obj, ("desc", "description", "content", "title", "displayTitle"))
+        if not title: title = shorten(excerpt, 150) or "New XHS update"
+        if not excerpt: excerpt = title
+        date_value = next((obj.get(k) for k in ("time", "publishTime", "publish_time", "timestamp", "createTime") if obj.get(k) not in (None, "")), None)
+        seen.add(url)
+        posts.append({"id": make_id("XHS", profile_name, title, url), "platform": "XHS",
+                      "source": profile_name, "title": shorten(title, 180),
+                      "excerpt": shorten(excerpt, 350), "images": xhs_images(obj),
+                      "category": "XHS Update", "date": parse_xhs_timestamp(date_value),
+                      "url": url, "official": True, "verified": True,
+                      "collectionMethod": "Playwright captured JSON",
+                      "profileId": source_config.get("profile_id", "")})
     def walk(node):
-        if len(collected) >= XHS_POST_LIMIT_PER_PROFILE:
-            return
+        if len(posts) >= XHS_POST_LIMIT_PER_PROFILE: return
         if isinstance(node, dict):
-            if looks_like_note(node):
-                add_note(node)
-            for value in node.values():
-                if isinstance(value, (dict, list)):
-                    walk(value)
+            keys = set(node)
+            if note_id(node) and keys.intersection({"displayTitle", "title", "desc", "noteCard", "cover", "imageList", "images"}): add(node)
+            for item in node.values():
+                if isinstance(item, (dict, list)): walk(item)
         elif isinstance(node, list):
-            for value in node:
-                walk(value)
-
-    walk(state)
-    return collected[:XHS_POST_LIMIT_PER_PROFILE]
-
-
-def extract_xhs_initial_state(page):
-    """Read state from window or embedded script tags without logging secrets."""
-    try:
-        state = page.evaluate("""() => {
-            const candidates = [
-                window.__INITIAL_STATE__, window.__INITIAL_SSR_STATE__,
-                window.__PRELOADED_STATE__, window.__NEXT_DATA__
-            ];
-            return candidates.find(value => value && typeof value === 'object') || null;
-        }""")
-        if isinstance(state, (dict, list)):
-            return state
-    except Exception as error:
-        print("XHS window state unavailable:", type(error).__name__, str(error)[:120])
-
-    scripts = page.locator("script")
-    for index in range(min(scripts.count(), 80)):
-        try:
-            text = scripts.nth(index).text_content(timeout=500) or ""
-        except Exception:
-            continue
-        if "__INITIAL_STATE__" not in text and "noteList" not in text and "noteCard" not in text:
-            continue
-        candidates = []
-        match = re.search(r"__INITIAL_STATE__\s*=\s*({.*})\s*;?\s*$", text, re.S)
-        if match:
-            candidates.append(match.group(1))
-        if text.lstrip().startswith("{"):
-            candidates.append(text.strip())
-        for candidate in candidates:
-            try:
-                state = json.loads(candidate)
-                if isinstance(state, (dict, list)):
-                    return state
-            except Exception:
-                pass
-    return None
-
-
-def xhs_page_problem(page):
-    """Return a human-readable reason when RedNote serves a non-profile page."""
-    current_url = page.url.lower()
-    title = clean_text(page.title()).lower()
-    try:
-        body = clean_text(page.locator("body").inner_text(timeout=3000)).lower()
-    except Exception:
-        body = ""
-    combined = f"{current_url} {title} {body[:4000]}"
-    if any(marker in combined for marker in (
-        "login", "sign in", "扫码登录", "登录后", "please log in"
-    )):
-        return "Login required or XHS session expired"
-    if any(marker in combined for marker in (
-        "captcha", "verify", "verification", "安全验证", "访问异常", "滑块"
-    )):
-        return "Verification or anti-bot page returned"
-    if "user/profile" not in current_url:
-        return f"Unexpected redirect to {page.url}"
-    return ""
+            for item in node: walk(item)
+    walk(payload)
+    return posts[:XHS_POST_LIMIT_PER_PROFILE]
 
 
 def collect_xhs_profile(source_config):
-    """Collect one RedNote profile using initial state first and DOM as fallback."""
     cookies = load_xhs_cookies()
     if not cookies:
-        print(f"{source_config['name']}: XHS_COOKIES_JSON is missing; skipping XHS.")
+        print(f"{source_config['name']}: XHS_COOKIES_JSON missing; skipping XHS")
         return []
-    try:
-        from playwright.sync_api import sync_playwright
-    except ImportError as error:
-        raise RuntimeError("Playwright is not installed") from error
-
-    collected = []
-    with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(
-            headless=True,
-            args=[
-                "--disable-blink-features=AutomationControlled",
-                "--no-sandbox",
-                "--disable-dev-shm-usage",
-            ],
-        )
-        context = browser.new_context(
-            locale="zh-CN",
-            timezone_id="Asia/Shanghai",
-            viewport={"width": 1440, "height": 1000},
-            user_agent=HEADERS["User-Agent"],
-            extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]},
-        )
+    from playwright.sync_api import sync_playwright
+    collected, seen = [], set()
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"])
+        context = browser.new_context(locale="zh-CN", timezone_id="Asia/Shanghai",
+                                      viewport={"width": 1440, "height": 1000},
+                                      user_agent=HEADERS["User-Agent"],
+                                      extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]})
         context.add_cookies(cookies)
         page = context.new_page()
-        page.add_init_script("""
-            Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
-            Object.defineProperty(navigator, 'languages', {get: () => ['zh-CN', 'zh', 'en']});
-        """)
-        response = page.goto(
-            source_config["url"],
-            wait_until="domcontentloaded",
-            timeout=XHS_PAGE_TIMEOUT_MS,
-        )
-        page.wait_for_timeout(7000)
-        print("XHS HTTP status:", response.status if response else "no response")
+        payloads = []
+        def capture(response):
+            try:
+                if "json" not in (response.headers.get("content-type") or "").lower(): return
+                url = response.url.lower()
+                if not any(x in url for x in ("/api/sns/web/", "user_post", "note_list", "notelist", "profile")): return
+                data = response.json()
+                if isinstance(data, (dict, list)): payloads.append((response.url, data))
+            except Exception: pass
+        page.on("response", capture)
+        page.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined});")
+        response = page.goto(source_config["url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
+        page.wait_for_timeout(8000)
+        status = response.status if response else 0
+        print("XHS HTTP status:", status)
         print("XHS final URL:", page.url)
         print("XHS page title:", clean_text(page.title())[:150])
-
-        problem = xhs_page_problem(page)
-        if problem:
-            browser.close()
-            raise RuntimeError(problem)
-
+        if status >= 400: raise RuntimeError(f"XHS profile returned HTTP {status}")
         profile_name = source_config["source"]
-        for selector in (
-            "h1", "[class*='user-name']", "[class*='username']",
-            "[class*='nickname']", "[class*='userName']",
-        ):
+        for selector in ("h1", "[class*='user-name']", "[class*='username']", "[class*='nickname']"):
             try:
-                text = clean_text(page.locator(selector).first.inner_text(timeout=1200))
-                if text and len(text) <= 80:
-                    profile_name = text
-                    break
-            except Exception:
-                pass
-        source_config["source"] = profile_name
-        source_config["name"] = profile_name
-
-        state = extract_xhs_initial_state(page)
-        if state is not None:
-            if isinstance(state, dict):
-                print("XHS initial-state top keys:", list(state.keys())[:25])
-            collected = extract_xhs_posts_from_state(state, source_config, profile_name)
-            print("XHS posts from initial state:", len(collected))
-        else:
-            print("XHS initial state was not found.")
-
-        seen_urls = {post["url"] for post in collected}
-        no_growth_rounds = 0
-        previous_count = len(collected)
+                value = clean_text(page.locator(selector).first.inner_text(timeout=1200))
+                if value and len(value) <= 80: profile_name = value; break
+            except Exception: pass
+        source_config["source"] = source_config["name"] = profile_name
+        print("XHS captured JSON responses:", len(payloads))
+        for api_url, payload in payloads:
+            for post in extract_xhs_posts_from_json(payload, source_config, profile_name):
+                if post["url"] not in seen:
+                    seen.add(post["url"]); collected.append(post)
+            if len(collected) >= XHS_POST_LIMIT_PER_PROFILE: break
+        print("XHS posts from captured responses:", len(collected))
+        # Robust DOM fallback: inspect all anchors and their nearest meaningful card.
         for _ in range(7):
-            links = page.locator(
-                "a[href*='/explore/'], a[href*='/discovery/item/'], "
-                "section a[href], article a[href], [class*='note'] a[href]"
-            )
-            link_count = links.count()
-            print("XHS candidate DOM links:", link_count)
-            for index in range(link_count):
-                if len(collected) >= XHS_POST_LIMIT_PER_PROFILE:
-                    break
-                link = links.nth(index)
+            anchors = page.locator("a[href]")
+            print("XHS candidate DOM links:", anchors.count())
+            for i in range(anchors.count()):
+                if len(collected) >= XHS_POST_LIMIT_PER_PROFILE: break
+                link = anchors.nth(i)
                 try:
-                    post_url = canonical_xhs_post_url(link.get_attribute("href") or "")
-                    if not post_url or post_url in seen_urls:
-                        continue
-                    card = link.locator(
-                        "xpath=ancestor::*[self::section or self::article or self::li or self::div][1]"
-                    )
-                    text = clean_text(card.inner_text(timeout=1200)) or clean_text(
-                        link.inner_text(timeout=800)
-                    )
-                    images = []
-                    image_nodes = card.locator("img")
-                    for image_index in range(min(image_nodes.count(), 9)):
-                        image = image_nodes.nth(image_index)
-                        for attribute in ("src", "data-src", "data-original"):
-                            image_url = normalize_image_url(
-                                image.get_attribute(attribute), source_config["url"]
-                            )
-                            if image_url and image_url not in images:
-                                images.append(image_url)
-                                break
-                    post_date = singapore_now().isoformat()
-                    try:
-                        time_node = card.locator("time").first
-                        date_value = time_node.get_attribute("datetime") or time_node.inner_text(timeout=500)
-                        if date_value:
-                            post_date = parse_feed_date(date_value)
-                    except Exception:
-                        pass
-                    title = shorten(text, 150) or "New XHS update"
-                    seen_urls.add(post_url)
-                    collected.append({
-                        "id": make_id("XHS", profile_name, title, post_url),
-                        "platform": "XHS",
-                        "source": profile_name,
-                        "title": title,
-                        "excerpt": shorten(text, 350),
-                        "images": images[:9],
-                        "category": "XHS Update",
-                        "date": post_date,
-                        "url": post_url,
-                        "official": True,
-                        "verified": True,
-                        "collectionMethod": "Playwright DOM",
-                        "profileId": source_config.get("profile_id", ""),
-                    })
+                    url = canonical_xhs_post_url(link.get_attribute("href") or "")
+                    if not url or url in seen: continue
+                    card = link.locator("xpath=ancestor::*[self::section or self::article or self::li or self::div][1]")
+                    body = clean_text(card.inner_text(timeout=1000)) or clean_text(link.inner_text(timeout=700))
+                    if not body: continue
+                    images=[]
+                    for j in range(min(card.locator("img").count(),9)):
+                        img=card.locator("img").nth(j)
+                        for attr in ("src","data-src","data-original"):
+                            image_url=normalize_image_url(img.get_attribute(attr),source_config["url"])
+                            if image_url and image_url not in images: images.append(image_url); break
+                    title=shorten(body,150)
+                    seen.add(url)
+                    collected.append({"id":make_id("XHS",profile_name,title,url),"platform":"XHS",
+                        "source":profile_name,"title":title,"excerpt":shorten(body,350),"images":images,
+                        "category":"XHS Update","date":singapore_now().isoformat(),"url":url,
+                        "official":True,"verified":True,"collectionMethod":"Playwright DOM",
+                        "profileId":source_config.get("profile_id","")})
                 except Exception as error:
-                    print("XHS card skipped:", type(error).__name__, str(error)[:120])
-            if len(collected) >= XHS_POST_LIMIT_PER_PROFILE:
-                break
-            page.mouse.wheel(0, 1600)
-            page.wait_for_timeout(2000)
-            if len(collected) == previous_count:
-                no_growth_rounds += 1
-            else:
-                no_growth_rounds = 0
-            previous_count = len(collected)
-            if no_growth_rounds >= 3:
-                break
-
+                    print("XHS card skipped:",type(error).__name__,str(error)[:120])
+            if len(collected)>=XHS_POST_LIMIT_PER_PROFILE: break
+            page.mouse.wheel(0,1600); page.wait_for_timeout(2000)
         if not collected:
-            html_length = len(page.content())
-            try:
-                body_preview = clean_text(page.locator("body").inner_text(timeout=2000))[:500]
-            except Exception:
-                body_preview = ""
-            print("XHS diagnostic: no posts detected.")
-            print("XHS diagnostic HTML length:", html_length)
-            print("XHS diagnostic body preview:", body_preview)
-            print("XHS diagnostic cookie names:", [cookie.get("name") for cookie in cookies])
+            hrefs=[]
+            for i in range(min(page.locator("a[href]").count(),250)):
+                href=page.locator("a[href]").nth(i).get_attribute("href") or ""
+                if href and href not in hrefs: hrefs.append(href)
+                if len(hrefs)>=30: break
+            print("XHS diagnostic sample hrefs:",hrefs)
+            print("XHS diagnostic body preview:",clean_text(page.locator("body").inner_text())[:500])
         browser.close()
     return collected[:XHS_POST_LIMIT_PER_PROFILE]
 
