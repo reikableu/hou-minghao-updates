@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-30T08:54:55+08:00",
-  "status": "Completed: 14 sources successful, 0 failed",
+  "lastUpdated": "2026-10-30T09:20:06+08:00",
+  "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -21,85 +21,97 @@
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-10-30T08:54:06.670574+08:00"
+      "checkedAt": "2026-10-30T09:18:47.710209+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-10-30T08:54:10.311166+08:00"
+      "checkedAt": "2026-10-30T09:18:51.122953+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-10-30T08:54:13.931642+08:00"
+      "checkedAt": "2026-10-30T09:18:54.391428+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T08:54:17.837796+08:00"
+      "checkedAt": "2026-10-30T09:18:57.728393+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-10-30T08:54:21.926954+08:00"
+      "checkedAt": "2026-10-30T09:19:00.757130+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-10-30T08:54:25.482524+08:00"
+      "checkedAt": "2026-10-30T09:19:04.100322+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T08:54:28.573273+08:00"
+      "checkedAt": "2026-10-30T09:19:07.398485+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-10-30T08:54:31.238545+08:00"
+      "checkedAt": "2026-10-30T09:19:10.272412+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T08:54:36.918080+08:00"
+      "checkedAt": "2026-10-30T09:19:13.910755+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-10-30T08:54:39.999031+08:00"
+      "checkedAt": "2026-10-30T09:19:17.068631+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
       "itemsFound": 15,
-      "checkedAt": "2026-10-30T08:54:43.130495+08:00"
+      "checkedAt": "2026-10-30T09:19:20.128194+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-10-30T08:54:46.197593+08:00"
+      "checkedAt": "2026-10-30T09:19:23.258355+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 35,
-      "checkedAt": "2026-10-30T08:54:49.124030+08:00"
+      "checkedAt": "2026-10-30T09:19:26.172381+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-10-30T08:54:52.587314+08:00"
+      "checkedAt": "2026-10-30T09:19:29.216346+08:00"
+    },
+    {
+      "source": "XHS Official 680f4160",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-10-30T09:19:31.663935+08:00"
+    },
+    {
+      "source": "XHS Official 5bc495df",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-10-30T09:19:49.326613+08:00"
     }
   ],
   "posts": [
