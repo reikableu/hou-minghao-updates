@@ -78,7 +78,8 @@ jobs:
 
       - name* Save updated feed and cached imag*s
         run: |
-          git con*ig user.name "github-actions[bot]"*          git config user.email "4*898282+github-actions[bot]@users.n*reply.github.com"
+          git con*ig user.name "github-actions[bot]"*          
+          git config user.email "4*898282+github-actions[bot]@users.n*reply.github.com"
 
           git add posts.json
 
