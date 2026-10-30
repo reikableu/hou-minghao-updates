@@ -6,7 +6,7 @@ on:
   schedule:
     # Runs every 4 hours at minute 38.
     # GitHub cron uses UTC by default.
-    # Singapore times:
+    # Singapore schedule:
     # 12:38 AM, 4:38 AM, 8:38 AM, 12:38 PM,
     # 4:38 PM, and 8:38 PM.
     - cron: "38 */4 * * *"
@@ -44,6 +44,81 @@ jobs:
       - name: Check Python syntax
         run: |
           python -m py_compile update_feed.py
+
+      - name: Check XHS secret availability
+        env:
+          XHS_COOKIES_JSON: ${{ secrets.XHS_COOKIES_JSON }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+
+          raw = os.environ.get("XHS_COOKIES_JSON", "").strip()
+
+          if not raw:
+              print("XHS_COOKIES_JSON is not configured.")
+              print("XHS collection will be skipped.")
+              print("Weibo and X collection can still continue.")
+              raise SystemExit(0)
+
+          try:
+              cookies = json.loads(raw)
+          except json.JSONDecodeError as error:
+              raise SystemExit(
+                  f"XHS_COOKIES_JSON is not valid JSON: {error}"
+              )
+
+          if not isinstance(cookies, list):
+              raise SystemExit(
+                  "XHS_COOKIES_JSON must contain a JSON array."
+              )
+
+          if not cookies:
+              raise SystemExit(
+                  "XHS_COOKIES_JSON must not be an empty array."
+              )
+
+          required_fields = {"name", "value"}
+
+          for index, cookie in enumerate(cookies, start=1):
+              if not isinstance(cookie, dict):
+                  raise SystemExit(
+                      f"Cookie {index} must be a JSON object."
+                  )
+
+              missing_fields = required_fields - cookie.keys()
+
+              if missing_fields:
+                  raise SystemExit(
+                      f"Cookie {index} is missing required fields: "
+                      f"{sorted(missing_fields)}"
+                  )
+
+              has_url = bool(cookie.get("url"))
+
+              has_domain_and_path = bool(
+                  cookie.get("domain")
+                  and cookie.get("path")
+              )
+
+              if not has_url and not has_domain_and_path:
+                  raise SystemExit(
+                      f"Cookie {index} must contain either 'url', "
+                      "or both 'domain' and 'path'."
+                  )
+
+          print(
+              "XHS cookie secret is present and structurally valid."
+          )
+          print("Cookie count:", len(cookies))
+          print(
+              "Cookie names:",
+              [
+                  cookie.get("name")
+                  for cookie in cookies
+              ],
+          )
+          PY
 
       - name: Run Hou Minghao feed collector
         env:
@@ -83,6 +158,12 @@ jobs:
           platform_counts = {}
 
           for post in posts:
+              if not isinstance(post, dict):
+                  raise ValueError(
+                      "Every item in the posts list "
+                      "must be a JSON object."
+                  )
+
               platform = str(
                   post.get("platform") or "Unknown"
               ).strip()
@@ -91,17 +172,16 @@ jobs:
                   platform_counts.get(platform, 0) + 1
               )
 
-          print("posts.json validated successfully.")
-          print("Saved posts:", len(posts))
-          print("Last updated:", data.get("lastUpdated"))
-          print("Collector status:", data.get("status"))
-          print("Platform counts:", platform_counts)
-
           xhs_count = (
               platform_counts.get("XHS", 0)
               + platform_counts.get("Xiaohongshu", 0)
           )
 
+          print("posts.json validated successfully.")
+          print("Saved posts:", len(posts))
+          print("Last updated:", data.get("lastUpdated"))
+          print("Collector status:", data.get("status"))
+          print("Platform counts:", platform_counts)
           print("XHS posts:", xhs_count)
           PY
 
@@ -113,7 +193,8 @@ jobs:
       - name: Save updated feed and cached media
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add posts.json
 
