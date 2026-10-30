@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-10-30T09:29:44+08:00",
+  "lastUpdated": "2026-10-30T09:39:15+08:00",
   "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "maximumPostsPerRun": 10,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 2
     },
     "priority": "Weibo only",
     "platformsTranslated": [
@@ -21,100 +21,118 @@
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-10-30T09:28:07.372609+08:00"
+      "checkedAt": "2026-10-30T09:37:27.902481+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-10-30T09:28:11.393742+08:00"
+      "checkedAt": "2026-10-30T09:37:31.904096+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-10-30T09:28:15.183813+08:00"
+      "checkedAt": "2026-10-30T09:37:35.795017+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T09:28:19.315369+08:00"
+      "checkedAt": "2026-10-30T09:37:40.143782+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-10-30T09:28:23.022123+08:00"
+      "checkedAt": "2026-10-30T09:37:43.689838+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-10-30T09:28:26.628167+08:00"
+      "checkedAt": "2026-10-30T09:37:47.394013+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T09:28:30.627469+08:00"
+      "checkedAt": "2026-10-30T09:37:51.171840+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-10-30T09:28:33.933889+08:00"
+      "checkedAt": "2026-10-30T09:37:53.988804+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T09:28:37.736986+08:00"
+      "checkedAt": "2026-10-30T09:37:57.694027+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-10-30T09:28:41.321215+08:00"
+      "checkedAt": "2026-10-30T09:38:01.484501+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
       "itemsFound": 15,
-      "checkedAt": "2026-10-30T09:28:45.005651+08:00"
+      "checkedAt": "2026-10-30T09:38:05.305349+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-10-30T09:28:50.051709+08:00"
+      "checkedAt": "2026-10-30T09:38:09.247055+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 35,
-      "checkedAt": "2026-10-30T09:28:53.700690+08:00"
+      "checkedAt": "2026-10-30T09:38:12.476236+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-10-30T09:28:57.319745+08:00"
+      "checkedAt": "2026-10-30T09:38:16.038553+08:00"
     },
     {
-      "source": "XHS Official 680f4160",
+      "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T09:28:59.480026+08:00"
+      "checkedAt": "2026-10-30T09:38:18.274620+08:00"
     },
     {
-      "source": "XHS Official 5bc495df",
+      "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T09:29:22.086142+08:00"
+      "checkedAt": "2026-10-30T09:38:40.886622+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "2a39b29718fb1aa54979",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-30 09:30 这乐事，藏不住了！ 很高兴成为 @乐事官方微博 品牌代言人 想要把每一份乐事都分享给你们！ 特别是这款乐事新一代烘焙零食 咔咔上头的乐事轻享薯脆～ 空气感十足，咔咔酥脆！ 烘焙非油炸，咔咔轻盈！ 好吃还不…",
+      "excerpt": "侯明昊 2026-10-30 09:30 这乐事，藏不住了！ 很高兴成为 @乐事官方微博 品牌代言人 想要把每一份乐事都分享给你们！ 特别是这款乐事新一代烘焙零食 咔咔上头的乐事轻享薯脆～ 空气感十足，咔咔酥脆！ 烘焙非油炸，咔咔轻盈！ 好吃还不腻，咔咔够味！ 快来戳同款乐事薯脆 和我一起咔一下吧！ #乐事薯脆# ​",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-10-30T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "2026-10-30 09:30 这乐事，藏不住了！ 很高兴成为 @乐事官方微博 品牌代言人 想要把每一份乐事都分享给你们！ 特别是这款乐事新一代烘焙零食 咔咔上头的乐事轻享薯脆～ 空气感十足，咔咔酥脆！ 烘焙非油炸，咔咔轻盈！ 好吃还不…",
+      "excerptOriginal": "侯明昊 2026-10-30 09:30 这乐事，藏不住了！ 很高兴成为 @乐事官方微博 品牌代言人 想要把每一份乐事都分享给你们！ 特别是这款乐事新一代烘焙零食 咔咔上头的乐事轻享薯脆～ 空气感十足，咔咔酥脆！ 烘焙非油炸，咔咔轻盈！ 好吃还不腻，咔咔够味！ 快来戳同款乐事薯脆 和我一起咔一下吧！ #乐事薯脆# ​",
+      "titleEnglish": "2026-10-30 09:30 This joy can't be hidden! I'm so happy to be the official Weibo brand ambassador for @ HappyEvents, and I want to share everything with you! Especially this new generation of bakery snacks, click on the top of the fun to enjoy the crispy sweet potatoes ~ the air is full of feeling, click crispy! Baking is not fried, click light! Isn't it delicious...",
+      "excerptEnglish": "Hou Minghao 2026-10-30 09:30 This joy can't be hidden! I'm so happy to be the official Weibo brand ambassador for @ HappyEvents, and I want to share everything with you! Especially this new generation of bakery snacks, click on the top of the fun to enjoy the crispy sweet potatoes ~ the air is full of feeling, click crispy! Baking is not fried, click light! Isn't it tasty? Cracking is delicious! Come poke the same fun potato crisp and click with me! # Lucky crispy # ​"
+    },
     {
       "id": "d0d4becc0880f5851031",
       "platform": "X",
