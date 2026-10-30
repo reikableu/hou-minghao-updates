@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-10-30T09:39:15+08:00",
+  "lastUpdated": "2026-10-30T09:48:01+08:00",
   "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 2,
-    "postsTranslatedThisRun": 1,
+    "translationsAdded": 0,
+    "postsTranslatedThisRun": 0,
     "maximumPostsPerRun": 10,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 2
+      "MyMemory": 0
     },
     "priority": "Weibo only",
     "platformsTranslated": [
@@ -21,97 +21,97 @@
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-10-30T09:37:27.902481+08:00"
+      "checkedAt": "2026-10-30T09:46:23.946107+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-10-30T09:37:31.904096+08:00"
+      "checkedAt": "2026-10-30T09:46:27.966887+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-10-30T09:37:35.795017+08:00"
+      "checkedAt": "2026-10-30T09:46:31.926736+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T09:37:40.143782+08:00"
+      "checkedAt": "2026-10-30T09:46:35.844047+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-10-30T09:37:43.689838+08:00"
+      "checkedAt": "2026-10-30T09:46:39.699991+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-10-30T09:37:47.394013+08:00"
+      "checkedAt": "2026-10-30T09:46:43.566691+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-30T09:37:51.171840+08:00"
+      "checkedAt": "2026-10-30T09:46:47.068885+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-10-30T09:37:53.988804+08:00"
+      "checkedAt": "2026-10-30T09:46:50.145587+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-30T09:37:57.694027+08:00"
+      "checkedAt": "2026-10-30T09:46:54.562983+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-10-30T09:38:01.484501+08:00"
+      "checkedAt": "2026-10-30T09:46:57.875234+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
       "itemsFound": 15,
-      "checkedAt": "2026-10-30T09:38:05.305349+08:00"
+      "checkedAt": "2026-10-30T09:47:01.588149+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-10-30T09:38:09.247055+08:00"
+      "checkedAt": "2026-10-30T09:47:05.241885+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 35,
-      "checkedAt": "2026-10-30T09:38:12.476236+08:00"
+      "checkedAt": "2026-10-30T09:47:08.912408+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-10-30T09:38:16.038553+08:00"
+      "checkedAt": "2026-10-30T09:47:12.530753+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-10-30T09:38:18.274620+08:00"
+      "itemsFound": 12,
+      "checkedAt": "2026-10-30T09:47:14.765077+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-10-30T09:38:40.886622+08:00"
+      "itemsFound": 12,
+      "checkedAt": "2026-10-30T09:47:29.563457+08:00"
     }
   ],
   "posts": [
@@ -803,6 +803,438 @@
       "excerptOriginal": "侯明昊工作室 2026-10-26 14:10 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 花絮掉落📷 ，和重磅嘉宾的贴贴互动时刻✅～ ​",
       "titleEnglish": "2026-10-26 14:10 # Hou Minghao [super talk] # Hou Minghao | @ Hou Minghao's tidbits drop📷, and heavy guests post interactive moments✅ ~ ​",
       "excerptEnglish": "Hou Minghao Studio 2026-10-26 14:10 # Hou Minghao [Chaoyang] # Hou Minghao | @ Hou Minghao's tidbits drop📷, and heavy guests post interactive moments✅ ~ ​"
+    },
+    {
+      "id": "3dbdef3354099db18040",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3e76ce0efb6fdbdc551c9d0c.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/95dfac7ec82a749607509304.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-17T16:43:58+08:00",
+      "url": "https://www.rednote.com/explore/6a82c9ce0000000033036591",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "ac20ae3049980444d38b",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1eebd4e06b5423074646c8c0.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d84d21e6e7b64fee534edde3.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-17T16:41:58+08:00",
+      "url": "https://www.rednote.com/explore/6a82c956000000002701c10a",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "d3c78846239aec983116",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bfbb2c41fe53215971844c84.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c304bec330c53904328cfa07.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-17T16:39:22+08:00",
+      "url": "https://www.rednote.com/explore/6a82c8ba0000000025014530",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "df4acf641220e3eb516f",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6de67584aa91a60ec9f51ec4.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2d4740bea2a6fc7d2110c115.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-16T17:33:25+08:00",
+      "url": "https://www.rednote.com/explore/6a8183e500000000280006fe",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "2332954f2fe01ad2b91c",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9382adea9244404be6793667.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ce8d05b8456c3a70f578a34c.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-16T09:13:01+08:00",
+      "url": "https://www.rednote.com/explore/6a80c379000000003302ca6a",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "45563ac314edbaf4e59a",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/07ee554416b0240cf3650a9e.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e3d00b0fd15fdaa3eb6ce910.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-15T18:30:33+08:00",
+      "url": "https://www.rednote.com/explore/6a800ad3000000003300fb80",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "056416fb9ef3276f80c2",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a07d0ba78d96badfc698273e.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/111f7be5bb324a9cdbf221ef.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-15T18:01:48+08:00",
+      "url": "https://www.rednote.com/explore/6a8009870000000025011906",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "57d2d06f112b32cee60e",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2526c1e04442c919187034b7.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/756460cba44222d07553f390.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-15T16:00:28+08:00",
+      "url": "https://www.rednote.com/explore/6a80094000000000330310f0",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "c8dbc3d96e462a447508",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/552e922c6c241c837a32decd.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/814a9f211bcb542ceb9903fe.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-14T18:00:24+08:00",
+      "url": "https://www.rednote.com/explore/6a7d61b3000000002803260f",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "43b66caa3cae6e4d2b75",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2443dbbb09882a55b8df818c.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/88f959da72a784c15eb03f8d.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-13T18:00:46+08:00",
+      "url": "https://www.rednote.com/explore/6a7d61370000000028009fbd",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "d197ebe3f6f3763016a1",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8ebf142ab7efed53792954a3.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/60e0e6cd66858c22ed5bdfd0.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-12T18:00:22+08:00",
+      "url": "https://www.rednote.com/explore/6a7adc57000000002500e936",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "1e2225002ee6b306516f",
+      "platform": "XHS",
+      "source": "侯明昊属于我们的巡演",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8ecf56860a3ef493a59cdfd2.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9b5c5e497445f781005365d1.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-08-11T18:00:58+08:00",
+      "url": "https://www.rednote.com/explore/6a7adbff000000003300d809",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "680f416000000000080147b4"
+    },
+    {
+      "id": "de5943e72ebf54ff8836",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1482311c6f88570661baa501.webp",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/84074e3eddf91d60f24a877e.webp"
+      ],
+      "category": "XHS Update",
+      "date": "2026-07-02T16:04:56+08:00",
+      "url": "https://www.rednote.com/explore/6a460a40000000001702aa6b",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "5330c389f305b45908f5",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/221cd255e478c107ca16520d.webp",
+        "http://sns-web-i10.rednotecdn.com/202610300947/d0eab95c36081ad93ca18f99ea64526e/1040g00832237bdtp7a004bfk71atug0g5uoc5q8!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-07-02T10:00:40+08:00",
+      "url": "https://www.rednote.com/explore/6a4528320000000017029be2",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "9f0655dcb8ddd82824c2",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/e544adb327757fa14468eac1a7364548/notes_pre_post/1040g3k032237bdtpnk004bfk71atug0gcbovol0!nc_n_webp_mw_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/4e6f66f035eefa7ccfc2d5112ac19ef5/notes_pre_post/1040g3k032237bdtpnk004bfk71atug0gcbovol0!nc_n_webp_prv_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-07-01T22:47:22+08:00",
+      "url": "https://www.rednote.com/explore/6a45287a000000001c027da2",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "bcc93e1f445c3be3304c",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/ac2ff540753e9f733239fe3be05f8112/1040g2sg3221llgm17u004bfk71atug0gcqp1vro!nc_n_webp_prv_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/4aefed4fdc6df3903ec153062c320d9a/1040g2sg3221llgm17u004bfk71atug0gcqp1vro!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-06-30T17:50:38+08:00",
+      "url": "https://www.rednote.com/explore/6a43916e000000001702daf3",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "43d7282e0fc2bcdf5c6a",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/b0276e1d01ba31483d4d8c5f919bb6bd/notes_pre_post/1040g3k83220fdgnlnu7g4bfk71atug0gv1n8h68!nc_n_webp_prv_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/184a72f7a204cf5b897499d53990e23a/notes_pre_post/1040g3k83220fdgnlnu7g4bfk71atug0gv1n8h68!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-06-29T20:03:02+08:00",
+      "url": "https://www.rednote.com/explore/6a4257d10000000015024726",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "dc264c7dd470aaf9b127",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/de7d56a26ae96c3245712d01ab61ac2f/1040g2sg321u5igocna704bfk71atug0gc4sq9p0!nc_n_webp_prv_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/f2aadd2d083dc7735ef89102644fc179/1040g2sg321u5igocna704bfk71atug0gc4sq9p0!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-06-28T14:05:01+08:00",
+      "url": "https://www.rednote.com/explore/6a3ffac000000000170293ba",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "485b0e9d6e67aef3732c",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/b85d45fb92c323e88092ab3aa6f87b41/1040g008321sdl5pi7u004bfk71atug0g6argfh0!nc_n_webp_prv_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/468ec0530112abd48c29f16f61f6bd05/1040g008321sdl5pi7u004bfk71atug0g6argfh0!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-06-26T14:05:01+08:00",
+      "url": "https://www.rednote.com/explore/6a3d7b87000000001502507b",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "9a5e85bcf4c0bd6a8ff9",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/00a57bc475d211dbea8ab122458f351a/1040g008321e90k3mnks04bfk71atug0ga4sg8b8!nc_n_webp_prv_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/58017745e5e193e8d53398ee7eac499f/1040g008321e90k3mnks04bfk71atug0ga4sg8b8!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-06-15T16:14:49+08:00",
+      "url": "https://www.rednote.com/explore/6a2fb47900000000160261b9",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "e922b586687883258185",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/b543cc770bb51ed46cb5f0fa4b0d534d/notes_pre_post/1040g3k832181qmsj7a704bfk71atug0g1tv9sag!nc_n_webp_prv_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/6e452bd4caa86a992dd25710824468a5/notes_pre_post/1040g3k832181qmsj7a704bfk71atug0g1tv9sag!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-06-10T20:12:46+08:00",
+      "url": "https://www.rednote.com/explore/6a2954be0000000015026bc1",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "3a90b59aa3ee93ed2405",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/34de3cd64272a0fe92d6bd83ded949ee/1040g2sg3216i2mvgne704bfk71atug0genbsiv8!nc_n_webp_prv_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/859f710ecdc4463e1551f2b11984fa23/1040g2sg3216i2mvgne704bfk71atug0genbsiv8!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-06-10T10:00:31+08:00",
+      "url": "https://www.rednote.com/explore/6a27ce2d0000000016026525",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "cfb4e75801e215ae6ec1",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/1d447cd5ee10193acade20c28943ff21/1040g0083215f5qcfnk004bfk71atug0gqrr87a8!nc_n_webp_prv_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/85a022d020e8faffe192854830c4230d/1040g0083215f5qcfnk004bfk71atug0gqrr87a8!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-06-08T20:03:56+08:00",
+      "url": "https://www.rednote.com/explore/6a26afac0000000017008016",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
+    },
+    {
+      "id": "609fc5a59cb96c83fc4c",
+      "platform": "XHS",
+      "source": "侯明昊",
+      "title": "New XHS update",
+      "excerpt": "New XHS update",
+      "images": [
+        "http://sns-web-i10.rednotecdn.com/202610300947/88bc2afc8af15113ca21338e8077e37a/1040g008320lsabq162s04bfk71atug0gh7ghhao!nc_n_webp_prv_1",
+        "http://sns-web-i10.rednotecdn.com/202610300947/b3fa0fd6f3d82817b8d21c5dbe07aeff/1040g008320lsabq162s04bfk71atug0gh7ghhao!nc_n_webp_mw_1"
+      ],
+      "category": "XHS Update",
+      "date": "2026-05-27T20:01:28+08:00",
+      "url": "https://www.rednote.com/explore/6a16b96a000000003601c8b2",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Playwright captured JSON",
+      "profileId": "5bc495dfec27fc0001bd4010"
     }
   ]
 }
