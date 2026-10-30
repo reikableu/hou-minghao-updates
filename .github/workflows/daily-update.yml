@@ -9,6 +9,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: hou-minghao-feed-update
+  cancel-in-progress: false
+
 jobs:
   update-feed:
     runs-on: ubuntu-latest
@@ -21,6 +25,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
@@ -33,6 +38,46 @@ jobs:
       - name: Run Hou Minghao feed collector
         run: python update_feed.py
 
+      - name: Validate posts.json
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          posts_file = Path("posts.json")
+
+          if not posts_file.exists():
+              raise FileNotFoundError(
+                  "posts.json was not generated."
+              )
+
+          data = json.loads(
+              posts_file.read_text(
+                  encoding="utf-8"
+              )
+          )
+
+          if not isinstance(data, dict):
+              raise ValueError(
+                  "posts.json must contain a JSON object."
+              )
+
+          posts = data.get("posts")
+
+          if not isinstance(posts, list):
+              raise ValueError(
+                  "posts.json must contain a posts list."
+              )
+
+          print(
+              "posts.json validated successfully."
+          )
+          print(
+              "Saved posts:",
+              len(posts),
+          )
+          PY
+
       - name: Save updated feed and cached images
         run: |
           git config user.name "github-actions[bot]"
@@ -41,12 +86,12 @@ jobs:
           git add posts.json
 
           if [ -d "media" ]; then
-            git add media/
+            git add -A media/
           fi
 
           if git diff --cached --quiet; then
             echo "No feed or image changes to save."
           else
-            git commit -m "Automated Hou Minghao feed and image update"
+            git commit -m "Update Hou Minghao feed and images"
             git push
           fi
