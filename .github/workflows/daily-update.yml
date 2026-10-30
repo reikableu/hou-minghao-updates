@@ -5,8 +5,8 @@ on:
 
   schedule:
     # Runs every 4 hours at minute 38.
-    # GitHub cron schedules use UTC by default.
-    # Singapore schedule:
+    # GitHub cron uses UTC by default.
+    # Singapore times:
     # 12:38 AM, 4:38 AM, 8:38 AM, 12:38 PM,
     # 4:38 PM, and 8:38 PM.
     - cron: "38 */4 * * *"
@@ -21,7 +21,7 @@ concurrency:
 jobs:
   update-feed:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Download repository files
@@ -32,16 +32,24 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install requests beautifulsoup4 deep-translator
+          python -m pip install requests beautifulsoup4 deep-translator playwright
+
+      - name: Install Chromium for XHS collection
+        run: |
+          python -m playwright install --with-deps chromium
 
       - name: Check Python syntax
-        run: python -m py_compile update_feed.py
+        run: |
+          python -m py_compile update_feed.py
 
       - name: Run Hou Minghao feed collector
-        run: python update_feed.py
+        env:
+          XHS_COOKIES_JSON: ${{ secrets.XHS_COOKIES_JSON }}
+        run: |
+          python update_feed.py
 
       - name: Validate posts.json
         run: |
@@ -72,13 +80,37 @@ jobs:
                   "posts.json must contain a posts list."
               )
 
+          platform_counts = {}
+
+          for post in posts:
+              platform = str(
+                  post.get("platform") or "Unknown"
+              ).strip()
+
+              platform_counts[platform] = (
+                  platform_counts.get(platform, 0) + 1
+              )
+
           print("posts.json validated successfully.")
           print("Saved posts:", len(posts))
           print("Last updated:", data.get("lastUpdated"))
           print("Collector status:", data.get("status"))
+          print("Platform counts:", platform_counts)
+
+          xhs_count = (
+              platform_counts.get("XHS", 0)
+              + platform_counts.get("Xiaohongshu", 0)
+          )
+
+          print("XHS posts:", xhs_count)
           PY
 
-      - name: Save updated feed and cached images
+      - name: Show repository changes
+        run: |
+          echo "Files changed by the collector:"
+          git status --short
+
+      - name: Save updated feed and cached media
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -90,8 +122,8 @@ jobs:
           fi
 
           if git diff --cached --quiet; then
-            echo "No feed or image changes to save."
+            echo "No feed or cached-media changes to save."
           else
-            git commit -m "Update Hou Minghao feed and images"
+            git commit -m "Update Hou Minghao feed and media"
             git push
           fi
