@@ -634,17 +634,25 @@ def extract_xhs_posts_from_json(payload, source_config, profile_name):
         excerpt = text(obj, ("desc", "description", "content", "title", "displayTitle"))
         if not title: title = shorten(excerpt, 150) or "New XHS update"
         if not excerpt: excerpt = title
-        date_value = next((obj.get(k) for k in ("time", "publishTime", "publish_time", "timestamp", "createTime") if obj.get(k) not in (None, "")), None)
+        date_value = next((obj.get(k) for k in ("time", "publishTime", "publish_time", "timestamp", "createTime", "create_time", "lastUpdateTime") if obj.get(k) not in (None, "")), None)
+        date_source = "payload"
+        if date_value in (None, "") and re.fullmatch(r"[0-9a-fA-F]{24}", nid):
+            try:
+                date_value = int(nid[:8], 16)
+                date_source = "note_id"
+            except ValueError:
+                date_value = None
+        post_date = parse_xhs_timestamp(date_value) if date_value not in (None, "") else ""
         seen.add(url)
         posts.append({"id": make_id("XHS", profile_name, title, url), "platform": "XHS",
                       "source": profile_name, "title": shorten(title, 180),
                       "excerpt": shorten(excerpt, 350), "images": xhs_images(obj),
-                      "category": "XHS Update", "date": parse_xhs_timestamp(date_value),
-                      "url": url, "official": True, "verified": True,
+                      "category": "XHS Update", "date": post_date,
+                      "dateSource": date_source if post_date else "unknown", "url": url, "official": True, "verified": True,
                       "collectionMethod": "Playwright captured JSON",
                       "profileId": source_config.get("profile_id", "")})
     def walk(node):
-        if len(posts) >= XHS_POST_LIMIT_PER_PROFILE: return
+        if len(posts) >= 100: return
         if isinstance(node, dict):
             keys = set(node)
             if note_id(node) and keys.intersection({"displayTitle", "title", "desc", "noteCard", "cover", "imageList", "images"}): add(node)
@@ -653,7 +661,7 @@ def extract_xhs_posts_from_json(payload, source_config, profile_name):
         elif isinstance(node, list):
             for item in node: walk(item)
     walk(payload)
-    return posts[:XHS_POST_LIMIT_PER_PROFILE]
+    return posts
 
 
 def collect_xhs_profile(source_config):
@@ -701,7 +709,6 @@ def collect_xhs_profile(source_config):
             for post in extract_xhs_posts_from_json(payload, source_config, profile_name):
                 if post["url"] not in seen:
                     seen.add(post["url"]); collected.append(post)
-            if len(collected) >= XHS_POST_LIMIT_PER_PROFILE: break
         print("XHS posts from captured responses:", len(collected))
         # Robust DOM fallback: inspect all anchors and their nearest meaningful card.
         for _ in range(7):
@@ -726,13 +733,45 @@ def collect_xhs_profile(source_config):
                     seen.add(url)
                     collected.append({"id":make_id("XHS",profile_name,title,url),"platform":"XHS",
                         "source":profile_name,"title":title,"excerpt":shorten(body,350),"images":images,
-                        "category":"XHS Update","date":singapore_now().isoformat(),"url":url,
+                        "category":"XHS Update","date":"","dateSource":"unknown","url":url,
                         "official":True,"verified":True,"collectionMethod":"Playwright DOM",
                         "profileId":source_config.get("profile_id","")})
                 except Exception as error:
                     print("XHS card skipped:",type(error).__name__,str(error)[:120])
             if len(collected)>=XHS_POST_LIMIT_PER_PROFILE: break
             page.mouse.wheel(0,1600); page.wait_for_timeout(2000)
+        # Scrolling can load additional JSON responses. Parse every captured payload again,
+        # then deduplicate and select the newest notes instead of the first notes encountered.
+        for api_url, payload in payloads:
+            for post in extract_xhs_posts_from_json(payload, source_config, profile_name):
+                if post["url"] not in seen:
+                    seen.add(post["url"])
+                    collected.append(post)
+
+        def xhs_sort_key(post):
+            value = post.get("date", "")
+            try:
+                return datetime.fromisoformat(value.replace("Z", "+00:00")).timestamp()
+            except Exception:
+                match = re.search(r"/explore/([0-9a-fA-F]{24})", post.get("url", ""))
+                if match:
+                    try:
+                        return float(int(match.group(1)[:8], 16))
+                    except ValueError:
+                        pass
+                return 0
+
+        collected = sorted(
+            deduplicate_posts(collected),
+            key=xhs_sort_key,
+            reverse=True,
+        )
+        dated_count = sum(bool(post.get("date")) for post in collected)
+        print("XHS total unique candidates:", len(collected))
+        print("XHS candidates with dates:", dated_count)
+        if collected:
+            print("XHS newest candidate date:", collected[0].get("date") or "unknown")
+
         if not collected:
             hrefs=[]
             for i in range(min(page.locator("a[href]").count(),250)):
