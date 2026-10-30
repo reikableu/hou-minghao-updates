@@ -54,7 +54,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add posts.json gallery.json media gallery_media update_feed.py update_gallery.py
+          git add -A -- posts.json gallery.json update_feed.py update_gallery.py media gallery_media 2>/dev/null || git add -A
           if git diff --cached --quiet; then
             echo "No feed or gallery changes detected."
           else
