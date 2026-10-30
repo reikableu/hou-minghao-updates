@@ -1,4 +1,4 @@
-name: Update Hou Minghao feed and gallery
+name: Update Hou Minghao feed and Pinterest gallery
 
 on:
   workflow_dispatch:
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   update-feed-and-gallery:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 55
 
     steps:
       - name: Check out repository
@@ -40,7 +40,9 @@ jobs:
           XHS_COOKIES_JSON: ${{ secrets.XHS_COOKIES_JSON }}
         run: python update_feed.py
 
-      - name: Generate gallery from collected feed images
+      - name: Build Pinterest gallery
+        env:
+          PINTEREST_COOKIES_JSON: ${{ secrets.PINTEREST_COOKIES_JSON }}
         run: python update_gallery.py
 
       - name: Validate generated JSON files
@@ -52,11 +54,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add posts.json gallery.json media update_feed.py update_gallery.py
+          git add posts.json gallery.json media gallery_media update_feed.py update_gallery.py
           if git diff --cached --quiet; then
             echo "No feed or gallery changes detected."
           else
-            git commit -m "Update Hou Minghao feed and gallery"
+            git commit -m "Update Hou Minghao feed and Pinterest gallery"
             git pull --rebase origin main
             git push origin main
           fi
