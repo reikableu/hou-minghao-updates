@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-11-01T04:01:21+08:00",
+  "lastUpdated": "2026-11-01T07:27:38+08:00",
   "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 8,
+    "postsTranslatedThisRun": 4,
     "maximumPostsPerRun": 10,
-    "rateLimited": true,
+    "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 8
     },
     "priority": "Weibo only",
     "platformsTranslated": [
@@ -21,97 +21,97 @@
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-11-01T03:59:45.194485+08:00"
+      "checkedAt": "2026-11-01T07:25:17.660255+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-11-01T03:59:48.919746+08:00"
+      "checkedAt": "2026-11-01T07:25:21.212534+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-11-01T03:59:52.304255+08:00"
+      "checkedAt": "2026-11-01T07:25:24.327495+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-11-01T03:59:55.704631+08:00"
+      "checkedAt": "2026-11-01T07:25:28.438894+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-11-01T03:59:59.088117+08:00"
+      "checkedAt": "2026-11-01T07:25:32.348076+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-11-01T04:00:02.580965+08:00"
+      "checkedAt": "2026-11-01T07:25:35.590213+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T04:00:06.225745+08:00"
+      "checkedAt": "2026-11-01T07:25:39.473930+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-11-01T04:00:09.371234+08:00"
+      "checkedAt": "2026-11-01T07:25:42.574790+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-11-01T04:00:12.543695+08:00"
+      "checkedAt": "2026-11-01T07:25:46.311898+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-11-01T04:00:17.037667+08:00"
+      "checkedAt": "2026-11-01T07:25:50.388456+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
       "itemsFound": 18,
-      "checkedAt": "2026-11-01T04:00:20.293717+08:00"
+      "checkedAt": "2026-11-01T07:25:53.581384+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-11-01T04:00:25.022430+08:00"
+      "checkedAt": "2026-11-01T07:25:56.663770+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 37,
-      "checkedAt": "2026-11-01T04:00:28.058009+08:00"
+      "checkedAt": "2026-11-01T07:25:59.589017+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-01T04:00:31.659799+08:00"
+      "checkedAt": "2026-11-01T07:26:04.571672+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T04:00:34.034069+08:00"
+      "checkedAt": "2026-11-01T07:26:06.977857+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T04:00:56.013730+08:00"
+      "checkedAt": "2026-11-01T07:26:26.970095+08:00"
     }
   ],
   "posts": [
@@ -684,7 +684,9 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "2026-10-31 18:30 来自 明星动态 ​",
-      "excerptOriginal": "侯明昊 2026-10-31 18:30 来自 明星动态 ​"
+      "excerptOriginal": "侯明昊 2026-10-31 18:30 来自 明星动态 ​",
+      "titleEnglish": "2026-10-31 18:30 From Star Dynamics ​",
+      "excerptEnglish": "Hou Minghao 2026-10-31 18:30 From the star dynamic ​"
     },
     {
       "id": "7208defec7c64bf30e88",
@@ -700,7 +702,9 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "天美意官方微博 2026-10-31 17:30 来自 微博网页版 小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累…",
-      "excerptOriginal": "天美意官方微博 2026-10-31 17:30 来自 微博网页版 小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ​"
+      "excerptOriginal": "天美意官方微博 2026-10-31 17:30 来自 微博网页版 小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ​",
+      "titleEnglish": "Tianmei official microblogging 2026-10-31 17:30 Commuter shoes from Xiao Hou on the microblogging website are really good to wear and match! As expected, it is the commuter father's shoes recommended by Xiao Hou. It is beautiful and comfortable. The design of the double shoelaces breaks the routine. It comes with identification, dark gray, old tones, vintage and durable. It is suitable for the autumn and winter atmosphere. Rubber soft soles, it is not easy to get tired after walking for a long time...",
+      "excerptEnglish": "Tianmei official microblogging 2026-10-31 17:30 Commuter shoes from Xiao Hou on the microblogging website are really good to wear and match! As expected, it is a commuter father's shoe recommended by Xiaohou. It is beautiful and comfortable. The design of the double shoelaces breaks the routine. It comes with identification, dark gray, old tones, vintage and durable. It is suitable for the soft sole of rubber in the autumn and winter atmosphere. It is not easy to get tired from walking for a long time, and it is easy to wear for commuting for 5 minutes. It is comfortable and stylish # Hou Ming Haotian Beauty Brand Spokesperson # # teenmix Tianmei # # Follow Xiaohou to chase the wind # ​"
     },
     {
       "id": "eae887a24703918345d1",
@@ -716,7 +720,9 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "CASETiFY 2026-10-31 17:32 来自 iPhone 14 Pro #侯明昊 [超话]# 各位侯明昊的星舰狂欢嘉宾请集合！#天猫双11星舰狂欢# 正在登陆，CASETiFY代言人 @侯明昊 ，化身天猫星舰舰长，邀你共赴狂…",
-      "excerptOriginal": "CASETiFY 2026-10-31 17:32 来自 iPhone 14 Pro #侯明昊 [超话]# 各位侯明昊的星舰狂欢嘉宾请集合！#天猫双11星舰狂欢# 正在登陆，CASETiFY代言人 @侯明昊 ，化身天猫星舰舰长，邀你共赴狂欢～10月31日起上淘宝搜索【侯明昊】收集 SSR 专属明星徽章，AI生成狂欢限定纪念。每积累100狂欢积分，有机会赢万元红包、CASETiFY天猫限定礼盒！连续搜索【侯明 #天猫双11星舰狂欢#正式开启，各位狂欢嘉宾做好登陆准备！#100位明星齐聚天猫双11星舰狂欢# 百大旗舰店×百位天猫星舰舰长震撼亮相，解锁全新明星徽章R- SR- SSR- VSSR收集玩法！10月31日起，上淘宝搜【明星名…"
+      "excerptOriginal": "CASETiFY 2026-10-31 17:32 来自 iPhone 14 Pro #侯明昊 [超话]# 各位侯明昊的星舰狂欢嘉宾请集合！#天猫双11星舰狂欢# 正在登陆，CASETiFY代言人 @侯明昊 ，化身天猫星舰舰长，邀你共赴狂欢～10月31日起上淘宝搜索【侯明昊】收集 SSR 专属明星徽章，AI生成狂欢限定纪念。每积累100狂欢积分，有机会赢万元红包、CASETiFY天猫限定礼盒！连续搜索【侯明 #天猫双11星舰狂欢#正式开启，各位狂欢嘉宾做好登陆准备！#100位明星齐聚天猫双11星舰狂欢# 百大旗舰店×百位天猫星舰舰长震撼亮相，解锁全新明星徽章R- SR- SSR- VSSR收集玩法！10月31日起，上淘宝搜【明星名…",
+      "titleEnglish": "CASETiFY 2026-10-31 17:32 From iPhone 14 Pro # Hou Minghao [over the phone] # Hou Minghao's Starfleet Carnival Guests Please gather! # Tmall Double 11 Starfleet Carnival # is landing, CASETiFY spokesperson @ Hou Minghao, incarnated as Tmall Starfleet Captain, inviting you to join the frenzy...",
+      "excerptEnglish": "CASETiFY 2026-10-31 17:32 From iPhone 14 Pro # Hou Minghao [over the phone] # Hou Minghao's Starfleet Carnival Guests Please gather! # Tmall Double 11 Starship Carnival # is landing. CASETiFY spokesperson @ Hou Minghao, incarnated as the captain of Tmall Starship, invites you to join the carnival ~ From October 31 onwards, go to Taobao to search for [Hou Minghao] to collect SSR exclusive star badges, and AI will generate a carnival limited commemoration. For every 100 Carnival Points accumulated, there is a chance to win 10,000 Yuan Red Envelopes and CASETiFY Tmall Limited Gift Boxes! The continuous search [Hou Ming # Tmall Double 11 Star Ship Carnival # officially opened, and all carnival guests are ready to land! # 100 stars gathered at Tmall Double 11 Star Ship Carnival # 100 flagship stores × 100 Tmall starship captains made a shocking appearance and unlocked a new star badge R- SR- SSR- VSSR collection game! Starting from October 31, Taobao will search for [star name..."
     },
     {
       "id": "492ee1cd4b47ebcafd95",
@@ -732,7 +738,9 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "titleOriginal": "雪中飞 2026-10-31 16:00 来自 微博网页版 侯明昊同款滑雪服｜雪场驰骋不闷汗 [疑问]首滑不想凑活？这件侯明昊同款滑雪服，新手也能轻松出片 1）⛷️专业滑雪硬核实力：专利热湿平衡结构，高透湿不闷汗，持久防泼水、高耐磨，雪场…",
-      "excerptOriginal": "雪中飞 2026-10-31 16:00 来自 微博网页版 侯明昊同款滑雪服｜雪场驰骋不闷汗 [疑问]首滑不想凑活？这件侯明昊同款滑雪服，新手也能轻松出片 1）⛷️专业滑雪硬核实力：专利热湿平衡结构，高透湿不闷汗，持久防泼水、高耐磨，雪场耐造 2）侯明昊同款📷，轻松复刻明星雪场穿搭 3）🎨多色可选，雪淞晶黄 / 踏雪飞痕 / 极速红，雪场拍照出彩 4 ​"
+      "excerptOriginal": "雪中飞 2026-10-31 16:00 来自 微博网页版 侯明昊同款滑雪服｜雪场驰骋不闷汗 [疑问]首滑不想凑活？这件侯明昊同款滑雪服，新手也能轻松出片 1）⛷️专业滑雪硬核实力：专利热湿平衡结构，高透湿不闷汗，持久防泼水、高耐磨，雪场耐造 2）侯明昊同款📷，轻松复刻明星雪场穿搭 3）🎨多色可选，雪淞晶黄 / 踏雪飞痕 / 极速红，雪场拍照出彩 4 ​",
+      "titleEnglish": "Snow flying 2026-10-31 16:00 Hou Minghao's same ski suit from the Weibo web version | The ski resort runs without sweating [question] Don't want to catch up on the first ski? This Hou Minghao ski suit is the same style, and novice skiers can easily come out with it 1)⛷️ Professional ski hard core strength: patented heat and moisture balance structure, high moisture permeability and no sweat, long-lasting water splashing, high wear resistance, snow...",
+      "excerptEnglish": "Snow flying 2026-10-31 16:00 Hou Minghao's same ski suit from the Weibo web version | The ski resort runs without sweating [question] Don't want to catch up on the first ski? This ski suit is the same as Hou Minghao, and novice skiers can easily get out of it 1)⛷️ Professional ski hard core strength: Patented hot and moisture balance structure, high moisture permeability and no sweat, long-lasting waterproof, high wear resistance, and resistant to snow 2) Hou Minghao The same style📷, easy to reproduce star snow 3)🎨 Multi-color optional, snow crystal yellow/snow flying marks/ultra-fast red, snow photo shooting 4 ​"
     },
     {
       "id": "4658697560d046222580",
