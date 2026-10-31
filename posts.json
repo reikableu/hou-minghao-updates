@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-10-31T13:44:53+08:00",
+  "lastUpdated": "2026-10-31T22:34:24+08:00",
   "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 8,
-    "postsTranslatedThisRun": 4,
+    "translationsAdded": 0,
+    "postsTranslatedThisRun": 0,
     "maximumPostsPerRun": 10,
-    "rateLimited": false,
+    "rateLimited": true,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 8
+      "MyMemory": 0
     },
     "priority": "Weibo only",
     "platformsTranslated": [
@@ -21,100 +21,487 @@
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-10-31T13:42:32.118851+08:00"
+      "checkedAt": "2026-10-31T22:32:51.085752+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-10-31T13:42:36.917243+08:00"
+      "checkedAt": "2026-10-31T22:32:54.494697+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-10-31T13:42:40.343690+08:00"
+      "checkedAt": "2026-10-31T22:32:57.919548+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-31T13:42:43.831947+08:00"
+      "checkedAt": "2026-10-31T22:33:02.537326+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-10-31T13:42:47.229734+08:00"
+      "checkedAt": "2026-10-31T22:33:05.909215+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-10-31T13:42:50.956080+08:00"
+      "checkedAt": "2026-10-31T22:33:09.582049+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-31T13:42:55.686748+08:00"
+      "checkedAt": "2026-10-31T22:33:13.044649+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-10-31T13:42:58.446809+08:00"
+      "checkedAt": "2026-10-31T22:33:16.036421+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-10-31T13:43:01.958695+08:00"
+      "checkedAt": "2026-10-31T22:33:19.773299+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-10-31T13:43:05.347413+08:00"
+      "checkedAt": "2026-10-31T22:33:23.121862+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
-      "itemsFound": 17,
-      "checkedAt": "2026-10-31T13:43:09.807477+08:00"
+      "itemsFound": 18,
+      "checkedAt": "2026-10-31T22:33:26.496837+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-10-31T13:43:13.069687+08:00"
+      "checkedAt": "2026-10-31T22:33:29.624602+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
-      "itemsFound": 36,
-      "checkedAt": "2026-10-31T13:43:16.360309+08:00"
+      "itemsFound": 37,
+      "checkedAt": "2026-10-31T22:33:33.050791+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-10-31T13:43:19.982855+08:00"
+      "checkedAt": "2026-10-31T22:33:36.709788+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-31T13:43:22.148520+08:00"
+      "checkedAt": "2026-10-31T22:33:39.063008+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-10-31T13:43:42.293187+08:00"
+      "checkedAt": "2026-10-31T22:33:57.674588+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "490f4243fed022ef196c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🐈 already signed up for the Cat Gang 97 club 😭🐾 #HouMinghao #侯明昊 #HouMinghaoBelo…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🐈 already signed up for the Cat Gang 97 club 😭🐾 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f2a835d57bba792beb149dca.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-31T21:54:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116529234839757190",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "ce6d0e04476d58ed8461",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 😈🪽 i thought he was a little kitten angel until i noticed those two tiny devil h…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 😈🪽 i thought he was a little kitten angel until i noticed those two tiny devil horns on his head 😭😭 turns out we have a devil angel!!!🤣 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6fa268756ce351561b13b682.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-31T21:35:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116524447901622742",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "1ad0be7dc5c224fc1338",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 this new fit is SO cute!!! fad3away meow pawer , and even two tiny wings on his…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 this new fit is SO cute!!! fad3away meow pawer , and even two tiny wings on his shoulders??? 😭🤏🏻 he’s literally a little angel kitty!!! 🪽🐾 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T21:28:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116522577594315081",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "ad0c9cf3af676bc822a2",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🌊 earlier he was an emotional little cat, and now he’s doing the wave 😭😭 we love…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🌊 earlier he was an emotional little cat, and now he’s doing the wave 😭😭 we love them all!!! 🥹🐈 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T20:55:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116514382658359632",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "692e040d5e806703b98a",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 not mi doing the viral fast footwork challenge on stage 😭😭 he’s really out here…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 not mi doing the viral fast footwork challenge on stage 😭😭 he’s really out here showing off his moves!!! 🤣 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T20:51:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116513371793314134",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "e23ce2a91934762e4402",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🔥 SCREAMMMMM!!! HE IS SO HOTTTT 😭😭 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🔥 SCREAMMMMM!!! HE IS SO HOTTTT 😭😭 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T20:45:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116511886351167515",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "5d348698194438b3cf19",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🐆 Saw a leopard ? Wipe my tears … he really is a cat… 😭🐆 #HouMinghao #侯明昊 #HouMi…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🐆 Saw a leopard ? Wipe my tears … he really is a cat… 😭🐆 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/609f839c26006d5020cd2dd6.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-31T20:41:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116510972605329677",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "61a18df9de43d74f40ed",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 i love you too 😭😭 😭😭🌧️ #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #Zhengzhou…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 i love you too 😭😭 😭😭🌧️ #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T20:37:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116509919235146225",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "b61e680124a52d4f0829",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 awwn, kitten gets emotional again after yuanzhou youth 🥹ZYZ really holds such…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 awwn, kitten gets emotional again after yuanzhou youth 🥹ZYZ really holds such a special place in his heart. you can tell this character means so much to him. 😭 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert #ZhaoYuanzhou — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T20:22:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116506191660814824",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "8c66b3157784fcabf32c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 singing while doing push-ups again 😭 not even a hint of heavy breathing in his…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 singing while doing push-ups again 😭 not even a hint of heavy breathing in his voice!!! that vocal control and those lungs!!! #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T20:18:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116505180447670537",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "72a0d4a6535ae1d325a9",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🖤 JUST STEP ON ME, MR. HOU. 😭🫠 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #Zhen…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🖤 JUST STEP ON ME, MR. HOU. 😭🫠 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T20:05:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116501710613123167",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "d1b902edace7609e16cf",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 WAIT—A DANCE BREAK IN “ENDLESS”??? 😭🔥 a new english song AND a dance break?! y…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 WAIT—A DANCE BREAK IN “ENDLESS”??? 😭🔥 a new english song AND a dance break?! you’re giving us everything tonight!!! #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:54:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116499010932584911",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "7cf5301a6ed17029c638",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 “Endless” — a new English song?! ✨ #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 “Endless” — a new English song?! ✨ #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:50:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116498150815097225",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "d1686876445f6fcaf24d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 coach cat testing the fans’ vocals!!! 😭🎤 raised the key even higher like he wa…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 coach cat testing the fans’ vocals!!! 😭🎤 raised the key even higher like he was REALLY strict.😭🤣 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:45:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116496857153327585",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "6998fdc11051dde2beb2",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🖤🎤 “Melody” was MADE for this version of mi. that smooth groove, his sweet voice…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🖤🎤 “Melody” was MADE for this version of mi. that smooth groove, his sweet voice, the black suit with the shirt open… everything about this stage feels so effortlessly sexy and alluring. 😭 i’m actually gone. 🫠 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouCon…",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:41:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116495739673284857",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "9f1d5aad4960f04cab41",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 “Sleeping by the Wildfire” tonight!!! one of my FAVORITE stages. waiting for t…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 “Sleeping by the Wildfire” tonight!!! one of my FAVORITE stages. waiting for the full-stage fancam!!! 😭 for the cinematic scenes and lyrics playing across the giant LED screen #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:35:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116494147687502330",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "1c599f1bc741ebaeb3ac",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 “Glass” the new setlist surprise i didn’t know i needed. 🥹 his sweet voice, th…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 “Glass” the new setlist surprise i didn’t know i needed. 🥹 his sweet voice, that suit, the stunning big-screen visuals… i’m IN LOVE with this version! r&b really suits him SO well. 😭 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31…",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:29:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116492844009665011",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "f32ba4ea7380d6a9bd39",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🖤🎤 SO HANDSOME!!! BLACK SUIT!!! OPEN SHIRT!!! DAMN, 😭🫠 #HouMinghao #侯明昊 #HouMing…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🖤🎤 SO HANDSOME!!! BLACK SUIT!!! OPEN SHIRT!!! DAMN, 😭🫠 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:25:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116491634192056396",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "ec465ec724da8f9f30eb",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🖤🎤 HELLO??? 😭 i am NOT okay. 🫠 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #Zhen…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🖤🎤 HELLO??? 😭 i am NOT okay. 🫠 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b072fed90d08fc9df3279907.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-31T19:21:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116490809176621294",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "26781c44f09d306827e4",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 Galaxy Far Far Away 🌌✨ full fancam #HouMinghao #侯明昊 #HouMinghaoBelongsToUs202…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 Galaxy Far Far Away 🌌✨ full fancam #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:18:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116489876497702930",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "49b5471b989edb95faeb",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 taodi is even more desperate than me 😭🤣 he’s answering with his whole heart o…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 taodi is even more desperate than me 😭🤣 he’s answering with his whole heart out hmh said there’ll be an interactive section later… this is going to be FUN. 😭🤏🏻 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:12:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116488374592913716",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "55f03521647d32095b12",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 i was admiring his nice glasses… and then he just casually threw them away???…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 i was admiring his nice glasses… and then he just casually threw them away??? 🤣🤏🏻 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T19:07:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116487149231243662",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "99270ca1e47e2c0875cc",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 Little details on the nose bridge, under his lip, AND the ear cuff??? 😭😭 He r…",
+      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤🤍 Little details on the nose bridge, under his lip, AND the ear cuff??? 😭😭 He really said let’s decorate every angle and leave us with no chance of surviving. i am NOT okay. he looks TOO good. #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMingh…",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9720fad6c74a598677ce2808.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-31T19:02:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116485862389317798",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "dee966b9daace5b2be78",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao 「belongs to us」 2026 concert tour — zhengzhou stop 🎤🤍 the way he finished dancing and reached out for the mic, only to realize it was on…",
+      "excerpt": "31.10.2026 | Hou Minghao 「belongs to us」 2026 concert tour — zhengzhou stop 🎤🤍 the way he finished dancing and reached out for the mic, only to realize it was on the other side 😭🤏🏻 #houminghao #侯明昊 #HouMinghaoBelongsToUs2026 #zhengzhouconcert — @PopMinghao Oct 31, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-10-31T18:52:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116483500295741718",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "dfe34bcddb0e1f3a6bf6",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Hou Minghao 'Belongs To Us' Concert Tour Zhengzhou Stop 261031 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
+      "excerpt": "Hou Minghao 'Belongs To Us' Concert Tour Zhengzhou Stop 261031 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 — @HMH_Record Oct 31, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0843e52d445810159c3a906e.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-10-31T18:45:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116481593506456019",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "7aed9f38c70ef56e6267",
       "platform": "X",
@@ -237,6 +624,70 @@
       "excerptOriginal": "雪中飞 2026-10-31 10:00 来自 微博网页版 寒风入石门，暖意有待「侯」。 雪中飞全球品牌代言人@侯明昊 即将携雪中飞冬日暖意赴约。 ⏰11 月 21 日 📍石家庄北国奥莱 舞台灯光静待开启，一场双向奔赴的线下互动即将揭晓。 以暖羽御雪道，以相逢赴热爱。[期待] 期待与你在现场，共赴这场冬日之约。[yeah] #侯明昊[超话]# ​",
       "titleEnglish": "Snow Flight 2026-10-31 10:00 From the Weibo version of the cold breeze into the stone gate, warmth awaits \"Hou\". Xuezhongfei global brand spokesperson @ Hou Minghao is about to take the snow to fly for a warm winter appointment. ⏰ On November 21, the stage lights of 📍Shijiazhuang North Country Olai will be turned on, and a two-way offline interaction will be announced soon....",
       "excerptEnglish": "Snow Flight 2026-10-31 10:00 From the Weibo version of the cold breeze into the stone gate, warmth awaits \"Hou\". Xuezhongfei Global Brand Spokesperson @ Hou Minghao is about to take the snow to fly for a warm winter appointment. ⏰ On November 21, the stage lights of 📍Shijiazhuang North Country Olai will be turned on, and a two-way offline interaction will be announced soon. Take the warm feathers to the snowy road to meet and fall in love. [Looking forward] Looking forward to seeing you there for this winter appointment. [yeah] # Hou Minghao [overtalk] # ​"
+    },
+    {
+      "id": "63b7cf2a8a0621ad341f",
+      "platform": "Weibo",
+      "source": "侯明昊",
+      "title": "2026-10-31 18:30 来自 明星动态 ​",
+      "excerpt": "侯明昊 2026-10-31 18:30 来自 明星动态 ​",
+      "images": [],
+      "category": "Official",
+      "date": "2026-10-31T12:00:00+08:00",
+      "url": "https://sina.cn/media/1831550987",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "2026-10-31 18:30 来自 明星动态 ​",
+      "excerptOriginal": "侯明昊 2026-10-31 18:30 来自 明星动态 ​"
+    },
+    {
+      "id": "7208defec7c64bf30e88",
+      "platform": "Weibo",
+      "source": "天美意官方微博",
+      "title": "天美意官方微博 2026-10-31 17:30 来自 微博网页版 小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累…",
+      "excerpt": "天美意官方微博 2026-10-31 17:30 来自 微博网页版 小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ​",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-10-31T12:00:00+08:00",
+      "url": "https://sina.cn/media/1882778030",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "天美意官方微博 2026-10-31 17:30 来自 微博网页版 小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累…",
+      "excerptOriginal": "天美意官方微博 2026-10-31 17:30 来自 微博网页版 小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ​"
+    },
+    {
+      "id": "eae887a24703918345d1",
+      "platform": "Weibo",
+      "source": "CASETiFY",
+      "title": "CASETiFY 2026-10-31 17:32 来自 iPhone 14 Pro #侯明昊 [超话]# 各位侯明昊的星舰狂欢嘉宾请集合！#天猫双11星舰狂欢# 正在登陆，CASETiFY代言人 @侯明昊 ，化身天猫星舰舰长，邀你共赴狂…",
+      "excerpt": "CASETiFY 2026-10-31 17:32 来自 iPhone 14 Pro #侯明昊 [超话]# 各位侯明昊的星舰狂欢嘉宾请集合！#天猫双11星舰狂欢# 正在登陆，CASETiFY代言人 @侯明昊 ，化身天猫星舰舰长，邀你共赴狂欢～10月31日起上淘宝搜索【侯明昊】收集 SSR 专属明星徽章，AI生成狂欢限定纪念。每积累100狂欢积分，有机会赢万元红包、CASETiFY天猫限定礼盒！连续搜索【侯明 #天猫双11星舰狂欢#正式开启，各位狂欢嘉宾做好登陆准备！#100位明星齐聚天猫双11星舰狂欢# 百大旗舰店×百位天猫星舰舰长震撼亮相，解锁全新明星徽章R- SR- SSR- VSSR收集玩法！10月31日起，上淘宝搜【明星名…",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-10-31T12:00:00+08:00",
+      "url": "https://sina.cn/media/7728002071",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "CASETiFY 2026-10-31 17:32 来自 iPhone 14 Pro #侯明昊 [超话]# 各位侯明昊的星舰狂欢嘉宾请集合！#天猫双11星舰狂欢# 正在登陆，CASETiFY代言人 @侯明昊 ，化身天猫星舰舰长，邀你共赴狂…",
+      "excerptOriginal": "CASETiFY 2026-10-31 17:32 来自 iPhone 14 Pro #侯明昊 [超话]# 各位侯明昊的星舰狂欢嘉宾请集合！#天猫双11星舰狂欢# 正在登陆，CASETiFY代言人 @侯明昊 ，化身天猫星舰舰长，邀你共赴狂欢～10月31日起上淘宝搜索【侯明昊】收集 SSR 专属明星徽章，AI生成狂欢限定纪念。每积累100狂欢积分，有机会赢万元红包、CASETiFY天猫限定礼盒！连续搜索【侯明 #天猫双11星舰狂欢#正式开启，各位狂欢嘉宾做好登陆准备！#100位明星齐聚天猫双11星舰狂欢# 百大旗舰店×百位天猫星舰舰长震撼亮相，解锁全新明星徽章R- SR- SSR- VSSR收集玩法！10月31日起，上淘宝搜【明星名…"
+    },
+    {
+      "id": "492ee1cd4b47ebcafd95",
+      "platform": "Weibo",
+      "source": "雪中飞",
+      "title": "雪中飞 2026-10-31 16:00 来自 微博网页版 侯明昊同款滑雪服｜雪场驰骋不闷汗 [疑问]首滑不想凑活？这件侯明昊同款滑雪服，新手也能轻松出片 1）⛷️专业滑雪硬核实力：专利热湿平衡结构，高透湿不闷汗，持久防泼水、高耐磨，雪场…",
+      "excerpt": "雪中飞 2026-10-31 16:00 来自 微博网页版 侯明昊同款滑雪服｜雪场驰骋不闷汗 [疑问]首滑不想凑活？这件侯明昊同款滑雪服，新手也能轻松出片 1）⛷️专业滑雪硬核实力：专利热湿平衡结构，高透湿不闷汗，持久防泼水、高耐磨，雪场耐造 2）侯明昊同款📷，轻松复刻明星雪场穿搭 3）🎨多色可选，雪淞晶黄 / 踏雪飞痕 / 极速红，雪场拍照出彩 4 ​",
+      "images": [],
+      "category": "Official",
+      "date": "2026-10-31T12:00:00+08:00",
+      "url": "https://sina.cn/media/2682624851",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "雪中飞 2026-10-31 16:00 来自 微博网页版 侯明昊同款滑雪服｜雪场驰骋不闷汗 [疑问]首滑不想凑活？这件侯明昊同款滑雪服，新手也能轻松出片 1）⛷️专业滑雪硬核实力：专利热湿平衡结构，高透湿不闷汗，持久防泼水、高耐磨，雪场…",
+      "excerptOriginal": "雪中飞 2026-10-31 16:00 来自 微博网页版 侯明昊同款滑雪服｜雪场驰骋不闷汗 [疑问]首滑不想凑活？这件侯明昊同款滑雪服，新手也能轻松出片 1）⛷️专业滑雪硬核实力：专利热湿平衡结构，高透湿不闷汗，持久防泼水、高耐磨，雪场耐造 2）侯明昊同款📷，轻松复刻明星雪场穿搭 3）🎨多色可选，雪淞晶黄 / 踏雪飞痕 / 极速红，雪场拍照出彩 4 ​"
     },
     {
       "id": "4658697560d046222580",
