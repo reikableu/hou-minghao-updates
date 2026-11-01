@@ -28,14 +28,16 @@ MAX_GALLERY_ITEMS = 150
 REQUEST_TIMEOUT = 30
 
 USER_AGENT = (
-    'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) '
-    'AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1'
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+    'AppleWebKit/537.36 (KHTML, like Gecko) '
+    'Chrome/126.0.0.0 Safari/537.36'
 )
 
 HEADERS = {
     'User-Agent': USER_AGENT,
     'Accept': 'application/json, text/plain, */*',
-    'Referer': 'https://m.weibo.cn/',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Referer': 'https://weibo.com/',
 }
 
 
@@ -56,7 +58,7 @@ def load_existing_items():
 
 
 def collect_weibo_profile_images(uid):
-    """Fetch recent post photos directly from a Weibo profile container."""
+    """Fetch recent post photos directly from a Weibo profile container safely."""
     container_id = f"107603{uid}"
     url = f"https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid={container_id}"
     print(f"Fetching Weibo posts for UID: {uid}")
@@ -64,12 +66,21 @@ def collect_weibo_profile_images(uid):
     candidates = []
     try:
         response = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        print(f"Response status for UID {uid}: {response.status_code}")
+        
         if response.status_code != 200:
-            print(f"Weibo API returned status {response.status_code} for UID {uid}")
+            print(f"Skipping UID {uid} due to non-200 status code.")
+            return []
+
+        # Ensure response text is actually JSON before parsing
+        text = response.text.strip()
+        if not text.startswith('{') and not text.startswith('['):
+            print(f"UID {uid} returned non-JSON response (possibly blocked/captcha). Snippet: {text[:100]}")
             return []
 
         payload = response.json()
         cards = payload.get('data', {}).get('cards', [])
+        print(f"Found {len(cards)} cards for UID {uid}")
 
         for card in cards:
             mblog = card.get('mblog')
@@ -156,12 +167,10 @@ def download_candidate(session, item):
 
 
 def merge_and_shuffle_items(new_items, old_items):
-    """Combines new and old items, removes duplicates, and reshuffles display order."""
     combined = []
     seen_ids = set()
     seen_hashes = set()
 
-    # Prioritize newly fetched images first
     for item in new_items + old_items:
         if not isinstance(item, dict):
             continue
@@ -178,7 +187,6 @@ def merge_and_shuffle_items(new_items, old_items):
             seen_hashes.add(image_hash)
         combined.append(item)
 
-    # Randomly shuffle the entire item pool so dashboard order changes every 4 hours
     random.shuffle(combined)
     return combined[:MAX_GALLERY_ITEMS]
 
@@ -200,8 +208,8 @@ def main():
     for uid in TARGET_WEIBO_UIDS:
         photos = collect_weibo_profile_images(uid)
         all_candidates.extend(photos)
+        time.sleep(1) # Polite pause between profile checks
 
-    # Shuffle the fetched candidate pool randomly
     random.shuffle(all_candidates)
     print(f"Total photos collected across all profiles: {len(all_candidates)}")
 
@@ -221,7 +229,6 @@ def main():
             print(f"Image skipped {item['photo_id']}: {error}")
         time.sleep(0.2)
 
-    # Merge with existing photos and randomly shuffle the display array
     final_items = merge_and_shuffle_items(new_items, existing)
     remove_unused_files(final_items)
 
@@ -234,7 +241,7 @@ def main():
     }
 
     temporary = GALLERY_FILE.with_suffix('.json.tmp')
-    temporary.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding='utf-8')
+    temporary.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding='text/plain' if False else 'utf-8')
     temporary.replace(GALLERY_FILE)
     print(f'New downloaded images: {len(new_items)}')
     print(f'Final randomized gallery items: {len(final_items)}')
