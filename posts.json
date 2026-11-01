@@ -1,120 +1,287 @@
 {
-  "lastUpdated": "2026-11-01T14:08:15+08:00",
+  "lastUpdated": "2026-11-01T17:38:33+08:00",
   "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 2,
     "postsTranslatedThisRun": 1,
-    "maximumPostsPerRun": 10,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
       "MyMemory": 2
-    },
-    "priority": "Weibo only",
-    "platformsTranslated": [
-      "Weibo"
-    ],
-    "backupProvider": "MyMemory"
+    }
   },
   "sourceStatus": [
     {
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-11-01T14:06:33.059642+08:00"
+      "checkedAt": "2026-11-01T17:36:58.344131+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-11-01T14:06:37.525511+08:00"
+      "checkedAt": "2026-11-01T17:37:01.979523+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-11-01T14:06:42.195319+08:00"
+      "checkedAt": "2026-11-01T17:37:05.429611+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-11-01T14:06:45.638591+08:00"
+      "checkedAt": "2026-11-01T17:37:08.852990+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-11-01T14:06:49.221325+08:00"
+      "checkedAt": "2026-11-01T17:37:12.111350+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-11-01T14:06:52.516849+08:00"
+      "checkedAt": "2026-11-01T17:37:15.341628+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T14:06:56.156352+08:00"
+      "checkedAt": "2026-11-01T17:37:18.664459+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-11-01T14:06:59.078548+08:00"
+      "checkedAt": "2026-11-01T17:37:21.545474+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-11-01T14:07:02.477367+08:00"
+      "checkedAt": "2026-11-01T17:37:24.820607+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
-      "itemsFound": 28,
-      "checkedAt": "2026-11-01T14:07:05.890871+08:00"
+      "itemsFound": 29,
+      "checkedAt": "2026-11-01T17:37:28.120904+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
       "itemsFound": 18,
-      "checkedAt": "2026-11-01T14:07:09.582947+08:00"
+      "checkedAt": "2026-11-01T17:37:31.320226+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-11-01T14:07:12.990670+08:00"
+      "checkedAt": "2026-11-01T17:37:34.468103+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 37,
-      "checkedAt": "2026-11-01T14:07:17.483674+08:00"
+      "checkedAt": "2026-11-01T17:37:37.634629+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-01T14:07:22.270485+08:00"
+      "checkedAt": "2026-11-01T17:37:41.003560+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T14:07:24.595961+08:00"
+      "checkedAt": "2026-11-01T17:37:43.355372+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T14:07:43.559861+08:00"
+      "checkedAt": "2026-11-01T17:38:00.448066+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "a83c7e333bd1f6226518",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 the moment simon starts playing, i’m instantly transported back to his singers…",
+      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 the moment simon starts playing, i’m instantly transported back to his singers stage days. so many memories, so many feelings… 🥹 this one will always have a special place in my heart. 💚 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert #Simon — @PopMing…",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-01T17:04:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116818604788502685",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "799bb86fadcde5fcd747",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMHdataHQ",
+      "title": "HMH Data HQ: 📊 2026-11-01 [IG] ellemen cn cover previews 🆕️① ② ③ [IG] waladesignlab concert costume ④ like | comment | repost | share #HouMinghao #侯明昊",
+      "excerpt": "📊 2026-11-01 [IG] ellemen cn cover previews 🆕️① https://t.co/r1bnurFJaB ② https://t.co/p3d87rE1Og ③ https://t.co/BqHB08iZUP [IG] waladesignlab concert costume ④ https://t.co/Geq0naZYG7 like | comment | repost | share #HouMinghao #侯明昊 — @HMHdataHQ Nov 1, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-01T16:48:00+08:00",
+      "url": "https://x.com/HMHdataHQ/status/2116814701644611717",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "1ab59ab215969a083c03",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: ELLEMEN Magazine | Video Teaser 261101 | \"ELLEMEN\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "ELLEMEN Magazine | Video Teaser 261101 | \"ELLEMEN\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-01T15:59:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116802364510523777",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "89efb4b75c3d2a657c90",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Brand Livestream Announcement | H&M on Tmall 🗓 November 3, 2026 🕒 19:00 CST 261101 | \"H&M\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Brand Livestream Announcement | H&M on Tmall 🗓 November 3, 2026 🕒 19:00 CST 261101 | \"H&M\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-01T15:26:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116794083977138653",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "a44f970bf828fb368790",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: \"Can I touch the wings just once? Is that okay? Just once really! One second cool, one second cute ☺️\" #HouMinghaoBelongsToUs2026 Concert Tour | Zhengzhou 2611…",
+      "excerpt": "\"Can I touch the wings just once? Is that okay? Just once really! One second cool, one second cute ☺️\" #HouMinghaoBelongsToUs2026 Concert Tour | Zhengzhou 261101 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-01T15:11:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116790166685995283",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "fc547a36c49e19213cb0",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [3/3]",
+      "excerpt": "Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [3/3] — @HMH_Record Nov 1, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b8a4a01e90307f96f05d836b.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-01T14:04:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116773231915143395",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "e01c813538afdec2832d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [1/3]",
+      "excerpt": "Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [1/3] — @HMH_Record Nov 1, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e31434f15f21aab338536d4.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-01T14:02:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116772800493175069",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "37e8fc1c265fd8996955",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [2/3]",
+      "excerpt": "Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [2/3] — @HMH_Record Nov 1, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3185e02f4cdb7f7c4d4c38a0.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-01T14:02:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116772960082043039",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "061a2c18c9793062811a",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: 📨 Xiao Hou's Monthly Letter for October 2026 261101 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "📨 Xiao Hou's Monthly Letter for October 2026 261101 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/378204b873904c37c33b9bb0.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-01T13:45:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116768453420064832",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "fa65fc93d38083a4da11",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: RT @LemonAesthete: [ENG] 201031 #HouMinghao's emotional speech - Zhengzhou Day1 'Belongs to Us' Concert Tour. #侯明昊 #HouMinghaoBelongsToUs2026",
+      "excerpt": "RT @LemonAesthete: [ENG] 201031 #HouMinghao's emotional speech - Zhengzhou Day1 'Belongs to Us' Concert Tour. #侯明昊 #HouMinghaoBelongsToUs2026 — @HMH_Record Nov 1, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-01T13:40:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116767217148965268",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "9d7373a92046cfece8df",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Hey girl, how about a wave? wave~ Is it working?~ wave~ Is it working? #HouMinghaoBelongsToUs2026 Concert Tour 261101 | \"Hou Minghao Concert Tour 'Belongs to U…",
+      "excerpt": "Hey girl, how about a wave? wave~ Is it working?~ wave~ Is it working? #HouMinghaoBelongsToUs2026 Concert Tour 261101 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-01T13:39:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2116767079609344047",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "6234040753584fb40320",
       "platform": "Weibo",
@@ -132,6 +299,24 @@
       "excerptOriginal": "侯明昊工作室 2026-11-01 13:33 #侯明昊[超话]# 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。@侯明昊 ​",
       "titleEnglish": "2026-11-01 13:33 # Hou Minghao [super talk] 📨 # # Xiao Hou's monthly letter # frosted over the branches, dyeing the quiet and long prologue. @ Hou Minghao ​",
       "excerptEnglish": "Hou Minghao Studio 2026-11-01 13:33 # Hou Minghao [super talk] 📨 # # Xiao Hou's monthly letter # frost over the branches, dyeing the quiet and long prologue. @ Hou Minghao ​"
+    },
+    {
+      "id": "0ac35cbff6d608cab81d",
+      "platform": "Weibo",
+      "source": "天美意官方微博",
+      "title": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上#天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新…",
+      "excerpt": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上#天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&代言人周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ​",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-11-01T12:00:00+08:00",
+      "url": "https://sina.cn/media/1882778030",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上#天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新…",
+      "excerptOriginal": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上#天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&代言人周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ​",
+      "titleEnglish": "Tianmei official microblogging 2026-11-01 17:30 From the microblogging website version, the weather is getting cooler. Wear # Tianmei Warm Sheep Wool Shoes 5G into the fall and winter, soft and plush locks, warm walking, soft and comfortable feet. The shoes are not tiresome, and the lambs are decorated to please, and the all-match autumn and winter city walk is relaxed and interpreted freely. New...",
+      "excerptEnglish": "Tianmei official microblogging 2026-11-01 17:30 From the microblogging website version of the weather gradually cooled, put on # Tianmei Warm Sheep Wool Shoes 5G into the fall and winter soft plush lock warm, warm walking with the foot feeling soft and comfortable, the shoe body decoration is cute and pleasing, all-match autumn and winter city walk loose interpretation From now until the end of the month, fans of the interactive list TOP1-TOP4 can get a gift for playing the total peripheral & spokesperson. # HouMingHaoTian MeiYi brand spokesperson # # teenmix # ​"
     },
     {
       "id": "dc80ae4f4118226c64b2",
