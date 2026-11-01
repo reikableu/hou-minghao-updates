@@ -1,3 +1,4 @@
+import asyncio
 import hashlib
 import json
 import os
@@ -9,6 +10,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
+from playwright.async_api import async_playwright
 
 GALLERY_FILE = Path('gallery.json')
 GALLERY_MEDIA_DIR = Path('gallery_media')
@@ -33,13 +35,6 @@ USER_AGENT = (
     'Chrome/126.0.0.0 Safari/537.36'
 )
 
-HEADERS = {
-    'User-Agent': USER_AGENT,
-    'Accept': 'application/json, text/plain, */*',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'Referer': 'https://weibo.com/',
-}
-
 
 def now_iso():
     return datetime.now(SINGAPORE).isoformat(timespec='seconds')
@@ -57,28 +52,32 @@ def load_existing_items():
         return []
 
 
-def collect_weibo_profile_images(uid):
-    """Fetch recent post photos directly from a Weibo profile container safely."""
+async def fetch_profile_candidates(page, uid):
+    """Fetch post photos from a Weibo profile using Playwright to handle bot checks."""
     container_id = f"107603{uid}"
-    url = f"https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid={container_id}"
-    print(f"Fetching Weibo posts for UID: {uid}")
-    
+    target_url = f"https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid={container_id}"
+    print(f"Fetching Weibo posts via Playwright for UID: {uid}")
+
     candidates = []
     try:
-        response = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        print(f"Response status for UID {uid}: {response.status_code}")
+        # Navigate to the page via Playwright browser context
+        response = await page.goto(target_url, wait_until='networkidle', timeout=30000)
         
-        if response.status_code != 200:
-            print(f"Skipping UID {uid} due to non-200 status code.")
+        if not response or response.status != 200:
+            print(f"Playwright received status {response.status if response else 'None'} for UID {uid}")
             return []
 
-        # Ensure response text is actually JSON before parsing
-        text = response.text.strip()
-        if not text.startswith('{') and not text.startswith('['):
-            print(f"UID {uid} returned non-JSON response (possibly blocked/captcha). Snippet: {text[:100]}")
-            return []
+        text = await page.content()
+        # Extract text content from browser body (Playwright unwraps JSON responses)
+        body_text = await page.evaluate("() => document.body.innerText")
+        
+        try:
+            payload = json.loads(body_text)
+        except Exception:
+            # Fallback if text has HTML tags around JSON
+            match = json.loads(await page.evaluate("() => document.querySelector('pre') ? document.querySelector('pre').innerText : document.body.innerText"))
+            payload = match
 
-        payload = response.json()
         cards = payload.get('data', {}).get('cards', [])
         print(f"Found {len(cards)} cards for UID {uid}")
 
@@ -116,7 +115,7 @@ def collect_weibo_profile_images(uid):
                     'uid': uid,
                 })
     except Exception as error:
-        print(f"Error fetching Weibo profile {uid}: {error}")
+        print(f"Error fetching UID {uid} with Playwright: {error}")
 
     return candidates
 
@@ -200,15 +199,29 @@ def remove_unused_files(items):
             path.unlink()
 
 
-def main():
+async def main_async():
     existing = load_existing_items()
     print(f"Loaded {len(existing)} existing gallery items.")
     
     all_candidates = []
-    for uid in TARGET_WEIBO_UIDS:
-        photos = collect_weibo_profile_images(uid)
-        all_candidates.extend(photos)
-        time.sleep(1) # Polite pause between profile checks
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context(user_agent=USER_AGENT)
+        page = await context.new_page()
+
+        # Warm up Sina Visitor session on m.weibo.cn
+        try:
+            await page.goto("https://m.weibo.cn/", wait_until="domcontentloaded", timeout=15000)
+            await asyncio.sleep(2)
+        except Exception as e:
+            print(f"Warmup notice: {e}")
+
+        for uid in TARGET_WEIBO_UIDS:
+            photos = await fetch_profile_candidates(page, uid)
+            all_candidates.extend(photos)
+            await asyncio.sleep(1.5)
+
+        await browser.close()
 
     random.shuffle(all_candidates)
     print(f"Total photos collected across all profiles: {len(all_candidates)}")
@@ -225,6 +238,7 @@ def main():
                 continue
             seen_hashes.add(record['imageHash'])
             new_items.append(record)
+            print(f"Downloaded {index}/{len(all_candidates)}: {item['photo_id']}")
         except Exception as error:
             print(f"Image skipped {item['photo_id']}: {error}")
         time.sleep(0.2)
@@ -241,11 +255,16 @@ def main():
     }
 
     temporary = GALLERY_FILE.with_suffix('.json.tmp')
-    temporary.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding='text/plain' if False else 'utf-8')
+    temporary.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding='utf-8')
     temporary.replace(GALLERY_FILE)
     print(f'New downloaded images: {len(new_items)}')
     print(f'Final randomized gallery items: {len(final_items)}')
 
 
+def main():
+    asyncio.run(main_async())
+
+
 if __name__ == '__main__':
     main()
+
