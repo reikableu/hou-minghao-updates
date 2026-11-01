@@ -11,7 +11,7 @@ permissions:
 
 concurrency:
   group: hou-minghao-daily-update
-  cancel-id-in-progress: false
+  cancel-in-progress: false
 
 jobs:
   update-feed-and-gallery:
