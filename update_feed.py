@@ -139,55 +139,66 @@ def extract_general_images(html_content, base_url=""):
 
 
 def extract_weibo_post_images(element, base_url=""):
+    """Accurately capture Weibo post media and strictly reject profile avatars/icons."""
     if element is None:
         return []
-    accepted=[]
-    avatar_markers=(
-        "avatar","profile","portrait","head","face","author","user",
-        "icon","logo","badge","verified","vip","qrcode","emoji"
+    accepted = []
+    avatar_markers = (
+        "avatar", "profile", "portrait", "head", "face", "author", "user",
+        "icon", "logo", "badge", "verified", "vip", "qrcode", "emoji", "sina_logo"
     )
-    post_media_markers=(
-        "large","mw690","mw1024","mw2000","bmiddle","original",
-        "orj","wap720","photo","media","gallery","pic"
+    post_media_markers = (
+        "large", "mw690", "mw1024", "mw2000", "bmiddle", "original",
+        "orj", "wap720", "photo", "media", "gallery", "pic", "orj360", "orj480"
     )
+    
     for image in element.find_all("img"):
-        image_classes=" ".join(image.get("class",[]))
-        parent_classes=" ".join(
-            " ".join(parent.get("class",[])) for parent in image.parents
-            if getattr(parent,"get",None)
+        image_classes = " ".join(image.get("class", []))
+        parent_classes = " ".join(
+            " ".join(parent.get("class", [])) for parent in image.parents
+            if getattr(parent, "get", None)
         )
-        context=f"{image_classes} {parent_classes} {image.get('alt','')}".lower()
+        alt_text = str(image.get("alt", "")).lower()
+        context = f"{image_classes} {parent_classes} {alt_text}".lower()
+        
         if any(marker in context for marker in avatar_markers):
             continue
-        width_text=str(image.get("width","")).strip()
-        height_text=str(image.get("height","")).strip()
-        width=int(width_text) if width_text.isdigit() else 0
-        height=int(height_text) if height_text.isdigit() else 0
+            
+        width_text = str(image.get("width", "")).strip()
+        height_text = str(image.get("height", "")).strip()
+        width = int(width_text) if width_text.isdigit() else 0
+        height = int(height_text) if height_text.isdigit() else 0
         if width and height and width <= 160 and height <= 160:
             continue
-        urls=[image.get(name) for name in (
-            "data-original","data-lazy-src","data-src","data-url","src"
+            
+        urls = [image.get(name) for name in (
+            "data-original", "data-lazy-src", "data-src", "data-url", "src"
         )]
         if image.get("srcset"):
             urls.extend(part.strip().split(" ")[0] for part in image["srcset"].split(",") if part.strip())
+            
         for raw_url in urls:
-            url=normalize_image_url(raw_url,base_url)
+            url = normalize_image_url(raw_url, base_url)
             if not url:
                 continue
-            lowered=url.lower()
-            parsed=urllib.parse.urlsplit(url)
-            host=parsed.netloc.lower()
-            path=parsed.path.lower()
+            lowered = url.lower()
+            parsed = urllib.parse.urlsplit(url)
+            host = parsed.netloc.lower()
+            path = parsed.path.lower()
+            
             if any(marker in lowered for marker in avatar_markers):
                 continue
-            if "sinaimg" not in host and "weibocdn" not in host:
+            if not any(cdns in host for cdns in ["sinaimg", "weibocdn", "sina.cn", "weibo.com"]):
                 continue
-            if re.search(r"/(?:30|40|50|60|80|100|120|150|160)x(?:30|40|50|60|80|100|120|150|160)/",path):
+            if re.search(r"/(?:30|40|50|60|80|100|120|150|160)x(?:30|40|50|60|80|100|120|150|160)/", path):
                 continue
             if not any(marker in path for marker in post_media_markers):
-                continue
+                if "thumb" in path or "square" in path:
+                    continue
+            
             if url not in accepted:
                 accepted.append(url)
+                
     return accepted[:9]
 
 
@@ -824,7 +835,9 @@ def add_translations(posts):
             post.pop("titleEnglish", None)
             post.pop("excerptEnglish", None)
 
-    weibo_posts = [post for post in posts if post.get("platform"] == "Weibo"]
+    # Fixed syntax bracket typo here:
+    weibo_posts = [post for post in posts if post.get("platform") == "Weibo"]
+    
     def translation_priority(post):
         text = clean_text(f"{post.get('titleOriginal') or post.get('title', '')} {post.get('excerptOriginal') or post.get('excerpt', '')}")
         return (0 if contains_chinese(text) else 1, -post_timestamp(post))
@@ -865,9 +878,6 @@ def add_translations(posts):
 def main():
     data = load_existing_data()
     existing = deduplicate_posts([p for p in data.get("posts", []) if isinstance(p, dict)])
-    for post in existing:
-        if post.get("platform") == "Weibo" and post.get("images"):
-            post["images"] = []
 
     collected, statuses = [], []
     for config in SOURCES:
@@ -895,7 +905,7 @@ def main():
     existing_today_keys = {duplicate_key(p) for p in existing if is_weibo_today(p)}
     slots = max(0, WEIBO_POST_LIMIT - len(existing_today_keys))
     new_weibo = [p for p in collected if p.get("platform") == "Weibo"]
-    other_new = [p for p in collected if p.get("platform"] != "Weibo"]
+    other_new = [p for p in collected if p.get("platform") != "Weibo"]
     accepted_weibo = [p for p in sorted(deduplicate_posts(new_weibo), key=post_timestamp, reverse=True) if duplicate_key(p) not in existing_today_keys][:slots]
     collected = accepted_weibo + other_new
 
