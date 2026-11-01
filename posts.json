@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-11-01T07:27:38+08:00",
+  "lastUpdated": "2026-11-01T14:08:15+08:00",
   "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 8,
-    "postsTranslatedThisRun": 4,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "maximumPostsPerRun": 10,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 8
+      "MyMemory": 2
     },
     "priority": "Weibo only",
     "platformsTranslated": [
@@ -21,100 +21,150 @@
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-11-01T07:25:17.660255+08:00"
+      "checkedAt": "2026-11-01T14:06:33.059642+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-11-01T07:25:21.212534+08:00"
+      "checkedAt": "2026-11-01T14:06:37.525511+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-11-01T07:25:24.327495+08:00"
+      "checkedAt": "2026-11-01T14:06:42.195319+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-11-01T07:25:28.438894+08:00"
+      "checkedAt": "2026-11-01T14:06:45.638591+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-11-01T07:25:32.348076+08:00"
+      "checkedAt": "2026-11-01T14:06:49.221325+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-11-01T07:25:35.590213+08:00"
+      "checkedAt": "2026-11-01T14:06:52.516849+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T07:25:39.473930+08:00"
+      "checkedAt": "2026-11-01T14:06:56.156352+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-11-01T07:25:42.574790+08:00"
+      "checkedAt": "2026-11-01T14:06:59.078548+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-11-01T07:25:46.311898+08:00"
+      "checkedAt": "2026-11-01T14:07:02.477367+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-11-01T07:25:50.388456+08:00"
+      "checkedAt": "2026-11-01T14:07:05.890871+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
       "itemsFound": 18,
-      "checkedAt": "2026-11-01T07:25:53.581384+08:00"
+      "checkedAt": "2026-11-01T14:07:09.582947+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-11-01T07:25:56.663770+08:00"
+      "checkedAt": "2026-11-01T14:07:12.990670+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 37,
-      "checkedAt": "2026-11-01T07:25:59.589017+08:00"
+      "checkedAt": "2026-11-01T14:07:17.483674+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-01T07:26:04.571672+08:00"
+      "checkedAt": "2026-11-01T14:07:22.270485+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T07:26:06.977857+08:00"
+      "checkedAt": "2026-11-01T14:07:24.595961+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T07:26:26.970095+08:00"
+      "checkedAt": "2026-11-01T14:07:43.559861+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "6234040753584fb40320",
+      "platform": "Weibo",
+      "source": "侯明昊工作室",
+      "title": "2026-11-01 13:33 #侯明昊[超话]# 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。@侯明昊 ​",
+      "excerpt": "侯明昊工作室 2026-11-01 13:33 #侯明昊[超话]# 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。@侯明昊 ​",
+      "images": [],
+      "category": "Official",
+      "date": "2026-11-01T12:00:00+08:00",
+      "url": "https://sina.cn/media/5763552342",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "titleOriginal": "2026-11-01 13:33 #侯明昊[超话]# 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。@侯明昊 ​",
+      "excerptOriginal": "侯明昊工作室 2026-11-01 13:33 #侯明昊[超话]# 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。@侯明昊 ​",
+      "titleEnglish": "2026-11-01 13:33 # Hou Minghao [super talk] 📨 # # Xiao Hou's monthly letter # frosted over the branches, dyeing the quiet and long prologue. @ Hou Minghao ​",
+      "excerptEnglish": "Hou Minghao Studio 2026-11-01 13:33 # Hou Minghao [super talk] 📨 # # Xiao Hou's monthly letter # frost over the branches, dyeing the quiet and long prologue. @ Hou Minghao ​"
+    },
+    {
+      "id": "dc80ae4f4118226c64b2",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: RT @Ani_is_happy: มีใครเอาไม้ตกแมวเข้าไปในฮอลรึปล่าว?",
+      "excerpt": "RT @Ani_is_happy: มีใครเอาไม้ตกแมวเข้าไปในฮอลรึปล่าว? — @PopMinghao Nov 1, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-01T10:49:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116724271078834518",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "adcd04b0596247bd5e10",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 📸 these hd pics from this fansite master OrangeMoon_侯明昊 are SO HOT and clear 🫠 #…",
+      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 📸 these hd pics from this fansite master OrangeMoon_侯明昊 are SO HOT and clear 🫠 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/48479bf443941b74f6191236.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-01T10:45:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2116723390518378727",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "6ed074cf57eca518e671",
       "platform": "X",
