@@ -4,7 +4,6 @@ import os
 import re
 import time
 import urllib.parse
-import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -17,7 +16,6 @@ GALLERY_MEDIA_DIR = Path('gallery_media')
 RAW_GALLERY_BASE = 'https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gallery_media'
 SINGAPORE = ZoneInfo('Asia/Singapore')
 
-# Updated search queries (removed 'HouMinhao')
 SEARCH_QUERIES = ['Hou Minghao', 'HouMinghao', '侯明昊']
 MAX_GALLERY_ITEMS = 150
 REQUEST_TIMEOUT = 30
@@ -28,7 +26,10 @@ USER_AGENT = (
     'Chrome/126.0.0.0 Safari/537.36'
 )
 
-HEADERS = {'User-Agent': USER_AGENT}
+HEADERS = {
+    'User-Agent': USER_AGENT,
+    'Accept-Language': 'en-US,en;q=0.9',
+}
 
 
 def now_iso():
@@ -47,62 +48,59 @@ def load_existing_items():
         return []
 
 
-def collect_query_rss(query):
-    """Fetch pins using public RSS/syndication endpoints without cookies."""
+def collect_query_direct(query):
+    """Fetch pins using Pinterest's public resource search API endpoint."""
     encoded_query = urllib.parse.quote_plus(query)
-    feed_url = f"https://www.pinterest.com/search/pins/?q={encoded_query}&format=rss"
-    print(f'Fetching Pinterest RSS for: {query}')
+    # Pinterest public resource search URL structure
+    url = f"https://www.pinterest.com/resource/BaseSearchResource/get/?source_url=/search/pins/?q={encoded_query}&data="
+    data_param = json.dumps({
+        "options": {
+            "isPrefetch": False,
+            "query": query,
+            "scope": "pins",
+            "no_fetch_context_on_resource": False
+        },
+        "context": {}
+    })
+    
+    full_url = url + urllib.parse.quote(data_param)
+    print(f'Fetching Pinterest public search for: {query}')
     
     candidates = []
     try:
-        response = requests.get(feed_url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        response = requests.get(full_url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
         if response.status_code != 200:
-            print(f"Pinterest RSS returned status {response.status_code}")
+            print(f"Pinterest search returned status {response.status_code}")
             return []
             
-        root = ET.fromstring(response.content)
-        for item in root.findall('.//item'):
-            title = clean_text(item.findtext('title'))
-            link = clean_text(item.findtext('link'))
-            description = item.findtext('description') or ''
-            
-            match = re.search(r'/pin/(\d+)', link)
-            if not match:
-                continue
-            pin_id = match.group(1)
-            
-            soup = BeautifulSoup(description, 'html.parser')
-            img = soup.find('img')
-            img_url = img.get('src') if img else ''
-            
-            if not img_url:
-                img_match = re.search(r'https?://[^\s<>"]+?\.(?:jpe?g|png|webp)', description, re.I)
-                if img_match:
-                    img_url = img_match.group(0)
-                    
-            if not img_url:
+        payload = response.json()
+        results = payload.get('resource_response', {}).get('data', {}).get('results', [])
+        
+        for pin in results:
+            pin_id = str(pin.get('id') or '')
+            if not pin_id:
                 continue
                 
-            img_url = re.sub(r'/\d+x/', '/originals/', img_url)
-            img_url = re.sub(r'/rs(?:[-_]\w+)+/', '/', img_url)
+            # Extract high-res image URL
+            images = pin.get('images', {})
+            original_img = images.get('orig', {}).get('url') or images.get('736x', {}).get('url') or ''
+            if not original_img:
+                continue
+                
+            title = pin.get('grid_title') or pin.get('pindoc_title') or f"Hou Minghao Pinterest photo - {query}"
+            pin_url = f"https://www.pinterest.com/pin/{pin_id}/"
             
             candidates.append({
                 'pin_id': pin_id,
-                'pin_url': f"https://www.pinterest.com/pin/{pin_id}/",
-                'image_url': img_url,
-                'title': title or f"Hou Minghao Pinterest photo - {query}",
+                'pin_url': pin_url,
+                'image_url': original_img,
+                'title': str(title)[:250],
                 'query': query,
             })
     except Exception as error:
-        print(f"Error parsing Pinterest feed for {query}: {error}")
+        print(f"Error fetching Pinterest data for {query}: {error}")
         
     return candidates
-
-
-def clean_text(value):
-    if not value:
-        return ""
-    return BeautifulSoup(str(value), "html.parser").get_text(" ", strip=True)
 
 
 def extension_for(content_type, url):
@@ -128,10 +126,13 @@ def download_candidate(session, item):
         raise ValueError('Invalid or oversized image response')
     content_hash = hashlib.sha256(response.content).hexdigest()
     filename = f"{item['pin_id']}_{content_hash[:12]}{extension_for(content_type, item['image_url'])}"
+    
+    # Automatically creates the gallery_media folder if it doesn't exist
     GALLERY_MEDIA_DIR.mkdir(exist_ok=True)
     path = GALLERY_MEDIA_DIR / filename
     if not path.exists():
         path.write_bytes(response.content)
+        
     return {
         'id': item['pin_id'],
         'image': f'{RAW_GALLERY_BASE}/{filename}',
@@ -184,7 +185,7 @@ def main():
     all_candidates = {}
     
     for query in SEARCH_QUERIES:
-        for item in collect_query_rss(query):
+        for item in collect_query_direct(query):
             all_candidates[item['pin_id']] = item
 
     session = requests.Session()
