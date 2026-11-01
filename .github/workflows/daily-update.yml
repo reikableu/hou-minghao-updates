@@ -11,7 +11,7 @@ permissions:
 
 concurrency:
   group: hou-minghao-daily-update
-  cancel-in-progress: false
+  cancel-id-in-progress: false
 
 jobs:
   update-feed-and-gallery:
@@ -40,9 +40,7 @@ jobs:
           XHS_COOKIES_JSON: ${{ secrets.XHS_COOKIES_JSON }}
         run: python update_feed.py
 
-      - name: Build Pinterest gallery
-        env:
-          PINTEREST_COOKIES_JSON: ${{ secrets.PINTEREST_COOKIES_JSON }}
+      - name: Build Pinterest gallery (Cookie-free)
         run: python update_gallery.py
 
       - name: Validate generated JSON files
