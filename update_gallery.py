@@ -9,7 +9,6 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
-from bs4 import BeautifulSoup
 
 GALLERY_FILE = Path('gallery.json')
 GALLERY_MEDIA_DIR = Path('gallery_media')
@@ -49,9 +48,7 @@ def load_existing_items():
 
 
 def collect_query_direct(query):
-    """Fetch pins using Pinterest's public resource search API endpoint."""
     encoded_query = urllib.parse.quote_plus(query)
-    # Pinterest public resource search URL structure
     url = f"https://www.pinterest.com/resource/BaseSearchResource/get/?source_url=/search/pins/?q={encoded_query}&data="
     data_param = json.dumps({
         "options": {
@@ -69,19 +66,20 @@ def collect_query_direct(query):
     candidates = []
     try:
         response = requests.get(full_url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        print(f"Pinterest search response status for '{query}': {response.status_code}")
         if response.status_code != 200:
-            print(f"Pinterest search returned status {response.status_code}")
+            print(f"Response text snippet: {response.text[:200]}")
             return []
             
         payload = response.json()
         results = payload.get('resource_response', {}).get('data', {}).get('results', [])
+        print(f"Found {len(results)} raw pins for query '{query}'")
         
         for pin in results:
             pin_id = str(pin.get('id') or '')
             if not pin_id:
                 continue
                 
-            # Extract high-res image URL
             images = pin.get('images', {})
             original_img = images.get('orig', {}).get('url') or images.get('736x', {}).get('url') or ''
             if not original_img:
@@ -98,7 +96,7 @@ def collect_query_direct(query):
                 'query': query,
             })
     except Exception as error:
-        print(f"Error fetching Pinterest data for {query}: {error}")
+        print(f"Error fetching Pinterest data for {query}: {type(error).__name__} - {error}")
         
     return candidates
 
@@ -127,7 +125,6 @@ def download_candidate(session, item):
     content_hash = hashlib.sha256(response.content).hexdigest()
     filename = f"{item['pin_id']}_{content_hash[:12]}{extension_for(content_type, item['image_url'])}"
     
-    # Automatically creates the gallery_media folder if it doesn't exist
     GALLERY_MEDIA_DIR.mkdir(exist_ok=True)
     path = GALLERY_MEDIA_DIR / filename
     if not path.exists():
@@ -182,12 +179,14 @@ def remove_unused_files(items):
 
 def main():
     existing = load_existing_items()
+    print(f"Loaded {len(existing)} existing gallery items.")
     all_candidates = {}
     
     for query in SEARCH_QUERIES:
         for item in collect_query_direct(query):
             all_candidates[item['pin_id']] = item
 
+    print(f"Total unique candidates collected: {len(all_candidates)}")
     session = requests.Session()
     new_items = []
     seen_hashes = set()
