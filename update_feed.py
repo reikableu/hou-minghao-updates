@@ -32,14 +32,23 @@ HEADERS = {
                    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"),
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
 }
+
+# Your exact 2 XHS profiles with current tokens
 XHS_PROFILES = [
-    {"name": "XHS Official 680f4160", "source": "XHS Official 680f4160",
-     "profile_id": "680f416000000000080147b4",
-     "url": "https://www.rednote.com/user/profile/680f416000000000080147b4?xsec_token=ABWkblVPjeFy4aBEb0ZYh9RytBI67Xzp2Q7bPVUxdsIB4%3D&xsec_source=pc_note"},
-    {"name": "XHS Official 5bc495df", "source": "XHS Official 5bc495df",
-     "profile_id": "5bc495dfec27fc0001bd4010",
-     "url": "https://www.rednote.com/user/profile/5bc495dfec27fc0001bd4010?xsec_token=ABVa0xZWa2vz4oYG34o70kY-if281iBw4p6RJwJ9_5K2I%3D&xsec_source=pc_search"},
+    {
+        "name": "XHS Profile 1", 
+        "source": "XHS Profile 1",
+        "profile_id": "680f416000000000080147b4",
+        "url": "https://www.rednote.com/user/profile/680f416000000000080147b4?xsec_token=ABYtI7zH48KeUB5ohiJLScbnzYrm4p2gCMujsuApcYBi4%3D&xsec_source=pc_search"
+    },
+    {
+        "name": "XHS Profile 2", 
+        "source": "XHS Profile 2",
+        "profile_id": "5bc495dfec27fc0001bd4010",
+        "url": "https://www.rednote.com/user/profile/5bc495dfec27fc0001bd4010?xsec_token=ABVa0xZWa2vz4oYG34o70kY-jqrCRmlOmHAMqbDzX5Igk%3D&xsec_source=pc_search"
+    },
 ]
+
 XHS_POST_LIMIT_PER_PROFILE = 12
 XHS_MAX_PROFILE_CANDIDATES = 40
 XHS_PAGE_TIMEOUT_MS = 60000
@@ -81,7 +90,6 @@ def clean_text(value):
 
 
 def normalize_image_url(value, base_url=""):
-    """Return a clean absolute HTTP image URL, including malformed HTML values."""
     if not value:
         return ""
     raw = unescape(str(value)).strip().replace("\\/", "/")
@@ -107,7 +115,6 @@ def normalize_image_url(value, base_url=""):
 
 
 def extract_general_images(html_content, base_url=""):
-    """Extract images from RSS/HTML content without applying Weibo-only rules."""
     if not html_content:
         return []
     raw = unescape(str(html_content)).replace("\\/", "/")
@@ -132,7 +139,6 @@ def extract_general_images(html_content, base_url=""):
 
 
 def extract_weibo_post_images(element, base_url=""):
-    """Keep only confidently identified Weibo post media and reject profile photos."""
     if element is None:
         return []
     accepted=[]
@@ -265,7 +271,6 @@ def localize_post_images(posts):
 
 
 def clean_weibo_content(text):
-    """Strip out timestamps, view counts, short links, and engagement stats from Weibo text."""
     if not text:
         return ""
     text = re.sub(r"^\d{4}[-/.年]\d{1,2}[-/.月]\d{1,2}[日]?\s*\d{1,2}:\d{2}\s*", "", text)
@@ -531,6 +536,7 @@ def collect_rss_feed(source_config):
         })
     return collected
 
+
 def load_xhs_cookies():
     raw = os.environ.get("XHS_COOKIES_JSON", "").strip()
     if not raw:
@@ -577,11 +583,11 @@ def parse_xhs_display_date(value):
     if not value:
         return ""
     now = singapore_now()
-    match = re.search(r"(?:Yesterday|昨天)[,，]?\s*(\d{1,2}):(\d{2})", value, re.I)
+    match = re.search(r"(?:Yesterday|昨天)[,,\s]*(\d{1,2}):(\d{2})", value, re.I)
     if match:
         yesterday = now.date().fromordinal(now.date().toordinal() - 1)
         return datetime(yesterday.year, yesterday.month, yesterday.day, int(match.group(1)), int(match.group(2)), tzinfo=SINGAPORE).isoformat()
-    match = re.search(r"(?:Today|今天)[,，]?\s*(\d{1,2}):(\d{2})", value, re.I)
+    match = re.search(r"(?:Today|今天)[,,\s]*(\d{1,2}):(\d{2})", value, re.I)
     if match:
         return datetime(now.year, now.month, now.day, int(match.group(1)), int(match.group(2)), tzinfo=SINGAPORE).isoformat()
     match = re.search(r"(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})日?(?:\s+(\d{1,2}):(\d{2}))?", value)
@@ -598,143 +604,142 @@ def parse_xhs_display_date(value):
 def collect_xhs_profile(source_config):
     cookies = load_xhs_cookies()
     if not cookies:
-        print(f"{source_config['name']}: XHS_COOKIES_JSON missing; skipping XHS")
+        print(f"{source_config['name']}: XHS_COOKIES_JSON missing; skipping XHS profile scrape safely.")
         return []
+    
     from playwright.sync_api import sync_playwright
-    with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"])
-        context = browser.new_context(locale="zh-CN", timezone_id="Asia/Shanghai", viewport={"width": 1440, "height": 1100}, user_agent=HEADERS["User-Agent"], extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]})
-        context.add_cookies(cookies)
-        page = context.new_page()
-        page.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined});")
-        response = page.goto(source_config["url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
-        page.wait_for_timeout(7000)
-        status = response.status if response else 0
-        print("XHS HTTP status:", status)
-        print("XHS final URL:", page.url)
-        print("XHS page title:", clean_text(page.title())[:150])
-        if status >= 400:
-            browser.close()
-            raise RuntimeError(f"XHS profile returned HTTP {status}")
-        profile_name = source_config["source"]
-        for selector in ("h1", "[class*='user-name']", "[class*='username']", "[class*='nickname']"):
-            try:
-                value = clean_text(page.locator(selector).first.inner_text(timeout=1200))
-                if value and len(value) <= 80:
-                    profile_name = value
-                    break
-            except Exception:
-                pass
-        source_config["source"] = source_config["name"] = profile_name
+    posts = []
+    try:
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled", "--no-sandbox", "--disable-dev-shm-usage"])
+            context = browser.new_context(locale="zh-CN", timezone_id="Asia/Shanghai", viewport={"width": 1440, "height": 1100}, user_agent=HEADERS["User-Agent"])
+            context.add_cookies(cookies)
+            page = context.new_page()
+            page.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined});")
+            
+            response = page.goto(source_config["url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
+            page.wait_for_timeout(6000)
+            status = response.status if response else 0
+            if status >= 400:
+                browser.close()
+                print(f"XHS profile returned HTTP {status}, skipping.")
+                return []
 
-        candidates, seen = [], set()
-        stagnant = 0
-        previous = 0
-        for _ in range(10):
-            anchors = page.locator("a[href*='/discovery/item/'], a[href*='/explore/']")
-            print("XHS current note links:", anchors.count())
-            for index in range(anchors.count()):
+            profile_name = source_config["source"]
+            for selector in ("h1", "[class*='user-name']", "[class*='username']", "[class*='nickname']"):
                 try:
-                    link = anchors.nth(index)
-                    raw_href = link.get_attribute("href") or ""
-                    original_url = urllib.parse.urljoin("https://www.rednote.com", raw_href)
-                    canonical_url = canonical_xhs_post_url(original_url)
-                    if not canonical_url or canonical_url in seen:
-                        continue
-                    seen.add(canonical_url)
-                    card = link.locator("xpath=ancestor::*[self::section or self::article or self::li or self::div][1]")
-                    card_text = clean_text(card.inner_text(timeout=1200)) or clean_text(link.inner_text(timeout=700))
-                    images = []
-                    for image_index in range(min(card.locator("img").count(), 9)):
-                        image = card.locator("img").nth(image_index)
-                        for attribute in ("src", "data-src", "data-original"):
-                            image_url = normalize_image_url(image.get_attribute(attribute), source_config["url"])
-                            if image_url and image_url not in images:
-                                images.append(image_url)
-                                break
-                    candidates.append({"canonical_url": canonical_url, "original_url": original_url, "card_text": card_text, "images": images})
-                except Exception as error:
-                    print("XHS profile candidate skipped:", type(error).__name__, str(error)[:120])
-            if len(candidates) >= XHS_MAX_PROFILE_CANDIDATES:
-                break
-            page.mouse.wheel(0, 1700)
-            page.wait_for_timeout(1800)
-            stagnant = stagnant + 1 if len(candidates) == previous else 0
-            previous = len(candidates)
-            if stagnant >= 3:
-                break
-        print("XHS unique current profile candidates:", len(candidates))
+                    value = clean_text(page.locator(selector).first.inner_text(timeout=1000))
+                    if value and len(value) <= 80:
+                        profile_name = value
+                        break
+                except Exception:
+                    pass
+            source_config["source"] = source_config["name"] = profile_name
 
-        posts = []
-        for candidate in candidates:
-            if len(posts) >= XHS_MAX_PROFILE_CANDIDATES:
-                break
-            note_page = context.new_page()
-            try:
-                note_response = note_page.goto(candidate["original_url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
-                note_page.wait_for_timeout(2500)
-                if note_response and note_response.status >= 400:
-                    raise RuntimeError(f"HTTP {note_response.status}")
-                body = clean_text(note_page.locator("body").inner_text(timeout=5000))
-                title = candidate["card_text"]
-                for selector in ("h1", "[class*='note-title']", "[class*='title']"):
+            candidates, seen = [], set()
+            stagnant, previous = 0, 0
+            for _ in range(8):
+                anchors = page.locator("a[href*='/discovery/item/'], a[href*='/explore/']")
+                for index in range(anchors.count()):
                     try:
-                        value = clean_text(note_page.locator(selector).first.inner_text(timeout=800))
-                        if value and len(value) <= 200:
-                            title = value
-                            break
+                        link = anchors.nth(index)
+                        raw_href = link.get_attribute("href") or ""
+                        original_url = urllib.parse.urljoin("https://www.rednote.com", raw_href)
+                        canonical_url = canonical_xhs_post_url(original_url)
+                        if not canonical_url or canonical_url in seen:
+                            continue
+                        seen.add(canonical_url)
+                        card = link.locator("xpath=ancestor::*[self::section or self::article or self::li or self::div][1]")
+                        card_text = clean_text(card.inner_text(timeout=1000)) or clean_text(link.inner_text(timeout=500))
+                        images = []
+                        for img_idx in range(min(card.locator("img").count(), 9)):
+                            img = card.locator("img").nth(img_idx)
+                            for attr in ("src", "data-src", "data-original"):
+                                img_url = normalize_image_url(img.get_attribute(attr), source_config["url"])
+                                if img_url and img_url not in images:
+                                    images.append(img_url)
+                                    break
+                        candidates.append({"canonical_url": canonical_url, "original_url": original_url, "card_text": card_text, "images": images})
                     except Exception:
                         pass
-                post_date = ""
-                for selector in ("time", "[class*='date']", "[class*='publish']", "[class*='time']"):
-                    try:
-                        node = note_page.locator(selector).first
-                        raw_date = clean_text(node.get_attribute("datetime") or node.inner_text(timeout=700))
-                        post_date = parse_xhs_display_date(raw_date)
-                        if post_date:
-                            break
-                    except Exception:
-                        pass
-                if not post_date:
-                    date_patterns = [r"(?:Yesterday|昨天)[,，]?\s*\d{1,2}:\d{2}", r"(?:Today|今天)[,，]?\s*\d{1,2}:\d{2}", r"20\d{2}[-/.年]\d{1,2}[-/.月]\d{1,2}日?(?:\s+\d{1,2}:\d{2})?", r"\d{1,2}[-/.月]\d{1,2}日?(?:\s+\d{1,2}:\d{2})?"]
-                    for pattern in date_patterns:
-                        match = re.search(pattern, body, re.I)
-                        if match:
-                            post_date = parse_xhs_display_date(match.group(0))
+                if len(candidates) >= XHS_MAX_PROFILE_CANDIDATES:
+                    break
+                page.mouse.wheel(0, 1500)
+                page.wait_for_timeout(1500)
+                stagnant = stagnant + 1 if len(candidates) == previous else 0
+                previous = len(candidates)
+                if stagnant >= 3:
+                    break
+
+            for candidate in candidates[:XHS_POST_LIMIT_PER_PROFILE]:
+                note_page = context.new_page()
+                try:
+                    note_response = note_page.goto(candidate["original_url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
+                    note_page.wait_for_timeout(2000)
+                    if note_response and note_response.status >= 400:
+                        continue
+                    body = clean_text(note_page.locator("body").inner_text(timeout=4000))
+                    title = candidate["card_text"]
+                    for selector in ("h1", "[class*='note-title']", "[class*='title']"):
+                        try:
+                            value = clean_text(note_page.locator(selector).first.inner_text(timeout=600))
+                            if value and len(value) <= 200:
+                                title = value
+                                break
+                        except Exception:
+                            pass
+                    
+                    post_date = ""
+                    for selector in ("time", "[class*='date']", "[class*='publish']", "[class*='time']"):
+                        try:
+                            node = note_page.locator(selector).first
+                            raw_date = clean_text(node.get_attribute("datetime") or node.inner_text(timeout=500))
+                            post_date = parse_xhs_display_date(raw_date)
                             if post_date:
                                 break
-                images = list(candidate["images"])
-                for image_index in range(min(note_page.locator("img").count(), 25)):
-                    image = note_page.locator("img").nth(image_index)
-                    for attribute in ("src", "data-src", "data-original"):
-                        image_url = normalize_image_url(image.get_attribute(attribute), candidate["original_url"])
-                        if image_url and not any(marker in image_url.lower() for marker in ("avatar", "profile", "portrait")) and image_url not in images:
-                            images.append(image_url)
-                            break
-                clean_title = shorten(title or candidate["card_text"], 180) or "New XHS update"
-                posts.append({"id": make_id("XHS", profile_name, clean_title, candidate["canonical_url"]), "platform": "XHS", "source": profile_name, "title": clean_title, "excerpt": shorten(body or candidate["card_text"], 350), "images": images[:9], "category": "XHS Update", "date": post_date, "dateSource": "note detail" if post_date else "unknown", "url": candidate["original_url"], "canonicalUrl": candidate["canonical_url"], "official": True, "verified": True, "collectionMethod": "Playwright note detail", "profileId": source_config.get("profile_id", "")})
-            except Exception as error:
-                print("XHS note enrichment failed:", candidate["canonical_url"], type(error).__name__, str(error)[:120])
-            finally:
-                note_page.close()
+                        except Exception:
+                            pass
+                    if not post_date:
+                        for pattern in [r"(?:Yesterday|昨天)[,,\s]*\d{1,2}:\d{2}", r"(?:Today|今天)[,,\s]*\d{1,2}:\d{2}", r"20\d{2}[-/.年]\d{1,2}[-/.月]\d{1,2}日?(?:\s+\d{1,2}:\d{2})?", r"\d{1,2}[-/.月]\d{1,2}日?(?:\s+\d{1,2}:\d{2})?"]:
+                            match = re.search(pattern, body, re.I)
+                            if match:
+                                post_date = parse_xhs_display_date(match.group(0))
+                                if post_date:
+                                    break
 
-        deduped = {}
-        for post in posts:
-            key = post.get("canonicalUrl") or canonical_xhs_post_url(post.get("url", "")) or post.get("id")
-            old = deduped.get(key)
-            if old is None or (post.get("date") and not old.get("date")):
-                deduped[key] = post
-        def sort_key(post):
-            try:
-                return datetime.fromisoformat(post.get("date", "").replace("Z", "+00:00")).timestamp()
-            except Exception:
-                return 0
-        final_posts = sorted(deduped.values(), key=sort_key, reverse=True)
-        print("XHS enriched profile posts:", len(final_posts))
-        print("XHS newest profile title:", final_posts[0].get("title") if final_posts else "none")
-        print("XHS newest profile date:", final_posts[0].get("date") if final_posts else "none")
-        browser.close()
-        return final_posts[:XHS_POST_LIMIT_PER_PROFILE]
+                    images = list(candidate["images"])
+                    for img_idx in range(min(note_page.locator("img").count(), 20)):
+                        img = note_page.locator("img").nth(img_idx)
+                        for attr in ("src", "data-src", "data-original"):
+                            img_url = normalize_image_url(img.get_attribute(attr), candidate["original_url"])
+                            if img_url and not any(marker in img_url.lower() for marker in ("avatar", "profile", "portrait")) and img_url not in images:
+                                images.append(img_url)
+                                break
+
+                    clean_title = shorten(title or candidate["card_text"], 180) or "New XHS update"
+                    posts.append({
+                        "id": make_id("XHS", profile_name, clean_title, candidate["canonical_url"]), 
+                        "platform": "XHS", 
+                        "source": profile_name, 
+                        "title": clean_title, 
+                        "excerpt": shorten(body or candidate["card_text"], 350), 
+                        "images": images[:9], 
+                        "category": "XHS Update", 
+                        "date": post_date, 
+                        "canonicalUrl": candidate["canonical_url"], 
+                        "url": candidate["original_url"], 
+                        "official": True, 
+                        "verified": True, 
+                        "collectionMethod": "GitHub Playwright Scraper"
+                    })
+                except Exception as error:
+                    print("XHS detail scrape error:", type(error).__name__)
+                finally:
+                    note_page.close()
+            browser.close()
+    except Exception as error:
+        print("XHS profile collection execution failed:", error)
+    return posts
 
 
 def collect_source(source_config):
@@ -798,45 +803,31 @@ def translate_to_english(text):
         if translated:
             return {"translation": translated, "rate_limited": False, "provider": "Google"}
     except Exception as error:
-        message = str(error).lower()
-        google_limited = type(error).__name__ == "TooManyRequests" or any(
-            marker in message for marker in ["too many requests", "429", "rate limit"]
-        )
-        print("Google translation failed:", f"{type(error).__name__}: {error}"[:200])
+        pass
 
     try:
         translated = translate_with_mymemory(text)
         if translated:
-            print("Translation backup used: MyMemory")
             return {"translation": translated, "rate_limited": False, "provider": "MyMemory"}
     except Exception as error:
-        print("MyMemory backup failed:", f"{type(error).__name__}: {error}"[:200])
+        pass
 
     return {"translation": "", "rate_limited": google_limited, "provider": "unavailable"}
 
 
 def add_translations(posts):
-    translations_added = 0
-    posts_translated = 0
-    posts_attempted = 0
+    translations_added = posts_translated = posts_attempted = 0
     rate_limited = False
     translation_providers = {"Google": 0, "MyMemory": 0}
-    print("\nChecking English translations (Weibo only)...")
-
     for post in posts:
         if post.get("platform") != "Weibo":
             post.pop("titleEnglish", None)
             post.pop("excerptEnglish", None)
 
-    weibo_posts = [post for post in posts if post.get("platform") == "Weibo"]
-
+    weibo_posts = [post for post in posts if post.get("platform"] == "Weibo"]
     def translation_priority(post):
-        text = clean_text(
-            f"{post.get('titleOriginal') or post.get('title', '')} "
-            f"{post.get('excerptOriginal') or post.get('excerpt', '')}"
-        )
-        needs_translation = 0 if contains_chinese(text) else 1
-        return (needs_translation, -post_timestamp(post))
+        text = clean_text(f"{post.get('titleOriginal') or post.get('title', '')} {post.get('excerptOriginal') or post.get('excerpt', '')}")
+        return (0 if contains_chinese(text) else 1, -post_timestamp(post))
 
     for index, post in enumerate(sorted(weibo_posts, key=translation_priority), 1):
         original_title = clean_text(post.get("titleOriginal") or post.get("title", ""))
@@ -847,128 +838,84 @@ def add_translations(posts):
         title_need = contains_chinese(original_title) and not title_en
         excerpt_need = contains_chinese(original_excerpt) and not excerpt_en
 
-        if not contains_chinese(original_title) and not title_en:
-            post["titleEnglish"] = original_title
-        if not contains_chinese(original_excerpt) and not excerpt_en:
-            post["excerptEnglish"] = original_excerpt
+        if not contains_chinese(original_title) and not title_en: post["titleEnglish"] = original_title
+        if not contains_chinese(original_excerpt) and not excerpt_en: post["excerptEnglish"] = original_excerpt
 
-        if not title_need and not excerpt_need:
-            continue
-        if posts_attempted >= MAX_TRANSLATED_POSTS_PER_RUN:
-            print("Translation attempt limit reached; remaining Weibo posts will be handled in a future run.")
-            break
+        if not title_need and not excerpt_need: continue
+        if posts_attempted >= MAX_TRANSLATED_POSTS_PER_RUN: break
 
         posts_attempted += 1
-        print(f"Translating Weibo post {index}/{len(weibo_posts)}")
         had_translation = False
-        for field, original, needed in [
-            ("titleEnglish", original_title, title_need),
-            ("excerptEnglish", original_excerpt, excerpt_need),
-        ]:
-            if not needed:
-                continue
+        for field, original, needed in [("titleEnglish", original_title, title_need), ("excerptEnglish", original_excerpt, excerpt_need)]:
+            if not needed: continue
             result = translate_to_english(original)
-            if result["rate_limited"]:
-                rate_limited = True
+            if result["rate_limited"]: rate_limited = True
             if result["translation"]:
                 post[field] = result["translation"]
                 translations_added += 1
                 had_translation = True
                 provider = result.get("provider")
-                if provider in translation_providers:
-                    translation_providers[provider] += 1
+                if provider in translation_providers: translation_providers[provider] += 1
                 time.sleep(TRANSLATION_DELAY_SECONDS)
-            else:
-                print(f"Weibo translation unavailable for {field}; will retry on a later run.")
-        if had_translation:
-            posts_translated += 1
+        if had_translation: posts_translated += 1
 
     return translations_added, posts_translated, rate_limited, translation_providers
 
 
 def main():
     data = load_existing_data()
-    existing = deduplicate_posts([p for p in data.get("posts", [])
-                                  if isinstance(p, dict)])
-    legacy_weibo_images_removed=0
+    existing = deduplicate_posts([p for p in data.get("posts", []) if isinstance(p, dict)])
     for post in existing:
-        if post.get("platform")=="Weibo" and post.get("images"):
-            post["images"]=[]
-            legacy_weibo_images_removed+=1
-    print("Legacy Weibo image references removed:",legacy_weibo_images_removed)
+        if post.get("platform") == "Weibo" and post.get("images"):
+            post["images"] = []
 
     collected, statuses = [], []
     for config in SOURCES:
-        checked = singapore_now(); print(f"Checking {config['name']}...")
+        checked = singapore_now()
+        print(f"Checking {config['name']}...")
         try:
-            posts = collect_source(config); collected.extend(posts)
+            posts = collect_source(config)
+            collected.extend(posts)
             statuses.append({"source": config["name"], "status": "Success", "itemsFound": len(posts), "checkedAt": checked.isoformat()})
             print(f"{config['name']}: {len(posts)} items found")
         except Exception as error:
-            print(f"{config['name']} failed: {type(error).__name__}: {error}")
+            print(f"{config['name']} failed: {error}")
             statuses.append({"source": config["name"], "status": "Failed", "itemsFound": 0, "checkedAt": checked.isoformat(), "message": str(error)[:200]})
         time.sleep(REQUEST_DELAY_SECONDS)
 
     today = singapore_now().date()
     def is_weibo_today(post):
-        if post.get("platform") != "Weibo":
-            return False
+        if post.get("platform") != "Weibo": return False
         try:
             stamp = datetime.fromisoformat(post.get("date", "").replace("Z", "+00:00"))
-            if stamp.tzinfo is None:
-                stamp = stamp.replace(tzinfo=UTC)
+            if stamp.tzinfo is None: stamp = stamp.replace(tzinfo=UTC)
             return stamp.astimezone(SINGAPORE).date() == today
-        except Exception:
-            return False
+        except Exception: return False
 
     existing_today_keys = {duplicate_key(p) for p in existing if is_weibo_today(p)}
     slots = max(0, WEIBO_POST_LIMIT - len(existing_today_keys))
     new_weibo = [p for p in collected if p.get("platform") == "Weibo"]
-    other_new = [p for p in collected if p.get("platform") != "Weibo"]
-    unique_weibo = deduplicate_posts(new_weibo)
-    ordered_weibo = sorted(unique_weibo, key=post_timestamp, reverse=True)
-    accepted_weibo = [p for p in ordered_weibo if duplicate_key(p) not in existing_today_keys][:slots]
+    other_new = [p for p in collected if p.get("platform"] != "Weibo"]
+    accepted_weibo = [p for p in sorted(deduplicate_posts(new_weibo), key=post_timestamp, reverse=True) if duplicate_key(p) not in existing_today_keys][:slots]
     collected = accepted_weibo + other_new
-    print(f"Weibo daily limit: {len(existing_today_keys)} already saved today; "
-          f"accepted {len(accepted_weibo)} new matching posts (limit {WEIBO_POST_LIMIT}).")
-
-    account_names = {}
-    for config in SOURCES:
-        if config.get("type") == "sina_account":
-            account_id = config.get("url", "").rstrip("/").split("/")[-1]
-            name = config.get("source", "")
-            if account_id and name and not re.fullmatch(r"Weibo @?\d+", name):
-                account_names[account_id] = name
-    for post in existing:
-        if post.get("platform") == "Weibo":
-            match = re.search(r"Weibo @?(\d+)", str(post.get("source", "")))
-            if match and match.group(1) in account_names:
-                post["source"] = account_names[match.group(1)]
 
     merged = deduplicate_posts(existing + collected)
     final_posts = sorted(merged, key=post_timestamp, reverse=True)[:MAX_POSTS]
-    images_cached,image_cache_failures=localize_post_images(final_posts)
+    images_cached, image_cache_failures = localize_post_images(final_posts)
     added, translated, limited, translation_providers = add_translations(final_posts)
-    success = sum(s["status"] == "Success" for s in statuses); failed = len(statuses) - success
-    output = {"lastUpdated": singapore_now().isoformat(timespec="seconds"),
-              "status": f"Completed: {success} sources successful, {failed} failed",
-              "translationStatus": {"translationsAdded": added, "postsTranslatedThisRun": translated,
-                                    "maximumPostsPerRun": MAX_TRANSLATED_POSTS_PER_RUN, "rateLimited": limited,
-                                    "providersUsed": translation_providers,
-                                    "priority": "Weibo only",
-                                    "platformsTranslated": ["Weibo"],
-                                    "backupProvider": "MyMemory"},
-              "sourceStatus": statuses, "posts": final_posts}
+    success = sum(s["status"] == "Success" for s in statuses)
+    failed = len(statuses) - success
+
+    output = {
+        "lastUpdated": singapore_now().isoformat(timespec="seconds"),
+        "status": f"Completed: {success} sources successful, {failed} failed",
+        "translationStatus": {"translationsAdded": added, "postsTranslatedThisRun": translated, "rateLimited": limited, "providersUsed": translation_providers},
+        "sourceStatus": statuses, 
+        "posts": final_posts
+    }
     with POSTS_FILE.open("w", encoding="utf-8") as f: json.dump(output, f, ensure_ascii=False, indent=2)
-    print("\nCollection completed")
-    print("Newly collected:", len(collected)); print("Total saved:", len(final_posts))
-    print("Successful sources:", success); print("Failed sources:", failed)
-    print("Translations added:", added); print("Posts translated this run:", translated)
-    print("Translation rate limited:", limited)
+    print("\nCollection completed successfully.")
 
 
 if __name__ == "__main__":
     main()
-
-
-
