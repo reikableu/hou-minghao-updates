@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-01T17:38:33+08:00",
+  "lastUpdated": "2026-11-01T17:50:30+08:00",
   "status": "Completed: 16 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 2,
-    "postsTranslatedThisRun": 1,
+    "translationsAdded": 0,
+    "postsTranslatedThisRun": 0,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 2
+      "MyMemory": 0
     }
   },
   "sourceStatus": [
@@ -15,97 +15,97 @@
       "source": "侯明昊工作室",
       "status": "Success",
       "itemsFound": 100,
-      "checkedAt": "2026-11-01T17:36:58.344131+08:00"
+      "checkedAt": "2026-11-01T17:49:00.730069+08:00"
     },
     {
       "source": "PLUG",
       "status": "Success",
       "itemsFound": 20,
-      "checkedAt": "2026-11-01T17:37:01.979523+08:00"
+      "checkedAt": "2026-11-01T17:49:05.768884+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 101,
-      "checkedAt": "2026-11-01T17:37:05.429611+08:00"
+      "checkedAt": "2026-11-01T17:49:09.618245+08:00"
     },
     {
       "source": "DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-11-01T17:37:08.852990+08:00"
+      "checkedAt": "2026-11-01T17:49:13.628520+08:00"
     },
     {
       "source": "珀芙研",
       "status": "Success",
       "itemsFound": 47,
-      "checkedAt": "2026-11-01T17:37:12.111350+08:00"
+      "checkedAt": "2026-11-01T17:49:17.614115+08:00"
     },
     {
       "source": "QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 62,
-      "checkedAt": "2026-11-01T17:37:15.341628+08:00"
+      "checkedAt": "2026-11-01T17:49:22.562519+08:00"
     },
     {
       "source": "Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T17:37:18.664459+08:00"
+      "checkedAt": "2026-11-01T17:49:27.282594+08:00"
     },
     {
       "source": "珍宝珠",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-11-01T17:37:21.545474+08:00"
+      "checkedAt": "2026-11-01T17:49:30.606535+08:00"
     },
     {
       "source": "HOKA",
       "status": "Success",
       "itemsFound": 14,
-      "checkedAt": "2026-11-01T17:37:24.820607+08:00"
+      "checkedAt": "2026-11-01T17:49:34.663010+08:00"
     },
     {
       "source": "天美意官方微博",
       "status": "Success",
       "itemsFound": 29,
-      "checkedAt": "2026-11-01T17:37:28.120904+08:00"
+      "checkedAt": "2026-11-01T17:49:38.276334+08:00"
     },
     {
       "source": "CASETiFY",
       "status": "Success",
       "itemsFound": 18,
-      "checkedAt": "2026-11-01T17:37:31.320226+08:00"
+      "checkedAt": "2026-11-01T17:49:42.081280+08:00"
     },
     {
       "source": "FAD3AWAY",
       "status": "Success",
       "itemsFound": 5,
-      "checkedAt": "2026-11-01T17:37:34.468103+08:00"
+      "checkedAt": "2026-11-01T17:49:45.952457+08:00"
     },
     {
       "source": "雪中飞",
       "status": "Success",
       "itemsFound": 37,
-      "checkedAt": "2026-11-01T17:37:37.634629+08:00"
+      "checkedAt": "2026-11-01T17:49:49.594304+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-01T17:37:41.003560+08:00"
+      "checkedAt": "2026-11-01T17:49:52.961209+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T17:37:43.355372+08:00"
+      "checkedAt": "2026-11-01T17:49:55.277444+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-01T17:38:00.448066+08:00"
+      "checkedAt": "2026-11-01T17:50:13.022493+08:00"
     }
   ],
   "posts": [
