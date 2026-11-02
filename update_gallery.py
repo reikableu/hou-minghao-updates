@@ -4,13 +4,11 @@ import html
 import json
 import random
 import re
-import time
 import urllib.parse
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-import requests
 from playwright.async_api import async_playwright
 
 
@@ -31,7 +29,6 @@ RAW_GALLERY_BASE = (
 
 SINGAPORE = ZoneInfo("Asia/Singapore")
 
-# Weibo profile UIDs to collect
 TARGET_WEIBO_UIDS = [
     "5763552342",
     "1831550987",
@@ -41,10 +38,12 @@ TARGET_WEIBO_UIDS = [
 ]
 
 MAX_GALLERY_ITEMS = 150
-REQUEST_TIMEOUT = 30
-PROFILE_DELAY_SECONDS = 2
-DOWNLOAD_DELAY_SECONDS = 0.25
 MAX_IMAGE_SIZE_BYTES = 15 * 1024 * 1024
+
+PROFILE_DELAY_SECONDS = 2
+DOWNLOAD_DELAY_SECONDS = 0.35
+DOWNLOAD_TIMEOUT_MS = 45000
+MAX_DOWNLOAD_RETRIES = 2
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -58,20 +57,16 @@ USER_AGENT = (
 # ============================================================
 
 def now_iso():
-    """Return the current Singapore time in ISO format."""
-
-    return datetime.now(SINGAPORE).isoformat(timespec="seconds")
+    return datetime.now(SINGAPORE).isoformat(
+        timespec="seconds"
+    )
 
 
 def prepare_directories():
-    """
-    Create the gallery media directory before collection starts.
-
-    A .gitkeep file is added so Git can track the directory even
-    when the collector does not find any images.
-    """
-
-    GALLERY_MEDIA_DIR.mkdir(parents=True, exist_ok=True)
+    GALLERY_MEDIA_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
 
     if not GITKEEP_FILE.exists():
         GITKEEP_FILE.write_text(
@@ -79,24 +74,22 @@ def prepare_directories():
             encoding="utf-8",
         )
 
-    print("=" * 70)
+    print("=" * 72)
     print("GALLERY DIRECTORY PREPARATION")
-    print("=" * 70)
+    print("=" * 72)
     print(f"Working directory: {Path.cwd()}")
     print(f"Script directory: {BASE_DIR}")
-    print(f"Gallery JSON file: {GALLERY_FILE}")
-    print(f"Gallery media directory: {GALLERY_MEDIA_DIR}")
+    print(f"Gallery JSON: {GALLERY_FILE}")
+    print(f"Gallery media: {GALLERY_MEDIA_DIR}")
     print(
-        "Gallery media directory exists: "
+        "Gallery media exists: "
         f"{GALLERY_MEDIA_DIR.exists()}"
     )
     print(f".gitkeep exists: {GITKEEP_FILE.exists()}")
-    print("=" * 70)
+    print("=" * 72)
 
 
 def clean_text(value):
-    """Remove HTML tags and normalize whitespace."""
-
     if not value:
         return ""
 
@@ -108,10 +101,8 @@ def clean_text(value):
 
 
 def load_existing_items():
-    """Load existing gallery items from gallery.json."""
-
     if not GALLERY_FILE.exists():
-        print("No existing gallery.json file was found.")
+        print("No existing gallery.json was found.")
         return []
 
     try:
@@ -148,18 +139,10 @@ def load_existing_items():
 
 
 # ============================================================
-# WEIBO COLLECTION
+# WEIBO PROFILE COLLECTION
 # ============================================================
 
 async def fetch_profile_candidates(page, uid):
-    """
-    Fetch photo candidates from a Weibo profile.
-
-    Playwright is used so the request is made through a browser
-    context, which may handle cookies and visitor sessions better
-    than a direct requests call.
-    """
-
     container_id = f"107603{uid}"
 
     target_url = (
@@ -170,9 +153,9 @@ async def fetch_profile_candidates(page, uid):
     )
 
     print()
-    print("=" * 70)
+    print("=" * 72)
     print(f"FETCHING WEIBO PROFILE UID: {uid}")
-    print("=" * 70)
+    print("=" * 72)
     print(f"Endpoint: {target_url}")
 
     candidates = []
@@ -185,25 +168,23 @@ async def fetch_profile_candidates(page, uid):
         )
 
         if not response:
-            print(f"No browser response was received for UID {uid}.")
+            print(f"No response received for UID {uid}.")
             return []
 
         print(f"HTTP status for UID {uid}: {response.status}")
 
         if response.status != 200:
             print(
-                f"Weibo returned HTTP status {response.status} "
+                f"Weibo returned HTTP {response.status} "
                 f"for UID {uid}."
             )
             return []
 
-        # First try reading the actual HTTP response body.
         try:
             body_text = await response.text()
         except Exception:
             body_text = ""
 
-        # Fall back to the visible browser body.
         if not body_text or not body_text.strip():
             body_text = await page.evaluate(
                 """
@@ -228,18 +209,16 @@ async def fetch_profile_candidates(page, uid):
 
         except json.JSONDecodeError as error:
             print(
-                f"Response was not valid JSON for UID {uid}: "
+                f"Invalid JSON response for UID {uid}: "
                 f"{error}"
             )
-            print(f"Response preview: {body_text[:1000]}")
+            print(f"Response preview: {body_text[:1200]}")
             return []
 
         if not isinstance(payload, dict):
             print(
-                f"Unexpected response structure for UID {uid}. "
-                f"Expected a JSON object."
+                f"Unexpected response structure for UID {uid}."
             )
-            print(f"Response preview: {body_text[:1000]}")
             return []
 
         api_ok = payload.get("ok")
@@ -252,7 +231,8 @@ async def fetch_profile_candidates(page, uid):
 
         if api_ok not in (1, "1", True):
             print(
-                f"Weibo API did not return usable data for UID {uid}."
+                f"Weibo API returned no usable data "
+                f"for UID {uid}."
             )
             print(
                 "Payload preview: "
@@ -263,7 +243,9 @@ async def fetch_profile_candidates(page, uid):
         data = payload.get("data") or {}
 
         if not isinstance(data, dict):
-            print(f"No valid data object was returned for UID {uid}.")
+            print(
+                f"No valid data object returned for UID {uid}."
+            )
             return []
 
         cards = data.get("cards") or []
@@ -272,14 +254,6 @@ async def fetch_profile_candidates(page, uid):
             cards = []
 
         print(f"Found {len(cards)} cards for UID {uid}.")
-
-        if not cards:
-            print(f"No cards were returned for UID {uid}.")
-            print(
-                "Payload preview: "
-                f"{json.dumps(payload, ensure_ascii=False)[:1500]}"
-            )
-            return []
 
         posts_found = 0
         pictures_found = 0
@@ -302,7 +276,6 @@ async def fetch_profile_candidates(page, uid):
             ).strip()
 
             if not post_id:
-                print("Skipped one card because it had no post ID.")
                 continue
 
             user = mblog.get("user") or {}
@@ -359,10 +332,6 @@ async def fetch_profile_candidates(page, uid):
                 image_url = str(image_url).strip()
 
                 if not image_url:
-                    print(
-                        f"Post {post_id}, picture "
-                        f"{picture_index}: no image URL found."
-                    )
                     continue
 
                 if image_url.startswith("//"):
@@ -371,10 +340,6 @@ async def fetch_profile_candidates(page, uid):
                 if not image_url.startswith(
                     ("http://", "https://")
                 ):
-                    print(
-                        f"Post {post_id}, picture "
-                        f"{picture_index}: invalid image URL."
-                    )
                     continue
 
                 photo_id = (
@@ -404,7 +369,7 @@ async def fetch_profile_candidates(page, uid):
 
     except Exception as error:
         print(
-            f"Error fetching UID {uid} with Playwright: "
+            f"Error fetching UID {uid}: "
             f"{type(error).__name__}: {error}"
         )
 
@@ -412,12 +377,95 @@ async def fetch_profile_candidates(page, uid):
 
 
 # ============================================================
-# IMAGE DOWNLOAD
+# IMAGE URL FALLBACKS
 # ============================================================
 
-def extension_for(content_type, url):
-    """Determine an appropriate image file extension."""
+def normalize_sina_image_url(url):
+    url = str(url or "").strip()
 
+    if url.startswith("//"):
+        url = "https:" + url
+
+    return url
+
+
+def build_image_url_variants(original_url):
+    """
+    Create alternate Sina image URLs.
+
+    The same Weibo image is often available under multiple
+    size paths such as mw2000, large, original and bmiddle.
+    """
+
+    original_url = normalize_sina_image_url(original_url)
+
+    if not original_url:
+        return []
+
+    variants = []
+    seen = set()
+
+    def add_variant(value):
+        value = normalize_sina_image_url(value)
+
+        if not value:
+            return
+
+        if value not in seen:
+            seen.add(value)
+            variants.append(value)
+
+    add_variant(original_url)
+
+    size_paths = [
+        "large",
+        "original",
+        "mw2000",
+        "orj1080",
+        "bmiddle",
+    ]
+
+    size_pattern = re.compile(
+        r"/(?:mw2000|large|original|orj1080|orj360|bmiddle)/",
+        re.IGNORECASE,
+    )
+
+    for size_name in size_paths:
+        if size_pattern.search(original_url):
+            variant = size_pattern.sub(
+                f"/{size_name}/",
+                original_url,
+                count=1,
+            )
+            add_variant(variant)
+
+    parsed = urllib.parse.urlsplit(original_url)
+    host = parsed.netloc.lower()
+
+    if re.fullmatch(r"wx[1-4]\.sinaimg\.cn", host):
+        for number in range(1, 5):
+            alternate_host = f"wx{number}.sinaimg.cn"
+
+            variant = urllib.parse.urlunsplit(
+                (
+                    parsed.scheme or "https",
+                    alternate_host,
+                    parsed.path,
+                    parsed.query,
+                    parsed.fragment,
+                )
+            )
+
+            add_variant(variant)
+
+    return variants
+
+
+# ============================================================
+# IMAGE VALIDATION AND STORAGE
+# ============================================================
+
+def image_extension(content_type, url, content):
     content_type = (content_type or "").lower()
 
     if "jpeg" in content_type or "jpg" in content_type:
@@ -432,113 +480,292 @@ def extension_for(content_type, url):
     if "gif" in content_type:
         return ".gif"
 
+    if content.startswith(b"\xff\xd8\xff"):
+        return ".jpg"
+
+    if content.startswith(b"\x89PNG\r\n\x1a\n"):
+        return ".png"
+
+    if content.startswith(b"GIF87a") or content.startswith(
+        b"GIF89a"
+    ):
+        return ".gif"
+
+    if (
+        len(content) >= 12
+        and content[0:4] == b"RIFF"
+        and content[8:12] == b"WEBP"
+    ):
+        return ".webp"
+
     url_path = urllib.parse.urlsplit(url).path
     suffix = Path(url_path).suffix.lower()
 
-    allowed_extensions = {
+    if suffix in {
         ".jpg",
         ".jpeg",
         ".png",
         ".webp",
         ".gif",
-    }
-
-    if suffix in allowed_extensions:
+    }:
         return suffix
 
     return ".jpg"
 
 
-def download_candidate(session, item):
-    """Download one image and return its gallery record."""
+def is_valid_image_content(content, content_type):
+    if not content:
+        return False
 
-    headers = {
-        "User-Agent": USER_AGENT,
-        "Referer": "https://m.weibo.cn/",
-        "Accept": (
-            "image/avif,image/webp,image/apng,image/svg+xml,"
-            "image/*,*/*;q=0.8"
-        ),
-    }
+    if len(content) > MAX_IMAGE_SIZE_BYTES:
+        return False
 
-    response = session.get(
-        item["image_url"],
-        headers=headers,
-        timeout=REQUEST_TIMEOUT,
-        allow_redirects=True,
+    content_type = (content_type or "").lower()
+
+    if content_type.startswith("image/"):
+        return True
+
+    if content.startswith(b"\xff\xd8\xff"):
+        return True
+
+    if content.startswith(b"\x89PNG\r\n\x1a\n"):
+        return True
+
+    if content.startswith(b"GIF87a"):
+        return True
+
+    if content.startswith(b"GIF89a"):
+        return True
+
+    if (
+        len(content) >= 12
+        and content[0:4] == b"RIFF"
+        and content[8:12] == b"WEBP"
+    ):
+        return True
+
+    return False
+
+
+async def playwright_image_request(
+    browser_context,
+    image_url,
+    referer,
+):
+    """
+    Retrieve an image through the active Playwright browser
+    context so browser cookies and session state are retained.
+    """
+
+    response = await browser_context.request.get(
+        image_url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Referer": referer,
+            "Accept": (
+                "image/avif,image/webp,image/apng,"
+                "image/svg+xml,image/*,*/*;q=0.8"
+            ),
+            "Accept-Language": (
+                "en-US,en;q=0.9,zh-CN;q=0.8"
+            ),
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+        },
+        timeout=DOWNLOAD_TIMEOUT_MS,
+        fail_on_status_code=False,
     )
 
-    response.raise_for_status()
+    status = response.status
+    headers = await response.all_headers()
 
     content_type = (
-        response.headers.get("Content-Type") or ""
+        headers.get("content-type")
+        or headers.get("Content-Type")
+        or ""
     ).lower()
 
-    content_length = len(response.content)
+    if status != 200:
+        return {
+            "success": False,
+            "status": status,
+            "content_type": content_type,
+            "content": b"",
+        }
 
-    if not content_type.startswith("image/"):
-        raise ValueError(
-            f"Response was not an image. "
-            f"Content-Type: {content_type or 'unknown'}"
-        )
-
-    if not response.content:
-        raise ValueError("Image response was empty.")
-
-    if content_length > MAX_IMAGE_SIZE_BYTES:
-        raise ValueError(
-            f"Image was larger than 15 MB: "
-            f"{content_length} bytes"
-        )
-
-    content_hash = hashlib.sha256(
-        response.content
-    ).hexdigest()
-
-    extension = extension_for(
-        content_type,
-        item["image_url"],
-    )
-
-    filename = (
-        f"{item['photo_id']}_"
-        f"{content_hash[:12]}"
-        f"{extension}"
-    )
-
-    path = GALLERY_MEDIA_DIR / filename
-
-    if not path.exists():
-        path.write_bytes(response.content)
-        print(
-            f"Saved image: {path.name} "
-            f"({content_length:,} bytes)"
-        )
-    else:
-        print(f"Image already exists: {path.name}")
+    try:
+        content = await response.body()
+    except Exception:
+        content = b""
 
     return {
-        "id": item["photo_id"],
-        "image": f"{RAW_GALLERY_BASE}/{filename}",
-        "remoteImage": item["image_url"],
-        "sourceUrl": item["post_url"],
-        "platform": "Weibo",
-        "source": f"Weibo (@{item['author']})",
-        "title": item["title"],
-        "date": "",
-        "origin": "Weibo Profile",
-        "imageHash": content_hash,
-        "collectedAt": now_iso(),
+        "success": is_valid_image_content(
+            content,
+            content_type,
+        ),
+        "status": status,
+        "content_type": content_type,
+        "content": content,
     }
+
+
+async def download_candidate(
+    browser_context,
+    item,
+):
+    """
+    Download a Weibo image using the Playwright browser session.
+
+    Different Referer values and image-size variants are tested
+    because Sina's image CDN may reject individual combinations.
+    """
+
+    image_variants = build_image_url_variants(
+        item["image_url"]
+    )
+
+    referers = [
+        item.get("post_url")
+        or "https://m.weibo.cn/",
+        "https://weibo.com/",
+        "https://m.weibo.cn/",
+    ]
+
+    attempt_count = 0
+    last_status = None
+    last_error = None
+
+    for image_url in image_variants:
+        for referer in referers:
+            for retry_number in range(
+                1,
+                MAX_DOWNLOAD_RETRIES + 1,
+            ):
+                attempt_count += 1
+
+                try:
+                    result = await playwright_image_request(
+                        browser_context,
+                        image_url,
+                        referer,
+                    )
+
+                    last_status = result["status"]
+
+                    print(
+                        f"  Attempt {attempt_count}: "
+                        f"HTTP {result['status']}, "
+                        f"size={len(result['content']):,}, "
+                        f"referer={referer}"
+                    )
+
+                    if result["success"]:
+                        content = result["content"]
+                        content_type = result["content_type"]
+
+                        content_hash = hashlib.sha256(
+                            content
+                        ).hexdigest()
+
+                        extension = image_extension(
+                            content_type,
+                            image_url,
+                            content,
+                        )
+
+                        filename = (
+                            f"{item['photo_id']}_"
+                            f"{content_hash[:12]}"
+                            f"{extension}"
+                        )
+
+                        path = (
+                            GALLERY_MEDIA_DIR / filename
+                        )
+
+                        if not path.exists():
+                            path.write_bytes(content)
+
+                        print(
+                            f"  Saved image: {filename} "
+                            f"({len(content):,} bytes)"
+                        )
+
+                        return {
+                            "id": item["photo_id"],
+                            "image": (
+                                f"{RAW_GALLERY_BASE}/"
+                                f"{filename}"
+                            ),
+                            "remoteImage": image_url,
+                            "originalRemoteImage": (
+                                item["image_url"]
+                            ),
+                            "sourceUrl": item["post_url"],
+                            "platform": "Weibo",
+                            "source": (
+                                f"Weibo (@{item['author']})"
+                            ),
+                            "title": item["title"],
+                            "date": "",
+                            "origin": "Weibo Profile",
+                            "imageHash": content_hash,
+                            "collectedAt": now_iso(),
+                        }
+
+                    if result["status"] in {
+                        429,
+                        500,
+                        502,
+                        503,
+                        504,
+                    }:
+                        wait_seconds = retry_number * 2
+
+                        print(
+                            f"  Temporary HTTP "
+                            f"{result['status']}; "
+                            f"waiting {wait_seconds} seconds."
+                        )
+
+                        await asyncio.sleep(wait_seconds)
+                    else:
+                        break
+
+                except Exception as error:
+                    last_error = (
+                        f"{type(error).__name__}: {error}"
+                    )
+
+                    print(
+                        f"  Download attempt failed: "
+                        f"{last_error}"
+                    )
+
+                    if retry_number < MAX_DOWNLOAD_RETRIES:
+                        await asyncio.sleep(
+                            retry_number * 2
+                        )
+
+    error_details = (
+        f"All image variants failed. "
+        f"Last HTTP status: {last_status}"
+    )
+
+    if last_error:
+        error_details += f". Last error: {last_error}"
+
+    raise RuntimeError(error_details)
 
 
 # ============================================================
 # GALLERY MERGING AND CLEANUP
 # ============================================================
 
-def merge_and_shuffle_items(new_items, old_items):
-    """Merge new and old records while removing duplicates."""
-
+def merge_and_shuffle_items(
+    new_items,
+    old_items,
+):
     combined = []
     seen_ids = set()
     seen_hashes = set()
@@ -548,10 +775,14 @@ def merge_and_shuffle_items(new_items, old_items):
         if not isinstance(item, dict):
             continue
 
-        item_id = str(item.get("id") or "").strip()
+        item_id = str(
+            item.get("id") or ""
+        ).strip()
+
         image_hash = str(
             item.get("imageHash") or ""
         ).strip()
+
         image_url = str(
             item.get("image") or ""
         ).strip()
@@ -585,12 +816,6 @@ def merge_and_shuffle_items(new_items, old_items):
 
 
 def remove_unused_files(items):
-    """
-    Delete local image files that are no longer referenced.
-
-    Hidden files, including .gitkeep, are always preserved.
-    """
-
     if not GALLERY_MEDIA_DIR.exists():
         return
 
@@ -600,7 +825,9 @@ def remove_unused_files(items):
         if not isinstance(item, dict):
             continue
 
-        image_url = str(item.get("image") or "")
+        image_url = str(
+            item.get("image") or ""
+        ).strip()
 
         if not image_url:
             continue
@@ -618,7 +845,6 @@ def remove_unused_files(items):
         if not path.is_file():
             continue
 
-        # Preserve .gitkeep and any other hidden files.
         if path.name.startswith("."):
             continue
 
@@ -630,14 +856,17 @@ def remove_unused_files(items):
     print(f"Unused local images removed: {removed_count}")
 
 
-def write_gallery_file(final_items, new_items_count):
-    """Write gallery.json atomically."""
-
+def write_gallery_file(
+    final_items,
+    new_items_count,
+    failed_downloads,
+):
     output = {
         "lastUpdated": now_iso(),
         "status": (
             "Weibo gallery updated: "
             f"{new_items_count} downloaded, "
+            f"{failed_downloads} failed, "
             f"{len(final_items)} display items"
         ),
         "uids": TARGET_WEIBO_UIDS,
@@ -672,8 +901,15 @@ async def main_async():
 
     existing_items = load_existing_items()
 
+    existing_ids = {
+        str(item.get("id") or "").strip()
+        for item in existing_items
+        if isinstance(item, dict)
+        and item.get("id")
+    }
+
     existing_hashes = {
-        str(item.get("imageHash") or "")
+        str(item.get("imageHash") or "").strip()
         for item in existing_items
         if isinstance(item, dict)
         and item.get("imageHash")
@@ -685,13 +921,16 @@ async def main_async():
     empty_profiles = 0
 
     print()
-    print("=" * 70)
+    print("=" * 72)
     print("STARTING WEIBO PROFILE COLLECTION")
-    print("=" * 70)
+    print("=" * 72)
 
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch(
-            headless=True
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+            ],
         )
 
         context = await browser.new_context(
@@ -710,7 +949,6 @@ async def main_async():
 
         page = await context.new_page()
 
-        # Warm up the Weibo browser session.
         try:
             print("Warming up the Weibo browser session...")
 
@@ -725,8 +963,6 @@ async def main_async():
                     "Weibo warmup HTTP status: "
                     f"{warmup_response.status}"
                 )
-            else:
-                print("Weibo warmup returned no response.")
 
             await asyncio.sleep(2)
 
@@ -750,130 +986,151 @@ async def main_async():
 
             await asyncio.sleep(PROFILE_DELAY_SECONDS)
 
-        await context.close()
-        await browser.close()
+        print()
+        print("=" * 72)
+        print("PROFILE COLLECTION SUMMARY")
+        print("=" * 72)
+        print(
+            f"Profiles with photos: {successful_profiles}"
+        )
+        print(
+            f"Profiles without photos: {empty_profiles}"
+        )
+        print(
+            "Total candidates collected: "
+            f"{len(all_candidates)}"
+        )
 
-    print()
-    print("=" * 70)
-    print("PROFILE COLLECTION SUMMARY")
-    print("=" * 70)
-    print(
-        "Profiles with usable photos: "
-        f"{successful_profiles}"
-    )
-    print(
-        "Profiles without usable photos: "
-        f"{empty_profiles}"
-    )
-    print(
-        "Total photo candidates collected: "
-        f"{len(all_candidates)}"
-    )
+        unique_candidates = []
+        seen_candidate_ids = set()
+        seen_candidate_urls = set()
 
-    # Remove duplicate candidates before downloading.
-    unique_candidates = []
-    seen_candidate_ids = set()
-    seen_candidate_urls = set()
+        for candidate in all_candidates:
+            photo_id = str(
+                candidate.get("photo_id") or ""
+            ).strip()
 
-    for candidate in all_candidates:
-        photo_id = candidate.get("photo_id")
-        image_url = candidate.get("image_url")
+            image_url = str(
+                candidate.get("image_url") or ""
+            ).strip()
 
-        if not photo_id or not image_url:
-            continue
+            if not photo_id or not image_url:
+                continue
 
-        if photo_id in seen_candidate_ids:
-            continue
+            if photo_id in seen_candidate_ids:
+                continue
 
-        if image_url in seen_candidate_urls:
-            continue
+            if image_url in seen_candidate_urls:
+                continue
 
-        seen_candidate_ids.add(photo_id)
-        seen_candidate_urls.add(image_url)
-        unique_candidates.append(candidate)
+            seen_candidate_ids.add(photo_id)
+            seen_candidate_urls.add(image_url)
 
-    random.shuffle(unique_candidates)
+            unique_candidates.append(candidate)
 
-    print(
-        "Unique photo candidates to process: "
-        f"{len(unique_candidates)}"
-    )
+        random.shuffle(unique_candidates)
 
-    print()
-    print("=" * 70)
-    print("STARTING IMAGE DOWNLOAD")
-    print("=" * 70)
+        print(
+            "Unique photo candidates: "
+            f"{len(unique_candidates)}"
+        )
 
-    session = requests.Session()
+        print()
+        print("=" * 72)
+        print("STARTING IMAGE DOWNLOAD")
+        print("=" * 72)
 
-    new_items = []
-    downloaded_hashes = set()
-    failed_downloads = 0
-    duplicate_downloads = 0
+        new_items = []
+        downloaded_hashes = set()
 
-    for index, item in enumerate(
-        unique_candidates,
-        start=1,
-    ):
-        photo_id = item.get("photo_id", "unknown")
+        failed_downloads = 0
+        duplicate_downloads = 0
+        previously_collected = 0
 
-        try:
+        for index, item in enumerate(
+            unique_candidates,
+            start=1,
+        ):
+            photo_id = item.get(
+                "photo_id",
+                "unknown",
+            )
+
             print()
             print(
                 f"Processing image {index}/"
-                f"{len(unique_candidates)}: {photo_id}"
+                f"{len(unique_candidates)}: "
+                f"{photo_id}"
             )
 
-            record = download_candidate(
-                session,
-                item,
-            )
-
-            image_hash = record["imageHash"]
-
-            if (
-                image_hash in downloaded_hashes
-                or image_hash in existing_hashes
-            ):
-                duplicate_downloads += 1
-
-                duplicate_filename = Path(
-                    urllib.parse.urlsplit(
-                        record["image"]
-                    ).path
-                ).name
-
-                duplicate_path = (
-                    GALLERY_MEDIA_DIR
-                    / duplicate_filename
-                )
-
-                # Only delete the newly named duplicate file.
-                duplicate_path.unlink(missing_ok=True)
-
+            if photo_id in existing_ids:
+                previously_collected += 1
                 print(
-                    f"Duplicate image skipped: {photo_id}"
+                    "Already present in gallery.json; "
+                    "download skipped."
                 )
                 continue
 
-            downloaded_hashes.add(image_hash)
-            new_items.append(record)
+            try:
+                record = await download_candidate(
+                    context,
+                    item,
+                )
 
-            print(
-                f"Downloaded successfully: {photo_id}"
+                image_hash = record["imageHash"]
+
+                if (
+                    image_hash in downloaded_hashes
+                    or image_hash in existing_hashes
+                ):
+                    duplicate_downloads += 1
+
+                    duplicate_filename = Path(
+                        urllib.parse.urlsplit(
+                            record["image"]
+                        ).path
+                    ).name
+
+                    duplicate_path = (
+                        GALLERY_MEDIA_DIR
+                        / duplicate_filename
+                    )
+
+                    duplicate_path.unlink(
+                        missing_ok=True
+                    )
+
+                    print(
+                        f"Duplicate image skipped: "
+                        f"{photo_id}"
+                    )
+
+                else:
+                    downloaded_hashes.add(
+                        image_hash
+                    )
+
+                    new_items.append(record)
+
+                    print(
+                        f"Downloaded successfully: "
+                        f"{photo_id}"
+                    )
+
+            except Exception as error:
+                failed_downloads += 1
+
+                print(
+                    f"Image skipped {photo_id}: "
+                    f"{type(error).__name__}: {error}"
+                )
+
+            await asyncio.sleep(
+                DOWNLOAD_DELAY_SECONDS
             )
 
-        except Exception as error:
-            failed_downloads += 1
-
-            print(
-                f"Image skipped {photo_id}: "
-                f"{type(error).__name__}: {error}"
-            )
-
-        time.sleep(DOWNLOAD_DELAY_SECONDS)
-
-    session.close()
+        await context.close()
+        await browser.close()
 
     final_items = merge_and_shuffle_items(
         new_items,
@@ -885,39 +1142,47 @@ async def main_async():
     write_gallery_file(
         final_items,
         len(new_items),
+        failed_downloads,
     )
 
     print()
-    print("=" * 70)
+    print("=" * 72)
     print("FINAL GALLERY SUMMARY")
-    print("=" * 70)
+    print("=" * 72)
     print(
-        f"Candidate images: {len(unique_candidates)}"
+        f"Collected candidates: "
+        f"{len(all_candidates)}"
     )
     print(
-        f"New downloaded images: {len(new_items)}"
+        f"Unique candidates: "
+        f"{len(unique_candidates)}"
     )
     print(
-        f"Duplicate images skipped: {duplicate_downloads}"
+        f"Previously collected: "
+        f"{previously_collected}"
     )
     print(
-        f"Failed image downloads: {failed_downloads}"
+        f"New downloaded images: "
+        f"{len(new_items)}"
     )
     print(
-        f"Final gallery items: {len(final_items)}"
+        f"Duplicate images skipped: "
+        f"{duplicate_downloads}"
     )
     print(
-        f"Gallery media directory: "
-        f"{GALLERY_MEDIA_DIR}"
+        f"Failed image downloads: "
+        f"{failed_downloads}"
     )
     print(
-        f"Gallery media directory exists: "
+        f"Final gallery items: "
+        f"{len(final_items)}"
+    )
+    print(
+        "Gallery media directory exists: "
         f"{GALLERY_MEDIA_DIR.exists()}"
     )
-    print(
-        "Gallery process completed successfully."
-    )
-    print("=" * 70)
+    print("Gallery process completed.")
+    print("=" * 72)
 
 
 def main():
@@ -929,9 +1194,9 @@ def main():
 
     except Exception as error:
         print()
-        print("=" * 70)
+        print("=" * 72)
         print("GALLERY PROCESS FAILED")
-        print("=" * 70)
+        print("=" * 72)
         print(
             f"{type(error).__name__}: {error}"
         )
