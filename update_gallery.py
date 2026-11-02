@@ -57,12 +57,21 @@ USER_AGENT = (
 # ============================================================
 
 def now_iso():
+    """Return the current Singapore date and time."""
+
     return datetime.now(SINGAPORE).isoformat(
         timespec="seconds"
     )
 
 
 def prepare_directories():
+    """
+    Create the gallery media directory.
+
+    The .gitkeep file allows Git to retain gallery_media even
+    when no image files have been downloaded yet.
+    """
+
     GALLERY_MEDIA_DIR.mkdir(
         parents=True,
         exist_ok=True,
@@ -90,6 +99,8 @@ def prepare_directories():
 
 
 def clean_text(value):
+    """Remove HTML tags and normalize whitespace."""
+
     if not value:
         return ""
 
@@ -101,6 +112,8 @@ def clean_text(value):
 
 
 def load_existing_items():
+    """Load existing gallery records from gallery.json."""
+
     if not GALLERY_FILE.exists():
         print("No existing gallery.json was found.")
         return []
@@ -143,6 +156,10 @@ def load_existing_items():
 # ============================================================
 
 async def fetch_profile_candidates(page, uid):
+    """
+    Retrieve image candidates from one Weibo profile.
+    """
+
     container_id = f"107603{uid}"
 
     target_url = (
@@ -377,10 +394,12 @@ async def fetch_profile_candidates(page, uid):
 
 
 # ============================================================
-# IMAGE URL FALLBACKS
+# IMAGE URL VARIANTS
 # ============================================================
 
 def normalize_sina_image_url(url):
+    """Normalize a Sina image URL."""
+
     url = str(url or "").strip()
 
     if url.startswith("//"):
@@ -391,13 +410,15 @@ def normalize_sina_image_url(url):
 
 def build_image_url_variants(original_url):
     """
-    Create alternate Sina image URLs.
+    Build alternate paths for a Sina image.
 
-    The same Weibo image is often available under multiple
-    size paths such as mw2000, large, original and bmiddle.
+    Weibo images may be accessible through different size paths
+    and different wx1-wx4 Sina image hosts.
     """
 
-    original_url = normalize_sina_image_url(original_url)
+    original_url = normalize_sina_image_url(
+        original_url
+    )
 
     if not original_url:
         return []
@@ -426,7 +447,10 @@ def build_image_url_variants(original_url):
     ]
 
     size_pattern = re.compile(
-        r"/(?:mw2000|large|original|orj1080|orj360|bmiddle)/",
+        (
+            r"/(?:mw2000|large|original|orj1080|"
+            r"orj360|bmiddle)/"
+        ),
         re.IGNORECASE,
     )
 
@@ -437,6 +461,7 @@ def build_image_url_variants(original_url):
                 original_url,
                 count=1,
             )
+
             add_variant(variant)
 
     parsed = urllib.parse.urlsplit(original_url)
@@ -444,7 +469,9 @@ def build_image_url_variants(original_url):
 
     if re.fullmatch(r"wx[1-4]\.sinaimg\.cn", host):
         for number in range(1, 5):
-            alternate_host = f"wx{number}.sinaimg.cn"
+            alternate_host = (
+                f"wx{number}.sinaimg.cn"
+            )
 
             variant = urllib.parse.urlunsplit(
                 (
@@ -462,10 +489,15 @@ def build_image_url_variants(original_url):
 
 
 # ============================================================
-# IMAGE VALIDATION AND STORAGE
+# IMAGE VALIDATION
 # ============================================================
 
 def image_extension(content_type, url, content):
+    """
+    Determine the image extension from the response headers,
+    file signature, or source URL.
+    """
+
     content_type = (content_type or "").lower()
 
     if "jpeg" in content_type or "jpg" in content_type:
@@ -486,8 +518,9 @@ def image_extension(content_type, url, content):
     if content.startswith(b"\x89PNG\r\n\x1a\n"):
         return ".png"
 
-    if content.startswith(b"GIF87a") or content.startswith(
-        b"GIF89a"
+    if (
+        content.startswith(b"GIF87a")
+        or content.startswith(b"GIF89a")
     ):
         return ".gif"
 
@@ -514,6 +547,8 @@ def image_extension(content_type, url, content):
 
 
 def is_valid_image_content(content, content_type):
+    """Confirm that the downloaded body is an image."""
+
     if not content:
         return False
 
@@ -547,66 +582,89 @@ def is_valid_image_content(content, content_type):
     return False
 
 
+# ============================================================
+# PLAYWRIGHT IMAGE DOWNLOAD
+# ============================================================
+
 async def playwright_image_request(
     browser_context,
     image_url,
     referer,
 ):
     """
-    Retrieve an image through the active Playwright browser
-    context so browser cookies and session state are retained.
+    Retrieve an image through the active Playwright request
+    context.
+
+    APIResponse uses response.headers as a property. It does
+    not provide response.all_headers().
     """
 
-    response = await browser_context.request.get(
-        image_url,
-        headers={
-            "User-Agent": USER_AGENT,
-            "Referer": referer,
-            "Accept": (
-                "image/avif,image/webp,image/apng,"
-                "image/svg+xml,image/*,*/*;q=0.8"
-            ),
-            "Accept-Language": (
-                "en-US,en;q=0.9,zh-CN;q=0.8"
-            ),
-            "Cache-Control": "no-cache",
-            "Pragma": "no-cache",
-        },
-        timeout=DOWNLOAD_TIMEOUT_MS,
-        fail_on_status_code=False,
-    )
-
-    status = response.status
-    headers = await response.all_headers()
-
-    content_type = (
-        headers.get("content-type")
-        or headers.get("Content-Type")
-        or ""
-    ).lower()
-
-    if status != 200:
-        return {
-            "success": False,
-            "status": status,
-            "content_type": content_type,
-            "content": b"",
-        }
+    response = None
 
     try:
-        content = await response.body()
-    except Exception:
+        response = await browser_context.request.get(
+            image_url,
+            headers={
+                "User-Agent": USER_AGENT,
+                "Referer": referer,
+                "Accept": (
+                    "image/avif,image/webp,image/apng,"
+                    "image/svg+xml,image/*,*/*;q=0.8"
+                ),
+                "Accept-Language": (
+                    "en-US,en;q=0.9,zh-CN;q=0.8"
+                ),
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+            },
+            timeout=DOWNLOAD_TIMEOUT_MS,
+            fail_on_status_code=False,
+        )
+
+        status = response.status
+
+        # Correct APIResponse header access.
+        headers = response.headers or {}
+
+        content_type = (
+            headers.get("content-type")
+            or headers.get("Content-Type")
+            or ""
+        ).lower()
+
         content = b""
 
-    return {
-        "success": is_valid_image_content(
-            content,
-            content_type,
-        ),
-        "status": status,
-        "content_type": content_type,
-        "content": content,
-    }
+        if status == 200:
+            try:
+                content = await response.body()
+
+            except Exception as error:
+                print(
+                    "  Could not read response body: "
+                    f"{type(error).__name__}: {error}"
+                )
+
+        success = (
+            status == 200
+            and is_valid_image_content(
+                content,
+                content_type,
+            )
+        )
+
+        return {
+            "success": success,
+            "status": status,
+            "content_type": content_type,
+            "content": content,
+        }
+
+    finally:
+        if response is not None:
+            try:
+                await response.dispose()
+            except Exception:
+                pass
 
 
 async def download_candidate(
@@ -614,10 +672,14 @@ async def download_candidate(
     item,
 ):
     """
-    Download a Weibo image using the Playwright browser session.
+    Download one Weibo image.
 
-    Different Referer values and image-size variants are tested
-    because Sina's image CDN may reject individual combinations.
+    The downloader tests:
+    - Alternate image size paths
+    - Alternate wx1-wx4 image hosts
+    - The post URL as Referer
+    - weibo.com as Referer
+    - m.weibo.cn as Referer
     """
 
     image_variants = build_image_url_variants(
@@ -661,7 +723,9 @@ async def download_candidate(
 
                     if result["success"]:
                         content = result["content"]
-                        content_type = result["content_type"]
+                        content_type = (
+                            result["content_type"]
+                        )
 
                         content_hash = hashlib.sha256(
                             content
@@ -729,6 +793,7 @@ async def download_candidate(
                         )
 
                         await asyncio.sleep(wait_seconds)
+
                     else:
                         break
 
@@ -748,24 +813,30 @@ async def download_candidate(
                         )
 
     error_details = (
-        f"All image variants failed. "
+        "All image variants failed. "
         f"Last HTTP status: {last_status}"
     )
 
     if last_error:
-        error_details += f". Last error: {last_error}"
+        error_details += (
+            f". Last error: {last_error}"
+        )
 
     raise RuntimeError(error_details)
 
 
 # ============================================================
-# GALLERY MERGING AND CLEANUP
+# GALLERY MERGING
 # ============================================================
 
 def merge_and_shuffle_items(
     new_items,
     old_items,
 ):
+    """
+    Merge new and existing items while removing duplicates.
+    """
+
     combined = []
     seen_ids = set()
     seen_hashes = set()
@@ -816,6 +887,13 @@ def merge_and_shuffle_items(
 
 
 def remove_unused_files(items):
+    """
+    Remove downloaded images no longer referenced by
+    gallery.json.
+
+    Hidden files such as .gitkeep are preserved.
+    """
+
     if not GALLERY_MEDIA_DIR.exists():
         return
 
@@ -851,9 +929,14 @@ def remove_unused_files(items):
         if path.name not in keep_filenames:
             path.unlink(missing_ok=True)
             removed_count += 1
-            print(f"Removed unused image: {path.name}")
 
-    print(f"Unused local images removed: {removed_count}")
+            print(
+                f"Removed unused image: {path.name}"
+            )
+
+    print(
+        f"Unused local images removed: {removed_count}"
+    )
 
 
 def write_gallery_file(
@@ -861,6 +944,8 @@ def write_gallery_file(
     new_items_count,
     failed_downloads,
 ):
+    """Write gallery.json using an atomic replacement."""
+
     output = {
         "lastUpdated": now_iso(),
         "status": (
@@ -889,7 +974,9 @@ def write_gallery_file(
 
     temporary_file.replace(GALLERY_FILE)
 
-    print(f"Gallery JSON written to: {GALLERY_FILE}")
+    print(
+        f"Gallery JSON written to: {GALLERY_FILE}"
+    )
 
 
 # ============================================================
@@ -920,6 +1007,13 @@ async def main_async():
     successful_profiles = 0
     empty_profiles = 0
 
+    unique_candidates = []
+    new_items = []
+
+    failed_downloads = 0
+    duplicate_downloads = 0
+    previously_collected = 0
+
     print()
     print("=" * 72)
     print("STARTING WEIBO PROFILE COLLECTION")
@@ -929,7 +1023,10 @@ async def main_async():
         browser = await playwright.chromium.launch(
             headless=True,
             args=[
-                "--disable-blink-features=AutomationControlled",
+                (
+                    "--disable-blink-features="
+                    "AutomationControlled"
+                ),
             ],
         )
 
@@ -950,7 +1047,9 @@ async def main_async():
         page = await context.new_page()
 
         try:
-            print("Warming up the Weibo browser session...")
+            print(
+                "Warming up the Weibo browser session..."
+            )
 
             warmup_response = await page.goto(
                 "https://m.weibo.cn/",
@@ -984,24 +1083,27 @@ async def main_async():
             else:
                 empty_profiles += 1
 
-            await asyncio.sleep(PROFILE_DELAY_SECONDS)
+            await asyncio.sleep(
+                PROFILE_DELAY_SECONDS
+            )
 
         print()
         print("=" * 72)
         print("PROFILE COLLECTION SUMMARY")
         print("=" * 72)
         print(
-            f"Profiles with photos: {successful_profiles}"
+            f"Profiles with photos: "
+            f"{successful_profiles}"
         )
         print(
-            f"Profiles without photos: {empty_profiles}"
+            f"Profiles without photos: "
+            f"{empty_profiles}"
         )
         print(
-            "Total candidates collected: "
+            f"Total candidates collected: "
             f"{len(all_candidates)}"
         )
 
-        unique_candidates = []
         seen_candidate_ids = set()
         seen_candidate_urls = set()
 
@@ -1031,7 +1133,7 @@ async def main_async():
         random.shuffle(unique_candidates)
 
         print(
-            "Unique photo candidates: "
+            f"Unique photo candidates: "
             f"{len(unique_candidates)}"
         )
 
@@ -1040,12 +1142,7 @@ async def main_async():
         print("STARTING IMAGE DOWNLOAD")
         print("=" * 72)
 
-        new_items = []
         downloaded_hashes = set()
-
-        failed_downloads = 0
-        duplicate_downloads = 0
-        previously_collected = 0
 
         for index, item in enumerate(
             unique_candidates,
@@ -1065,10 +1162,12 @@ async def main_async():
 
             if photo_id in existing_ids:
                 previously_collected += 1
+
                 print(
                     "Already present in gallery.json; "
                     "download skipped."
                 )
+
                 continue
 
             try:
@@ -1190,7 +1289,9 @@ def main():
         asyncio.run(main_async())
 
     except KeyboardInterrupt:
-        print("Gallery process was stopped manually.")
+        print(
+            "Gallery process was stopped manually."
+        )
 
     except Exception as error:
         print()
