@@ -53,7 +53,7 @@ XHS_POST_LIMIT_PER_PROFILE = 12
 XHS_MAX_PROFILE_CANDIDATES = 40
 XHS_PAGE_TIMEOUT_MS = 60000
 
-# Updated Weibo Account IDs matching the high-efficiency approach in your gallery script
+# Updated Weibo Account IDs
 WEIBO_ACCOUNT_IDS = [
     "5763552342", "1831550987", "2356308454", "8450716290", "8004004308",
     "7954477778", "7431934486", "6941933193", "5919565877", "9072975151", 
@@ -115,7 +115,6 @@ def normalize_image_url(value, base_url=""):
 
 
 def build_sina_image_variants(original_url):
-    """Build alternate size and host paths for Sina images to ensure maximum download reliability."""
     original_url = normalize_image_url(original_url)
     if not original_url:
         return []
@@ -206,7 +205,6 @@ def cache_remote_image(image_url, post_url=""):
     if post_url:
         headers["Referer"] = post_url
 
-    # Try variants if initial URL fails
     variants = build_sina_image_variants(image_url) if "sinaimg.cn" in image_url else [image_url]
     response = None
     for variant_url in variants:
@@ -412,7 +410,6 @@ def parse_feed_date(value):
 
 
 def collect_sina_api_account(source_config):
-    """Collect posts and image galleries via Weibo's m.weibo.cn container API (same as your gallery script)."""
     uid = source_config["uid"]
     container_id = f"107603{uid}"
     target_url = f"https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid={container_id}"
@@ -447,7 +444,6 @@ def collect_sina_api_account(source_config):
         if not raw_text:
             continue
             
-        # Filter for relevant posts if needed, or ingest directly
         pics = mblog.get("pics") or []
         image_urls = []
         for pic in pics:
@@ -601,7 +597,6 @@ def parse_xhs_display_date(value):
 def collect_xhs_profile(source_config):
     cookies = load_xhs_cookies()
     if not cookies:
-        print(f"{source_config['name']}: XHS_COOKIES_JSON missing; skipping XHS profile scrape safely.")
         return []
     
     from playwright.sync_api import sync_playwright
@@ -879,8 +874,11 @@ def main():
 
     existing_today_keys = {duplicate_key(p) for p in existing if is_weibo_today(p)}
     slots = max(0, WEIBO_POST_LIMIT - len(existing_today_keys))
-    new_weibo = [p for p in collected if p.get("platform"] == "Weibo")
-    other_new = [p for p in collected if p.get("platform"] != "Weibo")
+    
+    # Clean list comprehension with proper syntax
+    new_weibo = [p for p in collected if p.get("platform") == "Weibo"]
+    other_new = [p for p in collected if p.get("platform") != "Weibo"]
+    
     accepted_weibo = [p for p in sorted(deduplicate_posts(new_weibo), key=post_timestamp, reverse=True) if duplicate_key(p) not in existing_today_keys][:slots]
     collected = accepted_weibo + other_new
 
