@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T12:02:52+08:00",
+  "lastUpdated": "2026-11-03T16:32:12+08:00",
   "status": "Completed: 3 sources successful, 16 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -15,134 +15,236 @@
       "source": "Weibo account 5763552342",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:22.560531+08:00",
+      "checkedAt": "2026-11-03T16:30:36.465582+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 1831550987",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:26.633615+08:00",
+      "checkedAt": "2026-11-03T16:30:42.346231+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 2356308454",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:29.786929+08:00",
+      "checkedAt": "2026-11-03T16:30:46.048824+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 8450716290",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:33.092069+08:00",
+      "checkedAt": "2026-11-03T16:30:49.778539+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 8004004308",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:36.410943+08:00",
+      "checkedAt": "2026-11-03T16:30:53.500092+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7954477778",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:39.725737+08:00",
+      "checkedAt": "2026-11-03T16:30:57.213745+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7431934486",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:43.035209+08:00",
+      "checkedAt": "2026-11-03T16:31:00.914678+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 6941933193",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:46.355998+08:00",
+      "checkedAt": "2026-11-03T16:31:04.714635+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 5919565877",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:49.666842+08:00",
+      "checkedAt": "2026-11-03T16:31:08.420133+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 9072975151",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:52.997330+08:00",
+      "checkedAt": "2026-11-03T16:31:11.926871+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 6609562381",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:56.143418+08:00",
+      "checkedAt": "2026-11-03T16:31:15.388183+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 5894691419",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:01:59.289015+08:00",
+      "checkedAt": "2026-11-03T16:31:18.857989+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 1882778030",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:02:02.610177+08:00",
+      "checkedAt": "2026-11-03T16:31:22.580360+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7728002071",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:02:05.925494+08:00",
+      "checkedAt": "2026-11-03T16:31:26.272018+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7854683575",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:02:09.070582+08:00",
+      "checkedAt": "2026-11-03T16:31:29.979915+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 2682624851",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:02:12.378747+08:00",
+      "checkedAt": "2026-11-03T16:31:33.660989+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-03T12:02:15.692918+08:00"
+      "checkedAt": "2026-11-03T16:31:37.111293+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:02:17.969496+08:00"
+      "checkedAt": "2026-11-03T16:31:39.310625+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T12:02:35.987710+08:00"
+      "checkedAt": "2026-11-03T16:31:56.551814+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "7273dd654e96293b0909",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: RT @nn1482183: 😳😳😳 사진 셀렉하신분 이번달 월급 두배 받으시길..",
+      "excerpt": "RT @nn1482183: 😳😳😳 사진 셀렉하신분 이번달 월급 두배 받으시길.. — @PopMinghao Nov 3, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d168e5e53fa6750622b561df.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-03T13:14:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2117485472805228718",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "d992ffe4b41cd373f4cc",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: RT @meen3meen: ไหลรวมยกกำลัง 3 👀 #โหวหมิงฮ่าว #HouMinghao #侯明昊",
+      "excerpt": "RT @meen3meen: ไหลรวมยกกำลัง 3 👀 #โหวหมิงฮ่าว #HouMinghao #侯明昊 — @PopMinghao Nov 3, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/641aa51a908cf80a94d48221.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-03T13:13:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2117485410456924237",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "1abdf03a1f00dfb6783d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1…",
+      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1/2] — @HMH_Record Nov 3, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/09e970fabdc552b90cae5e94.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-03T13:02:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2117482453615227228",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "22f5831d0aa8438a5aeb",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [2…",
+      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [2/2] — @HMH_Record Nov 3, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/79d7cf5a96a88d522d7b2b61.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-03T13:02:00+08:00",
+      "url": "https://x.com/HMH_Record/status/2117482500406849595",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "05e0e4ed85567464f617",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@neohou_feed",
+      "title": "Hou Minghao Feed: Sales of the October issue of #HouMinghao have surpassed 30,000 copies! 🎉 #侯明昊",
+      "excerpt": "Sales of the October issue of #HouMinghao have surpassed 30,000 copies! 🎉 #侯明昊 — @neohou_feed Nov 3, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/63045a05fe338f1b187b4249.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-03T12:41:00+08:00",
+      "url": "https://x.com/neohou_feed/status/2117477163989405823",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "556de05e669807935002",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: RT @ncybear: Full Article and Interview from ELLEMEN #HouMinghao October 2026 - Hou Minghao’s Guide to Wandering the Galaxy At the end of December 2017, Hou Mingh…",
+      "excerpt": "RT @ncybear: Full Article and Interview from ELLEMEN #HouMinghao October 2026 - Hou Minghao’s Guide to Wandering the Galaxy At the end of December 2017, Hou Minghao posted the following on Weibo: “I still hope to become a true actor. So, please give me a little more time. I will show you an actor who does not forget his original aspirations and co…",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/285a3374331095b142610925.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-03T12:29:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2117474309774135535",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "f0fe22c7f134452a67e8",
       "platform": "X",
@@ -3364,126 +3466,6 @@
       "category": "XHS Update",
       "date": "2026-07-01T22:47:22+08:00",
       "url": "https://www.rednote.com/explore/6a45287a000000001c027da2",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Playwright captured JSON",
-      "profileId": "5bc495dfec27fc0001bd4010"
-    },
-    {
-      "id": "bcc93e1f445c3be3304c",
-      "platform": "XHS",
-      "source": "侯明昊",
-      "title": "New XHS update",
-      "excerpt": "New XHS update",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e887b3476b0544bcdb9c391e.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b5eb7419b561e96f76430588.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a517a456e0672e402a2d0e96.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7b7ff66ce2af66b6f418c370.webp"
-      ],
-      "category": "XHS Update",
-      "date": "2026-06-30T17:50:38+08:00",
-      "url": "https://www.rednote.com/explore/6a43916e000000001702daf3",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Playwright captured JSON",
-      "profileId": "5bc495dfec27fc0001bd4010"
-    },
-    {
-      "id": "43d7282e0fc2bcdf5c6a",
-      "platform": "XHS",
-      "source": "侯明昊",
-      "title": "New XHS update",
-      "excerpt": "New XHS update",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cadfbfd0dd851ee1fc705879.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a27399892e9e6d1cb65689dd.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/85251e51628845c5414e4530.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c9fcb401e02b48746e83ffe0.webp"
-      ],
-      "category": "XHS Update",
-      "date": "2026-06-29T20:03:02+08:00",
-      "url": "https://www.rednote.com/explore/6a4257d10000000015024726",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Playwright captured JSON",
-      "profileId": "5bc495dfec27fc0001bd4010"
-    },
-    {
-      "id": "dc264c7dd470aaf9b127",
-      "platform": "XHS",
-      "source": "侯明昊",
-      "title": "New XHS update",
-      "excerpt": "New XHS update",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8ddad0cce8aff5ce037565d8.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e8462f084bd200a8447f64fd.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ce1c9119c29b1065ae3a4f7c.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3244f42c06d003f3a69b0c50.webp"
-      ],
-      "category": "XHS Update",
-      "date": "2026-06-28T14:05:01+08:00",
-      "url": "https://www.rednote.com/explore/6a3ffac000000000170293ba",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Playwright captured JSON",
-      "profileId": "5bc495dfec27fc0001bd4010"
-    },
-    {
-      "id": "485b0e9d6e67aef3732c",
-      "platform": "XHS",
-      "source": "侯明昊",
-      "title": "New XHS update",
-      "excerpt": "New XHS update",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/565f99b598806cc17c837970.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4600ac126ec1dda57d4b4d6c.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9c11141eae43bcfb2168fe4e.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/683afc9c7a17864f36c1ed0c.webp"
-      ],
-      "category": "XHS Update",
-      "date": "2026-06-26T14:05:01+08:00",
-      "url": "https://www.rednote.com/explore/6a3d7b87000000001502507b",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Playwright captured JSON",
-      "profileId": "5bc495dfec27fc0001bd4010"
-    },
-    {
-      "id": "9a5e85bcf4c0bd6a8ff9",
-      "platform": "XHS",
-      "source": "侯明昊",
-      "title": "New XHS update",
-      "excerpt": "New XHS update",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7fbb1bc950cb2343f3555572.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3ff446365f698da49a5baab1.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/47b93639f6a2ffc1a705577c.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ac53a99e926c57b81a8aeff5.webp"
-      ],
-      "category": "XHS Update",
-      "date": "2026-06-15T16:14:49+08:00",
-      "url": "https://www.rednote.com/explore/6a2fb47900000000160261b9",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Playwright captured JSON",
-      "profileId": "5bc495dfec27fc0001bd4010"
-    },
-    {
-      "id": "e922b586687883258185",
-      "platform": "XHS",
-      "source": "侯明昊",
-      "title": "New XHS update",
-      "excerpt": "New XHS update",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5f2851b86a93a2691408df52.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/aa7e0a7976ada1030861ed1f.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/eeaddde629179a806576ac0b.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/afdfe9556b4afcbded54355b.webp"
-      ],
-      "category": "XHS Update",
-      "date": "2026-06-10T20:12:46+08:00",
-      "url": "https://www.rednote.com/explore/6a2954be0000000015026bc1",
       "official": true,
       "verified": true,
       "collectionMethod": "Playwright captured JSON",
