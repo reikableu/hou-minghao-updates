@@ -71,7 +71,7 @@ jobs:
       - name: Build Weibo GIF gallery
         run: |
           echo "Starting Weibo GIF collector..."
-          python -u update_gifs.py
+          python -u update_gallery.py
 
 
       # ======================================================
