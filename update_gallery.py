@@ -58,7 +58,6 @@ USER_AGENT = (
 
 def now_iso():
     """Return the current Singapore date and time."""
-
     return datetime.now(SINGAPORE).isoformat(
         timespec="seconds"
     )
@@ -71,7 +70,6 @@ def prepare_directories():
     The .gitkeep file allows Git to retain gallery_media even
     when no image files have been downloaded yet.
     """
-
     GALLERY_MEDIA_DIR.mkdir(
         parents=True,
         exist_ok=True,
@@ -100,7 +98,6 @@ def prepare_directories():
 
 def clean_text(value):
     """Remove HTML tags and normalize whitespace."""
-
     if not value:
         return ""
 
@@ -113,7 +110,6 @@ def clean_text(value):
 
 def load_existing_items():
     """Load existing gallery records from gallery.json."""
-
     if not GALLERY_FILE.exists():
         print("No existing gallery.json was found.")
         return []
@@ -159,7 +155,6 @@ async def fetch_profile_candidates(page, uid):
     """
     Retrieve image candidates from one Weibo profile.
     """
-
     container_id = f"107603{uid}"
 
     target_url = (
@@ -327,7 +322,7 @@ async def fetch_profile_candidates(page, uid):
                 pics = []
 
             print(
-                f"Post {post_id}: "
+                f"Post {post_id} by @{user_name}: "
                 f"{len(pics)} attached picture(s)"
             )
 
@@ -399,7 +394,6 @@ async def fetch_profile_candidates(page, uid):
 
 def normalize_sina_image_url(url):
     """Normalize a Sina image URL."""
-
     url = str(url or "").strip()
 
     if url.startswith("//"):
@@ -415,7 +409,6 @@ def build_image_url_variants(original_url):
     Weibo images may be accessible through different size paths
     and different wx1-wx4 Sina image hosts.
     """
-
     original_url = normalize_sina_image_url(
         original_url
     )
@@ -497,7 +490,6 @@ def image_extension(content_type, url, content):
     Determine the image extension from the response headers,
     file signature, or source URL.
     """
-
     content_type = (content_type or "").lower()
 
     if "jpeg" in content_type or "jpg" in content_type:
@@ -548,7 +540,6 @@ def image_extension(content_type, url, content):
 
 def is_valid_image_content(content, content_type):
     """Confirm that the downloaded body is an image."""
-
     if not content:
         return False
 
@@ -594,11 +585,7 @@ async def playwright_image_request(
     """
     Retrieve an image through the active Playwright request
     context.
-
-    APIResponse uses response.headers as a property. It does
-    not provide response.all_headers().
     """
-
     response = None
 
     try:
@@ -622,8 +609,6 @@ async def playwright_image_request(
         )
 
         status = response.status
-
-        # Correct APIResponse header access.
         headers = response.headers or {}
 
         content_type = (
@@ -672,16 +657,8 @@ async def download_candidate(
     item,
 ):
     """
-    Download one Weibo image.
-
-    The downloader tests:
-    - Alternate image size paths
-    - Alternate wx1-wx4 image hosts
-    - The post URL as Referer
-    - weibo.com as Referer
-    - m.weibo.cn as Referer
+    Download one Weibo image and tag it with the exact account name source.[span_1](start_span)[span_1](end_span)
     """
-
     image_variants = build_image_url_variants(
         item["image_url"]
     )
@@ -752,7 +729,8 @@ async def download_candidate(
 
                         print(
                             f"  Saved image: {filename} "
-                            f"({len(content):,} bytes)"
+                            f"({len(content):,} bytes) "
+                            f"from @{item['author']}"
                         )
 
                         return {
@@ -767,9 +745,7 @@ async def download_candidate(
                             ),
                             "sourceUrl": item["post_url"],
                             "platform": "Weibo",
-                            "source": (
-                                f"Weibo (@{item['author']})"
-                            ),
+                            "source": f"Weibo (@{item['author']})",  # <--- Explicitly sets the Weibo account name source[span_2](start_span)[span_2](end_span)
                             "title": item["title"],
                             "date": "",
                             "origin": "Weibo Profile",
@@ -836,7 +812,6 @@ def merge_and_shuffle_items(
     """
     Merge new and existing items while removing duplicates.
     """
-
     combined = []
     seen_ids = set()
     seen_hashes = set()
@@ -890,10 +865,7 @@ def remove_unused_files(items):
     """
     Remove downloaded images no longer referenced by
     gallery.json.
-
-    Hidden files such as .gitkeep are preserved.
     """
-
     if not GALLERY_MEDIA_DIR.exists():
         return
 
@@ -945,7 +917,6 @@ def write_gallery_file(
     failed_downloads,
 ):
     """Write gallery.json using an atomic replacement."""
-
     output = {
         "lastUpdated": now_iso(),
         "status": (
