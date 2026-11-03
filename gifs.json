@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-11-03T19:24:45+08:00",
-  "status": "Weibo GIF update: 3 new, 13 failed, 3 total items",
-  "total": 3,
+  "lastUpdated": "2026-11-03T19:58:14+08:00",
+  "status": "Weibo GIF update: 1 new, 17 failed, 4 total items",
+  "total": 4,
   "items": [
     {
-      "id": "wb_live_5361204006224195_0",
-      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5361204006224195_0_1d630986929c.gif",
-      "remoteImage": "https://g.us.sinaimg.cn/o0/GHgbvpD2lx08C4Yf2bPa010412000kaA0E010.mp4?label=gif_mp4&template=902x720.28.0&Expires=1793707743&ssig=z3eJjzn85r&KID=unistore,video",
-      "sourceUrl": "https://m.weibo.cn/status/5361204006224195",
+      "id": "wb_live_5299667799376992_6",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5299667799376992_6_ffb36a53676f.gif",
+      "remoteImage": "https://f.video.weibocdn.com/u0/59ZL6s9ggx08xKVn6t4A01041202pkHI0E010.mp4?label=mp4_720p&template=720x1080.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793709702&ssig=vc9T35TssK&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5299667799376992",
       "platform": "Weibo",
-      "source": "Weibo (@_Takeyouaway)",
-      "title": "GIF by @_Takeyouaway: 当小猕猴桃被侯明昊抓住以后",
+      "source": "Weibo (@Be_with_侯明昊)",
+      "title": "GIF by @Be_with_侯明昊: 2026侯明昊「属于我们的…」巡回演唱会·南京 歌单+4K高清直拍视频 ▶️FIRE & 火力全开 ▶️SOLD OUT ▶️友情提示 ▶️第一个清晨 ▶️刻在",
       "date": "",
       "origin": "Weibo Live Photo",
-      "imageHash": "1d630986929c168e5e6517ef509a2bb10cd3a5ac23e00accd4d178b7c4c43660",
-      "collectedAt": "2026-11-03T19:20:21+08:00"
+      "imageHash": "ffb36a53676fd420798e4d1992e31603e63d3b0eebef03b2ffacdcb9c1eedc18",
+      "collectedAt": "2026-11-03T19:50:41+08:00"
     },
     {
       "id": "wb_live_5299463694584271_4",
@@ -41,6 +41,19 @@
       "origin": "Weibo Live Photo",
       "imageHash": "1f0e33ada9fb0ab7fa4e71a3f935170f6fa3ddd8892d7f54b8cf8cd3847bc324",
       "collectedAt": "2026-11-03T19:20:19+08:00"
+    },
+    {
+      "id": "wb_live_5361204006224195_0",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5361204006224195_0_1d630986929c.gif",
+      "remoteImage": "https://g.us.sinaimg.cn/o0/GHgbvpD2lx08C4Yf2bPa010412000kaA0E010.mp4?label=gif_mp4&template=902x720.28.0&Expires=1793707743&ssig=z3eJjzn85r&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5361204006224195",
+      "platform": "Weibo",
+      "source": "Weibo (@_Takeyouaway)",
+      "title": "GIF by @_Takeyouaway: 当小猕猴桃被侯明昊抓住以后",
+      "date": "",
+      "origin": "Weibo Live Photo",
+      "imageHash": "1d630986929c168e5e6517ef509a2bb10cd3a5ac23e00accd4d178b7c4c43660",
+      "collectedAt": "2026-11-03T19:20:21+08:00"
     }
   ]
 }
