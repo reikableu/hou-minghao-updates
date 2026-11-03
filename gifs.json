@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-03T19:58:14+08:00",
-  "status": "Weibo GIF update: 1 new, 17 failed, 4 total items",
+  "lastUpdated": "2026-11-03T21:19:42+08:00",
+  "status": "GIF update: 0 new, 17 failed, 4 total items",
   "total": 4,
   "items": [
     {
@@ -30,19 +30,6 @@
       "collectedAt": "2026-11-03T19:24:44+08:00"
     },
     {
-      "id": "wb_live_5360545244643330_0",
-      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5360545244643330_0_1f0e33ada9fb.gif",
-      "remoteImage": "https://f.video.weibocdn.com/o0/pQTOU8eKlx08C2pQ6vKE010412026O3v0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793707734&ssig=d8VaN6EySu&KID=unistore,video",
-      "sourceUrl": "https://m.weibo.cn/status/5360545244643330",
-      "platform": "Weibo",
-      "source": "Weibo (@Everglow_侯明昊)",
-      "title": "GIF by @Everglow_侯明昊: - 𝟐𝟔𝟏𝟏𝟎𝟏 💧 @侯明昊 #侯明昊郑州演唱会# / #今日星拍放送#",
-      "date": "",
-      "origin": "Weibo Live Photo",
-      "imageHash": "1f0e33ada9fb0ab7fa4e71a3f935170f6fa3ddd8892d7f54b8cf8cd3847bc324",
-      "collectedAt": "2026-11-03T19:20:19+08:00"
-    },
-    {
       "id": "wb_live_5361204006224195_0",
       "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5361204006224195_0_1d630986929c.gif",
       "remoteImage": "https://g.us.sinaimg.cn/o0/GHgbvpD2lx08C4Yf2bPa010412000kaA0E010.mp4?label=gif_mp4&template=902x720.28.0&Expires=1793707743&ssig=z3eJjzn85r&KID=unistore,video",
@@ -54,6 +41,19 @@
       "origin": "Weibo Live Photo",
       "imageHash": "1d630986929c168e5e6517ef509a2bb10cd3a5ac23e00accd4d178b7c4c43660",
       "collectedAt": "2026-11-03T19:20:21+08:00"
+    },
+    {
+      "id": "wb_live_5360545244643330_0",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5360545244643330_0_1f0e33ada9fb.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/pQTOU8eKlx08C2pQ6vKE010412026O3v0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793707734&ssig=d8VaN6EySu&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5360545244643330",
+      "platform": "Weibo",
+      "source": "Weibo (@Everglow_侯明昊)",
+      "title": "GIF by @Everglow_侯明昊: - 𝟐𝟔𝟏𝟏𝟎𝟏 💧 @侯明昊 #侯明昊郑州演唱会# / #今日星拍放送#",
+      "date": "",
+      "origin": "Weibo Live Photo",
+      "imageHash": "1f0e33ada9fb0ab7fa4e71a3f935170f6fa3ddd8892d7f54b8cf8cd3847bc324",
+      "collectedAt": "2026-11-03T19:20:19+08:00"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-03T19:40:09+08:00",
-  "status": "Completed: 3 sources successful, 16 failed",
+  "lastUpdated": "2026-11-03T21:01:14+08:00",
+  "status": "Completed: 1 sources successful, 16 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -15,134 +15,139 @@
       "source": "Weibo account 5763552342",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:38:30.221365+08:00",
+      "checkedAt": "2026-11-03T21:00:11.635415+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 1831550987",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:38:36.072550+08:00",
+      "checkedAt": "2026-11-03T21:00:16.623475+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 2356308454",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:38:39.653364+08:00",
+      "checkedAt": "2026-11-03T21:00:20.301840+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 8450716290",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:38:43.233166+08:00",
+      "checkedAt": "2026-11-03T21:00:24.032750+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 8004004308",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:38:46.850739+08:00",
+      "checkedAt": "2026-11-03T21:00:27.723359+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7954477778",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:38:50.256863+08:00",
+      "checkedAt": "2026-11-03T21:00:31.411498+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7431934486",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:38:53.878001+08:00",
+      "checkedAt": "2026-11-03T21:00:36.152032+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 6941933193",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:38:57.255764+08:00",
+      "checkedAt": "2026-11-03T21:00:39.843216+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 5919565877",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:00.840754+08:00",
+      "checkedAt": "2026-11-03T21:00:43.524831+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 9072975151",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:04.408081+08:00",
+      "checkedAt": "2026-11-03T21:00:47.295330+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 6609562381",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:07.799041+08:00",
+      "checkedAt": "2026-11-03T21:00:50.972207+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 5894691419",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:11.364993+08:00",
+      "checkedAt": "2026-11-03T21:00:54.658520+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 1882778030",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:15.023605+08:00",
+      "checkedAt": "2026-11-03T21:00:58.122029+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7728002071",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:18.407520+08:00",
+      "checkedAt": "2026-11-03T21:01:01.845611+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7854683575",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:21.976062+08:00",
+      "checkedAt": "2026-11-03T21:01:05.322903+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 2682624851",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:25.337311+08:00",
+      "checkedAt": "2026-11-03T21:01:08.806718+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-03T19:39:28.729919+08:00"
-    },
-    {
-      "source": "XHS Profile 1",
-      "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:31.010499+08:00"
-    },
-    {
-      "source": "XHS Profile 2",
-      "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-03T19:39:50.431557+08:00"
+      "checkedAt": "2026-11-03T21:01:12.291447+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "52d6d38a8d4d93976128",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: 03.11.2026 | HMH STYLE Hou Minghao — H&M 2026 Autumn/Winter Collection Livestream #HouMinghao #侯明昊 #HMHStyle",
+      "excerpt": "03.11.2026 | HMH STYLE Hou Minghao — H&M 2026 Autumn/Winter Collection Livestream #HouMinghao #侯明昊 #HMHStyle — @PopMinghao Nov 3, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/86a8b289fd3587ad36bbf2b6.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-03T20:07:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2117589511878381597",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "e7067b53f8081da8d4f4",
       "platform": "X",
@@ -3416,26 +3421,6 @@
       "category": "XHS Update",
       "date": "2026-08-15T18:30:33+08:00",
       "url": "https://www.rednote.com/explore/6a800ad3000000003300fb80",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Playwright captured JSON",
-      "profileId": "680f416000000000080147b4"
-    },
-    {
-      "id": "056416fb9ef3276f80c2",
-      "platform": "XHS",
-      "source": "侯明昊属于我们的巡演",
-      "title": "New XHS update",
-      "excerpt": "New XHS update",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a07d0ba78d96badfc698273e.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/111f7be5bb324a9cdbf221ef.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/381ccaea8a25bf495b650e65.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9e7709be85396656ff01165a.webp"
-      ],
-      "category": "XHS Update",
-      "date": "2026-08-15T18:01:48+08:00",
-      "url": "https://www.rednote.com/explore/6a8009870000000025011906",
       "official": true,
       "verified": true,
       "collectionMethod": "Playwright captured JSON",
