@@ -24,7 +24,7 @@ from playwright.async_api import async_playwright
 BASE_DIR = Path(__file__).resolve().parent
 
 GIFS_FILE = BASE_DIR / "gifs.json"
-GIFS_MEDIA_DIR = GIFS_MEDIA_DIR = BASE_DIR / "gifs_media"
+GIFS_MEDIA_DIR = BASE_DIR / "gifs_media"
 GITKEEP_FILE = GIFS_MEDIA_DIR / ".gitkeep"
 
 RAW_GIFS_BASE = (
@@ -35,17 +35,12 @@ RAW_GIFS_BASE = (
 SINGAPORE = ZoneInfo("Asia/Singapore")
 
 # Keyword search is login-gated on Weibo, so it is OFF by default.
-# Leave this empty to run with no cookie/secret (profiles only).
-# If you later add a WEIBO_COOKIE secret, you can list keywords here, e.g.
-# SEARCH_KEYWORDS = ["侯明昊 gif", "侯明昊动图"]
 SEARCH_KEYWORDS = []
 
 # Tenor search keywords (No API key required, scraped via Playwright)
 TENOR_KEYWORDS = ["HouMinghao", "侯明昊"]
 
-# Optional: Weibo UIDs of fan / official accounts that post lots of Hou Minghao
-# content. Profile timelines are often readable without login.
-# Example: TARGET_UIDS = ["1234567890", "0987654321"]
+# Optional: Weibo UIDs of fan / official accounts that post lots of Hou Minghao content
 TARGET_UIDS = [
     "7971490580",
     "7987922088",
@@ -63,14 +58,14 @@ TARGET_UIDS = [
     "1831550987",
 ]
 
-# Login cookie, stored as a GitHub secret named WEIBO_COOKIE (e.g. "SUB=xxxx")
+# Login cookie, stored as a GitHub secret named WEIBO_COOKIE
 WEIBO_COOKIE = os.environ.get("WEIBO_COOKIE", "").strip()
 
 MAX_GIF_ITEMS = 150
 MAX_GIF_SIZE_BYTES = 20 * 1024 * 1024    # 20MB limit for final GIFs
 MAX_VIDEO_SIZE_BYTES = 40 * 1024 * 1024  # 40MB limit for live photo videos
 LIVE_PHOTO_MAX_SECONDS = 6               # trim live photo videos to this length
-DOWNLOAD_BUDGET_SECONDS = 15 * 60        # stop downloading after this long
+DOWNLOAD_BUDGET_SECONDS = 20 * 60        # updated to 20 mins budget limit
 REQUEST_TIMEOUT_MS = 20000               # per download attempt
 
 USER_AGENT = (
@@ -155,7 +150,7 @@ def host_variants(url):
 
 async def download_bytes(context, url, post_url, size_limit):
     """Download a file, trying alternate image hosts and referers (bounded)."""
-    referers = [post_url or "https://m.weibo.cn/", "https://weibo.com/", "https://m.weibo.cn/"]
+    referers = [post_url or "https://m.weibo.cn/", "https://weibo.com/", "https://tenor.com/"]
     last_status = None
     attempts = 0
     max_attempts = 8
@@ -186,7 +181,6 @@ async def download_bytes(context, url, post_url, size_limit):
                     print(f"  Empty or oversized file ({len(body):,} bytes).")
                     return None
             except Exception as error:
-                # A timeout is a host problem, not a referer problem: try the next host.
                 last_status = type(error).__name__
                 break
 
@@ -195,8 +189,7 @@ async def download_bytes(context, url, post_url, size_limit):
 
 
 def convert_video_to_gif(video_bytes):
-    """Convert a short video (mov/mp4) to GIF bytes using ffmpeg."""
-    # Try progressively smaller settings until the GIF fits the size limit.
+    """Convert a short video (mov/mp4) to GIF bytes using ffmpeg with 120s timeout."""
     settings = [(480, 12), (360, 10), (320, 8)]
     last_error = None
 
@@ -220,7 +213,7 @@ def convert_video_to_gif(video_bytes):
                     ],
                     check=True,
                     capture_output=True,
-                    timeout=60,
+                    timeout=120,  # Increased timeout to 120 seconds
                 )
                 with open(dst, "rb") as f:
                     data = f.read()
@@ -240,7 +233,6 @@ def convert_video_to_gif(video_bytes):
 # ============================================================
 
 def extract_candidates_from_cards(cards, stats, debug_state):
-    """Pull GIF and live photo candidates out of a list of Weibo cards."""
     candidates = []
 
     for card in cards:
@@ -273,7 +265,6 @@ def extract_candidates_from_cards(cards, stats, debug_state):
                     continue
                 stats["pics"] += 1
 
-                # ---- Live photo: has a short video attached ----
                 video_url = normalize_url(picture.get("videoSrc"))
                 if picture.get("type") == "livephoto" or video_url:
                     if not debug_state["printed_live_keys"]:
@@ -291,7 +282,6 @@ def extract_candidates_from_cards(cards, stats, debug_state):
                         })
                         continue
 
-                # ---- Regular GIF ----
                 large_pic = picture.get("large") or {}
                 image_url = normalize_url(large_pic.get("url") or picture.get("url"))
                 if not image_url:
@@ -312,7 +302,6 @@ def extract_candidates_from_cards(cards, stats, debug_state):
 
 
 async def fetch_api_pages(page, label, url_for_page, max_pages=3):
-    """Fetch several pages of a Weibo container API and collect candidates."""
     candidates = []
     stats = {"posts": 0, "pics": 0, "gifs": 0, "live": 0}
     debug_state = {"printed_live_keys": False}
@@ -323,22 +312,19 @@ async def fetch_api_pages(page, label, url_for_page, max_pages=3):
 
         try:
             response = await page.goto(target_url, wait_until="domcontentloaded", timeout=30000)
-            if not response:
-                print(f"  No response for {label}. Stopping.")
-                break
-            if response.status != 200:
-                print(f"  HTTP {response.status} for {label}. Stopping.")
+            if not response or response.status != 200:
+                print(f"  No valid response for {label}. Stopping.")
                 break
 
             body_text = await response.text()
             try:
                 payload = json.loads(body_text)
             except Exception:
-                print(f"  Response was not JSON (login wall or block?). Start of body: {body_text[:200]!r}")
+                print(f"  Response was not JSON. Start of body: {body_text[:200]!r}")
                 break
 
             if payload.get("ok") not in (1, "1", True):
-                print(f"  API returned ok != 1 for {label}: {str(payload)[:200]}")
+                print(f"  API returned ok != 1 for {label}")
                 break
 
             cards = (payload.get("data") or {}).get("cards") or []
@@ -385,11 +371,10 @@ async def fetch_profile_candidates(page, uid, max_pages=3):
 
 
 # ============================================================
-# TENOR WEB SCRAPING FETCHING
+# TENOR WEB SCRAPING FETCHING (FIXED SELECTORS)
 # ============================================================
 
 async def fetch_tenor_candidates(page, keyword):
-    """Scrape GIF elements from Tenor search results without using an API key."""
     encoded_keyword = urllib.parse.quote(keyword)
     target_url = f"https://tenor.com/search/{encoded_keyword}-gifs"
     candidates = []
@@ -397,35 +382,39 @@ async def fetch_tenor_candidates(page, keyword):
 
     try:
         await page.goto(target_url, wait_until="domcontentloaded", timeout=30000)
-        # Give some time for dynamic elements to load
-        await asyncio.sleep(3)
+        await asyncio.sleep(4)
 
-        # Scroll down slightly to trigger lazy loads
-        for _ in range(2):
+        # Scroll down dynamically to trigger lazy-loaded GIF items
+        for _ in range(3):
             await page.evaluate("window.scrollTo(0, document.body.scrollHeight);")
-            await asyncio.sleep(1.5)
+            await asyncio.sleep(2)
 
-        # Extract GIF / media elements from Tenor DOM
+        # Updated resilient selector logic targeting generic figures, videos, and image cards on Tenor
         media_items = await page.evaluate("""() => {
             const results = [];
-            // Tenor typically wraps results in figure/div elements with video or img tags
-            const figures = document.querySelectorAll('figure, .GifCard');
-            figures.forEach((fig, idx) => {
-                const img = fig.querySelector('img');
-                const video = fig.querySelector('video');
-                const source = video ? video.querySelector('source') : null;
-                
+            // Target all potential container elements or media items on Tenor search grid
+            const elements = document.querySelectorAll('figure, img, video, source');
+            
+            elements.forEach((el) => {
                 let mediaUrl = '';
-                if (source && source.src) {
-                    mediaUrl = source.src;
-                } else if (video && video.src) {
-                    mediaUrl = video.src;
-                } else if (img && img.src) {
-                    mediaUrl = img.src;
+                let altText = '';
+
+                if (el.tagName === 'VIDEO' || el.tagName === 'SOURCE') {
+                    mediaUrl = el.src || el.currentSrc;
+                } else if (el.tagName === 'IMG') {
+                    mediaUrl = el.src;
+                    altText = el.alt;
+                } else {
+                    const img = el.querySelector('img');
+                    const video = el.querySelector('video') || el.querySelector('source');
+                    if (video) mediaUrl = video.src || video.currentSrc;
+                    else if (img) {
+                        mediaUrl = img.src;
+                        altText = img.alt;
+                    }
                 }
 
-                if (mediaUrl) {
-                    const altText = img ? img.alt : '';
+                if (mediaUrl && (mediaUrl.includes('tenor.com') || mediaUrl.includes('media.tenor.co') || mediaUrl.includes('cgw.tenor.com'))) {
                     results.push({
                         mediaUrl: mediaUrl,
                         title: altText || 'Tenor GIF'
@@ -435,16 +424,20 @@ async def fetch_tenor_candidates(page, keyword):
             return results;
         }""")
 
+        seen_urls = set()
         for idx, item in enumerate(media_items):
             media_url = normalize_url(item["mediaUrl"])
-            if not media_url:
+            if not media_url or media_url in seen_urls:
                 continue
             
-            # Create a unique hash ID for tracking
+            # Map preview image links to direct gif/mp4 outputs if possible, or keep original link
+            if ".gif" not in media_url and ".mp4" not in media_url and ".webm" not in media_url:
+                if "images/" in media_url:
+                    media_url = media_url.replace("/images/", "/media/")
+
+            seen_urls.add(media_url)
             url_hash = hashlib.md5(media_url.encode()).hexdigest()[:10]
             photo_id = f"tenor_{keyword.lower()}_{idx}_{url_hash}"
-            
-            # Tenor gives webp/mp4 links; convert mp4/webm links or accept image links
             is_video = media_url.endswith(".mp4") or media_url.endswith(".webm")
 
             candidates.append({
@@ -468,11 +461,9 @@ async def fetch_tenor_candidates(page, keyword):
 # ============================================================
 
 def remove_unused_files(items):
-    """Delete GIF files in gifs_media that are no longer referenced by gifs.json."""
     if not GIFS_MEDIA_DIR.exists():
         return
 
-    # Safety: if nothing is being kept, do not wipe the folder.
     if not items:
         print("No items to keep; skipping cleanup of gifs_media.")
         return
@@ -508,8 +499,8 @@ async def main_async():
     existing_ids = {str(item.get("id")) for item in existing_items if item.get("id")}
     existing_hashes = {str(item.get("imageHash")) for item in existing_items if item.get("imageHash")}
 
-    print(f"Cookie provided: {'yes' if WEIBO_COOKIE else 'no (optional, profiles work without it)'}")
-    print(f"ffmpeg available: {'yes' if FFMPEG_AVAILABLE else 'NO (videos will be skipped)'}")
+    print(f"Cookie provided: {'yes' if WEIBO_COOKIE else 'no'}")
+    print(f"ffmpeg available: {'yes' if FFMPEG_AVAILABLE else 'NO'}")
     print(f"Profiles to scrape: {len(TARGET_UIDS)}")
     print(f"Tenor keywords to scrape: {len(TENOR_KEYWORDS)}")
 
@@ -537,24 +528,20 @@ async def main_async():
             await page.goto("https://m.weibo.cn/", wait_until="domcontentloaded", timeout=15000)
             await asyncio.sleep(2)
         except Exception as error:
-            print(f"Warm-up visit to m.weibo.cn failed: {error}")
+            print(f"Warm-up visit failed: {error}")
 
-        # Profiles first (usually more reliable than search)
         for uid in TARGET_UIDS:
             all_candidates.extend(await fetch_profile_candidates(page, uid, max_pages=3))
             await asyncio.sleep(2)
 
-        # Then Weibo keyword search
         for keyword in SEARCH_KEYWORDS:
             all_candidates.extend(await fetch_search_candidates(page, keyword, max_pages=3))
             await asyncio.sleep(2)
 
-        # Scrape Tenor search pages without API keys
         for keyword in TENOR_KEYWORDS:
             all_candidates.extend(await fetch_tenor_candidates(page, keyword))
             await asyncio.sleep(2)
 
-        # Deduplicate candidates
         unique_candidates = []
         seen_candidate_ids = set()
         seen_candidate_urls = set()
@@ -567,12 +554,6 @@ async def main_async():
 
         print(f"\nTotal unique candidates collected: {len(unique_candidates)}")
 
-        if not unique_candidates:
-            print(
-                "::warning::No GIF candidates found. Platforms may have blocked requests. "
-                "Check the log lines above."
-            )
-
         new_items = []
         downloaded_hashes = set()
         failed_downloads = 0
@@ -582,10 +563,7 @@ async def main_async():
 
         for index, item in enumerate(unique_candidates, start=1):
             if time.monotonic() - download_start > DOWNLOAD_BUDGET_SECONDS:
-                print(
-                    f"::warning::Download time budget reached at {index}/{total_candidates}. "
-                    "Stopping early; remaining items will be picked up on the next run."
-                )
+                print(f"::warning::Download budget of 20 minutes reached at {index}/{total_candidates}.")
                 break
 
             print(f"[{index}/{total_candidates}] {item['photo_id']}")
@@ -610,7 +588,6 @@ async def main_async():
                     failed_downloads += 1
                     continue
 
-                # Convert video/mp4 -> GIF if needed
                 if is_video:
                     try:
                         content = await asyncio.to_thread(convert_video_to_gif, content)
@@ -619,9 +596,8 @@ async def main_async():
                         failed_downloads += 1
                         continue
 
-                # Validate format or save webp/gif outputs
                 if not (content.startswith(b"GIF87a") or content.startswith(b"GIF89a") or content.startswith(b"RIFF")):
-                    print(f"{item['photo_id']} is not a valid GIF format. Skipping.")
+                    print(f"{item['photo_id']} is not a valid format. Skipping.")
                     failed_downloads += 1
                     continue
 
@@ -682,7 +658,6 @@ async def main_async():
 
 
 def main():
-    # Flush every line immediately so the Actions log shows progress live
     try:
         sys.stdout.reconfigure(line_buffering=True)
     except Exception:
