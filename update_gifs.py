@@ -7,7 +7,9 @@ import random
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
+import time
 import urllib.parse
 from datetime import datetime
 from pathlib import Path
@@ -65,6 +67,8 @@ MAX_GIF_ITEMS = 150
 MAX_GIF_SIZE_BYTES = 20 * 1024 * 1024    # 20MB limit for final GIFs
 MAX_VIDEO_SIZE_BYTES = 40 * 1024 * 1024  # 40MB limit for live photo videos
 LIVE_PHOTO_MAX_SECONDS = 6               # trim live photo videos to this length
+DOWNLOAD_BUDGET_SECONDS = 15 * 60        # stop downloading after this long
+REQUEST_TIMEOUT_MS = 20000               # per download attempt
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -147,12 +151,18 @@ def host_variants(url):
 
 
 async def download_bytes(context, url, post_url, size_limit):
-    """Download a file, trying alternate image hosts and referers."""
+    """Download a file, trying alternate image hosts and referers (bounded)."""
     referers = [post_url or "https://m.weibo.cn/", "https://weibo.com/", "https://m.weibo.cn/"]
     last_status = None
+    attempts = 0
+    max_attempts = 8
 
     for candidate_url in host_variants(url):
         for referer in referers:
+            if attempts >= max_attempts:
+                print(f"  Gave up after {attempts} attempts (last status: {last_status}).")
+                return None
+            attempts += 1
             try:
                 response = await context.request.get(
                     candidate_url,
@@ -162,7 +172,7 @@ async def download_bytes(context, url, post_url, size_limit):
                         "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
                         "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8",
                     },
-                    timeout=45000,
+                    timeout=REQUEST_TIMEOUT_MS,
                     fail_on_status_code=False,
                 )
                 last_status = response.status
@@ -173,7 +183,9 @@ async def download_bytes(context, url, post_url, size_limit):
                     print(f"  Empty or oversized file ({len(body):,} bytes).")
                     return None
             except Exception as error:
+                # A timeout is a host problem, not a referer problem: try the next host.
                 last_status = type(error).__name__
+                break
 
     print(f"  All download attempts failed (last status: {last_status}).")
     return None
@@ -205,13 +217,15 @@ def convert_video_to_gif(video_bytes):
                     ],
                     check=True,
                     capture_output=True,
-                    timeout=120,
+                    timeout=60,
                 )
                 with open(dst, "rb") as f:
                     data = f.read()
                 if data and len(data) <= MAX_GIF_SIZE_BYTES:
                     return data
                 last_error = "GIF too large"
+            except subprocess.TimeoutExpired:
+                raise RuntimeError("ffmpeg timed out")
             except Exception as error:
                 last_error = str(error)
 
@@ -368,6 +382,40 @@ async def fetch_profile_candidates(page, uid, max_pages=3):
 
 
 # ============================================================
+# CLEANUP
+# ============================================================
+
+def remove_unused_files(items):
+    """Delete GIF files in gifs_media that are no longer referenced by gifs.json."""
+    if not GIFS_MEDIA_DIR.exists():
+        return
+
+    # Safety: if nothing is being kept, do not wipe the folder.
+    if not items:
+        print("No items to keep; skipping cleanup of gifs_media.")
+        return
+
+    keep_filenames = set()
+    for item in items:
+        image_url = str(item.get("image") or "").strip()
+        if image_url:
+            name = Path(urllib.parse.urlsplit(image_url).path).name
+            if name:
+                keep_filenames.add(name)
+
+    removed_count = 0
+    for path in GIFS_MEDIA_DIR.iterdir():
+        if not path.is_file() or path.name.startswith("."):
+            continue
+        if path.name not in keep_filenames:
+            path.unlink(missing_ok=True)
+            removed_count += 1
+            print(f"Removed unused GIF: {path.name}")
+
+    print(f"Unused GIF files removed: {removed_count}")
+
+
+# ============================================================
 # MAIN SCRIPT EXECUTION
 # ============================================================
 
@@ -432,17 +480,30 @@ async def main_async():
         print(f"\nTotal unique candidates collected: {len(unique_candidates)}")
 
         if not unique_candidates:
-            await browser.close()
-            raise SystemExit(
-                "No candidates found. Weibo likely blocked the requests or requires login. "
-                "Check the log lines above. If profiles are blocked, a WEIBO_COOKIE secret may help."
+            # Warn (visible in the Actions summary) but do not abort, so the rest of
+            # the workflow can still commit the feed and gallery updates.
+            print(
+                "::warning::No GIF candidates found. Weibo may have blocked the requests. "
+                "Check the log lines above."
             )
 
         new_items = []
         downloaded_hashes = set()
         failed_downloads = 0
 
-        for item in unique_candidates:
+        download_start = time.monotonic()
+        total_candidates = len(unique_candidates)
+
+        for index, item in enumerate(unique_candidates, start=1):
+            if time.monotonic() - download_start > DOWNLOAD_BUDGET_SECONDS:
+                print(
+                    f"::warning::Download time budget reached at {index}/{total_candidates}. "
+                    "Stopping early; remaining items will be picked up on the next run."
+                )
+                break
+
+            print(f"[{index}/{total_candidates}] {item['photo_id']}")
+
             if item["photo_id"] in existing_ids:
                 print(f"Skipping {item['photo_id']} because it is already in gifs.json.")
                 continue
@@ -514,6 +575,8 @@ async def main_async():
     random.shuffle(combined)
     final_items = combined[:MAX_GIF_ITEMS]
 
+    remove_unused_files(final_items)
+
     output = {
         "lastUpdated": now_iso(),
         "status": (
@@ -531,6 +594,12 @@ async def main_async():
 
 
 def main():
+    # Flush every line immediately so the Actions log shows progress live
+    # (and is not lost if the run is cancelled or times out).
+    try:
+        sys.stdout.reconfigure(line_buffering=True)
+    except Exception:
+        pass
     asyncio.run(main_async())
 
 
