@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
   schedule:
-    # Every 4 hours. GitHub Actions cron uses UTC.
-    - cron: "38 */1 * * *"
+    # Every 3 hours. GitHub Actions cron uses UTC.
+    - cron: "38 */3 * * *"
 
 permissions:
   contents: write
@@ -49,6 +49,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4 deep-translator playwright
           python -m playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg
 
 
       # ======================================================
