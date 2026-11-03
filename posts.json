@@ -1,111 +1,145 @@
 {
-  "lastUpdated": "2026-11-03T02:25:48+08:00",
-  "status": "Completed: 16 sources successful, 0 failed",
+  "lastUpdated": "2026-11-03T09:22:47+08:00",
+  "status": "Completed: 3 sources successful, 16 failed",
   "translationStatus": {
-    "translationsAdded": 6,
-    "postsTranslatedThisRun": 3,
+    "translationsAdded": 0,
+    "postsTranslatedThisRun": 0,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 6
+      "MyMemory": 0
     }
   },
   "sourceStatus": [
     {
-      "source": "侯明昊工作室",
-      "status": "Success",
-      "itemsFound": 100,
-      "checkedAt": "2026-11-03T02:23:42.572792+08:00"
-    },
-    {
-      "source": "PLUG",
-      "status": "Success",
-      "itemsFound": 20,
-      "checkedAt": "2026-11-03T02:23:46.415906+08:00"
-    },
-    {
-      "source": "侯明昊",
-      "status": "Success",
-      "itemsFound": 101,
-      "checkedAt": "2026-11-03T02:23:50.002713+08:00"
-    },
-    {
-      "source": "DearIrean独特艾琳",
-      "status": "Success",
-      "itemsFound": 14,
-      "checkedAt": "2026-11-03T02:23:53.907666+08:00"
-    },
-    {
-      "source": "珀芙研",
-      "status": "Success",
-      "itemsFound": 47,
-      "checkedAt": "2026-11-03T02:23:57.744050+08:00"
-    },
-    {
-      "source": "QINA亓那眼镜",
-      "status": "Success",
-      "itemsFound": 62,
-      "checkedAt": "2026-11-03T02:24:01.379647+08:00"
-    },
-    {
-      "source": "Monkey是猪不是侯",
-      "status": "Success",
+      "source": "Weibo account 5763552342",
+      "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T02:24:04.708582+08:00"
+      "checkedAt": "2026-11-03T09:21:15.699066+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
-      "source": "珍宝珠",
-      "status": "Success",
-      "itemsFound": 6,
-      "checkedAt": "2026-11-03T02:24:07.791112+08:00"
+      "source": "Weibo account 1831550987",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:22.266774+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
-      "source": "HOKA",
-      "status": "Success",
-      "itemsFound": 14,
-      "checkedAt": "2026-11-03T02:24:11.690394+08:00"
+      "source": "Weibo account 2356308454",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:25.708204+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
-      "source": "天美意官方微博",
-      "status": "Success",
-      "itemsFound": 30,
-      "checkedAt": "2026-11-03T02:24:15.790209+08:00"
+      "source": "Weibo account 8450716290",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:29.117488+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
-      "source": "CASETiFY",
-      "status": "Success",
-      "itemsFound": 19,
-      "checkedAt": "2026-11-03T02:24:19.638271+08:00"
+      "source": "Weibo account 8004004308",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:32.348281+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
-      "source": "FAD3AWAY",
-      "status": "Success",
-      "itemsFound": 5,
-      "checkedAt": "2026-11-03T02:24:23.047537+08:00"
+      "source": "Weibo account 7954477778",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:35.590353+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
-      "source": "雪中飞",
-      "status": "Success",
-      "itemsFound": 37,
-      "checkedAt": "2026-11-03T02:24:26.481253+08:00"
+      "source": "Weibo account 7431934486",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:38.829319+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "source": "Weibo account 6941933193",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:42.068082+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "source": "Weibo account 5919565877",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:45.311017+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "source": "Weibo account 9072975151",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:48.543925+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "source": "Weibo account 6609562381",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:51.779299+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "source": "Weibo account 5894691419",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:55.249299+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "source": "Weibo account 1882778030",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:21:58.491720+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "source": "Weibo account 7728002071",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:22:01.736644+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "source": "Weibo account 7854683575",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:22:05.174479+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "source": "Weibo account 2682624851",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-03T09:22:08.417846+08:00",
+      "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-03T02:24:29.866160+08:00"
+      "checkedAt": "2026-11-03T09:22:11.672770+08:00"
     },
     {
       "source": "侯明昊属于我们的巡演",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T02:24:32.171123+08:00"
+      "checkedAt": "2026-11-03T09:22:14.070124+08:00"
     },
     {
       "source": "侯明昊",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-03T02:24:49.470481+08:00"
+      "checkedAt": "2026-11-03T09:22:31.481257+08:00"
     }
   ],
   "posts": [
