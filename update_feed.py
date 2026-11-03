@@ -588,7 +588,7 @@ def add_translations(posts):
             post.pop("titleEnglish", None)
             post.pop("excerptEnglish", None)
 
-    weibo_posts = [post for post in posts if post.get("platform"] == "Weibo"]
+    weibo_posts = [post for post in posts if post.get("platform") == "Weibo"]
     
     def translation_priority(post):
         text = clean_text(f"{post.get('titleOriginal') or post.get('title', '')} {post.get('excerptOriginal') or post.get('excerpt', '')}")
