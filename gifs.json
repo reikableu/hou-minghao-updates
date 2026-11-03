@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-03T21:19:42+08:00",
-  "status": "GIF update: 0 new, 17 failed, 4 total items",
-  "total": 4,
+  "lastUpdated": "2026-11-03T21:54:06+08:00",
+  "status": "GIF update: 6 new, 19 failed, 10 total items",
+  "total": 10,
   "items": [
     {
       "id": "wb_live_5299667799376992_6",
@@ -17,19 +17,6 @@
       "collectedAt": "2026-11-03T19:50:41+08:00"
     },
     {
-      "id": "wb_live_5299463694584271_4",
-      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5299463694584271_4_0b4865bc2b1f.gif",
-      "remoteImage": "https://f.video.weibocdn.com/o0/lS9XCuC1lx08xHbVdZP201041201iAq70E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793707756&ssig=e79%2BogG68V&KID=unistore,video",
-      "sourceUrl": "https://m.weibo.cn/status/5299463694584271",
-      "platform": "Weibo",
-      "source": "Weibo (@Simba0803_侯明昊)",
-      "title": "GIF by @Simba0803_侯明昊: #侯明昊属于我们的巡回演唱会# 🎤陪你唱到宇宙都断电 南京场巡演21首4k直拍 @侯明昊 ▶️Fire & 开场舞 & 火力全开 / 友情提示/ Simon/第",
-      "date": "",
-      "origin": "Weibo Live Photo",
-      "imageHash": "0b4865bc2b1fdbe7a50833c783fb88fe6e150c37fa73eb2443c02601a9d0b947",
-      "collectedAt": "2026-11-03T19:24:44+08:00"
-    },
-    {
       "id": "wb_live_5361204006224195_0",
       "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5361204006224195_0_1d630986929c.gif",
       "remoteImage": "https://g.us.sinaimg.cn/o0/GHgbvpD2lx08C4Yf2bPa010412000kaA0E010.mp4?label=gif_mp4&template=902x720.28.0&Expires=1793707743&ssig=z3eJjzn85r&KID=unistore,video",
@@ -43,6 +30,58 @@
       "collectedAt": "2026-11-03T19:20:21+08:00"
     },
     {
+      "id": "wb_live_5360722414666104_0",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5360722414666104_0_4778415ac12f.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/G1k9Nnvslx08C2M7OXy001041202iYsl0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793716347&ssig=YUD0mSuVK3&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5360722414666104",
+      "platform": "Weibo",
+      "source": "Weibo (@Simba0803_侯明昊)",
+      "title": "GIF by @Simba0803_侯明昊: #侯明昊属于我们的巡回演唱会# 🎤陪你唱到宇宙都断电 郑州场巡演21首➕清唱彩蛋 4k直拍 @侯明昊 唯一/ Fire & 火力全开 / 若你的世界没有暖阳 /",
+      "date": "",
+      "origin": "Weibo Media",
+      "imageHash": "4778415ac12f3f94d5127791158b3dbcd2b3969f4e5be3ec3afbed4834856cc7",
+      "collectedAt": "2026-11-03T21:48:07+08:00"
+    },
+    {
+      "id": "wb_live_5360722414666104_2",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5360722414666104_2_48a9b764d51f.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/0B2ZkaHflx08C2Mi330A01041201TDEJ0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793716347&ssig=fq0fRPlKQo&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5360722414666104",
+      "platform": "Weibo",
+      "source": "Weibo (@Simba0803_侯明昊)",
+      "title": "GIF by @Simba0803_侯明昊: #侯明昊属于我们的巡回演唱会# 🎤陪你唱到宇宙都断电 郑州场巡演21首➕清唱彩蛋 4k直拍 @侯明昊 唯一/ Fire & 火力全开 / 若你的世界没有暖阳 /",
+      "date": "",
+      "origin": "Weibo Media",
+      "imageHash": "48a9b764d51f473cc3fb597e2ef2c14685be0131c3e64d56cb18304f959aa455",
+      "collectedAt": "2026-11-03T21:49:04+08:00"
+    },
+    {
+      "id": "wb_live_5299463694584271_7",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5299463694584271_7_83426d372211.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/zR6hFgK6lx08xHd5ZsNi01041202wjGM0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793716347&ssig=vNkHqcOAqS&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5299463694584271",
+      "platform": "Weibo",
+      "source": "Weibo (@Simba0803_侯明昊)",
+      "title": "GIF by @Simba0803_侯明昊: #侯明昊属于我们的巡回演唱会# 🎤陪你唱到宇宙都断电 南京场巡演21首4k直拍 @侯明昊 ▶️Fire & 开场舞 & 火力全开 / 友情提示/ Simon/第",
+      "date": "",
+      "origin": "Weibo Media",
+      "imageHash": "83426d372211cd5a4008bbc9894d912f356a5d899858796a8d979da48c6f6233",
+      "collectedAt": "2026-11-03T21:46:29+08:00"
+    },
+    {
+      "id": "wb_live_5360722414666104_5",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5360722414666104_5_238bdbbdcd8b.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/lob48z9nlx08C2NfxuQM01041202PMpk0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793716347&ssig=DIHCsfwiU8&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5360722414666104",
+      "platform": "Weibo",
+      "source": "Weibo (@Simba0803_侯明昊)",
+      "title": "GIF by @Simba0803_侯明昊: #侯明昊属于我们的巡回演唱会# 🎤陪你唱到宇宙都断电 郑州场巡演21首➕清唱彩蛋 4k直拍 @侯明昊 唯一/ Fire & 火力全开 / 若你的世界没有暖阳 /",
+      "date": "",
+      "origin": "Weibo Media",
+      "imageHash": "238bdbbdcd8be42e6894f055a3b680cce9227dcd7d23112decff28b8359669a2",
+      "collectedAt": "2026-11-03T21:51:37+08:00"
+    },
+    {
       "id": "wb_live_5360545244643330_0",
       "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5360545244643330_0_1f0e33ada9fb.gif",
       "remoteImage": "https://f.video.weibocdn.com/o0/pQTOU8eKlx08C2pQ6vKE010412026O3v0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793707734&ssig=d8VaN6EySu&KID=unistore,video",
@@ -54,6 +93,45 @@
       "origin": "Weibo Live Photo",
       "imageHash": "1f0e33ada9fb0ab7fa4e71a3f935170f6fa3ddd8892d7f54b8cf8cd3847bc324",
       "collectedAt": "2026-11-03T19:20:19+08:00"
+    },
+    {
+      "id": "wb_live_5299463694584271_5",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5299463694584271_5_b8373fe38c1c.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/Em0eGrwolx08xY9VN2L601041201LSHT0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793716347&ssig=bVwCcvsuEe&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5299463694584271",
+      "platform": "Weibo",
+      "source": "Weibo (@Simba0803_侯明昊)",
+      "title": "GIF by @Simba0803_侯明昊: #侯明昊属于我们的巡回演唱会# 🎤陪你唱到宇宙都断电 南京场巡演21首4k直拍 @侯明昊 ▶️Fire & 开场舞 & 火力全开 / 友情提示/ Simon/第",
+      "date": "",
+      "origin": "Weibo Media",
+      "imageHash": "b8373fe38c1c3ea49b62ee8de00e0af3f459f8dadaef8b3b2ec53ae564bd7273",
+      "collectedAt": "2026-11-03T21:44:37+08:00"
+    },
+    {
+      "id": "wb_live_5360722414666104_8",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5360722414666104_8_be11eab5fa25.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/tVhAtoS2lx08C2O2Biqs01041202PpLP0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793716347&ssig=SnFmDonSVg&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5360722414666104",
+      "platform": "Weibo",
+      "source": "Weibo (@Simba0803_侯明昊)",
+      "title": "GIF by @Simba0803_侯明昊: #侯明昊属于我们的巡回演唱会# 🎤陪你唱到宇宙都断电 郑州场巡演21首➕清唱彩蛋 4k直拍 @侯明昊 唯一/ Fire & 火力全开 / 若你的世界没有暖阳 /",
+      "date": "",
+      "origin": "Weibo Media",
+      "imageHash": "be11eab5fa25037d0351e6ddab07780f472c181ccb1bf88ea7217e94754611c0",
+      "collectedAt": "2026-11-03T21:54:05+08:00"
+    },
+    {
+      "id": "wb_live_5299463694584271_4",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5299463694584271_4_0b4865bc2b1f.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/lS9XCuC1lx08xHbVdZP201041201iAq70E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793707756&ssig=e79%2BogG68V&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5299463694584271",
+      "platform": "Weibo",
+      "source": "Weibo (@Simba0803_侯明昊)",
+      "title": "GIF by @Simba0803_侯明昊: #侯明昊属于我们的巡回演唱会# 🎤陪你唱到宇宙都断电 南京场巡演21首4k直拍 @侯明昊 ▶️Fire & 开场舞 & 火力全开 / 友情提示/ Simon/第",
+      "date": "",
+      "origin": "Weibo Live Photo",
+      "imageHash": "0b4865bc2b1fdbe7a50833c783fb88fe6e150c37fa73eb2443c02601a9d0b947",
+      "collectedAt": "2026-11-03T19:24:44+08:00"
     }
   ]
 }
