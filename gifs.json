@@ -1,6 +1,46 @@
 {
-  "lastUpdated": "2026-11-03T16:53:37+08:00",
-  "status": "Global Weibo GIF search updated: 0 downloaded, 69 failed, 0 total items",
-  "total": 0,
-  "items": []
+  "lastUpdated": "2026-11-03T19:24:45+08:00",
+  "status": "Weibo GIF update: 3 new, 13 failed, 3 total items",
+  "total": 3,
+  "items": [
+    {
+      "id": "wb_live_5361204006224195_0",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5361204006224195_0_1d630986929c.gif",
+      "remoteImage": "https://g.us.sinaimg.cn/o0/GHgbvpD2lx08C4Yf2bPa010412000kaA0E010.mp4?label=gif_mp4&template=902x720.28.0&Expires=1793707743&ssig=z3eJjzn85r&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5361204006224195",
+      "platform": "Weibo",
+      "source": "Weibo (@_Takeyouaway)",
+      "title": "GIF by @_Takeyouaway: 当小猕猴桃被侯明昊抓住以后",
+      "date": "",
+      "origin": "Weibo Live Photo",
+      "imageHash": "1d630986929c168e5e6517ef509a2bb10cd3a5ac23e00accd4d178b7c4c43660",
+      "collectedAt": "2026-11-03T19:20:21+08:00"
+    },
+    {
+      "id": "wb_live_5299463694584271_4",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5299463694584271_4_0b4865bc2b1f.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/lS9XCuC1lx08xHbVdZP201041201iAq70E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793707756&ssig=e79%2BogG68V&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5299463694584271",
+      "platform": "Weibo",
+      "source": "Weibo (@Simba0803_侯明昊)",
+      "title": "GIF by @Simba0803_侯明昊: #侯明昊属于我们的巡回演唱会# 🎤陪你唱到宇宙都断电 南京场巡演21首4k直拍 @侯明昊 ▶️Fire & 开场舞 & 火力全开 / 友情提示/ Simon/第",
+      "date": "",
+      "origin": "Weibo Live Photo",
+      "imageHash": "0b4865bc2b1fdbe7a50833c783fb88fe6e150c37fa73eb2443c02601a9d0b947",
+      "collectedAt": "2026-11-03T19:24:44+08:00"
+    },
+    {
+      "id": "wb_live_5360545244643330_0",
+      "image": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/gifs_media/wb_live_5360545244643330_0_1f0e33ada9fb.gif",
+      "remoteImage": "https://f.video.weibocdn.com/o0/pQTOU8eKlx08C2pQ6vKE010412026O3v0E010.mp4?label=mp4_720p&template=720x1280.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1793707734&ssig=d8VaN6EySu&KID=unistore,video",
+      "sourceUrl": "https://m.weibo.cn/status/5360545244643330",
+      "platform": "Weibo",
+      "source": "Weibo (@Everglow_侯明昊)",
+      "title": "GIF by @Everglow_侯明昊: - 𝟐𝟔𝟏𝟏𝟎𝟏 💧 @侯明昊 #侯明昊郑州演唱会# / #今日星拍放送#",
+      "date": "",
+      "origin": "Weibo Live Photo",
+      "imageHash": "1f0e33ada9fb0ab7fa4e71a3f935170f6fa3ddd8892d7f54b8cf8cd3847bc324",
+      "collectedAt": "2026-11-03T19:20:19+08:00"
+    }
+  ]
 }
