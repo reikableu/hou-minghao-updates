@@ -657,7 +657,7 @@ def main():
     slots = max(0, WEIBO_POST_LIMIT - len(existing_today_keys))
     
     new_weibo = [p for p in collected if p.get("platform") == "Weibo"]
-    other_new = [p for p in collected if p.get("platform"] != "Weibo"]
+    other_new = [p for p in collected if p.get("platform") != "Weibo"]
     
     accepted_weibo = [p for p in sorted(deduplicate_posts(new_weibo), key=post_timestamp, reverse=True) if duplicate_key(p) not in existing_today_keys][:slots]
     collected = accepted_weibo + other_new
