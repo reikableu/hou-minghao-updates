@@ -68,9 +68,9 @@ jobs:
       # 5. RUN WEIBO GALLERY COLLECTOR
       # ======================================================
 
-      - name: Build Weibo GIF gallery
+      - name: Build Weibo Photo gallery
         run: |
-          echo "Starting Weibo GIF collector..."
+          echo "Starting Weibo Photo collector..."
           python -u update_gallery.py
 
 
