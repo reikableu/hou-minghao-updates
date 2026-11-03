@@ -5,7 +5,7 @@ on:
 
   schedule:
     # Every 4 hours. GitHub Actions cron uses UTC.
-    - cron: "17 */4 * * *"
+    - cron: "38 */1 * * *"
 
 permissions:
   contents: write
