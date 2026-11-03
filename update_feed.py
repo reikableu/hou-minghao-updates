@@ -597,8 +597,10 @@ def parse_xhs_display_date(value):
 def collect_xhs_profile(source_config):
     cookies = load_xhs_cookies()
     if not cookies:
+        print("::warning::XHS_COOKIES_JSON is empty or missing, so XHS collection was skipped.")
         return []
-    
+    print(f"[XHS] Loaded {len(cookies)} cookies. Opening {source_config['name']}...")
+
     from playwright.sync_api import sync_playwright
     posts = []
     try:
@@ -612,7 +614,9 @@ def collect_xhs_profile(source_config):
             response = page.goto(source_config["url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
             page.wait_for_timeout(6000)
             status = response.status if response else 0
+            print(f"[XHS] Profile page HTTP {status}, final URL: {page.url[:120]}")
             if status >= 400:
+                print(f"::warning::XHS profile returned HTTP {status}; the xsec_token in the URL may have expired.")
                 browser.close()
                 return []
 
@@ -662,12 +666,23 @@ def collect_xhs_profile(source_config):
                 if stagnant >= 3:
                     break
 
+            try:
+                page_title = page.title()
+                body_preview = clean_text(page.locator("body").inner_text(timeout=3000))[:200]
+            except Exception:
+                page_title, body_preview = "", ""
+            print(f"[XHS] Page title: {page_title!r}; candidates found: {len(candidates)}")
+            if not candidates:
+                print(f"::warning::XHS found 0 posts. Page text starts with: {body_preview!r}")
+                print("[XHS] If this mentions login, verification or captcha, the cookies have expired or the IP is blocked.")
+
             for candidate in candidates[:XHS_POST_LIMIT_PER_PROFILE]:
                 note_page = context.new_page()
                 try:
                     note_response = note_page.goto(candidate["original_url"], wait_until="domcontentloaded", timeout=XHS_PAGE_TIMEOUT_MS)
                     note_page.wait_for_timeout(2000)
                     if note_response and note_response.status >= 400:
+                        print(f"[XHS] Note HTTP {note_response.status}: {candidate['original_url'][:100]}")
                         continue
                     body = clean_text(note_page.locator("body").inner_text(timeout=4000))
                     title = candidate["card_text"]
@@ -716,10 +731,11 @@ def collect_xhs_profile(source_config):
                         "verified": True, 
                         "collectionMethod": "GitHub Playwright Scraper"
                     })
-                except Exception:
-                    pass
+                except Exception as note_error:
+                    print(f"[XHS] Note failed: {type(note_error).__name__}: {str(note_error)[:150]}")
                 finally:
                     note_page.close()
+            print(f"[XHS] Collected {len(posts)} posts from {profile_name}.")
             browser.close()
     except Exception as error:
         print("XHS profile collection execution failed:", error)
