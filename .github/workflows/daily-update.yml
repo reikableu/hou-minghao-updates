@@ -74,10 +74,20 @@ jobs:
 
 
       # ======================================================
-      # 6. SHOW GALLERY RESULTS
+      # 5.5. RUN WEIBO GIF COLLECTOR
       # ======================================================
 
-      - name: Show gallery output
+      - name: Build Weibo GIF gallery
+        run: |
+          echo "Starting Weibo GIF collector..."
+          python update_gifs.py
+
+
+      # ======================================================
+      # 6. SHOW GALLERY & GIF RESULTS
+      # ======================================================
+
+      - name: Show gallery and GIF output
         if: always()
         run: |
           echo "========================================"
@@ -85,36 +95,35 @@ jobs:
           echo "========================================"
 
           if [ -d "gallery_media" ]; then
-
-            echo "gallery_media exists."
-
-            echo ""
-            echo "First 50 files:"
-            find gallery_media -maxdepth 1 -type f -printf '%f\n' | head -50
-
-            echo ""
-            echo "Total gallery files:"
-            find gallery_media -maxdepth 1 -type f | wc -l
-
+            echo "gallery_media exists. Total files:"
+            find gallery_media -maxdepth 1 -type f ! -name ".gitkeep" | wc -l
           else
-
             echo "gallery_media does not exist."
-
           fi
 
           echo ""
           echo "========================================"
-          echo "Gallery JSON information"
+          echo "GIFs media directory"
+          echo "========================================"
+
+          if [ -d "gifs_media" ]; then
+            echo "gifs_media exists. Total files:"
+            find gifs_media -maxdepth 1 -type f ! -name ".gitkeep" | wc -l
+          else
+            echo "gifs_media does not exist."
+          fi
+
+          echo ""
+          echo "========================================"
+          echo "JSON information"
           echo "========================================"
 
           if [ -f "gallery.json" ]; then
+            python -c "import json; d=json.load(open('gallery.json', encoding='utf-8')); print('Gallery Status:', d.get('status')); print('Total Photos:', d.get('total'))"
+          fi
 
-            python -c "import json; d=json.load(open('gallery.json', encoding='utf-8')); print('Status:', d.get('status')); print('Total:', d.get('total')); print('Last updated:', d.get('lastUpdated'))"
-
-          else
-
-            echo "gallery.json does not exist."
-
+          if [ -f "gifs.json" ]; then
+            python -c "import json; d=json.load(open('gifs.json', encoding='utf-8')); print('GIFs Status:', d.get('status')); print('Total GIFs:', d.get('total'))"
           fi
 
 
@@ -129,6 +138,9 @@ jobs:
 
           echo "Validating gallery.json..."
           python -m json.tool gallery.json > /dev/null
+
+          echo "Validating gifs.json..."
+          python -m json.tool gifs.json > /dev/null
 
           echo "JSON validation passed."
 
@@ -158,8 +170,10 @@ jobs:
           git add -A -- \
             posts.json \
             gallery.json \
+            gifs.json \
             media \
             gallery_media \
+            gifs_media \
             2>/dev/null || git add -A
 
           echo "========================================"
@@ -170,11 +184,11 @@ jobs:
 
           if git diff --cached --quiet; then
 
-            echo "No feed or gallery changes detected."
+            echo "No feed, gallery, or GIF changes detected."
 
           else
 
-            git commit -m "Update Hou Minghao feed and Weibo gallery"
+            git commit -m "Update Hou Minghao feed, gallery, and GIFs"
 
             echo "Checking for remote changes..."
             git pull --rebase origin main
@@ -197,14 +211,17 @@ jobs:
           echo "========================================"
 
           echo ""
-          echo "Repository status:"
-          git status --short || true
-
-          echo ""
-          echo "Gallery media file count:"
-
+          echo "Photos media file count:"
           if [ -d "gallery_media" ]; then
             find gallery_media -maxdepth 1 -type f ! -name ".gitkeep" | wc -l
+          else
+            echo "0"
+          fi
+
+          echo ""
+          echo "GIFs media file count:"
+          if [ -d "gifs_media" ]; then
+            find gifs_media -maxdepth 1 -type f ! -name ".gitkeep" | wc -l
           else
             echo "0"
           fi
