@@ -2,12 +2,17 @@ import asyncio
 import hashlib
 import html
 import json
+import os
 import random
 import re
+import shutil
+import subprocess
+import tempfile
 import urllib.parse
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
+
 from playwright.async_api import async_playwright
 
 # ============================================================
@@ -27,21 +32,47 @@ RAW_GIFS_BASE = (
 
 SINGAPORE = ZoneInfo("Asia/Singapore")
 
-# Keywords used to search the entire Weibo platform globally
-SEARCH_KEYWORDS = [
-    "侯明昊 gif",
-    "侯明昊动图",
-    "Neo Hou gif",
+# Keyword search is login-gated on Weibo, so it is OFF by default.
+# Leave this empty to run with no cookie/secret (profiles only).
+# If you later add a WEIBO_COOKIE secret, you can list keywords here, e.g.
+# SEARCH_KEYWORDS = ["侯明昊 gif", "侯明昊动图"]
+SEARCH_KEYWORDS = []
+
+# Optional: Weibo UIDs of fan / official accounts that post lots of Hou Minghao
+# content. Profile timelines are often readable without login.
+# Example: TARGET_UIDS = ["1234567890", "0987654321"]
+TARGET_UIDS = [
+    "7971490580",
+    "7987922088",
+    "8290189779",
+    "6362579474",
+    "6242319711",
+    "7970616874",
+    "1747335284",
+    "8001514587",
+    "2431320290",
+    "8004004308",
+    "8450716290",
+    "2356308454",
+    "5763552342",
+    "1831550987",
 ]
 
+# Login cookie, stored as a GitHub secret named WEIBO_COOKIE (e.g. "SUB=xxxx")
+WEIBO_COOKIE = os.environ.get("WEIBO_COOKIE", "").strip()
+
 MAX_GIF_ITEMS = 150
-MAX_GIF_SIZE_BYTES = 20 * 1024 * 1024  # 20MB safety limit for GIFs
+MAX_GIF_SIZE_BYTES = 20 * 1024 * 1024    # 20MB limit for final GIFs
+MAX_VIDEO_SIZE_BYTES = 40 * 1024 * 1024  # 40MB limit for live photo videos
+LIVE_PHOTO_MAX_SECONDS = 6               # trim live photo videos to this length
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/126.0.0.0 Safari/537.36"
 )
+
+FFMPEG_AVAILABLE = shutil.which("ffmpeg") is not None
 
 # ============================================================
 # HELPERS
@@ -50,10 +81,12 @@ USER_AGENT = (
 def now_iso():
     return datetime.now(SINGAPORE).isoformat(timespec="seconds")
 
+
 def prepare_directories():
     GIFS_MEDIA_DIR.mkdir(parents=True, exist_ok=True)
     if not GITKEEP_FILE.exists():
         GITKEEP_FILE.write_text("Keeps gifs_media in Git.\n", encoding="utf-8")
+
 
 def clean_text(value):
     if not value:
@@ -61,6 +94,14 @@ def clean_text(value):
     value = html.unescape(str(value))
     value = re.sub(r"<[^>]+>", " ", value)
     return re.sub(r"\s+", " ", value).strip()
+
+
+def normalize_url(url):
+    url = str(url or "").strip()
+    if url.startswith("//"):
+        url = "https:" + url
+    return url
+
 
 def load_existing_gifs():
     if not GIFS_FILE.exists():
@@ -72,100 +113,259 @@ def load_existing_gifs():
     except Exception:
         return []
 
+
+def build_cookies():
+    """Turn 'A=1; B=2' into Playwright cookie dicts for the Weibo domains."""
+    cookies = []
+    if not WEIBO_COOKIE:
+        return cookies
+    for part in WEIBO_COOKIE.split(";"):
+        if "=" not in part:
+            continue
+        name, value = part.split("=", 1)
+        name, value = name.strip(), value.strip()
+        if not name:
+            continue
+        for domain in (".weibo.cn", ".weibo.com"):
+            cookies.append({"name": name, "value": value, "domain": domain, "path": "/"})
+    return cookies
+
+
+def host_variants(url):
+    """Sina images can be served from wx1-wx4; try them all."""
+    parsed = urllib.parse.urlsplit(url)
+    host = parsed.netloc.lower()
+    variants = [url]
+    if re.fullmatch(r"wx[1-4]\.sinaimg\.cn", host):
+        for n in range(1, 5):
+            alt_host = f"wx{n}.sinaimg.cn"
+            if alt_host != host:
+                variants.append(urllib.parse.urlunsplit(
+                    (parsed.scheme or "https", alt_host, parsed.path, parsed.query, parsed.fragment)
+                ))
+    return variants
+
+
+async def download_bytes(context, url, post_url, size_limit):
+    """Download a file, trying alternate image hosts and referers."""
+    referers = [post_url or "https://m.weibo.cn/", "https://weibo.com/", "https://m.weibo.cn/"]
+    last_status = None
+
+    for candidate_url in host_variants(url):
+        for referer in referers:
+            try:
+                response = await context.request.get(
+                    candidate_url,
+                    headers={
+                        "User-Agent": USER_AGENT,
+                        "Referer": referer,
+                        "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+                        "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8",
+                    },
+                    timeout=45000,
+                    fail_on_status_code=False,
+                )
+                last_status = response.status
+                if response.status == 200:
+                    body = await response.body()
+                    if body and len(body) <= size_limit:
+                        return body
+                    print(f"  Empty or oversized file ({len(body):,} bytes).")
+                    return None
+            except Exception as error:
+                last_status = type(error).__name__
+
+    print(f"  All download attempts failed (last status: {last_status}).")
+    return None
+
+
+def convert_video_to_gif(video_bytes):
+    """Convert a short video (mov/mp4) to GIF bytes using ffmpeg."""
+    # Try progressively smaller settings until the GIF fits the size limit.
+    settings = [(480, 12), (360, 10), (320, 8)]
+    last_error = None
+
+    with tempfile.TemporaryDirectory() as tmp:
+        src = os.path.join(tmp, "input_video")
+        dst = os.path.join(tmp, "output.gif")
+        with open(src, "wb") as f:
+            f.write(video_bytes)
+
+        for width, fps in settings:
+            vf = (
+                f"fps={fps},scale={width}:-1:flags=lanczos,"
+                f"split[a][b];[a]palettegen[p];[b][p]paletteuse"
+            )
+            try:
+                subprocess.run(
+                    [
+                        "ffmpeg", "-y", "-i", src,
+                        "-t", str(LIVE_PHOTO_MAX_SECONDS),
+                        "-vf", vf, "-loop", "0", dst,
+                    ],
+                    check=True,
+                    capture_output=True,
+                    timeout=120,
+                )
+                with open(dst, "rb") as f:
+                    data = f.read()
+                if data and len(data) <= MAX_GIF_SIZE_BYTES:
+                    return data
+                last_error = "GIF too large"
+            except Exception as error:
+                last_error = str(error)
+
+    raise RuntimeError(f"ffmpeg conversion failed: {last_error}")
+
+
 # ============================================================
-# GLOBAL WEIBO KEYWORD SEARCH FOR GIFS
+# WEIBO API FETCHING + PARSING
 # ============================================================
 
-async def fetch_search_candidates(page, keyword, max_pages=3):
+def extract_candidates_from_cards(cards, stats, debug_state):
+    """Pull GIF and live photo candidates out of a list of Weibo cards."""
     candidates = []
-    encoded_keyword = urllib.parse.quote(keyword)
-    
+
+    for card in cards:
+        if not isinstance(card, dict):
+            continue
+
+        mblogs = []
+        if isinstance(card.get("mblog"), dict):
+            mblogs.append(card["mblog"])
+        elif isinstance(card.get("card_group"), list):
+            for sub_card in card["card_group"]:
+                if isinstance(sub_card, dict) and isinstance(sub_card.get("mblog"), dict):
+                    mblogs.append(sub_card["mblog"])
+
+        for mblog in mblogs:
+            stats["posts"] += 1
+            post_id = str(mblog.get("id") or mblog.get("mid") or "").strip()
+            if not post_id:
+                continue
+
+            user = mblog.get("user") or {}
+            user_name = user.get("screen_name") or "Weibo User"
+            raw_text = clean_text(mblog.get("raw_text") or mblog.get("text") or "")
+            title = f"GIF by @{user_name}: {raw_text[:80]}" if raw_text else f"GIF by @{user_name}"
+            post_url = f"https://m.weibo.cn/status/{post_id}"
+
+            pics = mblog.get("pics") or []
+            for pic_idx, picture in enumerate(pics):
+                if not isinstance(picture, dict):
+                    continue
+                stats["pics"] += 1
+
+                # ---- Live photo: has a short video attached ----
+                video_url = normalize_url(picture.get("videoSrc"))
+                if picture.get("type") == "livephoto" or video_url:
+                    if not debug_state["printed_live_keys"]:
+                        print(f"[debug] Live photo keys: {list(picture.keys())}")
+                        debug_state["printed_live_keys"] = True
+                    if video_url:
+                        stats["live"] += 1
+                        candidates.append({
+                            "photo_id": f"wb_live_{post_id}_{pic_idx}",
+                            "post_url": post_url,
+                            "image_url": video_url,
+                            "title": title,
+                            "author": user_name,
+                            "is_video": True,
+                        })
+                        continue
+
+                # ---- Regular GIF ----
+                large_pic = picture.get("large") or {}
+                image_url = normalize_url(large_pic.get("url") or picture.get("url"))
+                if not image_url:
+                    continue
+
+                if ".gif" in image_url.lower() or picture.get("type") == "gif":
+                    stats["gifs"] += 1
+                    candidates.append({
+                        "photo_id": f"wb_gif_{post_id}_{pic_idx}",
+                        "post_url": post_url,
+                        "image_url": image_url,
+                        "title": title,
+                        "author": user_name,
+                        "is_video": False,
+                    })
+
+    return candidates
+
+
+async def fetch_api_pages(page, label, url_for_page, max_pages=3):
+    """Fetch several pages of a Weibo container API and collect candidates."""
+    candidates = []
+    stats = {"posts": 0, "pics": 0, "gifs": 0, "live": 0}
+    debug_state = {"printed_live_keys": False}
+
     for page_num in range(1, max_pages + 1):
-        target_url = (
-            f"https://m.weibo.cn/api/container/getIndex"
-            f"?containerid=100103type%3D1%26q%3D{encoded_keyword}"
-            f"&page_type=searchall"
-            f"&page={page_num}"
-        )
-        
-        print(f"Searching Weibo for '{keyword}' on page {page_num}.")
-        
+        target_url = url_for_page(page_num)
+        print(f"Fetching {label}, page {page_num}.")
+
         try:
             response = await page.goto(target_url, wait_until="domcontentloaded", timeout=30000)
-            if not response or response.status != 200:
+            if not response:
+                print(f"  No response for {label}. Stopping.")
+                break
+            if response.status != 200:
+                print(f"  HTTP {response.status} for {label}. Stopping.")
                 break
 
+            body_text = await response.text()
             try:
-                body_text = await response.text()
                 payload = json.loads(body_text)
             except Exception:
+                print(f"  Response was not JSON (login wall or block?). Start of body: {body_text[:200]!r}")
                 break
 
             if payload.get("ok") not in (1, "1", True):
-                print(f"Reached end of results for keyword '{keyword}' on page {page_num}.")
+                print(f"  API returned ok != 1 for {label}: {str(payload)[:200]}")
                 break
 
-            data = payload.get("data") or {}
-            cards = data.get("cards") or []
-            
+            cards = (payload.get("data") or {}).get("cards") or []
             if not cards:
+                print(f"  No more cards for {label}.")
                 break
 
-            posts_found = 0
-            for card in cards:
-                if not isinstance(card, dict):
-                    continue
-                
-                mblogs = []
-                if "mblog" in card and isinstance(card["mblog"], dict):
-                    mblogs.append(card["mblog"])
-                elif "card_group" in card and isinstance(card["card_group"], list):
-                    for sub_card in card["card_group"]:
-                        if isinstance(sub_card, dict) and "mblog" in sub_card:
-                            mblogs.append(sub_card["mblog"])
-
-                for mblog in mblogs:
-                    posts_found += 1
-                    post_id = str(mblog.get("id") or mblog.get("mid") or "").strip()
-                    if not post_id:
-                        continue
-
-                    user = mblog.get("user") or {}
-                    user_name = user.get("screen_name") or "Weibo User"
-                    raw_text = clean_text(mblog.get("raw_text") or mblog.get("text") or "")
-                    title = f"GIF by @{user_name}: {raw_text[:80]}" if raw_text else f"GIF by @{user_name}"
-
-                    pics = mblog.get("pics") or []
-                    for pic_idx, picture in enumerate(pics):
-                        if not isinstance(picture, dict):
-                            continue
-                        
-                        large_pic = picture.get("large") or {}
-                        image_url = large_pic.get("url") or picture.get("url") or ""
-                        image_url = str(image_url).strip()
-                        
-                        if not image_url:
-                            continue
-                        if image_url.startswith("//"):
-                            image_url = "https:" + image_url
-
-                        if ".gif" in image_url.lower() or picture.get("type") == "gif":
-                            candidates.append({
-                                "photo_id": f"wb_search_gif_{post_id}_{pic_idx}",
-                                "post_url": f"https://m.weibo.cn/status/{post_id}",
-                                "image_url": image_url,
-                                "title": title,
-                                "author": user_name,
-                            })
-
-            print(f"Found {posts_found} posts on page {page_num}. Total candidates so far: {len(candidates)}")
+            candidates.extend(extract_candidates_from_cards(cards, stats, debug_state))
             await asyncio.sleep(1.5)
 
         except Exception as error:
-            print(f"Error searching keyword '{keyword}': {error}")
+            print(f"  Error fetching {label}: {error}")
             break
 
+    print(
+        f"  {label}: {stats['posts']} posts, {stats['pics']} pics, "
+        f"{stats['gifs']} GIFs, {stats['live']} live photos."
+    )
     return candidates
+
+
+async def fetch_search_candidates(page, keyword, max_pages=3):
+    encoded_keyword = urllib.parse.quote(keyword)
+
+    def url_for_page(n):
+        return (
+            "https://m.weibo.cn/api/container/getIndex"
+            f"?containerid=100103type%3D1%26q%3D{encoded_keyword}"
+            "&page_type=searchall"
+            f"&page={n}"
+        )
+
+    return await fetch_api_pages(page, f"search '{keyword}'", url_for_page, max_pages)
+
+
+async def fetch_profile_candidates(page, uid, max_pages=3):
+    def url_for_page(n):
+        return (
+            "https://m.weibo.cn/api/container/getIndex"
+            f"?type=uid&value={uid}&containerid=107603{uid}&page={n}"
+        )
+
+    return await fetch_api_pages(page, f"profile {uid}", url_for_page, max_pages)
+
 
 # ============================================================
 # MAIN SCRIPT EXECUTION
@@ -174,36 +374,51 @@ async def fetch_search_candidates(page, keyword, max_pages=3):
 async def main_async():
     prepare_directories()
     existing_items = load_existing_gifs()
-    
+
     existing_ids = {str(item.get("id")) for item in existing_items if item.get("id")}
     existing_hashes = {str(item.get("imageHash")) for item in existing_items if item.get("imageHash")}
+
+    print(f"Cookie provided: {'yes' if WEIBO_COOKIE else 'no (optional, profiles work without it)'}")
+    print(f"ffmpeg available: {'yes' if FFMPEG_AVAILABLE else 'NO (live photos will be skipped)'}")
+    print(f"Profiles to scrape: {len(TARGET_UIDS)}")
 
     all_candidates = []
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             headless=True,
-            args=["--disable-blink-features=AutomationControlled"]
+            args=["--disable-blink-features=AutomationControlled"],
         )
         context = await browser.new_context(
             user_agent=USER_AGENT,
-            viewport={"width": 1365, "height": 768}
+            locale="en-US",
+            viewport={"width": 1365, "height": 768},
+            extra_http_headers={"Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8"},
         )
+
+        cookies = build_cookies()
+        if cookies:
+            await context.add_cookies(cookies)
+
         page = await context.new_page()
 
         try:
             await page.goto("https://m.weibo.cn/", wait_until="domcontentloaded", timeout=15000)
             await asyncio.sleep(2)
-        except Exception:
-            pass
+        except Exception as error:
+            print(f"Warm-up visit to m.weibo.cn failed: {error}")
 
-        for keyword in SEARCH_KEYWORDS:
-            candidates = await fetch_search_candidates(page, keyword, max_pages=3)
-            all_candidates.extend(candidates)
+        # Profiles first (usually more reliable than search)
+        for uid in TARGET_UIDS:
+            all_candidates.extend(await fetch_profile_candidates(page, uid, max_pages=3))
             await asyncio.sleep(2)
 
-        print(f"\nTotal unique candidates collected from global search: {len(all_candidates)}")
-        
+        # Then keyword search
+        for keyword in SEARCH_KEYWORDS:
+            all_candidates.extend(await fetch_search_candidates(page, keyword, max_pages=3))
+            await asyncio.sleep(2)
+
+        # Deduplicate candidates
         unique_candidates = []
         seen_candidate_ids = set()
         seen_candidate_urls = set()
@@ -214,6 +429,15 @@ async def main_async():
             seen_candidate_urls.add(cand["image_url"])
             unique_candidates.append(cand)
 
+        print(f"\nTotal unique candidates collected: {len(unique_candidates)}")
+
+        if not unique_candidates:
+            await browser.close()
+            raise SystemExit(
+                "No candidates found. Weibo likely blocked the requests or requires login. "
+                "Check the log lines above. If profiles are blocked, a WEIBO_COOKIE secret may help."
+            )
+
         new_items = []
         downloaded_hashes = set()
         failed_downloads = 0
@@ -223,22 +447,33 @@ async def main_async():
                 print(f"Skipping {item['photo_id']} because it is already in gifs.json.")
                 continue
 
+            is_video = item.get("is_video", False)
+            if is_video and not FFMPEG_AVAILABLE:
+                print(f"Skipping {item['photo_id']}: ffmpeg not installed.")
+                failed_downloads += 1
+                continue
+
             try:
-                response = await context.request.get(
-                    item["image_url"],
-                    headers={"Referer": "https://m.weibo.cn/"},
-                    timeout=30000
+                size_limit = MAX_VIDEO_SIZE_BYTES if is_video else MAX_GIF_SIZE_BYTES
+                content = await download_bytes(
+                    context, item["image_url"], item["post_url"], size_limit
                 )
-                if response.status != 200:
+                if not content:
+                    print(f"Download failed for {item['photo_id']}.")
                     failed_downloads += 1
                     continue
-                
-                content = await response.body()
-                if not content or len(content) > MAX_GIF_SIZE_BYTES:
-                    failed_downloads += 1
-                    continue
-                
+
+                # Convert live photo video -> GIF
+                if is_video:
+                    try:
+                        content = await asyncio.to_thread(convert_video_to_gif, content)
+                    except Exception as error:
+                        print(f"Conversion failed for {item['photo_id']}: {error}")
+                        failed_downloads += 1
+                        continue
+
                 if not (content.startswith(b"GIF87a") or content.startswith(b"GIF89a")):
+                    print(f"{item['photo_id']} is not a valid GIF. Skipping.")
                     failed_downloads += 1
                     continue
 
@@ -258,14 +493,14 @@ async def main_async():
                     "remoteImage": item["image_url"],
                     "sourceUrl": item["post_url"],
                     "platform": "Weibo",
-                    "source": f"Weibo Search (@{item['author']})",
+                    "source": f"Weibo (@{item['author']})",
                     "title": item["title"],
                     "date": "",
-                    "origin": "Weibo Global Search",
+                    "origin": "Weibo Live Photo" if is_video else "Weibo GIF",
                     "imageHash": content_hash,
                     "collectedAt": now_iso(),
                 })
-                print(f"Successfully downloaded GIF: {filename}")
+                print(f"Saved: {filename}{' (converted from live photo)' if is_video else ''}")
 
             except Exception as error:
                 failed_downloads += 1
@@ -281,18 +516,23 @@ async def main_async():
 
     output = {
         "lastUpdated": now_iso(),
-        "status": f"Global Weibo GIF search updated: {len(new_items)} downloaded, {failed_downloads} failed, {len(final_items)} total items",
+        "status": (
+            f"Weibo GIF update: {len(new_items)} new, "
+            f"{failed_downloads} failed, {len(final_items)} total items"
+        ),
         "total": len(final_items),
         "items": final_items,
     }
-    
+
     tmp = GIFS_FILE.with_suffix(".json.tmp")
     tmp.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp.replace(GIFS_FILE)
-    print(f"\nGIF update process complete. Total items in gifs.json: {len(final_items)}")
+    print(f"\nUpdate complete. {len(new_items)} new, {len(final_items)} total items in gifs.json.")
+
 
 def main():
     asyncio.run(main_async())
+
 
 if __name__ == "__main__":
     main()
