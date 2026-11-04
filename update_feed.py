@@ -47,6 +47,17 @@ WEIBO_ACCOUNT_IDS = [
     "6609562381", "5894691419", "1882778030", "7728002071", "7854683575", "2682624851",
 ]
 
+# Only keep posts from non-official Weibo accounts if they mention one of these.
+# Matching is case-insensitive and also checks reposted text and hashtags.
+HOU_KEYWORDS = ["侯明昊", "Hou Minghao", "HouMinghao", "Hou Ming Hao", "侯明昊工作室"]
+FILTER_OFFICIAL_ACCOUNTS = False  # True = also filter the official accounts
+
+
+def mentions_hou(*texts):
+    blob = " ".join(t for t in texts if t).lower()
+    return any(k.lower() in blob for k in HOU_KEYWORDS)
+
+
 SOURCES = [
     {
         "name": f"Weibo account {account_id}",
@@ -425,6 +436,7 @@ def collect_sina_api_account(source_config):
         
     cards = ((payload.get("data") or {}).get("cards")) or []
     collected = []
+    skipped = 0
     
     display_name = f"Weibo @{uid}"
     for card in cards:
@@ -457,6 +469,23 @@ def collect_sina_api_account(source_config):
             if img_url and img_url not in image_urls:
                 image_urls.append(img_url)
                 
+        # Filter: keep only posts that mention Hou Minghao (checks repost + hashtags too)
+        if FILTER_OFFICIAL_ACCOUNTS or not source_config.get("official"):
+            retweet = mblog.get("retweeted_status") or {}
+            page_info = mblog.get("page_info") or {}
+            topics = " ".join(
+                str(t.get("topic_title") or "") for t in (mblog.get("topic_struct") or []) if isinstance(t, dict)
+            )
+            if not mentions_hou(
+                raw_text,
+                clean_text(mblog.get("text") or ""),
+                clean_text(retweet.get("raw_text") or retweet.get("text") or ""),
+                str(page_info.get("title") or ""),
+                topics,
+            ):
+                skipped += 1
+                continue
+
         cleaned_content = clean_weibo_content(raw_text)
         title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", cleaned_content), 120)
         post_url = f"https://m.weibo.cn/status/{post_id}"
@@ -478,6 +507,8 @@ def collect_sina_api_account(source_config):
             "verified": True,
             "collectionMethod": "Weibo API",
         })
+    if skipped:
+        print(f"  {display_name}: skipped {skipped} posts not mentioning Hou Minghao, kept {len(collected)}")
     return collected
 
 
