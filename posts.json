@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-04T03:49:30+08:00",
+  "lastUpdated": "2026-11-04T09:39:38+08:00",
   "status": "Completed: 1 sources successful, 16 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -15,122 +15,156 @@
       "source": "Weibo account 5763552342",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:48:31.279921+08:00",
+      "checkedAt": "2026-11-04T09:38:38.305549+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 1831550987",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:48:36.332668+08:00",
+      "checkedAt": "2026-11-04T09:38:42.950605+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 2356308454",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:48:40.044564+08:00",
+      "checkedAt": "2026-11-04T09:38:46.592032+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 8450716290",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:48:43.729785+08:00",
+      "checkedAt": "2026-11-04T09:38:50.135865+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 8004004308",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:48:47.140268+08:00",
+      "checkedAt": "2026-11-04T09:38:53.723058+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7954477778",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:48:50.572883+08:00",
+      "checkedAt": "2026-11-04T09:38:57.243280+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7431934486",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:48:53.992265+08:00",
+      "checkedAt": "2026-11-04T09:39:00.764035+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 6941933193",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:48:57.442037+08:00",
+      "checkedAt": "2026-11-04T09:39:04.277831+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 5919565877",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:49:00.880522+08:00",
+      "checkedAt": "2026-11-04T09:39:07.778403+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 9072975151",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:49:04.565299+08:00",
+      "checkedAt": "2026-11-04T09:39:11.290926+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 6609562381",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:49:07.994473+08:00",
+      "checkedAt": "2026-11-04T09:39:14.828938+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 5894691419",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:49:11.409858+08:00",
+      "checkedAt": "2026-11-04T09:39:18.182182+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 1882778030",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:49:14.834303+08:00",
+      "checkedAt": "2026-11-04T09:39:21.713433+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7728002071",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:49:18.290942+08:00",
+      "checkedAt": "2026-11-04T09:39:25.042622+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 7854683575",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:49:21.708896+08:00",
+      "checkedAt": "2026-11-04T09:39:28.351777+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Weibo account 2682624851",
       "status": "Failed",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T03:49:25.128619+08:00",
+      "checkedAt": "2026-11-04T09:39:31.680073+08:00",
       "message": "Expecting value: line 1 column 1 (char 0)"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-04T03:49:28.566303+08:00"
+      "checkedAt": "2026-11-04T09:39:35.251505+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "83aad5d18e0af11f91a1",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: RT @zhaozhao__mumu: 폰에 코박을뻔🫪🫪 내손에좀 올려놔봐봐아.. #侯明昊 #후명호 #houminghao",
+      "excerpt": "RT @zhaozhao__mumu: 폰에 코박을뻔🫪🫪 내손에좀 올려놔봐봐아.. #侯明昊 #후명호 #houminghao — @PopMinghao Nov 3, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/06fd5919c8b8e7443882e8e4.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-04T04:11:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2117711250092335120",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "a57b0ccc51912984dcbf",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: RT @omaimah837: His soo handsome 😍 😋 #HouMinghao #houminghao",
+      "excerpt": "RT @omaimah837: His soo handsome 😍 😋 #HouMinghao #houminghao — @PopMinghao Nov 3, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4378d054c376a84115cbb781.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-04T04:11:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2117711191506309449",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "0676d5864a0c84ff9f91",
       "platform": "X",
@@ -3362,44 +3396,6 @@
       "excerptOriginal": "侯明昊工作室 2026-10-26 22:26 山河记得他们来过。#纪念红军长征胜利90周年主题长卷#//@侯明昊:#纪念红军长征胜利90周年主题长卷# 有些路是走出来的，不是说出来的。他们走过的万水千山，今天都成了烟火人间。铭记，就是最好的致敬。#这幅长卷送给每一位正在赶路的人# 一起在新的长征路上阔步前行！ 【#纪念红军长征胜利90周年主题长卷#｜万水千山】90多年前，红军用脚步作笔，把万水千山写成了通往未来的史诗。今天，我们每个人也有自己的那座山、那条河。#这幅长卷送给每一位正在赶路的人#，一起在新的长征路上阔步前行！ ​",
       "titleEnglish": "2026-10-26 22:26 The mountains and rivers remember that they came. # Theme to commemorate the 90th anniversary of the victory of the Red Army Long March Long Scroll #//@ Hou Minghao: # Theme to commemorate the 90th anniversary of the victory of the Red Army Long March Long Scroll # Some roads have come out, not spoken. The thousands of mountains they walked through have all become fireworks worlds today. Remember, it's the best tribute. # This...",
       "excerptEnglish": "Hou Minghao Studio 2026-10-26 22:26 The mountains and rivers remembered that they had come. # Theme to commemorate the 90th anniversary of the victory of the Red Army Long March Long Scroll #//@ Hou Minghao: # Theme to commemorate the 90th anniversary of the victory of the Red Army Long March Long Scroll # Some roads have come out, not spoken. The thousands of mountains they walked through have all become fireworks worlds today. Remember, it is the best tribute. # This scroll is for everyone who is on the road # Stroll along the new Long March road together! [# Long Scroll to Commemorate the 90th Anniversary of the Red Army's Long March Victory # | Wanshui Qianshan] More than 90 years ago, the Red Army used footsteps as a pen to write Wanshui Qianshan into an epic poem for the future. Today, each of us has his own mountain, his own river. # This long scroll is for everyone who is on the road # and striding along the new Long March road together! ​"
-    },
-    {
-      "id": "38eb980b96d97269c7f1",
-      "platform": "Weibo",
-      "source": "侯明昊工作室",
-      "title": "2026-10-26 14:10 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 花絮掉落📷 ，和重磅嘉宾的贴贴互动时刻✅～ ​",
-      "excerpt": "侯明昊工作室 2026-10-26 14:10 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 花絮掉落📷 ，和重磅嘉宾的贴贴互动时刻✅～ ​",
-      "category": "Video",
-      "date": "2026-10-26T12:00:00+08:00",
-      "url": "https://sina.cn/media/5763552342",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [],
-      "titleOriginal": "2026-10-26 14:10 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 花絮掉落📷 ，和重磅嘉宾的贴贴互动时刻✅～ ​",
-      "excerptOriginal": "侯明昊工作室 2026-10-26 14:10 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 花絮掉落📷 ，和重磅嘉宾的贴贴互动时刻✅～ ​",
-      "titleEnglish": "2026-10-26 14:10 # Hou Minghao [super talk] # Hou Minghao | @ Hou Minghao's tidbits drop📷, and heavy guests post interactive moments✅ ~ ​",
-      "excerptEnglish": "Hou Minghao Studio 2026-10-26 14:10 # Hou Minghao [Chaoyang] # Hou Minghao | @ Hou Minghao's tidbits drop📷, and heavy guests post interactive moments✅ ~ ​"
-    },
-    {
-      "id": "3dbdef3354099db18040",
-      "platform": "XHS",
-      "source": "侯明昊属于我们的巡演",
-      "title": "New XHS update",
-      "excerpt": "New XHS update",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3e76ce0efb6fdbdc551c9d0c.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/95dfac7ec82a749607509304.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/561d08e1da35fa0272419e0d.webp",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/03a897b891b42606257661d0.webp"
-      ],
-      "category": "XHS Update",
-      "date": "2026-08-17T16:43:58+08:00",
-      "url": "https://www.rednote.com/explore/6a82c9ce0000000033036591",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Playwright captured JSON",
-      "profileId": "680f416000000000080147b4"
     }
   ]
 }
