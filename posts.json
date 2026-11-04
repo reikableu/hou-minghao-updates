@@ -1,136 +1,405 @@
 {
-  "lastUpdated": "2026-11-04T09:39:38+08:00",
-  "status": "Completed: 1 sources successful, 16 failed",
+  "lastUpdated": "2026-11-04T10:28:00+08:00",
+  "status": "Completed: 17 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 20,
+    "postsTranslatedThisRun": 10,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 20
     }
   },
   "sourceStatus": [
     {
-      "source": "Weibo account 5763552342",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:38:38.305549+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @侯明昊工作室",
+      "status": "Success",
+      "itemsFound": 10,
+      "checkedAt": "2026-11-04T10:24:31.812397+08:00"
     },
     {
-      "source": "Weibo account 1831550987",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:38:42.950605+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @侯明昊",
+      "status": "Success",
+      "itemsFound": 11,
+      "checkedAt": "2026-11-04T10:24:34.287704+08:00"
     },
     {
-      "source": "Weibo account 2356308454",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:38:46.592032+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @Simba0803_侯明昊",
+      "status": "Success",
+      "itemsFound": 11,
+      "checkedAt": "2026-11-04T10:24:36.875100+08:00"
     },
     {
-      "source": "Weibo account 8450716290",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:38:50.135865+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @83rdMistake丨侯明昊",
+      "status": "Success",
+      "itemsFound": 11,
+      "checkedAt": "2026-11-04T10:24:39.398120+08:00"
     },
     {
-      "source": "Weibo account 8004004308",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:38:53.723058+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @ComfitCupid丨侯明昊",
+      "status": "Success",
+      "itemsFound": 12,
+      "checkedAt": "2026-11-04T10:24:41.897731+08:00"
     },
     {
       "source": "Weibo account 7954477778",
-      "status": "Failed",
+      "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:38:57.243280+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "checkedAt": "2026-11-04T10:24:44.388566+08:00"
     },
     {
       "source": "Weibo account 7431934486",
-      "status": "Failed",
+      "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:00.764035+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "checkedAt": "2026-11-04T10:24:46.764082+08:00"
     },
     {
       "source": "Weibo account 6941933193",
-      "status": "Failed",
+      "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:04.277831+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "checkedAt": "2026-11-04T10:24:49.073326+08:00"
     },
     {
-      "source": "Weibo account 5919565877",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:07.778403+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @QINA亓那眼镜",
+      "status": "Success",
+      "itemsFound": 11,
+      "checkedAt": "2026-11-04T10:24:51.394491+08:00"
     },
     {
       "source": "Weibo account 9072975151",
-      "status": "Failed",
+      "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:11.290926+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "checkedAt": "2026-11-04T10:24:53.861525+08:00"
     },
     {
-      "source": "Weibo account 6609562381",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:14.828938+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @珍宝珠-ChupaChups",
+      "status": "Success",
+      "itemsFound": 10,
+      "checkedAt": "2026-11-04T10:24:56.186637+08:00"
     },
     {
-      "source": "Weibo account 5894691419",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:18.182182+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @HOKA",
+      "status": "Success",
+      "itemsFound": 11,
+      "checkedAt": "2026-11-04T10:24:58.738575+08:00"
     },
     {
-      "source": "Weibo account 1882778030",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:21.713433+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @天美意官方微博",
+      "status": "Success",
+      "itemsFound": 12,
+      "checkedAt": "2026-11-04T10:25:01.200590+08:00"
     },
     {
       "source": "Weibo account 7728002071",
-      "status": "Failed",
+      "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:25.042622+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "checkedAt": "2026-11-04T10:25:03.812337+08:00"
     },
     {
       "source": "Weibo account 7854683575",
-      "status": "Failed",
+      "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:28.351777+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "checkedAt": "2026-11-04T10:25:06.155768+08:00"
     },
     {
-      "source": "Weibo account 2682624851",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-04T09:39:31.680073+08:00",
-      "message": "Expecting value: line 1 column 1 (char 0)"
+      "source": "Weibo @雪中飞",
+      "status": "Success",
+      "itemsFound": 12,
+      "checkedAt": "2026-11-04T10:25:08.468482+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-04T09:39:35.251505+08:00"
+      "checkedAt": "2026-11-04T10:25:10.915945+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "bd6f963439e45cfef3ea",
+      "platform": "Weibo",
+      "source": "Weibo @HOKA",
+      "title": "跑过金秋十月🍂 热爱，在城野间持续升温 2026 HOKA 年度会员盛典满载心意开启 2026「飞常跑量」全国挑战与跑者共越新高 37位越野巅峰力量首度集结，齐聚亚太越野跑锦标赛 虎视眈眈限定系列全新登场 #HOKA宠粉行动# 以热爱为礼…",
+      "excerpt": "跑过金秋十月🍂 热爱，在城野间持续升温 2026 HOKA 年度会员盛典满载心意开启 2026「飞常跑量」全国挑战与跑者共越新高 37位越野巅峰力量首度集结，齐聚亚太越野跑锦标赛 虎视眈眈限定系列全新登场 #HOKA宠粉行动# 以热爱为礼，致意每次同行🎁 请上榜的10位HOKANS，于2026年11月7日前 私信回复个 ... 全文",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9439414ac0b658471ebcca6f.jpg"
+      ],
+      "category": "Event",
+      "date": "2026-11-07T12:00:00+08:00",
+      "url": "https://m.weibo.cn/status/5360050974757101",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "跑过金秋十月🍂 热爱，在城野间持续升温 2026 HOKA 年度会员盛典满载心意开启 2026「飞常跑量」全国挑战与跑者共越新高 37位越野巅峰力量首度集结，齐聚亚太越野跑锦标赛 虎视眈眈限定系列全新登场 #HOKA宠粉行动# 以热爱为礼…",
+      "excerptOriginal": "跑过金秋十月🍂 热爱，在城野间持续升温 2026 HOKA 年度会员盛典满载心意开启 2026「飞常跑量」全国挑战与跑者共越新高 37位越野巅峰力量首度集结，齐聚亚太越野跑锦标赛 虎视眈眈限定系列全新登场 #HOKA宠粉行动# 以热爱为礼，致意每次同行🎁 请上榜的10位HOKANS，于2026年11月7日前 私信回复个 ... 全文",
+      "titleEnglish": "Running through the love of golden autumn and October, continuing to🍂 heat up between the cities and fields. 2026 Hoka Annual Membership Ceremony is full of hearts. 2026 \"Flying Constant Running Volume\" National Challenge With runners, a total of 37 cross-country peak forces gathered for the first time, gathered at the Asia Pacific Cross-country Running Championships. The limited series has a new debut. # Hoka Fan Action # With love as a gift...",
+      "excerptEnglish": "Running through the love of golden autumn and October, the annual membership ceremony of 2026 Hoka continues to🍂 heat up between the city and the fields. The 2026 \"Flying Constant Running Volume\" national challenge and runners have gathered for the first time in a new high of 37 cross-country peak forces, gathered at the Asia Pacific Cross-country Running Championships Tiger Vision Limited Series New debut # Hoka Fan Action # With love as a gift,🎁 please greet the 10 Hokans on the list every time you go, and reply privately by November 7, 2026... Full text"
+    },
+    {
+      "id": "a484d0d3aee2eafd7030",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "徐振轩 #天猫双11星舰狂欢# 还有隐藏玩法！听说天猫星舰舰长的SSR明星徽章还能AI定制？！800+张海量星选图等你AI生成狂欢限定纪念～即日起上淘宝搜索【徐振轩】，收集到TA的SSR专属明星徽章后，点击【AI 互动】选择关键词即可定制…",
+      "excerpt": "徐振轩 #天猫双11星舰狂欢# 还有隐藏玩法！听说天猫星舰舰长的SSR明星徽章还能AI定制？！800+张海量星选图等你AI生成狂欢限定纪念～即日起上淘宝搜索【徐振轩】，收集到TA的SSR专属明星徽章后，点击【AI 互动】选择关键词即可定制你的双11限定纪念。每保存3次不同关键词的狂欢纪念，将有机会赢万 ... 全文",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/563754966bbf6fdf108d514d.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/72de08bac9b787885ade5597.jpg"
+      ],
+      "category": "Official",
+      "date": "2026-11-04T10:25:08.914628+08:00",
+      "url": "https://m.weibo.cn/status/5360815696775627",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "徐振轩 #天猫双11星舰狂欢# 还有隐藏玩法！听说天猫星舰舰长的SSR明星徽章还能AI定制？！800+张海量星选图等你AI生成狂欢限定纪念～即日起上淘宝搜索【徐振轩】，收集到TA的SSR专属明星徽章后，点击【AI 互动】选择关键词即可定制…",
+      "excerptOriginal": "徐振轩 #天猫双11星舰狂欢# 还有隐藏玩法！听说天猫星舰舰长的SSR明星徽章还能AI定制？！800+张海量星选图等你AI生成狂欢限定纪念～即日起上淘宝搜索【徐振轩】，收集到TA的SSR专属明星徽章后，点击【AI 互动】选择关键词即可定制你的双11限定纪念。每保存3次不同关键词的狂欢纪念，将有机会赢万 ... 全文",
+      "titleEnglish": "Xu Zhenxuan # Tmall Double 11 Starfleet Carnival # and hidden gameplay! I heard that the SSR star badge of the captain of the Tmall Starship can also be customized by AI?! 800 + massive star selection maps and other AI-generated carnival limited commemoration ~ From now on, go to Taobao and search for [Xu Zhenxuan]. After collecting TA's SSR exclusive star badge, click [AI Interaction] Select keywords to customize...",
+      "excerptEnglish": "Xu Zhenxuan # Tmall Double 11 Starfleet Carnival # and hidden gameplay! I heard that the SSR star badge of the captain of the Tmall Starship can also be customized by AI?! 800 + massive star selection maps and other AI-generated carnival limited commemoration ~ Starting today, search on Taobao [Xu Zhenxuan]. After collecting TA's SSR exclusive star badge, click [AI Interaction] to select keywords to customize your double 11 limited commemoration. Every 3 saved carnivals with different keywords will have a chance to win a million... full text"
+    },
+    {
+      "id": "6964f012308698a4eccc",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "🏔️ 距离见徐振轩，你的排名冲到哪了？ 雪境星芒季·天津站【内场座位图】【天猫温暖值榜单】及【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？速来天猫【雪中飞官方旗舰店】！ 1️⃣ 买同款攒温暖值，满699即解锁抽签资格！ 2️⃣ 全渠道数据…",
+      "excerpt": "🏔️ 距离见徐振轩，你的排名冲到哪了？ 雪境星芒季·天津站【内场座位图】【天猫温暖值榜单】及【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？速来天猫【雪中飞官方旗舰店】！ 1️⃣ 买同款攒温暖值，满699即解锁抽签资格！ 2️⃣ 全渠道数据池排名，买得越多，选座越优先（🐱TOP4更有专属合影 ... 全文",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/38a7dc4f52330b22b4ececfe.jpg"
+      ],
+      "category": "Official",
+      "date": "2026-11-04T10:25:08.913969+08:00",
+      "url": "https://m.weibo.cn/status/5360876813025289",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🏔️ 距离见徐振轩，你的排名冲到哪了？ 雪境星芒季·天津站【内场座位图】【天猫温暖值榜单】及【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？速来天猫【雪中飞官方旗舰店】！ 1️⃣ 买同款攒温暖值，满699即解锁抽签资格！ 2️⃣ 全渠道数据…",
+      "excerptOriginal": "🏔️ 距离见徐振轩，你的排名冲到哪了？ 雪境星芒季·天津站【内场座位图】【天猫温暖值榜单】及【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？速来天猫【雪中飞官方旗舰店】！ 1️⃣ 买同款攒温暖值，满699即解锁抽签资格！ 2️⃣ 全渠道数据池排名，买得越多，选座越优先（🐱TOP4更有专属合影 ... 全文",
+      "titleEnglish": "🏔️ Seeing Xu Zhenxuan, where did your ranking go? Xuejing Xingmangji · Tianjin Station [Infield Seating Map] [Tmall Warm List] and [Ticket Rushing Rules] are freshly released! 💡 Want to grab a good seat in the front row? Tmall [Xuezhongfei official flagship store]! 1) Buy the same model️ to save warmth, and unlock the lottery qualification when you reach 699!️ 2) Full channel data...",
+      "excerptEnglish": "🏔️ Seeing Xu Zhenxuan, where did your ranking go? Xuejing Xingmangji · Tianjin Station [Infield Seating Map] [Tmall Warm List] and [Ticket Rushing Rules] are freshly released! 💡 Want to grab a good seat in the front row? Tmall [Xuezhongfei official flagship store]! 1) Buy the️ same model to save warmth, and unlock the lottery qualification when you reach 699!️ 2) The more you buy, the more you choose (Top4 is🐱 more exclusive group photo... Full text"
+    },
+    {
+      "id": "b900414d39fb5c35201b",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "🏔️ 距离见徐振轩，线下榜单更新啦！ 雪境星芒季·天津站【线下渠道内场座位图】【温暖值榜单】【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？前往天津王府井新燕莎奥特莱斯雪中飞旗舰店到店消费！ 1️⃣ 在门店消费攒温暖值，满699即可解锁抽签…",
+      "excerpt": "🏔️ 距离见徐振轩，线下榜单更新啦！ 雪境星芒季·天津站【线下渠道内场座位图】【温暖值榜单】【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？前往天津王府井新燕莎奥特莱斯雪中飞旗舰店到店消费！ 1️⃣ 在门店消费攒温暖值，满699即可解锁抽签资格！ 2️⃣ 线下温暖值榜单排名越高，选座越优先 ... 全文",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/436b96aaa92b22c657a1110c.jpg"
+      ],
+      "category": "Official",
+      "date": "2026-11-04T10:25:08.913569+08:00",
+      "url": "https://m.weibo.cn/status/5360879873032871",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🏔️ 距离见徐振轩，线下榜单更新啦！ 雪境星芒季·天津站【线下渠道内场座位图】【温暖值榜单】【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？前往天津王府井新燕莎奥特莱斯雪中飞旗舰店到店消费！ 1️⃣ 在门店消费攒温暖值，满699即可解锁抽签…",
+      "excerptOriginal": "🏔️ 距离见徐振轩，线下榜单更新啦！ 雪境星芒季·天津站【线下渠道内场座位图】【温暖值榜单】【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？前往天津王府井新燕莎奥特莱斯雪中飞旗舰店到店消费！ 1️⃣ 在门店消费攒温暖值，满699即可解锁抽签资格！ 2️⃣ 线下温暖值榜单排名越高，选座越优先 ... 全文",
+      "titleEnglish": "🏔️ Meet Xu Zhenxuan, the offline list has been updated! Xingmangji · Tianjin Station [Offline Channel Inside Field Seating Map] [Warm Value List] [Ticket Rush Rules] Freshly released! 💡 Want to grab a good seat in the front row? Go to the Tianjin Wangfujing Xin Yansha Outlets Xuezhongfei flagship store to spend! 1) Spend️ warmth in the store, you can unlock the lottery when you reach 699...",
+      "excerptEnglish": "🏔️ Meet Xu Zhenxuan, the offline list has been updated! Xingmangji · Tianjin Station [Offline Channel Inside Field Seating Map] [Warm Value List] [Ticket Rush Rules] Freshly released! 💡 Want to grab a good seat in the front row? Go to the Tianjin Wangfujing Xin Yansha Outlets Xuezhongfei flagship store to spend! 1) Spend warmth in️ the store and unlock the lottery qualification after reaching 699!️ 2) The higher the ranking of the offline warmth value list, the more preferred the seat selection... Full text"
+    },
+    {
+      "id": "fee536847dfa75fa19db",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "入冬玩雪战袍✨侯明昊同款羽绒服 初雪氛围感就位，拒绝寒风灌脖臃肿感✨ K3 御寒档位适配‑5‑10℃都市玩雪，上身轻盈无负担。 暖芯矩阵远红外锁温，暖意贴身 40D 尼龙方格面料抗风雪，高效防钻绒。 90% 新国标鸭绒，650 高蓬松，显…",
+      "excerpt": "入冬玩雪战袍✨侯明昊同款羽绒服 初雪氛围感就位，拒绝寒风灌脖臃肿感✨ K3 御寒档位适配‑5‑10℃都市玩雪，上身轻盈无负担。 暖芯矩阵远红外锁温，暖意贴身 40D 尼龙方格面料抗风雪，高效防钻绒。 90% 新国标鸭绒，650 高蓬松，显瘦不鼓囊 多色男女通穿，侯明昊同款，初雪 ... 全文",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4554e867dffb1545f74ba87e.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a9cc7cbc93355996dd9470a6.jpg"
+      ],
+      "category": "Official",
+      "date": "2026-11-04T10:25:08.913197+08:00",
+      "url": "https://m.weibo.cn/status/5361108132038027",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "入冬玩雪战袍✨侯明昊同款羽绒服 初雪氛围感就位，拒绝寒风灌脖臃肿感✨ K3 御寒档位适配‑5‑10℃都市玩雪，上身轻盈无负担。 暖芯矩阵远红外锁温，暖意贴身 40D 尼龙方格面料抗风雪，高效防钻绒。 90% 新国标鸭绒，650 高蓬松，显…",
+      "excerptOriginal": "入冬玩雪战袍✨侯明昊同款羽绒服 初雪氛围感就位，拒绝寒风灌脖臃肿感✨ K3 御寒档位适配‑5‑10℃都市玩雪，上身轻盈无负担。 暖芯矩阵远红外锁温，暖意贴身 40D 尼龙方格面料抗风雪，高效防钻绒。 90% 新国标鸭绒，650 高蓬松，显瘦不鼓囊 多色男女通穿，侯明昊同款，初雪 ... 全文",
+      "titleEnglish": "In the winter,✨ Hou Minghao, the same style of down jacket, put in place the atmosphere of the first snow. He refused the cold breeze to fill his neck with bloated feeling. The✨ K3 cold gear is adapted to ‑ 5 ‑ 10 ℃ urban snow play, and the upper body is light and unburdened. Warm core matrix far-infrared locking temperature, warm and close-fitting 40d nylon checkered fabric resistant to wind and snow, high-efficiency anti-drilling fleece. 90% new national standard duck down, 650 high fluffy, showing...",
+      "excerptEnglish": "In the winter,✨ Hou Minghao, the same style of down jacket, put in place the atmosphere of the first snow. He refused the cold breeze to fill his neck with bloated feeling. The✨ K3 cold gear is adapted to ‑ 5 ‑ 10 ℃ urban snow play, and the upper body is light and unburdened. Warm core matrix far-infrared locking temperature, warm-fitting 40d nylon square fabric resistant to wind and snow, high-efficiency anti-drilling fleece. 90% new national standard duck down, 650 high fluffy, slim and not bulky multicolor unisex wear, Hou Minghao the same style, first snow... full text"
+    },
+    {
+      "id": "7c7acfe5b7784f1ec9fb",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "🏔️ 距离见徐振轩倒计时3天⏰，线下榜单持续更新啦！ 雪境星芒季·天津站【线下渠道内场座位图】【温暖值榜单】【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？前往天津王府井新燕莎奥特莱斯雪中飞旗舰店到店消费！ 1️⃣ 在门店消费攒温暖值，满6…",
+      "excerpt": "🏔️ 距离见徐振轩倒计时3天⏰，线下榜单持续更新啦！ 雪境星芒季·天津站【线下渠道内场座位图】【温暖值榜单】【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？前往天津王府井新燕莎奥特莱斯雪中飞旗舰店到店消费！ 1️⃣ 在门店消费攒温暖值，满699即可解锁抽签资格！ 2️⃣ 线下温暖值榜单排名越 ... 全文",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/40de371ed5f2c226706466ac.jpg"
+      ],
+      "category": "Official",
+      "date": "2026-11-04T10:25:08.912231+08:00",
+      "url": "https://m.weibo.cn/status/5361223895089572",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🏔️ 距离见徐振轩倒计时3天⏰，线下榜单持续更新啦！ 雪境星芒季·天津站【线下渠道内场座位图】【温暖值榜单】【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？前往天津王府井新燕莎奥特莱斯雪中飞旗舰店到店消费！ 1️⃣ 在门店消费攒温暖值，满6…",
+      "excerptOriginal": "🏔️ 距离见徐振轩倒计时3天⏰，线下榜单持续更新啦！ 雪境星芒季·天津站【线下渠道内场座位图】【温暖值榜单】【抢票细则】新鲜出炉！ 💡 想要抢占前排好座？前往天津王府井新燕莎奥特莱斯雪中飞旗舰店到店消费！ 1️⃣ 在门店消费攒温暖值，满699即可解锁抽签资格！ 2️⃣ 线下温暖值榜单排名越 ... 全文",
+      "titleEnglish": "🏔️ See Xu Zhenxuan in 3 days ⏰, the offline list continues to update! Xingmangji · Tianjin Station [Offline Channel Inside Field Seating Map] [Warm Value List] [Ticket Rush Rules] Freshly released! 💡 Want to grab a good seat in the front row? Go to the Tianjin Wangfujing Xin Yansha Outlets Xuezhongfei flagship store to spend at the store! 1)️ Spend at the store to save warmth, 6…",
+      "excerptEnglish": "🏔️ See Xu Zhenxuan in 3 days ⏰, the offline list continues to update! Xingmangji · Tianjin Station [Offline Channel Inside Field Seating Map] [Warm Value List] [Ticket Rush Rules] Freshly released! 💡 Want to grab a good seat in the front row? Go to the Tianjin Wangfujing Xin Yansha Outlets Xuezhongfei flagship store to spend! 1)️ Spend warmth in the store to unlock the lottery qualification after reaching 699!️ 2) The more the offline warmth value list ranks... Full text"
+    },
+    {
+      "id": "2bca10935e1cae79fac4",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "🔥周三宠粉日抽奖福利准时开启🎉 🎁奖品：品牌定制保温杯、会员积分 ✅会员免费抽3次 网页链接 🎈双十一狂欢购，全场399元起 网页链接",
+      "excerpt": "🔥周三宠粉日抽奖福利准时开启🎉 🎁奖品：品牌定制保温杯、会员积分 ✅会员免费抽3次 网页链接 🎈双十一狂欢购，全场399元起 网页链接",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2f060bd0519745dec9f50265.jpg"
+      ],
+      "category": "Endorsement",
+      "date": "2026-11-04T10:25:08.911463+08:00",
+      "url": "https://m.weibo.cn/status/5361457623469887",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🔥周三宠粉日抽奖福利准时开启🎉 🎁奖品：品牌定制保温杯、会员积分 ✅会员免费抽3次 网页链接 🎈双十一狂欢购，全场399元起 网页链接",
+      "excerptOriginal": "🔥周三宠粉日抽奖福利准时开启🎉 🎁奖品：品牌定制保温杯、会员积分 ✅会员免费抽3次 网页链接 🎈双十一狂欢购，全场399元起 网页链接",
+      "titleEnglish": "🔥Wednesdays Favourite Day Draw Benefits Open on time🎉 🎁Prizes: Brand custom insulated cups, member points ✅Member draws 3 free webpage links 🎈Double Eleven Carnival shopping, the whole venue from 399 yuan webpage links",
+      "excerptEnglish": "🔥Wednesdays Favourite Day Draw Benefits Open on time🎉 🎁Prizes: Brand custom insulated cups, member points ✅Member draws 3 free webpage links 🎈Double Eleven Carnival shopping, the whole venue from 399 yuan webpage links"
+    },
+    {
+      "id": "7318096295bc677b1d2b",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "如伞随行，共阅山海。 二十年前，灯光下的你翻开书页， 秦岭的幽暗、青铜门的冷雾、蛇沼的骤雨、沙海的风暴， 一幕幕诡谲奇观在脑海里铺展开来。 那些年，故事是纸上的远方，你是灯下的少年。✨ 二十年后，你已不再仅仅只是读者， 你开始收拾行囊，想…",
+      "excerpt": "如伞随行，共阅山海。 二十年前，灯光下的你翻开书页， 秦岭的幽暗、青铜门的冷雾、蛇沼的骤雨、沙海的风暴， 一幕幕诡谲奇观在脑海里铺展开来。 那些年，故事是纸上的远方，你是灯下的少年。✨ 二十年后，你已不再仅仅只是读者， 你开始收拾行囊，想亲眼去看一看云顶的雪，亲身去淋一场蛇沼的雨。? ... 全文",
+      "images": [],
+      "category": "Official",
+      "date": "2026-11-04T10:25:08.910893+08:00",
+      "url": "https://m.weibo.cn/status/5321607662015980",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "如伞随行，共阅山海。 二十年前，灯光下的你翻开书页， 秦岭的幽暗、青铜门的冷雾、蛇沼的骤雨、沙海的风暴， 一幕幕诡谲奇观在脑海里铺展开来。 那些年，故事是纸上的远方，你是灯下的少年。✨ 二十年后，你已不再仅仅只是读者， 你开始收拾行囊，想…",
+      "excerptOriginal": "如伞随行，共阅山海。 二十年前，灯光下的你翻开书页， 秦岭的幽暗、青铜门的冷雾、蛇沼的骤雨、沙海的风暴， 一幕幕诡谲奇观在脑海里铺展开来。 那些年，故事是纸上的远方，你是灯下的少年。✨ 二十年后，你已不再仅仅只是读者， 你开始收拾行囊，想亲眼去看一看云顶的雪，亲身去淋一场蛇沼的雨。? ... 全文",
+      "titleEnglish": "As an umbrella, you can see the mountains and the sea. Twenty years ago, you opened the page under the light, the darkness of Qinling, the cold fog of the bronze door, the heavy rain of the snake marsh, the storm of the sand sea, a curious spectacle unfolded in your mind. In those years, stories were far away on paper, and you were a teenager under a lamp.✨ Twenty years later, you're no longer just a reader, you're packing your bags and thinking...",
+      "excerptEnglish": "As an umbrella, you can see the mountains and the sea. Twenty years ago, you opened the page under the light, the darkness of Qinling, the cold fog of the bronze door, the heavy rain of the snake marsh, the storm of the sand sea, a curious spectacle unfolded in your mind. In those years, stories were far away on paper, and you were a teenager under a lamp.✨ Twenty years later, you are no longer just a reader. You start packing your bags and want to see the snow in the clouds and rain down on the snake marsh.?..."
+    },
+    {
+      "id": "db1f767f2cd901a84163",
+      "platform": "Weibo",
+      "source": "Weibo @天美意官方微博",
+      "title": "天美意TEENMIX | 托特包 麂皮&老花印花包身，展现老钱格调 包型挺阔，随性又自带摩登气场 可拆卸流苏挂饰，百变时髦细节 #teenmix天美意# #天美意托特包# #托特包#",
+      "excerpt": "天美意TEENMIX | 托特包 麂皮&老花印花包身，展现老钱格调 包型挺阔，随性又自带摩登气场 可拆卸流苏挂饰，百变时髦细节 #teenmix天美意# #天美意托特包# #托特包#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6c150f3c30198f4326b254a9.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/81f720083111c4f57ae0b94a.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8577cb62ef727f5dde3f3263.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a230afb6c1d70342e08f30cb.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6b970729a263db26b24e40b9.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/511ce8367928387adf4a4b51.jpg"
+      ],
+      "category": "Official",
+      "date": "2026-11-04T10:25:01.812116+08:00",
+      "url": "https://m.weibo.cn/status/5359673487918533",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "天美意TEENMIX | 托特包 麂皮&老花印花包身，展现老钱格调 包型挺阔，随性又自带摩登气场 可拆卸流苏挂饰，百变时髦细节 #teenmix天美意# #天美意托特包# #托特包#",
+      "excerptOriginal": "天美意TEENMIX | 托特包 麂皮&老花印花包身，展现老钱格调 包型挺阔，随性又自带摩登气场 可拆卸流苏挂饰，百变时髦细节 #teenmix天美意# #天美意托特包# #托特包#",
+      "titleEnglish": "TEENMIX | Tote bag suede & old-fashioned printed body, showing the old style of the bag is quite broad, casual and comes with modern aerospace detachable tassel hanging, changing fashionable details # teenmix # # Tote bag # # Tote bag #",
+      "excerptEnglish": "TEENMIX | Tote bag suede & old-fashioned printed body, showing the old style of the bag is quite broad, casual and comes with modern aerospace detachable tassel hanging, changing fashionable details # teenmix # # Tote bag # # Tote bag #"
+    },
+    {
+      "id": "b38de0ff3cc0258527c4",
+      "platform": "Weibo",
+      "source": "Weibo @天美意官方微博",
+      "title": "旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天…",
+      "excerpt": "旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ... 全文",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-11-04T10:25:01.811391+08:00",
+      "url": "https://m.weibo.cn/status/5359771636993741",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天…",
+      "excerptOriginal": "旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ... 全文",
+      "titleEnglish": "Travel in the same style as Xiaohou! If you can only take one pair of shoes when traveling, it must be the same Tian Mei Sunset Avenue western boots with fine leather and suede cowhide splicing, the vintage feeling is full of built-in pig leather insole, the upper foot is soft and sticky, and the walk is not tireless, taking into account the trendy appearance and comfortable feeling of the footWalking in the city, traveling a pair of boots to get things done # Hou Minghaotian...",
+      "excerptEnglish": "Travel in the same style as Xiaohou! If you can only take one pair of shoes when traveling, it must be the same Tianmei Sunset Avenue western boots with fine leather and suede cowhide splicing. The vintage feeling is full of built-in pig leather insole, and the soft and sticky foot walks are not tired of taking into account the fashionable sense of appearance and comfort. City wild roaming, traveling A pair of boots # Hou Minghao Tianmei brand spokesperson # # teenmix Tianmei # # Follow the wind when you are small #... Full text"
+    },
+    {
+      "id": "9777c0767334d2b7449e",
+      "platform": "Weibo",
+      "source": "Weibo @天美意官方微博",
+      "title": "小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人#…",
+      "excerpt": "小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ... 全文",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-11-04T10:25:01.810643+08:00",
+      "url": "https://m.weibo.cn/status/5360134030622740",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人#…",
+      "excerptOriginal": "小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ... 全文"
+    },
+    {
+      "id": "42a9cd93a22e3626bb03",
+      "platform": "Weibo",
+      "source": "Weibo @天美意官方微博",
+      "title": "天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&…",
+      "excerpt": "天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&GISMOW周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ... 全文",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-11-04T10:25:01.809902+08:00",
+      "url": "https://m.weibo.cn/status/5360496412983784",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "9cd50d595df66701c055",
+      "platform": "Weibo",
+      "source": "Weibo @天美意官方微博",
+      "title": "天美意TEENMIX | 雕塑家 复刻立体轮廓美学，靴型挺阔利落 简约设计语言，百搭更显瘦 甄选质感小羊皮，软糯脚感越穿越爱 驾驭摩登新风，都市场景无缝衔接 #teenmix天美意# #天美意时装靴#",
+      "excerpt": "天美意TEENMIX | 雕塑家 复刻立体轮廓美学，靴型挺阔利落 简约设计语言，百搭更显瘦 甄选质感小羊皮，软糯脚感越穿越爱 驾驭摩登新风，都市场景无缝衔接 #teenmix天美意# #天美意时装靴#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/af60c3014e2f7cc4eef51f1c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c8fc7ac945afc2c266684a81.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/215a516d85fbd1ef067cfd8c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3be19e3946389bc052cc6b6b.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bebf5357541d2f5f06d303c4.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/11e2c07cf85c05012b2ed49a.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/620ee7b31f78a0f0739d0410.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6b1b1ec82982abb0fd06846a.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/733286163c83b401af6ffe7f.jpg"
+      ],
+      "category": "Official",
+      "date": "2026-11-04T10:25:01.808902+08:00",
+      "url": "https://m.weibo.cn/status/5360760650990550",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "0511b9be110bbc8aff5b",
+      "platform": "Weibo",
+      "source": "Weibo @天美意官方微博",
+      "title": "恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于7个工作日内来找小天领取哦！逾期中奖资格失效哦~",
+      "excerpt": "恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于7个工作日内来找小天领取哦！逾期中奖资格失效哦~",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-11-04T10:25:01.808303+08:00",
+      "url": "https://m.weibo.cn/status/5360765460808520",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "9fe2312e4daeb47965dc",
+      "platform": "Weibo",
+      "source": "Weibo @天美意官方微博",
+      "title": "星涵cp太甜啦[给你小心心]感谢星颖上脚暖羊羊毛毛鞋，时髦表现力太绝啦！",
+      "excerpt": "星涵cp太甜啦[给你小心心]感谢星颖上脚暖羊羊毛毛鞋，时髦表现力太绝啦！",
+      "images": [],
+      "category": "Official",
+      "date": "2026-11-04T10:25:01.808006+08:00",
+      "url": "https://m.weibo.cn/status/5360873045491736",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API"
+    },
     {
       "id": "83aad5d18e0af11f91a1",
       "platform": "X",
@@ -3137,265 +3406,6 @@
       "titleEnglish": "CASETiFY 2026-10-28 12:00 Claim from iPhone 14 Pro # Hou Minghao [Over the phone] #! The familiar [Kitty Brother] on the Tmall Starfleet Captain's ID is CASETiFY spokesperson @ Hou Minghao! # Tmall Double 11 Starfleet Carnival # is about to start, and the kiwis are ready to play...",
       "excerptEnglish": "CASETiFY 2026-10-28 12:00 Claim from iPhone 14 Pro # Hou Minghao [Over the phone] #! The familiar [Kitty Brother] on the Tmall Starfleet Captain's ID is CASETiFY spokesperson @ Hou Minghao! # Tmall Double 11 Starfleet Carnival # is about to start, are the kiwis ready to play? Search [Hou Minghao] on Taobao on 10.28-10.30 to book an event, sign in for 3 consecutive days, and win double Carnival points! # Tmall All-Star Program # Taobao is even more discounted on Double 11, and the official discount coupon is 72% off! Flagship-class Ding Dong ~ # Tmall Double 11 Starfleet Carnival # is about to open! Ben Meow is secretly crafting the 100 Star Captain's Card. Guess who🤫 the TAs are ~ On October 31st, the # Tmall All-Star Program # will officially open, and the new Star Badge Illustrated Book will be waiting for you to collect ~ Chance to win ten thousand red envelopes and flagship store thousand yuan gifts! Who will get the first VSSR Star badge...",
       "images": []
-    },
-    {
-      "id": "e84721667f96cf36a31e",
-      "platform": "Weibo",
-      "source": "雪中飞",
-      "title": "雪中飞 2026-10-28 15:30 来自 微博网页版 被侯明昊的冬日穿搭拿捏住啦🥹 长款温柔御寒❄️｜滑雪款奔赴山野⛰️｜印花短款潮酷吸睛👀 不同场景都能找到合适的那一件 雪中飞明星同款，一起迎接冬天～ #侯明昊[超话]# #雪中飞…",
-      "excerpt": "雪中飞 2026-10-28 15:30 来自 微博网页版 被侯明昊的冬日穿搭拿捏住啦🥹 长款温柔御寒❄️｜滑雪款奔赴山野⛰️｜印花短款潮酷吸睛👀 不同场景都能找到合适的那一件 雪中飞明星同款，一起迎接冬天～ #侯明昊[超话]# #雪中飞全球品牌代言人侯明昊# #怎么玩都对这很雪中飞# #雪道ACE玩家侯明昊# #滑雪特色的时尚户外# #雪中飞明星滑雪天团# ​",
-      "category": "Endorsement",
-      "date": "2026-10-28T12:00:00+08:00",
-      "url": "https://sina.cn/media/2682624851",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "雪中飞 2026-10-28 15:30 来自 微博网页版 被侯明昊的冬日穿搭拿捏住啦🥹 长款温柔御寒❄️｜滑雪款奔赴山野⛰️｜印花短款潮酷吸睛👀 不同场景都能找到合适的那一件 雪中飞明星同款，一起迎接冬天～ #侯明昊[超话]# #雪中飞…",
-      "excerptOriginal": "雪中飞 2026-10-28 15:30 来自 微博网页版 被侯明昊的冬日穿搭拿捏住啦🥹 长款温柔御寒❄️｜滑雪款奔赴山野⛰️｜印花短款潮酷吸睛👀 不同场景都能找到合适的那一件 雪中飞明星同款，一起迎接冬天～ #侯明昊[超话]# #雪中飞全球品牌代言人侯明昊# #怎么玩都对这很雪中飞# #雪道ACE玩家侯明昊# #滑雪特色的时尚户外# #雪中飞明星滑雪天团# ​",
-      "titleEnglish": "Flying in the Snow 2026-10-28 15:30 From the Weibo web version, it was pinched by Hou Minghao's winter clothes.🥹 Long, gentle and cold-resistant❄️ | Ski to the mountains⛰️ | Printed short, cool and attractive.👀 Different scenes can find the right flying star in the snow. Let's greet the winter together ~ # Hou Minghao [super talk] # # Flying in the snow...",
-      "excerptEnglish": "Flying in the Snow 2026-10-28 15:30 From the Weibo web version, it is pinched by Hou Minghao's winter clothes🥹 Long models gentle and cold❄️ | Ski style runs to the mountains⛰️ | Printed short models cool and attractive👀 Different scenes can find the right one flying star in the snow The same style, greet the winter together ~ # Hou Minghao [super talk] # # Flying in the snow global brand spokesperson Hou Minghao # # How to play It's flying in the snow # # Snow ACE players Hou Minghao # # Ski characteristic fashion outdoor # # Flying stars in the snow ski group # ​",
-      "images": []
-    },
-    {
-      "id": "06d166f3a759fbeb6b69",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Welcome Hou Minghao as the new brand spokesperson for the \"Bai Li Tiao Yi\" brand. What makes him unable to resist sharing? What makes him so fond of it? That's…",
-      "excerpt": "Welcome Hou Minghao as the new brand spokesperson for the \"Bai Li Tiao Yi\" brand. What makes him unable to resist sharing? What makes him so fond of it? That's right, Xiao Hou is serious about eating sunflower seeds! 261028 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 28, 2026",
-      "category": "X Update",
-      "date": "2026-10-28T10:23:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115268066926059717",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9d4dc2eda21c4368925c48f0.jpg"
-      ]
-    },
-    {
-      "id": "591f23a12879c57b5fda",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao Announced as Brand Spokesperson for Xudong Bai Li Tiao Yi, Congratulations! 🥳 261028 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "Hou Minghao Announced as Brand Spokesperson for Xudong Bai Li Tiao Yi, Congratulations! 🥳 261028 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 28, 2026",
-      "category": "X Update",
-      "date": "2026-10-28T10:13:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115265749703065684",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": []
-    },
-    {
-      "id": "6ee5e22d0deb1c6cd6b1",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @xoxo_d78: 슛 들어가기전에는 눈 왕커 차카니 후명호 얼굴이다가 20초에 슛 들어가면 홍엽 눈빛이시고..컷하면 또 돌아오시고....",
-      "excerpt": "RT @xoxo_d78: 슛 들어가기전에는 눈 왕커 차카니 후명호 얼굴이다가 20초에 슛 들어가면 홍엽 눈빛이시고..컷하면 또 돌아오시고.... — @PopMinghao Oct 27, 2026",
-      "category": "X Update",
-      "date": "2026-10-28T03:32:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2115164646328127913",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": []
-    },
-    {
-      "id": "f7682d88221e146097ba",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [3/3]",
-      "excerpt": "Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [3/3] — @HMH_Record Oct 27, 2026",
-      "category": "X Update",
-      "date": "2026-10-28T01:26:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115133140725588266",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/29af466b90f57c6d316ebe16.jpg"
-      ]
-    },
-    {
-      "id": "8e8e5c843f42882a1790",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [2/3]",
-      "excerpt": "Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [2/3] — @HMH_Record Oct 27, 2026",
-      "category": "X Update",
-      "date": "2026-10-28T01:23:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115132211775369432",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/09f8b3d6614bb6c86d0daae2.jpg"
-      ]
-    },
-    {
-      "id": "7ad114078f3d5b5de737",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [1/3]",
-      "excerpt": "Hou Minghao New Pics | CASETiFY Livestream 261028 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [1/3] — @HMH_Record Oct 27, 2026",
-      "category": "X Update",
-      "date": "2026-10-28T01:19:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115131174838497769",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/974806d4707427370820b0b7.jpg"
-      ]
-    },
-    {
-      "id": "3ba6ec78c4382d4f17d3",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @myo_mmyom: 근데 진짜 1세대보다가 오늘버전 타오메이보면 장족의 발전임 사람의 형태를 점점 가지고 있음ㅋㅋㅋㅋㅋㅋ",
-      "excerpt": "RT @myo_mmyom: 근데 진짜 1세대보다가 오늘버전 타오메이보면 장족의 발전임 사람의 형태를 점점 가지고 있음ㅋㅋㅋㅋㅋㅋ — @PopMinghao Oct 27, 2026",
-      "category": "X Update",
-      "date": "2026-10-27T22:51:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2115094150995730692",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d5fed702578c741ec20fa1da.jpg"
-      ]
-    },
-    {
-      "id": "7ebdc17417bf0a1c6e13",
-      "platform": "Weibo",
-      "source": "天美意官方微博",
-      "title": "天美意官方微博 2026-10-27 15:32 来自 微博网页版 都市游牧・旷野驿站，定格与小侯的旷野之约！ 与#侯明昊天美意品牌代言人# 奔赴都市旷野之约 ✨ 抵达 #天美意都市游牧旷野驿站# 城市为疆，旷野为境，置身于沉浸式旷野空间…",
-      "excerpt": "天美意官方微博 2026-10-27 15:32 来自 微博网页版 都市游牧・旷野驿站，定格与小侯的旷野之约！ 与#侯明昊天美意品牌代言人# 奔赴都市旷野之约 ✨ 抵达 #天美意都市游牧旷野驿站# 城市为疆，旷野为境，置身于沉浸式旷野空间 穿上 #天美意日落大道# 西部靴解锁秋日新风格 步履乘风，共赴新程，在城野边界探索无限新意 这场旷野相逢藏满惊喜，期待新程 ​",
-      "category": "Endorsement",
-      "date": "2026-10-27T12:00:00+08:00",
-      "url": "https://sina.cn/media/1882778030",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "天美意官方微博 2026-10-27 15:32 来自 微博网页版 都市游牧・旷野驿站，定格与小侯的旷野之约！ 与#侯明昊天美意品牌代言人# 奔赴都市旷野之约 ✨ 抵达 #天美意都市游牧旷野驿站# 城市为疆，旷野为境，置身于沉浸式旷野空间…",
-      "excerptOriginal": "天美意官方微博 2026-10-27 15:32 来自 微博网页版 都市游牧・旷野驿站，定格与小侯的旷野之约！ 与#侯明昊天美意品牌代言人# 奔赴都市旷野之约 ✨ 抵达 #天美意都市游牧旷野驿站# 城市为疆，旷野为境，置身于沉浸式旷野空间 穿上 #天美意日落大道# 西部靴解锁秋日新风格 步履乘风，共赴新程，在城野边界探索无限新意 这场旷野相逢藏满惊喜，期待新程 ​",
-      "titleEnglish": "Tian Mei Yi official microblogging 2026-10-27 15:32 From the urban nomad and wilderness station on the microblogging website, the appointment with Xiao Hou's wilderness! ✨ Arrive at # Tianmei Urban Nomad Wilderness Station with # HouMingHaoTian MeiYi Brand Spokesperson # to the urban wilderness about # Tianmei Urban Nomad Wilderness Station # The city is the border, the wilderness is the border, and you are in an immersive wilderness space...",
-      "excerptEnglish": "Tian Mei Yi official microblogging 2026-10-27 15:32 From the urban nomad and wilderness station on the microblogging website, the appointment with Xiao Hou's wilderness! ✨ Arrive in the urban wilderness with # HouMingHaoTian MeiYi brand spokesperson # TianMeiYi Urban Nomadic Wilderness Station # The wilderness is the boundary of the city, immersed in the immersive wilderness space Put on # TianMingYi Sunset Boulevard # Western boots to unlock the new style of autumn, walk in the wind, and explore the infinite new ideas at the boundary of the castle wilderness This wilderness meets with surprises and looks forward to the new journey ​",
-      "images": []
-    },
-    {
-      "id": "753aa5d1f8e41e0980a7",
-      "platform": "Weibo",
-      "source": "天美意官方微博",
-      "title": "天美意官方微博 2026-10-27 10:10 来自 微博网页版 天美意侯明昊见面会大合照来喽！找找你在哪 奔赴天美意x侯明昊都市旷野之约 抵达📍都市游牧・旷野驿站🏜️ 定格与桃妹们的双向奔赴🥝留存心动记忆 期待步履同频，共赴下一程热烈…",
-      "excerpt": "天美意官方微博 2026-10-27 10:10 来自 微博网页版 天美意侯明昊见面会大合照来喽！找找你在哪 奔赴天美意x侯明昊都市旷野之约 抵达📍都市游牧・旷野驿站🏜️ 定格与桃妹们的双向奔赴🥝留存心动记忆 期待步履同频，共赴下一程热烈光景✨ #侯明昊天美意品牌代言人##teenmix天美意##跟着小侯去追风##天美意都市游牧旷野驿站##天美意侯明昊见面会# ​",
-      "category": "Event",
-      "date": "2026-10-27T12:00:00+08:00",
-      "url": "https://sina.cn/media/1882778030",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "天美意官方微博 2026-10-27 10:10 来自 微博网页版 天美意侯明昊见面会大合照来喽！找找你在哪 奔赴天美意x侯明昊都市旷野之约 抵达📍都市游牧・旷野驿站🏜️ 定格与桃妹们的双向奔赴🥝留存心动记忆 期待步履同频，共赴下一程热烈…",
-      "excerptOriginal": "天美意官方微博 2026-10-27 10:10 来自 微博网页版 天美意侯明昊见面会大合照来喽！找找你在哪 奔赴天美意x侯明昊都市旷野之约 抵达📍都市游牧・旷野驿站🏜️ 定格与桃妹们的双向奔赴🥝留存心动记忆 期待步履同频，共赴下一程热烈光景✨ #侯明昊天美意品牌代言人##teenmix天美意##跟着小侯去追风##天美意都市游牧旷野驿站##天美意侯明昊见面会# ​",
-      "titleEnglish": "Tianmei Yi official Weibo 2026-10-27 10:10 From the Weibo web version Tianmei Yi Hou Minghao meetup big group photo come! Find out where you are going to Tianmei Yi x Hou Minghao Urban Wilderness Arrival📍 Urban Nomad, Wilderness Station🏜️ Freeze and the two-way rush of the girls to🥝 retain the memory of the heart Expect to follow the same frequency, go to the next warm journey together...",
-      "excerptEnglish": "Tianmei Yi official Weibo 2026-10-27 10:10 From the Weibo web version Tianmei Yi Hou Minghao meetup big group photo come! Looking for where you are going to Tianmeiyi x Hou Minghao Urban Wilderness Arrival📍 Urban Nomads and Wilderness Stations🏜️ Freeze with the two-way rush of the Tomei to🥝 keep the heartbeat and expect the same frequency, and go to the next hot scene✨ # Hou Minghao Tianmei brand spokesperson # # teenmix Tianmei # # Follow the Hou to chase the wind # # Tianmei Urban Nomad Wilderness Station # # Tianmei Hou Minghao Meet # ​",
-      "images": []
-    },
-    {
-      "id": "cf119f0ef9edabcaa5df",
-      "platform": "Weibo",
-      "source": "雪中飞",
-      "title": "雪中飞 2026-10-27 15:29 来自 微博网页版 🔥周三宠粉日抽奖福利准时开启🎉 🎁奖品：品牌定制保温杯、会员积分 ✅会员免费抽 3 次 👕侯明昊同款，买送周边 ​",
-      "excerpt": "雪中飞 2026-10-27 15:29 来自 微博网页版 🔥周三宠粉日抽奖福利准时开启🎉 🎁奖品：品牌定制保温杯、会员积分 ✅会员免费抽 3 次 👕侯明昊同款，买送周边 ​",
-      "category": "Endorsement",
-      "date": "2026-10-27T12:00:00+08:00",
-      "url": "https://sina.cn/media/2682624851",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "雪中飞 2026-10-27 15:29 来自 微博网页版 🔥周三宠粉日抽奖福利准时开启🎉 🎁奖品：品牌定制保温杯、会员积分 ✅会员免费抽 3 次 👕侯明昊同款，买送周边 ​",
-      "excerptOriginal": "雪中飞 2026-10-27 15:29 来自 微博网页版 🔥周三宠粉日抽奖福利准时开启🎉 🎁奖品：品牌定制保温杯、会员积分 ✅会员免费抽 3 次 👕侯明昊同款，买送周边 ​",
-      "titleEnglish": "Xue Zhongfei 2026-10-27 15:29 From the Weibo web version 🔥Wednesday Favorite Fan Day Draw Benefits Open on time🎉 🎁Prizes: Brand custom insulated cups, member points ✅Members draw the same model of 👕Hou Minghao 3 times for free, buy and give away peripherals ​",
-      "excerptEnglish": "Xue Zhongfei 2026-10-27 15:29 From the Weibo web version 🔥Wednesday Favorite Fan Day Draw Benefits Open on time🎉 🎁Prizes: Brand custom insulated cups, member points ✅Members draw the same model of 👕Hou Minghao 3 times for free, buy and give away peripherals ​",
-      "images": []
-    },
-    {
-      "id": "a195c7235d5f10134f2e",
-      "platform": "Weibo",
-      "source": "雪中飞",
-      "title": "雪中飞 2026-10-27 14:00 来自 微博网页版 万米高空的专属浪漫，雪中飞x侯明昊主题航空正式起航！[飞机] 机舱各种惊喜布置，让每一次云端飞行都有了雪道ACE玩家的温暖相伴。 如果你刚好搭乘这趟班次，记得留下专属的高空打卡照…",
-      "excerpt": "雪中飞 2026-10-27 14:00 来自 微博网页版 万米高空的专属浪漫，雪中飞x侯明昊主题航空正式起航！[飞机] 机舱各种惊喜布置，让每一次云端飞行都有了雪道ACE玩家的温暖相伴。 如果你刚好搭乘这趟班次，记得留下专属的高空打卡照哦。[不愧是你] #侯明昊[超话]# #侯明昊雪中飞全球品牌代言人# #怎么玩都对这很雪中飞# #雪道ACE玩家侯明昊# ​",
-      "category": "Endorsement",
-      "date": "2026-10-27T12:00:00+08:00",
-      "url": "https://sina.cn/media/2682624851",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "雪中飞 2026-10-27 14:00 来自 微博网页版 万米高空的专属浪漫，雪中飞x侯明昊主题航空正式起航！[飞机] 机舱各种惊喜布置，让每一次云端飞行都有了雪道ACE玩家的温暖相伴。 如果你刚好搭乘这趟班次，记得留下专属的高空打卡照…",
-      "excerptOriginal": "雪中飞 2026-10-27 14:00 来自 微博网页版 万米高空的专属浪漫，雪中飞x侯明昊主题航空正式起航！[飞机] 机舱各种惊喜布置，让每一次云端飞行都有了雪道ACE玩家的温暖相伴。 如果你刚好搭乘这趟班次，记得留下专属的高空打卡照哦。[不愧是你] #侯明昊[超话]# #侯明昊雪中飞全球品牌代言人# #怎么玩都对这很雪中飞# #雪道ACE玩家侯明昊# ​",
-      "images": [],
-      "titleEnglish": "Xue Zhongfei 2026-10-27 14:00 Exclusive romance from the Weibo web version ten thousand meters high, Xue Zhongfei x Hou Minghao theme airline officially set sail! [Airplane] Every cloud flight is accompanied by the warmth of ACE players in the airplane cabin. If you happen to be on this flight, remember to leave your own high-altitude card photo...",
-      "excerptEnglish": "Xue Zhongfei 2026-10-27 14:00 Exclusive romance from the Weibo web version ten thousand meters high, Xue Zhongfei x Hou Minghao theme airline officially set sail! [Airplane] Every cloud flight is accompanied by the warmth of ACE players in the airplane cabin. If you happen to be on this flight, remember to leave your own high-altitude check-in photo. [As expected of you] # Hou Minghao [super talk] # # Hou Minghao flying in the snow global brand spokesperson # # how to play are flying in the snow # # snow Ace player Hou Minghao # ​"
-    },
-    {
-      "id": "9f812f6b87993901f646",
-      "platform": "Weibo",
-      "source": "雪中飞",
-      "title": "雪中飞 2026-10-27 11:21 来自 微博网页版 手里的周边怎么玩才够秀？「侯」物爆改局正式开启！[不愧是你] 无论是释放DIY创意脑洞，还是带着打卡牌去地标拍大片，收到周边的桃妹们可以尽情发挥想象力[思考] 即日起至11月15…",
-      "excerpt": "雪中飞 2026-10-27 11:21 来自 微博网页版 手里的周边怎么玩才够秀？「侯」物爆改局正式开启！[不愧是你] 无论是释放DIY创意脑洞，还是带着打卡牌去地标拍大片，收到周边的桃妹们可以尽情发挥想象力[思考] 即日起至11月15日，带话题#侯明昊雪中飞全球品牌代言人# #怎么玩都对这很雪中飞# #雪中飞侯明昊周边二创# 发布作品并@雪中飞 官方账号 ​",
-      "category": "Endorsement",
-      "date": "2026-10-27T12:00:00+08:00",
-      "url": "https://sina.cn/media/2682624851",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [],
-      "titleOriginal": "雪中飞 2026-10-27 11:21 来自 微博网页版 手里的周边怎么玩才够秀？「侯」物爆改局正式开启！[不愧是你] 无论是释放DIY创意脑洞，还是带着打卡牌去地标拍大片，收到周边的桃妹们可以尽情发挥想象力[思考] 即日起至11月15…",
-      "excerptOriginal": "雪中飞 2026-10-27 11:21 来自 微博网页版 手里的周边怎么玩才够秀？「侯」物爆改局正式开启！[不愧是你] 无论是释放DIY创意脑洞，还是带着打卡牌去地标拍大片，收到周边的桃妹们可以尽情发挥想象力[思考] 即日起至11月15日，带话题#侯明昊雪中飞全球品牌代言人# #怎么玩都对这很雪中飞# #雪中飞侯明昊周边二创# 发布作品并@雪中飞 官方账号 ​",
-      "titleEnglish": "Xue Zhongfei 2026-10-27 11:21 From the Weibo web version How to play around the show? The \"Hou\" Explosive Reform Bureau has officially opened! [As expected of you] Whether it's unleashing a DIY creative brain, or taking a card to a landmark to shoot a blockbuster, the surrounding peaches can enjoy their imagination [think] from now until November 15...",
-      "excerptEnglish": "Xue Zhongfei 2026-10-27 11:21 From the Weibo web version How to play around the show? The \"Hou\" Explosive Reform Bureau has officially opened! [As expected of you] Whether it's releasing a DIY creative brain, or taking a card to a landmark to shoot a large film, the surrounding Tomei can enjoy their imagination [think] From now until November 15, with the topic # Hou Minghao, the spokesperson of the global brand # # How to play this is very snowy # # Hou Minghao in the snow # Release the work and @ Xue Zhongfei official account ​"
-    },
-    {
-      "id": "32a11129f2ca94d390c8",
-      "platform": "Weibo",
-      "source": "雪中飞",
-      "title": "雪中飞 2026-10-27 10:00 来自 微博网页版 ❄️解锁侯明昊三套雪中飞冬日造型✨ 雪场酷飒⛷️、日常简约、松弛暖感，风格随心切换 年轻人的第一套滑雪服，就选雪中飞 天猫｜抖音｜京东｜微信小程序火热预售中🔥，pick侯明昊同款…",
-      "excerpt": "雪中飞 2026-10-27 10:00 来自 微博网页版 ❄️解锁侯明昊三套雪中飞冬日造型✨ 雪场酷飒⛷️、日常简约、松弛暖感，风格随心切换 年轻人的第一套滑雪服，就选雪中飞 天猫｜抖音｜京东｜微信小程序火热预售中🔥，pick侯明昊同款绿色滑雪套装，赴雪季之约 #侯明昊[超话]# #雪中飞全球品牌代言人侯明昊# #怎么玩都对这很雪中飞# ​",
-      "category": "Endorsement",
-      "date": "2026-10-27T12:00:00+08:00",
-      "url": "https://sina.cn/media/2682624851",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [],
-      "titleOriginal": "雪中飞 2026-10-27 10:00 来自 微博网页版 ❄️解锁侯明昊三套雪中飞冬日造型✨ 雪场酷飒⛷️、日常简约、松弛暖感，风格随心切换 年轻人的第一套滑雪服，就选雪中飞 天猫｜抖音｜京东｜微信小程序火热预售中🔥，pick侯明昊同款…",
-      "excerptOriginal": "雪中飞 2026-10-27 10:00 来自 微博网页版 ❄️解锁侯明昊三套雪中飞冬日造型✨ 雪场酷飒⛷️、日常简约、松弛暖感，风格随心切换 年轻人的第一套滑雪服，就选雪中飞 天猫｜抖音｜京东｜微信小程序火热预售中🔥，pick侯明昊同款绿色滑雪套装，赴雪季之约 #侯明昊[超话]# #雪中飞全球品牌代言人侯明昊# #怎么玩都对这很雪中飞# ​",
-      "titleEnglish": "Xue Zhongfei 2026-10-27 10:00 ❄️Unlock Hou Minghao's three sets of snowy winter shapes from the Weibo✨ web version Cool⛷️, simple, relaxed and warm, style freely switch young people's first ski suit, choose the snowy Tmall | TikTok | Jingdong | WeChat Mini Program hot pre-sale🔥, pick Hou Minghao the same style...",
-      "excerptEnglish": "Snow Flight 2026-10-27 10:00 ❄️Unlock Hou Minghao's three sets of snowflake winter modeling from the Weibo web✨ version Cool⛷️, daily simplicity, relaxed warmth, style change young people's first ski suit, choose Tmall in the snow | TikTok | Jingdong | WeChat small program hot pre-sale🔥, pick Hou Minghao the same green ski suit, go to the snow season appointment # Hou Minghao [super talk] # # Snow Flight global brand spokesperson Hou Minghao # # How to play is very snowy # ​"
-    },
-    {
-      "id": "c0502ee55be79300c25d",
-      "platform": "Weibo",
-      "source": "侯明昊工作室",
-      "title": "2026-10-26 22:26 山河记得他们来过。#纪念红军长征胜利90周年主题长卷#//@侯明昊:#纪念红军长征胜利90周年主题长卷# 有些路是走出来的，不是说出来的。他们走过的万水千山，今天都成了烟火人间。铭记，就是最好的致敬。#这…",
-      "excerpt": "侯明昊工作室 2026-10-26 22:26 山河记得他们来过。#纪念红军长征胜利90周年主题长卷#//@侯明昊:#纪念红军长征胜利90周年主题长卷# 有些路是走出来的，不是说出来的。他们走过的万水千山，今天都成了烟火人间。铭记，就是最好的致敬。#这幅长卷送给每一位正在赶路的人# 一起在新的长征路上阔步前行！ 【#纪念红军长征胜利90周年主题长卷#｜万水千山】90多年前，红军用脚步作笔，把万水千山写成了通往未来的史诗。今天，我们每个人也有自己的那座山、那条河。#这幅长卷送给每一位正在赶路的人#，一起在新的长征路上阔步前行！ ​",
-      "category": "Official",
-      "date": "2026-10-26T12:00:00+08:00",
-      "url": "https://sina.cn/media/5763552342",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [],
-      "titleOriginal": "2026-10-26 22:26 山河记得他们来过。#纪念红军长征胜利90周年主题长卷#//@侯明昊:#纪念红军长征胜利90周年主题长卷# 有些路是走出来的，不是说出来的。他们走过的万水千山，今天都成了烟火人间。铭记，就是最好的致敬。#这…",
-      "excerptOriginal": "侯明昊工作室 2026-10-26 22:26 山河记得他们来过。#纪念红军长征胜利90周年主题长卷#//@侯明昊:#纪念红军长征胜利90周年主题长卷# 有些路是走出来的，不是说出来的。他们走过的万水千山，今天都成了烟火人间。铭记，就是最好的致敬。#这幅长卷送给每一位正在赶路的人# 一起在新的长征路上阔步前行！ 【#纪念红军长征胜利90周年主题长卷#｜万水千山】90多年前，红军用脚步作笔，把万水千山写成了通往未来的史诗。今天，我们每个人也有自己的那座山、那条河。#这幅长卷送给每一位正在赶路的人#，一起在新的长征路上阔步前行！ ​",
-      "titleEnglish": "2026-10-26 22:26 The mountains and rivers remember that they came. # Theme to commemorate the 90th anniversary of the victory of the Red Army Long March Long Scroll #//@ Hou Minghao: # Theme to commemorate the 90th anniversary of the victory of the Red Army Long March Long Scroll # Some roads have come out, not spoken. The thousands of mountains they walked through have all become fireworks worlds today. Remember, it's the best tribute. # This...",
-      "excerptEnglish": "Hou Minghao Studio 2026-10-26 22:26 The mountains and rivers remembered that they had come. # Theme to commemorate the 90th anniversary of the victory of the Red Army Long March Long Scroll #//@ Hou Minghao: # Theme to commemorate the 90th anniversary of the victory of the Red Army Long March Long Scroll # Some roads have come out, not spoken. The thousands of mountains they walked through have all become fireworks worlds today. Remember, it is the best tribute. # This scroll is for everyone who is on the road # Stroll along the new Long March road together! [# Long Scroll to Commemorate the 90th Anniversary of the Red Army's Long March Victory # | Wanshui Qianshan] More than 90 years ago, the Red Army used footsteps as a pen to write Wanshui Qianshan into an epic poem for the future. Today, each of us has his own mountain, his own river. # This long scroll is for everyone who is on the road # and striding along the new Long March road together! ​"
     }
   ]
 }
