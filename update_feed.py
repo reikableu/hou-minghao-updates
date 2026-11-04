@@ -25,6 +25,13 @@ MAX_POSTS = 200
 MAX_TRANSLATED_POSTS_PER_RUN = 10  # Successful posts; Weibo is prioritized.
 TRANSLATION_DELAY_SECONDS = 5
 REQUEST_DELAY_SECONDS = 2
+# Shared Playwright page for Weibo (set in main). No login cookie needed.
+WEIBO_PAGE = None
+MOBILE_UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/126.0.0.0 Safari/537.36"
+)
 WEIBO_POST_LIMIT = 15  # Maximum matching Weibo posts across all accounts per Singapore calendar day.
 
 HEADERS = {
@@ -392,12 +399,29 @@ def collect_sina_api_account(source_config):
     container_id = f"107603{uid}"
     target_url = f"https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid={container_id}"
     
-    response = requests.get(target_url, headers=HEADERS, timeout=30)
-    response.raise_for_status()
-    payload = response.json()
-    
+    if WEIBO_PAGE is None:
+        raise RuntimeError("Browser session not available")
+
+    response = WEIBO_PAGE.goto(target_url, wait_until="domcontentloaded", timeout=30000)
+    if response is None:
+        raise RuntimeError("No response from Weibo")
+    if response.status != 200:
+        raise RuntimeError(f"HTTP {response.status} (Weibo blocked this request)")
+    body = (response.text() or "").strip()
+    try:
+        payload = json.loads(body)
+    except ValueError:
+        # Browsers sometimes wrap JSON in <pre>; try stripping tags once
+        try:
+            payload = json.loads(re.sub(r"<[^>]+>", "", body))
+        except ValueError:
+            raise RuntimeError(f"Non-JSON response (login/captcha page?): {body[:80]!r}")
+
     if payload.get("ok") not in (1, "1", True):
-        return []
+        msg = str(payload.get("msg") or "")
+        if "还没有内容" in msg:
+            return []
+        raise RuntimeError(f"Weibo API ok=0: {msg or 'no message'}"[:200])
         
     cards = ((payload.get("data") or {}).get("cards")) or []
     collected = []
@@ -630,7 +654,27 @@ def main():
     data = load_existing_data()
     existing = deduplicate_posts([p for p in data.get("posts", []) if isinstance(p, dict)])
 
+    global WEIBO_PAGE
     collected, statuses = [], []
+    pw = browser = None
+    try:
+        from playwright.sync_api import sync_playwright
+        pw = sync_playwright().start()
+        browser = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
+        context = browser.new_context(
+            user_agent=MOBILE_UA, locale="en-US", viewport={"width": 1365, "height": 768},
+            extra_http_headers={"Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8"},
+        )
+        WEIBO_PAGE = context.new_page()
+        try:
+            r = WEIBO_PAGE.goto("https://m.weibo.cn/", wait_until="domcontentloaded", timeout=20000)
+            print(f"Weibo warmup HTTP status: {r.status if r else 'none'}")
+            time.sleep(2)
+        except Exception as error:
+            print(f"Weibo warmup notice: {type(error).__name__}: {error}")
+    except Exception as error:
+        print(f"Playwright unavailable, Weibo sources will fail: {error}")
+
     for config in SOURCES:
         checked = singapore_now()
         print(f"Checking {config['name']}...")
@@ -643,6 +687,13 @@ def main():
             print(f"{config['name']} failed: {error}")
             statuses.append({"source": config["name"], "status": "Failed", "itemsFound": 0, "checkedAt": checked.isoformat(), "message": str(error)[:200]})
         time.sleep(REQUEST_DELAY_SECONDS)
+
+    try:
+        if browser: browser.close()
+        if pw: pw.stop()
+    except Exception:
+        pass
+    WEIBO_PAGE = None
 
     today = singapore_now().date()
     def is_weibo_today(post):
