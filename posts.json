@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-04T16:19:38+08:00",
+  "lastUpdated": "2026-11-04T19:32:35+08:00",
   "status": "Completed: 17 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 20,
-    "postsTranslatedThisRun": 10,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 20
+      "MyMemory": 2
     }
   },
   "sourceStatus": [
@@ -15,103 +15,103 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T16:16:32.829360+08:00"
+      "checkedAt": "2026-11-04T19:31:41.313423+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T16:16:35.280939+08:00"
+      "checkedAt": "2026-11-04T19:31:43.791349+08:00"
     },
     {
       "source": "Weibo @Simba0803_侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T16:16:37.836090+08:00"
+      "checkedAt": "2026-11-04T19:31:46.410640+08:00"
     },
     {
       "source": "Weibo @83rdMistake丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T16:16:40.457204+08:00"
+      "checkedAt": "2026-11-04T19:31:48.934468+08:00"
     },
     {
       "source": "Weibo @ComfitCupid丨侯明昊",
       "status": "Success",
-      "itemsFound": 12,
-      "checkedAt": "2026-11-04T16:16:42.956726+08:00"
+      "itemsFound": 11,
+      "checkedAt": "2026-11-04T19:31:51.374112+08:00"
     },
     {
       "source": "Weibo account 7954477778",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T16:16:45.454540+08:00"
+      "checkedAt": "2026-11-04T19:31:53.862017+08:00"
     },
     {
       "source": "Weibo account 7431934486",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T16:16:47.784171+08:00"
+      "checkedAt": "2026-11-04T19:31:56.135516+08:00"
     },
     {
       "source": "Weibo account 6941933193",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T16:16:50.143746+08:00"
+      "checkedAt": "2026-11-04T19:31:58.410514+08:00"
     },
     {
       "source": "Weibo @QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T16:16:52.448761+08:00"
+      "checkedAt": "2026-11-04T19:32:00.669609+08:00"
     },
     {
       "source": "Weibo account 9072975151",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T16:16:55.062627+08:00"
+      "checkedAt": "2026-11-04T19:32:03.124392+08:00"
     },
     {
       "source": "Weibo @珍宝珠-ChupaChups",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-04T16:16:57.370191+08:00"
+      "checkedAt": "2026-11-04T19:32:05.426005+08:00"
     },
     {
       "source": "Weibo @HOKA",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-04T16:16:59.892511+08:00"
+      "checkedAt": "2026-11-04T19:32:07.911917+08:00"
     },
     {
       "source": "Weibo @天美意官方微博",
       "status": "Success",
       "itemsFound": 7,
-      "checkedAt": "2026-11-04T16:17:02.482799+08:00"
+      "checkedAt": "2026-11-04T19:32:10.321258+08:00"
     },
     {
       "source": "Weibo account 7728002071",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T16:17:05.129108+08:00"
+      "checkedAt": "2026-11-04T19:32:12.933078+08:00"
     },
     {
       "source": "Weibo account 7854683575",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T16:17:07.440120+08:00"
+      "checkedAt": "2026-11-04T19:32:15.256296+08:00"
     },
     {
       "source": "Weibo @雪中飞",
       "status": "Success",
-      "itemsFound": 2,
-      "checkedAt": "2026-11-04T16:17:09.764574+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-04T19:32:17.529181+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-04T16:17:12.228196+08:00"
+      "checkedAt": "2026-11-04T19:32:19.989177+08:00"
     }
   ],
   "posts": [
@@ -589,7 +589,9 @@
       "verified": true,
       "collectionMethod": "Weibo API",
       "titleOriginal": "星涵cp太甜啦[给你小心心]感谢星颖上脚暖羊羊毛毛鞋，时髦表现力太绝啦！",
-      "excerptOriginal": "星涵cp太甜啦[给你小心心]感谢星颖上脚暖羊羊毛毛鞋，时髦表现力太绝啦！"
+      "excerptOriginal": "星涵cp太甜啦[给你小心心]感谢星颖上脚暖羊羊毛毛鞋，时髦表现力太绝啦！",
+      "titleEnglish": "Haha's cp is too sweet [be careful with you] Thank you Xingying for warming the woolen shoes, it's too stylish!",
+      "excerptEnglish": "Haha's cp is too sweet [be careful with you] Thank you Xingying for warming the woolen shoes, it's too stylish!"
     },
     {
       "id": "83aad5d18e0af11f91a1",
