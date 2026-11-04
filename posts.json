@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-04T19:32:35+08:00",
+  "lastUpdated": "2026-11-05T04:02:31+08:00",
   "status": "Completed: 17 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 2,
-    "postsTranslatedThisRun": 1,
+    "translationsAdded": 10,
+    "postsTranslatedThisRun": 5,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 2
+      "MyMemory": 10
     }
   },
   "sourceStatus": [
@@ -15,106 +15,281 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T19:31:41.313423+08:00"
+      "checkedAt": "2026-11-05T04:00:37.258336+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T19:31:43.791349+08:00"
+      "checkedAt": "2026-11-05T04:00:39.783845+08:00"
     },
     {
       "source": "Weibo @Simba0803_侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T19:31:46.410640+08:00"
+      "checkedAt": "2026-11-05T04:00:42.296253+08:00"
     },
     {
       "source": "Weibo @83rdMistake丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T19:31:48.934468+08:00"
+      "checkedAt": "2026-11-05T04:00:44.887580+08:00"
     },
     {
       "source": "Weibo @ComfitCupid丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T19:31:51.374112+08:00"
+      "checkedAt": "2026-11-05T04:00:47.528115+08:00"
     },
     {
       "source": "Weibo account 7954477778",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T19:31:53.862017+08:00"
+      "checkedAt": "2026-11-05T04:00:50.014716+08:00"
     },
     {
       "source": "Weibo account 7431934486",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T19:31:56.135516+08:00"
+      "checkedAt": "2026-11-05T04:00:52.336480+08:00"
     },
     {
       "source": "Weibo account 6941933193",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T19:31:58.410514+08:00"
+      "checkedAt": "2026-11-05T04:00:54.667288+08:00"
     },
     {
       "source": "Weibo @QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-04T19:32:00.669609+08:00"
+      "checkedAt": "2026-11-05T04:00:56.993175+08:00"
     },
     {
       "source": "Weibo account 9072975151",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T19:32:03.124392+08:00"
+      "checkedAt": "2026-11-05T04:00:59.443616+08:00"
     },
     {
       "source": "Weibo @珍宝珠-ChupaChups",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-04T19:32:05.426005+08:00"
+      "checkedAt": "2026-11-05T04:01:01.794013+08:00"
     },
     {
       "source": "Weibo @HOKA",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-04T19:32:07.911917+08:00"
+      "checkedAt": "2026-11-05T04:01:04.303235+08:00"
     },
     {
       "source": "Weibo @天美意官方微博",
       "status": "Success",
       "itemsFound": 7,
-      "checkedAt": "2026-11-04T19:32:10.321258+08:00"
+      "checkedAt": "2026-11-05T04:01:06.747739+08:00"
     },
     {
       "source": "Weibo account 7728002071",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T19:32:12.933078+08:00"
+      "checkedAt": "2026-11-05T04:01:09.316316+08:00"
     },
     {
       "source": "Weibo account 7854683575",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-04T19:32:15.256296+08:00"
+      "checkedAt": "2026-11-05T04:01:11.677502+08:00"
     },
     {
       "source": "Weibo @雪中飞",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-04T19:32:17.529181+08:00"
+      "checkedAt": "2026-11-05T04:01:14.012426+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-04T19:32:19.989177+08:00"
+      "checkedAt": "2026-11-05T04:01:16.479018+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "a956e82a4d8ff2c160bb",
+      "platform": "Weibo",
+      "source": "Weibo @QINA亓那眼镜",
+      "title": "#qina元气学院框# QJ5226，重新 定义「文艺松弛」新轮廓 以椭圆流畅框型勾勒复古文艺基调，用轻盈柔和线条自然修饰脸型。 渐变三角背弹镜腿设计，立体弧形精准贴合头部，告别久戴负担，实现稳固佩戴与轻盈体感。 #qina追光亓遇# #…",
+      "excerpt": "#qina元气学院框# QJ5226，重新 定义「文艺松弛」新轮廓 以椭圆流畅框型勾勒复古文艺基调，用轻盈柔和线条自然修饰脸型。 渐变三角背弹镜腿设计，立体弧形精准贴合头部，告别久戴负担，实现稳固佩戴与轻盈体感。 #qina追光亓遇# #qina眼镜品牌代言人侯明昊#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b8db53f7664ba87fde357655.jpg"
+      ],
+      "category": "Endorsement",
+      "date": "2026-11-05T04:00:57.440603+08:00",
+      "url": "https://m.weibo.cn/status/5328930916533556",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#qina元气学院框# QJ5226，重新 定义「文艺松弛」新轮廓 以椭圆流畅框型勾勒复古文艺基调，用轻盈柔和线条自然修饰脸型。 渐变三角背弹镜腿设计，立体弧形精准贴合头部，告别久戴负担，实现稳固佩戴与轻盈体感。 #qina追光亓遇# #…",
+      "excerptOriginal": "#qina元气学院框# QJ5226，重新 定义「文艺松弛」新轮廓 以椭圆流畅框型勾勒复古文艺基调，用轻盈柔和线条自然修饰脸型。 渐变三角背弹镜腿设计，立体弧形精准贴合头部，告别久戴负担，实现稳固佩戴与轻盈体感。 #qina追光亓遇# #qina眼镜品牌代言人侯明昊#",
+      "titleEnglish": "# qina Yuanqi Academy box # QJ5226 redefines the new silhouette of \"literary relaxation\" to outline the retro literary and artistic tone in an elliptical and smooth frame, and naturally decorates the face with light and soft lines. Gradient triangle back temple leg design, three-dimensional curved precise fit to the head, bid farewell to wear the burden for a long time, to achieve stable wear and light body feeling. # qina chasing light encounter # #...",
+      "excerptEnglish": "# qina Yuanqi Academy box # QJ5226 redefines the new silhouette of \"literary relaxation\" to outline the retro literary and artistic tone in an elliptical and smooth frame, and naturally decorates the face with light and soft lines. The gradient triangle back is designed to fit the head accurately in a three-dimensional curved shape, farewell to the burden of wearing for a long time, and achieve stable wear and lightweight body feeling. # qina chasing light meets # # qina eyewear brand spokesperson Hou Minghao #"
+    },
+    {
+      "id": "b39797688bf5874e8a34",
+      "platform": "Weibo",
+      "source": "Weibo @QINA亓那眼镜",
+      "title": "#QINA文艺小圆框# QJ5228「温润松弛」新弧度，圆润框型自带复古柔和的底色，TR材质温润柔和，简约弧形轮廓把脸型温柔收束，三角背设计镜腿，轻弹外扩力强，贴合头型，轻盈柔韧撑起一整天的无感佩戴。 #QINA追光亓遇# #QINA眼镜…",
+      "excerpt": "#QINA文艺小圆框# QJ5228「温润松弛」新弧度，圆润框型自带复古柔和的底色，TR材质温润柔和，简约弧形轮廓把脸型温柔收束，三角背设计镜腿，轻弹外扩力强，贴合头型，轻盈柔韧撑起一整天的无感佩戴。 #QINA追光亓遇# #QINA眼镜品牌代言人侯明昊#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/effbd6e82d4a92d7b899e88a.jpg"
+      ],
+      "category": "Endorsement",
+      "date": "2026-11-05T04:00:57.439580+08:00",
+      "url": "https://m.weibo.cn/status/5328976215280791",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#QINA文艺小圆框# QJ5228「温润松弛」新弧度，圆润框型自带复古柔和的底色，TR材质温润柔和，简约弧形轮廓把脸型温柔收束，三角背设计镜腿，轻弹外扩力强，贴合头型，轻盈柔韧撑起一整天的无感佩戴。 #QINA追光亓遇# #QINA眼镜…",
+      "excerptOriginal": "#QINA文艺小圆框# QJ5228「温润松弛」新弧度，圆润框型自带复古柔和的底色，TR材质温润柔和，简约弧形轮廓把脸型温柔收束，三角背设计镜腿，轻弹外扩力强，贴合头型，轻盈柔韧撑起一整天的无感佩戴。 #QINA追光亓遇# #QINA眼镜品牌代言人侯明昊#",
+      "titleEnglish": "# Qina literary and artistic small round frame # QJ5228 \"warm and relaxed\" new arc, round frame type with retro soft background, TR material gentle and gentle, simple curved outline to gently close the face shape, triangle back design temple legs, flick external expansion, fit the head shape, light and flexible to support the whole day. # Qina chasing light # # Qina glasses...",
+      "excerptEnglish": "# Qina literary and artistic small round frame # QJ5228 \"warm and relaxed\" new arc, round frame type with retro soft background, TR material gentle and gentle, simple curved outline to gently close the face shape, triangle back design temple legs, flick external expansion, fit the head shape, light and flexible to support the whole day. # Qina chasing the light # # Qina eyewear brand spokesperson Hou Minghao #"
+    },
+    {
+      "id": "9d462c7d6c424b7c1df5",
+      "platform": "Weibo",
+      "source": "Weibo @QINA亓那眼镜",
+      "title": "#QINA复古半框# QJ5220 以半框点睛，定义「新潮弹韧」。 复古经典点到为止，融入高弹尼龙材质打造新潮轮廓；镜腿内置弹力插芯，顺着多种头型灵活贴合，柔韧耐造不易变形，稳固佩戴不滑落。 一半复古，一半新潮，让风格不被约束。 #QIN…",
+      "excerpt": "#QINA复古半框# QJ5220 以半框点睛，定义「新潮弹韧」。 复古经典点到为止，融入高弹尼龙材质打造新潮轮廓；镜腿内置弹力插芯，顺着多种头型灵活贴合，柔韧耐造不易变形，稳固佩戴不滑落。 一半复古，一半新潮，让风格不被约束。 #QINA追光亓遇# #QINA眼镜品牌代言人侯明昊#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d48e48d8197ac1bc995d13c9.jpg"
+      ],
+      "category": "Endorsement",
+      "date": "2026-11-05T04:00:57.438725+08:00",
+      "url": "https://m.weibo.cn/status/5329217807189966",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#QINA复古半框# QJ5220 以半框点睛，定义「新潮弹韧」。 复古经典点到为止，融入高弹尼龙材质打造新潮轮廓；镜腿内置弹力插芯，顺着多种头型灵活贴合，柔韧耐造不易变形，稳固佩戴不滑落。 一半复古，一半新潮，让风格不被约束。 #QIN…",
+      "excerptOriginal": "#QINA复古半框# QJ5220 以半框点睛，定义「新潮弹韧」。 复古经典点到为止，融入高弹尼龙材质打造新潮轮廓；镜腿内置弹力插芯，顺着多种头型灵活贴合，柔韧耐造不易变形，稳固佩戴不滑落。 一半复古，一半新潮，让风格不被约束。 #QINA追光亓遇# #QINA眼镜品牌代言人侯明昊#",
+      "titleEnglish": "# Qina Vintage Half Frame # QJ5220 defines' New Trendy Resilience 'with a half frame dot. Up to the vintage classic point, it is mixed with high elastic nylon material to create a trendy outline; the temple leg has a built-in elastic ferrule, which is flexible to fit along a variety of head shapes, pliable and resistant to deformation, and stable to wear without slipping. Half vintage, half trendy, unconstrained style. # Qin...",
+      "excerptEnglish": "# Qina Vintage Half Frame # QJ5220 defines' New Trendy Resilience 'with a half frame dot. Up to the vintage classic point, it is mixed with high elastic nylon material to create a trendy outline; the temple leg has a built-in elastic ferrule, which is flexible to fit along a variety of head shapes, pliable and resistant to deformation, and stable to wear without slipping. Half vintage, half trendy, so that style is not constrained. # Qina chasing the light # # Qina eyewear brand spokesperson Hou Minghao #"
+    },
+    {
+      "id": "3d9ca216e9a0dd6da855",
+      "platform": "Weibo",
+      "source": "Weibo @QINA亓那眼镜",
+      "title": "七夕最好的礼物是什么呢？ 来听听 @侯明昊 怎么说～ #QINA眼镜品牌代言人侯明昊# #QINA追光亓遇# 侯明昊 QINA亓那眼镜的微博视频",
+      "excerpt": "七夕最好的礼物是什么呢？ 来听听 @侯明昊 怎么说～ #QINA眼镜品牌代言人侯明昊# #QINA追光亓遇# 侯明昊 QINA亓那眼镜的微博视频",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-11-05T04:00:57.437806+08:00",
+      "url": "https://m.weibo.cn/status/5331431250989073",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "七夕最好的礼物是什么呢？ 来听听 @侯明昊 怎么说～ #QINA眼镜品牌代言人侯明昊# #QINA追光亓遇# 侯明昊 QINA亓那眼镜的微博视频",
+      "excerptOriginal": "七夕最好的礼物是什么呢？ 来听听 @侯明昊 怎么说～ #QINA眼镜品牌代言人侯明昊# #QINA追光亓遇# 侯明昊 QINA亓那眼镜的微博视频",
+      "titleEnglish": "What is the best gift for Tanabata? Let's hear what @ Hou Minghao has to say ~ # Qina eyewear brand spokesperson Hou Minghao # # Qina chasing light meets # Hou Minghao Qina Weibo video of the glasses",
+      "excerptEnglish": "What is the best gift for Tanabata? Let's hear what @ Hou Minghao has to say ~ # Qina eyewear brand spokesperson Hou Minghao # # Qina chasing light meets # Hou Minghao Qina Weibo video of the glasses"
+    },
+    {
+      "id": "c4d3cad9f9ea76b037a3",
+      "platform": "Weibo",
+      "source": "Weibo @QINA亓那眼镜",
+      "title": "相约宠EYE学院 ，“HAO”想见你，暑气收尾，风格先[型]，新学期即将开启，镜头已就位，凹好造型跟上侯明昊的脚步，抓住暑末的风，提前入场初秋,一起上镜出圈。 #QINA追光亓遇# #QINA眼镜品牌代言人侯明昊# QINA亓那眼镜的微博…",
+      "excerpt": "相约宠EYE学院 ，“HAO”想见你，暑气收尾，风格先[型]，新学期即将开启，镜头已就位，凹好造型跟上侯明昊的脚步，抓住暑末的风，提前入场初秋,一起上镜出圈。 #QINA追光亓遇# #QINA眼镜品牌代言人侯明昊# QINA亓那眼镜的微博视频",
+      "images": [],
+      "category": "Endorsement",
+      "date": "2026-11-05T04:00:57.436398+08:00",
+      "url": "https://m.weibo.cn/status/5334396938224000",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "相约宠EYE学院 ，“HAO”想见你，暑气收尾，风格先[型]，新学期即将开启，镜头已就位，凹好造型跟上侯明昊的脚步，抓住暑末的风，提前入场初秋,一起上镜出圈。 #QINA追光亓遇# #QINA眼镜品牌代言人侯明昊# QINA亓那眼镜的微博…",
+      "excerptOriginal": "相约宠EYE学院 ，“HAO”想见你，暑气收尾，风格先[型]，新学期即将开启，镜头已就位，凹好造型跟上侯明昊的脚步，抓住暑末的风，提前入场初秋,一起上镜出圈。 #QINA追光亓遇# #QINA眼镜品牌代言人侯明昊# QINA亓那眼镜的微博视频",
+      "titleEnglish": "Meet Pet Eye College, \"Hao\" wants to meet you, the summer is over, the style is first [type], the new semester is about to start, the lens is in place, the concave shape keeps up with Hou Minghao's footsteps, seizes the wind at the end of the summer, enters early autumn in advance, and takes a picture together. # Qina chasing the light # # Qina eyewear brand spokesperson Hou Minghao # Qina Weibo of the glasses...",
+      "excerptEnglish": "Meet Pet Eye College, \"Hao\" wants to meet you, the summer is over, the style is first [type], the new semester is about to start, the lens is in place, the concave shape keeps up with Hou Minghao's footsteps, seizes the wind at the end of the summer, enters early autumn in advance, and takes a picture together. # Qina chasing the light # # Qina eyewear brand spokesperson Hou Minghao # Qina Weibo video of the glasses"
+    },
+    {
+      "id": "b523cd5370ce9d046da4",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: RT @GianneSkyKiwiPH: His eyes radiate light whenever she sings. 🎶 #HouMinghao #HouMinghaoBelongsToUs2026",
+      "excerpt": "RT @GianneSkyKiwiPH: His eyes radiate light whenever she sings. 🎶 #HouMinghao #HouMinghaoBelongsToUs2026 — @PopMinghao Nov 4, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-05T02:27:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2118047524925984928",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "2d24e3901bc99f6bbaa8",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@neohou_feed",
+      "title": "Hou Minghao Feed: Hou Minghao’s Endorsement of Lay’s Surpasses the Average for Food Product Endorsements, Generating an Impressive 87.1% of the Brand’s Total Online Buzz in Just T…",
+      "excerpt": "Hou Minghao’s Endorsement of Lay’s Surpasses the Average for Food Product Endorsements, Generating an Impressive 87.1% of the Brand’s Total Online Buzz in Just Two Days! 🎉 #HouMinghao — @neohou_feed Nov 4, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7137b902fa3258516224fb50.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-05T01:18:00+08:00",
+      "url": "https://x.com/neohou_feed/status/2118030222155214918",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "e83bb710aef9f1f2e08f",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: look at him casually blowing kisses 😭 he’s so effortless and natural with fan service when he’s on stage… otherwise, we can’t expect this kind of thing from this…",
+      "excerpt": "look at him casually blowing kisses 😭 he’s so effortless and natural with fan service when he’s on stage… otherwise, we can’t expect this kind of thing from this cat at all 🤣🐈💗 — @PopMinghao Nov 4, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-04T19:46:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2117946465444299216",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "eb6934fbadaac415c3d9",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: look at him 🥹💗🫠🪽 Source :",
+      "excerpt": "look at him 🥹💗🫠🪽 Source : https://t.co/CUKy1nGVaT — @PopMinghao Nov 4, 2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fa1b593aea5dd20a2b7be9b5.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-04T19:22:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2117940556525715930",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "f3000ff51c1a696cb52c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "HouMinghao Base: Belongs to Us Zhengzhou Day 1 he said just one or two lines, but ended up singing from the chorus all the way to the end 😭 🐱: “wait, what did i just do?!” 😭🤏🏻 #Ho…",
+      "excerpt": "Belongs to Us Zhengzhou Day 1 he said just one or two lines, but ended up singing from the chorus all the way to the end 😭 🐱: “wait, what did i just do?!” 😭🤏🏻 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 — @PopMinghao Nov 4, 2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-04T18:51:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2117932693883359612",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "0d86e397d7f0d9fd386e",
       "platform": "Weibo",
@@ -3254,167 +3429,6 @@
       "verified": true,
       "collectionMethod": "Automatic",
       "images": []
-    },
-    {
-      "id": "1c123e2911f25508831a",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Meeting my crush IRL Guys, do you think I'll pull this off? #HouMinghaoBelongsToUs2026 Concert Tour 261029 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaoho…",
-      "excerpt": "Meeting my crush IRL Guys, do you think I'll pull this off? #HouMinghaoBelongsToUs2026 Concert Tour 261029 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 29, 2026",
-      "category": "X Update",
-      "date": "2026-10-29T18:07:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115747228291895710",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": []
-    },
-    {
-      "id": "23568baf36ee456e861b",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: SNOWFLYING | LED Ads in 7 cities Beijing | Shanghai | Chengdu | Hangzhou | Shenyang | Changchun | Dalian 261029 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #…",
-      "excerpt": "SNOWFLYING | LED Ads in 7 cities Beijing | Shanghai | Chengdu | Hangzhou | Shenyang | Changchun | Dalian 261029 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 29, 2026",
-      "category": "X Update",
-      "date": "2026-10-29T18:00:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115745492407914612",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": []
-    },
-    {
-      "id": "8b1400d1106649eed989",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @ncybear: Recharge with Houhou’s laughter and vote #HouMinghao x One In A Hundred for day 2 😙",
-      "excerpt": "RT @ncybear: Recharge with Houhou’s laughter and vote #HouMinghao x One In A Hundred for day 2 😙 — @PopMinghao Oct 29, 2026",
-      "category": "X Update",
-      "date": "2026-10-29T13:44:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2115681211641446901",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": []
-    },
-    {
-      "id": "36fe5871c13508d7f0d6",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@neohou_feed",
-      "title": "Hou Minghao Feed: RT @ncybear: “Hello everyone, I’m One In A Hundred brand spokesperson Hou Minghao. I choose One In A Hundred because it upholds quality, never settling for less.…",
-      "excerpt": "RT @ncybear: “Hello everyone, I’m One In A Hundred brand spokesperson Hou Minghao. I choose One In A Hundred because it upholds quality, never settling for less. Be meticulous in your work; be particular in your life. Every seed that gets put in your mouth deserves to be taken seriously. I’ve already tried this carefully selected deliciousness for…",
-      "category": "X Update",
-      "date": "2026-10-29T12:45:00+08:00",
-      "url": "https://x.com/neohou_feed/status/2115666190668369991",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": []
-    },
-    {
-      "id": "4b3d5b7b76af62856659",
-      "platform": "Weibo",
-      "source": "侯明昊工作室",
-      "title": "2026-10-29 18:05 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 惊喜大放送，捕捉一则老板🐈上班实录～ ​",
-      "excerpt": "侯明昊工作室 2026-10-29 18:05 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 惊喜大放送，捕捉一则老板🐈上班实录～ ​",
-      "category": "Official",
-      "date": "2026-10-29T12:00:00+08:00",
-      "url": "https://sina.cn/media/5763552342",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "2026-10-29 18:05 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 惊喜大放送，捕捉一则老板🐈上班实录～ ​",
-      "excerptOriginal": "侯明昊工作室 2026-10-29 18:05 #侯明昊[超话]# 𝗥𝗘𝗖𝗢𝗥𝗗｜@侯明昊 惊喜大放送，捕捉一则老板🐈上班实录～ ​",
-      "titleEnglish": "2026-10-29 18:05 # Hou Minghao [super talk] # # | @ Hou Minghao surprise delivery, capture a🐈 boss to work record ~ ​",
-      "excerptEnglish": "Hou Minghao Studio 2026-10-29 18:05 # Hou Minghao [super talk] # Hou Minghao | @ Hou Minghao surprise release, capture a record of the boss🐈 at work ~ ​",
-      "images": []
-    },
-    {
-      "id": "812b10aae4e1aab3050b",
-      "platform": "Weibo",
-      "source": "珀芙研",
-      "title": "珀芙研 2026-10-29 18:00 来自 iPhone客户端 小侯巡演郑州场要来啦🎉 10月30日–11月1日，小研和老朋友小屈在4家郑州屈臣氏门店，为猕猴桃们准备了超多可爱周边💚 ✨到店打卡就能 get 代言人定制贴纸！消费有机会…",
-      "excerpt": "珀芙研 2026-10-29 18:00 来自 iPhone客户端 小侯巡演郑州场要来啦🎉 10月30日–11月1日，小研和老朋友小屈在4家郑州屈臣氏门店，为猕猴桃们准备了超多可爱周边💚 ✨到店打卡就能 get 代言人定制贴纸！消费有机会解锁不同档位周边礼包 🔽这篇保姆级攻略请查收🫡 #侯明昊[超话]##珀芙研健康昊屏障##侯明昊珀芙研品牌全球修护代言人# ​",
-      "category": "Endorsement",
-      "date": "2026-10-29T12:00:00+08:00",
-      "url": "https://sina.cn/media/6941933193",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "珀芙研 2026-10-29 18:00 来自 iPhone客户端 小侯巡演郑州场要来啦🎉 10月30日–11月1日，小研和老朋友小屈在4家郑州屈臣氏门店，为猕猴桃们准备了超多可爱周边💚 ✨到店打卡就能 get 代言人定制贴纸！消费有机会…",
-      "excerptOriginal": "珀芙研 2026-10-29 18:00 来自 iPhone客户端 小侯巡演郑州场要来啦🎉 10月30日–11月1日，小研和老朋友小屈在4家郑州屈臣氏门店，为猕猴桃们准备了超多可爱周边💚 ✨到店打卡就能 get 代言人定制贴纸！消费有机会解锁不同档位周边礼包 🔽这篇保姆级攻略请查收🫡 #侯明昊[超话]##珀芙研健康昊屏障##侯明昊珀芙研品牌全球修护代言人# ​",
-      "titleEnglish": "Pufuyen 2026-10-29 18:00 From the iPhone client Xiaohou tour Zhengzhou field is coming🎉 October 30 - November 1, Xiao Yan and old friend Xiao Qu in 4 Zhengzhou Watsons stores, prepared for the kiwis super cute surrounding💚 ✨to get spokesperson customized stickers! Consumption has a chance...",
-      "excerptEnglish": "Pufuyen 2026-10-29 18:00 From the iPhone client Xiaohou tour Zhengzhou field is coming🎉 October 30 - November 1, Xiao Yan and old friend Xiao Qu in 4 Zhengzhou Watsons stores, prepared for the kiwis super cute surrounding💚 ✨to get spokesperson customized stickers! Consumption has the opportunity to unlock the surrounding 🔽packages of different grades Please check🫡 # Hou Minghao [super talk] # # Puffyan Healthy Barrier # # Hou Minghao Puffyan Brand Global Repair Spokesperson # ​",
-      "images": []
-    },
-    {
-      "id": "2590f41c95d66519ed65",
-      "platform": "Weibo",
-      "source": "雪中飞",
-      "title": "雪中飞 2026-10-29 16:17 来自 HUAWEI Pura 80 Pro+ 北京|上海|成都|杭州|沈阳|长春|大连7城地标大屏投放高光回顾[打call] 巨幕之上，侯明昊的雪场大片点亮城市商圈 排面拉满，雪道 ACE玩家的帅…",
-      "excerpt": "雪中飞 2026-10-29 16:17 来自 HUAWEI Pura 80 Pro+ 北京|上海|成都|杭州|沈阳|长春|大连7城地标大屏投放高光回顾[打call] 巨幕之上，侯明昊的雪场大片点亮城市商圈 排面拉满，雪道 ACE玩家的帅气还在延续![羞嗒嗒] 打卡过的小伙伴可以在评论区分享现场感受，一同珍藏这份雪季记忆~[爱慕] #侯明昊[超话]##侯明昊雪中飞全球品牌代言人# ​",
-      "category": "Endorsement",
-      "date": "2026-10-29T12:00:00+08:00",
-      "url": "https://sina.cn/media/2682624851",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "雪中飞 2026-10-29 16:17 来自 HUAWEI Pura 80 Pro+ 北京|上海|成都|杭州|沈阳|长春|大连7城地标大屏投放高光回顾[打call] 巨幕之上，侯明昊的雪场大片点亮城市商圈 排面拉满，雪道 ACE玩家的帅…",
-      "excerptOriginal": "雪中飞 2026-10-29 16:17 来自 HUAWEI Pura 80 Pro+ 北京|上海|成都|杭州|沈阳|长春|大连7城地标大屏投放高光回顾[打call] 巨幕之上，侯明昊的雪场大片点亮城市商圈 排面拉满，雪道 ACE玩家的帅气还在延续![羞嗒嗒] 打卡过的小伙伴可以在评论区分享现场感受，一同珍藏这份雪季记忆~[爱慕] #侯明昊[超话]##侯明昊雪中飞全球品牌代言人# ​",
-      "titleEnglish": "Xue Zhongfei 2026-10-29 16:17 From Huawei Pura 80 Pro + Beijing | Shanghai | Chengdu | Hangzhou | Shenyang | Changchun | Dalian 7 City Landmarks Large Screen Launches Highlight Review [Call] Above the giant screen, Hou Minghao's snowfield lights up a large area of the urban business district. The rows of faces are full, and the handsome ace players on the slopes...",
-      "excerptEnglish": "Xue Zhongfei 2026-10-29 16:17 From Huawei Pura 80 Pro + Beijing | Shanghai | Chengdu | Hangzhou | Shenyang | Changchun | Dalian 7 City Landmarks Large Screen Launches Highlight Review [Call] Above the giant screen, Hou Minghao's snowfield lights up a large area of the city business district, and the handsome ace players on the slopes continue! [Shy] The punched partner can share the live experience in the comment area and treasure the memory of the snow season together ~ [Love] # Hou Minghao [Overstatement] # # Hou Minghao Flying in the Snow Global Brand Spokesperson # ​",
-      "images": []
-    },
-    {
-      "id": "de8916f70710c2b36336",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Xudong x Hou Minghao 261029 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "Xudong x Hou Minghao 261029 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 29, 2026",
-      "category": "X Update",
-      "date": "2026-10-29T10:47:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115636527279837350",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": []
-    },
-    {
-      "id": "e0199aa6af8228951a15",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: No acting cute segment? Literally no time *not* to act cute 🥹 #HouMinghaoBelongsToUs2026 Concert Tour 261028 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiao…",
-      "excerpt": "No acting cute segment? Literally no time *not* to act cute 🥹 #HouMinghaoBelongsToUs2026 Concert Tour 261028 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 29, 2026",
-      "category": "X Update",
-      "date": "2026-10-29T10:42:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115635444159492157",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": []
-    },
-    {
-      "id": "739da6db6384fe1ab2ea",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @twoketchups: 짤로 첨 봣을 땐 저 남자가 따파이 보고 윙크를? 볼빵빵 애교를? 햇는데 그냥 눈감는거. 한숨쉬는거.엿음 귀척재능 ㅁㅊ",
-      "excerpt": "RT @twoketchups: 짤로 첨 봣을 땐 저 남자가 따파이 보고 윙크를? 볼빵빵 애교를? 햇는데 그냥 눈감는거. 한숨쉬는거.엿음 귀척재능 ㅁㅊ — @PopMinghao Oct 28, 2026",
-      "category": "X Update",
-      "date": "2026-10-29T00:45:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2115485215351251352",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3a366603222d33b2e5e7ac0c.jpg"
-      ]
     }
   ]
 }
