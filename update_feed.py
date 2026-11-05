@@ -27,6 +27,10 @@ TRANSLATION_DELAY_SECONDS = 5
 REQUEST_DELAY_SECONDS = 2
 # Shared Playwright page for Weibo (set in main). No login cookie needed.
 WEIBO_PAGE = None
+# Shared Playwright browser (set in main). Used for the X list, which needs login cookies.
+BROWSER = None
+# Your X list URL, e.g. https://x.com/i/lists/1234567890123456789 (can also be set via X_LIST_URL env var)
+X_LIST_URL = os.environ.get("X_LIST_URL", "https://x.com/i/lists/2115680530159308929")
 MOBILE_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -70,7 +74,7 @@ SOURCES = [
     for account_id in WEIBO_ACCOUNT_IDS
 ] + [
     {"name": "Hou Minghao X List", "source": "Hou Minghao X Updates", "platform": "X",
-     "url": "https://rss.app/feeds/k375DGhHRMrZ3Ju2.xml", "official": False, "type": "rss_feed"},
+     "url": X_LIST_URL, "official": False, "type": "x_list_playwright"},
 ]
 
 
@@ -558,6 +562,73 @@ def collect_rss_feed(source_config):
     return collected
 
 
+def collect_x_list(source_config):
+    """Scrape an X list with Playwright using login cookies from env vars."""
+    auth_token = os.environ.get("X_AUTH_TOKEN", "").strip()
+    ct0 = os.environ.get("X_CT0", "").strip()
+    if not auth_token or not ct0:
+        raise RuntimeError("X_AUTH_TOKEN / X_CT0 secrets are missing")
+    if BROWSER is None:
+        raise RuntimeError("Playwright browser unavailable")
+
+    context = BROWSER.new_context(
+        user_agent=MOBILE_UA, locale="en-US", viewport={"width": 1280, "height": 1800},
+    )
+    try:
+        context.add_cookies([
+            {"name": "auth_token", "value": auth_token, "domain": ".x.com", "path": "/", "secure": True, "httpOnly": True},
+            {"name": "ct0", "value": ct0, "domain": ".x.com", "path": "/", "secure": True},
+        ])
+        page = context.new_page()
+        page.goto(source_config["url"], wait_until="domcontentloaded", timeout=60000)
+        try:
+            page.wait_for_selector("article", timeout=30000)
+        except Exception:
+            if "login" in page.url or "flow" in page.url:
+                raise RuntimeError("X login wall (cookies expired or IP blocked)")
+            raise RuntimeError("No posts found on X list page (markup changed or list empty)")
+        for _ in range(3):  # scroll to load a few more posts
+            page.mouse.wheel(0, 3000)
+            page.wait_for_timeout(1500)
+
+        raw_items, seen = [], set()
+        for article in page.query_selector_all("article"):
+            time_el = article.query_selector("a[href*='/status/'] time")
+            if not time_el:
+                continue
+            href = time_el.evaluate("e => e.parentElement.getAttribute('href')") or ""
+            match = re.match(r"^/([A-Za-z0-9_]+)/status/(\d+)", href)
+            if not match or match.group(2) in seen:
+                continue
+            seen.add(match.group(2))
+            text_el = article.query_selector("[data-testid='tweetText']")
+            text = text_el.inner_text() if text_el else ""
+            images = []
+            for img in article.query_selector_all("[data-testid='tweetPhoto'] img"):
+                src = img.get_attribute("src") or ""
+                if "pbs.twimg.com/media" in src:
+                    src = re.sub(r"name=\w+", "name=large", src)
+                    images.append(src)
+            raw_items.append((match.group(1), match.group(2), text, time_el.get_attribute("datetime") or "", images))
+    finally:
+        try: context.close()
+        except Exception: pass
+
+    collected = []
+    for handle, status_id, text, stamp, images in raw_items[:25]:
+        text = clean_text(text)
+        link = f"https://x.com/{handle}/status/{status_id}"
+        title = shorten(text, 150) if text else f"Post by @{handle}"
+        collected.append({
+            "id": make_id("X", source_config["source"], title, link), "platform": "X",
+            "source": source_config["source"], "author": "@" + handle, "title": shorten(title, 180),
+            "excerpt": shorten(text, 350), "images": images[:9], "category": "X Update",
+            "date": parse_feed_date(stamp), "url": link, "official": False, "verified": True,
+            "collectionMethod": "Automatic",
+        })
+    return collected
+
+
 def find_atom_text(item, field):
     atom = "{http://www.w3.org/2005/Atom}"
     return item.findtext(atom + field) or item.findtext(field)
@@ -567,6 +638,7 @@ def collect_source(source_config):
     kind = source_config["type"]
     if kind == "sina_api_account": return collect_sina_api_account(source_config)
     if kind == "rss_feed": return collect_rss_feed(source_config)
+    if kind == "x_list_playwright": return collect_x_list(source_config)
     return []
 
 
@@ -685,7 +757,7 @@ def main():
     data = load_existing_data()
     existing = deduplicate_posts([p for p in data.get("posts", []) if isinstance(p, dict)])
 
-    global WEIBO_PAGE
+    global WEIBO_PAGE, BROWSER
     collected, statuses = [], []
     pw = browser = None
     try:
@@ -696,6 +768,7 @@ def main():
             user_agent=MOBILE_UA, locale="en-US", viewport={"width": 1365, "height": 768},
             extra_http_headers={"Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8"},
         )
+        BROWSER = browser
         WEIBO_PAGE = context.new_page()
         try:
             r = WEIBO_PAGE.goto("https://m.weibo.cn/", wait_until="domcontentloaded", timeout=20000)
@@ -725,6 +798,7 @@ def main():
     except Exception:
         pass
     WEIBO_PAGE = None
+    BROWSER = None
 
     today = singapore_now().date()
     def is_weibo_today(post):
