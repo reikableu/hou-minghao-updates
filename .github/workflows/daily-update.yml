@@ -59,6 +59,8 @@ jobs:
       - name: Run feed collector
         env:
           XHS_COOKIES_JSON: ${{ secrets.XHS_COOKIES_JSON }}
+          X_AUTH_TOKEN: ${{ secrets.X_AUTH_TOKEN }}
+          X_CT0: ${{ secrets.X_CT0 }}
         run: |
           echo "Starting feed collector..."
           python update_feed.py
