@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-05T09:47:24+08:00",
+  "lastUpdated": "2026-11-05T16:43:29+08:00",
   "status": "Completed: 17 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 6,
+    "postsTranslatedThisRun": 3,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 6
     }
   },
   "sourceStatus": [
@@ -15,106 +15,160 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T09:46:42.555395+08:00"
+      "checkedAt": "2026-11-05T16:41:55.029503+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T09:46:45.040066+08:00"
+      "checkedAt": "2026-11-05T16:41:57.494783+08:00"
     },
     {
       "source": "Weibo @Simba0803_侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T09:46:47.601151+08:00"
+      "checkedAt": "2026-11-05T16:42:00.057604+08:00"
     },
     {
       "source": "Weibo @83rdMistake丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T09:46:50.183627+08:00"
+      "checkedAt": "2026-11-05T16:42:02.649931+08:00"
     },
     {
       "source": "Weibo @ComfitCupid丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T09:46:52.723584+08:00"
+      "checkedAt": "2026-11-05T16:42:05.198398+08:00"
     },
     {
       "source": "Weibo account 7954477778",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T09:46:55.254800+08:00"
+      "checkedAt": "2026-11-05T16:42:07.790834+08:00"
     },
     {
       "source": "Weibo account 7431934486",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T09:46:57.719600+08:00"
+      "checkedAt": "2026-11-05T16:42:10.076953+08:00"
     },
     {
       "source": "Weibo account 6941933193",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T09:47:00.032200+08:00"
+      "checkedAt": "2026-11-05T16:42:12.361304+08:00"
     },
     {
       "source": "Weibo @QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T09:47:02.341959+08:00"
+      "checkedAt": "2026-11-05T16:42:14.636136+08:00"
     },
     {
       "source": "Weibo account 9072975151",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T09:47:04.800533+08:00"
+      "checkedAt": "2026-11-05T16:42:17.082190+08:00"
     },
     {
       "source": "Weibo @珍宝珠-ChupaChups",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-05T09:47:07.165284+08:00"
+      "checkedAt": "2026-11-05T16:42:19.361418+08:00"
     },
     {
       "source": "Weibo @HOKA",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-05T09:47:09.696664+08:00"
+      "checkedAt": "2026-11-05T16:42:22.037742+08:00"
     },
     {
       "source": "Weibo @天美意官方微博",
       "status": "Success",
-      "itemsFound": 7,
-      "checkedAt": "2026-11-05T09:47:12.127807+08:00"
+      "itemsFound": 6,
+      "checkedAt": "2026-11-05T16:42:24.474492+08:00"
     },
     {
       "source": "Weibo account 7728002071",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T09:47:14.679304+08:00"
+      "checkedAt": "2026-11-05T16:42:27.070809+08:00"
     },
     {
       "source": "Weibo account 7854683575",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T09:47:16.996551+08:00"
+      "checkedAt": "2026-11-05T16:42:29.349614+08:00"
     },
     {
       "source": "Weibo @雪中飞",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-05T09:47:19.309999+08:00"
+      "itemsFound": 4,
+      "checkedAt": "2026-11-05T16:42:31.627005+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 25,
-      "checkedAt": "2026-11-05T09:47:21.838610+08:00"
+      "itemsFound": 16,
+      "checkedAt": "2026-11-05T16:42:34.162067+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "6e93a9dba6d0a4db3922",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "恭喜@明昊宝宝上车喽 等10名用户获得【侯明昊Q版滑雪礼包】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "excerpt": "恭喜@明昊宝宝上车喽 等10名用户获得【侯明昊Q版滑雪礼包】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "images": [],
+      "category": "Official",
+      "date": "2026-11-05T16:42:32.155573+08:00",
+      "url": "https://m.weibo.cn/status/5361893638410617",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "恭喜@明昊宝宝上车喽 等10名用户获得【侯明昊Q版滑雪礼包】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "excerptOriginal": "恭喜@明昊宝宝上车喽 等10名用户获得【侯明昊Q版滑雪礼包】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "titleEnglish": "Congratulations to @ BabyMinghao for boarding and waiting for 10 users to receive the [Hou Minghao Q Edition Ski Pack]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
+      "excerptEnglish": "Congratulations to @ BabyMinghao for boarding and waiting for 10 users to receive the [Hou Minghao Q Edition Ski Pack]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:"
+    },
+    {
+      "id": "581b5be32d37b480bc95",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "恭喜@命好的明昊和小小的猕猴桃 等5名用户获得【雪中飞冬日滑雪礼盒】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "excerpt": "恭喜@命好的明昊和小小的猕猴桃 等5名用户获得【雪中飞冬日滑雪礼盒】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "images": [],
+      "category": "Official",
+      "date": "2026-11-05T16:42:32.154386+08:00",
+      "url": "https://m.weibo.cn/status/5361901937623077",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "恭喜@命好的明昊和小小的猕猴桃 等5名用户获得【雪中飞冬日滑雪礼盒】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "excerptOriginal": "恭喜@命好的明昊和小小的猕猴桃 等5名用户获得【雪中飞冬日滑雪礼盒】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "titleEnglish": "Congratulations to 5 users, including Ming Hao and the little kiwi fruit, for obtaining the [Flying in the Snow Winter Ski Gift Box]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
+      "excerptEnglish": "Congratulations to 5 users, including Ming Hao and the little kiwi fruit, for obtaining the [Flying in the Snow Winter Ski Gift Box]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:"
+    },
+    {
+      "id": "4725ee10148d2f39dab6",
+      "platform": "Weibo",
+      "source": "Weibo @雪中飞",
+      "title": "恭喜@昊可摘星辰 1名用户获得【侯明昊亲签照】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "excerpt": "恭喜@昊可摘星辰 1名用户获得【侯明昊亲签照】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "images": [],
+      "category": "Official",
+      "date": "2026-11-05T16:42:32.153007+08:00",
+      "url": "https://m.weibo.cn/status/5361902689715555",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "恭喜@昊可摘星辰 1名用户获得【侯明昊亲签照】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "excerptOriginal": "恭喜@昊可摘星辰 1名用户获得【侯明昊亲签照】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
+      "titleEnglish": "Congratulations to @ HaoKe XingChen 1 user for obtaining [Hou MingHao's pro-signature]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
+      "excerptEnglish": "Congratulations to @ HaoKe XingChen 1 user for obtaining [Hou MingHao's pro-signature]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:"
+    },
     {
       "id": "a956e82a4d8ff2c160bb",
       "platform": "Weibo",
@@ -266,7 +320,10 @@
       "title": "HouMinghao Base: look at him 🥹💗🫠🪽 Source :",
       "excerpt": "look at him 🥹💗🫠🪽 Source : https://t.co/CUKy1nGVaT — @PopMinghao Nov 4, 2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fa1b593aea5dd20a2b7be9b5.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fa1b593aea5dd20a2b7be9b5.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/117519c81aac577b1805bae8.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fd82e34b5caa19a2e1279624.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0417d2adeca5751152e07c53.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T19:22:00+08:00",
@@ -445,7 +502,8 @@
       "title": "Hou Minghao Record: \"Let [Us] meet once more.\" 261104 | \"Hou Minghao\" Wiebo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
       "excerpt": "\"Let [Us] meet once more.\" 261104 | \"Hou Minghao\" Wiebo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 — @HMH_Record Nov 4, 2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/725753a354b6886b077f36e4.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/725753a354b6886b077f36e4.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8f469d2ce3da1a8b7466cc02.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T14:38:00+08:00",
@@ -462,7 +520,8 @@
       "title": "Hou Minghao Record: Ticket Selling | Hou Minghao 'Belongs To Us' Beijing Stop | Additional Date 🗓️ November 7, 2026 ⏰ 13:18 CST 261104 | \"Youling Culture (幽伶文化)\" Weibo Update #Hou…",
       "excerpt": "Ticket Selling | Hou Minghao 'Belongs To Us' Beijing Stop | Additional Date 🗓️ November 7, 2026 ⏰ 13:18 CST 261104 | \"Youling Culture (幽伶文化)\" Weibo Update #HouMinghaoBelongsToUs2026 #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 4, 2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/db9e5bcba89af782336784c4.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/db9e5bcba89af782336784c4.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8b941904ae9f65cd83f12b4b.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T14:36:00+08:00",
@@ -494,7 +553,8 @@
       "title": "Hou Minghao Record: Hou Minghao's 'Belongs To Us' Concert Tour Final Stop Beijing SOLD OUT ‼️ 261104 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsTo…",
       "excerpt": "Hou Minghao's 'Belongs To Us' Concert Tour Final Stop Beijing SOLD OUT ‼️ 261104 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 — @HMH_Record Nov 4, 2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5e7c04c3321ee9aad9d54b8d.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5e7c04c3321ee9aad9d54b8d.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/384e11346cb25fb5806aea27.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T14:13:00+08:00",
@@ -526,7 +586,10 @@
       "title": "Hou Minghao Record: 🤎 261104 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "excerpt": "🤎 261104 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 4, 2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/245d7b807ca8e24bfaf0f7ef.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/245d7b807ca8e24bfaf0f7ef.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/42d2e6f57eb4b2a8c33b0655.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/07f755ab6e6ad59b164e64b5.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2069b5ceb1ca559e6b809c42.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T12:33:00+08:00",
@@ -543,7 +606,10 @@
       "title": "Hou Minghao Record: Hou Minghao New Pics | H&M Livestream Event 261104 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [1/3]",
       "excerpt": "Hou Minghao New Pics | H&M Livestream Event 261104 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [1/3] — @HMH_Record Nov 4, 2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/826cbd68c0d61bd39db4b4ea.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/826cbd68c0d61bd39db4b4ea.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fc61fa88d2d1f7fba078d958.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bcb1f877630d9ee7d485b5f5.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/38bb9cd7d64c231b96bd780d.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T11:11:00+08:00",
@@ -560,7 +626,10 @@
       "title": "Hou Minghao Record: Hou Minghao New Pics | H&M Livestream Event 261104 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [2/3]",
       "excerpt": "Hou Minghao New Pics | H&M Livestream Event 261104 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [2/3] — @HMH_Record Nov 4, 2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3819a6cccaee71761dc37476.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3819a6cccaee71761dc37476.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1c0fd5c7abd5c1d972d4f723.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/60fc3b6187b9c09814fc920d.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d9d99f7e57bacea8b8a5ad10.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T11:11:00+08:00",
@@ -577,7 +646,10 @@
       "title": "Hou Minghao Record: Hou Minghao New Pics | H&M Livestream Event 261104 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [3/3]",
       "excerpt": "Hou Minghao New Pics | H&M Livestream Event 261104 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 [3/3] — @HMH_Record Nov 4, 2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/21246505d3399b02a48a5219.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/21246505d3399b02a48a5219.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f1acaf258714cabdd8fabb78.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9e826ef0f5a4399331107d5e.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0d2bc4035a89dfd30df0987e.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T11:11:00+08:00",
@@ -833,6 +905,23 @@
       "collectionMethod": "Automatic"
     },
     {
+      "id": "378fe894b7742c7e1dab",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@zhaozhao__mumu",
+      "title": "Almost smashed my phone 🫪🫪 Put it in my hand, come on, just try.. #侯明昊 #후명호 #houminghao",
+      "excerpt": "Almost smashed my phone 🫪🫪 Put it in my hand, come on, just try.. #侯明昊 #후명호 #houminghao",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a8721b9ed24b5dadaf38fe21.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-03T22:53:01+08:00",
+      "url": "https://x.com/zhaozhao__mumu/status/2117631138131058860",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "76ae592517a5ee5f2920",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -890,6 +979,26 @@
       "category": "X Update",
       "date": "2026-11-03T20:07:00+08:00",
       "url": "https://x.com/PopMinghao/status/2117589511878381597",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "20530b223b59f8a688f4",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@omaimah837",
+      "title": "His soo handsome #HouMinghao #houminghao",
+      "excerpt": "His soo handsome #HouMinghao #houminghao",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ded1f9de8f77badeb3e7f0ac.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8faeb2cb9498ad4d2288f21b.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e3d5f297849cb88232652886.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/24829b43d8e847d6a3244bac.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-03T19:15:15+08:00",
+      "url": "https://x.com/omaimah837/status/2117576333614371107",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
@@ -3348,87 +3457,6 @@
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
-    },
-    {
-      "id": "ded23eda832954de7324",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao Announced as Lay's Brand Spokesperson! Congratulations 🎊 261030 | \"Lay's (乐事官方微博)\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "Hou Minghao Announced as Lay's Brand Spokesperson! Congratulations 🎊 261030 | \"Lay's (乐事官方微博)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 30, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bbdfde89d7ddd7b400d8f43c.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-10-30T09:38:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115981723997737363",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic"
-    },
-    {
-      "id": "0d76aeec981ca7afa40e",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: \"I just can’t keep this exciting news to myself! I’m thrilled to be the brand spokesperson for Lay's. I want to share every bit of Lay’s goodness with all of y…",
-      "excerpt": "\"I just can’t keep this exciting news to myself! I’m thrilled to be the brand spokesperson for Lay's. I want to share every bit of Lay’s goodness with all of you! Especially this new generation of baked snacks from Lay’s— the irresistibly crunchy and addictive \"Lay’s Light & Crispy\"! Light as air, with a satisfying, crispy crunch! Baked, not fried…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-10-30T09:38:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115981581768880223",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic"
-    },
-    {
-      "id": "d0d4becc0880f5851031",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@neohou_feed",
-      "title": "Hou Minghao Feed: Six #HouMinghao TV Series with Douban Ratings Above 7 ✨ #IAmNobody: The Showdown Between the Two — 8.4 #IAmNobody (Season 1) — 8.2 #OurTimes — 7.7 #WhenWeWereYou…",
-      "excerpt": "Six #HouMinghao TV Series with Douban Ratings Above 7 ✨ #IAmNobody: The Showdown Between the Two — 8.4 #IAmNobody (Season 1) — 8.2 #OurTimes — 7.7 #WhenWeWereYoung — 7.4 #BackfromtheBrink — 7.2 #LoveintheClouds — 7.0 #侯明昊 — @neohou_feed Oct 29, 2026",
-      "category": "X Update",
-      "date": "2026-10-29T21:31:00+08:00",
-      "url": "https://x.com/neohou_feed/status/2115798702103142462",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/dedb731f8f4b19e382c99271.jpg"
-      ]
-    },
-    {
-      "id": "08b4b73ff41851e7581d",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: ⏳ Zhengzhou Stop Countdown ✌️ days left #HouMinghaoBelongsToUs2026 Concert Tour 261029 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMin…",
-      "excerpt": "⏳ Zhengzhou Stop Countdown ✌️ days left #HouMinghaoBelongsToUs2026 Concert Tour 261029 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 29, 2026",
-      "category": "X Update",
-      "date": "2026-10-29T18:34:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115754039430554079",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bd9eb48d5d7f85491bba17dd.jpg"
-      ]
-    },
-    {
-      "id": "f20079e590db8b787779",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: \"A big surprise is here catch a glimpse of boss's work day 🐾\" 261029 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "\"A big surprise is here catch a glimpse of boss's work day 🐾\" 261029 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Oct 29, 2026",
-      "category": "X Update",
-      "date": "2026-10-29T18:12:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115748490148221361",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "images": []
     }
   ]
 }
