@@ -587,35 +587,44 @@ def collect_x_list(source_config):
             if "login" in page.url or "flow" in page.url:
                 raise RuntimeError("X login wall (cookies expired or IP blocked)")
             raise RuntimeError("No posts found on X list page (markup changed or list empty)")
-        for _ in range(3):  # scroll to load a few more posts
-            page.mouse.wheel(0, 3000)
-            page.wait_for_timeout(1500)
-
+        # X removes off-screen posts from the page as you scroll, so read the
+        # visible posts after every scroll step instead of once at the end.
         raw_items, seen = [], set()
-        for article in page.query_selector_all("article"):
-            time_el = article.query_selector("a[href*='/status/'] time")
-            if not time_el:
-                continue
-            href = time_el.evaluate("e => e.parentElement.getAttribute('href')") or ""
-            match = re.match(r"^/([A-Za-z0-9_]+)/status/(\d+)", href)
-            if not match or match.group(2) in seen:
-                continue
-            seen.add(match.group(2))
-            text_el = article.query_selector("[data-testid='tweetText']")
-            text = text_el.inner_text() if text_el else ""
-            images = []
-            for img in article.query_selector_all("[data-testid='tweetPhoto'] img"):
-                src = img.get_attribute("src") or ""
-                if "pbs.twimg.com/media" in src:
-                    src = re.sub(r"name=\w+", "name=large", src)
-                    images.append(src)
-            raw_items.append((match.group(1), match.group(2), text, time_el.get_attribute("datetime") or "", images))
+
+        def harvest():
+            for article in page.query_selector_all("article"):
+                try:
+                    time_el = article.query_selector("a[href*='/status/'] time")
+                    if not time_el:
+                        continue
+                    href = time_el.evaluate("e => e.parentElement.getAttribute('href')") or ""
+                    match = re.match(r"^/([A-Za-z0-9_]+)/status/(\d+)", href)
+                    if not match or match.group(2) in seen:
+                        continue
+                    text_el = article.query_selector("[data-testid='tweetText']")
+                    text = text_el.inner_text() if text_el else ""
+                    images = []
+                    for img in article.query_selector_all("[data-testid='tweetPhoto'] img"):
+                        src = img.get_attribute("src") or ""
+                        if "pbs.twimg.com/media" in src:
+                            images.append(re.sub(r"name=\w+", "name=large", src))
+                    seen.add(match.group(2))
+                    raw_items.append((match.group(1), match.group(2), text,
+                                      time_el.get_attribute("datetime") or "", images))
+                except Exception:
+                    continue
+
+        harvest()
+        for _ in range(8):
+            page.mouse.wheel(0, 1500)
+            page.wait_for_timeout(1500)
+            harvest()
     finally:
         try: context.close()
         except Exception: pass
 
     collected = []
-    for handle, status_id, text, stamp, images in raw_items[:25]:
+    for handle, status_id, text, stamp, images in raw_items[:40]:
         text = clean_text(text)
         link = f"https://x.com/{handle}/status/{status_id}"
         title = shorten(text, 150) if text else f"Post by @{handle}"
