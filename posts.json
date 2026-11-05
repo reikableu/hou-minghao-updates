@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-05T04:02:31+08:00",
+  "lastUpdated": "2026-11-05T09:47:24+08:00",
   "status": "Completed: 17 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 10,
-    "postsTranslatedThisRun": 5,
+    "translationsAdded": 0,
+    "postsTranslatedThisRun": 0,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 10
+      "MyMemory": 0
     }
   },
   "sourceStatus": [
@@ -15,103 +15,103 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T04:00:37.258336+08:00"
+      "checkedAt": "2026-11-05T09:46:42.555395+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T04:00:39.783845+08:00"
+      "checkedAt": "2026-11-05T09:46:45.040066+08:00"
     },
     {
       "source": "Weibo @Simba0803_侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T04:00:42.296253+08:00"
+      "checkedAt": "2026-11-05T09:46:47.601151+08:00"
     },
     {
       "source": "Weibo @83rdMistake丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T04:00:44.887580+08:00"
+      "checkedAt": "2026-11-05T09:46:50.183627+08:00"
     },
     {
       "source": "Weibo @ComfitCupid丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T04:00:47.528115+08:00"
+      "checkedAt": "2026-11-05T09:46:52.723584+08:00"
     },
     {
       "source": "Weibo account 7954477778",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T04:00:50.014716+08:00"
+      "checkedAt": "2026-11-05T09:46:55.254800+08:00"
     },
     {
       "source": "Weibo account 7431934486",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T04:00:52.336480+08:00"
+      "checkedAt": "2026-11-05T09:46:57.719600+08:00"
     },
     {
       "source": "Weibo account 6941933193",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T04:00:54.667288+08:00"
+      "checkedAt": "2026-11-05T09:47:00.032200+08:00"
     },
     {
       "source": "Weibo @QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T04:00:56.993175+08:00"
+      "checkedAt": "2026-11-05T09:47:02.341959+08:00"
     },
     {
       "source": "Weibo account 9072975151",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T04:00:59.443616+08:00"
+      "checkedAt": "2026-11-05T09:47:04.800533+08:00"
     },
     {
       "source": "Weibo @珍宝珠-ChupaChups",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-05T04:01:01.794013+08:00"
+      "checkedAt": "2026-11-05T09:47:07.165284+08:00"
     },
     {
       "source": "Weibo @HOKA",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-05T04:01:04.303235+08:00"
+      "checkedAt": "2026-11-05T09:47:09.696664+08:00"
     },
     {
       "source": "Weibo @天美意官方微博",
       "status": "Success",
       "itemsFound": 7,
-      "checkedAt": "2026-11-05T04:01:06.747739+08:00"
+      "checkedAt": "2026-11-05T09:47:12.127807+08:00"
     },
     {
       "source": "Weibo account 7728002071",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T04:01:09.316316+08:00"
+      "checkedAt": "2026-11-05T09:47:14.679304+08:00"
     },
     {
       "source": "Weibo account 7854683575",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T04:01:11.677502+08:00"
+      "checkedAt": "2026-11-05T09:47:16.996551+08:00"
     },
     {
       "source": "Weibo @雪中飞",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-05T04:01:14.012426+08:00"
+      "checkedAt": "2026-11-05T09:47:19.309999+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 25,
-      "checkedAt": "2026-11-05T04:01:16.479018+08:00"
+      "checkedAt": "2026-11-05T09:47:21.838610+08:00"
     }
   ],
   "posts": [
