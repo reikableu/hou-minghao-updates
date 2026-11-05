@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-05T17:32:05+08:00",
-  "status": "Completed: 16 sources successful, 1 failed",
+  "lastUpdated": "2026-11-05T18:06:37+08:00",
+  "status": "Completed: 17 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -12,107 +12,106 @@
   },
   "sourceStatus": [
     {
-      "source": "Weibo account 5763552342",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-05T17:31:14.767838+08:00",
-      "message": "Non-JSON response (login/captcha page?): '<!DOCTYPE html>\\n<html>\\n<head>\\n    <meta http-equiv=\"Content-type\" content=\"text/'"
+      "source": "Weibo @侯明昊工作室",
+      "status": "Success",
+      "itemsFound": 11,
+      "checkedAt": "2026-11-05T18:05:37.930122+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T17:31:17.267019+08:00"
+      "checkedAt": "2026-11-05T18:05:40.450407+08:00"
     },
     {
       "source": "Weibo @Simba0803_侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T17:31:19.790333+08:00"
+      "checkedAt": "2026-11-05T18:05:43.025828+08:00"
     },
     {
       "source": "Weibo @83rdMistake丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T17:31:22.371208+08:00"
+      "checkedAt": "2026-11-05T18:05:45.608738+08:00"
     },
     {
       "source": "Weibo @ComfitCupid丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T17:31:24.861960+08:00"
+      "checkedAt": "2026-11-05T18:05:48.152314+08:00"
     },
     {
       "source": "Weibo account 7954477778",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T17:31:27.344796+08:00"
+      "checkedAt": "2026-11-05T18:05:50.727076+08:00"
     },
     {
       "source": "Weibo account 7431934486",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T17:31:29.716649+08:00"
+      "checkedAt": "2026-11-05T18:05:53.065488+08:00"
     },
     {
       "source": "Weibo account 6941933193",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T17:31:32.021587+08:00"
+      "checkedAt": "2026-11-05T18:05:55.398856+08:00"
     },
     {
       "source": "Weibo @QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T17:31:34.322573+08:00"
+      "checkedAt": "2026-11-05T18:05:57.735251+08:00"
     },
     {
       "source": "Weibo account 9072975151",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T17:31:36.880842+08:00"
+      "checkedAt": "2026-11-05T18:06:00.258317+08:00"
     },
     {
       "source": "Weibo @珍宝珠-ChupaChups",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-05T17:31:39.233957+08:00"
+      "checkedAt": "2026-11-05T18:06:02.593511+08:00"
     },
     {
       "source": "Weibo @HOKA",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-05T17:31:41.771840+08:00"
+      "checkedAt": "2026-11-05T18:06:05.207782+08:00"
     },
     {
       "source": "Weibo @天美意官方微博",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-11-05T17:31:44.245584+08:00"
+      "checkedAt": "2026-11-05T18:06:07.686225+08:00"
     },
     {
       "source": "Weibo account 7728002071",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T17:31:46.832435+08:00"
+      "checkedAt": "2026-11-05T18:06:10.342238+08:00"
     },
     {
       "source": "Weibo account 7854683575",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T17:31:49.129058+08:00"
+      "checkedAt": "2026-11-05T18:06:12.679510+08:00"
     },
     {
       "source": "Weibo @雪中飞",
       "status": "Success",
       "itemsFound": 4,
-      "checkedAt": "2026-11-05T17:31:51.439957+08:00"
+      "checkedAt": "2026-11-05T18:06:15.100296+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 16,
-      "checkedAt": "2026-11-05T17:31:53.978626+08:00"
+      "itemsFound": 27,
+      "checkedAt": "2026-11-05T18:06:17.659459+08:00"
     }
   ],
   "posts": [
@@ -169,6 +168,74 @@
       "excerptOriginal": "恭喜@昊可摘星辰 1名用户获得【侯明昊亲签照】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
       "titleEnglish": "Congratulations to @ HaoKe XingChen 1 user for obtaining [Hou MingHao's pro-signature]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
       "excerptEnglish": "Congratulations to @ HaoKe XingChen 1 user for obtaining [Hou MingHao's pro-signature]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:"
+    },
+    {
+      "id": "57a6c10a94cfa24caa39",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@ncybear",
+      "title": "last day for Lay’s!! make sure you vote, ok?! #houminghao",
+      "excerpt": "last day for Lay’s!! make sure you vote, ok?! #houminghao",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/84ec9caa5128dee6d068a00a.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-05T12:09:07+08:00",
+      "url": "https://x.com/ncybear/status/2118193869523476513",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "91962844dda9e9360c58",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@neohou_feed",
+      "title": "Lighthouse (Dengta) Daily \"Interested\" Count for Live Performances – (November 4) #HouMinghao \"Belonging to Us...\" Concert – Beijing Stop: 158,000 ne…",
+      "excerpt": "Lighthouse (Dengta) Daily \"Interested\" Count for Live Performances – (November 4) #HouMinghao \"Belonging to Us...\" Concert – Beijing Stop: 158,000 new \"interested\" additions for the day #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5f8281b62a9d0b36e4662bac.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-05T11:37:10+08:00",
+      "url": "https://x.com/neohou_feed/status/2118185831940669751",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "a6d23ba8b5e32c833acf",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@neohou_feed",
+      "title": "#HouMinghao Tops Both MDL’s Weekly and Monthly Rankings! #侯明昊",
+      "excerpt": "#HouMinghao Tops Both MDL’s Weekly and Monthly Rankings! #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a32f678ca977a27ba2b0f149.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-05T10:56:43+08:00",
+      "url": "https://x.com/neohou_feed/status/2118175651446358150",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "4512249daa09d9ae3fc4",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Brand Event Announcement | Fino November 20, 2026 261104 | \"Fino (芬浓官方微博)\" Weibo Update #HouMinghao #후명호 #侯明昊",
+      "excerpt": "Brand Event Announcement | Fino November 20, 2026 261104 | \"Fino (芬浓官方微博)\" Weibo Update #HouMinghao #후명호 #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8daf87e975316457f486b615.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-05T10:04:39+08:00",
+      "url": "https://x.com/HMH_Record/status/2118162548713488784",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "a956e82a4d8ff2c160bb",
@@ -289,7 +356,9 @@
       "title": "Hou Minghao Feed: Hou Minghao’s Endorsement of Lay’s Surpasses the Average for Food Product Endorsements, Generating an Impressive 87.1% of the Brand’s Total Online Buzz in Just T…",
       "excerpt": "Hou Minghao’s Endorsement of Lay’s Surpasses the Average for Food Product Endorsements, Generating an Impressive 87.1% of the Brand’s Total Online Buzz in Just Two Days! 🎉 #HouMinghao — @neohou_feed Nov 4, 2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7137b902fa3258516224fb50.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7137b902fa3258516224fb50.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/257fd829b748a28f4d452b33.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e06019fd11ec5909b38b7e03.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-05T01:18:00+08:00",
@@ -344,6 +413,21 @@
       "category": "X Update",
       "date": "2026-11-04T18:51:00+08:00",
       "url": "https://x.com/PopMinghao/status/2117932693883359612",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "dd6f977a1b80400b870c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@GianneSkyKiwiPH",
+      "title": "His eyes radiate light whenever she sings. #HouMinghao #HouMinghaoBelongsToUs2026",
+      "excerpt": "His eyes radiate light whenever she sings. #HouMinghao #HouMinghaoBelongsToUs2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-04T17:09:37+08:00",
+      "url": "https://x.com/GianneSkyKiwiPH/status/2117907105080553875",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
@@ -953,6 +1037,21 @@
       "collectionMethod": "Automatic"
     },
     {
+      "id": "32e15ac539baf74106c7",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@obsessedwithypj",
+      "title": "It is like that time when some harpies complain that Hou Minghao only stick to one side in certain Music Festival performance, accusing him of lackin…",
+      "excerpt": "It is like that time when some harpies complain that Hou Minghao only stick to one side in certain Music Festival performance, accusing him of lacking sense of service to the audience. Those harpies threw tantrum online. Later, the organizer revealed that he was asked to stick to",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-03T21:16:42+08:00",
+      "url": "https://x.com/obsessedwithypj/status/2117606898245763522",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
       "id": "e176829a2cbdac3afec8",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -963,6 +1062,21 @@
       "category": "X Update",
       "date": "2026-11-03T20:42:00+08:00",
       "url": "https://x.com/PopMinghao/status/2117598208667120003",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "b61aa90d7ff10f23ecc5",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@ncybear",
+      "title": "The host was talking about getting into “work-mode” : “For my concert a couple days ago, I didn’t treat it like it was work. I didn’t treat it like I…",
+      "excerpt": "The host was talking about getting into “work-mode” : “For my concert a couple days ago, I didn’t treat it like it was work. I didn’t treat it like I’m going to work or I’m executing some work today, something has to be completed. Perhaps because of everything I’ve been",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-03T20:30:29+08:00",
+      "url": "https://x.com/ncybear/status/2117595268267016374",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
@@ -1115,6 +1229,21 @@
       "category": "X Update",
       "date": "2026-11-03T15:40:00+08:00",
       "url": "https://x.com/neohou_feed/status/2117522212131393544",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "a6c9487af66133d3ec44",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@GianneSkyKiwiPH",
+      "title": ": \" Who is wiggling these little wings...\" : \" Little wings! So cute!\" : \" At first, I refused (to wear them), but....\" : \" It's so cute!\" : \" Alrigh…",
+      "excerpt": ": \" Who is wiggling these little wings...\" : \" Little wings! So cute!\" : \" At first, I refused (to wear them), but....\" : \" It's so cute!\" : \" Alright, as long as you all like it.\" We almost deprived by the Wings cat Hou Minghao! #HouMinghao #侯明昊",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-03T15:13:49+08:00",
+      "url": "https://x.com/GianneSkyKiwiPH/status/2117515577858441545",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
