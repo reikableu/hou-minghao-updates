@@ -65,7 +65,7 @@ MAX_GIF_ITEMS = 150
 MAX_GIF_SIZE_BYTES = 20 * 1024 * 1024    # 20MB limit for final GIFs
 MAX_VIDEO_SIZE_BYTES = 40 * 1024 * 1024  # 40MB limit for live photo videos
 LIVE_PHOTO_MAX_SECONDS = 6               # trim live photo videos to this length
-DOWNLOAD_BUDGET_SECONDS = 20 * 60        # updated to 20 mins budget limit
+DOWNLOAD_BUDGET_SECONDS = 30 * 60        # 30 mins budget limit
 REQUEST_TIMEOUT_MS = 20000               # per download attempt
 
 USER_AGENT = (
@@ -563,7 +563,7 @@ async def main_async():
 
         for index, item in enumerate(unique_candidates, start=1):
             if time.monotonic() - download_start > DOWNLOAD_BUDGET_SECONDS:
-                print(f"::warning::Download budget of 20 minutes reached at {index}/{total_candidates}.")
+                print(f"::warning::Download budget of 30 minutes reached at {index}/{total_candidates}.")
                 break
 
             print(f"[{index}/{total_candidates}] {item['photo_id']}")
