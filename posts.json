@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-05T19:30:35+08:00",
+  "lastUpdated": "2026-11-06T04:17:20+08:00",
   "status": "Completed: 17 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -15,106 +15,124 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T19:29:36.659984+08:00"
+      "checkedAt": "2026-11-06T04:16:23.688871+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T19:29:39.333757+08:00"
+      "checkedAt": "2026-11-06T04:16:26.112128+08:00"
     },
     {
       "source": "Weibo @Simba0803_侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T19:29:42.019667+08:00"
+      "checkedAt": "2026-11-06T04:16:28.620461+08:00"
     },
     {
       "source": "Weibo @83rdMistake丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T19:29:44.701799+08:00"
+      "checkedAt": "2026-11-06T04:16:31.127932+08:00"
     },
     {
       "source": "Weibo @ComfitCupid丨侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T19:29:47.198378+08:00"
+      "checkedAt": "2026-11-06T04:16:33.590963+08:00"
     },
     {
       "source": "Weibo account 7954477778",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T19:29:49.664959+08:00"
+      "checkedAt": "2026-11-06T04:16:36.059839+08:00"
     },
     {
       "source": "Weibo account 7431934486",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T19:29:52.010637+08:00"
+      "checkedAt": "2026-11-06T04:16:38.376399+08:00"
     },
     {
       "source": "Weibo account 6941933193",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T19:29:54.302098+08:00"
+      "checkedAt": "2026-11-06T04:16:40.667893+08:00"
     },
     {
       "source": "Weibo @QINA亓那眼镜",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-05T19:29:56.600718+08:00"
+      "checkedAt": "2026-11-06T04:16:42.961120+08:00"
     },
     {
       "source": "Weibo account 9072975151",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T19:29:59.079111+08:00"
+      "checkedAt": "2026-11-06T04:16:45.446080+08:00"
     },
     {
       "source": "Weibo @珍宝珠-ChupaChups",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-05T19:30:01.349327+08:00"
+      "checkedAt": "2026-11-06T04:16:47.746424+08:00"
     },
     {
       "source": "Weibo @HOKA",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-05T19:30:03.867582+08:00"
+      "checkedAt": "2026-11-06T04:16:50.187833+08:00"
     },
     {
       "source": "Weibo @天美意官方微博",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-11-05T19:30:06.284626+08:00"
+      "checkedAt": "2026-11-06T04:16:52.621782+08:00"
     },
     {
       "source": "Weibo account 7728002071",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T19:30:08.881506+08:00"
+      "checkedAt": "2026-11-06T04:16:55.107443+08:00"
     },
     {
       "source": "Weibo account 7854683575",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-05T19:30:11.165758+08:00"
+      "checkedAt": "2026-11-06T04:16:57.404902+08:00"
     },
     {
       "source": "Weibo @雪中飞",
       "status": "Success",
       "itemsFound": 4,
-      "checkedAt": "2026-11-05T19:30:13.446405+08:00"
+      "checkedAt": "2026-11-06T04:16:59.686257+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-05T19:30:15.953108+08:00"
+      "checkedAt": "2026-11-06T04:17:02.127386+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "58bd6fe7a0204f721cee",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@march_gaji",
+      "title": "The reason Yeongseonbo fell for Gangrae",
+      "excerpt": "The reason Yeongseonbo fell for Gangrae",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1cc3c32a3d1f470ba28dfd3d.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/922ed4244275cb7b5e03646a.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-05T20:43:51+08:00",
+      "url": "https://x.com/march_gaji/status/2118323407968456898",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "6e93a9dba6d0a4db3922",
       "platform": "Weibo",
@@ -168,6 +186,21 @@
       "excerptOriginal": "恭喜@昊可摘星辰 1名用户获得【侯明昊亲签照】。微博官方唯一抽奖工具@微博抽奖平台 对本次抽奖进行监督，结果公正有效。公示链接：",
       "titleEnglish": "Congratulations to @ HaoKe XingChen 1 user for obtaining [Hou MingHao's pro-signature]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
       "excerptEnglish": "Congratulations to @ HaoKe XingChen 1 user for obtaining [Hou MingHao's pro-signature]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:"
+    },
+    {
+      "id": "20e304807ae104600457",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@ItsMeNerooooo",
+      "title": "When haters can't pick their struggles LMAO too pretty or too masculine",
+      "excerpt": "When haters can't pick their struggles LMAO too pretty or too masculine",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-05T13:59:46+08:00",
+      "url": "https://x.com/ItsMeNerooooo/status/2118221715717357797",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "57a6c10a94cfa24caa39",
