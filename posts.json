@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-06T18:41:05+08:00",
+  "lastUpdated": "2026-11-06T19:25:12+08:00",
   "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 10,
-    "postsTranslatedThisRun": 5,
+    "translationsAdded": 0,
+    "postsTranslatedThisRun": 0,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 10
+      "MyMemory": 0
     }
   },
   "sourceStatus": [
@@ -15,130 +15,164 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-06T18:38:40.037143+08:00"
+      "checkedAt": "2026-11-06T19:24:05.604897+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-06T18:38:42.491849+08:00"
+      "checkedAt": "2026-11-06T19:24:08.117959+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:38:45.078603+08:00"
+      "checkedAt": "2026-11-06T19:24:10.676758+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:38:47.426746+08:00"
+      "checkedAt": "2026-11-06T19:24:12.994551+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:38:49.978209+08:00"
+      "checkedAt": "2026-11-06T19:24:15.498146+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:38:52.320332+08:00"
+      "checkedAt": "2026-11-06T19:24:17.827325+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:38:54.643366+08:00"
+      "checkedAt": "2026-11-06T19:24:20.174593+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:38:56.997417+08:00"
+      "checkedAt": "2026-11-06T19:24:22.521207+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:38:59.306460+08:00"
+      "checkedAt": "2026-11-06T19:24:24.834202+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:01.647154+08:00"
+      "checkedAt": "2026-11-06T19:24:27.192627+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:04.114272+08:00"
+      "checkedAt": "2026-11-06T19:24:29.674266+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:06.451953+08:00"
+      "checkedAt": "2026-11-06T19:24:32.037114+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:08.756938+08:00"
+      "checkedAt": "2026-11-06T19:24:34.349574+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:11.054719+08:00"
+      "checkedAt": "2026-11-06T19:24:36.660510+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:13.527763+08:00"
+      "checkedAt": "2026-11-06T19:24:39.114362+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:15.990062+08:00"
+      "checkedAt": "2026-11-06T19:24:41.605223+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:18.333178+08:00"
+      "checkedAt": "2026-11-06T19:24:43.914348+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:20.635084+08:00"
+      "checkedAt": "2026-11-06T19:24:46.244529+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:22.947068+08:00"
+      "checkedAt": "2026-11-06T19:24:48.565827+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T18:39:25.281706+08:00"
+      "checkedAt": "2026-11-06T19:24:50.934724+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 28,
-      "checkedAt": "2026-11-06T18:39:27.609989+08:00"
+      "itemsFound": 27,
+      "checkedAt": "2026-11-06T19:24:53.309469+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "8d1c80b3808844ec8541",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"No way this sticker actually makes the 3D face look even more handsome!\" 261106 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
+      "excerpt": "\"No way this sticker actually makes the 3D face look even more handsome!\" 261106 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/62eba94eaa7e66d4a6f169a2.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-06T19:13:28+08:00",
+      "url": "https://x.com/HMH_Record/status/2118663049997615602",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "6fcfa142fb852c3869e0",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"Learned a new transition\" 261106 | \"Hou Minghao\" Douyin Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "\"Learned a new transition\" 261106 | \"Hou Minghao\" Douyin Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6b57c47471fa3ef9a0ef46ec.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-06T19:03:42+08:00",
+      "url": "https://x.com/HMH_Record/status/2118660593376969164",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "ab8aa7b777bc1bade5e9",
       "platform": "X",
