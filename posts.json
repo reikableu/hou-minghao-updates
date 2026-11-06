@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-06T21:13:25+08:00",
-  "status": "Completed: 21 sources successful, 0 failed",
+  "lastUpdated": "2026-11-07T01:42:17+08:00",
+  "status": "Completed: 20 sources successful, 1 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -12,133 +12,149 @@
   },
   "sourceStatus": [
     {
-      "source": "Weibo @侯明昊工作室",
-      "status": "Success",
-      "itemsFound": 11,
-      "checkedAt": "2026-11-06T21:12:19.315027+08:00"
+      "source": "Weibo account 5763552342",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-07T01:41:11.537845+08:00",
+      "message": "No response from Weibo"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-06T21:12:21.756368+08:00"
+      "checkedAt": "2026-11-07T01:41:14.029035+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:24.310220+08:00"
+      "checkedAt": "2026-11-07T01:41:16.578422+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:26.615521+08:00"
+      "checkedAt": "2026-11-07T01:41:18.875633+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:29.095387+08:00"
+      "checkedAt": "2026-11-07T01:41:21.481057+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:31.419058+08:00"
+      "checkedAt": "2026-11-07T01:41:23.821885+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:33.742597+08:00"
+      "checkedAt": "2026-11-07T01:41:26.154100+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:36.087250+08:00"
+      "checkedAt": "2026-11-07T01:41:28.456886+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:38.382676+08:00"
+      "checkedAt": "2026-11-07T01:41:30.742302+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:40.752498+08:00"
+      "checkedAt": "2026-11-07T01:41:33.070896+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:43.229543+08:00"
+      "checkedAt": "2026-11-07T01:41:35.516821+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:45.618335+08:00"
+      "checkedAt": "2026-11-07T01:41:37.883335+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:47.932386+08:00"
+      "checkedAt": "2026-11-07T01:41:40.210324+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:50.224173+08:00"
+      "checkedAt": "2026-11-07T01:41:42.523958+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:52.649706+08:00"
+      "checkedAt": "2026-11-07T01:41:45.015054+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:55.054550+08:00"
+      "checkedAt": "2026-11-07T01:41:47.442527+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:57.372500+08:00"
+      "checkedAt": "2026-11-07T01:41:49.747806+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:12:59.686384+08:00"
+      "checkedAt": "2026-11-07T01:41:52.058262+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:13:01.997966+08:00"
+      "checkedAt": "2026-11-07T01:41:54.356482+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T21:13:04.471985+08:00"
+      "checkedAt": "2026-11-07T01:41:56.688344+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-06T21:13:06.802669+08:00"
+      "checkedAt": "2026-11-07T01:41:59.018538+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "a96ed1f1bda772cdf4c1",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@myo_mmyom",
+      "title": "No way lololol When you put the two together, they look even bigger",
+      "excerpt": "No way lololol When you put the two together, they look even bigger",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-06T21:00:14+08:00",
+      "url": "https://x.com/myo_mmyom/status/2118689917559836806",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "8d1c80b3808844ec8541",
       "platform": "X",
@@ -542,6 +558,21 @@
       "category": "X Update",
       "date": "2026-11-06T12:03:49+08:00",
       "url": "https://x.com/LightlyBright/status/2118554926033039766",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "95e09b3d042882fa456c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@zhaozhao__mumu",
+      "title": "Our eyes met.. They met, ohhh..... ㅠ",
+      "excerpt": "Our eyes met.. They met, ohhh..... ㅠ",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-06T08:10:23+08:00",
+      "url": "https://x.com/zhaozhao__mumu/status/2118496177192845752",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
