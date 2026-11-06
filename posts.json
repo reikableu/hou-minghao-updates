@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-06T13:40:51+08:00",
+  "lastUpdated": "2026-11-06T18:41:05+08:00",
   "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 20,
-    "postsTranslatedThisRun": 10,
+    "translationsAdded": 10,
+    "postsTranslatedThisRun": 5,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 20
+      "MyMemory": 10
     }
   },
   "sourceStatus": [
@@ -15,130 +15,147 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-06T13:37:25.880547+08:00"
+      "checkedAt": "2026-11-06T18:38:40.037143+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-06T13:37:28.364280+08:00"
+      "checkedAt": "2026-11-06T18:38:42.491849+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:30.984910+08:00"
+      "checkedAt": "2026-11-06T18:38:45.078603+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:33.334540+08:00"
+      "checkedAt": "2026-11-06T18:38:47.426746+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:35.867114+08:00"
+      "checkedAt": "2026-11-06T18:38:49.978209+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:38.253903+08:00"
+      "checkedAt": "2026-11-06T18:38:52.320332+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:40.596351+08:00"
+      "checkedAt": "2026-11-06T18:38:54.643366+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:42.975444+08:00"
+      "checkedAt": "2026-11-06T18:38:56.997417+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:45.375287+08:00"
+      "checkedAt": "2026-11-06T18:38:59.306460+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:47.865044+08:00"
+      "checkedAt": "2026-11-06T18:39:01.647154+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:50.432836+08:00"
+      "checkedAt": "2026-11-06T18:39:04.114272+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:52.885389+08:00"
+      "checkedAt": "2026-11-06T18:39:06.451953+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:55.308512+08:00"
+      "checkedAt": "2026-11-06T18:39:08.756938+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:37:57.665292+08:00"
+      "checkedAt": "2026-11-06T18:39:11.054719+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:38:00.125787+08:00"
+      "checkedAt": "2026-11-06T18:39:13.527763+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:38:02.584261+08:00"
+      "checkedAt": "2026-11-06T18:39:15.990062+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:38:04.941017+08:00"
+      "checkedAt": "2026-11-06T18:39:18.333178+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:38:07.330479+08:00"
+      "checkedAt": "2026-11-06T18:39:20.635084+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:38:09.677778+08:00"
+      "checkedAt": "2026-11-06T18:39:22.947068+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-06T13:38:12.049514+08:00"
+      "checkedAt": "2026-11-06T18:39:25.281706+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 27,
-      "checkedAt": "2026-11-06T13:38:14.481257+08:00"
+      "itemsFound": 28,
+      "checkedAt": "2026-11-06T18:39:27.609989+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "ab8aa7b777bc1bade5e9",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Lay's x Hou Minghao \"Here it comes! Today’s dose of sharp commentary has arrived~\" 261106 | \"Lay's (乐事官方微博)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Lay's x Hou Minghao \"Here it comes! Today’s dose of sharp commentary has arrived~\" 261106 | \"Lay's (乐事官方微博)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9b7773e4fab680fe772cd702.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-06T18:03:54+08:00",
+      "url": "https://x.com/HMH_Record/status/2118645542028812597",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "308cc4a6926fd10d6d4e",
       "platform": "Weibo",
@@ -367,7 +384,9 @@
       "verified": true,
       "collectionMethod": "Weibo API",
       "titleOriginal": "回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会# #微博演出季#",
-      "excerptOriginal": "回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会# #微博演出季#"
+      "excerptOriginal": "回到这里，回到「属于我们的...」 北京见💚 #侯明昊属于我们的演唱会# #微博演出季#",
+      "titleEnglish": "Back here, back to \"ours...\" See you in Beijing💚 # Hou Minghao's concert # # Weibo performance season #",
+      "excerptEnglish": "Back here, back to \"ours...\" See you in Beijing💚 # Hou Minghao's concert # # Weibo performance season #"
     },
     {
       "id": "a837a315ce075ecb0ac9",
@@ -381,7 +400,11 @@
       "url": "https://m.weibo.cn/status/5360035924541990",
       "official": true,
       "verified": true,
-      "collectionMethod": "Weibo API"
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "准备好开启 #天猫双11星舰狂欢# 巡礼了吗？ @天猫 的星舰狂欢舰长 @侯明昊 ，邀请你和 @CASETiFY 一起抢先登陆！ 即日起上淘宝搜索【侯明昊】参与活动，解锁侯明昊SSR 专属明星徽章，生成限定纪念。 网页链接 #天猫全明星计…",
+      "excerptOriginal": "侯明昊 准备好开启 #天猫双11星舰狂欢# 巡礼了吗？ @天猫 的星舰狂欢舰长 @侯明昊 ，邀请你和 @CASETiFY 一起抢先登陆！ 即日起上淘宝搜索【侯明昊】参与活动，解锁侯明昊SSR 专属明星徽章，生成限定纪念。 网页链接 #天猫全明星计划# 天猫双 11，值此 1111 刻！ #天猫双11买的更值得# ... 全文",
+      "titleEnglish": "Ready to embark on the # Lynx11 Starship Carnival # patrol? @ Tmall's Starfleet Carnival Captain @ Hou Minghao, invites you to join @ CASETiFY for a preemptive landing! From now on, search for [Hou Minghao] on Taobao to participate in the event, unlock Hou Minghao's SSR exclusive star badge, and generate a limited commemoration. Web link # Tmall All-Star meter...",
+      "excerptEnglish": "Is Hou Minghao ready to embark on the # Lynx11 Starship Carnival # patrol? @ Tmall's Starfleet Carnival Captain @ Hou Minghao, invites you to join @ CASETiFY for a preemptive landing! From now on, search for [Hou Minghao] on Taobao to participate in the event, unlock Hou Minghao's SSR exclusive star badge, and generate a limited commemoration. Web link # Tmall All-Star Program # Tmall Double 11, worth 1111 marks! # Tmall Double 11 is more worth buying #... more"
     },
     {
       "id": "c2d9a0a6167a417223b3",
@@ -397,7 +420,11 @@
       "url": "https://m.weibo.cn/status/5360436805371118",
       "official": true,
       "verified": true,
-      "collectionMethod": "Weibo API"
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。 @侯明昊",
+      "excerptOriginal": "侯明昊 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。 @侯明昊",
+      "titleEnglish": "📨 # Monthly letter from Xiao Hou # The frost color spreads over the branches and dyes the quiet and long prologue. @ Hou Minghao",
+      "excerptEnglish": "Hou Minghao's 📨 # Xiaohou's monthly letter # frosted over the branches and dyed the quiet and long prologue. @ Hou Minghao"
     },
     {
       "id": "bcf03fc475ca0351e569",
@@ -421,7 +448,11 @@
       "url": "https://m.weibo.cn/status/5360911193735377",
       "official": true,
       "verified": true,
-      "collectionMethod": "Weibo API"
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 我们在音符缝隙里 守候新声起落",
+      "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 我们在音符缝隙里 守候新声起落",
+      "titleEnglish": "🥝 # Hou Minghao's concert tour # Hou Minghao's concert tour # Hou Minghao's concert tour | @ Hou Minghao's concert tour",
+      "excerptEnglish": "Hou Minghao 🥝 # Hou Minghao's concert tour # Hou Minghao's concert tour # Hou Minghao's concert tour | @ Hou Minghao's concert tour"
     },
     {
       "id": "ccaf4cc16f311b992b06",
@@ -431,21 +462,55 @@
       "excerpt": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 在渐暗的声场里 拼凑一段没有终点的桥段",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7c6d9a629c02027b3f8408d5.jpg",
-        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iio7ke8737j32dc3k0e84.jpg",
-        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iio7kgn1mmj33k02dckjm.jpg",
-        "https://wx4.sinaimg.cn/mw2000/006i3hfEly1iio7kkfjerj32vh1wznpg.jpg",
-        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iio7k923qrj32dc3k0kjq.jpg",
-        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iio7kmk3cdj31b51yq4qq.jpg",
-        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iio7kzjdmsj35c633enpl.jpg",
-        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iio7l9hrxyj335s23unpd.jpg",
-        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iio7krmljgj324b36hx6t.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e632d09e9785bdc4bed44d0c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ac82e7e3c0e7e6c17a14e336.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/81666e37e68581ddebbdaf90.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/525baa6a18d67731ea0b0c4e.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2748fba67204b785c5508a6e.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f7c487fd802919e6cc208914.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4910ead9024306fbb68cbf88.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4a985cae89ecf71d175c1c09.jpg"
       ],
       "category": "Event",
       "date": "2026-11-06T13:37:26.361642+08:00",
       "url": "https://m.weibo.cn/status/5360931498627762",
       "official": true,
       "verified": true,
-      "collectionMethod": "Weibo API"
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 在渐暗的声场里 拼凑一段没有终点的桥段",
+      "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 在渐暗的声场里 拼凑一段没有终点的桥段",
+      "titleEnglish": "🥝 # Hou Minghao's concert tour # Hou Minghao's concert tour # Hou Minghao's concert tour | @ Hou Minghao's concert tour",
+      "excerptEnglish": "Hou Minghao 🥝 # Hou Minghao belongs to our concert tour # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #"
+    },
+    {
+      "id": "beafc69e6c245eaa669e",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@BabyMild_BM",
+      "title": "Isn’t two-year-and-nine-month-old He Minghao cute? He’s so tiny, but his cuteness is irresistible. The stage is like a playground—he walks all over i…",
+      "excerpt": "Isn’t two-year-and-nine-month-old He Minghao cute? He’s so tiny, but his cuteness is irresistible. The stage is like a playground—he walks all over it, everywhere he can. He loves acting cute and winning hearts all the time. I miss this cutie sooo much.",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-06T12:20:13+08:00",
+      "url": "https://x.com/BabyMild_BM/status/2118559051785380335",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "136d2b3e4c41ab0d09fb",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@LightlyBright",
+      "title": "i'm sorry but he is too adorable",
+      "excerpt": "i'm sorry but he is too adorable",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-06T12:03:49+08:00",
+      "url": "https://x.com/LightlyBright/status/2118554926033039766",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
     },
     {
       "id": "fa599c2e928f15e9dbad",
@@ -486,9 +551,7 @@
       "excerpt": "The reason Yeongseonbo fell for Gangrae",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1cc3c32a3d1f470ba28dfd3d.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/922ed4244275cb7b5e03646a.jpg",
-        "https://pbs.twimg.com/media/HWXL5UYaYAAurMt?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWXL550bQAAmquB?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/922ed4244275cb7b5e03646a.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-05T20:43:51+08:00",
@@ -574,8 +637,7 @@
       "title": "last day for Lay’s!! make sure you vote, ok?! #houminghao",
       "excerpt": "last day for Lay’s!! make sure you vote, ok?! #houminghao",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/84ec9caa5128dee6d068a00a.jpg",
-        "https://pbs.twimg.com/media/HV18539acAAyVBw?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/84ec9caa5128dee6d068a00a.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-05T12:09:07+08:00",
@@ -592,8 +654,7 @@
       "title": "Lighthouse (Dengta) Daily \"Interested\" Count for Live Performances – (November 4) #HouMinghao \"Belonging to Us...\" Concert – Beijing Stop: 158,000 ne…",
       "excerpt": "Lighthouse (Dengta) Daily \"Interested\" Count for Live Performances – (November 4) #HouMinghao \"Belonging to Us...\" Concert – Beijing Stop: 158,000 new \"interested\" additions for the day #侯明昊",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5f8281b62a9d0b36e4662bac.jpg",
-        "https://pbs.twimg.com/media/HWVOwfsWwAAhSnc?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5f8281b62a9d0b36e4662bac.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-05T11:37:10+08:00",
@@ -610,8 +671,7 @@
       "title": "#HouMinghao Tops Both MDL’s Weekly and Monthly Rankings! #侯明昊",
       "excerpt": "#HouMinghao Tops Both MDL’s Weekly and Monthly Rankings! #侯明昊",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a32f678ca977a27ba2b0f149.jpg",
-        "https://pbs.twimg.com/media/HWVFgxhXUAA30DS?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a32f678ca977a27ba2b0f149.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-05T10:56:43+08:00",
@@ -628,8 +688,7 @@
       "title": "Brand Event Announcement | Fino November 20, 2026 261104 | \"Fino (芬浓官方微博)\" Weibo Update #HouMinghao #후명호 #侯明昊",
       "excerpt": "Brand Event Announcement | Fino November 20, 2026 261104 | \"Fino (芬浓官方微博)\" Weibo Update #HouMinghao #후명호 #侯明昊",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8daf87e975316457f486b615.jpg",
-        "https://pbs.twimg.com/media/HWU5myEbgAErmAS?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8daf87e975316457f486b615.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-05T10:04:39+08:00",
@@ -759,9 +818,7 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7137b902fa3258516224fb50.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/257fd829b748a28f4d452b33.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e06019fd11ec5909b38b7e03.jpg",
-        "https://pbs.twimg.com/media/HWTBHUmXoAEIPX3?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWTBNkaXAAAg5u2?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e06019fd11ec5909b38b7e03.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-05T01:18:00+08:00",
@@ -796,10 +853,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fa1b593aea5dd20a2b7be9b5.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/117519c81aac577b1805bae8.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fd82e34b5caa19a2e1279624.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0417d2adeca5751152e07c53.jpg",
-        "https://pbs.twimg.com/media/HWRvtRYa0AEikLM?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWRvtRQbYAAReuj?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWRvtRca4AAEmvB?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0417d2adeca5751152e07c53.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T19:22:00+08:00",
@@ -994,8 +1048,7 @@
       "excerpt": "\"Let [Us] meet once more.\" 261104 | \"Hou Minghao\" Wiebo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 — @HMH_Record Nov 4, 2026",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/725753a354b6886b077f36e4.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8f469d2ce3da1a8b7466cc02.jpg",
-        "https://pbs.twimg.com/media/HWQuo6xaAAAKPPa?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8f469d2ce3da1a8b7466cc02.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T14:38:00+08:00",
@@ -1013,8 +1066,7 @@
       "excerpt": "Ticket Selling | Hou Minghao 'Belongs To Us' Beijing Stop | Additional Date 🗓️ November 7, 2026 ⏰ 13:18 CST 261104 | \"Youling Culture (幽伶文化)\" Weibo Update #HouMinghaoBelongsToUs2026 #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 4, 2026",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/db9e5bcba89af782336784c4.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8b941904ae9f65cd83f12b4b.jpg",
-        "https://pbs.twimg.com/media/HWQuOWbaYAArDjB?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8b941904ae9f65cd83f12b4b.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T14:36:00+08:00",
@@ -1047,8 +1099,7 @@
       "excerpt": "Hou Minghao's 'Belongs To Us' Concert Tour Final Stop Beijing SOLD OUT ‼️ 261104 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 — @HMH_Record Nov 4, 2026",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5e7c04c3321ee9aad9d54b8d.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/384e11346cb25fb5806aea27.jpg",
-        "https://pbs.twimg.com/media/HWQo59cbYAAvX1O?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/384e11346cb25fb5806aea27.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T14:13:00+08:00",
@@ -1083,10 +1134,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/245d7b807ca8e24bfaf0f7ef.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/42d2e6f57eb4b2a8c33b0655.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/07f755ab6e6ad59b164e64b5.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2069b5ceb1ca559e6b809c42.jpg",
-        "https://pbs.twimg.com/media/HWQSLmxaEAAknik?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWQSMIiagAAo-bA?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWQSMqAagAEw6-V?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2069b5ceb1ca559e6b809c42.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T12:33:00+08:00",
@@ -1106,10 +1154,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/826cbd68c0d61bd39db4b4ea.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fc61fa88d2d1f7fba078d958.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bcb1f877630d9ee7d485b5f5.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/38bb9cd7d64c231b96bd780d.jpg",
-        "https://pbs.twimg.com/media/HWP_SudaQAEyDva?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWP_Tmra4AAcbs7?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWP_UOYbAAAs7Lb?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/38bb9cd7d64c231b96bd780d.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T11:11:00+08:00",
@@ -1129,10 +1174,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3819a6cccaee71761dc37476.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1c0fd5c7abd5c1d972d4f723.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/60fc3b6187b9c09814fc920d.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d9d99f7e57bacea8b8a5ad10.jpg",
-        "https://pbs.twimg.com/media/HWP_VJdbwAAYhfd?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWP_VukakAAAxBq?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWP_WQsaQAAC0CZ?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d9d99f7e57bacea8b8a5ad10.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T11:11:00+08:00",
@@ -1152,10 +1194,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/21246505d3399b02a48a5219.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f1acaf258714cabdd8fabb78.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9e826ef0f5a4399331107d5e.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0d2bc4035a89dfd30df0987e.jpg",
-        "https://pbs.twimg.com/media/HWP_XMXb0AANYoA?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWP_X1cbIAAZ7AN?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWP_YdsacAAecHv?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0d2bc4035a89dfd30df0987e.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-04T11:11:00+08:00",
@@ -1418,8 +1457,7 @@
       "title": "Almost smashed my phone 🫪🫪 Put it in my hand, come on, just try.. #侯明昊 #후명호 #houminghao",
       "excerpt": "Almost smashed my phone 🫪🫪 Put it in my hand, come on, just try.. #侯明昊 #후명호 #houminghao",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a8721b9ed24b5dadaf38fe21.jpg",
-        "https://pbs.twimg.com/media/HWNWSqVaIAAxK9g?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a8721b9ed24b5dadaf38fe21.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-03T22:53:01+08:00",
@@ -1531,11 +1569,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ded1f9de8f77badeb3e7f0ac.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8faeb2cb9498ad4d2288f21b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e3d5f297849cb88232652886.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/24829b43d8e847d6a3244bac.jpg",
-        "https://pbs.twimg.com/media/HWMj3CWaUAEf8lQ?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWMkWJ8aIAAv3QZ?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWMkXUzboAA2JwU?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWMkbNZaUAALLko?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/24829b43d8e847d6a3244bac.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-03T19:15:15+08:00",
