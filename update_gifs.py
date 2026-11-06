@@ -62,7 +62,7 @@ TARGET_UIDS = [
 WEIBO_COOKIE = os.environ.get("WEIBO_COOKIE", "").strip()
 
 MAX_GIF_ITEMS = 150
-MAX_GIF_SIZE_BYTES = 20 * 1024 * 1024    # 20MB limit for final GIFs
+MAX_GIF_SIZE_BYTES = int(14.5 * 1024 * 1024)    # 14.5MB limit for final GIFs
 MAX_VIDEO_SIZE_BYTES = 40 * 1024 * 1024  # 40MB limit for live photo videos
 LIVE_PHOTO_MAX_SECONDS = 6               # trim live photo videos to this length
 DOWNLOAD_BUDGET_SECONDS = 30 * 60        # 30 mins budget limit
@@ -190,7 +190,7 @@ async def download_bytes(context, url, post_url, size_limit):
 
 def convert_video_to_gif(video_bytes):
     """Convert a short video (mov/mp4) to GIF bytes using ffmpeg with 120s timeout."""
-    settings = [(480, 12), (360, 10), (320, 8)]
+    settings = [(480, 12), (360, 10), (320, 8), (240, 6)]
     last_error = None
 
     with tempfile.TemporaryDirectory() as tmp:
