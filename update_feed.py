@@ -46,9 +46,30 @@ HEADERS = {
 
 # Updated Weibo Account IDs
 WEIBO_ACCOUNT_IDS = [
-    "5763552342", "1831550987", "2356308454", "8450716290", "8004004308",
-    "7954477778", "7431934486", "6941933193", "5919565877", "9072975151", 
-    "6609562381", "5894691419", "1882778030", "7728002071", "7854683575", "2682624851",
+    # Official actor & studio accounts
+    "5763552342",  # 侯明昊工作室 (Hou Minghao Studio)
+    "1831550987",  # 侯明昊Neo (Hou Minghao personal account)
+    # New endorsements (新增商务)
+    "6453123896",  # 旭东食品 (Xudong Snacks)
+    "1692125795",  # 乐事官方微博 (Lay's)
+    # Brand endorsements (品牌代言)
+    "1734997034",  # 海信电视 / Hisense海信
+    "7513576766",  # olayks立时
+    "1766627034",  # 美肤宝MEIFUBAO
+    "7335269786",  # DearIrean独特艾琳
+    "7868019741",  # 好流Official
+    "1749127163",  # HM中国
+    "6473618360",  # 珀芙研 (Biorrier)
+    "7579169954",  # 棉致MIANZHI
+    "7486821389",  # 千层雪Viennetta
+    # Promotions & ambassador roles
+    "5938174786",  # 西藏自治区文化和旅游厅
+    "1767117565",  # MAC魅可
+    "7639102431",  # fino芬浓
+    "3219487770",  # 珍宝珠ChupaChups
+    "7541604928",  # CASETiFY
+    "7857186930",  # FADEAWAY_L
+    "7867201948",  # PLUG-INPET
 ]
 
 # Only keep posts from non-official Weibo accounts if they mention one of these.
