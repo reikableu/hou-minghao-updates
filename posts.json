@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-07T11:09:21+08:00",
+  "lastUpdated": "2026-11-07T18:09:25+08:00",
   "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 2
     }
   },
   "sourceStatus": [
@@ -15,130 +15,189 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-07T11:08:14.573406+08:00"
+      "checkedAt": "2026-11-07T18:07:57.721440+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-07T11:08:17.049757+08:00"
+      "checkedAt": "2026-11-07T18:08:00.217364+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:19.633167+08:00"
+      "checkedAt": "2026-11-07T18:08:02.770213+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:21.960051+08:00"
+      "checkedAt": "2026-11-07T18:08:05.099969+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:24.514285+08:00"
+      "checkedAt": "2026-11-07T18:08:07.629638+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:26.836936+08:00"
+      "checkedAt": "2026-11-07T18:08:09.989780+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:29.162925+08:00"
+      "checkedAt": "2026-11-07T18:08:12.331934+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:31.520068+08:00"
+      "checkedAt": "2026-11-07T18:08:14.670989+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:33.870773+08:00"
+      "checkedAt": "2026-11-07T18:08:17.005271+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:36.232915+08:00"
+      "checkedAt": "2026-11-07T18:08:19.378997+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:38.729889+08:00"
+      "checkedAt": "2026-11-07T18:08:21.917088+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:41.150311+08:00"
+      "checkedAt": "2026-11-07T18:08:24.271518+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:43.483530+08:00"
+      "checkedAt": "2026-11-07T18:08:26.600899+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:45.813489+08:00"
+      "checkedAt": "2026-11-07T18:08:28.919965+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:48.250005+08:00"
+      "checkedAt": "2026-11-07T18:08:31.398919+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:50.718363+08:00"
+      "checkedAt": "2026-11-07T18:08:33.909222+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:53.061227+08:00"
+      "checkedAt": "2026-11-07T18:08:36.246114+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:55.384190+08:00"
+      "checkedAt": "2026-11-07T18:08:38.584201+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:08:57.714567+08:00"
+      "checkedAt": "2026-11-07T18:08:40.900286+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-07T11:09:00.058948+08:00"
+      "checkedAt": "2026-11-07T18:08:43.291089+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-07T11:09:02.463343+08:00"
+      "checkedAt": "2026-11-07T18:08:45.676663+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "bb0993f4c54af85dbf7f",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊工作室",
+      "title": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 漫无边际的雾色 在声场留白处 期待旋律重启",
+      "excerpt": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 漫无边际的雾色 在声场留白处 期待旋律重启",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9f01d5f16f4bc123869a8ab2.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/47835503545cfcb63bfee04d.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6aa4f08cc5c277d2c789a3aa.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/adbe061e02cd62a9614429e6.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2e607222768aa6a82e189dbb.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6680257fcb0d441de8c53cd1.jpg"
+      ],
+      "category": "Event",
+      "date": "2026-11-07T18:07:58.215166+08:00",
+      "url": "https://m.weibo.cn/status/5361146855166277",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 漫无边际的雾色 在声场留白处 期待旋律重启",
+      "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 漫无边际的雾色 在声场留白处 期待旋律重启",
+      "titleEnglish": "🥝 # Hou Minghao's concert tour # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # @ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #",
+      "excerptEnglish": "Hou Minghao 🥝 # Hou Minghao belongs to our tour concert # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #"
+    },
+    {
+      "id": "1b19346a068f4cae7c7b",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Lay's x Hou Minghao Lay's support station during Hou Minghao's 'Belongs To Us' concert tour in Zhengzhou 261107 | \"Lay's (乐事官方微博)\" Weibo Update #HouM…",
+      "excerpt": "Lay's x Hou Minghao Lay's support station during Hou Minghao's 'Belongs To Us' concert tour in Zhengzhou 261107 | \"Lay's (乐事官方微博)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/64bbc2e449df5556ef0a0f65.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-07T17:36:26+08:00",
+      "url": "https://x.com/HMH_Record/status/2119001015987163302",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "dec25c184634fca09863",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao's 'Belongs To Us' Concert Tour Final Stop Beijing SOLD OUT 261107 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBe…",
+      "excerpt": "Hou Minghao's 'Belongs To Us' Concert Tour Final Stop Beijing SOLD OUT 261107 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3d57264804c3f6c8bcbf3b79.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-07T14:07:08+08:00",
+      "url": "https://x.com/HMH_Record/status/2118948346769649954",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "a96ed1f1bda772cdf4c1",
       "platform": "X",
@@ -868,6 +927,21 @@
       "category": "X Update",
       "date": "2026-11-05T02:27:00+08:00",
       "url": "https://x.com/PopMinghao/status/2118047524925984928",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "cd4c93c1a3430e8d8c89",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@xoxo_d78",
+      "title": "Wild story, example story, burning face, ant-crazy, drooling, gap in the middle, giving a smirk once in a while, that's fucking crazy",
+      "excerpt": "Wild story, example story, burning face, ant-crazy, drooling, gap in the middle, giving a smirk once in a while, that's fucking crazy",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-05T01:52:04+08:00",
+      "url": "https://x.com/xoxo_d78/status/2118038585756762432",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
