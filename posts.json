@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-08T09:40:20+08:00",
-  "status": "Completed: 20 sources successful, 1 failed",
+  "lastUpdated": "2026-11-08T12:40:14+08:00",
+  "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -12,134 +12,150 @@
   },
   "sourceStatus": [
     {
-      "source": "Weibo account 5763552342",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:15.441198+08:00",
-      "message": "No response from Weibo"
+      "source": "Weibo @侯明昊工作室",
+      "status": "Success",
+      "itemsFound": 11,
+      "checkedAt": "2026-11-08T12:39:07.564690+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-08T09:39:17.864476+08:00"
+      "checkedAt": "2026-11-08T12:39:10.082885+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:20.395365+08:00"
+      "checkedAt": "2026-11-08T12:39:12.699060+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:22.710027+08:00"
+      "checkedAt": "2026-11-08T12:39:15.009110+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:25.186640+08:00"
+      "checkedAt": "2026-11-08T12:39:17.565725+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:27.479944+08:00"
+      "checkedAt": "2026-11-08T12:39:19.914713+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:29.787616+08:00"
+      "checkedAt": "2026-11-08T12:39:22.333275+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:32.063984+08:00"
+      "checkedAt": "2026-11-08T12:39:24.668920+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:34.343584+08:00"
+      "checkedAt": "2026-11-08T12:39:26.985495+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:36.724887+08:00"
+      "checkedAt": "2026-11-08T12:39:29.330878+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:39.204137+08:00"
+      "checkedAt": "2026-11-08T12:39:31.804822+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:41.518765+08:00"
+      "checkedAt": "2026-11-08T12:39:34.156253+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:43.796728+08:00"
+      "checkedAt": "2026-11-08T12:39:36.550896+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:46.085388+08:00"
+      "checkedAt": "2026-11-08T12:39:38.857037+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:48.462765+08:00"
+      "checkedAt": "2026-11-08T12:39:41.312674+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:50.933365+08:00"
+      "checkedAt": "2026-11-08T12:39:43.734687+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:53.232032+08:00"
+      "checkedAt": "2026-11-08T12:39:46.059080+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:55.538103+08:00"
+      "checkedAt": "2026-11-08T12:39:48.378207+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:39:57.816611+08:00"
+      "checkedAt": "2026-11-08T12:39:50.698829+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T09:40:00.128470+08:00"
+      "checkedAt": "2026-11-08T12:39:53.037760+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 27,
-      "checkedAt": "2026-11-08T09:40:02.443129+08:00"
+      "itemsFound": 28,
+      "checkedAt": "2026-11-08T12:39:55.408144+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "cfbdafbac8aea8d92600",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Pan Yida Behind the Scene Vlog | DearIrean Livestream and Prada Brand Event 261108 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
+      "excerpt": "Pan Yida Behind the Scene Vlog | DearIrean Livestream and Prada Brand Event 261108 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/853915202d154a14032d1eb9.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-08T12:19:18+08:00",
+      "url": "https://x.com/HMH_Record/status/2119283595491848702",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "bb0993f4c54af85dbf7f",
       "platform": "Weibo",
