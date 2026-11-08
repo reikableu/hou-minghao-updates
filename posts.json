@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-09T00:40:15+08:00",
-  "status": "Completed: 21 sources successful, 0 failed",
+  "lastUpdated": "2026-11-09T03:40:02+08:00",
+  "status": "Completed: 20 sources successful, 1 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -12,130 +12,131 @@
   },
   "sourceStatus": [
     {
-      "source": "Weibo @侯明昊工作室",
-      "status": "Success",
-      "itemsFound": 11,
-      "checkedAt": "2026-11-09T00:39:08.321433+08:00"
+      "source": "Weibo account 5763552342",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-09T03:38:57.062551+08:00",
+      "message": "Non-JSON response (login/captcha page?): '<!DOCTYPE html>\\n<html>\\n<head>\\n    <meta http-equiv=\"Content-type\" content=\"text/'"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-09T00:39:10.780511+08:00"
+      "checkedAt": "2026-11-09T03:38:59.559949+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:13.313288+08:00"
+      "checkedAt": "2026-11-09T03:39:02.073790+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:15.623751+08:00"
+      "checkedAt": "2026-11-09T03:39:04.431811+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:18.087115+08:00"
+      "checkedAt": "2026-11-09T03:39:06.904226+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:20.411447+08:00"
+      "checkedAt": "2026-11-09T03:39:09.251553+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:22.742699+08:00"
+      "checkedAt": "2026-11-09T03:39:11.563412+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:25.056279+08:00"
+      "checkedAt": "2026-11-09T03:39:13.862213+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:27.344773+08:00"
+      "checkedAt": "2026-11-09T03:39:16.165767+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:29.680476+08:00"
+      "checkedAt": "2026-11-09T03:39:18.504283+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:32.169275+08:00"
+      "checkedAt": "2026-11-09T03:39:20.958586+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:34.492183+08:00"
+      "checkedAt": "2026-11-09T03:39:23.334584+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:36.809866+08:00"
+      "checkedAt": "2026-11-09T03:39:25.640515+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:39.092284+08:00"
+      "checkedAt": "2026-11-09T03:39:27.946749+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:41.510181+08:00"
+      "checkedAt": "2026-11-09T03:39:30.356035+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:43.893607+08:00"
+      "checkedAt": "2026-11-09T03:39:32.813500+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:46.181788+08:00"
+      "checkedAt": "2026-11-09T03:39:35.113177+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:48.480532+08:00"
+      "checkedAt": "2026-11-09T03:39:37.442257+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:50.759584+08:00"
+      "checkedAt": "2026-11-09T03:39:39.744673+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T00:39:53.100582+08:00"
+      "checkedAt": "2026-11-09T03:39:42.103067+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-11-09T00:39:55.425185+08:00"
+      "checkedAt": "2026-11-09T03:39:44.445745+08:00"
     }
   ],
   "posts": [
