@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-08T15:40:14+08:00",
-  "status": "Completed: 20 sources successful, 1 failed",
+  "lastUpdated": "2026-11-08T18:40:25+08:00",
+  "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -12,134 +12,180 @@
   },
   "sourceStatus": [
     {
-      "source": "Weibo account 5763552342",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:09.193399+08:00",
-      "message": "Non-JSON response (login/captcha page?): '<!DOCTYPE html>\\n<html>\\n<head>\\n    <meta http-equiv=\"Content-type\" content=\"text/'"
+      "source": "Weibo @侯明昊工作室",
+      "status": "Success",
+      "itemsFound": 11,
+      "checkedAt": "2026-11-08T18:39:18.035799+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-08T15:39:11.659878+08:00"
+      "checkedAt": "2026-11-08T18:39:20.486631+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:14.165393+08:00"
+      "checkedAt": "2026-11-08T18:39:23.029900+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:16.459584+08:00"
+      "checkedAt": "2026-11-08T18:39:25.348625+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:18.985049+08:00"
+      "checkedAt": "2026-11-08T18:39:27.875060+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:21.271091+08:00"
+      "checkedAt": "2026-11-08T18:39:30.186877+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:23.619231+08:00"
+      "checkedAt": "2026-11-08T18:39:32.470186+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:25.910144+08:00"
+      "checkedAt": "2026-11-08T18:39:34.764496+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:28.197918+08:00"
+      "checkedAt": "2026-11-08T18:39:37.084337+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:30.498351+08:00"
+      "checkedAt": "2026-11-08T18:39:39.398026+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:32.960558+08:00"
+      "checkedAt": "2026-11-08T18:39:41.863605+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:35.270088+08:00"
+      "checkedAt": "2026-11-08T18:39:44.198887+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:37.564593+08:00"
+      "checkedAt": "2026-11-08T18:39:46.487258+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:39.901969+08:00"
+      "checkedAt": "2026-11-08T18:39:48.766249+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:42.266896+08:00"
+      "checkedAt": "2026-11-08T18:39:51.215193+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:44.701167+08:00"
+      "checkedAt": "2026-11-08T18:39:53.734390+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:47.013463+08:00"
+      "checkedAt": "2026-11-08T18:39:55.999994+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:49.363372+08:00"
+      "checkedAt": "2026-11-08T18:39:58.301621+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:51.638129+08:00"
+      "checkedAt": "2026-11-08T18:40:00.595545+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T15:39:53.957910+08:00"
+      "checkedAt": "2026-11-08T18:40:02.920113+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 28,
-      "checkedAt": "2026-11-08T15:39:56.268205+08:00"
+      "itemsFound": 27,
+      "checkedAt": "2026-11-08T18:40:05.226297+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "29a209e24738ff669155",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "H&M x Hou Minghao 261108 | \"H&M\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "H&M x Hou Minghao 261108 | \"H&M\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5d5278bebecff17be50a39d0.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-08T16:22:17+08:00",
+      "url": "https://x.com/HMH_Record/status/2119344744753246568",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "8ebaf12077903f9e89c5",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@LemonAesthete",
+      "title": "[ENG] 261027 #HouMinghao's interview with NYLON CHINA at Prada Event. #侯明昊",
+      "excerpt": "[ENG] 261027 #HouMinghao's interview with NYLON CHINA at Prada Event. #侯明昊",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-08T14:36:31+08:00",
+      "url": "https://x.com/LemonAesthete/status/2119318126492025092",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "aad5b5fd526095766d35",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@fallhmhzz",
+      "title": "Fried! Eggs! Fried eggs! Fried eggs! Fried eggs! Tomato and egg stir-fry! The way they say it is so elementary-school-kid... T_T They get food all ov…",
+      "excerpt": "Fried! Eggs! Fried eggs! Fried eggs! Fried eggs! Tomato and egg stir-fry! The way they say it is so elementary-school-kid... T_T They get food all over their mouth while talking... So cute",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-08T12:30:29+08:00",
+      "url": "https://x.com/fallhmhzz/status/2119286410750697661",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "cfbdafbac8aea8d92600",
       "platform": "X",
@@ -168,6 +214,24 @@
       "category": "X Update",
       "date": "2026-11-08T12:01:27+08:00",
       "url": "https://x.com/puppypat19/status/2119279104872923396",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "dc4882c23ac790c5e0c3",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@ncybear",
+      "title": "Title: “Marveling at how sensible the approach to love in #KeytothePhoenixHeart is. Two genuinely normal people in a chaotic world, a rare and precio…",
+      "excerpt": "Title: “Marveling at how sensible the approach to love in #KeytothePhoenixHeart is. Two genuinely normal people in a chaotic world, a rare and precious thing” “I can’t believe there’s actually a drama that manages to keep two characters from ever intruding into each other’s",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cf06115ba8bfb5401d894262.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b13bb714445b7e02e8b61960.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-08T09:30:58+08:00",
+      "url": "https://x.com/ncybear/status/2119241234065817862",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
@@ -293,6 +357,43 @@
       "category": "X Update",
       "date": "2026-11-06T18:03:54+08:00",
       "url": "https://x.com/HMH_Record/status/2118645542028812597",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "9091179832689a88b7f8",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@LemonAesthete",
+      "title": "261101 Xiao Hou's Monthly Letter for October 2026 (2/2) #HouMinghao #侯明昊",
+      "excerpt": "261101 Xiao Hou's Monthly Letter for October 2026 (2/2) #HouMinghao #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d08ec38763baee48189b24b2.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/95346c01bceeea62ad13a26a.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-06T15:04:31+08:00",
+      "url": "https://x.com/LemonAesthete/status/2118600399510786257",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "77b09bd472643535ba9c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@LemonAesthete",
+      "title": "261101 Xiao Hou's Monthly Letter for October 2026 (1/2) #HouMinghao #侯明昊",
+      "excerpt": "261101 Xiao Hou's Monthly Letter for October 2026 (1/2) #HouMinghao #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d5791af7a66bf4980e93589a.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3d225af757896b8849e43e53.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e4e4db313521127e06dace12.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-06T15:02:29+08:00",
+      "url": "https://x.com/LemonAesthete/status/2118599885754970130",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
