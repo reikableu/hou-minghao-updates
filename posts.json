@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08T21:40:21+08:00",
+  "lastUpdated": "2026-11-09T00:40:15+08:00",
   "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -15,130 +15,181 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-08T21:39:12.366774+08:00"
+      "checkedAt": "2026-11-09T00:39:08.321433+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-08T21:39:14.870998+08:00"
+      "checkedAt": "2026-11-09T00:39:10.780511+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:17.490439+08:00"
+      "checkedAt": "2026-11-09T00:39:13.313288+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:19.836246+08:00"
+      "checkedAt": "2026-11-09T00:39:15.623751+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:22.347617+08:00"
+      "checkedAt": "2026-11-09T00:39:18.087115+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:24.727456+08:00"
+      "checkedAt": "2026-11-09T00:39:20.411447+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:27.055983+08:00"
+      "checkedAt": "2026-11-09T00:39:22.742699+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:29.391794+08:00"
+      "checkedAt": "2026-11-09T00:39:25.056279+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:31.694516+08:00"
+      "checkedAt": "2026-11-09T00:39:27.344773+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:34.070230+08:00"
+      "checkedAt": "2026-11-09T00:39:29.680476+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:36.564009+08:00"
+      "checkedAt": "2026-11-09T00:39:32.169275+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:38.933456+08:00"
+      "checkedAt": "2026-11-09T00:39:34.492183+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:41.349791+08:00"
+      "checkedAt": "2026-11-09T00:39:36.809866+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:43.658405+08:00"
+      "checkedAt": "2026-11-09T00:39:39.092284+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:46.077536+08:00"
+      "checkedAt": "2026-11-09T00:39:41.510181+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:48.518052+08:00"
+      "checkedAt": "2026-11-09T00:39:43.893607+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:50.860027+08:00"
+      "checkedAt": "2026-11-09T00:39:46.181788+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:53.228924+08:00"
+      "checkedAt": "2026-11-09T00:39:48.480532+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:55.535700+08:00"
+      "checkedAt": "2026-11-09T00:39:50.759584+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-08T21:39:57.900517+08:00"
+      "checkedAt": "2026-11-09T00:39:53.100582+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 27,
-      "checkedAt": "2026-11-08T21:40:00.273538+08:00"
+      "itemsFound": 28,
+      "checkedAt": "2026-11-09T00:39:55.425185+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "5fdcd8df6c3483c87da4",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "don’t forget to tune in to the Weibo livestream tomorrow!! #HouMinghao #侯明昊",
+      "excerpt": "don’t forget to tune in to the Weibo livestream tomorrow!! #HouMinghao #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7afdda93cf7ffba985b62b79.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4a39f0cd81ece1e250620c3a.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-09T00:33:48+08:00",
+      "url": "https://x.com/PopMinghao/status/2119468440276926527",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "6cf4486559d9670d1250",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "is he off to shanghai now? and for what? saw our little foodie buying domino’s pizza on the way to the airport. is he allergic to resting?! we though…",
+      "excerpt": "is he off to shanghai now? and for what? saw our little foodie buying domino’s pizza on the way to the airport. is he allergic to resting?! we thought our cat was resting at home in beijing, but he was in SK instead #HouMinghao #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f9f1f5e586c872327b503bf4.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9081c280a07c67af633ff496.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-08T22:29:00+08:00",
+      "url": "https://x.com/PopMinghao/status/2119437033521414302",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "2490cf9ddc1c1ac74ece",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "Op said doll dress-up game #HouMinghao #侯明昊",
+      "excerpt": "Op said doll dress-up game #HouMinghao #侯明昊",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-08T22:24:16+08:00",
+      "url": "https://x.com/PopMinghao/status/2119435840564896043",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
     {
       "id": "663f16434eac16c4c1bc",
       "platform": "X",
@@ -4342,38 +4393,6 @@
       "excerptOriginal": "侯明昊工作室 2026-10-30 18:50 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 夜色收拢最后一缕暮光 灯火为奔赴点亮坐标 倒计时1天，舞台见！ ​",
       "titleEnglish": "2026-10-30 18:50 # Hou Minghao [overstated] # # Hou Minghao's concert tour # Hou Minghao's concert 🥝 # Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #!",
       "excerptEnglish": "Hou Minghao Studio 2026-10-30 18:50 # Hou Minghao [overstated] # # Hou Minghao's concert tour # Hou Minghao's concert 🥝 # Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | @ Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert tour # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # # Hou Minghao's concert # # # Hou Minghao's concert # # Hou Minghao's concert # # # Hou Mingha's concert # ​"
-    },
-    {
-      "id": "7011c0246ddbd38c5ec3",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: RT @ncybear: Hey! 😼 Don’t forget to vote today! After voting for One In A Hundred, make sure to scroll down and support Lay’s too! #HouMinghao",
-      "excerpt": "RT @ncybear: Hey! 😼 Don’t forget to vote today! After voting for One In A Hundred, make sure to scroll down and support Lay’s too! #HouMinghao — @HMH_Record Oct 30, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-10-30T10:12:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115990190699508080",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic"
-    },
-    {
-      "id": "57281881d467cd8bff15",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: RT @ncybear: Congrats to Hou Minghao! 🥳🥳🥳 Support Lay’s and their new brand spokesperson by voting for 7 days! Link: #HouMinghao",
-      "excerpt": "RT @ncybear: Congrats to Hou Minghao! 🥳🥳🥳 Support Lay’s and their new brand spokesperson by voting for 7 days! Link: https://t.co/m1Pd4HUzta #HouMinghao — @HMH_Record Oct 30, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/acd1b1c3d354eecc2130bf2c.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-10-30T09:53:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2115985405707456834",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic"
     }
   ]
 }
