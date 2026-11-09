@@ -5,7 +5,7 @@ import re
 import time
 import urllib.parse
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timedelta
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
@@ -31,12 +31,28 @@ WEIBO_PAGE = None
 BROWSER = None
 # Your X list URL, e.g. https://x.com/i/lists/1234567890123456789 (can also be set via X_LIST_URL env var)
 X_LIST_URL = os.environ.get("X_LIST_URL", "https://x.com/i/lists/2115680530159308929")
-MOBILE_UA = (
+DESKTOP_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/126.0.0.0 Safari/537.36"
 )
-WEIBO_POST_LIMIT = 15  # Maximum matching Weibo posts across all accounts per Singapore calendar day.
+# m.weibo.cn is the mobile site, so Weibo is browsed with a real mobile UA.
+MOBILE_UA = (
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) "
+    "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
+)
+# 0 = no daily cap. The old cap (15/day) filled up with wrongly-dated posts and hid real ones.
+WEIBO_POST_LIMIT = 0
+WEIBO_MAX_AGE_DAYS = 60            # ignore Weibo posts older than this
+MAX_DETAIL_FETCHES_PER_RUN = 60    # extra requests used to get exact dates / full text
+MAX_BACKFILL_PER_RUN = 30          # old saved posts repaired per run (dates + videos)
+
+# Video / live photo caching. jsDelivr serves correct video MIME types + range requests
+# (raw.githubusercontent.com is unreliable for <video>). jsDelivr's per-file limit is 20 MB.
+VIDEO_BASE = "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media"
+MAX_VIDEO_BYTES = 20 * 1024 * 1024
+MAX_VIDEO_DOWNLOADS_PER_RUN = 12
+DETAIL_FETCHES = 0
 
 HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -285,7 +301,6 @@ def clean_weibo_content(text):
         return ""
     text = re.sub(r"^\d{4}[-/.年]\d{1,2}[-/.月]\d{1,2}[日]?\s*\d{1,2}:\d{2}\s*", "", text)
     text = re.sub(r"https?://t\.cn/[a-z0-9]+", "", text, flags=re.IGNORECASE)
-    text = re.sub(r"[\d\s万w\.,]+$", "", text)
     return clean_text(text)
 
 
@@ -341,6 +356,20 @@ def duplicate_key(post):
     return "id:" + str(post.get("id") or make_id(post.get("platform", ""), post.get("source", ""), post.get("title", ""), url))
 
 
+def merge_videos(*lists):
+    merged = {}
+    for videos in lists:
+        for item in videos or []:
+            if not isinstance(item, dict):
+                continue
+            key = item.get("id") or item.get("url") or item.get("remote")
+            if not key:
+                continue
+            if key not in merged or (item.get("url") and not merged[key].get("url")):
+                merged[key] = item
+    return list(merged.values())
+
+
 def deduplicate_posts(posts):
     result = {}
     for raw in posts:
@@ -351,19 +380,36 @@ def deduplicate_posts(posts):
             continue
         old = result[key]
         preferred = post if len(clean_text(post.get("excerpt", ""))) > len(clean_text(old.get("excerpt", ""))) else old
-        for field in ["titleOriginal", "excerptOriginal", "titleEnglish", "excerptEnglish"]:
-            if old.get(field) and not preferred.get(field):
-                preferred[field] = old[field]
-            if post.get(field) and not preferred.get(field):
-                preferred[field] = post[field]
+        text_changed = clean_text(post.get("excerpt", "")) != clean_text(old.get("excerpt", ""))
+        # If the new text is longer (e.g. a full text replacing a truncated "...全文"), the old
+        # saved original/translation belongs to the old text, so don't copy it over.
+        if not (preferred is post and text_changed):
+            for field in ["titleOriginal", "excerptOriginal", "titleEnglish", "excerptEnglish"]:
+                if old.get(field) and not preferred.get(field):
+                    preferred[field] = old[field]
+                if post.get(field) and not preferred.get(field):
+                    preferred[field] = post[field]
         if is_profile_url(preferred.get("url", "")) and not is_profile_url(old.get("url", "")):
             preferred["url"] = old["url"]
+        # Date: never let an approximate date overwrite an exact one.
+        if old.get("dateExact") and post.get("dateExact"):
+            date_src = old
+        elif old.get("dateExact"):
+            date_src = old
+        else:
+            date_src = post
+        preferred["date"] = date_src.get("date") or preferred.get("date")
+        preferred["dateExact"] = bool(date_src.get("dateExact"))
         combined_images = []
         for raw_image in old.get("images", []) + post.get("images", []):
             image_url = normalize_image_url(raw_image)
             if image_url and image_url not in combined_images:
                 combined_images.append(image_url)
         preferred["images"] = combined_images[:9]
+        preferred["videos"] = merge_videos(old.get("videos"), post.get("videos"))
+        for flag in ("detailChecked", "detailTries"):
+            if old.get(flag) and not preferred.get(flag):
+                preferred[flag] = old[flag]
         result[key] = preferred
     return list(result.values())
 
@@ -430,71 +476,334 @@ def parse_feed_date(value):
     return singapore_now().isoformat()
 
 
-def collect_sina_api_account(source_config):
-    uid = source_config["uid"]
-    container_id = f"107603{uid}"
-    target_url = f"https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid={container_id}"
-    
+def weibo_cookies():
+    """Optional login cookie (same WEIBO_COOKIE secret update_gifs.py uses). Helps when Weibo blocks guests."""
+    cookies = []
+    for part in os.environ.get("WEIBO_COOKIE", "").split(";"):
+        if "=" not in part:
+            continue
+        name, value = part.split("=", 1)
+        name, value = name.strip(), value.strip()
+        if name:
+            for domain in (".weibo.cn", ".weibo.com"):
+                cookies.append({"name": name, "value": value, "domain": domain, "path": "/"})
+    return cookies
+
+
+def weibo_get_json(url, retries=2):
     if WEIBO_PAGE is None:
         raise RuntimeError("Browser session not available")
-
-    response = WEIBO_PAGE.goto(target_url, wait_until="domcontentloaded", timeout=30000)
-    if response is None:
-        raise RuntimeError("No response from Weibo")
-    if response.status != 200:
-        raise RuntimeError(f"HTTP {response.status} (Weibo blocked this request)")
-    body = (response.text() or "").strip()
-    try:
-        payload = json.loads(body)
-    except ValueError:
-        # Browsers sometimes wrap JSON in <pre>; try stripping tags once
+    last = None
+    for attempt in range(retries + 1):
         try:
-            payload = json.loads(re.sub(r"<[^>]+>", "", body))
+            response = WEIBO_PAGE.goto(url, wait_until="domcontentloaded", timeout=30000)
+            if response is None:
+                raise RuntimeError("No response from Weibo")
+            if response.status != 200:
+                raise RuntimeError(f"HTTP {response.status} (Weibo blocked this request)")
+            body = (response.text() or "").strip()
+            try:
+                return json.loads(body)
+            except ValueError:
+                try:
+                    return json.loads(re.sub(r"<[^>]+>", "", body))
+                except ValueError:
+                    raise RuntimeError(f"Non-JSON response (login/captcha page?): {body[:80]!r}")
+        except Exception as error:
+            last = error
+            time.sleep(1.5 * (attempt + 1))
+    raise RuntimeError(str(last))
+
+
+def parse_weibo_created_at(value):
+    """Return (iso_datetime_in_SGT, is_exact). Weibo's list API gives things like
+    '昨天 22:04', '3小时前', '11-05' or '2025-03-12'; the detail API gives
+    'Tue Nov 10 00:39:12 +0800 2026'. All Weibo times are China time (UTC+8, same as Singapore)."""
+    value = clean_text(value)
+    if not value:
+        return None, False
+    now = singapore_now()
+    try:
+        return datetime.strptime(value, "%a %b %d %H:%M:%S %z %Y").astimezone(SINGAPORE).isoformat(), True
+    except ValueError:
+        pass
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=SINGAPORE)
+        return parsed.astimezone(SINGAPORE).isoformat(), True
+    except ValueError:
+        pass
+    if value in ("刚刚", "Just now"):
+        return now.isoformat(), False
+    m = re.fullmatch(r"(\d+)\s*秒前", value)
+    if m:
+        return (now - timedelta(seconds=int(m.group(1)))).isoformat(), False
+    m = re.fullmatch(r"(\d+)\s*分钟前", value)
+    if m:
+        return (now - timedelta(minutes=int(m.group(1)))).isoformat(), False
+    m = re.fullmatch(r"(\d+)\s*小时前", value)
+    if m:
+        return (now - timedelta(hours=int(m.group(1)))).isoformat(), False
+    m = re.fullmatch(r"(昨天|今天|Yesterday|Today)\s*(\d{1,2}):(\d{2})", value, re.I)
+    if m:
+        day = now.date() - timedelta(days=1 if m.group(1) in ("昨天",) or m.group(1).lower() == "yesterday" else 0)
+        return datetime(day.year, day.month, day.day, int(m.group(2)), int(m.group(3)), tzinfo=SINGAPORE).isoformat(), True
+    m = re.fullmatch(r"(20\d{2})-(\d{1,2})-(\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?", value)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        hh, mm = (int(m.group(4)), int(m.group(5))) if m.group(4) else (12, 0)
+        try:
+            return datetime(y, mo, d, hh, mm, tzinfo=SINGAPORE).isoformat(), bool(m.group(4))
         except ValueError:
-            raise RuntimeError(f"Non-JSON response (login/captcha page?): {body[:80]!r}")
+            return None, False
+    m = re.fullmatch(r"(\d{1,2})-(\d{1,2})", value)  # MM-DD, no year, no time
+    if m:
+        try:
+            candidate = datetime(now.year, int(m.group(1)), int(m.group(2)), 12, 0, tzinfo=SINGAPORE)
+            if candidate > now:
+                candidate = candidate.replace(year=now.year - 1)
+            return candidate.isoformat(), False
+        except ValueError:
+            return None, False
+    return None, False
+
+
+def fetch_weibo_detail(post_id):
+    """Full post (exact created_at, full text, all media). Returns dict or None."""
+    global DETAIL_FETCHES
+    if DETAIL_FETCHES >= MAX_DETAIL_FETCHES_PER_RUN:
+        return None
+    DETAIL_FETCHES += 1
+    try:
+        payload = weibo_get_json(f"https://m.weibo.cn/statuses/show?id={post_id}", retries=1)
+    except Exception as error:
+        print(f"  detail fetch failed for {post_id}: {str(error)[:100]}")
+        return None
+    time.sleep(0.8)
+    data = payload.get("data") if isinstance(payload, dict) else None
+    if isinstance(data, dict) and payload.get("ok") in (1, "1", True):
+        return data
+    return None
+
+
+def fetch_weibo_long_text(post_id):
+    """Posts cut off with '...全文' need the extend endpoint for their full text."""
+    try:
+        payload = weibo_get_json(f"https://m.weibo.cn/statuses/extend?id={post_id}", retries=1)
+    except Exception:
+        return ""
+    time.sleep(0.5)
+    data = (payload or {}).get("data") or {}
+    return data.get("longTextContent") or "" if isinstance(data, dict) else ""
+
+
+def normalize_media_url(value):
+    raw = unescape(str(value or "")).strip().replace("\\/", "/")
+    if raw.startswith("//"):
+        raw = "https:" + raw
+    return raw if raw.startswith(("http://", "https://")) else ""
+
+
+def media_key(url):
+    """Weibo video URLs carry expiring signatures in the query string, so key on the path only."""
+    return hashlib.sha256(urllib.parse.urlsplit(url).path.encode("utf-8")).hexdigest()[:24]
+
+
+def extract_weibo_videos(mblog):
+    """Live photos (pics[].videoSrc) and normal videos (page_info)."""
+    videos, seen = [], set()
+    for pic in mblog.get("pics") or []:
+        if not isinstance(pic, dict):
+            continue
+        remote = normalize_media_url(pic.get("videoSrc"))
+        if not remote or media_key(remote) in seen:
+            continue
+        seen.add(media_key(remote))
+        still = normalize_image_url((pic.get("large") or {}).get("url") or pic.get("url") or "")
+        # poster == the matching entry in post["images"], so the site can badge that photo as LIVE
+        videos.append({"id": media_key(remote), "kind": "live", "remote": remote, "poster": still})
+    page_info = mblog.get("page_info") or {}
+    if isinstance(page_info, dict) and (page_info.get("type") == "video" or page_info.get("media_info")):
+        media = page_info.get("media_info") or {}
+        urls = page_info.get("urls") or {}
+        remote = ""
+        for candidate in (
+            media.get("mp4_720p_mp4"), media.get("mp4_hd_url"), media.get("stream_url_hd"),
+            media.get("stream_url"), media.get("mp4_sd_url"),
+            urls.get("mp4_720p_mp4"), urls.get("mp4_hd_mp4"), urls.get("mp4_ld_mp4"),
+        ):
+            remote = normalize_media_url(candidate)
+            if remote:
+                break
+        poster = normalize_image_url((page_info.get("page_pic") or {}).get("url") or page_info.get("pic_url") or "")
+        if remote and media_key(remote) not in seen:
+            try:
+                duration = float(media.get("duration") or page_info.get("duration") or 0)
+            except (TypeError, ValueError):
+                duration = 0
+            videos.append({"id": media_key(remote), "kind": "video", "remote": remote,
+                           "poster": poster, "duration": duration})
+    return videos
+
+
+def cache_remote_video(remote_url, post_url=""):
+    key = media_key(remote_url)
+    IMAGE_DIR.mkdir(exist_ok=True)
+    for existing in IMAGE_DIR.glob(key + ".*"):
+        if not existing.name.endswith(".part"):
+            return f"{VIDEO_BASE}/{existing.name}"
+    ext = ".mov" if urllib.parse.urlsplit(remote_url).path.lower().endswith(".mov") else ".mp4"
+    final = IMAGE_DIR / (key + ext)
+    part = IMAGE_DIR / (key + ext + ".part")
+    headers = {"User-Agent": HEADERS["User-Agent"], "Accept": "*/*", "Referer": "https://weibo.com/"}
+    try:
+        with requests.get(remote_url, headers=headers, stream=True, timeout=60) as response:
+            if response.status_code != 200:
+                raise ValueError(f"HTTP {response.status_code}")
+            ctype = (response.headers.get("Content-Type") or "").lower()
+            if ctype.startswith(("text/", "application/json")):
+                raise ValueError(f"Not a video response: {ctype}")
+            if int(response.headers.get("Content-Length") or 0) > MAX_VIDEO_BYTES:
+                raise ValueError("Video larger than limit")
+            size = 0
+            with part.open("wb") as handle:
+                for chunk in response.iter_content(256 * 1024):
+                    size += len(chunk)
+                    if size > MAX_VIDEO_BYTES:
+                        raise ValueError("Video larger than limit")
+                    handle.write(chunk)
+        if size == 0:
+            raise ValueError("Empty video")
+        part.replace(final)
+        return f"{VIDEO_BASE}/{final.name}"
+    finally:
+        if part.exists():
+            part.unlink()
+
+
+def localize_post_videos(posts):
+    attempts = downloaded = failed = 0
+    for post in posts:
+        kept = []
+        for item in post.get("videos", []):
+            if not isinstance(item, dict):
+                continue
+            poster = item.get("poster") or ""
+            if poster and not poster.startswith(RAW_MEDIA_BASE + "/"):
+                try:
+                    item["poster"] = cache_remote_image(poster, post.get("url", ""))
+                except Exception:
+                    pass
+            if not item.get("url") and item.get("remote") and attempts < MAX_VIDEO_DOWNLOADS_PER_RUN:
+                attempts += 1
+                try:
+                    item["url"] = cache_remote_video(item["remote"], post.get("url", ""))
+                    item.pop("remote", None)
+                    downloaded += 1
+                except Exception as error:
+                    failed += 1
+                    print("Video cache failed:", type(error).__name__, str(error)[:160])
+            kept.append(item)
+        post["videos"] = kept
+    print(f"Videos cached: {downloaded}; video cache failures: {failed}")
+
+
+def weibo_mblogs_from_cards(cards):
+    for card in cards:
+        if not isinstance(card, dict):
+            continue
+        if isinstance(card.get("mblog"), dict):
+            yield card["mblog"]
+        for sub in card.get("card_group") or []:
+            if isinstance(sub, dict) and isinstance(sub.get("mblog"), dict):
+                yield sub["mblog"]
+
+
+def backfill_weibo_details(posts):
+    """Repairs already-saved Weibo posts once: real date + any videos/live photos they were missing."""
+    done = fixed = 0
+    for post in posts:
+        if done >= MAX_BACKFILL_PER_RUN:
+            break
+        if post.get("platform") != "Weibo" or post.get("detailChecked") or post.get("detailTries", 0) >= 2:
+            continue
+        match = re.search(r"/status/(\d+)", post.get("url", ""))
+        if not match:
+            continue
+        done += 1
+        detail = fetch_weibo_detail(match.group(1))
+        if not detail:
+            post["detailTries"] = post.get("detailTries", 0) + 1
+            continue
+        post["detailChecked"] = True
+        iso, exact = parse_weibo_created_at(detail.get("created_at"))
+        if iso and exact:
+            post["date"], post["dateExact"] = iso, True
+        post["videos"] = merge_videos(post.get("videos"), extract_weibo_videos(detail))
+        fixed += 1
+    print(f"Backfilled details for {fixed} saved Weibo posts")
+
+
+def collect_sina_api_account(source_config):
+    uid = source_config["uid"]
+    target_url = f"https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid=107603{uid}"
+    payload = weibo_get_json(target_url)
 
     if payload.get("ok") not in (1, "1", True):
         msg = str(payload.get("msg") or "")
         if "还没有内容" in msg:
             return []
         raise RuntimeError(f"Weibo API ok=0: {msg or 'no message'}"[:200])
-        
+
     cards = ((payload.get("data") or {}).get("cards")) or []
-    collected = []
-    skipped = 0
-    
+    collected, skipped, too_old = [], 0, 0
+    cutoff = singapore_now() - timedelta(days=WEIBO_MAX_AGE_DAYS)
     display_name = f"Weibo @{uid}"
-    for card in cards:
-        if not isinstance(card, dict):
-            continue
-        mblog = card.get("mblog")
-        if not isinstance(mblog, dict):
-            continue
-            
+
+    for mblog in weibo_mblogs_from_cards(cards):
         user = mblog.get("user") or {}
         if user.get("screen_name"):
             display_name = f"Weibo @{user.get('screen_name')}"
-            
+
         post_id = str(mblog.get("id") or mblog.get("mid") or "").strip()
         if not post_id:
             continue
-            
-        raw_text = clean_text(mblog.get("raw_text") or mblog.get("text") or "")
+
+        # Long posts are cut off with "...全文" in the list API: fetch the whole text.
+        text_html = mblog.get("text") or ""
+        if mblog.get("isLongText") or "全文</a>" in text_html:
+            text_html = fetch_weibo_long_text(post_id) or text_html
+        raw_text = clean_text(text_html or mblog.get("raw_text") or "")
         if not raw_text:
             continue
-            
-        pics = mblog.get("pics") or []
+
+        # Real publish time from Weibo itself (the old code guessed from the text / used "now").
+        date_iso, date_exact = parse_weibo_created_at(mblog.get("created_at"))
+        if not date_exact:
+            detail = fetch_weibo_detail(post_id)
+            if detail:
+                iso2, exact2 = parse_weibo_created_at(detail.get("created_at"))
+                if iso2 and exact2:
+                    date_iso, date_exact = iso2, True
+        if not date_iso:
+            date_iso = singapore_now().isoformat()
+        if datetime.fromisoformat(date_iso) < cutoff:
+            too_old += 1
+            continue
+
         image_urls = []
-        for pic in pics:
+        for pic in mblog.get("pics") or []:
             if not isinstance(pic, dict):
                 continue
-            large = pic.get("large") or {}
-            img_url = large.get("url") or pic.get("url") or ""
-            img_url = normalize_image_url(img_url)
+            img_url = normalize_image_url((pic.get("large") or {}).get("url") or pic.get("url") or "")
             if img_url and img_url not in image_urls:
                 image_urls.append(img_url)
-                
-        # Filter: keep only posts that mention Hou Minghao (checks repost + hashtags too)
+        videos = extract_weibo_videos(mblog)
+        for video in videos:  # a video's cover is a useful photo too
+            if video["kind"] == "video" and video["poster"] and video["poster"] not in image_urls and len(image_urls) < 9:
+                image_urls.append(video["poster"])
+
         if FILTER_OFFICIAL_ACCOUNTS or not source_config.get("official"):
             retweet = mblog.get("retweeted_status") or {}
             page_info = mblog.get("page_info") or {}
@@ -514,7 +823,7 @@ def collect_sina_api_account(source_config):
         cleaned_content = clean_weibo_content(raw_text)
         title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", cleaned_content), 120)
         post_url = f"https://m.weibo.cn/status/{post_id}"
-        
+
         source_config["source"] = display_name
         source_config["name"] = display_name
 
@@ -525,15 +834,18 @@ def collect_sina_api_account(source_config):
             "title": title or "New Weibo update",
             "excerpt": shorten(cleaned_content, 320),
             "images": image_urls[:9],
+            "videos": videos,
             "category": determine_category(cleaned_content, "Weibo"),
-            "date": parse_possible_date(raw_text),
+            "date": date_iso,
+            "dateExact": date_exact,
             "url": post_url,
             "official": source_config["official"],
             "verified": True,
             "collectionMethod": "Weibo API",
         })
-    if skipped:
-        print(f"  {display_name}: skipped {skipped} posts not mentioning Hou Minghao, kept {len(collected)}")
+    if skipped or too_old:
+        print(f"  {display_name}: skipped {skipped} not mentioning Hou Minghao, {too_old} older than "
+              f"{WEIBO_MAX_AGE_DAYS} days, kept {len(collected)}")
     return collected
 
 
@@ -593,7 +905,7 @@ def collect_x_list(source_config):
         raise RuntimeError("Playwright browser unavailable")
 
     context = BROWSER.new_context(
-        user_agent=MOBILE_UA, locale="en-US", viewport={"width": 1280, "height": 1800},
+        user_agent=DESKTOP_UA, locale="en-US", viewport={"width": 1280, "height": 1800},
     )
     try:
         context.add_cookies([
@@ -680,6 +992,9 @@ def normalize_existing_post(post):
     if not isinstance(raw_images, list):
         raw_images = [raw_images] if raw_images else []
     post["images"] = [url for url in (normalize_image_url(value) for value in raw_images) if url][:9]
+    if not isinstance(post.get("videos"), list):
+        post["videos"] = []
+    post.setdefault("dateExact", False)
     return post
 
 
@@ -712,6 +1027,17 @@ def translate_with_mymemory(text):
     return translated
 
 
+def prepare_for_translation(text):
+    """'#话题#' hashtags make Google/MyMemory output junk like '# # # #'. Unwrap them first."""
+    text = re.sub(r"#\s*([^#\n]{1,60}?)\s*#", r"\1", text)
+    return clean_text(text)
+
+
+def looks_bad_translation(text):
+    text = text or ""
+    return bool(re.search(r"(#\s*){4,}", text) or re.search(r"\b(\w+)(?:\s+\1\b){2,}", text, re.I))
+
+
 def translate_to_english(text):
     text = clean_text(text)
     if not text:
@@ -719,16 +1045,17 @@ def translate_to_english(text):
     if not contains_chinese(text):
         return {"translation": text, "rate_limited": False, "provider": "not_needed"}
 
+    text = prepare_for_translation(text)
     try:
         translated = clean_text(GoogleTranslator(source="auto", target="en").translate(text))
-        if translated:
+        if translated and not looks_bad_translation(translated):
             return {"translation": translated, "rate_limited": False, "provider": "Google"}
     except Exception:
         pass
 
     try:
         translated = translate_with_mymemory(text)
-        if translated:
+        if translated and not looks_bad_translation(translated):
             return {"translation": translated, "rate_limited": False, "provider": "MyMemory"}
     except Exception:
         pass
@@ -757,8 +1084,8 @@ def add_translations(posts):
         post["titleOriginal"], post["excerptOriginal"] = original_title, original_excerpt
         title_en = clean_text(post.get("titleEnglish", ""))
         excerpt_en = clean_text(post.get("excerptEnglish", ""))
-        title_need = contains_chinese(original_title) and not title_en
-        excerpt_need = contains_chinese(original_excerpt) and not excerpt_en
+        title_need = contains_chinese(original_title) and (not title_en or looks_bad_translation(title_en))
+        excerpt_need = contains_chinese(original_excerpt) and (not excerpt_en or looks_bad_translation(excerpt_en))
 
         if not contains_chinese(original_title) and not title_en: post["titleEnglish"] = original_title
         if not contains_chinese(original_excerpt) and not excerpt_en: post["excerptEnglish"] = original_excerpt
@@ -795,9 +1122,13 @@ def main():
         pw = sync_playwright().start()
         browser = pw.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
         context = browser.new_context(
-            user_agent=MOBILE_UA, locale="en-US", viewport={"width": 1365, "height": 768},
-            extra_http_headers={"Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8"},
+            user_agent=MOBILE_UA, locale="zh-CN", viewport={"width": 390, "height": 844},
+            extra_http_headers={"Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"},
         )
+        cookies = weibo_cookies()
+        if cookies:
+            context.add_cookies(cookies)
+            print("Using WEIBO_COOKIE")
         BROWSER = browser
         WEIBO_PAGE = context.new_page()
         try:
@@ -823,6 +1154,11 @@ def main():
         time.sleep(REQUEST_DELAY_SECONDS)
 
     try:
+        backfill_weibo_details(existing)
+    except Exception as error:
+        print("Backfill skipped:", error)
+
+    try:
         if browser: browser.close()
         if pw: pw.stop()
     except Exception:
@@ -830,27 +1166,27 @@ def main():
     WEIBO_PAGE = None
     BROWSER = None
 
-    today = singapore_now().date()
-    def is_weibo_today(post):
-        if post.get("platform") != "Weibo": return False
-        try:
-            stamp = datetime.fromisoformat(post.get("date", "").replace("Z", "+00:00"))
-            if stamp.tzinfo is None: stamp = stamp.replace(tzinfo=UTC)
-            return stamp.astimezone(SINGAPORE).date() == today
-        except Exception: return False
-
-    existing_today_keys = {duplicate_key(p) for p in existing if is_weibo_today(p)}
-    slots = max(0, WEIBO_POST_LIMIT - len(existing_today_keys))
-    
     new_weibo = [p for p in collected if p.get("platform") == "Weibo"]
     other_new = [p for p in collected if p.get("platform") != "Weibo"]
-    
-    accepted_weibo = [p for p in sorted(deduplicate_posts(new_weibo), key=post_timestamp, reverse=True) if duplicate_key(p) not in existing_today_keys][:slots]
+    accepted_weibo = sorted(deduplicate_posts(new_weibo), key=post_timestamp, reverse=True)
+    if WEIBO_POST_LIMIT > 0:
+        today = singapore_now().date()
+
+        def is_today(post):
+            try:
+                return datetime.fromisoformat(post.get("date", "")).astimezone(SINGAPORE).date() == today
+            except Exception:
+                return False
+
+        used = len({duplicate_key(p) for p in existing if p.get("platform") == "Weibo" and is_today(p)})
+        accepted_weibo = [p for p in accepted_weibo if not is_today(p)] + \
+                         [p for p in accepted_weibo if is_today(p)][:max(0, WEIBO_POST_LIMIT - used)]
     collected = accepted_weibo + other_new
 
     merged = deduplicate_posts(existing + collected)
     final_posts = sorted(merged, key=post_timestamp, reverse=True)[:MAX_POSTS]
     images_cached, image_cache_failures = localize_post_images(final_posts)
+    localize_post_videos(final_posts)
     added, translated, limited, translation_providers = add_translations(final_posts)
     success = sum(s["status"] == "Success" for s in statuses)
     failed = len(statuses) - success
