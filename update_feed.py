@@ -53,6 +53,7 @@ VIDEO_BASE = "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/med
 MAX_VIDEO_BYTES = 20 * 1024 * 1024
 MAX_VIDEO_DOWNLOADS_PER_RUN = 12
 DETAIL_FETCHES = 0
+DETAIL_BLOCKED = False  # set when Weibo 403s the detail endpoints; stops further attempts this run
 
 HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -499,8 +500,10 @@ def weibo_get_json(url, retries=2):
             response = WEIBO_PAGE.goto(url, wait_until="domcontentloaded", timeout=30000)
             if response is None:
                 raise RuntimeError("No response from Weibo")
+            if response.status in (403, 418, 432):
+                raise PermissionError(f"HTTP {response.status} (Weibo blocked this request)")
             if response.status != 200:
-                raise RuntimeError(f"HTTP {response.status} (Weibo blocked this request)")
+                raise RuntimeError(f"HTTP {response.status}")
             body = (response.text() or "").strip()
             try:
                 return json.loads(body)
@@ -509,6 +512,8 @@ def weibo_get_json(url, retries=2):
                     return json.loads(re.sub(r"<[^>]+>", "", body))
                 except ValueError:
                     raise RuntimeError(f"Non-JSON response (login/captcha page?): {body[:80]!r}")
+        except PermissionError:
+            raise  # blocked: retrying only makes it worse
         except Exception as error:
             last = error
             time.sleep(1.5 * (attempt + 1))
@@ -571,12 +576,17 @@ def parse_weibo_created_at(value):
 
 def fetch_weibo_detail(post_id):
     """Full post (exact created_at, full text, all media). Returns dict or None."""
-    global DETAIL_FETCHES
-    if DETAIL_FETCHES >= MAX_DETAIL_FETCHES_PER_RUN:
+    global DETAIL_FETCHES, DETAIL_BLOCKED
+    if DETAIL_BLOCKED or DETAIL_FETCHES >= MAX_DETAIL_FETCHES_PER_RUN:
         return None
     DETAIL_FETCHES += 1
     try:
         payload = weibo_get_json(f"https://m.weibo.cn/statuses/show?id={post_id}", retries=1)
+    except PermissionError as error:
+        DETAIL_BLOCKED = True
+        print(f"  Weibo blocks the post-detail endpoint ({error}); skipping detail lookups for this run. "
+              "Dates fall back to the list API's time, which is fine.")
+        return None
     except Exception as error:
         print(f"  detail fetch failed for {post_id}: {str(error)[:100]}")
         return None
@@ -589,8 +599,15 @@ def fetch_weibo_detail(post_id):
 
 def fetch_weibo_long_text(post_id):
     """Posts cut off with '...全文' need the extend endpoint for their full text."""
+    global DETAIL_BLOCKED
+    if DETAIL_BLOCKED:
+        return ""
     try:
-        payload = weibo_get_json(f"https://m.weibo.cn/statuses/extend?id={post_id}", retries=1)
+        payload = weibo_get_json(f"https://m.weibo.cn/statuses/extend?id={post_id}", retries=0)
+    except PermissionError:
+        DETAIL_BLOCKED = True
+        print("  Weibo blocks the long-text endpoint; keeping shortened text for this run.")
+        return ""
     except Exception:
         return ""
     time.sleep(0.5)
@@ -731,10 +748,13 @@ def backfill_weibo_details(posts):
         match = re.search(r"/status/(\d+)", post.get("url", ""))
         if not match:
             continue
+        if DETAIL_BLOCKED:
+            break
         done += 1
         detail = fetch_weibo_detail(match.group(1))
         if not detail:
-            post["detailTries"] = post.get("detailTries", 0) + 1
+            if not DETAIL_BLOCKED:
+                post["detailTries"] = post.get("detailTries", 0) + 1
             continue
         post["detailChecked"] = True
         iso, exact = parse_weibo_created_at(detail.get("created_at"))
@@ -780,7 +800,9 @@ def collect_sina_api_account(source_config):
 
         # Real publish time from Weibo itself (the old code guessed from the text / used "now").
         date_iso, date_exact = parse_weibo_created_at(mblog.get("created_at"))
-        if not date_exact:
+        created_text = clean_text(mblog.get("created_at"))
+        vague = not date_iso or not re.search(r"前|刚刚|Just now", created_text)
+        if not date_exact and vague:
             detail = fetch_weibo_detail(post_id)
             if detail:
                 iso2, exact2 = parse_weibo_created_at(detail.get("created_at"))
