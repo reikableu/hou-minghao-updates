@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-10T03:19:51+08:00",
-  "status": "Completed: 21 sources successful, 0 failed",
+  "lastUpdated": "2026-11-10T06:40:51+08:00",
+  "status": "Completed: 20 sources successful, 1 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -12,130 +12,131 @@
   },
   "sourceStatus": [
     {
-      "source": "Weibo @侯明昊工作室",
-      "status": "Success",
-      "itemsFound": 11,
-      "checkedAt": "2026-11-10T03:18:44.042591+08:00"
+      "source": "Weibo account 5763552342",
+      "status": "Failed",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-10T06:39:43.927197+08:00",
+      "message": "No response from Weibo"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-10T03:18:46.522590+08:00"
+      "checkedAt": "2026-11-10T06:39:46.434179+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:18:49.046971+08:00"
+      "checkedAt": "2026-11-10T06:39:49.001473+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:18:51.373176+08:00"
+      "checkedAt": "2026-11-10T06:39:51.350468+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:18:53.906015+08:00"
+      "checkedAt": "2026-11-10T06:39:53.955654+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:18:56.256148+08:00"
+      "checkedAt": "2026-11-10T06:39:56.269927+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:18:58.593927+08:00"
+      "checkedAt": "2026-11-10T06:39:58.578326+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:00.940092+08:00"
+      "checkedAt": "2026-11-10T06:40:00.903420+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:03.271325+08:00"
+      "checkedAt": "2026-11-10T06:40:03.217176+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:05.648343+08:00"
+      "checkedAt": "2026-11-10T06:40:05.573293+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:08.180672+08:00"
+      "checkedAt": "2026-11-10T06:40:08.017420+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:10.561145+08:00"
+      "checkedAt": "2026-11-10T06:40:10.343386+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:12.925450+08:00"
+      "checkedAt": "2026-11-10T06:40:12.663551+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:15.246231+08:00"
+      "checkedAt": "2026-11-10T06:40:14.984418+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:17.666954+08:00"
+      "checkedAt": "2026-11-10T06:40:17.410479+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:20.129645+08:00"
+      "checkedAt": "2026-11-10T06:40:19.831306+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:22.457421+08:00"
+      "checkedAt": "2026-11-10T06:40:22.150769+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:24.796990+08:00"
+      "checkedAt": "2026-11-10T06:40:24.472192+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:27.140859+08:00"
+      "checkedAt": "2026-11-10T06:40:26.786426+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T03:19:29.532841+08:00"
+      "checkedAt": "2026-11-10T06:40:29.122190+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 29,
-      "checkedAt": "2026-11-10T03:19:31.923436+08:00"
+      "checkedAt": "2026-11-10T06:40:31.472231+08:00"
     }
   ],
   "posts": [
@@ -978,8 +979,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b36bbb7c26190fd52cab6007.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7ba93ddfd4c27a0e8354f48c.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8851cd6ac159717c5236f112.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/955285efb7ddf34d70dc3c6e.jpg",
-        "https://pbs.twimg.com/media/HWmXwdBaIAAicG5?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/955285efb7ddf34d70dc3c6e.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-08T19:29:55+08:00",
@@ -1091,9 +1091,7 @@
       "excerpt": "Title: “Marveling at how sensible the approach to love in #KeytothePhoenixHeart is. Two genuinely normal people in a chaotic world, a rare and precious thing” “I can’t believe there’s actually a drama that manages to keep two characters from ever intruding into each other’s",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cf06115ba8bfb5401d894262.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b13bb714445b7e02e8b61960.jpg",
-        "https://pbs.twimg.com/media/HWkOgLMa4AAGDIa?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWkOgLHbYAAlVJ2?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b13bb714445b7e02e8b61960.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-08T09:30:58+08:00",
@@ -1445,8 +1443,7 @@
       "title": "「我们」，再见一面 #侯明昊属于我们的巡回演唱会# #微博演出季#",
       "excerpt": "「我们」，再见一面 #侯明昊属于我们的巡回演唱会# #微博演出季#",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f00b874971066bdbe21c23fe.jpg",
-        "https://wx4.sinaimg.cn/mw2000/6d2b400bly1iiq2vv4n31j22802yoe85.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f00b874971066bdbe21c23fe.jpg"
       ],
       "category": "Event",
       "date": "2026-11-06T13:37:28.980322+08:00",
