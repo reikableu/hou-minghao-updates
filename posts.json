@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-10T00:41:43+08:00",
+  "lastUpdated": "2026-11-10T03:19:51+08:00",
   "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 6,
-    "postsTranslatedThisRun": 3,
+    "translationsAdded": 0,
+    "postsTranslatedThisRun": 0,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 6
+      "MyMemory": 0
     }
   },
   "sourceStatus": [
@@ -15,127 +15,127 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-10T00:39:47.015802+08:00"
+      "checkedAt": "2026-11-10T03:18:44.042591+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-10T00:39:49.475203+08:00"
+      "checkedAt": "2026-11-10T03:18:46.522590+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:39:51.974475+08:00"
+      "checkedAt": "2026-11-10T03:18:49.046971+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:39:54.268865+08:00"
+      "checkedAt": "2026-11-10T03:18:51.373176+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:39:56.751064+08:00"
+      "checkedAt": "2026-11-10T03:18:53.906015+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:39:59.061875+08:00"
+      "checkedAt": "2026-11-10T03:18:56.256148+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:01.372666+08:00"
+      "checkedAt": "2026-11-10T03:18:58.593927+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:03.682868+08:00"
+      "checkedAt": "2026-11-10T03:19:00.940092+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:05.980984+08:00"
+      "checkedAt": "2026-11-10T03:19:03.271325+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:08.305256+08:00"
+      "checkedAt": "2026-11-10T03:19:05.648343+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:10.747704+08:00"
+      "checkedAt": "2026-11-10T03:19:08.180672+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:13.066523+08:00"
+      "checkedAt": "2026-11-10T03:19:10.561145+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:15.342821+08:00"
+      "checkedAt": "2026-11-10T03:19:12.925450+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:17.663606+08:00"
+      "checkedAt": "2026-11-10T03:19:15.246231+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:20.043473+08:00"
+      "checkedAt": "2026-11-10T03:19:17.666954+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:22.461717+08:00"
+      "checkedAt": "2026-11-10T03:19:20.129645+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:24.746484+08:00"
+      "checkedAt": "2026-11-10T03:19:22.457421+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:27.051965+08:00"
+      "checkedAt": "2026-11-10T03:19:24.796990+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:29.321586+08:00"
+      "checkedAt": "2026-11-10T03:19:27.140859+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T00:40:31.638726+08:00"
+      "checkedAt": "2026-11-10T03:19:29.532841+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 29,
-      "checkedAt": "2026-11-10T00:40:34.032430+08:00"
+      "checkedAt": "2026-11-10T03:19:31.923436+08:00"
     }
   ],
   "posts": [
@@ -711,10 +711,7 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a1a6496e561b95e92403ab05.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/182b06dd6be23b158ae1ac67.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4dbc96d561a124d95fe977d1.jpg",
-        "https://pbs.twimg.com/media/HWrTXvpa8AAOGD3?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWrTYynbEAA0hyO?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWrTb4MboAIoHv_?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4dbc96d561a124d95fe977d1.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-09T18:29:10+08:00",
@@ -733,10 +730,7 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/35478659540e35e40ca74399.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f7b2d9f96c255b6beb81a267.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/06eb1d90d560e85e12217d52.jpg",
-        "https://pbs.twimg.com/media/HWrTUWob0AAEIE3?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWrTVM8acAAcGEX?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWrTWSlbQAAaAWP?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/06eb1d90d560e85e12217d52.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-09T18:28:47+08:00",
@@ -783,8 +777,7 @@
       "title": "\"An invitation across time, arriving soon at a dazzling event.\" 261109 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "excerpt": "\"An invitation across time, arriving soon at a dazzling event.\" 261109 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/878bdac29e514fcdb0ba23f0.jpg",
-        "https://pbs.twimg.com/media/HWrNA9KbsAAecZ-?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/878bdac29e514fcdb0ba23f0.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-09T18:01:06+08:00",
@@ -801,8 +794,7 @@
       "title": "Hou Minghao Live Photos | W Annual Gala 2026 261109 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "excerpt": "Hou Minghao Live Photos | W Annual Gala 2026 261109 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/342e5afb0a8f20bf42ceb899.jpg",
-        "https://pbs.twimg.com/media/HWrLNDxaUAAT-ez?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/342e5afb0a8f20bf42ceb899.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-09T17:53:11+08:00",
@@ -987,9 +979,6 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7ba93ddfd4c27a0e8354f48c.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8851cd6ac159717c5236f112.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/955285efb7ddf34d70dc3c6e.jpg",
-        "https://pbs.twimg.com/media/HWmXuHKbQAANVVc?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWmXvAHakAAaDGl?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWmXv1HaUAA5viD?format=jpg&name=large",
         "https://pbs.twimg.com/media/HWmXwdBaIAAicG5?format=jpg&name=large"
       ],
       "category": "X Update",
