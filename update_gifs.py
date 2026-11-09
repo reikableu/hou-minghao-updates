@@ -37,9 +37,6 @@ SINGAPORE = ZoneInfo("Asia/Singapore")
 # Keyword search is login-gated on Weibo, so it is OFF by default.
 SEARCH_KEYWORDS = []
 
-# Tenor search keywords (No API key required, scraped via Playwright)
-TENOR_KEYWORDS = ["HouMinghao", "侯明昊"]
-
 # Optional: Weibo UIDs of fan / official accounts that post lots of Hou Minghao content
 TARGET_UIDS = [
     "7971490580",
@@ -112,7 +109,10 @@ def load_existing_gifs():
     try:
         data = json.loads(GIFS_FILE.read_text(encoding="utf-8"))
         items = data.get("items") if isinstance(data, dict) else (data if isinstance(data, list) else [])
-        return [item for item in items if isinstance(item, dict)]
+        return [
+            item for item in items
+            if isinstance(item, dict) and item.get("platform") != "Tenor"
+        ]
     except Exception:
         return []
 
@@ -151,7 +151,7 @@ def host_variants(url):
 
 async def download_bytes(context, url, post_url, size_limit):
     """Download a file, trying alternate image hosts and referers (bounded)."""
-    referers = [post_url or "https://m.weibo.cn/", "https://weibo.com/", "https://tenor.com/"]
+    referers = [post_url or "https://m.weibo.cn/", "https://weibo.com/"]
     last_status = None
     attempts = 0
     max_attempts = 8
@@ -372,92 +372,6 @@ async def fetch_profile_candidates(page, uid, max_pages=3):
 
 
 # ============================================================
-# TENOR WEB SCRAPING FETCHING (FIXED SELECTORS)
-# ============================================================
-
-async def fetch_tenor_candidates(page, keyword):
-    encoded_keyword = urllib.parse.quote(keyword)
-    target_url = f"https://tenor.com/search/{encoded_keyword}-gifs"
-    candidates = []
-    print(f"Fetching Tenor search for keyword: '{keyword}'")
-
-    try:
-        await page.goto(target_url, wait_until="domcontentloaded", timeout=30000)
-        await asyncio.sleep(4)
-
-        # Scroll down dynamically to trigger lazy-loaded GIF items
-        for _ in range(3):
-            await page.evaluate("window.scrollTo(0, document.body.scrollHeight);")
-            await asyncio.sleep(2)
-
-        # Updated resilient selector logic targeting generic figures, videos, and image cards on Tenor
-        media_items = await page.evaluate("""() => {
-            const results = [];
-            // Target all potential container elements or media items on Tenor search grid
-            const elements = document.querySelectorAll('figure, img, video, source');
-            
-            elements.forEach((el) => {
-                let mediaUrl = '';
-                let altText = '';
-
-                if (el.tagName === 'VIDEO' || el.tagName === 'SOURCE') {
-                    mediaUrl = el.src || el.currentSrc;
-                } else if (el.tagName === 'IMG') {
-                    mediaUrl = el.src;
-                    altText = el.alt;
-                } else {
-                    const img = el.querySelector('img');
-                    const video = el.querySelector('video') || el.querySelector('source');
-                    if (video) mediaUrl = video.src || video.currentSrc;
-                    else if (img) {
-                        mediaUrl = img.src;
-                        altText = img.alt;
-                    }
-                }
-
-                if (mediaUrl && (mediaUrl.includes('tenor.com') || mediaUrl.includes('media.tenor.co') || mediaUrl.includes('cgw.tenor.com'))) {
-                    results.push({
-                        mediaUrl: mediaUrl,
-                        title: altText || 'Tenor GIF'
-                    });
-                }
-            });
-            return results;
-        }""")
-
-        seen_urls = set()
-        for idx, item in enumerate(media_items):
-            media_url = normalize_url(item["mediaUrl"])
-            if not media_url or media_url in seen_urls:
-                continue
-            
-            # Map preview image links to direct gif/mp4 outputs if possible, or keep original link
-            if ".gif" not in media_url and ".mp4" not in media_url and ".webm" not in media_url:
-                if "images/" in media_url:
-                    media_url = media_url.replace("/images/", "/media/")
-
-            seen_urls.add(media_url)
-            url_hash = hashlib.md5(media_url.encode()).hexdigest()[:10]
-            photo_id = f"tenor_{keyword.lower()}_{idx}_{url_hash}"
-            is_video = media_url.endswith(".mp4") or media_url.endswith(".webm")
-
-            candidates.append({
-                "photo_id": photo_id,
-                "post_url": target_url,
-                "image_url": media_url,
-                "title": f"Tenor ({keyword}): {item['title'][:60]}",
-                "author": "Tenor User",
-                "is_video": is_video,
-            })
-
-        print(f"  Tenor '{keyword}': found {len(candidates)} items.")
-    except Exception as error:
-        print(f"  Error scraping Tenor for '{keyword}': {error}")
-
-    return candidates
-
-
-# ============================================================
 # CLEANUP
 # ============================================================
 
@@ -503,7 +417,6 @@ async def main_async():
     print(f"Cookie provided: {'yes' if WEIBO_COOKIE else 'no'}")
     print(f"ffmpeg available: {'yes' if FFMPEG_AVAILABLE else 'NO'}")
     print(f"Profiles to scrape: {len(TARGET_UIDS)}")
-    print(f"Tenor keywords to scrape: {len(TENOR_KEYWORDS)}")
 
     all_candidates = []
 
@@ -537,10 +450,6 @@ async def main_async():
 
         for keyword in SEARCH_KEYWORDS:
             all_candidates.extend(await fetch_search_candidates(page, keyword, max_pages=3))
-            await asyncio.sleep(2)
-
-        for keyword in TENOR_KEYWORDS:
-            all_candidates.extend(await fetch_tenor_candidates(page, keyword))
             await asyncio.sleep(2)
 
         unique_candidates = []
@@ -612,7 +521,7 @@ async def main_async():
                 path = GIFS_MEDIA_DIR / filename
                 path.write_bytes(content)
 
-                platform_name = "Tenor" if "tenor" in item["photo_id"] else "Weibo"
+                platform_name = "Weibo"
                 new_items.append({
                     "id": item["photo_id"],
                     "image": f"{RAW_GIFS_BASE}/{filename}",
