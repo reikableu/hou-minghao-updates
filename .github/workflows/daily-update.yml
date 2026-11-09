@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
   schedule:
-    # Every 2 hour. GitHub Actions cron uses UTC.
-    - cron: "08 */2 * * *"
+    # Every 4 hour. GitHub Actions cron uses UTC.
+    - cron: "38 */4 * * *"
 
 permissions:
   contents: write
