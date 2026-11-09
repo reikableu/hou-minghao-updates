@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-09T06:40:16+08:00",
-  "status": "Completed: 20 sources successful, 1 failed",
+  "lastUpdated": "2026-11-09T09:40:09+08:00",
+  "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -12,131 +12,130 @@
   },
   "sourceStatus": [
     {
-      "source": "Weibo account 5763552342",
-      "status": "Failed",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:10.151513+08:00",
-      "message": "Non-JSON response (login/captcha page?): '<!DOCTYPE html>\\n<html>\\n<head>\\n    <meta http-equiv=\"Content-type\" content=\"text/'"
+      "source": "Weibo @侯明昊工作室",
+      "status": "Success",
+      "itemsFound": 11,
+      "checkedAt": "2026-11-09T09:39:03.131898+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-09T06:39:12.625325+08:00"
+      "checkedAt": "2026-11-09T09:39:05.610317+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:15.090702+08:00"
+      "checkedAt": "2026-11-09T09:39:08.255120+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:17.393010+08:00"
+      "checkedAt": "2026-11-09T09:39:10.580027+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:19.818569+08:00"
+      "checkedAt": "2026-11-09T09:39:13.113949+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:22.111617+08:00"
+      "checkedAt": "2026-11-09T09:39:15.434444+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:24.404873+08:00"
+      "checkedAt": "2026-11-09T09:39:17.771429+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:26.714573+08:00"
+      "checkedAt": "2026-11-09T09:39:20.103403+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:29.009565+08:00"
+      "checkedAt": "2026-11-09T09:39:22.418418+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:31.321260+08:00"
+      "checkedAt": "2026-11-09T09:39:24.765086+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:33.744980+08:00"
+      "checkedAt": "2026-11-09T09:39:27.241231+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:36.125726+08:00"
+      "checkedAt": "2026-11-09T09:39:29.597698+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:38.469770+08:00"
+      "checkedAt": "2026-11-09T09:39:31.919095+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:40.761179+08:00"
+      "checkedAt": "2026-11-09T09:39:34.240482+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:43.146722+08:00"
+      "checkedAt": "2026-11-09T09:39:36.825644+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:45.599661+08:00"
+      "checkedAt": "2026-11-09T09:39:39.260578+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:47.888294+08:00"
+      "checkedAt": "2026-11-09T09:39:41.576913+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:50.191454+08:00"
+      "checkedAt": "2026-11-09T09:39:43.894623+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:52.472870+08:00"
+      "checkedAt": "2026-11-09T09:39:46.291490+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-09T06:39:54.780442+08:00"
+      "checkedAt": "2026-11-09T09:39:48.672933+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-11-09T06:39:57.091602+08:00"
+      "checkedAt": "2026-11-09T09:39:51.011896+08:00"
     }
   ],
   "posts": [
@@ -187,6 +186,21 @@
       "category": "X Update",
       "date": "2026-11-08T22:24:16+08:00",
       "url": "https://x.com/PopMinghao/status/2119435840564896043",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic"
+    },
+    {
+      "id": "76897d574ad3bd30a13c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@KiwiBloomz",
+      "title": "Top up, pleeease, pleeease~ #โหวหมิงฮ่าว #HouMinghao #侯明昊",
+      "excerpt": "Top up, pleeease, pleeease~ #โหวหมิงฮ่าว #HouMinghao #侯明昊",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-08T20:48:06+08:00",
+      "url": "https://x.com/KiwiBloomz/status/2119411638608802027",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic"
@@ -4376,24 +4390,6 @@
       "excerptOriginal": "CASETiFY 2026-10-30 16:56 来自 iPhone 14 Pro #天猫双11星舰狂欢#倒计时一天！#侯明昊[超话]#已上淘宝搜索CASETiFY代言人@侯明昊 并连签3天！期待明天能与各位猕猴桃们一起参与#天猫全明星计划#解锁的侯明昊SSR专属明星徽章！我们还准备了超多福利哦～侯明昊亲签、价值千元的CASETiFY天猫限定礼盒等你来赢！ 双11上淘宝更优惠，官方立减叠券7.2折起 📣全体注意！#天猫双11星舰狂欢# 倒计时1天❗️ 本喵震惊😱 「早猫票」预热连签火爆，人气值累计已破160万！ 最后一天的签到大家不要忘记！上淘宝搜索你猜到的「明星名字」，10.28-10.30连续3天签到，赢翻倍狂欢积分～ ⏰明…",
       "titleEnglish": "CASETiFY 2026-10-30 16:56 From iPhone 14 Pro #TmallDouble11StarshipCarnival# One day countdown! #HouMinghao[SuperTopic]# I've already searched for CASETiFY spokesperson @HouMinghao on Taobao and signed up for 3 days in a row! Looking forward to participating in #TmallAllStars# with all my fellow fans tomorrow…",
       "excerptEnglish": "CASETiFY 2026-10-30 16:56 From iPhone 14 Pro #TmallDouble11StarshipCarnival# Countdown 1 day! #HouMinghao[SuperTopic]# is now available on Taobao! Search for CASETiFY spokesperson @HouMinghao and sign for 3 consecutive days! Looking forward to participating in the #TmallAllStarPlan# with all our fans tomorrow to unlock Hou Minghao's exclusive SSR star badge! We've also prepared tons of benefits~ Hou Minghao's autographed gift box and a CASETiFY Tmall limited edition gift box worth thousands of yuan are waiting for you to win! Double 11 on Taobao offers even more discounts, official instant discounts and coupons up to 72% off📣Attention everyone! #TmallDouble11StarshipCarnival# Countdown 1 day❗️ This cat is shocked😱 The \"Early Cat Ticket\" pre-signing sign-in is incredibly popular, with the cumulative popularity value exceeding 1.6 million! Don't forget to sign in on the last day! Search for the \"celebrity name\" you guessed on Taobao, check in for 3 consecutive days from October 28th to 30th, and win double points! ⏰"
-    },
-    {
-      "id": "e3ddcf03186dee07ea2c",
-      "platform": "Weibo",
-      "source": "侯明昊工作室",
-      "title": "2026-10-30 18:50 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 夜色收拢最后一缕暮光 灯火为奔赴点亮坐标 倒计时1天，舞台见！…",
-      "excerpt": "侯明昊工作室 2026-10-30 18:50 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 夜色收拢最后一缕暮光 灯火为奔赴点亮坐标 倒计时1天，舞台见！ ​",
-      "images": [],
-      "category": "Event",
-      "date": "2026-10-30T12:00:00+08:00",
-      "url": "https://sina.cn/media/5763552342",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "2026-10-30 18:50 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 夜色收拢最后一缕暮光 灯火为奔赴点亮坐标 倒计时1天，舞台见！…",
-      "excerptOriginal": "侯明昊工作室 2026-10-30 18:50 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 夜色收拢最后一缕暮光 灯火为奔赴点亮坐标 倒计时1天，舞台见！ ​",
-      "titleEnglish": "2026-10-30 18:50 # Hou Minghao [overstated] # # Hou Minghao's concert tour # Hou Minghao's concert 🥝 # Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #!",
-      "excerptEnglish": "Hou Minghao Studio 2026-10-30 18:50 # Hou Minghao [overstated] # # Hou Minghao's concert tour # Hou Minghao's concert 🥝 # Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | @ Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert | Hou Minghao's concert tour # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # Hou Minghao's concert # # # Hou Minghao's concert # # # Hou Minghao's concert # # Hou Minghao's concert # # # Hou Mingha's concert # ​"
     }
   ]
 }
