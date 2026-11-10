@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T15:40:25+08:00",
+  "lastUpdated": "2026-11-10T18:44:52+08:00",
   "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -15,130 +15,149 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-10T15:39:07.320901+08:00"
+      "checkedAt": "2026-11-10T18:43:34.130946+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-10T15:39:12.425541+08:00"
+      "checkedAt": "2026-11-10T18:43:39.259482+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:16.886638+08:00"
+      "checkedAt": "2026-11-10T18:43:43.762239+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:19.241761+08:00"
+      "checkedAt": "2026-11-10T18:43:46.108918+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:23.604717+08:00"
+      "checkedAt": "2026-11-10T18:43:50.453284+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:25.933901+08:00"
+      "checkedAt": "2026-11-10T18:43:52.788604+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:28.248386+08:00"
+      "checkedAt": "2026-11-10T18:43:55.141844+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:30.573745+08:00"
+      "checkedAt": "2026-11-10T18:43:57.493281+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:32.905321+08:00"
+      "checkedAt": "2026-11-10T18:43:59.813175+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:35.279793+08:00"
+      "checkedAt": "2026-11-10T18:44:02.164685+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:38.624571+08:00"
+      "checkedAt": "2026-11-10T18:44:05.557960+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:40.960615+08:00"
+      "checkedAt": "2026-11-10T18:44:07.950623+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:43.268836+08:00"
+      "checkedAt": "2026-11-10T18:44:10.303229+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:45.620014+08:00"
+      "checkedAt": "2026-11-10T18:44:12.633075+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:48.064416+08:00"
+      "checkedAt": "2026-11-10T18:44:15.082209+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:50.480912+08:00"
+      "checkedAt": "2026-11-10T18:44:17.543267+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:52.843604+08:00"
+      "checkedAt": "2026-11-10T18:44:19.911684+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:55.184432+08:00"
+      "checkedAt": "2026-11-10T18:44:22.240932+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:57.501539+08:00"
+      "checkedAt": "2026-11-10T18:44:24.589326+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-10T15:39:59.849548+08:00"
+      "checkedAt": "2026-11-10T18:44:26.967937+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 30,
-      "checkedAt": "2026-11-10T15:40:02.214660+08:00"
+      "checkedAt": "2026-11-10T18:44:29.361715+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "ecfcf19600bbeeeae1cb",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "those white, soft-looking arms??? i’m turning into a whole wolf over here #侯明昊 #HouMinghao",
+      "excerpt": "those white, soft-looking arms??? i’m turning into a whole wolf over here #侯明昊 #HouMinghao",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/325dc696c9b518b7f728b8ab.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-10T17:36:01+08:00",
+      "url": "https://x.com/PopMinghao/status/2120088075888168962",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
     {
       "id": "7d4fcf988066eb61f778",
       "platform": "X",
@@ -897,7 +916,8 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/182b06dd6be23b158ae1ac67.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4dbc96d561a124d95fe977d1.jpg",
         "https://pbs.twimg.com/media/HWrTYynbEAA0hyO?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWrTb4MboAIoHv_?format=jpg&name=large"
+        "https://pbs.twimg.com/media/HWrTb4MboAIoHv_?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWrTXvpa8AAOGD3?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-09T18:29:10+08:00",
@@ -4977,23 +4997,6 @@
       "category": "X Update",
       "date": "2026-10-31T19:41:00+08:00",
       "url": "https://x.com/PopMinghao/status/2116495739673284857",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "9f1d5aad4960f04cab41",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 “Sleeping by the Wildfire” tonight!!! one of my FAVORITE stages. waiting for t…",
-      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 “Sleeping by the Wildfire” tonight!!! one of my FAVORITE stages. waiting for the full-stage fancam!!! 😭 for the cinematic scenes and lyrics playing across the giant LED screen #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-10-31T19:35:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116494147687502330",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic",
