@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-11T21:42:39+08:00",
+  "lastUpdated": "2026-11-12T00:59:32+08:00",
   "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 2,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 2
     }
   },
   "sourceStatus": [
@@ -15,130 +15,150 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-11T21:39:27.261542+08:00"
+      "checkedAt": "2026-11-12T00:56:12.957659+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-11T21:39:43.968290+08:00"
+      "checkedAt": "2026-11-12T00:56:29.043088+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:39:59.939543+08:00"
+      "checkedAt": "2026-11-12T00:56:44.475614+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:40:02.283367+08:00"
+      "checkedAt": "2026-11-12T00:56:46.786683+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:40:17.953890+08:00"
+      "checkedAt": "2026-11-12T00:57:02.082316+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:40:20.381943+08:00"
+      "checkedAt": "2026-11-12T00:57:04.368703+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:40:22.749314+08:00"
+      "checkedAt": "2026-11-12T00:57:06.700533+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:40:25.110760+08:00"
+      "checkedAt": "2026-11-12T00:57:09.011367+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:40:38.857105+08:00"
+      "checkedAt": "2026-11-12T00:57:22.443372+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:40:41.235496+08:00"
+      "checkedAt": "2026-11-12T00:57:24.766275+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:40:56.000972+08:00"
+      "checkedAt": "2026-11-12T00:57:39.184352+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:40:58.422520+08:00"
+      "checkedAt": "2026-11-12T00:57:41.518745+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:41:12.144766+08:00"
+      "checkedAt": "2026-11-12T00:57:54.951916+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:41:25.899740+08:00"
+      "checkedAt": "2026-11-12T00:58:08.368614+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:41:39.719868+08:00"
+      "checkedAt": "2026-11-12T00:58:22.006411+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:41:53.609171+08:00"
+      "checkedAt": "2026-11-12T00:58:35.625389+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:41:55.985663+08:00"
+      "checkedAt": "2026-11-12T00:58:37.933072+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:41:58.341771+08:00"
+      "checkedAt": "2026-11-12T00:58:40.251014+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:42:12.056867+08:00"
+      "checkedAt": "2026-11-12T00:58:53.670262+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T21:42:14.445784+08:00"
+      "checkedAt": "2026-11-12T00:58:56.006082+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 30,
-      "checkedAt": "2026-11-11T21:42:16.832512+08:00"
+      "checkedAt": "2026-11-12T00:58:58.391689+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "d1d9d05d149b309e7851",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@neohou_feed",
+      "title": "The Drama #Glory has re-entered the Top 10 on Thailand’s TrueID platform! Its total views have surpassed 17.3 Million, and it is currently ranked No.…",
+      "excerpt": "The Drama #Glory has re-entered the Top 10 on Thailand’s TrueID platform! Its total views have surpassed 17.3 Million, and it is currently ranked No. 1 among the most-watched Chinese dramas of 2026! #HouMinghao #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c518ac9050c1395421cf635c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/760878692870459ceb77ab9a.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-11T21:57:45+08:00",
+      "url": "https://x.com/neohou_feed/status/2120516333292900508",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
     {
       "id": "298be2a2c20469dc04ae",
       "platform": "X",
@@ -910,8 +930,9 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c21c176583a57695a41b3c7b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fcc3e63cd62d04c9ac50e63f.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg",
-        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iiw9cjstebj32c0340hdu.jpg",
-        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iiw9ciiyc9j31n426unpd.jpg"
+        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iiw9ciiyc9j31n426unpd.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9ch5sebj32dc35s4qs.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9cogvomj32dc35s7wo.jpg"
       ],
       "videos": [
         {
@@ -1713,7 +1734,7 @@
       "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 漫无边际的雾色 在声场留白处 期待旋律重启",
       "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜ @侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 漫无边际的雾色 在声场留白处 期待旋律重启",
       "titleEnglish": "🥝 Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ Hou Minghao's concert | @ Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Hou's concert | @ Hou's concert | @ @ Hou MingHao's concert | @ Hou",
-      "excerptEnglish": "Hou Minghao 🥝 # Hou Minghao belongs to our tour concert # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #",
+      "excerptEnglish": "Hou Minghao 🥝 Hou Minghao \"Belongs to Us\" Tour Concert Memories of Zhengzhou｜ @Hou Minghao Story Continues In the boundless mist, in the blank space of the sound field, waiting for the melody to restart",
       "videos": [],
       "dateExact": false
     },
@@ -4146,7 +4167,7 @@
       "collectionMethod": "Automatic",
       "titleOriginal": "2026-11-02 20:58 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 我们在音符缝隙里 守候新声起落 ​",
       "excerptOriginal": "侯明昊工作室 2026-11-02 20:58 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 我们在音符缝隙里 守候新声起落 ​",
-      "titleEnglish": "2026-11-02 20:58 # Hou Minghao [overstated] # 🥝 # Hou Minghao's concert tour # # Hou Minghao's concert | @ Hou Minghao's concert # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # ​",
+      "titleEnglish": "2026-11-02 20:58 Minghao Hou [Super Topic] 🥝 Minghao Hou's \"Belong to Us\" Tour Concert Memories of Zhengzhou｜@Minghao Hou Story Continues We wait for new voices to rise and fall in the gaps between the notes ​",
       "excerptEnglish": "Hou Minghao Studio 2026-11-02 20:58 # Hou Minghao [overstated] 🥝 # # Hou Minghao's concert tour # Hou Minghao's concert # Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert ​",
       "videos": [],
       "dateExact": false
@@ -5009,25 +5030,6 @@
       "category": "X Update",
       "date": "2026-10-31T22:21:00+08:00",
       "url": "https://x.com/PopMinghao/status/2116536056837472499",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "490f4243fed022ef196c",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🐈 already signed up for the Cat Gang 97 club 😭🐾 #HouMinghao #侯明昊 #HouMinghaoBelo…",
-      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🐈 already signed up for the Cat Gang 97 club 😭🐾 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f2a835d57bba792beb149dca.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-10-31T21:54:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116529234839757190",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic",
