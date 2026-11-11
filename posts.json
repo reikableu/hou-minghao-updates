@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11T15:42:16+08:00",
+  "lastUpdated": "2026-11-11T18:42:31+08:00",
   "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -15,130 +15,202 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-11T15:39:14.948552+08:00"
+      "checkedAt": "2026-11-11T18:39:19.235216+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-11T15:39:30.459206+08:00"
+      "checkedAt": "2026-11-11T18:39:35.573299+08:00"
     },
     {
       "source": "Weibo account 6453123896",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:39:45.364025+08:00"
+      "checkedAt": "2026-11-11T18:39:51.152766+08:00"
     },
     {
       "source": "Weibo account 1692125795",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:39:47.670597+08:00"
+      "checkedAt": "2026-11-11T18:39:53.494193+08:00"
     },
     {
       "source": "Weibo account 1734997034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:40:02.465623+08:00"
+      "checkedAt": "2026-11-11T18:40:08.835329+08:00"
     },
     {
       "source": "Weibo account 7513576766",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:40:04.761603+08:00"
+      "checkedAt": "2026-11-11T18:40:11.150616+08:00"
     },
     {
       "source": "Weibo account 1766627034",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:40:07.058527+08:00"
+      "checkedAt": "2026-11-11T18:40:13.473021+08:00"
     },
     {
       "source": "Weibo account 7335269786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:40:09.348807+08:00"
+      "checkedAt": "2026-11-11T18:40:15.800658+08:00"
     },
     {
       "source": "Weibo account 7868019741",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:40:22.200092+08:00"
+      "checkedAt": "2026-11-11T18:40:29.319691+08:00"
     },
     {
       "source": "Weibo account 1749127163",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:40:24.519098+08:00"
+      "checkedAt": "2026-11-11T18:40:31.677147+08:00"
     },
     {
       "source": "Weibo account 6473618360",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:40:38.348644+08:00"
+      "checkedAt": "2026-11-11T18:40:46.152301+08:00"
     },
     {
       "source": "Weibo account 7579169954",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:40:40.658647+08:00"
+      "checkedAt": "2026-11-11T18:40:48.556325+08:00"
     },
     {
       "source": "Weibo account 7486821389",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:40:53.514772+08:00"
+      "checkedAt": "2026-11-11T18:41:02.041807+08:00"
     },
     {
       "source": "Weibo account 5938174786",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:41:06.411731+08:00"
+      "checkedAt": "2026-11-11T18:41:15.509595+08:00"
     },
     {
       "source": "Weibo account 1767117565",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:41:19.436171+08:00"
+      "checkedAt": "2026-11-11T18:41:29.158658+08:00"
     },
     {
       "source": "Weibo account 7639102431",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:41:32.500136+08:00"
+      "checkedAt": "2026-11-11T18:41:42.737134+08:00"
     },
     {
       "source": "Weibo account 3219487770",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:41:34.844282+08:00"
+      "checkedAt": "2026-11-11T18:41:45.077190+08:00"
     },
     {
       "source": "Weibo account 7541604928",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:41:37.139899+08:00"
+      "checkedAt": "2026-11-11T18:41:47.422636+08:00"
     },
     {
       "source": "Weibo account 7857186930",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:41:49.991114+08:00"
+      "checkedAt": "2026-11-11T18:42:00.876092+08:00"
     },
     {
       "source": "Weibo account 7867201948",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-11T15:41:52.321412+08:00"
+      "checkedAt": "2026-11-11T18:42:03.216592+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 30,
-      "checkedAt": "2026-11-11T15:41:54.671616+08:00"
+      "checkedAt": "2026-11-11T18:42:05.590954+08:00"
     }
   ],
   "posts": [
+    {
+      "id": "35c3a7d4afcb7327b2d7",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Brand Event Announcement | Snowflying November 21, 2026 Shijiazhuang 261111 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Brand Event Announcement | Snowflying November 21, 2026 Shijiazhuang 261111 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e6602f767a72f467adce65b.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-11T17:38:35+08:00",
+      "url": "https://x.com/HMH_Record/status/2120451110070796671",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "16bd2f989c79aeeb8d71",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao | W Golden Moment | W Annual Gala 2026 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
+      "excerpt": "Hou Minghao | W Golden Moment | W Annual Gala 2026 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-11T17:30:52+08:00",
+      "url": "https://x.com/HMH_Record/status/2120449169630588987",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "ebc9f99e157191dba160",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "New Group Photo | W Annual Gala 2026 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
+      "excerpt": "New Group Photo | W Annual Gala 2026 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/83c2d814e60bf2db3a601bad.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-11T16:00:22+08:00",
+      "url": "https://x.com/HMH_Record/status/2120426393007972748",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "4f23c707dcd207999575",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@ncybear",
+      "title": ": “Hello, friends of W China. I am #HouMinghao.” W: “When you think of the ‘Golden Age,’ what is the first film, person, or image that comes to mind?…",
+      "excerpt": ": “Hello, friends of W China. I am #HouMinghao.” W: “When you think of the ‘Golden Age,’ what is the first film, person, or image that comes to mind?” : “I think of Hong Kong cinema’s golden age in the ‘80s and ‘90s. I think of many films, like Chow Yun-Fat laoshi’s ‘A",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-11T13:08:39+08:00",
+      "url": "https://x.com/ncybear/status/2120383179307860414",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
     {
       "id": "7d55cf014f9c26d8c055",
       "platform": "X",
@@ -799,7 +871,8 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6c7e41658f3bd2e468b1db6c.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c21c176583a57695a41b3c7b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fcc3e63cd62d04c9ac50e63f.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9cogvomj32dc35s7wo.jpg"
       ],
       "videos": [
         {
@@ -4952,76 +5025,6 @@
       "category": "X Update",
       "date": "2026-10-31T21:28:00+08:00",
       "url": "https://x.com/PopMinghao/status/2116522577594315081",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "ad0c9cf3af676bc822a2",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🌊 earlier he was an emotional little cat, and now he’s doing the wave 😭😭 we love…",
-      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🌊 earlier he was an emotional little cat, and now he’s doing the wave 😭😭 we love them all!!! 🥹🐈 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-10-31T20:55:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116514382658359632",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "692e040d5e806703b98a",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 not mi doing the viral fast footwork challenge on stage 😭😭 he’s really out here…",
-      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 not mi doing the viral fast footwork challenge on stage 😭😭 he’s really out here showing off his moves!!! 🤣 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-10-31T20:51:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116513371793314134",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "e23ce2a91934762e4402",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🔥 SCREAMMMMM!!! HE IS SO HOTTTT 😭😭 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #…",
-      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🔥 SCREAMMMMM!!! HE IS SO HOTTTT 😭😭 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-10-31T20:45:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116511886351167515",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "5d348698194438b3cf19",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🐆 Saw a leopard ? Wipe my tears … he really is a cat… 😭🐆 #HouMinghao #侯明昊 #HouMi…",
-      "excerpt": "31.10.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🐆 Saw a leopard ? Wipe my tears … he really is a cat… 😭🐆 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Oct 31, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/609f839c26006d5020cd2dd6.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-10-31T20:41:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116510972605329677",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic",
