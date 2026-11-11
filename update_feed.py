@@ -45,6 +45,7 @@ MOBILE_UA = (
 WEIBO_POST_LIMIT = 0
 WEIBO_MAX_AGE_DAYS = 60            # ignore Weibo posts older than this
 MAX_DETAIL_FETCHES_PER_RUN = 60    # extra requests used to get exact dates / full text
+WEIBO_PAGES_PER_ACCOUNT = 3           # page 1 can contain pinned/cached items; scan newer pages too
 MAX_BACKFILL_PER_RUN = 30          # old saved posts repaired per run (dates + videos)
 
 # Video / live photo caching. jsDelivr serves correct video MIME types + range requests
@@ -562,13 +563,18 @@ def parse_weibo_created_at(value):
             return datetime(y, mo, d, hh, mm, tzinfo=SINGAPORE).isoformat(), bool(m.group(4))
         except ValueError:
             return None, False
-    m = re.fullmatch(r"(\d{1,2})-(\d{1,2})", value)  # MM-DD, no year, no time
+    # The mobile list API may return MM-DD or MM-DD HH:MM for posts in the current year.
+    m = re.fullmatch(r"(\d{1,2})-(\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?", value)
     if m:
         try:
-            candidate = datetime(now.year, int(m.group(1)), int(m.group(2)), 12, 0, tzinfo=SINGAPORE)
-            if candidate > now:
+            hour = int(m.group(3)) if m.group(3) is not None else 12
+            minute = int(m.group(4)) if m.group(4) is not None else 0
+            candidate = datetime(now.year, int(m.group(1)), int(m.group(2)), hour, minute,
+                                 tzinfo=SINGAPORE)
+            # Allow a small clock skew. A date genuinely in the future belongs to last year.
+            if candidate > now + timedelta(days=1):
                 candidate = candidate.replace(year=now.year - 1)
-            return candidate.isoformat(), False
+            return candidate.isoformat(), m.group(3) is not None
         except ValueError:
             return None, False
     return None, False
@@ -727,14 +733,28 @@ def localize_post_videos(posts):
 
 
 def weibo_mblogs_from_cards(cards):
-    for card in cards:
-        if not isinstance(card, dict):
-            continue
-        if isinstance(card.get("mblog"), dict):
-            yield card["mblog"]
-        for sub in card.get("card_group") or []:
-            if isinstance(sub, dict) and isinstance(sub.get("mblog"), dict):
-                yield sub["mblog"]
+    """Yield mblogs from any nesting depth and suppress duplicates/pinned repeats."""
+    seen = set()
+
+    def walk(node):
+        if isinstance(node, dict):
+            mblog = node.get("mblog")
+            if isinstance(mblog, dict):
+                post_id = str(mblog.get("id") or mblog.get("mid") or "")
+                if not post_id or post_id not in seen:
+                    if post_id:
+                        seen.add(post_id)
+                    yield mblog
+            for key in ("cards", "card_group", "items"):
+                child = node.get(key)
+                if isinstance(child, list):
+                    for item in child:
+                        yield from walk(item)
+        elif isinstance(node, list):
+            for item in node:
+                yield from walk(item)
+
+    yield from walk(cards)
 
 
 def backfill_weibo_details(posts):
@@ -767,30 +787,45 @@ def backfill_weibo_details(posts):
 
 def collect_sina_api_account(source_config):
     uid = source_config["uid"]
-    target_url = f"https://m.weibo.cn/api/container/getIndex?type=uid&value={uid}&containerid=107603{uid}"
-    payload = weibo_get_json(target_url)
-
-    if payload.get("ok") not in (1, "1", True):
-        msg = str(payload.get("msg") or "")
-        if "还没有内容" in msg:
-            return []
-        raise RuntimeError(f"Weibo API ok=0: {msg or 'no message'}"[:200])
-
-    cards = ((payload.get("data") or {}).get("cards")) or []
     collected, skipped, too_old = [], 0, 0
     cutoff = singapore_now() - timedelta(days=WEIBO_MAX_AGE_DAYS)
     display_name = f"Weibo @{uid}"
+    all_cards = []
+    api_errors = []
 
-    for mblog in weibo_mblogs_from_cards(cards):
+    # Explicit page and cache-buster prevent a stale first-page response. Scanning several
+    # pages also avoids missing a new post when pinned items occupy the first cards.
+    for page_number in range(1, WEIBO_PAGES_PER_ACCOUNT + 1):
+        query = urllib.parse.urlencode({
+            "type": "uid", "value": uid, "containerid": f"107603{uid}",
+            "page": page_number, "_": int(time.time() * 1000),
+        })
+        target_url = f"https://m.weibo.cn/api/container/getIndex?{query}"
+        try:
+            payload = weibo_get_json(target_url)
+        except Exception as error:
+            api_errors.append(f"page {page_number}: {error}")
+            if page_number == 1:
+                raise
+            break
+        if payload.get("ok") not in (1, "1", True):
+            msg = str(payload.get("msg") or "")
+            if "还没有内容" in msg or page_number > 1:
+                break
+            raise RuntimeError(f"Weibo API ok=0: {msg or 'no message'}"[:200])
+        cards = ((payload.get("data") or {}).get("cards")) or []
+        if not cards:
+            break
+        all_cards.extend(cards)
+        time.sleep(0.6)
+
+    for mblog in weibo_mblogs_from_cards(all_cards):
         user = mblog.get("user") or {}
         if user.get("screen_name"):
             display_name = f"Weibo @{user.get('screen_name')}"
-
         post_id = str(mblog.get("id") or mblog.get("mid") or "").strip()
         if not post_id:
             continue
-
-        # Long posts are cut off with "...全文" in the list API: fetch the whole text.
         text_html = mblog.get("text") or ""
         if mblog.get("isLongText") or "全文</a>" in text_html:
             text_html = fetch_weibo_long_text(post_id) or text_html
@@ -798,21 +833,30 @@ def collect_sina_api_account(source_config):
         if not raw_text:
             continue
 
-        # Real publish time from Weibo itself (the old code guessed from the text / used "now").
         date_iso, date_exact = parse_weibo_created_at(mblog.get("created_at"))
         created_text = clean_text(mblog.get("created_at"))
-        vague = not date_iso or not re.search(r"前|刚刚|Just now", created_text)
-        if not date_exact and vague:
+        relative_time = bool(re.search(r"前|刚刚|Just now", created_text, re.I))
+        # Request detail whenever the list timestamp lacks an exact date/time. The detail
+        # endpoint normally returns RFC-style +0800 time, which preserves the real minute.
+        if not date_exact and not DETAIL_BLOCKED:
             detail = fetch_weibo_detail(post_id)
             if detail:
                 iso2, exact2 = parse_weibo_created_at(detail.get("created_at"))
-                if iso2 and exact2:
-                    date_iso, date_exact = iso2, True
+                if iso2:
+                    date_iso, date_exact = iso2, exact2
+                # Detail may also carry richer media than the list card.
+                mblog = {**mblog, **detail}
         if not date_iso:
+            # Relative values are still better represented as collection-time estimates than
+            # discarded. dateExact=False tells the UI this is approximate.
             date_iso = singapore_now().isoformat()
-        if datetime.fromisoformat(date_iso) < cutoff:
-            too_old += 1
-            continue
+            date_exact = False
+        try:
+            if datetime.fromisoformat(date_iso) < cutoff:
+                too_old += 1
+                continue
+        except ValueError:
+            date_iso, date_exact = singapore_now().isoformat(), False
 
         image_urls = []
         for pic in mblog.get("pics") or []:
@@ -822,54 +866,36 @@ def collect_sina_api_account(source_config):
             if img_url and img_url not in image_urls:
                 image_urls.append(img_url)
         videos = extract_weibo_videos(mblog)
-        for video in videos:  # a video's cover is a useful photo too
+        for video in videos:
             if video["kind"] == "video" and video["poster"] and video["poster"] not in image_urls and len(image_urls) < 9:
                 image_urls.append(video["poster"])
-
         if FILTER_OFFICIAL_ACCOUNTS or not source_config.get("official"):
             retweet = mblog.get("retweeted_status") or {}
             page_info = mblog.get("page_info") or {}
-            topics = " ".join(
-                str(t.get("topic_title") or "") for t in (mblog.get("topic_struct") or []) if isinstance(t, dict)
-            )
-            if not mentions_hou(
-                raw_text,
-                clean_text(mblog.get("text") or ""),
-                clean_text(retweet.get("raw_text") or retweet.get("text") or ""),
-                str(page_info.get("title") or ""),
-                topics,
-            ):
+            topics = " ".join(str(t.get("topic_title") or "") for t in (mblog.get("topic_struct") or []) if isinstance(t, dict))
+            if not mentions_hou(raw_text, clean_text(mblog.get("text") or ""),
+                                clean_text(retweet.get("raw_text") or retweet.get("text") or ""),
+                                str(page_info.get("title") or ""), topics):
                 skipped += 1
                 continue
-
         cleaned_content = clean_weibo_content(raw_text)
         title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", cleaned_content), 120)
         post_url = f"https://m.weibo.cn/status/{post_id}"
-
         source_config["source"] = display_name
         source_config["name"] = display_name
-
         collected.append({
-            "id": make_id("Weibo", display_name, title, post_url),
-            "platform": "Weibo",
-            "source": display_name,
-            "title": title or "New Weibo update",
-            "excerpt": shorten(cleaned_content, 320),
-            "images": image_urls[:9],
-            "videos": videos,
-            "category": determine_category(cleaned_content, "Weibo"),
-            "date": date_iso,
-            "dateExact": date_exact,
-            "url": post_url,
-            "official": source_config["official"],
-            "verified": True,
+            "id": make_id("Weibo", display_name, title, post_url), "platform": "Weibo",
+            "source": display_name, "title": title or "New Weibo update",
+            "excerpt": shorten(cleaned_content, 320), "images": image_urls[:9], "videos": videos,
+            "category": determine_category(cleaned_content, "Weibo"), "date": date_iso,
+            "dateExact": date_exact, "dateSource": "detail" if date_exact else ("relative" if relative_time else "list"),
+            "url": post_url, "official": source_config["official"], "verified": True,
             "collectionMethod": "Weibo API",
         })
-    if skipped or too_old:
+    if skipped or too_old or api_errors:
         print(f"  {display_name}: skipped {skipped} not mentioning Hou Minghao, {too_old} older than "
-              f"{WEIBO_MAX_AGE_DAYS} days, kept {len(collected)}")
+              f"{WEIBO_MAX_AGE_DAYS} days, kept {len(collected)}; API notices: {api_errors}")
     return collected
-
 
 def collect_rss_feed(source_config):
     response = requests.get(source_config["url"], headers=HEADERS, timeout=30)
