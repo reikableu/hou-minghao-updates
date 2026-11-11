@@ -66,7 +66,7 @@ HEADERS = {
 WEIBO_ACCOUNT_IDS = [
     # Official actor & studio accounts
     "5763552342",  # 侯明昊工作室 (Hou Minghao Studio)
-    "1831550987",  # 侯明昊Neo (Hou Minghao personal account)
+    "1831550987",  # 侯明昊 (Hou Minghao personal account)
     # New endorsements (新增商务)
     "6453123896",  # 旭东食品 (Xudong Snacks)
     "1692125795",  # 乐事官方微博 (Lay's)
