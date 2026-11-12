@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-12T10:28:20+08:00",
-  "status": "Completed: 21 sources successful, 0 failed",
+  "lastUpdated": "2026-11-12T11:04:09+08:00",
+  "status": "Completed: 37 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 20,
+    "postsTranslatedThisRun": 10,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 20
     }
   },
   "sourceStatus": [
@@ -15,127 +15,223 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-12T10:25:15.674089+08:00"
+      "checkedAt": "2026-11-12T10:53:15.900436+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-12T10:25:31.746959+08:00"
+      "checkedAt": "2026-11-12T10:53:32.279731+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:25:47.126779+08:00"
+      "checkedAt": "2026-11-12T10:53:47.984448+08:00"
     },
     {
-      "source": "Weibo @乐事官方微博",
+      "source": "Weibo @我嘞个胡豆er",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:25:49.482924+08:00"
+      "checkedAt": "2026-11-12T10:53:50.310110+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:26:04.738460+08:00"
+      "checkedAt": "2026-11-12T10:54:05.798405+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:26:07.098045+08:00"
+      "checkedAt": "2026-11-12T10:54:08.134657+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:26:09.495950+08:00"
+      "checkedAt": "2026-11-12T10:54:10.455167+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:26:11.855735+08:00"
+      "checkedAt": "2026-11-12T10:54:12.784910+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:26:24.963666+08:00"
+      "checkedAt": "2026-11-12T10:54:26.388032+08:00"
     },
     {
-      "source": "Weibo @HM中国",
+      "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:26:27.342228+08:00"
+      "checkedAt": "2026-11-12T10:54:28.784698+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:26:42.434674+08:00"
+      "checkedAt": "2026-11-12T10:54:44.279575+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:26:44.835667+08:00"
+      "checkedAt": "2026-11-12T10:54:46.643218+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:26:57.957295+08:00"
+      "checkedAt": "2026-11-12T10:55:00.219638+08:00"
     },
     {
-      "source": "Weibo @西藏自治区文化和旅游厅",
+      "source": "Weibo @用户3923579353",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:27:11.073334+08:00"
+      "checkedAt": "2026-11-12T10:55:13.775668+08:00"
     },
     {
-      "source": "Weibo @MAC魅可",
+      "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:27:24.296252+08:00"
+      "checkedAt": "2026-11-12T10:55:27.477792+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:27:37.578846+08:00"
+      "checkedAt": "2026-11-12T10:55:41.251552+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:27:39.945918+08:00"
+      "checkedAt": "2026-11-12T10:55:43.594575+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:27:42.307609+08:00"
+      "checkedAt": "2026-11-12T10:55:45.922507+08:00"
     },
     {
       "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:27:55.428060+08:00"
+      "checkedAt": "2026-11-12T10:55:59.501941+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:27:57.808631+08:00"
+      "checkedAt": "2026-11-12T10:56:01.854567+08:00"
+    },
+    {
+      "source": "Weibo @_Really_5366",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T10:56:04.198219+08:00"
+    },
+    {
+      "source": "Weibo @_光芒万丈的泥",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T10:56:17.784361+08:00"
+    },
+    {
+      "source": "Weibo @CSPM-HMH",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T10:56:31.407724+08:00"
+    },
+    {
+      "source": "Weibo @Jessie_嘉鱼小友",
+      "status": "Success",
+      "itemsFound": 8,
+      "checkedAt": "2026-11-12T10:56:45.006974+08:00"
+    },
+    {
+      "source": "Weibo @Surryy",
+      "status": "Success",
+      "itemsFound": 2,
+      "checkedAt": "2026-11-12T10:57:00.556452+08:00"
+    },
+    {
+      "source": "Weibo @W中文版",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T10:57:14.234571+08:00"
+    },
+    {
+      "source": "Weibo @y0n9茵茵茵",
+      "status": "Success",
+      "itemsFound": 6,
+      "checkedAt": "2026-11-12T10:57:35.611676+08:00"
+    },
+    {
+      "source": "Weibo @万千地萌主83",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T10:57:51.883215+08:00"
+    },
+    {
+      "source": "Weibo @新浪明星",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T10:58:05.466495+08:00"
+    },
+    {
+      "source": "Weibo @昊圈在逃小桃",
+      "status": "Success",
+      "itemsFound": 10,
+      "checkedAt": "2026-11-12T10:58:19.208501+08:00"
+    },
+    {
+      "source": "Weibo @爱奇艺",
+      "status": "Success",
+      "itemsFound": 1,
+      "checkedAt": "2026-11-12T10:58:33.075119+08:00"
+    },
+    {
+      "source": "Weibo @猕猴桃吃不饱",
+      "status": "Success",
+      "itemsFound": 7,
+      "checkedAt": "2026-11-12T10:58:50.145004+08:00"
+    },
+    {
+      "source": "Weibo @空无一物大道光明",
+      "status": "Success",
+      "itemsFound": 8,
+      "checkedAt": "2026-11-12T10:59:04.577600+08:00"
+    },
+    {
+      "source": "Weibo @织云弄影",
+      "status": "Success",
+      "itemsFound": 10,
+      "checkedAt": "2026-11-12T10:59:18.475718+08:00"
+    },
+    {
+      "source": "Weibo @肆无忌惮喜欢你717",
+      "status": "Success",
+      "itemsFound": 1,
+      "checkedAt": "2026-11-12T10:59:33.141405+08:00"
+    },
+    {
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "status": "Success",
+      "itemsFound": 9,
+      "checkedAt": "2026-11-12T10:59:46.927277+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 30,
-      "checkedAt": "2026-11-12T10:28:00.169473+08:00"
+      "checkedAt": "2026-11-12T11:00:00.701546+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -158,9 +254,571 @@
     "3219487770": "珍宝珠ChupaChups",
     "7541604928": "CASETiFY",
     "7857186930": "FADEAWAY_L",
-    "7867201948": "PLUG-INPET"
+    "7867201948": "PLUG-INPET",
+    "7810062354": "_Really_5366",
+    "7894866385": "_光芒万丈的泥",
+    "7172100137": "CSPM-HMH",
+    "2167115367": "Jessie_嘉鱼小友",
+    "3128572495": "Surryy",
+    "2155159645": "W中文版",
+    "1786986184": "y0n9茵茵茵",
+    "8225235603": "万千地萌主83",
+    "2921243620": "新浪明星",
+    "8282489236": "昊圈在逃小桃",
+    "1731986465": "爱奇艺",
+    "8315797056": "猕猴桃吃不饱",
+    "3036269867": "空无一物大道光明",
+    "1155721140": "织云弄影",
+    "6588614752": "肆无忌惮喜欢你717",
+    "2384801381": "若浮雲沒有煙花園總有花"
   },
   "posts": [
+    {
+      "id": "b1ff6c56543f4972f1e1",
+      "platform": "Weibo",
+      "source": "Weibo @Jessie_嘉鱼小友",
+      "title": "#歌手侯明昊# #侯明昊# 期待北京专属 @侯明昊 北京·五棵松 Jessie_嘉鱼小友的微博视频",
+      "excerpt": "侯明昊 #歌手侯明昊# #侯明昊# 期待北京专属 @侯明昊 北京·五棵松 Jessie_嘉鱼小友的微博视频",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4a55f2ac22bbdc82ea97ed6f.jpg"
+      ],
+      "videos": [
+        {
+          "id": "a307c6897cd5ef9ca748cebe",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4a55f2ac22bbdc82ea97ed6f.jpg",
+          "duration": 35.92,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/a307c6897cd5ef9ca748cebe.mp4"
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T10:29:02+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364376735582088",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#歌手侯明昊# #侯明昊# 期待北京专属 @侯明昊 北京·五棵松 Jessie_嘉鱼小友的微博视频",
+      "excerptOriginal": "侯明昊 #歌手侯明昊# #侯明昊# 期待北京专属 @侯明昊 北京·五棵松 Jessie_嘉鱼小友的微博视频",
+      "titleEnglish": "Singer Hou Minghao. Hou Minghao is looking forward to his exclusive show in Beijing. @Hou Minghao Beijing • Wukesong Jessie_Jiayu Xiaoyou's Weibo video",
+      "excerptEnglish": "Hou Minghao Singer Hou Minghao Hou Minghao Looking forward to the Beijing exclusive @Hou Minghao Beijing • Wukesong Jessie_Jiayu Xiaoyou's Weibo video"
+    },
+    {
+      "id": "e3937e6d3c701084c3e9",
+      "platform": "Weibo",
+      "source": "Weibo @空无一物大道光明",
+      "title": "#侯明昊雪中飞全球品牌代言人# 年轻就是永远保有出发的勇气💪🏻 雪中飞以活力、时尚、运动为品牌底色，陪伴年轻人去看更大的世界；携手全球品牌代言人 @侯明昊 以少年的热烈与勇气，在不同领域不断探索。向雪而行，向光而进，属于年轻人的精彩，一路…",
+      "excerpt": "#侯明昊雪中飞全球品牌代言人# 年轻就是永远保有出发的勇气💪🏻 雪中飞以活力、时尚、运动为品牌底色，陪伴年轻人去看更大的世界；携手全球品牌代言人 @侯明昊 以少年的热烈与勇气，在不同领域不断探索。向雪而行，向光而进，属于年轻人的精彩，一路同行。",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T10:24:28+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364375586345558",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#侯明昊雪中飞全球品牌代言人# 年轻就是永远保有出发的勇气💪🏻 雪中飞以活力、时尚、运动为品牌底色，陪伴年轻人去看更大的世界；携手全球品牌代言人 @侯明昊 以少年的热烈与勇气，在不同领域不断探索。向雪而行，向光而进，属于年轻人的精彩，一路…",
+      "excerptOriginal": "#侯明昊雪中飞全球品牌代言人# 年轻就是永远保有出发的勇气💪🏻 雪中飞以活力、时尚、运动为品牌底色，陪伴年轻人去看更大的世界；携手全球品牌代言人 @侯明昊 以少年的热烈与勇气，在不同领域不断探索。向雪而行，向光而进，属于年轻人的精彩，一路同行。",
+      "titleEnglish": "Hou Minghao, Global Brand Ambassador for Xuezhongfei. Being young means always having the courage to set out on a journey.💪🏻 Xuezhongfei, with its brand ethos of vitality, fashion, and sports, accompanies young people as they explore a wider world. Together with our Global Brand Ambassador, @Hou Minghao, we continue to explore various fields with youthful passion and courage. Heading towards the snow, moving towards the light, the brilliance that belongs to young people, all the way...",
+      "excerptEnglish": "Hou Minghao, Global Brand Ambassador for Xuezhongfei. Being young means always having the courage to set out on a journey.💪🏻 Xuezhongfei, with its brand ethos of vitality, fashion, and sports, accompanies young people as they explore a wider world. Together with our Global Brand Ambassador, @Hou Minghao, we continue to explore various fields with youthful passion and courage. Heading towards the snow, moving towards the light – the brilliance that belongs to young people, accompanying them every step of the way."
+    },
+    {
+      "id": "58f13af1fc35691727ff",
+      "platform": "Weibo",
+      "source": "Weibo @空无一物大道光明",
+      "title": "早安侯明昊",
+      "excerpt": "早安侯明昊",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T10:23:30+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364375344649534",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "早安侯明昊",
+      "excerptOriginal": "早安侯明昊",
+      "titleEnglish": "Good morning, Hou Minghao.",
+      "excerptEnglish": "Good morning, Hou Minghao."
+    },
+    {
+      "id": "8ef775c123c5ea37c448",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "#w盛典红毯# 侯明昊 #侯明昊# 周正贵气",
+      "excerpt": "#w盛典红毯# 侯明昊 #侯明昊# 周正贵气",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T10:03:10+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364370226022797",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#w盛典红毯# 侯明昊 #侯明昊# 周正贵气",
+      "excerptOriginal": "#w盛典红毯# 侯明昊 #侯明昊# 周正贵气",
+      "titleEnglish": "W Awards Red Carpet – Hou Minghao – Hou Minghao, Elegant and Dignified",
+      "excerptEnglish": "W Awards Red Carpet – Minghao Hou – Minghao Hou – Elegant and Sophisticated"
+    },
+    {
+      "id": "40edaf007fa449f66d5d",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "#侯明昊# 动漫男",
+      "excerpt": "侯明昊 #侯明昊# 动漫男",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T10:02:24+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364370032833234",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#侯明昊# 动漫男",
+      "excerptOriginal": "侯明昊 #侯明昊# 动漫男",
+      "titleEnglish": "Hou Minghao Anime Boy",
+      "excerptEnglish": "Hou Minghao Hou Minghao Anime Male"
+    },
+    {
+      "id": "085f17d0779335088067",
+      "platform": "Weibo",
+      "source": "Weibo @Jessie_嘉鱼小友",
+      "title": "#歌手侯明昊# #侯明昊# 任何语言的形容都是多余的 @侯明昊 北京·五棵松",
+      "excerpt": "侯明昊 #歌手侯明昊# #侯明昊# 任何语言的形容都是多余的 @侯明昊 北京·五棵松",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2dedffaabba11e46ccc04cc7.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a40e3b0b877845e25644aa96.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3b5ea1ed208f4d678c415c00.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:49:37+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364366817889356",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#歌手侯明昊# #侯明昊# 任何语言的形容都是多余的 @侯明昊 北京·五棵松",
+      "excerptOriginal": "侯明昊 #歌手侯明昊# #侯明昊# 任何语言的形容都是多余的 @侯明昊 北京·五棵松",
+      "titleEnglish": "Singer Hou Minghao. Hou Minghao. Any words of description are superfluous. @Hou Minghao Beijing · Wukesong",
+      "excerptEnglish": "Hou Minghao Singer Hou Minghao Hou Minghao Words in any language are superfluous @Hou Minghao Beijing • Wukesong"
+    },
+    {
+      "id": "ebc8e88c3d5d1748d516",
+      "platform": "Weibo",
+      "source": "Weibo @Jessie_嘉鱼小友",
+      "title": "#w中文版年度盛典# #侯明昊# #歌手侯明昊# 北京·华熙LIVE五棵松 Jessie_嘉鱼小友的微博视频",
+      "excerpt": "侯明昊 #w中文版年度盛典# #侯明昊# #歌手侯明昊# 北京·华熙LIVE五棵松 Jessie_嘉鱼小友的微博视频",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ed2142a4c16273ba9b88a9c3.jpg"
+      ],
+      "videos": [
+        {
+          "id": "f781cc4817912dfcd8b1bffb",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ed2142a4c16273ba9b88a9c3.jpg",
+          "duration": 17.461,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/f781cc4817912dfcd8b1bffb.mp4"
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:27:42+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364361302379474",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#w中文版年度盛典# #侯明昊# #歌手侯明昊# 北京·华熙LIVE五棵松 Jessie_嘉鱼小友的微博视频",
+      "excerptOriginal": "侯明昊 #w中文版年度盛典# #侯明昊# #歌手侯明昊# 北京·华熙LIVE五棵松 Jessie_嘉鱼小友的微博视频",
+      "titleEnglish": "Chinese Edition Annual Gala – Singer Hou Minghao – Beijing · Wukesong Arena – Jessie_Jiayu Xiaoyou's Weibo Video",
+      "excerptEnglish": "Hou Minghao Chinese Version Annual Gala Hou Minghao Singer Hou Minghao Beijing·Wukesong Arena Jessie_Jiayu Xiaoyou's Weibo Video"
+    },
+    {
+      "id": "ecdf73df0b7e6c988442",
+      "platform": "Weibo",
+      "source": "Weibo @猕猴桃吃不饱",
+      "title": "#侯明昊 家族中最受宠的小少爷# 哥哥 你让我对小说里的豪门世家有了实感 侯明昊",
+      "excerpt": "#侯明昊 家族中最受宠的小少爷# 哥哥 你让我对小说里的豪门世家有了实感 侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1c780aeffadbcbe25d8b3656.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:26:43+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364361053865336",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#侯明昊 家族中最受宠的小少爷# 哥哥 你让我对小说里的豪门世家有了实感 侯明昊",
+      "excerptOriginal": "#侯明昊 家族中最受宠的小少爷# 哥哥 你让我对小说里的豪门世家有了实感 侯明昊",
+      "titleEnglish": "Hou Minghao, the most favored young master in the family. Brother, you've given me a real sense of the wealthy and influential families in novels. Hou Minghao.",
+      "excerptEnglish": "Hou Minghao, the most favored young master in the family. Brother, you've given me a real sense of the wealthy families in novels. Hou Minghao."
+    },
+    {
+      "id": "194be2e8e2c7c9bf58ca",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "好养眼的民国三姐弟 🐱💚🥝怀旧与摩登交织，复古与奢华碰撞。 @侯明昊 闪耀出席W盛典上海站！在这场重回黄金年代的高级晚宴里，以挺拔俊朗的身姿与无可挑剔的时尚表现力完美诠释耀眼的黄金时代！🥝💚🐱 #侯明昊w中文版年度盛典# #侯明昊属于我们…",
+      "excerpt": "侯明昊 好养眼的民国三姐弟 🐱💚🥝怀旧与摩登交织，复古与奢华碰撞。 @侯明昊 闪耀出席W盛典上海站！在这场重回黄金年代的高级晚宴里，以挺拔俊朗的身姿与无可挑剔的时尚表现力完美诠释耀眼的黄金时代！🥝💚🐱 #侯明昊w中文版年度盛典# #侯明昊属于我们的巡回演唱会# #侯明昊#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f4121e7882ea1e7c078fd19b.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5abf6fca23bfe3ac719cd1f4.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:26:02+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364360880851354",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "好养眼的民国三姐弟 🐱💚🥝怀旧与摩登交织，复古与奢华碰撞。 @侯明昊 闪耀出席W盛典上海站！在这场重回黄金年代的高级晚宴里，以挺拔俊朗的身姿与无可挑剔的时尚表现力完美诠释耀眼的黄金时代！🥝💚🐱 #侯明昊w中文版年度盛典# #侯明昊属于我们…",
+      "excerptOriginal": "侯明昊 好养眼的民国三姐弟 🐱💚🥝怀旧与摩登交织，复古与奢华碰撞。 @侯明昊 闪耀出席W盛典上海站！在这场重回黄金年代的高级晚宴里，以挺拔俊朗的身姿与无可挑剔的时尚表现力完美诠释耀眼的黄金时代！🥝💚🐱 #侯明昊w中文版年度盛典# #侯明昊属于我们的巡回演唱会# #侯明昊#",
+      "titleEnglish": "The visually appealing trio of siblings from the Republic of China era 🐱💚🥝 A blend of nostalgia and modernity, a fusion of vintage and luxury. @Hou Minghao dazzles at the W Gala in Shanghai! At this upscale gala, which takes us back to the Golden Age, his poised and handsome stature, along with his impeccable sense of style, perfectly embody the dazzling spirit of that era! 🥝💚🐱 Neo Hou at the W China Annual Gala #NeoHouBelongsToUs…",
+      "excerptEnglish": "Hou Minghao, the visually pleasing trio of siblings from the Republic of China era 🐱💚🥝 A blend of nostalgia and modernity, a clash of vintage and luxury. @Hou Minghao shines at the W Gala Shanghai! At this upscale gala, which takes us back to the Golden Age, his poised, handsome stature and impeccable fashion sense perfectly embody the dazzling spirit of that era! 🥝💚🐱 Neo Hou W China Annual Gala Neo Hou Our Tour Concert Neo Hou"
+    },
+    {
+      "id": "53cfb2438b6de1285ed0",
+      "platform": "Weibo",
+      "source": "Weibo @猕猴桃吃不饱",
+      "title": "#侯明昊 家族中最受宠的小少爷# #有点羡慕侯明昊了# 小说里的文字有画面了！ @侯明昊 置身一众姐姐之间，鎏光布景衬得画面像豪门家族合影，妥妥被大家簇拥着、备受宠爱的小少爷，谁看了不说一句羡慕",
+      "excerpt": "#侯明昊 家族中最受宠的小少爷# #有点羡慕侯明昊了# 小说里的文字有画面了！ @侯明昊 置身一众姐姐之间，鎏光布景衬得画面像豪门家族合影，妥妥被大家簇拥着、备受宠爱的小少爷，谁看了不说一句羡慕",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0d5659ac5f0180199f60b326.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7ebf5e4f0a581b53d81212cf.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3a028130a627128c005cbe86.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c5ca8752c0aa07978fc8c1b1.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:25:44+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364360807451159",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#侯明昊 家族中最受宠的小少爷# #有点羡慕侯明昊了# 小说里的文字有画面了！ @侯明昊 置身一众姐姐之间，鎏光布景衬得画面像豪门家族合影，妥妥被大家簇拥着、备受宠爱的小少爷，谁看了不说一句羡慕",
+      "excerptOriginal": "#侯明昊 家族中最受宠的小少爷# #有点羡慕侯明昊了# 小说里的文字有画面了！ @侯明昊 置身一众姐姐之间，鎏光布景衬得画面像豪门家族合影，妥妥被大家簇拥着、备受宠爱的小少爷，谁看了不说一句羡慕",
+      "titleEnglish": "Hou Minghao, the most favored young master in the family. I'm a bit envious of Hou Minghao. The words in the novel have come to life! @Hou Minghao is surrounded by a group of sisters. The shimmering backdrop makes the scene look like a family portrait of a wealthy clan. He is clearly the young master, adored and fawned over by everyone. Who wouldn't feel a tinge of envy after seeing this?",
+      "excerptEnglish": "Hou Minghao, the most favored young master in the family. I'm a bit envious of Hou Minghao. The words in the novel have come to life! @Hou Minghao is surrounded by a group of sisters. The shimmering backdrop makes the scene look like a family portrait of a wealthy clan. He is clearly the beloved young master, adored and surrounded by everyone. Who wouldn't feel a tinge of envy after seeing this?"
+    },
+    {
+      "id": "d2691496bccb8a2cc094",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "今天是我关注超话的第300天，希望能继续伴你一路前行～",
+      "excerpt": "侯明昊 今天是我关注超话的第300天，希望能继续伴你一路前行～",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/32e5061df8566f43fc147b54.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:22:03+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364359880508642",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "今天是我关注超话的第300天，希望能继续伴你一路前行～",
+      "excerptOriginal": "侯明昊 今天是我关注超话的第300天，希望能继续伴你一路前行～"
+    },
+    {
+      "id": "859ce14d22fb7195a694",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "#侯明昊容尘子# | #侯明昊念相思# | #侯明昊新歌迢迢星河# 容尘子身负星君转世之因果，却仍以修行为刃，试图改写既定结局。 @侯明昊 | 侯明昊 | 萧无衣 |雀骨 | 杨无间 | 碧血蝉 | 容尘子 | 念相思 | 侯明昊工作室的…",
+      "excerpt": "#侯明昊容尘子# | #侯明昊念相思# | #侯明昊新歌迢迢星河# 容尘子身负星君转世之因果，却仍以修行为刃，试图改写既定结局。 @侯明昊 | 侯明昊 | 萧无衣 |雀骨 | 杨无间 | 碧血蝉 | 容尘子 | 念相思 | 侯明昊工作室的微博视频",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/abcbef4eb788790c032f85f0.jpg"
+      ],
+      "videos": [
+        {
+          "id": "a3fe3bf2a836bd47cf0ec2cc",
+          "kind": "video",
+          "remote": "https://f.video.weibocdn.com/o0/c1yDg2L1lx08vnT551mU01041201FaQ40E010.mp4?label=mp4_hd&template=852x480.25.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1794455899&ssig=%2F0N0%2BmWcpu&KID=unistore,video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/abcbef4eb788790c032f85f0.jpg",
+          "duration": 531.273
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T08:55:29+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364353198719216",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "49869d2a1a5a05a9dd2d",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "要变身了哈哈哈哈太萌了！ #侯明昊# #侯明昊属于我们的巡回演唱会#",
+      "excerpt": "要变身了哈哈哈哈太萌了！ #侯明昊# #侯明昊属于我们的巡回演唱会#",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T08:54:48+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364353025967175",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "003768d71b0266064ac6",
+      "platform": "Weibo",
+      "source": "Weibo @爱奇艺",
+      "title": "#桃桃早安说# 早安！ 朝阳接岗，新一天的浪漫已发货 @侯明昊",
+      "excerpt": "#桃桃早安说# 早安！ 朝阳接岗，新一天的浪漫已发货 @侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7697af1aa0f0245f604f8eab.jpg"
+      ],
+      "videos": [],
+      "category": "Verified Brand",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-12T08:30:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364346781172037",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "d240eaf6d34c2a411092",
+      "platform": "Weibo",
+      "source": "Weibo @空无一物大道光明",
+      "title": "Galaxy Far Far Away-侯明昊 Galaxy Far Far Away 我的点评： #侯明昊歌曲Galaxy Far Far Away# #巅峰潮流榜超会评# 侯明昊",
+      "excerpt": "Galaxy Far Far Away-侯明昊 Galaxy Far Far Away 我的点评： #侯明昊歌曲Galaxy Far Far Away# #巅峰潮流榜超会评# 侯明昊",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T07:48:51+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364336429105434",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "899b083755338443527a",
+      "platform": "Weibo",
+      "source": "Weibo @空无一物大道光明",
+      "title": "我在 侯明昊 连续签到1000天啦，百看不厌，久处亦欢~",
+      "excerpt": "侯明昊 我在 侯明昊 连续签到1000天啦，百看不厌，久处亦欢~",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5e343a9754ca10303ec8b406.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T07:46:44+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364335892759374",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "5ff98004b363e122333d",
+      "platform": "Weibo",
+      "source": "Weibo @空无一物大道光明",
+      "title": "今天是我关注超话的第1000天，希望能继续伴你一路前行～",
+      "excerpt": "侯明昊 今天是我关注超话的第1000天，希望能继续伴你一路前行～",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3a37826da348c2cb2def1f7c.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T07:46:31+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364335838498152",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "dad6b85d0407d8a25a0c",
+      "platform": "Weibo",
+      "source": "Weibo @Jessie_嘉鱼小友",
+      "title": "我的歌单（59） @侯明昊 《指纹》 歌声里记录相遇与陪伴，那些珍贵的瞬间，如同指纹一般，独一无二。 #侯明昊# #歌手侯明昊# 北京·五棵松 Jessie_嘉鱼小友的微博视频",
+      "excerpt": "侯明昊 我的歌单（59） @侯明昊 《指纹》 歌声里记录相遇与陪伴，那些珍贵的瞬间，如同指纹一般，独一无二。 #侯明昊# #歌手侯明昊# 北京·五棵松 Jessie_嘉鱼小友的微博视频",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fe2eab36ace8febcbf59a48a.jpg"
+      ],
+      "videos": [
+        {
+          "id": "9b412f0788874d81eb2bd0e0",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fe2eab36ace8febcbf59a48a.jpg",
+          "duration": 86.033,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/9b412f0788874d81eb2bd0e0.mp4"
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T07:37:55+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364333673713757",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "2dee2ed5c725e2e646c0",
+      "platform": "Weibo",
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "title": "牛掰，95扛剧生实绩满满！",
+      "excerpt": "侯明昊牛掰，95扛剧生实绩满满！",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T23:43:32+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364214290977420",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "c683e0ecbce0a5ab43f6",
+      "platform": "Weibo",
+      "source": "Weibo @肆无忌惮喜欢你717",
+      "title": "好想听张新成和薛之谦合作一首啊。 也好想听侯明昊和薛之谦合作一首啊。",
+      "excerpt": "好想听张新成和薛之谦合作一首啊。 也好想听侯明昊和薛之谦合作一首啊。",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T23:07:21+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364205185669163",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "e82f5e2da48fd1081880",
+      "platform": "Weibo",
+      "source": "Weibo @空无一物大道光明",
+      "title": "想起来那会儿成都热得都快中暑，而现在居然到了寒冷时节再次见面的时候。 #侯明昊属于我们的巡回演唱会# #侯明昊巡演成都站官宣#",
+      "excerpt": "想起来那会儿成都热得都快中暑，而现在居然到了寒冷时节再次见面的时候。 #侯明昊属于我们的巡回演唱会# #侯明昊巡演成都站官宣#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4818c9f19441d134f39a4ae2.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/601ffa6c21b9973a0a4c9b97.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/45c5eb62ef810053962ea6db.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c521a58242a7bc49afaca196.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8a225347324ba7dce36b81ec.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/05bb48644e59d72842d8ca69.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9f4036e9cfbf6a1f6a51f12a.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2e74db3ddbf43468ff5d27b4.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/117ff414e70a4b7e666df2cb.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T23:03:44+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364204275243170",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "cdc0715631301014d704",
+      "platform": "Weibo",
+      "source": "Weibo @空无一物大道光明",
+      "title": "时尚与光影交织重叠 ，闪耀登场W盛典✨💚💚💚🥝🥝🥝 评论配图 #侯明昊w盛典#",
+      "excerpt": "侯明昊时尚与光影交织重叠 ，闪耀登场W盛典✨💚💚💚🥝🥝🥝 评论配图 #侯明昊w盛典#",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T22:45:38+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364199721273760",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "92a521b6e89bb9c62f7a",
+      "platform": "Weibo",
+      "source": "Weibo @空无一物大道光明",
+      "title": "终究还是被偶遇了呀 #明洞偶遇侯明昊# #明洞偶遇侯明昊逛街#",
+      "excerpt": "终究还是被偶遇了呀 #明洞偶遇侯明昊# #明洞偶遇侯明昊逛街#",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T22:34:38+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364196955129595",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "1f7779462102028b968b",
+      "platform": "Weibo",
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "title": "的实绩就是太权威了",
+      "excerpt": "侯明昊的实绩就是太权威了",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T22:11:32+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364191138421163",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
     {
       "id": "d1d9d05d149b309e7851",
       "platform": "X",
@@ -182,6 +840,87 @@
       "dateExact": false
     },
     {
+      "id": "3e4d6d275ee05624f9c3",
+      "platform": "Weibo",
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "title": "个人认为侯明昊目前为止的三个人生角色：《寒武纪》捡子、《异人之下》王也、《雀骨》萧无衣",
+      "excerpt": "个人认为侯明昊目前为止的三个人生角色：《寒武纪》捡子、《异人之下》王也、《雀骨》萧无衣",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a66ba8b470377a5070213d9d.gif",
+        "https://wx2.sinaimg.cn/mw2000/8e252e65ly1iiyl952cslg20m80rsqvl.gif",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/263680991ce291d5853eac9c.jpg"
+      ],
+      "videos": [
+        {
+          "id": "f83c0bdcd27d6e1fa80f31ea",
+          "kind": "live",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a66ba8b470377a5070213d9d.gif",
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/f83c0bdcd27d6e1fa80f31ea.mp4"
+        },
+        {
+          "id": "95808fb6f1b62c0cdfa8e5d7",
+          "kind": "live",
+          "poster": "https://wx2.sinaimg.cn/mw2000/8e252e65ly1iiyl952cslg20m80rsqvl.gif",
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/95808fb6f1b62c0cdfa8e5d7.mp4"
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T21:47:32+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364185099928867",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "cc220504c6d3241214fc",
+      "platform": "Weibo",
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "title": "看完《雀骨》全集，一定会理解侯明昊为什么那么爱萧无衣，原创剧本太牛掰！",
+      "excerpt": "看完《雀骨》全集，一定会理解侯明昊为什么那么爱萧无衣，原创剧本太牛掰！",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T21:41:39+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364183618036459",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "f49924f720f5c26b2ad5",
+      "platform": "Weibo",
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "title": "#侯明昊 家族中最受宠的小少爷# 什么时候能看到侯明昊的现代剧 这种颜值不演现偶，简直暴殄天物！",
+      "excerpt": "#侯明昊 家族中最受宠的小少爷# 什么时候能看到侯明昊的现代剧 这种颜值不演现偶，简直暴殄天物！",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a7d95bf3a06c27d1a76e53d4.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ce005940d1caa81a55f99a83.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2cf1adff3becc41ae58e8566.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1da7b4847efdd51c34cf914c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/268e195bc47dce2c301e389e.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1f4b9e10142c999e333b3241.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/462ea3b9505810402d7d5ce0.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b9586afde63e41b03c5f9764.jpg",
+        "https://wx2.sinaimg.cn/mw2000/8e252e65ly1iiyk9uy6xxj20qo0vqq5o.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T21:18:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364177667361864",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "72dc7a98304431cd6402",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -197,6 +936,99 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "ca0504fd6ecbc3e99d4e",
+      "platform": "Weibo",
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "title": "说破天《玉茗茶骨》也是侯明昊一番实绩，老姐姐这辈子高光就是做命好二番吧，没播茶骨前就是个毫无演技劝退的存在。",
+      "excerpt": "说破天《玉茗茶骨》也是侯明昊一番实绩，老姐姐这辈子高光就是做命好二番吧，没播茶骨前就是个毫无演技劝退的存在。",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T20:39:15+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364167913507528",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "e41542e677112793f81d",
+      "platform": "Weibo",
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "title": "命好在明侦这几组图都很帅啊",
+      "excerpt": "命好在明侦这几组图都很帅啊",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T20:28:02+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364165092316296",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "0e38c25bb52031b85eee",
+      "platform": "Weibo",
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "title": "侯孩儿",
+      "excerpt": "侯孩儿",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T20:26:13+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364164634875241",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "e45cc4f215f09e02bc83",
+      "platform": "Weibo",
+      "source": "Weibo @若浮雲沒有煙花園總有花",
+      "title": "喜欢命好这组图",
+      "excerpt": "喜欢命好这组图",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T20:24:29+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364164198663682",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "39da23609692ed909749",
+      "platform": "Weibo",
+      "source": "Weibo @Jessie_嘉鱼小友",
+      "title": "侯明昊 第一个小飞到位 #侯明昊# 北京·五棵松",
+      "excerpt": "侯明昊 侯明昊 第一个小飞到位 #侯明昊# 北京·五棵松",
+      "images": [
+        "https://wx2.sinaimg.cn/mw2000/002mEZHFly1iiyfzbk6n9j62dc35sqv508.jpg",
+        "https://wx2.sinaimg.cn/mw2000/002mEZHFly1iiyfzdlkccj62dc35su0y08.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T18:44:53+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364139134291738",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "298be2a2c20469dc04ae",
@@ -216,6 +1048,24 @@
       "dateExact": false
     },
     {
+      "id": "875707e8879ae1b78b11",
+      "platform": "Weibo",
+      "source": "Weibo @Jessie_嘉鱼小友",
+      "title": "#侯明昊也爱用自己的抽象表情包#",
+      "excerpt": "侯明昊 #侯明昊也爱用自己的抽象表情包#",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T17:45:27+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364124177404684",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "35c3a7d4afcb7327b2d7",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -223,7 +1073,8 @@
       "title": "Brand Event Announcement | Snowflying November 21, 2026 Shijiazhuang 261111 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #侯明昊 #후명호",
       "excerpt": "Brand Event Announcement | Snowflying November 21, 2026 Shijiazhuang 261111 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e6602f767a72f467adce65b.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e6602f767a72f467adce65b.jpg",
+        "https://pbs.twimg.com/media/HW1bCuhawAAEF2F?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-11T17:38:35+08:00",
@@ -259,7 +1110,8 @@
       "title": "New Group Photo | W Annual Gala 2026 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "excerpt": "New Group Photo | W Annual Gala 2026 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/83c2d814e60bf2db3a601bad.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/83c2d814e60bf2db3a601bad.jpg",
+        "https://pbs.twimg.com/media/HW1Ej4hbsAAeNY8?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-11T16:00:22+08:00",
@@ -280,7 +1132,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/80c193e95757b6ef23913c45.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/01e76dd7fd5bc08a5ba62bde.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5b7a923c487aff3d8d11d4fe.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5b7a923c487aff3d8d11d4fe.jpg",
+        "https://pbs.twimg.com/media/HW0jC03aYAAMsqt?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HW0jC05aYAEeQ-m?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HW0jC09aAAAYnBW?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-11T13:33:55+08:00",
@@ -316,7 +1171,8 @@
       "title": "Hou Minghao W Annual Gala 2026 | Interview 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "excerpt": "Hou Minghao W Annual Gala 2026 | Interview 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3e38ecf4ff1f0d93fb0f3662.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3e38ecf4ff1f0d93fb0f3662.jpg",
+        "https://pbs.twimg.com/media/HW0cy_fbUAAkcZx?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-11T13:06:38+08:00",
@@ -336,7 +1192,9 @@
       "excerpt": "H&M x Hou Minghao 261111 | \"H&M\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0a19ef5f7d4a1da585b16c1c.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d5d3735dde8b1fe39b27a84b.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d5d3735dde8b1fe39b27a84b.jpg",
+        "https://pbs.twimg.com/media/HW0NxboaEAAcqIM?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HW0Nx5Vb0AAPrxt?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-11T12:01:01+08:00",
@@ -357,7 +1215,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3809691925678a9624cea615.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/dc6d5c7ed30a6360153c579d.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6f45980e76e7f50f2ba7db72.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6f45980e76e7f50f2ba7db72.jpg",
+        "https://pbs.twimg.com/media/HW0NKbgbgAAsvrH?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HW0NLZFbkAAVQtE?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HW0NMKkaUAAov58?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-11T11:58:27+08:00",
@@ -367,6 +1228,93 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "9b56e8a404d0a4d4475c",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "#w盛典红毯# #侯明昊属于我们的巡回演唱会# #侯明昊w中文版年度盛典# 侯明昊",
+      "excerpt": "#w盛典红毯# #侯明昊属于我们的巡回演唱会# #侯明昊w中文版年度盛典# 侯明昊",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T09:54:13+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364005587651777",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "6abb48ad5b804c2d1e90",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "#侯明昊# 侯明昊 #侯明昊w中文版年度盛典# #侯明昊属于我们的巡回演唱会#",
+      "excerpt": "#侯明昊# 侯明昊 #侯明昊w中文版年度盛典# #侯明昊属于我们的巡回演唱会#",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T09:53:58+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364005524997635",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "6b7f5cbf8fde252d5f20",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "🥝💚🐱见证发光时刻，共赴摩登上海！ @侯明昊 盛装亮相W盛典，将高级时装极致展现，将经典绅士完美诠释。期待盛典上的璀璨绽放！🐱💚🥝",
+      "excerpt": "侯明昊 🥝💚🐱见证发光时刻，共赴摩登上海！ @侯明昊 盛装亮相W盛典，将高级时装极致展现，将经典绅士完美诠释。期待盛典上的璀璨绽放！🐱💚🥝",
+      "images": [
+        "https://wx1.sinaimg.cn/mw2000/44e2e7b4gy1iiy0krypikj21jk21c15o.jpg",
+        "https://wx3.sinaimg.cn/mw2000/44e2e7b4gy1iiy0ksqoakj21jk24eqjf.jpg",
+        "https://wx4.sinaimg.cn/mw2000/44e2e7b4gy1iiy0ktiqivj21jk20g4nx.jpg",
+        "https://wx2.sinaimg.cn/mw2000/44e2e7b4gy1iiy0kuujmaj21jk20zh4s.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T09:51:56+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364005017485370",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "9a306a3e33b9b41c5fd0",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 迷雾遮不住赤诚，绝境磨不灭风骨。杨无间携一身碧血穿行乱世。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 | 容尘子 | 念相思 | 浙江卫视天赐的声音的微博…",
+      "excerpt": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 迷雾遮不住赤诚，绝境磨不灭风骨。杨无间携一身碧血穿行乱世。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 | 容尘子 | 念相思 | 浙江卫视天赐的声音的微博视频",
+      "images": [
+        "https://wx4.sinaimg.cn/orj480/001r2zuygy1ig36efdbdbj61xc130x6p02.jpg"
+      ],
+      "videos": [
+        {
+          "id": "cd791c2576b4c370d9afb069",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/06135cf0296cb67046e19ca1.jpg",
+          "duration": 73.909,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/cd791c2576b4c370d9afb069.mp4"
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T08:48:56+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363989161967742",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "b90d6a74a32287e72ed7",
@@ -393,7 +1341,8 @@
       "title": "Hou Minghao New Photo | W Annual Gala 2026 261110 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "excerpt": "Hou Minghao New Photo | W Annual Gala 2026 261110 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9b1476c68745d7e095de6d1a.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9b1476c68745d7e095de6d1a.jpg",
+        "https://pbs.twimg.com/media/HWxhH0saQAAMTmE?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-10T23:26:41+08:00",
@@ -412,7 +1361,8 @@
       "title": "Hou Minghao New Pic | W Annual Gala 2026 261110 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "excerpt": "Hou Minghao New Pic | W Annual Gala 2026 261110 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d015ed4cb1b6f034e091e8f6.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d015ed4cb1b6f034e091e8f6.jpg",
+        "https://pbs.twimg.com/media/HWxRd8MaMAA6STA?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-10T22:18:16+08:00",
@@ -432,7 +1382,9 @@
       "excerpt": "finish chewing first there's food on your mouth and i'm fighting the urge to wipe it for you #HouMinghao",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/889fe5e9ed13dd51d1b53b74.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d10834cef17774259bcd6b82.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d10834cef17774259bcd6b82.jpg",
+        "https://pbs.twimg.com/media/HWwR0tQagAApSXM?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWwR0tSbIAA5mVm?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-10T19:40:00+08:00",
@@ -468,7 +1420,8 @@
       "title": "those white, soft-looking arms??? i’m turning into a whole wolf over here #侯明昊 #HouMinghao",
       "excerpt": "those white, soft-looking arms??? i’m turning into a whole wolf over here #侯明昊 #HouMinghao",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/325dc696c9b518b7f728b8ab.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/325dc696c9b518b7f728b8ab.jpg",
+        "https://pbs.twimg.com/media/HWwQ3aqbMAAk_jB?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-10T17:36:01+08:00",
@@ -480,6 +1433,24 @@
       "dateExact": false
     },
     {
+      "id": "7b38a5a2e7341d60eb87",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "suai！！ @侯明昊 宝宝 #侯明昊w盛典# #向全世界安利侯明昊#",
+      "excerpt": "suai！！ @侯明昊 宝宝 #侯明昊w盛典# #向全世界安利侯明昊#",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-10T14:59:04+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363719915965139",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "7d4fcf988066eb61f778",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -488,7 +1459,9 @@
       "excerpt": "Have a safe flight back home!! #HouMinghao",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ec8a3bd51644d1910297033d.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e013150e2fc4aee23a177740.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e013150e2fc4aee23a177740.jpg",
+        "https://pbs.twimg.com/media/HWu7BOga0AEAxiG?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWu7BOWaAAAaCB5?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-10T11:21:23+08:00",
@@ -507,7 +1480,8 @@
       "title": "\"Memories [That Belong To Us] Zhengzhou highlights. With the evening breeze in our embrace, we’re transported back to that day \" #HouMinghaoBelongsTo…",
       "excerpt": "\"Memories [That Belong To Us] Zhengzhou highlights. With the evening breeze in our embrace, we’re transported back to that day \" #HouMinghaoBelongsToUs2026 | Zhengzhou 261110 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8f14dd66c7feaf4c00d7effe.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8f14dd66c7feaf4c00d7effe.jpg",
+        "https://pbs.twimg.com/media/HWu7C7LaQAA1lHY?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-10T11:21:04+08:00",
@@ -527,7 +1501,9 @@
       "excerpt": "Hou Minghao | Brand Claim | Jewelry and Watch 261109 | \"BVLGARI宝格丽\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ea221acc0638d1dd92e6433f.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/abf51935ec21fce16575296b.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/abf51935ec21fce16575296b.jpg",
+        "https://pbs.twimg.com/media/HWup_a-bAAAslr2?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWuqAYBaMAAn4_Q?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-10T10:06:37+08:00",
@@ -537,6 +1513,88 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "bcd147161113863a9f58",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "#侯明昊w盛典# 侯明昊",
+      "excerpt": "#侯明昊w盛典# 侯明昊",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-10T09:54:59+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363643390627777",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "12a40305b5e6df52fddb",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "#侯明昊# 侯明昊 #侯明昊w中文版年度盛典#",
+      "excerpt": "#侯明昊# 侯明昊 #侯明昊w中文版年度盛典#",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-10T09:54:40+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363643315126350",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "d34ebe7f8cc3fb00e618",
+      "platform": "Weibo",
+      "source": "Weibo @织云弄影",
+      "title": "#W中文版年度盛典# 侯明昊 #侯明昊# 🐱💚🥝呼吸之间皆是优雅风范，步履所至皆是聚光灯焦点。 @侯明昊 惊艳亮相W盛典，以完美演绎复古奢华的摩登浪潮，用实力筑牢底气，用作品对话时光，始于角色，忠于魅力。🥝💚🐱",
+      "excerpt": "#W中文版年度盛典# 侯明昊 #侯明昊# 🐱💚🥝呼吸之间皆是优雅风范，步履所至皆是聚光灯焦点。 @侯明昊 惊艳亮相W盛典，以完美演绎复古奢华的摩登浪潮，用实力筑牢底气，用作品对话时光，始于角色，忠于魅力。🥝💚🐱",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-10T09:51:37+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363642545211059",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "0a332dd7e43cc330c158",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间半生皆无间，一诺赴黄泉，残阳为证义为先，碧血洗宫冤，宁负韶华不负天。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工…",
+      "excerpt": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间半生皆无间，一诺赴黄泉，残阳为证义为先，碧血洗宫冤，宁负韶华不负天。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频",
+      "images": [
+        "https://wx2.sinaimg.cn/orj480/006i3hfEgy1id7fdu4nlcj32yo1o0dx4.jpg"
+      ],
+      "videos": [
+        {
+          "id": "859d01c1dee192f868ff5c22",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e0ed373e402fac954b60134d.jpg",
+          "duration": 46.95,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/859d01c1dee192f868ff5c22.mp4"
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-10T08:32:34+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363622649792025",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "532361b20f033f6fb505",
@@ -614,7 +1672,8 @@
       "title": "09.11.2026 | W GALA · Golden Age Shanghai want to squish those cheeks so badly! #HouMinghao #WGALA #WGoldenAge #HouMinghaoWGala2026",
       "excerpt": "09.11.2026 | W GALA · Golden Age Shanghai want to squish those cheeks so badly! #HouMinghao #WGALA #WGoldenAge #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f5253f619c920fdb59513c9a.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f5253f619c920fdb59513c9a.jpg",
+        "https://pbs.twimg.com/media/HWsIfeRb0AAKwmi?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-09T22:20:57+08:00",
@@ -634,7 +1693,9 @@
       "excerpt": "09.11.2026 | W GALA · Golden Age Shanghai that golden face, those perfect features… truly a prince born into royalty. #HouMinghao #WGALA #WGoldenAge #HouMinghaoWGala2026",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d14026bd9847c272333acd82.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4f5f4c12afab2a3fdc2301fa.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4f5f4c12afab2a3fdc2301fa.jpg",
+        "https://pbs.twimg.com/media/HWsGmgPaQAAki5m?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWsGmgPbsAAx2SL?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-09T22:12:43+08:00",
@@ -653,7 +1714,8 @@
       "title": "Hou Minghao New Video | Behind-the-Scenes Photoshoot | W Annual Gala 2026 261109 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMingha…",
       "excerpt": "Hou Minghao New Video | Behind-the-Scenes Photoshoot | W Annual Gala 2026 261109 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/486e00c6c91469cf6db0df8d.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/486e00c6c91469cf6db0df8d.jpg",
+        "https://pbs.twimg.com/media/HWsF1unaEAAhTyX?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-09T22:09:22+08:00",
@@ -671,7 +1733,8 @@
       "title": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "excerpt": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/74d48bcd5bfabc27b9489c18.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/74d48bcd5bfabc27b9489c18.jpg",
+        "https://wx4.sinaimg.cn/orj480/006i3hfEly1iiwai24a1mj3280191dwh.jpg"
       ],
       "videos": [
         {
@@ -692,7 +1755,8 @@
       "titleOriginal": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "excerptOriginal": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "titleEnglish": "📷 W Chinese version of the annual ceremony | @ Hou Minghao \"a moment\" at the intersection of classical and modern, continue to write an unfinished chapter. WGALA Now is the Golden Age Weibo video of WGALA Twin Cities @ W Chinese version @ MixWei Hou Minghao's studio",
-      "excerptEnglish": "Hou Minghao 📷 W Annual Ceremony in Chinese | @ Hou Minghao \"Moment\" Continues an unfinished chapter at the intersection of classical and modern. WGALA Now is the Golden Age Weibo video of WGALA Twin Cities @ W Chinese version @ MixWei Hou Minghao's studio"
+      "excerptEnglish": "Hou Minghao 📷 W Annual Ceremony in Chinese | @ Hou Minghao \"Moment\" Continues an unfinished chapter at the intersection of classical and modern. WGALA Now is the Golden Age Weibo video of WGALA Twin Cities @ W Chinese version @ MixWei Hou Minghao's studio",
+      "sourceCategory": "Official"
     },
     {
       "id": "62ca8a45f8edf1235e51",
@@ -704,7 +1768,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ea6ada5d28450a4243e8836b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/98ee995e7a3855042f12756a.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3980071ed08d8521d80a677b.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3980071ed08d8521d80a677b.jpg",
+        "https://pbs.twimg.com/media/HWsEQs3aEAABbJm?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWsERfNbIAAXqOP?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWsESVfbcAAm25a?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-09T22:02:35+08:00",
@@ -725,7 +1792,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/12f527c932f3d18a91c48909.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/410a2cfd631ed41a9935c414.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/890a01cddc62091caf4bab3d.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/890a01cddc62091caf4bab3d.jpg",
+        "https://pbs.twimg.com/media/HWsEOGvboAAfKpb?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWsEO3EawAA9qAg?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWsEPqNb0AA3hmC?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-09T22:02:24+08:00",
@@ -746,7 +1816,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9341ee1c9ac69538559f0f08.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e1b07373e52194bf9aa2329a.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/139fddc4ee9b190215f6cba5.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/139fddc4ee9b190215f6cba5.jpg",
+        "https://pbs.twimg.com/media/HWsELhJbYAAcYa1?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWsEMTNakAASzWF?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWsENAebsAEJmpv?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-09T22:02:13+08:00",
@@ -823,7 +1896,8 @@
       "titleOriginal": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “另一面” 在经典与新意之间，定格隽永一瞬。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei",
       "excerptOriginal": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “另一面” 在经典与新意之间，定格隽永一瞬。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei",
       "titleEnglish": "📷 W Chinese version of the annual ceremony | @ Hou Minghao \"the other side\" between classic and new ideas, fixed for a moment. WGALA Now is the Golden Age WGALA Twin Cities @ W Chinese @ MixWei",
-      "excerptEnglish": "Hou Minghao 📷 W Chinese version of the annual ceremony | @ Hou Minghao \"the other side\" between classic and new ideas, fixed for a moment. WGALA Now is the Golden Age WGALA Twin Cities @ W Chinese @ MixWei"
+      "excerptEnglish": "Hou Minghao 📷 W Chinese version of the annual ceremony | @ Hou Minghao \"the other side\" between classic and new ideas, fixed for a moment. WGALA Now is the Golden Age WGALA Twin Cities @ W Chinese @ MixWei",
+      "sourceCategory": "Official"
     },
     {
       "id": "c7e16b8eb5ab5311f036",
@@ -891,7 +1965,8 @@
       "titleEnglish": "Hou Minghao's \"hidden\" rays are folded into a sequence, outlining the contours of traveling between imaginary and real.",
       "excerptEnglish": "Hou Minghao: | @ Hou Minghao's \"hidden\" light is folded into a sequence, outlining the contours traveling between virtual and real.",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "9d6a39045e4b3955e705",
@@ -936,7 +2011,8 @@
       "title": "父子照 @宋威龙99",
       "excerpt": "父子照 @宋威龙99",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/df9e07d2aabac51443d1d871.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/df9e07d2aabac51443d1d871.jpg",
+        "https://wx3.sinaimg.cn/mw2000/6d2b400bgy1iiw9k3c34pj235s2dcu0x.jpg"
       ],
       "videos": [
         {
@@ -956,7 +2032,8 @@
       "titleOriginal": "父子照 @宋威龙99",
       "excerptOriginal": "父子照 @宋威龙99",
       "titleEnglish": "Father and son photo @ Song Weilong 99",
-      "excerptEnglish": "Father and son photo @ Song Weilong 99"
+      "excerptEnglish": "Father and son photo @ Song Weilong 99",
+      "sourceCategory": "Official"
     },
     {
       "id": "149e84e9df112e00820e",
@@ -970,7 +2047,9 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fcc3e63cd62d04c9ac50e63f.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg",
         "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9ch5sebj32dc35s4qs.jpg",
-        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iiw9ciiyc9j31n426unpd.jpg"
+        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iiw9ciiyc9j31n426unpd.jpg",
+        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iiw9cjstebj32c0340hdu.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9cogvomj32dc35s7wo.jpg"
       ],
       "videos": [
         {
@@ -990,7 +2069,8 @@
       "titleOriginal": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 今日份电子心动已加载完毕。 #WGALA此刻即黄金时代# #WGALA双城记#",
       "excerptOriginal": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 今日份电子心动已加载完毕。 #WGALA此刻即黄金时代# #WGALA双城记#",
       "titleEnglish": "📷 W Chinese version of the annual ceremony | @ Hou Minghao Today's electronic heartbeat has been loaded. WGALA is now the Golden Age WGALA Twin Cities",
-      "excerptEnglish": "Hou Minghao 📷 W Chinese version of the annual ceremony | @ Hou Minghao Today's electronic heart has been loaded. WGALA is now the Golden Age WGALA Twin Cities"
+      "excerptEnglish": "Hou Minghao 📷 W Chinese version of the annual ceremony | @ Hou Minghao Today's electronic heart has been loaded. WGALA is now the Golden Age WGALA Twin Cities",
+      "sourceCategory": "Official"
     },
     {
       "id": "73c578e98f467e562349",
@@ -1085,7 +2165,8 @@
       "titleOriginal": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “启幕” 华章将启，风度翩然，在未知之境铺展一场神秘叙事。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "excerptOriginal": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “启幕” 华章将启，风度翩然，在未知之境铺展一场神秘叙事。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "titleEnglish": "📷 W Chinese version of the annual ceremony | @ Hou Minghao \"opening\" Huazhang will be opened with style, spreading a mysterious narrative in the unknown. WGALA Now is the Golden Age Weibo video of WGALA Twin Cities @ W Chinese version @ MixWei Hou Minghao's studio",
-      "excerptEnglish": "Hou Minghao 📷 W Annual Ceremony in Chinese | @ Hou Minghao \"Opening\" Huazhang will be opened, with style and style, spreading a mysterious narrative in the unknown. WGALA Now is the Golden Age Weibo video of WGALA Twin Cities @ W Chinese version @ MixWei Hou Minghao's studio"
+      "excerptEnglish": "Hou Minghao 📷 W Annual Ceremony in Chinese | @ Hou Minghao \"Opening\" Huazhang will be opened, with style and style, spreading a mysterious narrative in the unknown. WGALA Now is the Golden Age Weibo video of WGALA Twin Cities @ W Chinese version @ MixWei Hou Minghao's studio",
+      "sourceCategory": "Official"
     },
     {
       "id": "b354b6546c5169b8eb31",
@@ -1174,7 +2255,8 @@
       "titleOriginal": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “赴约” 于鎏金时序中，奔赴一场光影交织的盛大之约。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei",
       "excerptOriginal": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “赴约” 于鎏金时序中，奔赴一场光影交织的盛大之约。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei",
       "titleEnglish": "📷 W Chinese version of the annual ceremony | @ Hou Minghao \"going to an appointment\" In the golden timeline, go to a grand appointment interwoven with light and shadow. WGALA Now is the Golden Age WGALA Twin Cities @ W Chinese @ MixWei",
-      "excerptEnglish": "Hou Minghao 📷 W Annual Ceremony in Chinese | @ Hou Minghao \"went to an appointment\" In the Jingjin timeline, he went to a grand appointment interwoven with light and shadow. WGALA Now is the Golden Age WGALA Twin Cities @ W Chinese @ MixWei"
+      "excerptEnglish": "Hou Minghao 📷 W Annual Ceremony in Chinese | @ Hou Minghao \"went to an appointment\" In the Jingjin timeline, he went to a grand appointment interwoven with light and shadow. WGALA Now is the Golden Age WGALA Twin Cities @ W Chinese @ MixWei",
+      "sourceCategory": "Official"
     },
     {
       "id": "61752cc7c5573b11c54d",
@@ -1194,7 +2276,8 @@
       "titleEnglish": "Hou Minghao depicts a different trajectory between exploration and discovery. Weibo video from Hou Minghao's studio",
       "excerptEnglish": "Hou Minghao | @ Hou Minghao Draws a different trajectory between exploration and discovery. Weibo video from Hou Minghao's studio",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "53912835a07b9634c592",
@@ -1214,7 +2297,8 @@
       "titleEnglish": "Hou Minghao's \"instant\" is fixed at the boundary between light and dark, staring at undefined expressions. Weibo video from Hou Minghao's studio",
       "excerptEnglish": "Hou Minghao: | @ Hou Minghao's \"instant\" is fixed at the boundary between light and dark, staring at undefined expressions. Weibo video from Hou Minghao's studio",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "eb9806d2dbf2e202d69b",
@@ -1358,7 +2442,8 @@
       "titleOriginal": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 穿越时光的邀约，即将抵达璀璨现场。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei",
       "excerptOriginal": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 穿越时光的邀约，即将抵达璀璨现场。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei",
       "titleEnglish": "📷 W Chinese version of the annual festival \"\" | @ Hou Minghao's invitation to travel through time is about to arrive at the brilliant scene. WGALA Now is the Golden Age WGALA Twin Cities @ W Chinese @ MixWei",
-      "excerptEnglish": "Hou Minghao 📷 W Annual Ceremony in Chinese | @ Hou Minghao's invitation to travel through time is about to arrive at the brilliant scene. WGALA Now is the Golden Age WGALA Twin Cities @ W Chinese @ MixWei"
+      "excerptEnglish": "Hou Minghao 📷 W Annual Ceremony in Chinese | @ Hou Minghao's invitation to travel through time is about to arrive at the brilliant scene. WGALA Now is the Golden Age WGALA Twin Cities @ W Chinese @ MixWei",
+      "sourceCategory": "Official"
     },
     {
       "id": "b2e62a14ebd7c44be02a",
@@ -1415,7 +2500,8 @@
           "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/cb0f8d7e43938574dd557de8.mp4"
         }
       ],
-      "dateExact": true
+      "dateExact": true,
+      "sourceCategory": "Official"
     },
     {
       "id": "e34e012f3a58e4231e4c",
@@ -1504,6 +2590,52 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "ab3ed2b8e04500678459",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "宝宝 @侯明昊 #侯明昊属于我们的巡回演唱会#",
+      "excerpt": "宝宝 @侯明昊 #侯明昊属于我们的巡回演唱会#",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-09T09:37:35+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363276623909599",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "e6b48b1b8a679e650b22",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 半生为局，半步为义，杨无间以身为子，落子无悔，血未冷，心已明。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 |碧血蝉 | 容尘子 | 念相思 | 侯明昊工作室的微博视频",
+      "excerpt": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 半生为局，半步为义，杨无间以身为子，落子无悔，血未冷，心已明。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 |碧血蝉 | 容尘子 | 念相思 | 侯明昊工作室的微博视频",
+      "images": [
+        "https://wx4.sinaimg.cn/orj480/006i3hfEly1ie60ib4w5ej31hc0u0abk.jpg"
+      ],
+      "videos": [
+        {
+          "id": "720d93a43e1f666878191aef",
+          "kind": "video",
+          "remote": "https://f.video.weibocdn.com/o0/C6lo4Beolx08ys08YlUs01041203tp7m0E020.mp4?label=mp4_hd&template=852x480.25.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1794455899&ssig=PrWKkOkCav&KID=unistore,video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/679dd254bb8a71af8ad08ca1.jpg",
+          "duration": 709.833
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-09T09:15:31+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363271070909155",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "5fdcd8df6c3483c87da4",
@@ -1730,6 +2862,88 @@
       "dateExact": false
     },
     {
+      "id": "83b76bcf98604e982b13",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "#侯明昊# #侯明昊属于我们的巡回演唱会# 好爱",
+      "excerpt": "#侯明昊# #侯明昊属于我们的巡回演唱会# 好爱",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-08T10:30:55+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5362927660174761",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "709ec38784b51b61a4f7",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 侠骨藏锋破迷局，碧血出鞘定乾坤。杨无间勇闯险境，于棋局中掌棋，于绝境中翻盘。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊…",
+      "excerpt": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 侠骨藏锋破迷局，碧血出鞘定乾坤。杨无间勇闯险境，于棋局中掌棋，于绝境中翻盘。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频",
+      "images": [
+        "https://wx4.sinaimg.cn/orj480/006i3hfEly1iip29m6vujj31hc0u0abm.jpg"
+      ],
+      "videos": [
+        {
+          "id": "01805bb03db76532860e6491",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f5938b5888fbf340a77f13e2.jpg",
+          "duration": 58.747,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/01805bb03db76532860e6491.mp4"
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-08T10:30:25+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5362927538274812",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "2b2ab6b2a2038e92f431",
+      "platform": "Weibo",
+      "source": "Weibo @Surryy",
+      "title": "领领领～",
+      "excerpt": "侯明昊 领领领～",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-08T09:48:52+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5362917077682391",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "d2764b41d029d12b048c",
+      "platform": "Weibo",
+      "source": "Weibo @猕猴桃吃不饱",
+      "title": "郑州真中",
+      "excerpt": "郑州真中",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-08T09:44:26+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5362915962261348",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "dc4882c23ac790c5e0c3",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -1748,6 +2962,24 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "af3f73945b45426564e4",
+      "platform": "Weibo",
+      "source": "Weibo @猕猴桃吃不饱",
+      "title": "依旧",
+      "excerpt": "依旧",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-07T19:01:29+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5362693758258715",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "bb0993f4c54af85dbf7f",
@@ -1774,7 +3006,8 @@
       "titleEnglish": "🥝 Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ Hou Minghao's concert | @ Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ Hou Minghao's concert tour | @ @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Hou's concert | @ Hou's concert | @ @ Hou MingHao's concert | @ Hou",
       "excerptEnglish": "Hou Minghao 🥝 Hou Minghao \"Belongs to Us\" Tour Concert Memories of Zhengzhou｜ @Hou Minghao Story Continues In the boundless mist, in the blank space of the sound field, waiting for the melody to restart",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "1b19346a068f4cae7c7b",
@@ -1794,6 +3027,27 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "e463051f90c784814b13",
+      "platform": "Weibo",
+      "source": "Weibo @Surryy",
+      "title": "今中午提前过生日，拍了这张27的蛋糕照 中午就抢到了27号的侯明昊 you ～are ～my～ destiny～",
+      "excerpt": "今中午提前过生日，拍了这张27的蛋糕照 中午就抢到了27号的侯明昊 you ～are ～my～ destiny～",
+      "images": [
+        "https://wx4.sinaimg.cn/mw2000/ba7a3a4fly1iitqbzg62qj22c03407wi.jpg",
+        "https://wx1.sinaimg.cn/mw2000/ba7a3a4fly1iitqc02cinj210o1nbaml.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-07T16:55:49+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5362662133466508",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "dec25c184634fca09863",
@@ -1835,7 +3089,36 @@
       "titleEnglish": "🥝 # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao | @ Hou Minghao | @ Hou Minghao, Hou Minghao belongs to our concert tour # Hou Minghao belongs to our concert tour # Hou Minghao's concert # Hou",
       "excerptEnglish": "Hou Minghao 🥝 Hou Minghao belongs to our tour concert Hou Minghao Hou Minghao | @ Hou Minghao Hou Minghao Hou Minghao Hou Minghao Hou Minghao \"Belongs to us...\" Tour Beijing Station Pre-sale \"Sold Out\" Continued love, and wait for Xinghai to meet us, Beijing... Full text",
       "videos": [],
-      "dateExact": true
+      "dateExact": true,
+      "sourceCategory": "Official"
+    },
+    {
+      "id": "11b7c6ef7cd047d3e6e5",
+      "platform": "Weibo",
+      "source": "Weibo @昊圈在逃小桃",
+      "title": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间将生命化作最后一击，于绝境中终结浩劫。 @侯明昊 | 侯明昊 | 杨无间 | 碧血蝉 | 容尘子 |念相思 | 侯明昊工作室的微博视频",
+      "excerpt": "| #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间将生命化作最后一击，于绝境中终结浩劫。 @侯明昊 | 侯明昊 | 杨无间 | 碧血蝉 | 容尘子 |念相思 | 侯明昊工作室的微博视频",
+      "images": [
+        "https://wx3.sinaimg.cn/orj480/006i3hfEly1ihv54lzmynj32yo1o0e81.jpg"
+      ],
+      "videos": [
+        {
+          "id": "a06009f1a81e2e6cfc4fa0ec",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9d66d5e44863d3fb2f7e5ba0.jpg",
+          "duration": 170.201,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/a06009f1a81e2e6cfc4fa0ec.mp4"
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-07T10:00:52+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5362557708932477",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "a96ed1f1bda772cdf4c1",
@@ -1970,7 +3253,8 @@
       "titleEnglish": "# Volunteers have been abroad for 76 years # We have not forgotten, and we will not forget!",
       "excerptEnglish": "# Volunteers have been abroad for 76 years # We have not forgotten, and we will not forget!",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "a159b314107f4328a5c0",
@@ -1990,7 +3274,8 @@
       "titleEnglish": "“Looking forward to proving our future”",
       "excerptEnglish": "“Looking forward to proving our future”",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "a837a315ce075ecb0ac9",
@@ -2010,7 +3295,8 @@
       "titleEnglish": "Ready to embark on the # Lynx11 Starship Carnival # patrol? @ Tmall's Starfleet Carnival Captain @ Hou Minghao, invites you to join @ CASETiFY for a preemptive landing! From now on, search for [Hou Minghao] on Taobao to participate in the event, unlock Hou Minghao's SSR exclusive star badge, and generate a limited commemoration. Web link # Tmall All-Star meter...",
       "excerptEnglish": "Is Hou Minghao ready to embark on the # Lynx11 Starship Carnival # patrol? @ Tmall's Starfleet Carnival Captain @ Hou Minghao, invites you to join @ CASETiFY for a preemptive landing! From now on, search for [Hou Minghao] on Taobao to participate in the event, unlock Hou Minghao's SSR exclusive star badge, and generate a limited commemoration. Web link # Tmall All-Star Program # Tmall Double 11, worth 1111 marks! # Tmall Double 11 is more worth buying #... more",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "c2d9a0a6167a417223b3",
@@ -2032,7 +3318,8 @@
       "titleEnglish": "📨 # Monthly letter from Xiao Hou # The frost color spreads over the branches and dyes the quiet and long prologue. @ Hou Minghao",
       "excerptEnglish": "Hou Minghao's 📨 # Xiaohou's monthly letter # frosted over the branches and dyed the quiet and long prologue. @ Hou Minghao",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "bcf03fc475ca0351e569",
@@ -2062,7 +3349,8 @@
       "titleEnglish": "🥝 # Hou Minghao's concert tour # Hou Minghao's concert tour # Hou Minghao's concert tour | @ Hou Minghao's concert tour",
       "excerptEnglish": "Hou Minghao 🥝 # Hou Minghao's concert tour # Hou Minghao's concert tour # Hou Minghao's concert tour | @ Hou Minghao's concert tour",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "ccaf4cc16f311b992b06",
@@ -2092,7 +3380,8 @@
       "titleEnglish": "🥝 # Hou Minghao's concert tour # Hou Minghao's concert tour # Hou Minghao's concert tour | @ Hou Minghao's concert tour",
       "excerptEnglish": "Hou Minghao 🥝 Hou Minghao's concert tour | @ Hou Minghao Hou Minghao Hou Minghao's concert tour_@ Hou Minghao Hou Minghao's concert_@ Hou Minghao's concert tour_@ Hou Minghao's concert_@ Hou Minghao's concert_@ @ Hou Minghao's concert_@ @ Hou Minghao's concert_@ @ Hou Minghao's concert_@ @ Hou Minghao's concert_@ @ @ Hou Minghao's concert_",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Official"
     },
     {
       "id": "beafc69e6c245eaa669e",
@@ -2200,6 +3489,24 @@
       "dateExact": false
     },
     {
+      "id": "e572fc4642aed147253c",
+      "platform": "Weibo",
+      "source": "Weibo @猕猴桃吃不饱",
+      "title": "这不是官方店铺 不计入销量的 不要上当",
+      "excerpt": "这不是官方店铺 不计入销量的 不要上当",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-05T16:49:36+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5361935795097056",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "6e93a9dba6d0a4db3922",
       "platform": "Weibo",
       "source": "Weibo @雪中飞",
@@ -2217,7 +3524,8 @@
       "titleEnglish": "Congratulations to @ BabyMinghao for boarding and waiting for 10 users to receive the [Hou Minghao Q Edition Ski Pack]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
       "excerptEnglish": "Congratulations to @ BabyMinghao for boarding and waiting for 10 users to receive the [Hou Minghao Q Edition Ski Pack]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "581b5be32d37b480bc95",
@@ -2237,7 +3545,8 @@
       "titleEnglish": "Congratulations to 5 users, including Ming Hao and the little kiwi fruit, for obtaining the [Flying in the Snow Winter Ski Gift Box]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
       "excerptEnglish": "Congratulations to 5 users, including Ming Hao and the little kiwi fruit, for obtaining the [Flying in the Snow Winter Ski Gift Box]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "4725ee10148d2f39dab6",
@@ -2257,7 +3566,36 @@
       "titleEnglish": "Congratulations to @ HaoKe XingChen 1 user for obtaining [Hou MingHao's pro-signature]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
       "excerptEnglish": "Congratulations to @ HaoKe XingChen 1 user for obtaining [Hou MingHao's pro-signature]. Weibo official only lottery tool @ Weibo lottery platform to supervise this lottery, the results are fair and effective. Public link:",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
+    },
+    {
+      "id": "92d85c567be2e9a6b451",
+      "platform": "Weibo",
+      "source": "Weibo @Jessie_嘉鱼小友",
+      "title": "@侯明昊 《雨天》我的入坑曲。第一次听见侯明昊唱《雨天》，眼泪瞬间漫上眼眶。钢琴声缓缓响起，他开口的那一刻，情绪直接破防。原来有些歌，不是歌动人，是唱歌的人，和台下满怀期待的我们。“你能体谅我有雨天”这一刻所有情绪都有了归处。人总有属于自…",
+      "excerpt": "侯明昊 @侯明昊 《雨天》我的入坑曲。第一次听见侯明昊唱《雨天》，眼泪瞬间漫上眼眶。钢琴声缓缓响起，他开口的那一刻，情绪直接破防。原来有些歌，不是歌动人，是唱歌的人，和台下满怀期待的我们。“你能体谅我有雨天”这一刻所有情绪都有了归处。人总有属于自己的雨天，藏着疲惫，遗憾和难言的心事。允许自己短暂脆弱，听完再和生活和解。（图源见水印） #歌手侯明昊# #侯明昊# 北京·五棵松 Jessie_嘉鱼小友的微博视频",
+      "images": [
+        "https://wx3.sinaimg.cn/orj480/812b8e67ly1iird6cp3toj20u01900uq.jpg"
+      ],
+      "videos": [
+        {
+          "id": "256973dd570562c30e16b081",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c4f822ecefbb0ddf2d038a5a.jpg",
+          "duration": 157.315,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/256973dd570562c30e16b081.mp4"
+        }
+      ],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-05T15:49:47+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5361920741738810",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "20e304807ae104600457",
@@ -2372,7 +3710,8 @@
       "titleEnglish": "# qina Yuanqi Academy box # QJ5226 redefines the new silhouette of \"literary relaxation\" to outline the retro literary and artistic tone in an elliptical and smooth frame, and naturally decorates the face with light and soft lines. Gradient triangle back temple leg design, three-dimensional curved precise fit to the head, bid farewell to wear the burden for a long time, to achieve stable wear and light body feeling. # qina chasing light encounter # #...",
       "excerptEnglish": "# qina Yuanqi Academy box # QJ5226 redefines the new silhouette of \"literary relaxation\" to outline the retro literary and artistic tone in an elliptical and smooth frame, and naturally decorates the face with light and soft lines. The gradient triangle back is designed to fit the head accurately in a three-dimensional curved shape, farewell to the burden of wearing for a long time, and achieve stable wear and lightweight body feeling. # qina chasing light meets # # qina eyewear brand spokesperson Hou Minghao #",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "b39797688bf5874e8a34",
@@ -2394,7 +3733,8 @@
       "titleEnglish": "# Qina literary and artistic small round frame # QJ5228 \"warm and relaxed\" new arc, round frame type with retro soft background, TR material gentle and gentle, simple curved outline to gently close the face shape, triangle back design temple legs, flick external expansion, fit the head shape, light and flexible to support the whole day. # Qina chasing light # # Qina glasses...",
       "excerptEnglish": "# Qina literary and artistic small round frame # QJ5228 \"warm and relaxed\" new arc, round frame type with retro soft background, TR material gentle and gentle, simple curved outline to gently close the face shape, triangle back design temple legs, flick external expansion, fit the head shape, light and flexible to support the whole day. # Qina chasing the light # # Qina eyewear brand spokesperson Hou Minghao #",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "9d462c7d6c424b7c1df5",
@@ -2416,7 +3756,8 @@
       "titleEnglish": "# Qina Vintage Half Frame # QJ5220 defines' New Trendy Resilience 'with a half frame dot. Up to the vintage classic point, it is mixed with high elastic nylon material to create a trendy outline; the temple leg has a built-in elastic ferrule, which is flexible to fit along a variety of head shapes, pliable and resistant to deformation, and stable to wear without slipping. Half vintage, half trendy, unconstrained style. # Qin...",
       "excerptEnglish": "# Qina Vintage Half Frame # QJ5220 defines' New Trendy Resilience 'with a half frame dot. Up to the vintage classic point, it is mixed with high elastic nylon material to create a trendy outline; the temple leg has a built-in elastic ferrule, which is flexible to fit along a variety of head shapes, pliable and resistant to deformation, and stable to wear without slipping. Half vintage, half trendy, so that style is not constrained. # Qina chasing the light # # Qina eyewear brand spokesperson Hou Minghao #",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "3d9ca216e9a0dd6da855",
@@ -2436,7 +3777,8 @@
       "titleEnglish": "What is the best gift for Tanabata? Let's hear what @ Hou Minghao has to say ~ # Qina eyewear brand spokesperson Hou Minghao # # Qina chasing light meets # Hou Minghao Qina Weibo video of the glasses",
       "excerptEnglish": "What is the best gift for Tanabata? Let's hear what @ Hou Minghao has to say ~ # Qina eyewear brand spokesperson Hou Minghao # # Qina chasing light meets # Hou Minghao Qina Weibo video of the glasses",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "c4d3cad9f9ea76b037a3",
@@ -2456,7 +3798,8 @@
       "titleEnglish": "Meet Pet Eye College, \"Hao\" wants to meet you, the summer is over, the style is first [type], the new semester is about to start, the lens is in place, the concave shape keeps up with Hou Minghao's footsteps, seizes the wind at the end of the summer, enters early autumn in advance, and takes a picture together. # Qina chasing the light # # Qina eyewear brand spokesperson Hou Minghao # Qina Weibo of the glasses...",
       "excerptEnglish": "Meet Pet Eye College, \"Hao\" wants to meet you, the summer is over, the style is first [type], the new semester is about to start, the lens is in place, the concave shape keeps up with Hou Minghao's footsteps, seizes the wind at the end of the summer, enters early autumn in advance, and takes a picture together. # Qina chasing the light # # Qina eyewear brand spokesperson Hou Minghao # Qina Weibo video of the glasses",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "b523cd5370ce9d046da4",
@@ -2512,6 +3855,27 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "5e62e8421c27d3f31acc",
+      "platform": "Weibo",
+      "source": "Weibo @y0n9茵茵茵",
+      "title": "不留遗憾 北京见 @侯明昊",
+      "excerpt": "侯明昊 不留遗憾 北京见 @侯明昊",
+      "images": [
+        "https://wx4.sinaimg.cn/mw2000/6a833ec8gy1iiqkgktdi1j20zk25979t.jpg",
+        "https://wx1.sinaimg.cn/mw2000/6a833ec8gy1iiqkgk3ne2j20xi20u43g.jpg"
+      ],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-04T23:15:30+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5361670522408556",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "e83bb710aef9f1f2e08f",
@@ -2570,6 +3934,24 @@
       "dateExact": false
     },
     {
+      "id": "52d9d0d5382541bbda09",
+      "platform": "Weibo",
+      "source": "Weibo @猕猴桃吃不饱",
+      "title": "#侯明昊北京演唱会加场# 哥哥，我为什么每次都抢不到🎫",
+      "excerpt": "#侯明昊北京演唱会加场# 哥哥，我为什么每次都抢不到🎫",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-04T18:11:06+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5361593921569343",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "dd6f977a1b80400b870c",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -2606,7 +3988,8 @@
       "titleEnglish": "# Jingdong Shoes and Boots Celebrity Walking Boulevard # Jingdong Shoes and Boots 11.11 Open the Jingdong app search [Shoes and Boots Celebrity Walking Boulevard] or click on the👉 web link, the landing page is powered by Aidou, the same style of stars and celebrity peripherals are drawn every day for free, let's generate electricity for Love ~ # Buy clothes on Jingdong # # Hou Mingtian Beauty Brand Spokesperson # Come to G...",
       "excerptEnglish": "# Jingdong Shoes and Boots Celebrity Walking Flower Road # Jingdong Shoes and Boots 11.11 Open the Jingdong app search [Shoes and Boots Celebrity Walking Flower Road] or click on the👉 web link. The landing page is powered by Aidou. Every day, there are many benefits such as the same style of star and the surrounding of star for free, and we generate power for love ~ # Buy clothes on Jingdong # # Hou Mingtian Beauty Brand Ambassadors # Come and get Hou Minghao The same good thing ~ # Hou Mingtian Beauty Brand Ambassadors # teenmix... Full text",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "fa9d5e2a86487c601c81",
@@ -2626,7 +4009,8 @@
       "titleEnglish": "Shoes are the wings, crossing the gap between reality and imagination. My fun copy is now open. I am very happy to be the spokesperson of the official Weibo brand of @ TianmeiYi. I am born with Haoqi. Play with myself and play with my own new style to go to the incredible \"Yi\" journey # Hou Ming Hao Tian MeiYi brand spokesperson # # teenmix # # TianmeiYi # # Born with Haoqi...",
       "excerptEnglish": "Shoes are the wings, crossing the gap between reality and imagination. My fun copy is now open. I am happy to be the spokesperson of the official @ Tianmei official Weibo brand. Born Haoqi, play with Beauty, customize and join me in a journey of customizing new styles # Hou Minghao Tianmei brand spokesperson # # teenmix Tianmei # # Born Haoqi to play Beauty Custom # # Tmall Brand Super Membership Day # Hou Minghao's Weibo video",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "c0a5bed3ed964be8e44f",
@@ -2651,7 +4035,8 @@
       "titleEnglish": "In the winter, with the Hoka brand spokesperson @ Hou Minghao breaking the winter silence, 🌰Hoka waterproof thickened down jacket warm chocolate fluffy and lightweight with soft touch, waterproof and moisture-proof, wind and rain resistant 750 goose down with 90% velvet content, wrapped in velvet warmth 🫒Tor Summit...",
       "excerptEnglish": "In the winter, the \"Hou\" rash style follows the Hoka brand spokesperson @ Hou Minghao to break the winter silence, highlighting the fresh personality 🌰Hoka waterproof thickened down jacket warm chocolate color fluffy and lightweight with a soft touch, waterproof and moisture-proof, wind and rain resistant 750 pungent goose down with 90% velvet content, wrapped in velvet warmth 🫒Tor Summit FLD black/ancient olive color deep color precipitation retro style, decorated with metal hook and button details to travel through the city,... Full text",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "2595cba4e3aa2d1921c4",
@@ -2671,7 +4056,8 @@
       "titleEnglish": "Always sincere, always shining! Wish @ Hou Minghao a happy birthday. May all you encounter be sweet and all you do be safe ~ # Pearl # will also accompany you to continue to release fun love and be unique.",
       "excerptEnglish": "Always sincere, always shining! Wish @ Hou Minghao a happy birthday. May all you encounter be sweet and all you do be safe ~ # Pearl # will also accompany you to continue to release fun love and be unique.",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "0ed73322cede140ad984",
@@ -2693,7 +4079,8 @@
       "titleEnglish": "# qina chasing light meets # Hao shipping party to open Qina new products, @ Hou Minghao's new limited edition immediately shines on the online🌟 Hao transport portal👉🏻: web link waits for you to start the party together ~ Hou Minghao # qina eyewear brand spokesperson Hou Minghao # # comewithqina #",
       "excerptEnglish": "# qina chasing light meets # Hao shipping party to open Qina new products, @ Hou Minghao's new limited edition immediately shines on the online🌟 Hao transport portal👉🏻: web link waits for you to start the party together ~ Hou Minghao # qina eyewear brand spokesperson Hou Minghao # # comewithqina #",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "9fbfe9980ebfeab3621b",
@@ -2713,7 +4100,8 @@
       "titleEnglish": "In the 💚midsummer to the birthday, may the new year's eyes remain bright and sincere, free to go to every scene of love, and what you see is gentle scenery. Qina's glasses are fortunate to be with her and look forward to continuing to accompany her every sparkle. 🎂Happy Birthday to @ Hou Minghao! 💌Qina \"Pet Eye\" Academy Program is about to open, super interactive benefits await everyone, please continue to close...",
       "excerptEnglish": "In the 💚midsummer to the birthday, may the new year's eyes remain bright and sincere, free to go to every scene of love, and what you see is gentle scenery. Qina's glasses are fortunate to be with her and look forward to continuing to accompany her every sparkle. 🎂Happy Birthday to @ Hou Minghao! 💌Qina's \"Pet Eye\" Academy Program is about to open. Many interactive benefits are waiting for everyone. Stay tuned for more exciting activities ~ # QinaCheckout #... More",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "d5cfcd8baace531c2337",
@@ -2810,7 +4198,8 @@
       "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 当心跳触达同频的一瞬 「属于我们的…」北京，再见一面！ 侯明昊「属于我们的…」巡回演唱会 北京·收官站 加场 预售即将…",
       "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 当心跳触达同频的一瞬 「属于我们的…」北京，再见一面！ 侯明昊「属于我们的…」巡回演唱会 北京·收官站 加场 预售即将开启 ⏰购票时间：11月7日 13:18 🎫官方购票平台： @大麦APP",
       "titleEnglish": "🥝 Hou Minghao's concert tour belongs to us | @ Hou Minghao's concert belongs to our concert tour belongs to our concert tour belongs to our concert | @ Hou Minghao's concert belongs to our concert | @ Hou Minghao's concert belongs to our concert | @ Hou Minghao Hou Minghao \"Belongs to Us...\" Concert Tour Beijing · Closing Station Plus Pre-sale Coming Soon...",
-      "excerptEnglish": "Hou Minghao 🥝 Hou Minghao belongs to our tour concert Hou Minghao's concert | @ Hou Minghao's concert Hou Minghao's concert When the heartbeat touches the same frequency, \"It belongs to us...\" Beijing, see you again! Hou Minghao \"Belongs to Us...\" Concert Tour Beijing · Finishing station plus pre-sale is about to open ⏰ Ticket purchase time: November 7th, 13:18 🎫Official ticket purchase platform: @ barley app"
+      "excerptEnglish": "Hou Minghao 🥝 Hou Minghao belongs to our tour concert Hou Minghao's concert | @ Hou Minghao's concert Hou Minghao's concert When the heartbeat touches the same frequency, \"It belongs to us...\" Beijing, see you again! Hou Minghao \"Belongs to Us...\" Concert Tour Beijing · Finishing station plus pre-sale is about to open ⏰ Ticket purchase time: November 7th, 13:18 🎫Official ticket purchase platform: @ barley app",
+      "sourceCategory": "Official"
     },
     {
       "id": "89fe4e0b093612d9b34e",
@@ -2833,7 +4222,8 @@
       "titleEnglish": "\"We\", see you again # Hou Minghao's concert tour # # Weibo season #",
       "excerptEnglish": "\"We\", see you again # Hou Minghao's concert tour # # Weibo season #",
       "videos": [],
-      "dateExact": true
+      "dateExact": true,
+      "sourceCategory": "Official"
     },
     {
       "id": "4d2f0a036d6595850308",
@@ -2893,7 +4283,8 @@
       "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 每一段奔赴，终有回响 每一次重逢，皆有意义 侯明昊「属于我们的…」巡回演唱会 北京·收官站 「预售售罄」 我们北京见！",
       "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 每一段奔赴，终有回响 每一次重逢，皆有意义 侯明昊「属于我们的…」巡回演唱会 北京·收官站 「预售售罄」 我们北京见！",
       "titleEnglish": "🥝 Hou Minghao belongs to our concert tour Hou Minghao belongs to our concert tour | @ Hou Minghao belongs to our concert tour | @ Hou Minghao belongs to our concert tour, we will see you in Beijing after every visit and every reunion, it makes sense that Hou Minghao's \"Belongs to Us...\" tour Beijing · Closing Station \"Pre-sale Sold Out\"!",
-      "excerptEnglish": "Hou Minghao 🥝 Hou Minghao belongs to our tour concert Hou Minghao Hou Minghao | @ Hou Minghao Hou Minghao Hou Minghao Hou Minghao Hou Minghao Every stage of the tour, there is a reverberation Every reunion, it makes sense Hou Minghao's \"Belongs to Us...\" tour Beijing · Closing station \"Pre-sale sold out\" We will see you in Beijing!"
+      "excerptEnglish": "Hou Minghao 🥝 Hou Minghao belongs to our tour concert Hou Minghao Hou Minghao | @ Hou Minghao Hou Minghao Hou Minghao Hou Minghao Hou Minghao Every stage of the tour, there is a reverberation Every reunion, it makes sense Hou Minghao's \"Belongs to Us...\" tour Beijing · Closing station \"Pre-sale sold out\" We will see you in Beijing!",
+      "sourceCategory": "Official"
     },
     {
       "id": "ca90de51454e494721a6",
@@ -3021,7 +4412,8 @@
       "titleEnglish": "In the winter,✨ Hou Minghao, the same style of down jacket, put in place the atmosphere of the first snow. He refused the cold breeze to fill his neck with bloated feeling. The✨ K3 cold gear is adapted to ‑ 5 ‑ 10 ℃ urban snow play, and the upper body is light and unburdened. Warm core matrix far-infrared locking temperature, warm and close-fitting 40d nylon checkered fabric resistant to wind and snow, high-efficiency anti-drilling fleece. 90% new national standard duck down, 650 high fluffy, showing...",
       "excerptEnglish": "In the winter,✨ Hou Minghao, the same style of down jacket, put in place the atmosphere of the first snow. He refused the cold breeze to fill his neck with bloated feeling. The✨ K3 cold gear is adapted to ‑ 5 ‑ 10 ℃ urban snow play, and the upper body is light and unburdened. Warm core matrix far-infrared locking temperature, warm-fitting 40d nylon square fabric resistant to wind and snow, high-efficiency anti-drilling fleece. 90% new national standard duck down, 650 high fluffy, slim and not bulky multicolor unisex wear, Hou Minghao the same style, first snow... full text",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "7318096295bc677b1d2b",
@@ -3041,7 +4433,8 @@
       "titleEnglish": "As an umbrella, you can see the mountains and the sea. Twenty years ago, you opened the page under the light, the darkness of Qinling, the cold fog of the bronze door, the heavy rain of the snake marsh, the storm of the sand sea, a curious spectacle unfolded in your mind. In those years, stories were far away on paper, and you were a teenager under a lamp.✨ Twenty years later, you're no longer just a reader, you're packing your bags and thinking...",
       "excerptEnglish": "As an umbrella, you can see the mountains and the sea. Twenty years ago, you opened the page under the light, the darkness of Qinling, the cold fog of the bronze door, the heavy rain of the snake marsh, the storm of the sand sea, a curious spectacle unfolded in your mind. In those years, stories were far away on paper, and you were a teenager under a lamp.✨ Twenty years later, you are no longer just a reader. You start packing your bags and want to see the snow in the clouds and rain down on the snake marsh.?...",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "db1f767f2cd901a84163",
@@ -3068,7 +4461,8 @@
       "titleEnglish": "TEENMIX | Tote bag suede & old-fashioned printed body, showing the old style of the bag is quite broad, casual and comes with modern aerospace detachable tassel hanging, changing fashionable details # teenmix # # Tote bag # # Tote bag #",
       "excerptEnglish": "TEENMIX | Tote bag suede & old-fashioned printed body, showing the old style of the bag is quite broad, casual and comes with modern aerospace detachable tassel hanging, changing fashionable details # teenmix # # Tote bag # # Tote bag #",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "b38de0ff3cc0258527c4",
@@ -3088,7 +4482,8 @@
       "titleEnglish": "Travel in the same style as Xiaohou! If you can only take one pair of shoes when traveling, it must be the same Tian Mei Sunset Avenue western boots with fine leather and suede cowhide splicing, the vintage feeling is full of built-in pig leather insole, the upper foot is soft and sticky, and the walk is not tireless, taking into account the trendy appearance and comfortable feeling of the footWalking in the city, traveling a pair of boots to get things done # Hou Minghaotian...",
       "excerptEnglish": "Travel in the same style as Xiaohou! If you can only take one pair of shoes when traveling, it must be the same Tianmei Sunset Avenue western boots with fine leather and suede cowhide splicing. The vintage feeling is full of built-in pig leather insole, and the soft and sticky foot walks are not tired of taking into account the fashionable sense of appearance and comfort. City wild roaming, traveling A pair of boots # Hou Minghao Tianmei brand spokesperson # # teenmix Tianmei # # Follow the wind when you are small #... Full text",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "9777c0767334d2b7449e",
@@ -3108,7 +4503,8 @@
       "titleEnglish": "Xiao Hou's commuting shoes are really easy to wear and fit! As expected, it is the commuter father's shoes recommended by Xiaohou. It is beautiful and comfortable. The design of the double laces breaks the routine. It comes with identification, dark gray, old tones, vintage and durable. It is suitable for the rubber soft sole of the autumn and winter atmosphere. It is not easy to get tired from walking for a long time, and it is easy to wear for commuting for 5 minutes. It is comfortable and stylish # Hou Minghaotian Beauty Brand Spokesperson #...",
       "excerptEnglish": "Xiao Hou's commuting shoes are really easy to wear and fit! As expected, it is the commuter father's shoes recommended by Xiaohou. It is beautiful and comfortable. The design of the double shoelaces breaks the routine. It comes with identification, dark gray, old tones, vintage and durable. It is suitable for the soft sole of rubber in the autumn and winter atmosphere. It is not easy to get tired from walking for a long time, and it is easy to wear for commuting for 5 minutes. It is comfortable and stylish. Huming Haotian Beauty Brand spokesperson teenmix Tianmei will follow Xiaohou to chase the wind... Full text",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "42a9cd93a22e3626bb03",
@@ -3128,7 +4524,8 @@
       "titleEnglish": "The weather is getting cooler, wear Tian Mei Yi Warm Sheep Wool Shoes 5G into the fall and winter soft plush lock warm, warm walking with the foot feeling soft and comfortable, the shoe body is not tiring, the lamb decoration is cute and pleasing, the all-match autumn and winter city walk relaxed interpretation Since the new style is from now until the end of the month, fans of the interactive list TOP1-TOP4 can get a total peripheral gift & …",
       "excerptEnglish": "The weather is getting cooler. Wear Tian Mei Warm Sheep Wool Shoes 5G into autumn and winter, soft and plush locks, warm walks, soft and comfortable feet, brutal walks, non-stop shoes, lambs, cute and pleasant decorations, all-match autumn and winter city walks, relaxed interpretation Since the new style is from now until the end of the month, fans of the interactive list TOP1-TOP4 can get a total peripheral gift & GISMOW peripheral gift. # HouMingHaoTian MeiYi brand spokesperson # # teenmix #... full text",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "9cd50d595df66701c055",
@@ -3158,7 +4555,8 @@
       "titleEnglish": "TEENMIX | The sculptor immediately resurrected the three-dimensional contour aesthetics, the boot shape is quite sharp and simple design language, the versatile and lean texture of the lambskin is selected, the soft and glutinous foot feeling passes through the love to drive the modern fresh air, and the market scene is seamlessly connected # teenmix # # TEMIYI fashion boots #",
       "excerptEnglish": "TEENMIX | The sculptor immediately resurrected the three-dimensional contour aesthetics, the boot shape is quite sharp and simple design language, the versatile and lean texture of the lambskin is selected, the soft and glutinous foot feeling passes through the love to drive the modern fresh air, and the market scene is seamlessly connected # teenmix # # TEMIYI fashion boots #",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "0511b9be110bbc8aff5b",
@@ -3178,7 +4576,8 @@
       "titleEnglish": "Congratulations to [10.1-10.31 Interaction List TOP1-TOP4] @ Xiangliu and Xuanxuan @ Qingyun straight up 3,000 meters @ teasing you is my treasure @ sunset westward - broken intestines people in the sky - get a total peripheral gift & spokesperson peripheral gift, please come to find a small day within 7 working days to claim it! Overdue winning qualification expired ~",
       "excerptEnglish": "Congratulations to [10.1-10.31 Interaction List TOP1-TOP4] @ Xiangliu and Xuanxuan @ Qingyun straight up 3,000 meters @ teasing you is my treasure @ sunset westward - broken intestines people in the sky - get a total peripheral gift & spokesperson peripheral gift, please come to find a small day within 7 working days to claim it! Overdue winning qualification expired ~",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "9fe2312e4daeb47965dc",
@@ -3198,7 +4597,8 @@
       "titleEnglish": "Haha's cp is too sweet [be careful with you] Thank you Xingying for warming the woolen shoes, it's too stylish!",
       "excerptEnglish": "Haha's cp is too sweet [be careful with you] Thank you Xingying for warming the woolen shoes, it's too stylish!",
       "videos": [],
-      "dateExact": false
+      "dateExact": false,
+      "sourceCategory": "Monitored Brand"
     },
     {
       "id": "83aad5d18e0af11f91a1",
@@ -3574,7 +4974,8 @@
       "titleEnglish": "Thank you @ ELLEMEN for giving shape to this encounter.",
       "excerptEnglish": "Thank you @ ELLEMEN for giving shape to this encounter.",
       "videos": [],
-      "dateExact": true
+      "dateExact": true,
+      "sourceCategory": "Official"
     },
     {
       "id": "a6c9487af66133d3ec44",
@@ -3983,6 +5384,24 @@
       "dateExact": false
     },
     {
+      "id": "b3c4ce38fef9b752c567",
+      "platform": "Weibo",
+      "source": "Weibo @猕猴桃吃不饱",
+      "title": "老室，你出息了",
+      "excerpt": "老室，你出息了",
+      "images": [],
+      "videos": [],
+      "category": "Unverified",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-02T20:58:43+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5360911324026209",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "8b7caeaadacd5c66bf78",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -4031,1026 +5450,6 @@
       "category": "X Update",
       "date": "2026-11-02T15:14:00+08:00",
       "url": "https://x.com/HMH_Record/status/2117153285711024378",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "b404badff801c8d7cd52",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: “When it comes to work, fate, and self-expression, Hou Minghao doesn’t seem to have any definitive answers just yet. But perhaps the meaning of wandering isn’t…",
-      "excerpt": "“When it comes to work, fate, and self-expression, Hou Minghao doesn’t seem to have any definitive answers just yet. But perhaps the meaning of wandering isn’t about reaching a particular destination as quickly as possible, but in continually discovering along the way how far he can go. As for where his next stop will be, he is still exploring. Th…",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/545aa6abba2796b26f37b622.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T15:13:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117152984018948467",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "bc902cec7944f53715d8",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: “When it comes to work, fate, and self-expression, Hou Minghao doesn’t seem to have any definitive answers just yet. But perhaps the meaning of wandering isn’t…",
-      "excerpt": "“When it comes to work, fate, and self-expression, Hou Minghao doesn’t seem to have any definitive answers just yet. But perhaps the meaning of wandering isn’t about reaching a particular destination as quickly as possible, but in continually discovering along the way how far he can go. As for where his next stop will be, he is still exploring. Th…",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/27a6e6db4c6f433a19e1678d.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T15:12:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117152769802932449",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "c38683812e3ddd18d1bd",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: “When it comes to work, fate, and self-expression, Hou Minghao doesn’t seem to have any definitive answers just yet. But perhaps the meaning of wandering isn’t…",
-      "excerpt": "“When it comes to work, fate, and self-expression, Hou Minghao doesn’t seem to have any definitive answers just yet. But perhaps the meaning of wandering isn’t about reaching a particular destination as quickly as possible, but in continually discovering along the way how far he can go. As for where his next stop will be, he is still exploring. Th…",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a9dd04e78a3fd69fa7e8d3c2.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T15:12:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117152906638159988",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "28279e216b4359bdfbde",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: ELLEMEN | Magazine Cover 261102 | \"ELLEMEN\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "ELLEMEN | Magazine Cover 261102 | \"ELLEMEN\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e4f595f491cbfb0f060b2aad.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T15:04:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117150805782680059",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "9f3fd703305dcdaf6b8d",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: \"The young man looks back, smiling as if to say, ‘Why aren’t you hurrying up and following me?’\" #HouMinghaoBelongsToUs2026 Concert Tour | Zhengzhou 261102 | \"…",
-      "excerpt": "\"The young man looks back, smiling as if to say, ‘Why aren’t you hurrying up and following me?’\" #HouMinghaoBelongsToUs2026 Concert Tour | Zhengzhou 261102 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 2, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-02T12:42:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117115061089210877",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "e8374baa3ce60d4981a5",
-      "platform": "Weibo",
-      "source": "天美意官方微博",
-      "title": "天美意官方微博 2026-11-02 11:19 来自 微博网页版 恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于…",
-      "excerpt": "天美意官方微博 2026-11-02 11:19 来自 微博网页版 恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于7个工作日内来找小天领取哦！逾期中奖资格失效哦~ 天美意🏜️旷野驿站快闪店登陆杭州 打卡侯明昊痛楼🥝解锁旷野新风 注册有礼、满赠礼遇🎁福利享不停 📍杭州西溪印象城，等你来玩[憧憬] [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&代言人周边礼一份。 #teenmix天美意##侯明昊天美意品牌代言人##天美意西部靴# ​​​​",
-      "images": [],
-      "category": "Endorsement",
-      "date": "2026-11-02T12:00:00+08:00",
-      "url": "https://sina.cn/media/1882778030",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "天美意官方微博 2026-11-02 11:19 来自 微博网页版 恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于…",
-      "excerptOriginal": "天美意官方微博 2026-11-02 11:19 来自 微博网页版 恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于7个工作日内来找小天领取哦！逾期中奖资格失效哦~ 天美意🏜️旷野驿站快闪店登陆杭州 打卡侯明昊痛楼🥝解锁旷野新风 注册有礼、满赠礼遇🎁福利享不停 📍杭州西溪印象城，等你来玩[憧憬] [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&代言人周边礼一份。 #teenmix天美意##侯明昊天美意品牌代言人##天美意西部靴# ​​​​",
-      "titleEnglish": "Tianmei official Weibo 2026-11-02 11:19 Congratulations from the Weibo web version [10.1-10.31 interactive list TOP1-TOP4] @ Xiang Liu and Xuan Xuan @ Qingyun straight up 3,000 meters @ teasing you is my treasure @ sunset west - broken intestine people in the sky - get to play the total surrounding gifts & spokesperson surrounding gifts 1 copy each, please in…",
-      "excerptEnglish": "Tianmei official microblogging 2026-11-02 11:19 Congratulations from the microblogging website version [10.1-10.31 interactive list TOP1-TOP4] @ Xiang Liu and Xuan Xuan @ Qingyun straight up 3,000 meters @ teasing you is my treasure @ sunset westward - broken intestines - get a total surrounding gift & a spokesperson surrounding gift 1 copy each, please come to the small day to collect it within 7 working days! Overdue winning eligibility expired ~ Tianmei🏜️ Wilderness Station pop-up shop landed in Hangzhou to unlock Hou Minghao Pain Building🥝 Unlock the wilderness fresh air registration gift, full of gifts and🎁 benefits Enjoy non-stop 📍Hangzhou Xixi Impression City, waiting for you to play [vision] [gift] From now until the end of the month, fans of the interactive list TOP1-TOP4 can get a total surrounding gift & spokesperson surrounding gift. # teenmix Tianmei # # Hou Minghao Tianmei brand spokesperson # # Tianmei Western Boots # ​​​​",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "6f8ff4a2f5d189cb43ac",
-      "platform": "Weibo",
-      "source": "CASETiFY",
-      "title": "CASETiFY 2026-11-02 10:00 来自 iPhone 14 Pro 与CASETiFY中国区首位代言人侯明昊 一起加入C门定制🎨 让毛孩子的调皮跳出相册，握在手心🐾 进入 CASETiFY 个性化贴纸定制工坊 三步Get…",
-      "excerpt": "CASETiFY 2026-11-02 10:00 来自 iPhone 14 Pro 与CASETiFY中国区首位代言人侯明昊 一起加入C门定制🎨 让毛孩子的调皮跳出相册，握在手心🐾 进入 CASETiFY 个性化贴纸定制工坊 三步Get同款定制玩法🪄 🖼️上传照片 🌟一键抠图 💓选择风格贴纸 灵感自由发挥，解锁无限创意✨ 点击图片“抄作业”⬇️看汪汪咪咪软萌集合🐈 现已登陆 ​",
-      "images": [],
-      "category": "Endorsement",
-      "date": "2026-11-02T12:00:00+08:00",
-      "url": "https://sina.cn/media/7728002071",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "CASETiFY 2026-11-02 10:00 来自 iPhone 14 Pro 与CASETiFY中国区首位代言人侯明昊 一起加入C门定制🎨 让毛孩子的调皮跳出相册，握在手心🐾 进入 CASETiFY 个性化贴纸定制工坊 三步Get…",
-      "excerptOriginal": "CASETiFY 2026-11-02 10:00 来自 iPhone 14 Pro 与CASETiFY中国区首位代言人侯明昊 一起加入C门定制🎨 让毛孩子的调皮跳出相册，握在手心🐾 进入 CASETiFY 个性化贴纸定制工坊 三步Get同款定制玩法🪄 🖼️上传照片 🌟一键抠图 💓选择风格贴纸 灵感自由发挥，解锁无限创意✨ 点击图片“抄作业”⬇️看汪汪咪咪软萌集合🐈 现已登陆 ​",
-      "titleEnglish": "CASETiFY 2026-11-02 10:00 From iPhone 14 Pro and Hou Minghao, the first spokesperson for CASETiFY in China, join the C-door customization🎨 to let the hairy child naughty jump out of the photo album and🐾 enter the CASETiFY personalized sticker customization workshop in the palm of your hand in three steps Get…",
-      "excerptEnglish": "CASETiFY 2026-11-02 10:00 From iPhone 14 Pro and Hou Minghao, the first spokesperson for CASETiFY in China, join the C-door customization to🎨 let the hairy child naughty jump out of the photo album, hold the palm of your hand and🐾 enter the CASETiFY personalized sticker customization workshop in three steps Get the same customized gameplay🪄 🖼️Upload photos 🌟One-click sketch 💓Choose a style Sticker Inspiration to play freely, unlock unlimited ideas✨ Click on the picture \"Copy homework\" to⬇️ see Wang Wang Mimi soft moe collection is🐈 now available ​",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "88a926da92d4eda5fe9f",
-      "platform": "Weibo",
-      "source": "侯明昊工作室",
-      "title": "2026-11-02 22:18 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 在渐暗的声场里 拼凑一段没有终点的桥段 ​",
-      "excerpt": "侯明昊工作室 2026-11-02 22:18 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 在渐暗的声场里 拼凑一段没有终点的桥段 ​",
-      "images": [],
-      "category": "Event",
-      "date": "2026-11-02T12:00:00+08:00",
-      "url": "https://sina.cn/media/5763552342",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "2026-11-02 22:18 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 在渐暗的声场里 拼凑一段没有终点的桥段 ​",
-      "excerptOriginal": "侯明昊工作室 2026-11-02 22:18 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 在渐暗的声场里 拼凑一段没有终点的桥段 ​",
-      "titleEnglish": "2026-11-02 22:18 🥝 # Hou Minghao [overstated] # # Hou Minghao's concert tour # Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert ​",
-      "excerptEnglish": "Hou Minghao Studio 2026-11-02 22:18 # Hou Minghao [overstated] # # Hou Minghao's concert tour 🥝 # Hou Minghao's concert # Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Mingha's concert ​",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "7fb9ac3afb38bd61bddf",
-      "platform": "Weibo",
-      "source": "侯明昊工作室",
-      "title": "2026-11-02 20:58 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 我们在音符缝隙里 守候新声起落 ​",
-      "excerpt": "侯明昊工作室 2026-11-02 20:58 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 我们在音符缝隙里 守候新声起落 ​",
-      "images": [],
-      "category": "Event",
-      "date": "2026-11-02T12:00:00+08:00",
-      "url": "https://sina.cn/media/5763552342",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "2026-11-02 20:58 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 我们在音符缝隙里 守候新声起落 ​",
-      "excerptOriginal": "侯明昊工作室 2026-11-02 20:58 #侯明昊[超话]# 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐙𝐡𝐞𝐧𝐠𝐳𝐡𝐨𝐮｜@侯明昊 𝙎𝙩𝙤𝙧𝙮 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙨 我们在音符缝隙里 守候新声起落 ​",
-      "titleEnglish": "2026-11-02 20:58 Minghao Hou [Super Topic] 🥝 Minghao Hou's \"Belong to Us\" Tour Concert Memories of Zhengzhou｜@Minghao Hou Story Continues We wait for new voices to rise and fall in the gaps between the notes ​",
-      "excerptEnglish": "Hou Minghao Studio 2026-11-02 20:58 # Hou Minghao [overstated] 🥝 # # Hou Minghao's concert tour # Hou Minghao's concert # Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert | @ Hou Minghao's concert ​",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "fa5483350c9223aad8a0",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Immortalis | Behind The Scene \"The Three Taoist from Maoshan\" 261102 | \"Immortalis (碧血蝉官博)\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "Immortalis | Behind The Scene \"The Three Taoist from Maoshan\" 261102 | \"Immortalis (碧血蝉官博)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 2, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-02T10:42:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117084981336170871",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "3d1511dcdbe1628d120a",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Xudong | Hou Minghao big screen ads 261102 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 [1/2]",
-      "excerpt": "Xudong | Hou Minghao big screen ads 261102 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 [1/2] — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/03065d95e0ba42bc4177a65b.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T10:23:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117080083114688777",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "695da1939243d4cc7706",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Xudong | Hou Minghao big screen ads 261102 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 [2/2]",
-      "excerpt": "Xudong | Hou Minghao big screen ads 261102 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 [2/2] — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a0be40c2de5db2057ffd8c79.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T10:23:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117080109085765758",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "11175bd5d1d5816151b9",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: \"Fall/Winter fun looks are ready to go!\" 261102 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "\"Fall/Winter fun looks are ready to go!\" 261102 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4099948b599a75069097dc54.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T10:16:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117078285180084495",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "2dd0abbc117cc1e16c74",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Open Taobao app and search \"咔嚓一口快乐来电\" for a surprise! 261102 | \"Lay's (乐事官方微博)\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "Open Taobao app and search \"咔嚓一口快乐来电\" for a surprise! 261102 | \"Lay's (乐事官方微博)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/aa80730f2bd11c499d5bb1cd.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T10:13:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117077555790717075",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "b347fc20949ac36cbbd2",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: CASETiFY x Hou Minghao 261102 \"CASETiFY\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "CASETiFY x Hou Minghao 261102 \"CASETiFY\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b21167a1e1026346eecf8b0e.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T10:11:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117077031032889748",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "d92b3ee1cef10985c81d",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 Cat mistook the lightstick for the mic and then looked around to see if anyone n…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 Cat mistook the lightstick for the mic and then looked around to see if anyone noticed 😭😭 don’t worry, baby, we all saw nothing. 🤣🤫 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-02T01:07:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116940148101501298",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "c1bd67633bbeff5ded0e",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @ncybear: The cutest ever, sweetest ever, most romantic, Hou Minghao 🐱🥝💕 #HouMinghaoBelongsToUs2026 #HouMinghao",
-      "excerpt": "RT @ncybear: The cutest ever, sweetest ever, most romantic, Hou Minghao 🐱🥝💕 #HouMinghaoBelongsToUs2026 #HouMinghao — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-02T00:58:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116937857868906631",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "af3d74149bdd42156ffc",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: \"See you in Beijing next time 🥝\" 261101 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
-      "excerpt": "\"See you in Beijing next time 🥝\" 261101 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 — @HMH_Record Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T23:37:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116917528387858647",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "2dcbb576de8714dc26c4",
-      "platform": "Weibo",
-      "source": "Weibo @侯明昊",
-      "title": "下次 北京见🥝 #微博演出季# 侯明昊的微博视频",
-      "excerpt": "下次 北京见🥝 #微博演出季# 侯明昊的微博视频",
-      "images": [
-        "https://wx4.sinaimg.cn/orj480/6d2b400bly1iin3j16p0jj20u0141alt.jpg"
-      ],
-      "category": "Video",
-      "date": "2026-11-01T23:12:48+08:00",
-      "url": "https://m.weibo.cn/status/5360582676972831",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "下次 北京见🥝 #微博演出季# 侯明昊的微博视频",
-      "excerptOriginal": "下次 北京见🥝 #微博演出季# 侯明昊的微博视频",
-      "titleEnglish": "See you next time in Beijing🥝 # Weibo Season # Hou Minghao's Weibo video",
-      "excerptEnglish": "See you next time in Beijing🥝 # Weibo Season # Hou Minghao's Weibo video",
-      "videos": [
-        {
-          "id": "bdbe8aded29dfbd4a339dd77",
-          "kind": "video",
-          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/496e9c121a5f2101d7da6009.jpg",
-          "duration": 28.746,
-          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/bdbe8aded29dfbd4a339dd77.mp4"
-        }
-      ],
-      "dateExact": true
-    },
-    {
-      "id": "53c209f7ba7fb9aa6d75",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @ncybear: Zhengzhou Day 2 - Here is the result of the thanking segment… 🐱: “Thank you to Hesong Media. Thank you.” 🥝: “Go bankrupt!!!” 🐱: 👀 “It’s okay, it’s my…",
-      "excerpt": "RT @ncybear: Zhengzhou Day 2 - Here is the result of the thanking segment… 🐱: “Thank you to Hesong Media. Thank you.” 🥝: “Go bankrupt!!!” 🐱: 👀 “It’s okay, it’s my company. Upcoming are other companies, everyone must thank them seriously, okay? Thank you to the event organizer, Youling Culture.” 🥝: “Go bankrupt!” 🐱: 😅 “It’s okay, it’s a company I’m…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T22:55:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116907051171610639",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "bd5e24c48a0fe8acf41a",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 31.10–01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop 💚 successfully finished zhengzhou day 1 and day 2 🥹 i really enjoyed every single…",
-      "excerpt": "31.10–01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop 💚 successfully finished zhengzhou day 1 and day 2 🥹 i really enjoyed every single moment — the new “endless” with the dance performance, that sexy black suit, two days of crying, energetic leopard on stage, and our two little cat angels in blue and pink 😭🪽 so many beau…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T22:02:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116893766028300692",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "2a0712a8180dcf6700d4",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @rnbnxian: 爱我还是他 부르고나서 또 그 타임이 돌아옴.....ㅋㅋㅋㅋㅋ근데 후명호 얼빡 진심존잘🫪🫪🫪🫪🫪🫪 🐱 누구사랑해야돼 누구사랑해야돼 그치 날사랑해야지 🐱 근데 나 사랑하면 혹시 내 작은 부탁하나만 들어줄수있어? 🥝 그랭!!!…",
-      "excerpt": "RT @rnbnxian: 爱我还是他 부르고나서 또 그 타임이 돌아옴.....ㅋㅋㅋㅋㅋ근데 후명호 얼빡 진심존잘🫪🫪🫪🫪🫪🫪 🐱 누구사랑해야돼 누구사랑해야돼 그치 날사랑해야지 🐱 근데 나 사랑하면 혹시 내 작은 부탁하나만 들어줄수있어? 🥝 그랭!!!… — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T21:55:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116891762421891576",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "8742f85720d5bfa0bf2d",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🩷🐈 today we got a pink kitten angel 😭🪽🩷 cat gang 97 club membership registration…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🩷🐈 today we got a pink kitten angel 😭🪽🩷 cat gang 97 club membership registration is still open, hurry and join before it’s too late!!! 🤣🐾 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T21:42:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116888672700395706",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "a0a734f91afafba2298d",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 REALLY SUMMONED ULTRAMAN ON STAGE 😭😭😭🤣 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs20…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 REALLY SUMMONED ULTRAMAN ON STAGE 😭😭😭🤣 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert #Ultraman — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T21:39:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116887969730855051",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "6ffc21f02d2a82cc0302",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: yesterday’s lucky draw prizes were SO GOOD 😭😭🌸📸🎫 1st lucky kiwi: a flower boutique 🌸 2nd lucky kiwi: a polaroid camera + a selfie of hmh with the kiwis 😭📸 3rd luc…",
-      "excerpt": "yesterday’s lucky draw prizes were SO GOOD 😭😭🌸📸🎫 1st lucky kiwi: a flower boutique 🌸 2nd lucky kiwi: a polaroid camera + a selfie of hmh with the kiwis 😭📸 3rd lucky kiwi: a ticket to Beijing final concert!!! 🎫😭 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T21:36:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116887002281041993",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "4aad31bef0167ca5b44c",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🤣 😂 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🤣 😂 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T21:04:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116879031841026530",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "ab088e1d8a63bd2c49f8",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @GianneSkyKiwiPH: Hou Minghao: \" Tao Ge at the scene let me hear your voices??\" He's absolutely calling all his fanboys tonight! hahahahhaha 😂 #HouMinghaoBelon…",
-      "excerpt": "RT @GianneSkyKiwiPH: Hou Minghao: \" Tao Ge at the scene let me hear your voices??\" He's absolutely calling all his fanboys tonight! hahahahhaha 😂 #HouMinghaoBelongsToUs2026 #HouMinghao #侯明昊 — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T20:43:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116873862248046619",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "3854e9b8d2ab88d5a5e3",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🤍 my mood was already so heavy after crying along with him… then came the “simon…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🤍 my mood was already so heavy after crying along with him… then came the “simon” performance… and suddenly i spotted two tiny little things peeking through his white shirt 😭😭 please let me recover first!!! 🤣🫠 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouCon…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T20:43:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116873862243873164",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "7a1f175d302faabc9328",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 honestly, i’m trying to cry along with him, but his beautiful face keeps distrac…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 honestly, i’m trying to cry along with him, but his beautiful face keeps distracting me 😭😭 how can someone look THIS beautiful even while crying??? please!!! 🥹🤏🏻 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T20:32:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116871018744565762",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "d0301dca4732344ad812",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🥹 our baby is crying his heart out… 😭😭 don’t cry, mi… ahhh, you deserve every bi…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🥹 our baby is crying his heart out… 😭😭 don’t cry, mi… ahhh, you deserve every bit of love coming your way. you deserve all the happiness, all the cheers, and all the love in this world. 🫂 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T20:30:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116870480141689139",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "2c4a1e22a26d38deade6",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🥹 whenever he sings “yuanzhou’s youth,” it feels like ZYZ comes alive in his hea…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🥹 whenever he sings “yuanzhou’s youth,” it feels like ZYZ comes alive in his heart all over again. you can almost feel dayao there 🥹🌧️ some characters never really leave us, and i think zhao yuanzhou will always be a part of him.🌧️ #HouMinghao #侯明昊 #HouMinghaoBelongs…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T20:18:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116867353480691980",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "bfbfc7d08a9b1f260b54",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🎤 “endless” full-stage cam ✨ #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #Zhengz…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🎤 “endless” full-stage cam ✨ #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert #Endless — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T20:00:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116862996366668162",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "80ff1d1487c06e558013",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 📸 His visual on the big screen… how is he this beautiful??? 😭 #HouMinghao #侯明昊 #…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 📸 His visual on the big screen… how is he this beautiful??? 😭 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T19:39:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116857629020709093",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "ba860e43a707ef639a59",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🎤 tonight’s vocal test with “sleeping by the wildfire”!!! 😭🎶 let’s see how loud…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🎤 tonight’s vocal test with “sleeping by the wildfire”!!! 😭🎶 let’s see how loud the zhengzhou crowd can sing for mi!!! #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T19:34:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116856410260852752",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "7402c0446fff04c308e4",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🎤 singing his own single, “how can i” 🥹always special hearing him perform his ow…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🎤 singing his own single, “how can i” 🥹always special hearing him perform his own songs live!!! #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T19:30:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116855439828889798",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "fb840d86600198d69cc3",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🎤 talk session 1: our mi showing off what he learned about the local dialect 😭🤏🏻…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 2 🎤 talk session 1: our mi showing off what he learned about the local dialect 😭🤏🏻 he’s really making an effort to connect with the local fans. so cute!!! 🥹 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T19:24:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116853781686305257",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "a83c7e333bd1f6226518",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 the moment simon starts playing, i’m instantly transported back to his singers…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 🎤 the moment simon starts playing, i’m instantly transported back to his singers stage days. so many memories, so many feelings… 🥹 this one will always have a special place in my heart. 💚 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert #Simon — @PopMing…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T17:04:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116818604788502685",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "799bb86fadcde5fcd747",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMHdataHQ",
-      "title": "HMH Data HQ: 📊 2026-11-01 [IG] ellemen cn cover previews 🆕️① ② ③ [IG] waladesignlab concert costume ④ like | comment | repost | share #HouMinghao #侯明昊",
-      "excerpt": "📊 2026-11-01 [IG] ellemen cn cover previews 🆕️① https://t.co/r1bnurFJaB ② https://t.co/p3d87rE1Og ③ https://t.co/BqHB08iZUP [IG] waladesignlab concert costume ④ https://t.co/Geq0naZYG7 like | comment | repost | share #HouMinghao #侯明昊 — @HMHdataHQ Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T16:48:00+08:00",
-      "url": "https://x.com/HMHdataHQ/status/2116814701644611717",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "1ab59ab215969a083c03",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: ELLEMEN Magazine | Video Teaser 261101 | \"ELLEMEN\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "ELLEMEN Magazine | Video Teaser 261101 | \"ELLEMEN\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T15:59:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116802364510523777",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "89efb4b75c3d2a657c90",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Brand Livestream Announcement | H&M on Tmall 🗓 November 3, 2026 🕒 19:00 CST 261101 | \"H&M\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "Brand Livestream Announcement | H&M on Tmall 🗓 November 3, 2026 🕒 19:00 CST 261101 | \"H&M\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T15:26:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116794083977138653",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "a44f970bf828fb368790",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: \"Can I touch the wings just once? Is that okay? Just once really! One second cool, one second cute ☺️\" #HouMinghaoBelongsToUs2026 Concert Tour | Zhengzhou 2611…",
-      "excerpt": "\"Can I touch the wings just once? Is that okay? Just once really! One second cool, one second cute ☺️\" #HouMinghaoBelongsToUs2026 Concert Tour | Zhengzhou 261101 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T15:11:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116790166685995283",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "fc547a36c49e19213cb0",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [3/3]",
-      "excerpt": "Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [3/3] — @HMH_Record Nov 1, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b8a4a01e90307f96f05d836b.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-01T14:04:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116773231915143395",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "e01c813538afdec2832d",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [1/3]",
-      "excerpt": "Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [1/3] — @HMH_Record Nov 1, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e31434f15f21aab338536d4.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-01T14:02:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116772800493175069",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "37e8fc1c265fd8996955",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [2/3]",
-      "excerpt": "Images from Hou Minghao's Monthly Letter for October 2026 (261101) #HouMinghao #후명호 #侯明昊 [2/3] — @HMH_Record Nov 1, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3185e02f4cdb7f7c4d4c38a0.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-01T14:02:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116772960082043039",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "061a2c18c9793062811a",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: 📨 Xiao Hou's Monthly Letter for October 2026 261101 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "📨 Xiao Hou's Monthly Letter for October 2026 261101 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/378204b873904c37c33b9bb0.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-01T13:45:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116768453420064832",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "fa65fc93d38083a4da11",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: RT @LemonAesthete: [ENG] 201031 #HouMinghao's emotional speech - Zhengzhou Day1 'Belongs to Us' Concert Tour. #侯明昊 #HouMinghaoBelongsToUs2026",
-      "excerpt": "RT @LemonAesthete: [ENG] 201031 #HouMinghao's emotional speech - Zhengzhou Day1 'Belongs to Us' Concert Tour. #侯明昊 #HouMinghaoBelongsToUs2026 — @HMH_Record Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T13:40:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116767217148965268",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "9d7373a92046cfece8df",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hey girl, how about a wave? wave~ Is it working?~ wave~ Is it working? #HouMinghaoBelongsToUs2026 Concert Tour 261101 | \"Hou Minghao Concert Tour 'Belongs to U…",
-      "excerpt": "Hey girl, how about a wave? wave~ Is it working?~ wave~ Is it working? #HouMinghaoBelongsToUs2026 Concert Tour 261101 | \"Hou Minghao Concert Tour 'Belongs to Us' \" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T13:39:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116767079609344047",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "6234040753584fb40320",
-      "platform": "Weibo",
-      "source": "侯明昊工作室",
-      "title": "2026-11-01 13:33 #侯明昊[超话]# 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。@侯明昊 ​",
-      "excerpt": "侯明昊工作室 2026-11-01 13:33 #侯明昊[超话]# 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。@侯明昊 ​",
-      "images": [],
-      "category": "Official",
-      "date": "2026-11-01T12:00:00+08:00",
-      "url": "https://sina.cn/media/5763552342",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "2026-11-01 13:33 #侯明昊[超话]# 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。@侯明昊 ​",
-      "excerptOriginal": "侯明昊工作室 2026-11-01 13:33 #侯明昊[超话]# 📨 #小侯的每月来信# 霜色漫过疏枝，漫染安静悠长的序章。@侯明昊 ​",
-      "titleEnglish": "2026-11-01 13:33 # Hou Minghao [super talk] 📨 # # Xiao Hou's monthly letter # frosted over the branches, dyeing the quiet and long prologue. @ Hou Minghao ​",
-      "excerptEnglish": "Hou Minghao Studio 2026-11-01 13:33 # Hou Minghao [super talk] 📨 # # Xiao Hou's monthly letter # frost over the branches, dyeing the quiet and long prologue. @ Hou Minghao ​",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "0ac35cbff6d608cab81d",
-      "platform": "Weibo",
-      "source": "天美意官方微博",
-      "title": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上#天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新…",
-      "excerpt": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上#天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&代言人周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ​",
-      "images": [],
-      "category": "Endorsement",
-      "date": "2026-11-01T12:00:00+08:00",
-      "url": "https://sina.cn/media/1882778030",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上#天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新…",
-      "excerptOriginal": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上#天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&代言人周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ​",
-      "titleEnglish": "Tianmei official microblogging 2026-11-01 17:30 From the microblogging website version, the weather is getting cooler. Wear # Tianmei Warm Sheep Wool Shoes 5G into the fall and winter, soft and plush locks, warm walking, soft and comfortable feet. The shoes are not tiresome, and the lambs are decorated to please, and the all-match autumn and winter city walk is relaxed and interpreted freely. New...",
-      "excerptEnglish": "Tianmei official microblogging 2026-11-01 17:30 From the microblogging website version of the weather gradually cooled, put on # Tianmei Warm Sheep Wool Shoes 5G into the fall and winter soft plush lock warm, warm walking with the foot feeling soft and comfortable, the shoe body decoration is cute and pleasing, all-match autumn and winter city walk loose interpretation From now until the end of the month, fans of the interactive list TOP1-TOP4 can get a gift for playing the total peripheral & spokesperson. # HouMingHaoTian MeiYi brand spokesperson # # teenmix # ​",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "96d691b84c1744244bd6",
-      "platform": "Weibo",
-      "source": "侯明昊",
-      "title": "2026-11-01 23:12 下次 北京见🥝 #微博演出季# ​",
-      "excerpt": "侯明昊 2026-11-01 23:12 下次 北京见🥝 #微博演出季# ​",
-      "images": [],
-      "category": "Official",
-      "date": "2026-11-01T12:00:00+08:00",
-      "url": "https://sina.cn/media/1831550987",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "2026-11-01 23:12 下次 北京见🥝 #微博演出季# ​",
-      "excerptOriginal": "侯明昊 2026-11-01 23:12 下次 北京见🥝 #微博演出季# ​",
-      "titleEnglish": "2026-11-01 23:12 See you next time in Beijing🥝 # Weibo show season # ​",
-      "excerptEnglish": "Hou Minghao 2026-11-01 23:12 See you next time in Beijing🥝 # Weibo performance season # ​",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "56fbee448e0af408ca75",
-      "platform": "Weibo",
-      "source": "天美意官方微博",
-      "title": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风…",
-      "excerpt": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&代言人周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ​",
-      "images": [],
-      "category": "Endorsement",
-      "date": "2026-11-01T12:00:00+08:00",
-      "url": "https://sina.cn/media/1882778030",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风…",
-      "excerptOriginal": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&代言人周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ​",
-      "titleEnglish": "Tianmei official microblogging 2026-11-01 17:30 From the microblogging web version, the weather is getting cooler. Wear Tianmei warm sheep woolen shoes 5G into the fall and winter, soft and plush locks, warm walking, soft and comfortable. The shoes are not tiring, and the little lamb decoration is cute and pleasing. The all-match autumn and winter city walk is relaxed and interpreted freely in the fresh air...",
-      "excerptEnglish": "Tianmei official microblogging 2026-11-01 17:30 From the microblogging website version, the weather is gradually cooling. Wear Tianmei Warm Sheep Wool Shoes 5G into the autumn and winter soft plush locking warmth. The warm walking foot feels soft and comfortable. The shoe body is decorated with cute and pleasing, and the all-match autumn and winter city walk is relaxed from now until the end of the month. From now until the end of the month, fans of the interactive list TOP1-TOP4 can get a gift for playing the total peripheral & spokesperson. # HouMingHaoTian MeiYi brand spokesperson # # teenmix # ​",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "56fbee448e0af408ca75",
-      "platform": "Weibo",
-      "source": "天美意官方微博",
-      "title": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风…",
-      "excerpt": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&GISMOW周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ​",
-      "images": [],
-      "category": "Endorsement",
-      "date": "2026-11-01T12:00:00+08:00",
-      "url": "https://sina.cn/media/1882778030",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "titleOriginal": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风…",
-      "excerptOriginal": "天美意官方微博 2026-11-01 17:30 来自 微博网页版 天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 [礼物]即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&GISMOW周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ​",
-      "titleEnglish": "Tianmei official microblogging 2026-11-01 17:30 From the microblogging web version, the weather is getting cooler. Wear Tianmei warm sheep woolen shoes 5G into the fall and winter, soft and plush locks, warm walking, soft and comfortable. The shoes are not tiring, and the little lamb decoration is cute and pleasing. The all-match autumn and winter city walk is relaxed and interpreted freely in the fresh air...",
-      "excerptEnglish": "Tianmei official microblogging 2026-11-01 17:30 From the microblogging website version, the weather is gradually cooling. Wear Tianmei Warm Sheep Wool Shoes 5G into the fall and winter soft plush locking temperature. The warm walk is accompanied by a soft and comfortable foot feeling. The shoe body is decorated with cute and pleasing, and the all-match autumn and winter city walk is relaxed from now until the end of the month. From now until the end of the month, fans of the interactive list TOP1-TOP4 can get a total peripheral gift & GISMOW peripheral gift. # HouMingHaoTian MeiYi brand spokesperson # # teenmix # ​",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "dc80ae4f4118226c64b2",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @Ani_is_happy: มีใครเอาไม้ตกแมวเข้าไปในฮอลรึปล่าว?",
-      "excerpt": "RT @Ani_is_happy: มีใครเอาไม้ตกแมวเข้าไปในฮอลรึปล่าว? — @PopMinghao Nov 1, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-01T10:49:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116724271078834518",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "adcd04b0596247bd5e10",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 📸 these hd pics from this fansite master OrangeMoon_侯明昊 are SO HOT and clear 🫠 #…",
-      "excerpt": "01.11.2026 | Hou Minghao「Belongs to Us」2026 Concert Tour — Zhengzhou Stop | Day 1 📸 these hd pics from this fansite master OrangeMoon_侯明昊 are SO HOT and clear 🫠 #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026 #ZhengzhouConcert — @PopMinghao Nov 1, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/48479bf443941b74f6191236.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-01T10:45:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2116723390518378727",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "6ed074cf57eca518e671",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao | Super Topic Post 261031 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
-      "excerpt": "Hou Minghao | Super Topic Post 261031 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 — @HMH_Record Oct 31, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-10-31T22:50:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116543427408273863",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "bb41c7d64693a792fb43",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: RT @ncybear: A very emotional confession… “But every time it’s a rainy day, I feel that we've been through so much together—not easy things. We've been through…",
-      "excerpt": "RT @ncybear: A very emotional confession… “But every time it’s a rainy day, I feel that we've been through so much together—not easy things. We've been through lots of supporting each other, encouraging each other, fought side by side, and walked to this very moment. Every moment, every process, actually, when it rains, and I'm alone looking out t…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-10-31T22:23:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2116536648188252334",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic",
