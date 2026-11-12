@@ -47,7 +47,7 @@ MOBILE_UA = (
 WEIBO_POST_LIMIT = 0
 WEIBO_MAX_AGE_DAYS = 60            # ignore Weibo posts older than this
 MAX_DETAIL_FETCHES_PER_RUN = 60    # extra requests used to get exact dates / full text
-WEIBO_PAGES_PER_ACCOUNT = 3           # page 1 can contain pinned/cached items; scan newer pages too
+WEIBO_PAGES_PER_ACCOUNT = 1           # Frequent scheduled runs: collect page 1 only
 MAX_BACKFILL_PER_RUN = 30          # old saved posts repaired per run (dates + videos)
 
 # Video / live photo caching. jsDelivr serves correct video MIME types + range requests
@@ -598,6 +598,7 @@ def weibo_cookies():
 
 
 def weibo_get_json(url, retries=2):
+    """Read Weibo JSON; do not retry authentication/challenge HTML responses."""
     if WEIBO_PAGE is None:
         raise RuntimeError("Browser session not available")
     last = None
@@ -606,23 +607,32 @@ def weibo_get_json(url, retries=2):
             response = WEIBO_PAGE.goto(url, wait_until="domcontentloaded", timeout=30000)
             if response is None:
                 raise RuntimeError("No response from Weibo")
-            if response.status in (403, 418, 432):
-                raise PermissionError(f"HTTP {response.status} (Weibo blocked this request)")
-            if response.status != 200:
-                raise RuntimeError(f"HTTP {response.status}")
+            status = response.status
+            content_type = response.headers.get("content-type", "unknown")
+            if status in (401, 403, 418, 429, 432):
+                raise PermissionError(f"HTTP {status}; access restricted (content-type: {content_type})")
+            if status != 200:
+                raise RuntimeError(f"HTTP {status}; content-type: {content_type}")
             body = (response.text() or "").strip()
             try:
-                return json.loads(body)
+                payload = json.loads(body)
             except ValueError:
-                try:
-                    return json.loads(re.sub(r"<[^>]+>", "", body))
-                except ValueError:
-                    raise RuntimeError(f"Non-JSON response (login/captcha page?): {body[:80]!r}")
+                # HTML pages are often authentication or bot challenges, not transient JSON errors.
+                if body.lower().startswith(("<!doctype html", "<html")) or "text/html" in content_type.lower():
+                    raise PermissionError(
+                        f"HTTP {status}; unexpected HTML response (content-type: {content_type}); "
+                        "possible login or verification page"
+                    )
+                raise RuntimeError(f"HTTP {status}; invalid JSON (content-type: {content_type})")
+            if not isinstance(payload, dict):
+                raise RuntimeError("Unexpected Weibo JSON structure")
+            return payload
         except PermissionError:
-            raise  # blocked: retrying only makes it worse
+            raise
         except Exception as error:
             last = error
-            time.sleep(1.5 * (attempt + 1))
+            if attempt < retries:
+                time.sleep(1.5 * (attempt + 1))
     raise RuntimeError(str(last))
 
 
@@ -897,6 +907,8 @@ def collect_sina_api_account(source_config):
     display_name = friendly_weibo_source(f"Weibo @{uid}")
     all_cards = []
     api_errors = []
+    pagination_status = "complete"
+    oldest_page_date = None
 
     # Explicit page and cache-buster prevent a stale first-page response. Scanning several
     # pages also avoids missing a new post when pinned items occupy the first cards.
@@ -910,8 +922,10 @@ def collect_sina_api_account(source_config):
             payload = weibo_get_json(target_url)
         except Exception as error:
             api_errors.append(f"page {page_number}: {error}")
+            pagination_status = "partial" if page_number > 1 else "failed"
             if page_number == 1:
                 raise
+            print(f"  {display_name}: preserving posts from earlier pages; pagination stopped at page {page_number}")
             break
         if payload.get("ok") not in (1, "1", True):
             msg = str(payload.get("msg") or "")
@@ -922,6 +936,16 @@ def collect_sina_api_account(source_config):
         if not cards:
             break
         all_cards.extend(cards)
+        # Stop only when every dated post on the page is outside the retention window.
+        # A pinned old post alone must not stop collection of newer posts.
+        page_posts = list(weibo_mblogs_from_cards(cards))
+        dated = [parse_weibo_created_at(item.get("created_at"))[0] for item in page_posts]
+        dated = [datetime.fromisoformat(value) for value in dated if value]
+        if page_number > 1 and page_posts and len(dated) == len(page_posts) and all(
+            value < cutoff for value in dated
+        ):
+            print(f"  {display_name}: stopping pagination; page {page_number} is older than {WEIBO_MAX_AGE_DAYS} days")
+            break
         time.sleep(0.6)
 
     for mblog in weibo_mblogs_from_cards(all_cards):
@@ -1005,7 +1029,7 @@ def collect_sina_api_account(source_config):
             "collectionMethod": "Weibo API",
         })
     if skipped or too_old or api_errors:
-        print(f"  {display_name}: skipped {skipped} not mentioning Hou Minghao, {too_old} older than "
+        print(f"  {display_name}: pagination={pagination_status}; skipped {skipped} not mentioning Hou Minghao, {too_old} older than "
               f"{WEIBO_MAX_AGE_DAYS} days, kept {len(collected)}; API notices: {api_errors}")
     return collected
 
