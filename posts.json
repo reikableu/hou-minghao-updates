@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-12T11:04:09+08:00",
-  "status": "Completed: 37 sources successful, 0 failed",
+  "lastUpdated": "2026-11-12T11:32:18+08:00",
+  "status": "Completed: 46 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 20,
+    "translationsAdded": 19,
     "postsTranslatedThisRun": 10,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 20
+      "MyMemory": 19
     }
   },
   "sourceStatus": [
@@ -15,223 +15,277 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-12T10:53:15.900436+08:00"
+      "checkedAt": "2026-11-12T11:25:38.494737+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-12T10:53:32.279731+08:00"
+      "checkedAt": "2026-11-12T11:25:44.134920+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:53:47.984448+08:00"
+      "checkedAt": "2026-11-12T11:25:49.397838+08:00"
     },
     {
       "source": "Weibo @我嘞个胡豆er",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:53:50.310110+08:00"
+      "checkedAt": "2026-11-12T11:25:51.695504+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:54:05.798405+08:00"
+      "checkedAt": "2026-11-12T11:25:55.688352+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:54:08.134657+08:00"
+      "checkedAt": "2026-11-12T11:25:57.987371+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:54:10.455167+08:00"
+      "checkedAt": "2026-11-12T11:26:00.304430+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:54:12.784910+08:00"
+      "checkedAt": "2026-11-12T11:26:02.637258+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:54:26.388032+08:00"
+      "checkedAt": "2026-11-12T11:26:05.569575+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:54:28.784698+08:00"
+      "checkedAt": "2026-11-12T11:26:07.959493+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:54:44.279575+08:00"
+      "checkedAt": "2026-11-12T11:26:12.693796+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:54:46.643218+08:00"
+      "checkedAt": "2026-11-12T11:26:15.010025+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:55:00.219638+08:00"
+      "checkedAt": "2026-11-12T11:26:17.917863+08:00"
     },
     {
       "source": "Weibo @用户3923579353",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:55:13.775668+08:00"
+      "checkedAt": "2026-11-12T11:26:20.824095+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:55:27.477792+08:00"
+      "checkedAt": "2026-11-12T11:26:23.815636+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:55:41.251552+08:00"
+      "checkedAt": "2026-11-12T11:26:26.836327+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:55:43.594575+08:00"
+      "checkedAt": "2026-11-12T11:26:29.148308+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:55:45.922507+08:00"
+      "checkedAt": "2026-11-12T11:26:31.456521+08:00"
     },
     {
       "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:55:59.501941+08:00"
+      "checkedAt": "2026-11-12T11:26:34.358460+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:56:01.854567+08:00"
+      "checkedAt": "2026-11-12T11:26:36.703020+08:00"
+    },
+    {
+      "source": "Weibo @83颗鱼鱼ooO",
+      "status": "Success",
+      "itemsFound": 7,
+      "checkedAt": "2026-11-12T11:26:39.045231+08:00"
+    },
+    {
+      "source": "Weibo @85杯全糖草莓啵啵",
+      "status": "Success",
+      "itemsFound": 8,
+      "checkedAt": "2026-11-12T11:26:42.183052+08:00"
     },
     {
       "source": "Weibo @_Really_5366",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:56:04.198219+08:00"
+      "checkedAt": "2026-11-12T11:26:45.224906+08:00"
     },
     {
       "source": "Weibo @_光芒万丈的泥",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:56:17.784361+08:00"
+      "checkedAt": "2026-11-12T11:26:48.142265+08:00"
     },
     {
       "source": "Weibo @CSPM-HMH",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:56:31.407724+08:00"
+      "checkedAt": "2026-11-12T11:26:51.092775+08:00"
     },
     {
       "source": "Weibo @Jessie_嘉鱼小友",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-12T10:56:45.006974+08:00"
+      "checkedAt": "2026-11-12T11:26:54.022468+08:00"
     },
     {
       "source": "Weibo @Surryy",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-12T10:57:00.556452+08:00"
+      "checkedAt": "2026-11-12T11:26:58.752166+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:57:14.234571+08:00"
+      "checkedAt": "2026-11-12T11:27:01.762710+08:00"
     },
     {
       "source": "Weibo @y0n9茵茵茵",
       "status": "Success",
       "itemsFound": 6,
-      "checkedAt": "2026-11-12T10:57:35.611676+08:00"
+      "checkedAt": "2026-11-12T11:27:12.263884+08:00"
     },
     {
       "source": "Weibo @万千地萌主83",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:57:51.883215+08:00"
+      "checkedAt": "2026-11-12T11:27:17.867698+08:00"
+    },
+    {
+      "source": "Weibo @侯可爱的喵",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T11:27:20.761329+08:00"
+    },
+    {
+      "source": "Weibo @小糖糖0117",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T11:27:23.665770+08:00"
     },
     {
       "source": "Weibo @新浪明星",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T10:58:05.466495+08:00"
+      "checkedAt": "2026-11-12T11:27:26.553080+08:00"
     },
     {
       "source": "Weibo @昊圈在逃小桃",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-12T10:58:19.208501+08:00"
+      "checkedAt": "2026-11-12T11:27:29.613081+08:00"
+    },
+    {
+      "source": "Weibo @晨雨轩0803",
+      "status": "Success",
+      "itemsFound": 9,
+      "checkedAt": "2026-11-12T11:27:32.675903+08:00"
+    },
+    {
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "status": "Success",
+      "itemsFound": 10,
+      "checkedAt": "2026-11-12T11:27:35.735570+08:00"
+    },
+    {
+      "source": "Weibo @淘气图图好开心",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T11:27:38.899712+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-12T10:58:33.075119+08:00"
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T11:27:41.803130+08:00"
     },
     {
       "source": "Weibo @猕猴桃吃不饱",
       "status": "Success",
       "itemsFound": 7,
-      "checkedAt": "2026-11-12T10:58:50.145004+08:00"
+      "checkedAt": "2026-11-12T11:27:48.116812+08:00"
+    },
+    {
+      "source": "Weibo @眼底地小土逗",
+      "status": "Success",
+      "itemsFound": 7,
+      "checkedAt": "2026-11-12T11:27:51.192612+08:00"
     },
     {
       "source": "Weibo @空无一物大道光明",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-12T10:59:04.577600+08:00"
+      "checkedAt": "2026-11-12T11:27:54.355139+08:00"
     },
     {
       "source": "Weibo @织云弄影",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-12T10:59:18.475718+08:00"
+      "checkedAt": "2026-11-12T11:27:57.425759+08:00"
     },
     {
       "source": "Weibo @肆无忌惮喜欢你717",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-12T10:59:33.141405+08:00"
+      "checkedAt": "2026-11-12T11:28:01.344585+08:00"
+    },
+    {
+      "source": "Weibo @肉松小贝0803",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-12T11:28:04.386134+08:00"
     },
     {
       "source": "Weibo @若浮雲沒有煙花園總有花",
       "status": "Success",
       "itemsFound": 9,
-      "checkedAt": "2026-11-12T10:59:46.927277+08:00"
+      "checkedAt": "2026-11-12T11:28:07.279959+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 30,
-      "checkedAt": "2026-11-12T11:00:00.701546+08:00"
+      "checkedAt": "2026-11-12T11:28:10.381754+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -255,6 +309,8 @@
     "7541604928": "CASETiFY",
     "7857186930": "FADEAWAY_L",
     "7867201948": "PLUG-INPET",
+    "7996710333": "83颗鱼鱼ooO",
+    "2944368053": "85杯全糖草莓啵啵",
     "7810062354": "_Really_5366",
     "7894866385": "_光芒万丈的泥",
     "7172100137": "CSPM-HMH",
@@ -263,16 +319,253 @@
     "2155159645": "W中文版",
     "1786986184": "y0n9茵茵茵",
     "8225235603": "万千地萌主83",
+    "7967385687": "侯可爱的喵",
+    "9027620626": "小糖糖0117",
     "2921243620": "新浪明星",
     "8282489236": "昊圈在逃小桃",
+    "6248892132": "晨雨轩0803",
+    "6270404788": "桃桃鴎_明昊对视版",
+    "7882701115": "淘气图图好开心",
     "1731986465": "爱奇艺",
     "8315797056": "猕猴桃吃不饱",
+    "5848434893": "眼底地小土逗",
     "3036269867": "空无一物大道光明",
     "1155721140": "织云弄影",
     "6588614752": "肆无忌惮喜欢你717",
+    "7801878766": "肉松小贝0803",
     "2384801381": "若浮雲沒有煙花園總有花"
   },
   "posts": [
+    {
+      "id": "bab7ca38749de194b522",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "New Weibo update",
+      "excerpt": "侯明昊",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T11:14:14+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364388110272482",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "New Weibo update",
+      "excerptOriginal": "侯明昊",
+      "titleEnglish": "New Weibo update",
+      "excerptEnglish": "Hou Minghao"
+    },
+    {
+      "id": "6837dd068da4fa943dea",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Brand Event | Fino November 20, 2026 261112 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Brand Event | Fino November 20, 2026 261112 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4a1a43b59974a10719529fd1.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-12T11:14:02+08:00",
+      "url": "https://x.com/HMH_Record/status/2120716724085608802",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "882f0615d4bb722f08f8",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "老公北京见见见 #fino芬浓品牌代言人侯明昊#",
+      "excerpt": "侯明昊 老公北京见见见 #fino芬浓品牌代言人侯明昊#",
+      "images": [],
+      "videos": [],
+      "category": "Endorsement",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T11:13:17+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364387871196481",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "老公北京见见见 #fino芬浓品牌代言人侯明昊#",
+      "excerptOriginal": "侯明昊 老公北京见见见 #fino芬浓品牌代言人侯明昊#",
+      "titleEnglish": "My husband met Fino brand ambassador, Minghao Hou, in Beijing.",
+      "excerptEnglish": "Hou Minghao, husband, see you in Beijing. Fino brand ambassador Hou Minghao."
+    },
+    {
+      "id": "84646e65619620c8e14c",
+      "platform": "Weibo",
+      "source": "Weibo @83颗鱼鱼ooO",
+      "title": "好喜欢这个广告图 买买买",
+      "excerpt": "侯明昊 好喜欢这个广告图 买买买",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b775728dc565d5a3fd193385.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T11:10:54+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364387273509533",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "好喜欢这个广告图 买买买",
+      "excerptOriginal": "侯明昊 好喜欢这个广告图 买买买",
+      "titleEnglish": "I really like this ad image. Buy, buy, buy!",
+      "excerptEnglish": "Hou Minghao really likes this ad image. Buy, buy, buy!"
+    },
+    {
+      "id": "7c3e6b4b6da224846653",
+      "platform": "Weibo",
+      "source": "Weibo @空无一物大道光明",
+      "title": "#fino芬浓品牌代言人侯明昊#",
+      "excerpt": "#fino芬浓品牌代言人侯明昊#",
+      "images": [],
+      "videos": [],
+      "category": "Endorsement",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T11:10:19+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364387131163927",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#fino芬浓品牌代言人侯明昊#",
+      "excerptOriginal": "#fino芬浓品牌代言人侯明昊#",
+      "titleEnglish": "Fino Brand Ambassador, Minghao Hou",
+      "excerptEnglish": "Fino Brand Ambassador, Minghao Hou"
+    },
+    {
+      "id": "20cf6db88ede8e3818f2",
+      "platform": "Weibo",
+      "source": "Weibo @83颗鱼鱼ooO",
+      "title": "买买买 #fino芬浓品牌代言人侯明昊# 虽然前天才又买了",
+      "excerpt": "买买买 #fino芬浓品牌代言人侯明昊# 虽然前天才又买了",
+      "images": [],
+      "videos": [],
+      "category": "Endorsement",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T11:09:53+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364387015561473",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "买买买 #fino芬浓品牌代言人侯明昊# 虽然前天才又买了",
+      "excerptOriginal": "买买买 #fino芬浓品牌代言人侯明昊# 虽然前天才又买了",
+      "titleEnglish": "Buy, buy, buy! Fino brand ambassador, Hou Minghao. Even though I just bought some the day before yesterday.",
+      "excerptEnglish": "Buy, buy, buy! Fino brand ambassador Justin Hou. Even though I just bought some the day before yesterday."
+    },
+    {
+      "id": "751cb4c5360fb19e5fa4",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao New Pic | W Annual Gala 2026 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
+      "excerpt": "Hou Minghao New Pic | W Annual Gala 2026 261111 | \"W中文版\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/97712cade8223c599c6d52db.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-12T11:05:10+08:00",
+      "url": "https://x.com/HMH_Record/status/2120714491654733916",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "7077dd63fe3754443cff",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊工作室",
+      "title": "11月20日 @侯明昊 专属行程划重点📌 线下赴约，线上见面，桃妹们这次记得全程锁定！ ✨ 锁定 @fino芬浓官方微博 线下品牌活动 「芬浓HAO顺局」即将营业，和BOSS一起接住好顺气～ 🎁 惊喜周边也已就位 精致貌美的泡面吧唧、小卡…",
+      "excerpt": "11月20日 @侯明昊 专属行程划重点📌 线下赴约，线上见面，桃妹们这次记得全程锁定！ ✨ 锁定 @fino芬浓官方微博 线下品牌活动 「芬浓HAO顺局」即将营业，和BOSS一起接住好顺气～ 🎁 惊喜周边也已就位 精致貌美的泡面吧唧、小卡、干发巾，还有直播限定抱枕等你来解锁！ 📺 线下活动结束还有惊喜直播继续接力 更多互动、福利，记得蹲住直播间！ 小室已经把11月20日圈好啦⭕ 桃妹们记得锁定 @fino芬浓官方微博 ，一起赴约「芬浓HAO顺局」，周边和惊喜都别错过！ 网页链接 #fino芬浓品牌代言人侯明昊# #芬浓HAO顺局# #fino双效洗发露# #头皮发丝都要HAO状态#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a078fa0f1eb9c4145f753c8e.jpg"
+      ],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Official",
+      "date": "2026-11-12T11:00:32+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364384664387834",
+      "official": true,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "11月20日 @侯明昊 专属行程划重点📌 线下赴约，线上见面，桃妹们这次记得全程锁定！ ✨ 锁定 @fino芬浓官方微博 线下品牌活动 「芬浓HAO顺局」即将营业，和BOSS一起接住好顺气～ 🎁 惊喜周边也已就位 精致貌美的泡面吧唧、小卡…",
+      "excerptOriginal": "11月20日 @侯明昊 专属行程划重点📌 线下赴约，线上见面，桃妹们这次记得全程锁定！ ✨ 锁定 @fino芬浓官方微博 线下品牌活动 「芬浓HAO顺局」即将营业，和BOSS一起接住好顺气～ 🎁 惊喜周边也已就位 精致貌美的泡面吧唧、小卡、干发巾，还有直播限定抱枕等你来解锁！ 📺 线下活动结束还有惊喜直播继续接力 更多互动、福利，记得蹲住直播间！ 小室已经把11月20日圈好啦⭕ 桃妹们记得锁定 @fino芬浓官方微博 ，一起赴约「芬浓HAO顺局」，周边和惊喜都别错过！ 网页链接 #fino芬浓品牌代言人侯明昊# #芬浓HAO顺局# #fino双效洗发露# #头皮发丝都要HAO状态#",
+      "titleEnglish": "November 20th @Hou Minghao Exclusive Schedule Highlights📌 In-person meet-up, online gathering. Peach Girls, remember to stay tuned throughout! ✨ Stay tuned to @fino Official Weibo. The offline brand event \"Fino HAO Smooth Bureau\" is about to open. Join BOSS and catch the good vibes! 🎁 Surprise merchandise is also ready – exquisite and beautiful instant noodle keychains, small cards...",
+      "excerptEnglish": "November 20th @Hou Minghao Exclusive Schedule Highlights📌 In-person event, online meetup. Don't forget to tune in for the entire event, Peach Girls! ✨ Follow @fino Official Weibo The offline brand event \"Fino HAO Smooth Salon\" is about to open. Join the BOSS and embrace the smooth vibes~ 🎁 Surprise merchandise is also ready. Exquisite and beautiful instant noodle stickers, small cards, hair-drying towels, and a livestream-exclusive pillow are all waiting for you to unlock! 📺 After the offline event ends, there will be a surprise livestream to continue the fun. For more interactions and perks, remember to stay tuned to the livestream room! Xiao Shi has already circled November 20th.⭕ Fino fans, remember to follow @fino Official Weibo and join us at the \"Fino HAO Smooth Salon.\" Don't miss out on the merchandise and surprises! Web link: Fino brand ambassador Hou Minghao. Fino HAO Smooth Salon. Fino Dual-Action Shampoo. Both scalp and hair should be in HAO condition."
+    },
+    {
+      "id": "2f01f71dca68c5d753bb",
+      "platform": "Weibo",
+      "source": "Weibo @85杯全糖草莓啵啵",
+      "title": "“我有偷看你们的社交平台～” “谁喊的脱掉 ”“吐槽完还是给脱了 ” “每次我唱歌就在我耳朵狂轰乱炸～” “别以为我不知道你们的诡计 ” 怎么每场都有新笑点哈哈5g冲浪达人 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "excerpt": "“我有偷看你们的社交平台～” “谁喊的脱掉 ”“吐槽完还是给脱了 ” “每次我唱歌就在我耳朵狂轰乱炸～” “别以为我不知道你们的诡计 ” 怎么每场都有新笑点哈哈5g冲浪达人 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7ff15e52938c86e7fee0fbf3.jpg"
+      ],
+      "videos": [
+        {
+          "id": "d9c6d1e463ff2515b05c6731",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7ff15e52938c86e7fee0fbf3.jpg",
+          "duration": 40.1,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/d9c6d1e463ff2515b05c6731.mp4"
+        }
+      ],
+      "category": "Video",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T10:59:58+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364384522045896",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "“我有偷看你们的社交平台～” “谁喊的脱掉 ”“吐槽完还是给脱了 ” “每次我唱歌就在我耳朵狂轰乱炸～” “别以为我不知道你们的诡计 ” 怎么每场都有新笑点哈哈5g冲浪达人 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "excerptOriginal": "“我有偷看你们的社交平台～” “谁喊的脱掉 ”“吐槽完还是给脱了 ” “每次我唱歌就在我耳朵狂轰乱炸～” “别以为我不知道你们的诡计 ” 怎么每场都有新笑点哈哈5g冲浪达人 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "titleEnglish": "\"I've been secretly checking out your social media.\" \"Who said 'take it off'?\" \"After all the complaining, he still took it off.\" \"Every time I sing, it's like a bomb going off in my ears.\" \"Don't think I don't know what you're up to.\" How come there's a new joke in every episode? Haha. 5G Surfing Pro @Hou Minghao. Weibo video of 85 Cups Full-Sugar Strawberry Boba.",
+      "excerptEnglish": "\"I've been secretly checking out your social media.\" \"Who said 'take it off'?\" \"After all the complaining, he still took it off.\" \"Every time I sing, it's like a bomb going off in my ears.\" \"Don't think I don't know what you're up to.\" How come there's a new joke in every episode? Haha. 5G Surfing Pro @Hou Minghao. Weibo video of 85 Cups Full-Sugar Strawberry Boba."
+    },
+    {
+      "id": "3b10ac46591c7696a220",
+      "platform": "Weibo",
+      "source": "Weibo @83颗鱼鱼ooO",
+      "title": "看抖音桃妹们做的这种绿色花束戒指都好好看啊 心灵手巧",
+      "excerpt": "侯明昊 看抖音桃妹们做的这种绿色花束戒指都好好看啊 心灵手巧",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f546d3f3e8626be7597077b7.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T10:43:36+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364380403240323",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "看抖音桃妹们做的这种绿色花束戒指都好好看啊 心灵手巧",
+      "excerptOriginal": "侯明昊 看抖音桃妹们做的这种绿色花束戒指都好好看啊 心灵手巧",
+      "titleEnglish": "Look at these green flower bouquet rings made by the TikTok girls. They're so pretty and cleverly crafted.",
+      "excerptEnglish": "Hou Minghao, these green flower bouquets made by the TikTok girls are all so beautiful. They're so creative and skillful."
+    },
     {
       "id": "b1ff6c56543f4972f1e1",
       "platform": "Weibo",
@@ -394,6 +687,60 @@
       "excerptEnglish": "Hou Minghao Hou Minghao Anime Male"
     },
     {
+      "id": "f9e3e81da11156854972",
+      "platform": "Weibo",
+      "source": "Weibo @晨雨轩0803",
+      "title": "十天了，我才敢打开看这一段，依然 ～ #侯明昊属于我们的演唱会# @侯明昊 晨雨轩0803的微博视频",
+      "excerpt": "侯明昊 十天了，我才敢打开看这一段，依然 ～ #侯明昊属于我们的演唱会# @侯明昊 晨雨轩0803的微博视频",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/52a1c632079307c9c1e94277.jpg"
+      ],
+      "videos": [
+        {
+          "id": "45945455e8566015ab47ac8c",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/52a1c632079307c9c1e94277.jpg",
+          "duration": 295.799,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/45945455e8566015ab47ac8c.mp4"
+        }
+      ],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:53:08+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364367703147921",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "十天了，我才敢打开看这一段，依然 ～ #侯明昊属于我们的演唱会# @侯明昊 晨雨轩0803的微博视频",
+      "excerptOriginal": "侯明昊 十天了，我才敢打开看这一段，依然 ～ #侯明昊属于我们的演唱会# @侯明昊 晨雨轩0803的微博视频",
+      "titleEnglish": "It's been ten days, and I finally dared to watch this clip. Still... ~ Hou Minghao belongs to our concert @Hou Minghao Chen Yuxuan0803's Weibo video",
+      "excerptEnglish": "Hou Minghao It's been ten days, and I finally dared to watch this clip. Still... Hou Minghao belongs to our concert @Hou Minghao Chen Yuxuan0803's Weibo video"
+    },
+    {
+      "id": "73ca5e7c63ec7e6db153",
+      "platform": "Weibo",
+      "source": "Weibo @晨雨轩0803",
+      "title": "顶🔝",
+      "excerpt": "顶🔝",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:52:22+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364367513878731",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "顶🔝",
+      "excerptOriginal": "顶🔝",
+      "titleEnglish": "Top",
+      "excerptEnglish": "Top"
+    },
+    {
       "id": "085f17d0779335088067",
       "platform": "Weibo",
       "source": "Weibo @Jessie_嘉鱼小友",
@@ -418,6 +765,26 @@
       "excerptOriginal": "侯明昊 #歌手侯明昊# #侯明昊# 任何语言的形容都是多余的 @侯明昊 北京·五棵松",
       "titleEnglish": "Singer Hou Minghao. Hou Minghao. Any words of description are superfluous. @Hou Minghao Beijing · Wukesong",
       "excerptEnglish": "Hou Minghao Singer Hou Minghao Hou Minghao Words in any language are superfluous @Hou Minghao Beijing • Wukesong"
+    },
+    {
+      "id": "8be850605a2da1dadda4",
+      "platform": "Weibo",
+      "source": "Weibo @晨雨轩0803",
+      "title": "#侯明昊属于我们的巡回演唱会# 好好看",
+      "excerpt": "#侯明昊属于我们的巡回演唱会# 好好看",
+      "images": [],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:45:41+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364365828294081",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#侯明昊属于我们的巡回演唱会# 好好看",
+      "excerptOriginal": "#侯明昊属于我们的巡回演唱会# 好好看"
     },
     {
       "id": "ebc8e88c3d5d1748d516",
@@ -548,6 +915,24 @@
       "collectionMethod": "Weibo API",
       "titleOriginal": "今天是我关注超话的第300天，希望能继续伴你一路前行～",
       "excerptOriginal": "侯明昊 今天是我关注超话的第300天，希望能继续伴你一路前行～"
+    },
+    {
+      "id": "73cda8188ae1d3e734c9",
+      "platform": "Weibo",
+      "source": "Weibo @晨雨轩0803",
+      "title": "#侯明昊玉茗茶骨#",
+      "excerpt": "#侯明昊玉茗茶骨#",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T09:21:29+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364359742358417",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "859ce14d22fb7195a694",
@@ -702,6 +1087,24 @@
       "collectionMethod": "Weibo API"
     },
     {
+      "id": "dc7bf3fd33326fb4aa08",
+      "platform": "Weibo",
+      "source": "Weibo @晨雨轩0803",
+      "title": "#侯明昊属于我们的演唱会# 愿，如愿",
+      "excerpt": "#侯明昊属于我们的演唱会# 愿，如愿",
+      "images": [],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-12T07:16:42+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364328337506957",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "2dee2ed5c725e2e646c0",
       "platform": "Weibo",
       "source": "Weibo @若浮雲沒有煙花園總有花",
@@ -802,6 +1205,46 @@
       "collectionMethod": "Weibo API"
     },
     {
+      "id": "e8a767b487338b5103de",
+      "platform": "Weibo",
+      "source": "Weibo @晨雨轩0803",
+      "title": "巅峰潮流榜｜巅峰制作人认证 我已经成为了侯明昊lv23巅峰制作人，和我一起见证ta的巅峰之路！ 网页链接 @QQ音乐",
+      "excerpt": "巅峰潮流榜｜巅峰制作人认证 我已经成为了侯明昊lv23巅峰制作人，和我一起见证ta的巅峰之路！ 网页链接 @QQ音乐",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b5d861ad03a047f80e00f6e3.jpg"
+      ],
+      "videos": [],
+      "category": "Music",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T22:34:02+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364196801514656",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "38628abf4d4f35d8a779",
+      "platform": "Weibo",
+      "source": "Weibo @晨雨轩0803",
+      "title": "巅峰潮流榜｜巅峰制作人认证 我已经成为了侯明昊lv23巅峰制作人，和我一起见证ta的巅峰之路！ 网页链接 @QQ音乐",
+      "excerpt": "巅峰潮流榜｜巅峰制作人认证 我已经成为了侯明昊lv23巅峰制作人，和我一起见证ta的巅峰之路！ 网页链接 @QQ音乐",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ac80732e33a85bfe6b0fd04b.jpg"
+      ],
+      "videos": [],
+      "category": "Music",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T22:33:56+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364196776872096",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "1f7779462102028b968b",
       "platform": "Weibo",
       "source": "Weibo @若浮雲沒有煙花園總有花",
@@ -875,6 +1318,26 @@
       "collectionMethod": "Weibo API"
     },
     {
+      "id": "4ed9d2dfa9d1358cf3e7",
+      "platform": "Weibo",
+      "source": "Weibo @83颗鱼鱼ooO",
+      "title": "跟夜华姑父好正气的帅啊",
+      "excerpt": "侯明昊 跟夜华姑父好正气的帅啊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/366995a021e44302c23d2aee.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T21:43:52+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364184176397723",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "cc220504c6d3241214fc",
       "platform": "Weibo",
       "source": "Weibo @若浮雲沒有煙花園總有花",
@@ -907,7 +1370,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1f4b9e10142c999e333b3241.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/462ea3b9505810402d7d5ce0.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b9586afde63e41b03c5f9764.jpg",
-        "https://wx2.sinaimg.cn/mw2000/8e252e65ly1iiyk9uy6xxj20qo0vqq5o.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6bcb416d2e91b2010cf90c8e.jpg"
       ],
       "videos": [],
       "category": "Unverified",
@@ -1016,8 +1479,8 @@
       "title": "侯明昊 第一个小飞到位 #侯明昊# 北京·五棵松",
       "excerpt": "侯明昊 侯明昊 第一个小飞到位 #侯明昊# 北京·五棵松",
       "images": [
-        "https://wx2.sinaimg.cn/mw2000/002mEZHFly1iiyfzbk6n9j62dc35sqv508.jpg",
-        "https://wx2.sinaimg.cn/mw2000/002mEZHFly1iiyfzdlkccj62dc35su0y08.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a825d5965c687e39ac72186c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5a5157ecf48092b3d0af384d.jpg"
       ],
       "videos": [],
       "category": "Unverified",
@@ -1073,8 +1536,7 @@
       "title": "Brand Event Announcement | Snowflying November 21, 2026 Shijiazhuang 261111 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #侯明昊 #후명호",
       "excerpt": "Brand Event Announcement | Snowflying November 21, 2026 Shijiazhuang 261111 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e6602f767a72f467adce65b.jpg",
-        "https://pbs.twimg.com/media/HW1bCuhawAAEF2F?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e6602f767a72f467adce65b.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-11T17:38:35+08:00",
@@ -1084,6 +1546,27 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "42057c8df34ff79a98e3",
+      "platform": "Weibo",
+      "source": "Weibo @83颗鱼鱼ooO",
+      "title": "#侯明昊 家族中最受宠的小少爷# 大家看过一本民国小说吗 就是男主也是有几个姐姐 蓬莱客的海上华亭",
+      "excerpt": "#侯明昊 家族中最受宠的小少爷# 大家看过一本民国小说吗 就是男主也是有几个姐姐 蓬莱客的海上华亭",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/61c578808b68d512a6532709.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9ef65c06db8547fa977fcf86.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T17:33:03+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364121055005214",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "16bd2f989c79aeeb8d71",
@@ -1101,6 +1584,96 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "757876c05b46c3f73302",
+      "platform": "Weibo",
+      "source": "Weibo @83颗鱼鱼ooO",
+      "title": "#侯明昊 家族中最受宠的小少爷# 哈哈哈确实就是",
+      "excerpt": "#侯明昊 家族中最受宠的小少爷# 哈哈哈确实就是",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1d084a9f7ecfaff5101192a5.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T17:28:51+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364120000138610",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "e95a938f5c125cf5eb80",
+      "platform": "Weibo",
+      "source": "Weibo @晨雨轩0803",
+      "title": "#侯明昊 家族中最受宠的小少爷# 我那学习好，性情绪稳定，兴趣广泛，情商高的豪门小少爷～ @侯明昊",
+      "excerpt": "#侯明昊 家族中最受宠的小少爷# 我那学习好，性情绪稳定，兴趣广泛，情商高的豪门小少爷～ @侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7f86bca9cd3fb28fd780ccf8.jpg",
+        "https://wx2.sinaimg.cn/mw2000/006OTIiMly1iiyd6fbqg2j32dc35s7wj.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006OTIiMly1iiyd6igg0bj32dc35snpf.jpg",
+        "https://wx3.sinaimg.cn/mw2000/006OTIiMly1iiyd6leygbj32c0340b2a.jpg"
+      ],
+      "videos": [
+        {
+          "id": "cb0f8d7e43938574dd557de8",
+          "kind": "live",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7f86bca9cd3fb28fd780ccf8.jpg",
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/cb0f8d7e43938574dd557de8.mp4"
+        }
+      ],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T17:09:55+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364115233050162",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "61e9140a682265059b95",
+      "platform": "Weibo",
+      "source": "Weibo @83颗鱼鱼ooO",
+      "title": "#侯明昊雪中飞全球品牌代言人# 天天见面啊",
+      "excerpt": "#侯明昊雪中飞全球品牌代言人# 天天见面啊",
+      "images": [],
+      "videos": [],
+      "category": "Endorsement",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T16:58:09+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364112273181126",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "ffe13114d670cde4c60b",
+      "platform": "Weibo",
+      "source": "Weibo @眼底地小土逗",
+      "title": "侯明昊 又遇到我们家小侯啦，就是个开心，拍拍拍♡",
+      "excerpt": "侯明昊 侯明昊 又遇到我们家小侯啦，就是个开心，拍拍拍♡",
+      "images": [
+        "https://wx3.sinaimg.cn/mw2000/006nNr53ly1iiycs80a5lj635s2dckjl08.jpg",
+        "https://wx2.sinaimg.cn/mw2000/006nNr53ly1iiycs9mlpij635s2dc1kx08.jpg",
+        "https://wx4.sinaimg.cn/mw2000/006nNr53ly1iiycscoemsj635s2dc4m808.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T16:54:20+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364111312685342",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "ebc9f99e157191dba160",
@@ -1121,6 +1694,24 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "9f07b39cf47a3eae6dda",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "New Weibo update",
+      "excerpt": "侯明昊",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T15:32:10+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364090633454200",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "f2659d33a29a1ecb7a1c",
@@ -1289,6 +1880,34 @@
       "collectionMethod": "Weibo API"
     },
     {
+      "id": "1d6bb5b3345d36c929ba",
+      "platform": "Weibo",
+      "source": "Weibo @85杯全糖草莓啵啵",
+      "title": "这个《endless》情况很妙 黑西装是一个男人最好的武装（仅限帅哥 ） 我画地为牢啊哥哥 ～ @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "excerpt": "这个《endless》情况很妙 黑西装是一个男人最好的武装（仅限帅哥 ） 我画地为牢啊哥哥 ～ @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "images": [
+        "https://wx1.sinaimg.cn/orj480/af7f7db5ly1iixzxt4intj21o02814q2.jpg"
+      ],
+      "videos": [
+        {
+          "id": "6fcb82df56a3f066ab40e381",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/43af2ec596d8f685e9917865.jpg",
+          "duration": 28.816,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/6fcb82df56a3f066ab40e381.mp4"
+        }
+      ],
+      "category": "Video",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-11T09:31:13+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363999798464295",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "9a306a3e33b9b41c5fd0",
       "platform": "Weibo",
       "source": "Weibo @昊圈在逃小桃",
@@ -1354,6 +1973,62 @@
       "dateExact": false
     },
     {
+      "id": "1d310d5d4844bfd6465b",
+      "platform": "Weibo",
+      "source": "Weibo @晨雨轩0803",
+      "title": "怼脸拍的神，【怎么能】就是这么好听 #侯明昊属于我们的演唱会# 晨雨轩0803的微博视频",
+      "excerpt": "侯明昊 怼脸拍的神，【怎么能】就是这么好听 #侯明昊属于我们的演唱会# 晨雨轩0803的微博视频",
+      "images": [
+        "https://wx4.sinaimg.cn/orj480/006OTIiMly1iixhtn1a0dj30mi0u0dif.jpg"
+      ],
+      "videos": [
+        {
+          "id": "e7dc05b0908be360ff802bd7",
+          "kind": "video",
+          "remote": "https://f.video.weibocdn.com/o0/aifv06T7lx08CgA0s888010412022qLE0E010.mp4?label=mp4_hd&template=540x960.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1794457652&ssig=kDhTWS3YYT&KID=unistore,video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a0e1bed04460a06290df2e77.jpg",
+          "duration": 263.522
+        }
+      ],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-10T23:03:02+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363841710163532",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "6ea4acb12a7ec39583f8",
+      "platform": "Weibo",
+      "source": "Weibo @85杯全糖草莓啵啵",
+      "title": "“是我欠你们每个人一束花”这男人真会啊 谁能拒绝单膝下跪送你花的侯明昊呢 全世界在哪？全世界在我的眼前💕 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "excerpt": "“是我欠你们每个人一束花”这男人真会啊 谁能拒绝单膝下跪送你花的侯明昊呢 全世界在哪？全世界在我的眼前💕 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "images": [
+        "https://wx1.sinaimg.cn/orj480/af7f7db5ly1iixh9my0ttj21o0281b29.jpg"
+      ],
+      "videos": [
+        {
+          "id": "eed64c165e8e337627316c0a",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/40bd55bf964f2709875f33fb.jpg",
+          "duration": 91.091,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/eed64c165e8e337627316c0a.mp4"
+        }
+      ],
+      "category": "Video",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-10T22:45:26+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363837281770621",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "cbf749b31667a4c9f42d",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -1372,6 +2047,34 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "e1ebec49c8b6bd51c12d",
+      "platform": "Weibo",
+      "source": "Weibo @85杯全糖草莓啵啵",
+      "title": "正在感叹此男怎能如此好看的时候突然被抽查 上学的时候被抽查、抢演唱会门票要复习、看演唱会的时候还要被抽查 10.31郑州场day1的《雨天》是我最感同身受的一次～因为出场馆下了非常大的雨 我能体谅 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "excerpt": "正在感叹此男怎能如此好看的时候突然被抽查 上学的时候被抽查、抢演唱会门票要复习、看演唱会的时候还要被抽查 10.31郑州场day1的《雨天》是我最感同身受的一次～因为出场馆下了非常大的雨 我能体谅 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "images": [
+        "https://wx4.sinaimg.cn/orj480/af7f7db5ly1iixfgqbif5j21o0281e81.jpg"
+      ],
+      "videos": [
+        {
+          "id": "f56f53df8c407bd70275645f",
+          "kind": "video",
+          "remote": "https://f.video.weibocdn.com/o0/z0YvQzgGlx08Cguny3CM01041201EEsa0E010.mp4?label=mp4_hd&template=540x960.24.0&ori=0&ps=1CwnkDw1GXwCQx&Expires=1794457602&ssig=B15kIHs6ZV&KID=unistore,video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6eaa5c151b9e5adac97d6062.jpg",
+          "duration": 150.139
+        }
+      ],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-10T21:41:25+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363821172758085",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "a799daf8d7097e0e0917",
@@ -1564,6 +2267,24 @@
       "dateExact": true,
       "dateSource": "detail",
       "url": "https://m.weibo.cn/status/5363642545211059",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "00a7c2a1c04c61d4f5cd",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "轉發微博",
+      "excerpt": "轉發微博",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-10T08:38:51+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363624231308089",
       "official": false,
       "verified": false,
       "collectionMethod": "Weibo API"
@@ -2206,6 +2927,24 @@
       "dateExact": false
     },
     {
+      "id": "d9aa6711780e35c879be",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "#W中文版年度盛典#",
+      "excerpt": "侯明昊 #W中文版年度盛典#",
+      "images": [],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-09T19:38:58+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363427967238953",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "cfbe69d508a25ed1a4b2",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -2466,6 +3205,24 @@
       "dateExact": false
     },
     {
+      "id": "2b9f6e4cef6983e29949",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "#W中文版年度盛典# #WGALA此刻即黄金时代#",
+      "excerpt": "侯明昊 #W中文版年度盛典# #WGALA此刻即黄金时代#",
+      "images": [],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-09T17:48:14+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363400101596545",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "3d478fd970c5375e5e0a",
       "platform": "Weibo",
       "source": "Weibo @侯明昊工作室",
@@ -2592,6 +3349,62 @@
       "dateExact": false
     },
     {
+      "id": "9d4a4b80cff10bc297a3",
+      "platform": "Weibo",
+      "source": "Weibo @85杯全糖草莓啵啵",
+      "title": "谁懂我朝思暮想～ 属于我们的演唱会河南站！下次见 侯明昊！桃妹！侯明昊！桃妹！ （土吗哈哈哈哈哈一点都不土 ） 北京先见 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "excerpt": "谁懂我朝思暮想～ 属于我们的演唱会河南站！下次见 侯明昊！桃妹！侯明昊！桃妹！ （土吗哈哈哈哈哈一点都不土 ） 北京先见 @侯明昊 85杯全糖草莓啵啵的微博视频",
+      "images": [
+        "https://wx3.sinaimg.cn/orj480/af7f7db5ly1iivu9inip5j21o02817wh.jpg"
+      ],
+      "videos": [
+        {
+          "id": "d436ad58326a85ae9e2c0bbd",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a5b6c5ddb4ac2a2964d2569c.jpg",
+          "duration": 37.756,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/d436ad58326a85ae9e2c0bbd.mp4"
+        }
+      ],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-09T12:44:21+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363323627376084",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "3e98344379de752f1a72",
+      "platform": "Weibo",
+      "source": "Weibo @85杯全糖草莓啵啵",
+      "title": "10.31的《雨天》我感觉是我拍的最好的直拍 太好看了 漂亮衣服 漂亮脸蛋 漂亮王冠👑 小时候我眼里的王子就是这样的 @侯明昊 8天不见了，想我家男明星了 85杯全糖草莓啵啵的微博视频",
+      "excerpt": "10.31的《雨天》我感觉是我拍的最好的直拍 太好看了 漂亮衣服 漂亮脸蛋 漂亮王冠👑 小时候我眼里的王子就是这样的 @侯明昊 8天不见了，想我家男明星了 85杯全糖草莓啵啵的微博视频",
+      "images": [
+        "https://wx2.sinaimg.cn/orj480/af7f7db5ly1iivpm9kdapj21o0281b29.jpg"
+      ],
+      "videos": [
+        {
+          "id": "4bc56c355283804e3a700f72",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5370f4f42c459d5018229ced.jpg",
+          "duration": 64.227,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/4bc56c355283804e3a700f72.mp4"
+        }
+      ],
+      "category": "Video",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-09T10:04:47+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363283471110072",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "ab3ed2b8e04500678459",
       "platform": "Weibo",
       "source": "Weibo @昊圈在逃小桃",
@@ -2633,6 +3446,64 @@
       "dateExact": true,
       "dateSource": "detail",
       "url": "https://m.weibo.cn/status/5363271070909155",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "5e514d23b9eef9ee090c",
+      "platform": "Weibo",
+      "source": "Weibo @85杯全糖草莓啵啵",
+      "title": "要是11.29看完演出刚好下雪那就非常幸福了 见面倒计时20天！时间过的慢一点吧 北京见啦～小明昊 @侯明昊",
+      "excerpt": "要是11.29看完演出刚好下雪那就非常幸福了 见面倒计时20天！时间过的慢一点吧 北京见啦～小明昊 @侯明昊",
+      "images": [
+        "https://wx2.sinaimg.cn/mw2000/af7f7db5ly1iitlumlnjnj21xf1g2qqm.jpg",
+        "https://wx1.sinaimg.cn/mw2000/af7f7db5ly1iivnjatlixj20rw0m5dkt.jpg",
+        "https://wx1.sinaimg.cn/mw2000/af7f7db5ly1iivnj9qbgqj20sp1ar0z0.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-09T08:50:45+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363264837915270",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "035ab5a929ba035401b5",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "轉發微博",
+      "excerpt": "轉發微博",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-09T02:55:42+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363175492419593",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "4cb8726b29409dc2aa3f",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "轉發微博",
+      "excerpt": "轉發微博",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-09T02:55:38+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5363175471186231",
       "official": false,
       "verified": false,
       "collectionMethod": "Weibo API"
@@ -3069,6 +3940,24 @@
       "dateExact": false
     },
     {
+      "id": "ed1f534900e68a3c1fa9",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "#侯明昊属于我们的巡回演唱会#",
+      "excerpt": "侯明昊 #侯明昊属于我们的巡回演唱会#",
+      "images": [],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-07T14:03:38+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5362618803161054",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "eac4f562a8f58340aacc",
       "platform": "Weibo",
       "source": "Weibo @侯明昊工作室",
@@ -3116,6 +4005,24 @@
       "dateExact": true,
       "dateSource": "detail",
       "url": "https://m.weibo.cn/status/5362557708932477",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
+      "id": "96f8561337f191c552f1",
+      "platform": "Weibo",
+      "source": "Weibo @85杯全糖草莓啵啵",
+      "title": "我真的笑～上次侯明昊成都场学四川话给孩子学懵了哈哈，这次到郑州场学河南话也学懵了哈哈 哈哈哈下一场终于到北京自己的场子了！绝对可以找回面子",
+      "excerpt": "我真的笑～上次侯明昊成都场学四川话给孩子学懵了哈哈，这次到郑州场学河南话也学懵了哈哈 哈哈哈下一场终于到北京自己的场子了！绝对可以找回面子",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-07T09:57:46+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5362556927738885",
       "official": false,
       "verified": false,
       "collectionMethod": "Weibo API"
@@ -3489,6 +4396,26 @@
       "dateExact": false
     },
     {
+      "id": "5bfd48cb9dd59a40012c",
+      "platform": "Weibo",
+      "source": "Weibo @眼底地小土逗",
+      "title": "今天是我关注超话的第300天，希望能继续伴你一路前行～",
+      "excerpt": "侯明昊 今天是我关注超话的第300天，希望能继续伴你一路前行～",
+      "images": [
+        "https://wx2.sinaimg.cn/mw2000/006nNr53ly1iirko3rx5hj30n00uodh5.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-05T20:08:08+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5361985757644410",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
+    },
+    {
       "id": "e572fc4642aed147253c",
       "platform": "Weibo",
       "source": "Weibo @猕猴桃吃不饱",
@@ -3855,6 +4782,24 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
+    },
+    {
+      "id": "b7edfbe5caa7beb3232e",
+      "platform": "Weibo",
+      "source": "Weibo @桃桃鴎_明昊对视版",
+      "title": "#侯明昊属于我们的巡回演唱会#",
+      "excerpt": "侯明昊 #侯明昊属于我们的巡回演唱会#",
+      "images": [],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Unverified",
+      "date": "2026-11-05T00:53:18+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5361695134056758",
+      "official": false,
+      "verified": false,
+      "collectionMethod": "Weibo API"
     },
     {
       "id": "5e62e8421c27d3f31acc",
@@ -4702,754 +5647,6 @@
       "category": "X Update",
       "date": "2026-11-03T22:32:00+08:00",
       "url": "https://x.com/PopMinghao/status/2117625906600784279",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "01d23b41a6accab4619b",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @obsessedwithypj: It is like that time when some harpies complain that Hou Minghao only stick to one side in certain Music Festival performance, accusing him o…",
-      "excerpt": "RT @obsessedwithypj: It is like that time when some harpies complain that Hou Minghao only stick to one side in certain Music Festival performance, accusing him of lacking sense of service to the audience. Those harpies threw tantrum online. Later, the organizer revealed that he was asked to stick to that side to avoid audio disturbance because it…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T22:11:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117620675796238633",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "32e15ac539baf74106c7",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@obsessedwithypj",
-      "title": "It is like that time when some harpies complain that Hou Minghao only stick to one side in certain Music Festival performance, accusing him of lackin…",
-      "excerpt": "It is like that time when some harpies complain that Hou Minghao only stick to one side in certain Music Festival performance, accusing him of lacking sense of service to the audience. Those harpies threw tantrum online. Later, the organizer revealed that he was asked to stick to",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T21:16:42+08:00",
-      "url": "https://x.com/obsessedwithypj/status/2117606898245763522",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "e176829a2cbdac3afec8",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @ncybear: The host was talking about getting into “work-mode” 🐱: “For my concert a couple days ago, I didn’t treat it like it was work. I didn’t treat it like…",
-      "excerpt": "RT @ncybear: The host was talking about getting into “work-mode” 🐱: “For my concert a couple days ago, I didn’t treat it like it was work. I didn’t treat it like I’m going to work or I’m executing some work today, something has to be completed. Perhaps because of everything I’ve been through since the Nanjing stop, I’ve come to place particular im…",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T20:42:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117598208667120003",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "b61aa90d7ff10f23ecc5",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@ncybear",
-      "title": "The host was talking about getting into “work-mode” : “For my concert a couple days ago, I didn’t treat it like it was work. I didn’t treat it like I…",
-      "excerpt": "The host was talking about getting into “work-mode” : “For my concert a couple days ago, I didn’t treat it like it was work. I didn’t treat it like I’m going to work or I’m executing some work today, something has to be completed. Perhaps because of everything I’ve been",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T20:30:29+08:00",
-      "url": "https://x.com/ncybear/status/2117595268267016374",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "52d6d38a8d4d93976128",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 03.11.2026 | HMH STYLE Hou Minghao — H&M 2026 Autumn/Winter Collection Livestream #HouMinghao #侯明昊 #HMHStyle",
-      "excerpt": "03.11.2026 | HMH STYLE Hou Minghao — H&M 2026 Autumn/Winter Collection Livestream #HouMinghao #侯明昊 #HMHStyle — @PopMinghao Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/86a8b289fd3587ad36bbf2b6.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T20:07:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117589511878381597",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "20530b223b59f8a688f4",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@omaimah837",
-      "title": "His soo handsome #HouMinghao #houminghao",
-      "excerpt": "His soo handsome #HouMinghao #houminghao",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ded1f9de8f77badeb3e7f0ac.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8faeb2cb9498ad4d2288f21b.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e3d5f297849cb88232652886.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/24829b43d8e847d6a3244bac.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T19:15:15+08:00",
-      "url": "https://x.com/omaimah837/status/2117576333614371107",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "e7067b53f8081da8d4f4",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: \"Quick snap before the livestream 📸 See ya tonight!\" 261103 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "\"Quick snap before the livestream 📸 See ya tonight!\" 261103 | \"Hou Minghao\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/513d2929ce2b4dcd78ba5e6e.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T18:35:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117566240252362808",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "b729584110eaacad1066",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMHdataHQ",
-      "title": "HMH Data HQ: 📊 2026-11-03 👕 #HouMinghao x H&M livestream ⏰️ scheduled to start at 19:00 tonight [TMALL/TB] ➠ search【HM官方旗舰店】 #侯明昊",
-      "excerpt": "📊 2026-11-03 👕 #HouMinghao x H&M livestream ⏰️ scheduled to start at 19:00 tonight [TMALL/TB] ➠ search【HM官方旗舰店】 #侯明昊 — @HMHdataHQ Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ff097b86640f15310e58940f.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T18:13:00+08:00",
-      "url": "https://x.com/HMHdataHQ/status/2117560916007178477",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "c71f939fb55fd2c3f18a",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: ELLEMEN x Hou Minghao 261103 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "ELLEMEN x Hou Minghao 261103 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/23cfa4a7bd3ca3a743e6774e.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T16:59:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117542186078351378",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "a6dd359d82522af0cd4f",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @LemonAesthete: \"Compared to who I am today, my past self seems so insignificant. To me, he was like a young boy who knew so little about the world. But he had…",
-      "excerpt": "RT @LemonAesthete: \"Compared to who I am today, my past self seems so insignificant. To me, he was like a young boy who knew so little about the world. But he had a dream that was so pure.\" [ENG] 261101 #HouMinghao's crying speech on Zhengzhou Concert Day 02. #HouMinghaoBelongsToUs2026 #侯明昊 — @PopMinghao Nov 3, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T16:58:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117541922436960740",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "bea772e8cf929d776cb7",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Cover Upgrade | Hou Minghao Lost in a Late Autumn 🥝 Garden Roving through the scenery along the way, these precious moments have become tangible because we wit…",
-      "excerpt": "Cover Upgrade | Hou Minghao Lost in a Late Autumn 🥝 Garden Roving through the scenery along the way, these precious moments have become tangible because we witnessed them together. 261103 | \"ELLEMEN\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e9bb2a0b468bc5e05b4e9ecf.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T16:52:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117540411468337499",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "88e879d03014f2e2df60",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Behind The Scene Video for the ELLEMEN Magazine photoshoot 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "Behind The Scene Video for the ELLEMEN Magazine photoshoot 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 3, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T16:40:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117537379523457250",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "8f327ebb75a130669453",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@neohou_feed",
-      "title": "Hou Minghao Feed: 24-Hour Magazine Sales Report: Over 40,000 copies sold and total sales exceeding ¥2.18 Million! 🔥 #HouMinghao #侯明昊",
-      "excerpt": "24-Hour Magazine Sales Report: Over 40,000 copies sold and total sales exceeding ¥2.18 Million! 🔥 #HouMinghao #侯明昊 — @neohou_feed Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fdb58435e598fa8cf50db3f8.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T15:40:00+08:00",
-      "url": "https://x.com/neohou_feed/status/2117522212131393544",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "f2f6b16756efd349469b",
-      "platform": "Weibo",
-      "source": "Weibo @侯明昊",
-      "title": "感谢 @ELLEMEN 让这次相遇有了形状。",
-      "excerpt": "感谢 @ELLEMEN 让这次相遇有了形状。",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b544830c0913f86c076fe876.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/dccab9c0a3a315088216d6b2.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ae211721db736cb72b68664f.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/084dd1c1b7a7fee5763c07c7.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/69c92db91f2d03ee6b6d0f7e.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8282e67c0e056fe51e886892.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9d9c7a018c3f1be030deaba8.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/61ccb41921bb65d7a6ca3fc5.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/98c43751afd79f559939fdb5.jpg"
-      ],
-      "category": "Official",
-      "date": "2026-11-03T15:36:39+08:00",
-      "url": "https://m.weibo.cn/status/5361192660897215",
-      "official": true,
-      "verified": true,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "感谢 @ELLEMEN 让这次相遇有了形状。",
-      "excerptOriginal": "感谢 @ELLEMEN 让这次相遇有了形状。",
-      "titleEnglish": "Thank you @ ELLEMEN for giving shape to this encounter.",
-      "excerptEnglish": "Thank you @ ELLEMEN for giving shape to this encounter.",
-      "videos": [],
-      "dateExact": true,
-      "sourceCategory": "Official"
-    },
-    {
-      "id": "a6c9487af66133d3ec44",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@GianneSkyKiwiPH",
-      "title": ": \" Who is wiggling these little wings...\" : \" Little wings! So cute!\" : \" At first, I refused (to wear them), but....\" : \" It's so cute!\" : \" Alrigh…",
-      "excerpt": ": \" Who is wiggling these little wings...\" : \" Little wings! So cute!\" : \" At first, I refused (to wear them), but....\" : \" It's so cute!\" : \" Alright, as long as you all like it.\" We almost deprived by the Wings cat Hou Minghao! #HouMinghao #侯明昊",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T15:13:49+08:00",
-      "url": "https://x.com/GianneSkyKiwiPH/status/2117515577858441545",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "7273dd654e96293b0909",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @nn1482183: 😳😳😳 사진 셀렉하신분 이번달 월급 두배 받으시길..",
-      "excerpt": "RT @nn1482183: 😳😳😳 사진 셀렉하신분 이번달 월급 두배 받으시길.. — @PopMinghao Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d168e5e53fa6750622b561df.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T13:14:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117485472805228718",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "d992ffe4b41cd373f4cc",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @meen3meen: ไหลรวมยกกำลัง 3 👀 #โหวหมิงฮ่าว #HouMinghao #侯明昊",
-      "excerpt": "RT @meen3meen: ไหลรวมยกกำลัง 3 👀 #โหวหมิงฮ่าว #HouMinghao #侯明昊 — @PopMinghao Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/641aa51a908cf80a94d48221.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T13:13:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117485410456924237",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "1abdf03a1f00dfb6783d",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1…",
-      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1/2] — @HMH_Record Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/09e970fabdc552b90cae5e94.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T13:02:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117482453615227228",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "22f5831d0aa8438a5aeb",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [2…",
-      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261103 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [2/2] — @HMH_Record Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/79d7cf5a96a88d522d7b2b61.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T13:02:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117482500406849595",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "05e0e4ed85567464f617",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@neohou_feed",
-      "title": "Hou Minghao Feed: Sales of the October issue of #HouMinghao have surpassed 30,000 copies! 🎉 #侯明昊",
-      "excerpt": "Sales of the October issue of #HouMinghao have surpassed 30,000 copies! 🎉 #侯明昊 — @neohou_feed Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/63045a05fe338f1b187b4249.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T12:41:00+08:00",
-      "url": "https://x.com/neohou_feed/status/2117477163989405823",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "556de05e669807935002",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @ncybear: Full Article and Interview from ELLEMEN #HouMinghao October 2026 - Hou Minghao’s Guide to Wandering the Galaxy At the end of December 2017, Hou Mingh…",
-      "excerpt": "RT @ncybear: Full Article and Interview from ELLEMEN #HouMinghao October 2026 - Hou Minghao’s Guide to Wandering the Galaxy At the end of December 2017, Hou Minghao posted the following on Weibo: “I still hope to become a true actor. So, please give me a little more time. I will show you an actor who does not forget his original aspirations and co…",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/285a3374331095b142610925.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T12:29:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117474309774135535",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "f4059206becfb5878baf",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @HMHdataHQ: 📊 2026-11-01 [IG] ellemen cn cover previews 🆕️① ② ③ [IG] waladesignlab concert costume ④ like | comment | repost | share #HouMinghao #侯明昊",
-      "excerpt": "RT @HMHdataHQ: 📊 2026-11-01 [IG] ellemen cn cover previews 🆕️① https://t.co/r1bnurFJaB ② https://t.co/p3d87rE1Og ③ https://t.co/BqHB08iZUP [IG] waladesignlab concert costume ④ https://t.co/Geq0naZYG7 like | comment | repost | share #HouMinghao #侯明昊 — @PopMinghao Nov 3, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T12:28:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117473998003118436",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "f0fe22c7f134452a67e8",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Don't forget to watch the livestream tonight! 📍 Tmall 🕒 19:00 CST #HouMinghao #侯明昊 #후명호",
-      "excerpt": "Don't forget to watch the livestream tonight! 📍 Tmall 🕒 19:00 CST #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 3, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d168815bcb7fa14b8f1ef248.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T10:18:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117441244259606871",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "4a222af2c2fed0e239b4",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Xudong | Ad Shoot Behind The Scenes 261103 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호",
-      "excerpt": "Xudong | Ad Shoot Behind The Scenes 261103 | \"Xudong (旭东百里挑一)\" Weibo Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 3, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T10:14:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117440191229288519",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "cb66a758b5d43684de25",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: RT @GianneSkyKiwiPH: Hou Minghao Zhengzhou Trending Topics in XHS. 🔥 Trending | 1 million watching Hou Minghao's Zhengzhou Concert Opening Dance 🔥 Trending | 1…",
-      "excerpt": "RT @GianneSkyKiwiPH: Hou Minghao Zhengzhou Trending Topics in XHS. 🔥 Trending | 1 million watching Hou Minghao's Zhengzhou Concert Opening Dance 🔥 Trending | 16.802 million watching Headline: Hou Minghao Sings \"Glass\" at Zhengzhou Concert 🔥 Trending | 15.824 million watching Headline: Hou Minghao Chokes Up Thanking Fans at Zhengzhou Concert 🔥 Tren…",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e9a1e3f0e06f4218173d71ad.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T09:07:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117423501678391332",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "ea87957c13f088c87021",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: \"How do I get back to Nanjing? ⏳ Is wearing the outfit from the Nanjing stop enough?\" #HouMinghaoBelongsToUs2026 Concert Tour | Zhengzhou 261102 | \"Hou Minghao…",
-      "excerpt": "\"How do I get back to Nanjing? ⏳ Is wearing the outfit from the Nanjing stop enough?\" #HouMinghaoBelongsToUs2026 Concert Tour | Zhengzhou 261102 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 — @HMH_Record Nov 3, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T09:07:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117423376558137389",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "2243e5029f9ec8fba269",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: RT @ncybear: Full Article and Interview from ELLEMEN #HouMinghao October 2026 - Hou Minghao’s Guide to Wandering the Galaxy At the end of December 2017, Hou Mi…",
-      "excerpt": "RT @ncybear: Full Article and Interview from ELLEMEN #HouMinghao October 2026 - Hou Minghao’s Guide to Wandering the Galaxy At the end of December 2017, Hou Minghao posted the following on Weibo: “I still hope to become a true actor. So, please give me a little more time. I will show you an actor who does not forget his original aspirations and co…",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/285a3374331095b142610925.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-03T09:04:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117422550854807799",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "683194b856c225124be1",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @hmhcat_03: Here's to more stages and more opportunities to shine in the future!!! Singer Hou Minghao, you sound absolutely wonderful 😭❤️ #HouMinghao #HouMingh…",
-      "excerpt": "RT @hmhcat_03: Here's to more stages and more opportunities to shine in the future!!! Singer Hou Minghao, you sound absolutely wonderful 😭❤️ #HouMinghao #HouMinghaoBelongsToUs2026 https://t.co/33uxgVDzyx — @PopMinghao Nov 2, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-02T23:29:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117277969756688714",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "435882f1051450da0c49",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [3…",
-      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [3/3] — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a589d497b8b37d2c48ed3dfd.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T22:26:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117262009976992250",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "e614805e5db4ca98901e",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1…",
-      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1/3] — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0070679a0185161a950d384b.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T22:25:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117261876463849581",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "dc9c29300b1d8af71de7",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [2…",
-      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [2/3] — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/94a79b9a36876872747b4349.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T22:25:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117261944835260664",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "b86eeb64cf2c5fcee72b",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1…",
-      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [1/3] — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6144ef2f08a54a79def0ed01.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T21:32:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117248452149309858",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "9e7fa51b044fd35dd3c4",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [2…",
-      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [2/3] — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b9f2abb61b86d4f8733973fc.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T21:32:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117248519581159632",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "49cd2b04ba043ddd1c0f",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [3…",
-      "excerpt": "Hou Minghao New Pics | 'Belongs To Us' Concert Tour in Zhengzhou 261102 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026 [3/3] — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b8003c340f48817a89dd627f.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T21:32:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117248591815434412",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "60f11fa2417865f239f1",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMHdataHQ",
-      "title": "HMH Data HQ: 📊 2026-11-02‼️‼️‼️ [IG] #HouMinghao elle men cn cover like | comment | repost | share ① ② ③ #侯明昊",
-      "excerpt": "📊 2026-11-02‼️‼️‼️ [IG] #HouMinghao elle men cn cover like | comment | repost | share ① https://t.co/LkCmQIrTDP ② https://t.co/TogHnFNx7X ③ https://t.co/BA7UQ880OV #侯明昊 — @HMHdataHQ Nov 2, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-02T21:20:00+08:00",
-      "url": "https://x.com/HMHdataHQ/status/2117245345445163072",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "f9473f06bd1121595e44",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: RT @mintylight718: Is it even legal to be this gorgeous?! #HouMinghaoBelongsToUs2026 #HouMinghao",
-      "excerpt": "RT @mintylight718: Is it even legal to be this gorgeous?! #HouMinghaoBelongsToUs2026 #HouMinghao — @PopMinghao Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f2ba04be80f7f1f0e5b0c3d7.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T21:10:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117242917647769980",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "b3c4ce38fef9b752c567",
-      "platform": "Weibo",
-      "source": "Weibo @猕猴桃吃不饱",
-      "title": "老室，你出息了",
-      "excerpt": "老室，你出息了",
-      "images": [],
-      "videos": [],
-      "category": "Unverified",
-      "sourceCategory": "Unverified",
-      "date": "2026-11-02T20:58:43+08:00",
-      "dateExact": true,
-      "dateSource": "detail",
-      "url": "https://m.weibo.cn/status/5360911324026209",
-      "official": false,
-      "verified": false,
-      "collectionMethod": "Weibo API"
-    },
-    {
-      "id": "8b7caeaadacd5c66bf78",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: “galaxy far far away” lip cam… 👄🎤 i didn’t know i needed this until i saw it. now i can’t stop watching. 🫠 #HouMinghao #侯明昊 #GalaxyFarFarAway",
-      "excerpt": "“galaxy far far away” lip cam… 👄🎤 i didn’t know i needed this until i saw it. now i can’t stop watching. 🫠 #HouMinghao #侯明昊 #GalaxyFarFarAway — @PopMinghao Nov 2, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-02T18:12:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117198254966456814",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "245c3adec083d0a28d48",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: RT @ncybear: 15k+ magazine sales in 1 minute 20k+ magazine sales in 10 minutes 24k+ magazine sales in 1 hour 1.26M+ RMB in cumulative sales 📈 #HouMinghao | ELL…",
-      "excerpt": "RT @ncybear: 15k+ magazine sales in 1 minute 20k+ magazine sales in 10 minutes 24k+ magazine sales in 1 hour 1.26M+ RMB in cumulative sales 📈 #HouMinghao | ELLEMEN — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/652363c353099632301f1ba6.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T17:38:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117189582160904581",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "fa044a7a10974892f8ff",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@HMH_Record",
-      "title": "Hou Minghao Record: RT @ncybear: 15k+ magazine sales in 1 minute 20k+ magazine sales in 10 minutes 1 million RMB in cumulative sales so far 📈 #HouMinghao | ELL…",
-      "excerpt": "RT @ncybear: 15k+ magazine sales in 1 minute 20k+ magazine sales in 10 minutes 1 million RMB in cumulative sales so far 📈 #HouMinghao | ELL… — @HMH_Record Nov 2, 2026",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/25512869e5c956f89eb3c368.jpg"
-      ],
-      "category": "X Update",
-      "date": "2026-11-02T15:14:00+08:00",
-      "url": "https://x.com/HMH_Record/status/2117153285711024378",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic",
