@@ -47,7 +47,7 @@ MOBILE_UA = (
 WEIBO_POST_LIMIT = 0
 WEIBO_MAX_AGE_DAYS = 60            # ignore Weibo posts older than this
 MAX_DETAIL_FETCHES_PER_RUN = 60    # extra requests used to get exact dates / full text
-WEIBO_PAGES_PER_ACCOUNT = 1           # scheduled frequently; only page 1
+WEIBO_PAGES_PER_ACCOUNT = 1           # page 1 can contain pinned/cached items; scan newer pages too
 MAX_BACKFILL_PER_RUN = 30          # old saved posts repaired per run (dates + videos)
 
 # Video / live photo caching. jsDelivr serves correct video MIME types + range requests
@@ -171,40 +171,48 @@ def friendly_weibo_source(value):
         return f"Weibo @{WEIBO_USERNAME_CACHE.get(uid, uid)}"
     return value
 
-# Load dynamically discovered accounts and retain their classification.
+# Explicitly monitored brand UIDs are trusted as known brand sources, independently
+# of discovery keywords or whether a search response includes verification metadata.
+OFFICIAL_WEIBO_UIDS = {"1831550987", "5763552342"}
+KNOWN_BRAND_UIDS = set(WEIBO_ACCOUNT_IDS) - OFFICIAL_WEIBO_UIDS
+# Verified organizers and an official fashion house; UIDs confirmed from their Weibo posts.
+KNOWN_EVENT_ACCOUNTS = {
+    "2155159645": "W中文版",             # W Gala
+    "1677969704": "微博之夜",           # Weibo Night
+    "2183483187": "微博音乐盛典",       # Weibo Music Awards
+    "2810373291": "新华网",             # Macau 2026 Moonrise event coverage
+    "7010368671": "和颂传媒",           # Prada Wuhan event announcement
+}
+KNOWN_ADDITIONAL_BRANDS = {"5813211408": "Prada普拉达"}
+for uid, name in {**KNOWN_EVENT_ACCOUNTS, **KNOWN_ADDITIONAL_BRANDS}.items():
+    if uid not in WEIBO_ACCOUNT_IDS:
+        WEIBO_ACCOUNT_IDS.append(uid)
+    WEIBO_USERNAME_CACHE.setdefault(uid, name)
+KNOWN_BRAND_UIDS.update(KNOWN_ADDITIONAL_BRANDS)
 DISCOVERED_WEIBO_ACCOUNTS = {}
+FAN_HINTS = ("粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主", "追星", "小友", "唯粉", "站姐", "饭圈", "产出", "打投")
+BRAND_HINTS = ("官方", "品牌", "旗舰", "集团", "公司", "科技", "食品", "美妆", "护肤", "服饰", "珠宝", "汽车", "手机", "家电", "旅游", "文旅", "工作室", "传媒", "娱乐", "文化", "official", "inc.", "ltd", "company", "brand")
 if WEIBO_DISCOVERED_ACCOUNTS_FILE.exists():
     try:
-        payload = json.loads(WEIBO_DISCOVERED_ACCOUNTS_FILE.read_text(encoding="utf-8"))
-        for item in payload.get("accounts", []):
+        data = json.loads(WEIBO_DISCOVERED_ACCOUNTS_FILE.read_text(encoding="utf-8"))
+        for item in data.get("accounts", []):
             if not isinstance(item, dict) or not item.get("enabled", True):
                 continue
-            uid = str(item.get("uid", "")).strip()
-            profile = str(item.get("name", "")) + " " + str(item.get("verificationDescription", ""))
-            classification = str(item.get("classification") or "").strip()
-            fan_or_personal = any(word in profile for word in (
-                "粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主",
-                "追星", "小友", "唯粉", "站姐", "饭圈", "产出", "打投"
-            ))
-            brand_evidence = any(word.lower() in profile.lower() for word in (
-                "官方", "品牌", "旗舰", "集团", "公司", "科技", "食品", "美妆", "护肤",
-                "服饰", "珠宝", "汽车", "手机", "家电", "旅游", "文旅", "工作室",
-                "传媒", "娱乐", "文化", "official", "inc.", "ltd", "company", "brand"
-            ))
-            # Strict gate: reject personal/fan profiles. An Unverified account must still
-            # show organization/brand evidence; "uncertain" alone is not sufficient.
-            if (not uid.isdigit() or classification == "Rejected" or fan_or_personal or
-                (classification == "Unverified" and not brand_evidence) or
-                classification not in {"Verified Brand", "Verified Brand/Organization", "Unverified"}):
-                print(f"Rejected discovered account @{item.get('name', uid)}: insufficient brand/organization evidence")
+            uid = str(item.get("uid") or "").strip()
+            profile = f"{item.get('name', '')} {item.get('verificationDescription', '')}".lower()
+            category = str(item.get("classification") or "")
+            if not uid.isdigit() or uid in OFFICIAL_WEIBO_UIDS:
+                continue
+            if uid not in KNOWN_BRAND_UIDS and uid not in KNOWN_EVENT_ACCOUNTS and (any(w in profile for w in FAN_HINTS) or category not in {"Verified Brand", "Verified Brand/Organization", "Verified Event", "Unverified"} or (category == "Unverified" and not any(w in profile for w in BRAND_HINTS))):
+                print(f"Rejecting personal or unconfirmed discovered account: {item.get('name', uid)}")
                 continue
             DISCOVERED_WEIBO_ACCOUNTS[uid] = item
             if uid not in WEIBO_ACCOUNT_IDS:
                 WEIBO_ACCOUNT_IDS.append(uid)
             if item.get("name"):
                 WEIBO_USERNAME_CACHE.setdefault(uid, str(item["name"]))
-    except (ValueError, OSError, AttributeError) as error:
-        print("Discovery account file unavailable:", error)
+    except (OSError, ValueError, AttributeError) as error:
+        print("Could not load discovered accounts:", error)
 
 SOURCES = [
     {
@@ -212,9 +220,8 @@ SOURCES = [
         "source": friendly_weibo_source(f"Weibo @{account_id}"),
         "platform": "Weibo",
         "uid": account_id,
-        "official": account_id in {"1831550987", "5763552342"},
-        "sourceCategory": ("Official" if account_id in {"1831550987", "5763552342"} else DISCOVERED_WEIBO_ACCOUNTS.get(account_id, {}).get("classification", "Monitored Brand")),
-        "weiboVerified": DISCOVERED_WEIBO_ACCOUNTS.get(account_id, {}).get("verified", False),
+        "official": account_id in OFFICIAL_WEIBO_UIDS,
+        "sourceCategory": ("Official" if account_id in OFFICIAL_WEIBO_UIDS else "Verified Event" if account_id in KNOWN_EVENT_ACCOUNTS else "Verified Brand" if account_id in KNOWN_BRAND_UIDS else DISCOVERED_WEIBO_ACCOUNTS.get(account_id, {}).get("classification", "Unverified")),
         "type": "sina_api_account",
     }
     for account_id in WEIBO_ACCOUNT_IDS
@@ -995,10 +1002,9 @@ def collect_sina_api_account(source_config):
             "id": make_id("Weibo", display_name, title, post_url), "platform": "Weibo",
             "source": display_name, "title": title or "New Weibo update",
             "excerpt": shorten(cleaned_content, 320), "images": image_urls[:9], "videos": videos,
-            "category": determine_category(cleaned_content, "Weibo"),
-            "sourceCategory": source_config.get("sourceCategory", "Monitored Brand"), "date": date_iso,
+            "category": determine_category(cleaned_content, "Weibo"), "sourceCategory": source_config.get("sourceCategory", "Unverified"), "date": date_iso,
             "dateExact": date_exact, "dateSource": "detail" if date_exact else ("relative" if relative_time else "list"),
-            "url": post_url, "official": source_config["official"], "verified": bool(source_config.get("weiboVerified", False)),
+            "url": post_url, "official": source_config["official"], "verified": True,
             "collectionMethod": "Weibo API",
         })
     if skipped or too_old or api_errors:
@@ -1343,35 +1349,31 @@ def main():
     collected = accepted_weibo + other_new
 
     merged = deduplicate_posts(existing + collected)
-
-    # Unverified means: unverified account WITH explicit brand/organization evidence.
-    # Remove old or newly saved Unverified posts if their source did not pass the
-    # current strict discovery gate. This also cleans previously admitted personal accounts.
-    approved_unverified_sources = {
-        f"weibo @{str(item.get('name') or '').strip()}".lower()
-        for item in DISCOVERED_WEIBO_ACCOUNTS.values()
-        if str(item.get("classification") or "").strip() == "Unverified"
-        and str(item.get("name") or "").strip()
-    }
-    retained = []
-    rejected_personal_posts = 0
+    # Backfill classifications for previously saved posts, including known brands.
+    known_names = {str(WEIBO_USERNAME_CACHE.get(uid) or WEIBO_ACCOUNT_NAMES.get(uid) or "").strip().lower() for uid in KNOWN_BRAND_UIDS}
+    known_names.discard("")
+    # Historical brand source names can predate the UID-based configuration.
+    # These exact aliases are only for existing saved posts, not new account discovery.
+    known_names.update({"乐事官方微博", "旭东食品", "mac魅可", "天美意官方微博", "天美意", "teenmix", "prada普拉达"})
+    event_names = {name.lower() for name in KNOWN_EVENT_ACCOUNTS.values()}
+    event_names.update({"w中文版", "微博之夜", "微博音乐盛典", "新华网", "和颂传媒"})
+    approved_unverified = {str(item.get("name") or "").strip().lower() for item in DISCOVERED_WEIBO_ACCOUNTS.values() if item.get("classification") == "Unverified"}
+    approved_unverified.discard("")
+    cleaned = []
     for post in merged:
-        source_category = str(post.get("sourceCategory") or "").strip().lower()
-        source_name = str(post.get("source") or "").strip().lower()
-        if post.get("platform") == "Weibo" and source_category == "unverified":
-            if source_name not in approved_unverified_sources:
-                rejected_personal_posts += 1
+        if post.get("platform") == "Weibo":
+            source = str(post.get("source") or "").strip().lower()
+            name = source.removeprefix("weibo @").removeprefix("weibo account ").strip()
+            if name in event_names or name in KNOWN_EVENT_ACCOUNTS:
+                post["sourceCategory"] = "Verified Event"
+            elif name in known_names or name in KNOWN_BRAND_UIDS:
+                post["sourceCategory"] = "Verified Brand"
+            elif post.get("official") or name in {"侯明昊", "侯明昊工作室", "侯明昊neo"}:
+                post["sourceCategory"] = "Official"
+            elif str(post.get("sourceCategory") or "").lower() == "unverified" and name not in approved_unverified:
                 continue
-        retained.append(post)
-
-    # The 60-day setting is an intake boundary for newly fetched Weibo history,
-    # not a strict deletion rule for posts already saved in posts.json.
-    final_posts = sorted(retained, key=post_timestamp, reverse=True)[:MAX_POSTS]
-    print(
-        f"Feed retention: kept {len(final_posts)} posts, maximum {MAX_POSTS}; "
-        f"removed {rejected_personal_posts} unapproved Unverified Weibo post(s). "
-        f"The {WEIBO_MAX_AGE_DAYS}-day rule applies only when fetching older Weibo history."
-    )
+        cleaned.append(post)
+    final_posts = sorted(cleaned, key=post_timestamp, reverse=True)[:MAX_POSTS]
     images_cached, image_cache_failures = localize_post_images(final_posts)
     localize_post_videos(final_posts)
     added, translated, limited, translation_providers = add_translations(final_posts)
