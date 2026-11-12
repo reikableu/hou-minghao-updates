@@ -16,6 +16,7 @@ from bs4 import BeautifulSoup
 from deep_translator import GoogleTranslator
 
 POSTS_FILE = Path("posts.json")
+WEIBO_USERNAME_CACHE_FILE = Path("weibo_username_cache.json")
 IMAGE_DIR = Path("media")
 RAW_MEDIA_BASE = "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media"
 MAX_IMAGE_DOWNLOADS_PER_RUN = 40
@@ -101,10 +102,78 @@ def mentions_hou(*texts):
     return any(k.lower() in blob for k in HOU_KEYWORDS)
 
 
+WEIBO_ACCOUNT_NAMES = {
+    "5763552342": "侯明昊工作室",
+    "1831550987": "侯明昊",
+    "6453123896": "旭东食品",
+    "1692125795": "乐事官方微博",
+    "1734997034": "海信电视",
+    "7513576766": "olayks立时",
+    "1766627034": "美肤宝MEIFUBAO",
+    "7335269786": "DearIrean独特艾琳",
+    "7868019741": "好流Official",
+    "1749127163": "HM中国",
+    "6473618360": "珀芙研",
+    "7579169954": "棉致MIANZHI",
+    "7486821389": "千层雪Viennetta",
+    "5938174786": "西藏自治区文化和旅游厅",
+    "1767117565": "MAC魅可",
+    "7639102431": "fino芬浓",
+    "3219487770": "珍宝珠ChupaChups",
+    "7541604928": "CASETiFY",
+    "7857186930": "FADEAWAY_L",
+    "7867201948": "PLUG-INPET",
+}
+
+def load_weibo_username_cache():
+    cache = dict(WEIBO_ACCOUNT_NAMES)
+    if WEIBO_USERNAME_CACHE_FILE.exists():
+        try:
+            saved = json.loads(WEIBO_USERNAME_CACHE_FILE.read_text(encoding="utf-8"))
+            if isinstance(saved, dict):
+                cache.update({str(uid): str(name).strip() for uid, name in saved.items() if str(name).strip()})
+        except Exception as error:
+            print("Could not read Weibo username cache:", error)
+    return cache
+
+
+WEIBO_USERNAME_CACHE = load_weibo_username_cache()
+
+
+def save_weibo_username_cache():
+    temporary = WEIBO_USERNAME_CACHE_FILE.with_suffix(".json.tmp")
+    temporary.write_text(
+        json.dumps(WEIBO_USERNAME_CACHE, ensure_ascii=False, indent=2, sort_keys=True),
+        encoding="utf-8",
+    )
+    temporary.replace(WEIBO_USERNAME_CACHE_FILE)
+
+
+def cache_weibo_username(uid, username):
+    uid = str(uid or "").strip()
+    username = clean_text(str(username or "")).lstrip("@").strip()
+    if not uid or not username or username == uid:
+        return False
+    if WEIBO_USERNAME_CACHE.get(uid) == username:
+        return False
+    WEIBO_USERNAME_CACHE[uid] = username
+    save_weibo_username_cache()
+    print(f"Cached Weibo username: {uid} -> {username}")
+    return True
+
+
+def friendly_weibo_source(value):
+    value = str(value or "").strip()
+    match = re.fullmatch(r"Weibo (?:account |@)(\d+)", value, re.I)
+    if match:
+        uid = match.group(1)
+        return f"Weibo @{WEIBO_USERNAME_CACHE.get(uid, uid)}"
+    return value
+
 SOURCES = [
     {
-        "name": f"Weibo account {account_id}",
-        "source": f"Weibo @{account_id}",
+        "name": friendly_weibo_source(f"Weibo @{account_id}"),
+        "source": friendly_weibo_source(f"Weibo @{account_id}"),
         "platform": "Weibo",
         "uid": account_id,
         "official": account_id in {"1831550987", "5763552342"},
@@ -789,7 +858,7 @@ def collect_sina_api_account(source_config):
     uid = source_config["uid"]
     collected, skipped, too_old = [], 0, 0
     cutoff = singapore_now() - timedelta(days=WEIBO_MAX_AGE_DAYS)
-    display_name = f"Weibo @{uid}"
+    display_name = friendly_weibo_source(f"Weibo @{uid}")
     all_cards = []
     api_errors = []
 
@@ -822,7 +891,8 @@ def collect_sina_api_account(source_config):
     for mblog in weibo_mblogs_from_cards(all_cards):
         user = mblog.get("user") or {}
         if user.get("screen_name"):
-            display_name = f"Weibo @{user.get('screen_name')}"
+            cache_weibo_username(uid, user.get("screen_name"))
+            display_name = friendly_weibo_source(f"Weibo @{uid}")
         post_id = str(mblog.get("id") or mblog.get("mid") or "").strip()
         if not post_id:
             continue
@@ -1033,6 +1103,8 @@ def collect_source(source_config):
 
 
 def normalize_existing_post(post):
+    if post.get("platform") == "Weibo":
+        post["source"] = friendly_weibo_source(post.get("source", ""))
     post.setdefault("id", make_id(post.get("platform", ""), post.get("source", ""), post.get("title", ""), post.get("url", "")))
     post.setdefault("excerpt", ""); post.setdefault("category", "Other"); post.setdefault("official", False)
     post.setdefault("verified", False); post.setdefault("collectionMethod", "Manual")
@@ -1243,7 +1315,8 @@ def main():
         "lastUpdated": singapore_now().isoformat(timespec="seconds"),
         "status": f"Completed: {success} sources successful, {failed} failed",
         "translationStatus": {"translationsAdded": added, "postsTranslatedThisRun": translated, "rateLimited": limited, "providersUsed": translation_providers},
-        "sourceStatus": statuses, 
+        "sourceStatus": statuses,
+        "weiboUsernameCache": WEIBO_USERNAME_CACHE,
         "posts": final_posts
     }
     with POSTS_FILE.open("w", encoding="utf-8") as f: json.dump(output, f, ensure_ascii=False, indent=2)
