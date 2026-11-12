@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12T09:42:21+08:00",
+  "lastUpdated": "2026-11-12T10:05:10+08:00",
   "status": "Completed: 21 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -15,129 +15,151 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-12T09:39:15.158488+08:00"
+      "checkedAt": "2026-11-12T10:01:58.895431+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-12T09:39:31.486517+08:00"
+      "checkedAt": "2026-11-12T10:02:15.598663+08:00"
     },
     {
-      "source": "Weibo account 6453123896",
+      "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:39:47.224833+08:00"
+      "checkedAt": "2026-11-12T10:02:31.665135+08:00"
     },
     {
-      "source": "Weibo account 1692125795",
+      "source": "Weibo @乐事官方微博",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:39:49.544063+08:00"
+      "checkedAt": "2026-11-12T10:02:34.036294+08:00"
     },
     {
-      "source": "Weibo account 1734997034",
+      "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:40:05.043904+08:00"
+      "checkedAt": "2026-11-12T10:02:49.881862+08:00"
     },
     {
-      "source": "Weibo account 7513576766",
+      "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:40:07.345252+08:00"
+      "checkedAt": "2026-11-12T10:02:52.278154+08:00"
     },
     {
-      "source": "Weibo account 1766627034",
+      "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:40:09.670602+08:00"
+      "checkedAt": "2026-11-12T10:02:54.625407+08:00"
     },
     {
-      "source": "Weibo account 7335269786",
+      "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:40:12.010388+08:00"
+      "checkedAt": "2026-11-12T10:02:56.968883+08:00"
     },
     {
-      "source": "Weibo account 7868019741",
+      "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:40:25.535655+08:00"
+      "checkedAt": "2026-11-12T10:03:10.758948+08:00"
     },
     {
-      "source": "Weibo account 1749127163",
+      "source": "Weibo @HM中国",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:40:27.877188+08:00"
+      "checkedAt": "2026-11-12T10:03:13.140487+08:00"
     },
     {
-      "source": "Weibo account 6473618360",
+      "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:40:43.303927+08:00"
+      "checkedAt": "2026-11-12T10:03:28.912027+08:00"
     },
     {
-      "source": "Weibo account 7579169954",
+      "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:40:45.678941+08:00"
+      "checkedAt": "2026-11-12T10:03:31.296634+08:00"
     },
     {
-      "source": "Weibo account 7486821389",
+      "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:40:59.223689+08:00"
+      "checkedAt": "2026-11-12T10:03:45.090811+08:00"
     },
     {
-      "source": "Weibo account 5938174786",
+      "source": "Weibo @西藏自治区文化和旅游厅",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:41:12.750206+08:00"
+      "checkedAt": "2026-11-12T10:03:58.855935+08:00"
     },
     {
-      "source": "Weibo account 1767117565",
+      "source": "Weibo @MAC魅可",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:41:26.430565+08:00"
+      "checkedAt": "2026-11-12T10:04:12.766236+08:00"
     },
     {
-      "source": "Weibo account 7639102431",
+      "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:41:40.177144+08:00"
+      "checkedAt": "2026-11-12T10:04:26.688992+08:00"
     },
     {
-      "source": "Weibo account 3219487770",
+      "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:41:42.502028+08:00"
+      "checkedAt": "2026-11-12T10:04:29.052596+08:00"
     },
     {
-      "source": "Weibo account 7541604928",
+      "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:41:44.843552+08:00"
+      "checkedAt": "2026-11-12T10:04:31.402842+08:00"
     },
     {
-      "source": "Weibo account 7857186930",
+      "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:41:58.315329+08:00"
+      "checkedAt": "2026-11-12T10:04:45.168007+08:00"
     },
     {
-      "source": "Weibo account 7867201948",
+      "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T09:42:00.708103+08:00"
+      "checkedAt": "2026-11-12T10:04:47.539743+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 30,
-      "checkedAt": "2026-11-12T09:42:03.106266+08:00"
+      "checkedAt": "2026-11-12T10:04:49.923273+08:00"
     }
   ],
+  "weiboUsernameCache": {
+    "5763552342": "侯明昊工作室",
+    "1831550987": "侯明昊",
+    "6453123896": "旭东食品",
+    "1692125795": "我嘞个胡豆er",
+    "1734997034": "海信电视",
+    "7513576766": "olayks立时",
+    "1766627034": "美肤宝MEIFUBAO",
+    "7335269786": "DearIrean独特艾琳",
+    "7868019741": "好流Official",
+    "1749127163": "雷军",
+    "6473618360": "珀芙研",
+    "7579169954": "棉致MIANZHI",
+    "7486821389": "千层雪Viennetta",
+    "5938174786": "用户3923579353",
+    "1767117565": "李肥双圆",
+    "7639102431": "fino芬浓",
+    "3219487770": "珍宝珠ChupaChups",
+    "7541604928": "CASETiFY",
+    "7857186930": "FADEAWAY_L",
+    "7867201948": "PLUG-INPET"
+  },
   "posts": [
     {
       "id": "d1d9d05d149b309e7851",
@@ -947,8 +969,8 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c21c176583a57695a41b3c7b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fcc3e63cd62d04c9ac50e63f.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg",
-        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9ch5sebj32dc35s4qs.jpg",
-        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iiw9ciiyc9j31n426unpd.jpg"
+        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iiw9cjstebj32c0340hdu.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9cogvomj32dc35s7wo.jpg"
       ],
       "videos": [
         {
