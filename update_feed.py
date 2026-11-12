@@ -99,7 +99,10 @@ def load_discovered_weibo_accounts():
         payload = json.loads(WEIBO_DISCOVERED_ACCOUNTS_FILE.read_text(encoding="utf-8"))
         accounts = payload.get("accounts", []) if isinstance(payload, dict) else []
         return [item for item in accounts if isinstance(item, dict) and item.get("enabled", True)
-                and str(item.get("uid") or "").strip().isdigit()]
+                and str(item.get("uid") or "").strip().isdigit()
+                and item.get("classification") != "Rejected"
+                and not any(h in (str(item.get("name") or "") + " " + str(item.get("verificationDescription") or ""))
+                            for h in ("粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主"))]
     except Exception as error:
         print("Could not read auto-discovered Weibo accounts:", error)
         return []
