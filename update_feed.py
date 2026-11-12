@@ -18,6 +18,10 @@ from deep_translator import GoogleTranslator
 POSTS_FILE = Path("posts.json")
 WEIBO_USERNAME_CACHE_FILE = Path("weibo_username_cache.json")
 WEIBO_DISCOVERED_ACCOUNTS_FILE = Path("weibo_discovered_accounts.json")
+WEIBO_HISTORY_STATE_FILE = Path("weibo_discovery_history_state.json")
+NEW_DISCOVERY_HISTORY_DAYS = 180
+NEW_DISCOVERY_HISTORY_PAGES = 3
+NEW_DISCOVERY_MAX_RETRIES = 3
 IMAGE_DIR = Path("media")
 RAW_MEDIA_BASE = "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media"
 MAX_IMAGE_DOWNLOADS_PER_RUN = 40
@@ -189,6 +193,15 @@ for uid, name in {**KNOWN_EVENT_ACCOUNTS, **KNOWN_ADDITIONAL_BRANDS}.items():
         WEIBO_ACCOUNT_IDS.append(uid)
     WEIBO_USERNAME_CACHE.setdefault(uid, name)
 KNOWN_BRAND_UIDS.update(KNOWN_ADDITIONAL_BRANDS)
+def load_history_state():
+    try:
+        data = json.loads(WEIBO_HISTORY_STATE_FILE.read_text(encoding="utf-8"))
+        return data if isinstance(data, dict) else {}
+    except (FileNotFoundError, OSError, ValueError):
+        return {}
+
+WEIBO_HISTORY_STATE = load_history_state()
+NEW_HISTORY_UPDATES = {}
 DISCOVERED_WEIBO_ACCOUNTS = {}
 FAN_HINTS = ("粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主", "追星", "小友", "唯粉", "站姐", "饭圈", "产出", "打投")
 BRAND_HINTS = ("官方", "品牌", "旗舰", "集团", "公司", "科技", "食品", "美妆", "护肤", "服饰", "珠宝", "汽车", "手机", "家电", "旅游", "文旅", "工作室", "传媒", "娱乐", "文化", "official", "inc.", "ltd", "company", "brand")
@@ -902,14 +915,32 @@ def backfill_weibo_details(posts):
 def collect_sina_api_account(source_config):
     uid = source_config["uid"]
     collected, skipped, too_old = [], 0, 0
-    cutoff = singapore_now() - timedelta(days=WEIBO_MAX_AGE_DAYS)
+    history_record = WEIBO_HISTORY_STATE.get(uid, {})
+    if not isinstance(history_record, dict):
+        history_record = {}
+    status = history_record.get("status", "pending")
+    is_new_discovery = uid in DISCOVERED_WEIBO_ACCOUNTS and status not in {"completed", "exhausted"}
+    retry_count = int(history_record.get("retryCount") or 0)
+    if is_new_discovery and retry_count >= NEW_DISCOVERY_MAX_RETRIES:
+        is_new_discovery = False
+        NEW_HISTORY_UPDATES[uid] = {**history_record, "status": "exhausted"}
+        print(f"  Historical scan paused for {uid}: retry limit reached")
+    age_days = NEW_DISCOVERY_HISTORY_DAYS if is_new_discovery else WEIBO_MAX_AGE_DAYS
+    cutoff = singapore_now() - timedelta(days=age_days)
     display_name = friendly_weibo_source(f"Weibo @{uid}")
     all_cards = []
     api_errors = []
-
-    # Explicit page and cache-buster prevent a stale first-page response. Scanning several
-    # pages also avoids missing a new post when pinned items occupy the first cards.
-    for page_number in range(1, WEIBO_PAGES_PER_ACCOUNT + 1):
+    next_page = max(1, int(history_record.get("nextPage") or 1)) if is_new_discovery else 1
+    pages_scanned = max(0, int(history_record.get("pagesScanned") or 0)) if is_new_discovery else 0
+    last_successful_page = pages_scanned
+    scan_complete = False
+    failed_history = False
+    if is_new_discovery:
+        print(f"  Historical backfill {uid}: status={status}, next page={next_page}, max {NEW_DISCOVERY_HISTORY_PAGES}, age {age_days} days")
+    # Regular accounts only request page 1. Pending historical scans resume at the
+    # next unprocessed page, without repeating successful pages on every run.
+    page_numbers = range(next_page, NEW_DISCOVERY_HISTORY_PAGES + 1) if is_new_discovery else range(1, WEIBO_PAGES_PER_ACCOUNT + 1)
+    for page_number in page_numbers:
         query = urllib.parse.urlencode({
             "type": "uid", "value": uid, "containerid": f"107603{uid}",
             "page": page_number, "_": int(time.time() * 1000),
@@ -919,19 +950,46 @@ def collect_sina_api_account(source_config):
             payload = weibo_get_json(target_url)
         except Exception as error:
             api_errors.append(f"page {page_number}: {error}")
+            if is_new_discovery:
+                failed_history = True
+                break
             if page_number == 1:
                 raise
             break
         if payload.get("ok") not in (1, "1", True):
             msg = str(payload.get("msg") or "")
             if "还没有内容" in msg or page_number > 1:
+                scan_complete = True
+                break
+            if is_new_discovery:
+                failed_history = True
+                api_errors.append(f"page {page_number}: API ok=0: {msg[:100]}")
                 break
             raise RuntimeError(f"Weibo API ok=0: {msg or 'no message'}"[:200])
         cards = ((payload.get("data") or {}).get("cards")) or []
         if not cards:
+            scan_complete = True
             break
         all_cards.extend(cards)
+        if is_new_discovery:
+            last_successful_page = page_number
         time.sleep(0.6)
+
+    if is_new_discovery:
+        next_unscanned = last_successful_page + 1
+        completed = scan_complete or next_unscanned > NEW_DISCOVERY_HISTORY_PAGES
+        retries = (retry_count + 1) if failed_history else 0
+        new_status = "completed" if completed else ("exhausted" if retries >= NEW_DISCOVERY_MAX_RETRIES else "partial")
+        NEW_HISTORY_UPDATES[uid] = {
+            "status": new_status,
+            "historyDays": NEW_DISCOVERY_HISTORY_DAYS,
+            "maxPages": NEW_DISCOVERY_HISTORY_PAGES,
+            "pagesScanned": last_successful_page,
+            "nextPage": next_unscanned,
+            "retryCount": retries,
+            "lastBackfill": singapore_now().isoformat(),
+        }
+        print(f"  Backfill status for {uid}: {new_status}; pages scanned={last_successful_page}; next={next_unscanned}; retries={retries}")
 
     for mblog in weibo_mblogs_from_cards(all_cards):
         user = mblog.get("user") or {}
@@ -1009,7 +1067,7 @@ def collect_sina_api_account(source_config):
         })
     if skipped or too_old or api_errors:
         print(f"  {display_name}: skipped {skipped} not mentioning Hou Minghao, {too_old} older than "
-              f"{WEIBO_MAX_AGE_DAYS} days, kept {len(collected)}; API notices: {api_errors}")
+              f"{age_days} days, kept {len(collected)}; API notices: {api_errors}")
     return collected
 
 def collect_rss_feed(source_config):
@@ -1374,6 +1432,10 @@ def main():
                 continue
         cleaned.append(post)
     final_posts = sorted(cleaned, key=post_timestamp, reverse=True)[:MAX_POSTS]
+    if NEW_HISTORY_UPDATES:
+        WEIBO_HISTORY_STATE.update(NEW_HISTORY_UPDATES)
+        WEIBO_HISTORY_STATE_FILE.write_text(
+            json.dumps(WEIBO_HISTORY_STATE, ensure_ascii=False, indent=2), encoding="utf-8")
     images_cached, image_cache_failures = localize_post_images(final_posts)
     localize_post_videos(final_posts)
     added, translated, limited, translation_providers = add_translations(final_posts)
