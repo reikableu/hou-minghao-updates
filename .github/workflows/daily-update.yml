@@ -53,7 +53,21 @@ jobs:
 
 
       # ======================================================
-      # 4. RUN MAIN FEED COLLECTOR
+      # 4. DISCOVER VERIFIED WEIBO BRAND ACCOUNTS (LAST 24 HOURS)
+      # ======================================================
+
+      - name: Discover verified Weibo brand accounts
+        continue-on-error: true
+        env:
+          WEIBO_COOKIE: ${{ secrets.WEIBO_COOKIE }}
+          WEIBO_DISCOVERY_HOURS: "24"
+        run: |
+          echo "Starting 24-hour Weibo brand discovery..."
+          python weibo_brand_discovery.py
+
+
+      # ======================================================
+      # 5. RUN MAIN FEED COLLECTOR
       # ======================================================
 
       - name: Run feed collector
@@ -61,6 +75,7 @@ jobs:
           XHS_COOKIES_JSON: ${{ secrets.XHS_COOKIES_JSON }}
           X_AUTH_TOKEN: ${{ secrets.X_AUTH_TOKEN }}
           X_CT0: ${{ secrets.X_CT0 }}
+          WEIBO_COOKIE: ${{ secrets.WEIBO_COOKIE }}
         run: |
           echo "Starting feed collector..."
           python update_feed.py
@@ -172,6 +187,8 @@ jobs:
 
           git add -A -- \
             posts.json \
+            weibo_discovered_accounts.json \
+            weibo_username_cache.json \
             gallery.json \
             gifs.json \
             media \
