@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T11:24:44+08:00",
+  "updatedAt": "2026-11-12T11:39:17+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -123,9 +123,9 @@
       "enabled": true,
       "autoDiscovered": true,
       "firstSeen": "2026-11-12T10:52:19+08:00",
-      "lastSeen": "2026-11-11T17:21:10+08:00",
-      "lastMentionPostId": "5364118068658386",
-      "lastMentionUrl": "https://m.weibo.cn/status/5364118068658386",
+      "lastSeen": "2026-11-11T12:55:10+08:00",
+      "lastMentionPostId": "5364051124685131",
+      "lastMentionUrl": "https://m.weibo.cn/status/5364051124685131",
       "discoveredBy": "@侯明昊",
       "classificationReason": "verified organization type 3",
       "verificationDescription": "《W中文版》官方微博"
@@ -174,6 +174,22 @@
       "lastSeen": "2026-11-12T11:18:42+08:00",
       "lastMentionPostId": "5364389238801678",
       "lastMentionUrl": "https://m.weibo.cn/status/5364389238801678",
+      "discoveredBy": "侯明昊代言",
+      "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
+      "verificationDescription": ""
+    },
+    {
+      "uid": "8019484509",
+      "name": "呆猕猴",
+      "category": "Unverified",
+      "classification": "Unverified",
+      "verified": false,
+      "enabled": true,
+      "autoDiscovered": true,
+      "firstSeen": "2026-11-12T11:39:17+08:00",
+      "lastSeen": "2026-11-12T10:56:45+08:00",
+      "lastMentionPostId": "5364383716999232",
+      "lastMentionUrl": "https://m.weibo.cn/status/5364383716999232",
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": ""
@@ -401,6 +417,22 @@
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": "茫茫人生 好像荒野"
+    },
+    {
+      "uid": "1650562741",
+      "name": "许愿和海洋之星",
+      "category": "Unverified",
+      "classification": "Unverified",
+      "verified": false,
+      "enabled": true,
+      "autoDiscovered": true,
+      "firstSeen": "2026-11-12T11:39:17+08:00",
+      "lastSeen": "2026-11-12T10:52:03+08:00",
+      "lastMentionPostId": "5364382528701983",
+      "lastMentionUrl": "https://m.weibo.cn/status/5364382528701983",
+      "discoveredBy": "侯明昊代言",
+      "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
+      "verificationDescription": ""
     }
   ]
 }
