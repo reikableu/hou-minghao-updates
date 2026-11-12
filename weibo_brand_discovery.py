@@ -1,301 +1,126 @@
+"""Page-one, rolling 24-hour discovery of relevant brand and event organizations.
+Search availability depends on Weibo; failures do not remove previously saved accounts.
+"""
 import json
 import os
 import re
 import time
-import urllib.parse
 from datetime import datetime, timedelta
 from html import unescape
 from pathlib import Path
+from urllib.parse import urlencode
 from zoneinfo import ZoneInfo
-
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
-OUTPUT_FILE = Path("weibo_discovered_accounts.json")
-TZ = ZoneInfo("Asia/Singapore")
-WINDOW_HOURS = int(os.environ.get("WEIBO_DISCOVERY_HOURS", "24"))
-MAX_SEARCH_PAGES = int(os.environ.get("WEIBO_DISCOVERY_PAGES", "3"))
-SEARCH_RETRIES = int(os.environ.get("WEIBO_DISCOVERY_RETRIES", "2"))
-SEARCH_TERMS = ["侯明昊", "@侯明昊", "侯明昊代言", "侯明昊品牌大使", "侯明昊合作"]
-HOU_KEYWORDS = ["侯明昊", "Hou Minghao", "HouMinghao", "Hou Ming Hao", "侯明昊工作室"]
-OFFICIAL_UIDS = {"1831550987", "5763552342"}
-BRAND_HINTS = (
-    "官方", "品牌", "旗舰", "中国", "集团", "公司", "科技", "食品", "美妆", "护肤",
-    "服饰", "珠宝", "汽车", "手机", "家电", "旅游", "文旅", "微博", "official"
-)
-PERSONAL_HINTS = ("粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主")
-MOBILE_UA = (
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) "
-    "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1"
-)
+OUT = Path('weibo_discovered_accounts.json')
+TZ = ZoneInfo('Asia/Singapore')
+HOURS = 24
+TERMS = ['侯明昊', '侯明昊代言', '侯明昊合作', '侯明昊盛典', '侯明昊红毯',
+         '侯明昊澳门', '侯明昊湾区升明月', '侯明昊W中文版', '侯明昊微博之夜',
+         '侯明昊尖叫之夜', '侯明昊Prada', '侯明昊活动', '侯明昊颁奖']
+FAN = ('粉丝','后援','超话','资源站','应援','个人','演员','博主','追星','小友','唯粉','站姐','饭圈','打投')
+ORG = ('官方','品牌','旗舰','集团','公司','科技','食品','美妆','护肤','服饰','珠宝','汽车',
+       '家电','旅游','文旅','传媒','娱乐','文化','杂志','时尚','卫视','电视台','平台',
+       '主办','盛典','活动','电影节','音乐节','颁奖','official','company','brand')
+EVENT = ('盛典','晚会','红毯','颁奖','电影节','音乐节','尖叫之夜','微博之夜','w gala',
+         '年度盛典','湾区升明月','庆典','event','gala','award')
+OFFICIAL = {'1831550987','5763552342'}
 
+def text(s):
+    return re.sub(r'\s+', ' ', BeautifulSoup(unescape(str(s or '')), 'html.parser').get_text(' ', strip=True)).strip()
 
-def clean_text(value):
-    if not value:
-        return ""
-    value = unescape(str(value))
-    value = BeautifulSoup(value, "html.parser").get_text(" ", strip=True)
-    return re.sub(r"\s+", " ", value).strip()
-
-
-def mentions_hou(*values):
-    blob = " ".join(clean_text(v) for v in values if v).lower()
-    return any(keyword.lower() in blob for keyword in HOU_KEYWORDS)
-
-
-def parse_created_at(value, now):
-    value = clean_text(value)
-    if not value:
-        return None
-    try:
-        return datetime.strptime(value, "%a %b %d %H:%M:%S %z %Y").astimezone(TZ)
-    except ValueError:
-        pass
-    match = re.fullmatch(r"(\d+)\s*分钟前", value)
-    if match:
-        return now - timedelta(minutes=int(match.group(1)))
-    match = re.fullmatch(r"(\d+)\s*小时前", value)
-    if match:
-        return now - timedelta(hours=int(match.group(1)))
-    match = re.fullmatch(r"(昨天|今天)\s*(\d{1,2}):(\d{2})", value)
-    if match:
-        day = now.date() - timedelta(days=1 if match.group(1) == "昨天" else 0)
-        return datetime(day.year, day.month, day.day, int(match.group(2)), int(match.group(3)), tzinfo=TZ)
-    match = re.fullmatch(r"(\d{1,2})-(\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?", value)
-    if match:
-        candidate = datetime(
-            now.year, int(match.group(1)), int(match.group(2)),
-            int(match.group(3) or 12), int(match.group(4) or 0), tzinfo=TZ,
-        )
-        if candidate > now + timedelta(days=1):
-            candidate = candidate.replace(year=now.year - 1)
-        return candidate
+def date_of(raw, now):
+    raw=text(raw)
+    try: return datetime.strptime(raw,'%a %b %d %H:%M:%S %z %Y').astimezone(TZ)
+    except ValueError: pass
+    m=re.fullmatch(r'(\d+)\s*分钟前',raw)
+    if m:return now-timedelta(minutes=int(m.group(1)))
+    m=re.fullmatch(r'(\d+)\s*小时前',raw)
+    if m:return now-timedelta(hours=int(m.group(1)))
+    m=re.fullmatch(r'(今天|昨天)\s*(\d{1,2}):(\d{2})',raw)
+    if m:
+        day=(now-timedelta(days=int(m.group(1)=='昨天'))).date()
+        return datetime(day.year,day.month,day.day,int(m.group(2)),int(m.group(3)),tzinfo=TZ)
+    m=re.fullmatch(r'(\d{1,2})-(\d{1,2})(?:\s+(\d{1,2}):(\d{2}))?',raw)
+    if m:
+        d=datetime(now.year,int(m.group(1)),int(m.group(2)),int(m.group(3) or 12),int(m.group(4) or 0),tzinfo=TZ)
+        return d.replace(year=d.year-1) if d>now+timedelta(days=1) else d
     return None
 
-
-def load_existing():
-    if not OUTPUT_FILE.exists():
-        return {"updatedAt": None, "windowHours": WINDOW_HOURS, "accounts": []}
-    try:
-        data = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
-        if isinstance(data, dict) and isinstance(data.get("accounts"), list):
-            return data
-    except Exception as error:
-        print("Could not read discovered account file:", error)
-    return {"updatedAt": None, "windowHours": WINDOW_HOURS, "accounts": []}
-
-
-def cookie_list():
-    cookies = []
-    for part in os.environ.get("WEIBO_COOKIE", "").split(";"):
-        if "=" not in part:
-            continue
-        name, value = part.split("=", 1)
-        if name.strip():
-            for domain in (".weibo.cn", ".weibo.com"):
-                cookies.append({"name": name.strip(), "value": value.strip(), "domain": domain, "path": "/"})
-    return cookies
-
-
-def classify_account(user):
-    """Return (classification, reason, profile_description).
-
-    Personal/fan accounts are excluded. Other accounts that do not pass brand
-    confirmation are collected as Unverified.
-    """
-    verified = bool(user.get("verified"))
-    verified_type = str(user.get("verified_type"))
-    description = clean_text(user.get("verified_reason") or user.get("description") or "")
-    name = clean_text(user.get("screen_name") or "")
-    profile_text = f"{name} {description}".lower()
-    org_type = verified_type in {"2", "3", "5", "7"}
-    brand_hint = next((hint for hint in BRAND_HINTS if hint.lower() in profile_text), "")
-    personal_hint = next((hint for hint in PERSONAL_HINTS if hint.lower() in profile_text), "")
-
-    if personal_hint:
-        return "Rejected", f"personal/fan indicator: {personal_hint}", description
-
-    if verified and (org_type or brand_hint):
-        evidence = f"verified organization type {verified_type}" if org_type else f"brand keyword: {brand_hint}"
-        return "Verified Brand", evidence, description
-
-    reasons = []
-    if not verified:
-        reasons.append("Weibo verification not present")
-    if not org_type:
-        reasons.append(f"organization type not confirmed ({verified_type})")
-    if not brand_hint:
-        reasons.append("no configured brand keyword")
-    return "Unverified", "; ".join(reasons), description
-
-
-def get_json(page, url):
-    last_error = None
-    for attempt in range(SEARCH_RETRIES + 1):
-        try:
-            response = page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            if response is None:
-                raise RuntimeError("No response from Weibo")
-            if response.status in (403, 418, 432):
-                raise PermissionError(f"HTTP {response.status} from Weibo")
-            if response.status != 200:
-                raise RuntimeError(f"HTTP {response.status}")
-            body = (response.text() or "").strip()
-            try:
-                return json.loads(body)
-            except ValueError:
-                preview = clean_text(body)[:120]
-                raise RuntimeError(f"Non-JSON response, possibly login/captcha/anti-bot page: {preview!r}")
-        except PermissionError:
-            raise
-        except Exception as error:
-            last_error = error
-            if attempt < SEARCH_RETRIES:
-                time.sleep(1.5 * (attempt + 1))
-    raise RuntimeError(str(last_error))
-
-
-def walk_mblogs(node):
-    if isinstance(node, dict):
-        mblog = node.get("mblog")
-        if isinstance(mblog, dict):
-            yield mblog
-        for key in ("cards", "card_group", "items"):
-            yield from walk_mblogs(node.get(key))
-    elif isinstance(node, list):
-        for item in node:
-            yield from walk_mblogs(item)
-
+def mblogs(obj):
+    if isinstance(obj,list):
+        for value in obj: yield from mblogs(value)
+    elif isinstance(obj,dict):
+        if isinstance(obj.get('mblog'),dict): yield obj['mblog']
+        for key in ('cards','card_group','items'): yield from mblogs(obj.get(key))
 
 def main():
-    from playwright.sync_api import sync_playwright
-
-    now = datetime.now(TZ)
-    cutoff = now - timedelta(hours=WINDOW_HOURS)
-    current = load_existing()
-    accounts = {str(item.get("uid")): item for item in current.get("accounts", []) if item.get("uid")}
-    # Remove fan/personal accounts from previously saved automatic discoveries too.
-    for uid, saved in list(accounts.items()):
-        if saved.get("autoDiscovered") and classify_account({
-            "screen_name": saved.get("name", ""),
-            "description": saved.get("verificationDescription", ""),
-            "verified": saved.get("verified", False),
-        })[0] == "Rejected":
-            del accounts[uid]
-            print(f"  Removed previously discovered personal/fan account: {uid}")
-    seen_posts = set()
-    discovered_this_run = set()
-    verified_count = 0
-    unverified_count = 0
-    rejected_count = 0
-    successful_search_pages = 0
-    failed_search_pages = 0
-
-    with sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=True, args=["--disable-blink-features=AutomationControlled"])
-        context = browser.new_context(
-            user_agent=MOBILE_UA, locale="zh-CN", viewport={"width": 390, "height": 844},
-            extra_http_headers={"Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8"},
-        )
-        cookies = cookie_list()
-        if cookies:
-            context.add_cookies(cookies)
-            print("Brand discovery is using WEIBO_COOKIE")
-        else:
-            print("Brand discovery is running without WEIBO_COOKIE")
-        page = context.new_page()
-        page.goto("https://m.weibo.cn/", wait_until="domcontentloaded", timeout=20000)
-
-        for term in SEARCH_TERMS:
-            print(f"Searching Weibo for: {term}")
-            for page_number in range(1, MAX_SEARCH_PAGES + 1):
-                containerid = "100103type=1&q=" + urllib.parse.quote(term)
-                query = urllib.parse.urlencode({
-                    "containerid": containerid, "page_type": "searchall",
-                    "page": page_number, "_": int(time.time() * 1000),
-                })
-                try:
-                    payload = get_json(page, f"https://m.weibo.cn/api/container/getIndex?{query}")
-                    successful_search_pages += 1
-                except Exception as error:
-                    failed_search_pages += 1
-                    print(f"  Search page {page_number} failed: {error}")
-                    break
-                cards = ((payload.get("data") or {}).get("cards")) or []
-                if not cards:
-                    break
-                found_recent = False
-                for mblog in walk_mblogs(cards):
-                    post_id = str(mblog.get("id") or mblog.get("mid") or "")
-                    if not post_id or post_id in seen_posts:
-                        continue
-                    seen_posts.add(post_id)
-                    created = parse_created_at(mblog.get("created_at"), now)
-                    if not created or created < cutoff or created > now + timedelta(minutes=10):
-                        continue
-                    found_recent = True
-                    retweet = mblog.get("retweeted_status") or {}
-                    if not mentions_hou(mblog.get("text"), mblog.get("raw_text"), retweet.get("text"), retweet.get("raw_text")):
-                        continue
-                    user = mblog.get("user") or {}
-                    uid = str(user.get("id") or user.get("idstr") or "").strip()
-                    name = clean_text(user.get("screen_name") or "")
-                    if not uid or not name or uid in OFFICIAL_UIDS:
-                        continue
-
-                    classification, reason, verification_description = classify_account(user)
-                    if classification == "Rejected":
-                        rejected_count += 1
-                        accounts.pop(uid, None)
-                        print(f"  Rejected @{name} ({uid}): {reason}")
-                        continue
-                    old = accounts.get(uid, {})
-                    accounts[uid] = {
-                        "uid": uid,
-                        "name": name,
-                        "category": classification,
-                        "classification": classification,
-                        "verified": bool(user.get("verified")),
-                        "enabled": True,
-                        "autoDiscovered": True,
-                        "firstSeen": old.get("firstSeen") or now.isoformat(timespec="seconds"),
-                        "lastSeen": created.isoformat(timespec="seconds"),
-                        "lastMentionPostId": post_id,
-                        "lastMentionUrl": f"https://m.weibo.cn/status/{post_id}",
-                        "discoveredBy": term,
-                        "classificationReason": reason,
-                        "verificationDescription": verification_description,
-                    }
-                    discovered_this_run.add(uid)
-                    if classification == "Verified Brand":
-                        verified_count += 1
-                    else:
-                        unverified_count += 1
-                    print(f"  Added/updated @{name} ({uid}) as {classification}: {reason}")
-                if not found_recent:
-                    break
-                time.sleep(0.8)
-        context.close()
+    now=datetime.now(TZ); cutoff=now-timedelta(hours=HOURS)
+    try:
+        saved=json.loads(OUT.read_text(encoding='utf-8'))
+        accounts={str(x['uid']):x for x in saved.get('accounts',[]) if isinstance(x,dict) and x.get('uid')}
+    except (FileNotFoundError,ValueError,KeyError): accounts={}
+    good=0; failed=0; added=0
+    with sync_playwright() as pw:
+        browser=pw.chromium.launch(headless=True)
+        context=browser.new_context(locale='zh-CN',user_agent='Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 Version/17.5 Mobile/15E148 Safari/604.1')
+        cookie=os.getenv('WEIBO_COOKIE','')
+        cookies=[]
+        for part in cookie.split(';'):
+            if '=' in part:
+                key,value=part.strip().split('=',1)
+                if key: cookies.append({'name':key,'value':value,'domain':'.weibo.cn','path':'/'})
+        if cookies: context.add_cookies(cookies)
+        page=context.new_page()
+        try: page.goto('https://m.weibo.cn/',wait_until='domcontentloaded',timeout=20000)
+        except Exception as e: print('Warmup notice:',str(e)[:120])
+        for term in TERMS:
+            print('Searching page 1:',term)
+            query=urlencode({'containerid':'100103type=1&q='+term,'page_type':'searchall','page':1})
+            try:
+                response=page.goto('https://m.weibo.cn/api/container/getIndex?'+query,wait_until='domcontentloaded',timeout=30000)
+                if response is None or response.status!=200: raise RuntimeError('HTTP '+str(response.status if response else 'none'))
+                body=response.text().strip()
+                if body.startswith('<'): raise RuntimeError('HTML response, possible authentication or challenge')
+                data=json.loads(body)
+                cards=(data.get('data') or {}).get('cards') or []
+                good+=1
+            except Exception as e:
+                failed+=1;print('  Search unavailable:',str(e)[:150]);continue
+            for post in mblogs(cards):
+                posted=date_of(post.get('created_at'),now)
+                if posted is None or not cutoff<=posted<=now+timedelta(minutes=10):continue
+                body=text(post.get('text') or post.get('raw_text'))
+                if '侯明昊' not in body and 'hou minghao' not in body.lower():continue
+                user=post.get('user') or {};uid=str(user.get('id') or user.get('idstr') or '')
+                if not uid.isdigit() or uid in OFFICIAL:continue
+                name=text(user.get('screen_name'));reason=text(user.get('verified_reason') or user.get('description'))
+                profile=(name+' '+reason).lower()
+                if any(h in profile for h in FAN):continue
+                if not any(h in profile for h in ORG):continue
+                verified=bool(user.get('verified'))
+                org_type=str(user.get('verified_type')) in {'2','3','5','7'}
+                event_source=any(h in profile for h in EVENT)
+                category=('Verified Event' if verified and event_source else
+                          'Verified Brand' if verified and (org_type or any(h in profile for h in ORG)) else
+                          'Unverified')
+                old=accounts.get(uid,{})
+                accounts[uid]={'uid':uid,'name':name,'classification':category,'category':category,
+                               'verified':verified,'enabled':True,'autoDiscovered':True,
+                               'verificationDescription':reason,
+                               'firstSeen':old.get('firstSeen',now.isoformat()),
+                               'lastSeen':posted.isoformat(),
+                               'lastMentionPostId':str(post.get('id') or post.get('mid') or ''),
+                               'discoveredBy':term}
+                added+=1
+                print('  Eligible:',name,category)
+            time.sleep(0.5)
         browser.close()
+    OUT.write_text(json.dumps({'updatedAt':now.isoformat(),'windowHours':HOURS,
+                               'accounts':sorted(accounts.values(),key=lambda x:x.get('name',''))},
+                              ensure_ascii=False,indent=2),encoding='utf-8')
+    print(f'Discovery: successful keyword searches={good}; failed={failed}; eligible mentions={added}; stored accounts={len(accounts)}')
+    if not good: print('SEARCH FAILED: existing account list retained; zero results do not mean zero mentions')
 
-    output = {
-        "updatedAt": now.isoformat(timespec="seconds"),
-        "windowHours": WINDOW_HOURS,
-        "accounts": sorted(accounts.values(), key=lambda item: (item.get("name") or "").lower()),
-    }
-    OUTPUT_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
-    status = "SEARCH FAILED" if successful_search_pages == 0 else ("PARTIAL SUCCESS" if failed_search_pages else "SUCCESS")
-    print("\n========== WEIBO ACCOUNT DISCOVERY ==========")
-    print(f"Status: {status}")
-    print(f"Search window: last {WINDOW_HOURS} hours")
-    print(f"Successful search pages: {successful_search_pages}")
-    print(f"Failed search pages: {failed_search_pages}")
-    print(f"Verified Brand accounts seen this run: {verified_count}")
-    print(f"Unverified accounts seen this run: {unverified_count}")
-    print(f"Personal/fan accounts rejected: {rejected_count}")
-    print(f"Unique accounts added/updated this run: {len(discovered_this_run)}")
-    print(f"Stored accounts total: {len(accounts)}")
-    print("==============================================")
-
-
-if __name__ == "__main__":
-    main()
+if __name__=='__main__':main()
