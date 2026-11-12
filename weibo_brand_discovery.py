@@ -99,8 +99,8 @@ def cookie_list():
 def classify_account(user):
     """Return (classification, reason, profile_description).
 
-    The keywords remain useful for confirming brands. Accounts that do not pass the
-    confirmation gate are still collected and labeled Unverified instead of discarded.
+    Personal/fan accounts are excluded. Other accounts that do not pass brand
+    confirmation are collected as Unverified.
     """
     verified = bool(user.get("verified"))
     verified_type = str(user.get("verified_type"))
@@ -111,7 +111,10 @@ def classify_account(user):
     brand_hint = next((hint for hint in BRAND_HINTS if hint.lower() in profile_text), "")
     personal_hint = next((hint for hint in PERSONAL_HINTS if hint.lower() in profile_text), "")
 
-    if verified and (org_type or brand_hint) and not personal_hint:
+    if personal_hint:
+        return "Rejected", f"personal/fan indicator: {personal_hint}", description
+
+    if verified and (org_type or brand_hint):
         evidence = f"verified organization type {verified_type}" if org_type else f"brand keyword: {brand_hint}"
         return "Verified Brand", evidence, description
 
@@ -122,8 +125,6 @@ def classify_account(user):
         reasons.append(f"organization type not confirmed ({verified_type})")
     if not brand_hint:
         reasons.append("no configured brand keyword")
-    if personal_hint:
-        reasons.append(f"personal/fan indicator: {personal_hint}")
     return "Unverified", "; ".join(reasons), description
 
 
@@ -172,10 +173,20 @@ def main():
     cutoff = now - timedelta(hours=WINDOW_HOURS)
     current = load_existing()
     accounts = {str(item.get("uid")): item for item in current.get("accounts", []) if item.get("uid")}
+    # Remove fan/personal accounts from previously saved automatic discoveries too.
+    for uid, saved in list(accounts.items()):
+        if saved.get("autoDiscovered") and classify_account({
+            "screen_name": saved.get("name", ""),
+            "description": saved.get("verificationDescription", ""),
+            "verified": saved.get("verified", False),
+        })[0] == "Rejected":
+            del accounts[uid]
+            print(f"  Removed previously discovered personal/fan account: {uid}")
     seen_posts = set()
     discovered_this_run = set()
     verified_count = 0
     unverified_count = 0
+    rejected_count = 0
     successful_search_pages = 0
     failed_search_pages = 0
 
@@ -232,6 +243,11 @@ def main():
                         continue
 
                     classification, reason, verification_description = classify_account(user)
+                    if classification == "Rejected":
+                        rejected_count += 1
+                        accounts.pop(uid, None)
+                        print(f"  Rejected @{name} ({uid}): {reason}")
+                        continue
                     old = accounts.get(uid, {})
                     accounts[uid] = {
                         "uid": uid,
@@ -275,6 +291,7 @@ def main():
     print(f"Failed search pages: {failed_search_pages}")
     print(f"Verified Brand accounts seen this run: {verified_count}")
     print(f"Unverified accounts seen this run: {unverified_count}")
+    print(f"Personal/fan accounts rejected: {rejected_count}")
     print(f"Unique accounts added/updated this run: {len(discovered_this_run)}")
     print(f"Stored accounts total: {len(accounts)}")
     print("==============================================")
