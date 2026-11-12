@@ -17,6 +17,7 @@ from deep_translator import GoogleTranslator
 
 POSTS_FILE = Path("posts.json")
 WEIBO_USERNAME_CACHE_FILE = Path("weibo_username_cache.json")
+WEIBO_DISCOVERED_ACCOUNTS_FILE = Path("weibo_discovered_accounts.json")
 IMAGE_DIR = Path("media")
 RAW_MEDIA_BASE = "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media"
 MAX_IMAGE_DOWNLOADS_PER_RUN = 40
@@ -90,6 +91,26 @@ WEIBO_ACCOUNT_IDS = [
     "7857186930",  # FADEAWAY_L
     "7867201948",  # PLUG-INPET
 ]
+
+def load_discovered_weibo_accounts():
+    if not WEIBO_DISCOVERED_ACCOUNTS_FILE.exists():
+        return []
+    try:
+        payload = json.loads(WEIBO_DISCOVERED_ACCOUNTS_FILE.read_text(encoding="utf-8"))
+        accounts = payload.get("accounts", []) if isinstance(payload, dict) else []
+        loaded = []
+        for item in accounts:
+            if not isinstance(item, dict) or not item.get("enabled", True):
+                continue
+            uid = str(item.get("uid") or "").strip()
+            name = str(item.get("name") or "").strip()
+            if uid.isdigit():
+                loaded.append((uid, name))
+        return loaded
+    except Exception as error:
+        print("Could not read auto-discovered Weibo accounts:", error)
+        return []
+
 
 # Only keep posts from non-official Weibo accounts if they mention one of these.
 # Matching is case-insensitive and also checks reposted text and hashtags.
@@ -169,6 +190,14 @@ def friendly_weibo_source(value):
         uid = match.group(1)
         return f"Weibo @{WEIBO_USERNAME_CACHE.get(uid, uid)}"
     return value
+
+# Merge verified auto-discovered brands without changing the permanent list above.
+for discovered_uid, discovered_name in load_discovered_weibo_accounts():
+    if discovered_uid not in WEIBO_ACCOUNT_IDS:
+        WEIBO_ACCOUNT_IDS.append(discovered_uid)
+    if discovered_name:
+        WEIBO_ACCOUNT_NAMES.setdefault(discovered_uid, discovered_name)
+        WEIBO_USERNAME_CACHE.setdefault(discovered_uid, discovered_name)
 
 SOURCES = [
     {
