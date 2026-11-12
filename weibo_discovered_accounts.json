@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T11:39:17+08:00",
+  "updatedAt": "2026-11-12T12:00:45.814770+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -33,38 +33,6 @@
       "discoveredBy": "@侯明昊",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": "幸福的名号是明昊@侯明昊"
-    },
-    {
-      "uid": "7810062354",
-      "name": "_Really_5366",
-      "category": "Unverified",
-      "classification": "Unverified",
-      "verified": false,
-      "enabled": true,
-      "autoDiscovered": true,
-      "firstSeen": "2026-11-12T10:52:19+08:00",
-      "lastSeen": "2026-11-12T00:30:10+08:00",
-      "lastMentionPostId": "5364226026898533",
-      "lastMentionUrl": "https://m.weibo.cn/status/5364226026898533",
-      "discoveredBy": "侯明昊代言",
-      "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
-      "verificationDescription": "正能量"
-    },
-    {
-      "uid": "7894866385",
-      "name": "_光芒万丈的泥",
-      "category": "Unverified",
-      "classification": "Unverified",
-      "verified": false,
-      "enabled": true,
-      "autoDiscovered": true,
-      "firstSeen": "2026-11-12T10:52:19+08:00",
-      "lastSeen": "2026-11-11T22:01:28+08:00",
-      "lastMentionPostId": "5364188610298430",
-      "lastMentionUrl": "https://m.weibo.cn/status/5364188610298430",
-      "discoveredBy": "侯明昊代言",
-      "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
-      "verificationDescription": "开心做自己"
     },
     {
       "uid": "7172100137",
@@ -117,18 +85,48 @@
     {
       "uid": "2155159645",
       "name": "W中文版",
-      "category": "Verified Brand",
       "classification": "Verified Brand",
+      "category": "Verified Brand",
       "verified": true,
       "enabled": true,
       "autoDiscovered": true,
+      "verificationDescription": "《W中文版》官方微博",
       "firstSeen": "2026-11-12T10:52:19+08:00",
       "lastSeen": "2026-11-11T12:55:10+08:00",
       "lastMentionPostId": "5364051124685131",
-      "lastMentionUrl": "https://m.weibo.cn/status/5364051124685131",
-      "discoveredBy": "@侯明昊",
-      "classificationReason": "verified organization type 3",
-      "verificationDescription": "《W中文版》官方微博"
+      "discoveredBy": "侯明昊活动"
+    },
+    {
+      "uid": "7810062354",
+      "name": "_Really_5366",
+      "category": "Unverified",
+      "classification": "Unverified",
+      "verified": false,
+      "enabled": true,
+      "autoDiscovered": true,
+      "firstSeen": "2026-11-12T10:52:19+08:00",
+      "lastSeen": "2026-11-12T00:30:10+08:00",
+      "lastMentionPostId": "5364226026898533",
+      "lastMentionUrl": "https://m.weibo.cn/status/5364226026898533",
+      "discoveredBy": "侯明昊代言",
+      "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
+      "verificationDescription": "正能量"
+    },
+    {
+      "uid": "7894866385",
+      "name": "_光芒万丈的泥",
+      "category": "Unverified",
+      "classification": "Unverified",
+      "verified": false,
+      "enabled": true,
+      "autoDiscovered": true,
+      "firstSeen": "2026-11-12T10:52:19+08:00",
+      "lastSeen": "2026-11-11T22:01:28+08:00",
+      "lastMentionPostId": "5364188610298430",
+      "lastMentionUrl": "https://m.weibo.cn/status/5364188610298430",
+      "discoveredBy": "侯明昊代言",
+      "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
+      "verificationDescription": "开心做自己"
     },
     {
       "uid": "1786986184",
@@ -193,6 +191,20 @@
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": ""
+    },
+    {
+      "uid": "7308140398",
+      "name": "大象新闻",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "河南广播电视台大象新闻",
+      "firstSeen": "2026-11-12T12:00:45.814770+08:00",
+      "lastSeen": "2026-11-11T22:14:04+08:00",
+      "lastMentionPostId": "5364191781192097",
+      "discoveredBy": "侯明昊澳门"
     },
     {
       "uid": "9027620626",
