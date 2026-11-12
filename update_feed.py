@@ -98,18 +98,16 @@ def load_discovered_weibo_accounts():
     try:
         payload = json.loads(WEIBO_DISCOVERED_ACCOUNTS_FILE.read_text(encoding="utf-8"))
         accounts = payload.get("accounts", []) if isinstance(payload, dict) else []
-        loaded = []
-        for item in accounts:
-            if not isinstance(item, dict) or not item.get("enabled", True):
-                continue
-            uid = str(item.get("uid") or "").strip()
-            name = str(item.get("name") or "").strip()
-            if uid.isdigit():
-                loaded.append((uid, name))
-        return loaded
+        return [item for item in accounts if isinstance(item, dict) and item.get("enabled", True)
+                and str(item.get("uid") or "").strip().isdigit()]
     except Exception as error:
         print("Could not read auto-discovered Weibo accounts:", error)
         return []
+
+
+DISCOVERED_WEIBO_ACCOUNTS = {
+    str(item.get("uid")): item for item in load_discovered_weibo_accounts()
+}
 
 
 # Only keep posts from non-official Weibo accounts if they mention one of these.
@@ -191,10 +189,11 @@ def friendly_weibo_source(value):
         return f"Weibo @{WEIBO_USERNAME_CACHE.get(uid, uid)}"
     return value
 
-# Merge verified auto-discovered brands without changing the permanent list above.
-for discovered_uid, discovered_name in load_discovered_weibo_accounts():
+# Merge auto-discovered accounts without changing the permanent account list.
+for discovered_uid, discovered_account in DISCOVERED_WEIBO_ACCOUNTS.items():
     if discovered_uid not in WEIBO_ACCOUNT_IDS:
         WEIBO_ACCOUNT_IDS.append(discovered_uid)
+    discovered_name = str(discovered_account.get("name") or "").strip()
     if discovered_name:
         WEIBO_ACCOUNT_NAMES.setdefault(discovered_uid, discovered_name)
         WEIBO_USERNAME_CACHE.setdefault(discovered_uid, discovered_name)
@@ -206,6 +205,11 @@ SOURCES = [
         "platform": "Weibo",
         "uid": account_id,
         "official": account_id in {"1831550987", "5763552342"},
+        "accountCategory": (
+            "Official" if account_id in {"1831550987", "5763552342"}
+            else DISCOVERED_WEIBO_ACCOUNTS.get(account_id, {}).get("classification", "Monitored Brand")
+        ),
+        "weiboVerified": DISCOVERED_WEIBO_ACCOUNTS.get(account_id, {}).get("verified", True),
         "type": "sina_api_account",
     }
     for account_id in WEIBO_ACCOUNT_IDS
@@ -986,9 +990,15 @@ def collect_sina_api_account(source_config):
             "id": make_id("Weibo", display_name, title, post_url), "platform": "Weibo",
             "source": display_name, "title": title or "New Weibo update",
             "excerpt": shorten(cleaned_content, 320), "images": image_urls[:9], "videos": videos,
-            "category": determine_category(cleaned_content, "Weibo"), "date": date_iso,
+            "category": (
+                source_config.get("accountCategory")
+                if source_config.get("accountCategory") in {"Verified Brand", "Unverified"}
+                else determine_category(cleaned_content, "Weibo")
+            ),
+            "sourceCategory": source_config.get("accountCategory", "Official"), "date": date_iso,
             "dateExact": date_exact, "dateSource": "detail" if date_exact else ("relative" if relative_time else "list"),
-            "url": post_url, "official": source_config["official"], "verified": True,
+            "url": post_url, "official": source_config["official"],
+            "verified": bool(source_config.get("weiboVerified", source_config["official"])),
             "collectionMethod": "Weibo API",
         })
     if skipped or too_old or api_errors:
@@ -1137,6 +1147,8 @@ def normalize_existing_post(post):
     post.setdefault("id", make_id(post.get("platform", ""), post.get("source", ""), post.get("title", ""), post.get("url", "")))
     post.setdefault("excerpt", ""); post.setdefault("category", "Other"); post.setdefault("official", False)
     post.setdefault("verified", False); post.setdefault("collectionMethod", "Manual")
+    if post.get("platform") == "Weibo":
+        post.setdefault("sourceCategory", "Official" if post.get("official") else "Monitored Brand")
     raw_images = post.get("images", [])
     if not isinstance(raw_images, list):
         raw_images = [raw_images] if raw_images else []
