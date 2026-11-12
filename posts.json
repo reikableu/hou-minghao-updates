@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-12T12:42:34+08:00",
+  "lastUpdated": "2026-11-12T15:43:10+08:00",
   "status": "Completed: 30 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 4,
+    "postsTranslatedThisRun": 2,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 4
     }
   },
   "sourceStatus": [
@@ -15,181 +15,181 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-12T12:39:29.202886+08:00"
+      "checkedAt": "2026-11-12T15:39:33.228866+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-12T12:39:34.800439+08:00"
+      "checkedAt": "2026-11-12T15:39:38.828717+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:39:39.773413+08:00"
+      "checkedAt": "2026-11-12T15:39:43.865507+08:00"
     },
     {
       "source": "Weibo @我嘞个胡豆er",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:39:42.122915+08:00"
+      "checkedAt": "2026-11-12T15:39:46.212281+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:39:46.115263+08:00"
+      "checkedAt": "2026-11-12T15:39:50.203765+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:39:48.438743+08:00"
+      "checkedAt": "2026-11-12T15:39:52.545484+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:39:50.755371+08:00"
+      "checkedAt": "2026-11-12T15:39:54.867801+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:39:53.098893+08:00"
+      "checkedAt": "2026-11-12T15:39:57.200332+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:39:56.005771+08:00"
+      "checkedAt": "2026-11-12T15:40:00.110737+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:39:58.339361+08:00"
+      "checkedAt": "2026-11-12T15:40:02.502324+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:03.070785+08:00"
+      "checkedAt": "2026-11-12T15:40:07.317072+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:05.442468+08:00"
+      "checkedAt": "2026-11-12T15:40:09.683627+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:08.342174+08:00"
+      "checkedAt": "2026-11-12T15:40:12.612796+08:00"
     },
     {
       "source": "Weibo @用户3923579353",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:11.308660+08:00"
+      "checkedAt": "2026-11-12T15:40:15.548995+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:14.350540+08:00"
+      "checkedAt": "2026-11-12T15:40:18.537824+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:17.418304+08:00"
+      "checkedAt": "2026-11-12T15:40:21.643734+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:19.741395+08:00"
+      "checkedAt": "2026-11-12T15:40:23.972705+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:22.071238+08:00"
+      "checkedAt": "2026-11-12T15:40:26.283852+08:00"
     },
     {
       "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:24.987894+08:00"
+      "checkedAt": "2026-11-12T15:40:29.235662+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:27.317083+08:00"
+      "checkedAt": "2026-11-12T15:40:31.588635+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:29.684821+08:00"
+      "checkedAt": "2026-11-12T15:40:33.954068+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:51.939613+08:00"
+      "checkedAt": "2026-11-12T15:40:55.695299+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:40:56.770126+08:00"
+      "checkedAt": "2026-11-12T15:41:00.387708+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:41:01.556866+08:00"
+      "checkedAt": "2026-11-12T15:41:05.296066+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-12T12:41:08.825423+08:00"
+      "checkedAt": "2026-11-12T15:41:15.913897+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:41:11.885781+08:00"
+      "checkedAt": "2026-11-12T15:41:18.971312+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:41:21.469265+08:00"
+      "checkedAt": "2026-11-12T15:41:28.774730+08:00"
     },
     {
       "source": "Weibo @新浪明星",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:41:44.240666+08:00"
+      "checkedAt": "2026-11-12T15:41:52.383312+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-12T12:41:57.968053+08:00"
+      "checkedAt": "2026-11-12T15:42:06.997518+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 29,
-      "checkedAt": "2026-11-12T12:42:15.718886+08:00"
+      "checkedAt": "2026-11-12T15:42:22.287216+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -224,6 +224,107 @@
     "1731986465": "爱奇艺"
   },
   "posts": [
+    {
+      "id": "b4ba319106e9dc88f30d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "18-year-old Minghao was literally a milk bottle #侯明昊 #HouMinghao",
+      "excerpt": "18-year-old Minghao was literally a milk bottle #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-12T15:26:21+08:00",
+      "url": "https://x.com/PopMinghao/status/2120780221272219920",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "c424abf625199b3f22fd",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"No need to ask This HaoTao is 99 again \" #HouMinghaoBelongsToUs2026 | Zhengzhou 261112 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Upda…",
+      "excerpt": "\"No need to ask This HaoTao is 99 again \" #HouMinghaoBelongsToUs2026 | Zhengzhou 261112 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8f5eaa967557c001f5297a96.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-12T15:02:20+08:00",
+      "url": "https://x.com/HMH_Record/status/2120774175963165152",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "579c2ce27e9a12088975",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊",
+      "title": "#国土不可分国家不可乱# #民族不可散文明不可断# 始终是铭刻在全体中华儿女骨子里的共同信念。",
+      "excerpt": "#国土不可分国家不可乱# #民族不可散文明不可断# 始终是铭刻在全体中华儿女骨子里的共同信念。",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Official",
+      "date": "2026-11-12T13:46:41+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364426476618945",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#国土不可分国家不可乱# #民族不可散文明不可断# 始终是铭刻在全体中华儿女骨子里的共同信念。",
+      "excerptOriginal": "#国土不可分国家不可乱# #民族不可散文明不可断# 始终是铭刻在全体中华儿女骨子里的共同信念。",
+      "titleEnglish": "The indivisibility of the territory, the stability of the nation, the unity of the people, and the continuity of civilization have always been common beliefs deeply ingrained in the hearts of all Chinese people.",
+      "excerptEnglish": "The indivisibility of the territory, the stability of the nation, the unity of the people, and the continuity of civilization have always been common beliefs deeply ingrained in the hearts of all Chinese people."
+    },
+    {
+      "id": "f327636e4bce0bf05b95",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao's 'Belongs To Us' Concert Tour Final Stop | Beijing 2ND ROUND TICKET SALE November 16, 2026 13:18 261112 | \"Hou Minghao Studio\" Weibo Upd…",
+      "excerpt": "Hou Minghao's 'Belongs To Us' Concert Tour Final Stop | Beijing 2ND ROUND TICKET SALE November 16, 2026 13:18 261112 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #후명호 #侯明昊 #HouMinghaoBelongsToUs2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/43f888315948bd38de14afcf.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-12T13:30:07+08:00",
+      "url": "https://x.com/HMH_Record/status/2120750970665922808",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "7eb130e72b3a00739644",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊工作室",
+      "title": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 回到故事起点 回到「属于我们的…」 HOME MEANS HERE 侯明昊「属于我们的…」巡回演唱会 北京·收官站 即…",
+      "excerpt": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 回到故事起点 回到「属于我们的…」 HOME MEANS HERE 侯明昊「属于我们的…」巡回演唱会 北京·收官站 即将正式开票！ ⏰开票时间：11月16日13:18 🗓️演出时间：11月27日-11月29日 🎫官方购票平台： @大麦APP 📍演出地点：华熙生物·润百颜ECM中心",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08be98eedb05bead18df5471.jpg"
+      ],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Official",
+      "date": "2026-11-12T13:18:21+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364419346301357",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 回到故事起点 回到「属于我们的…」 HOME MEANS HERE 侯明昊「属于我们的…」巡回演唱会 北京·收官站 即…",
+      "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 回到故事起点 回到「属于我们的…」 HOME MEANS HERE 侯明昊「属于我们的…」巡回演唱会 北京·收官站 即将正式开票！ ⏰开票时间：11月16日13:18 🗓️演出时间：11月27日-11月29日 🎫官方购票平台： @大麦APP 📍演出地点：华熙生物·润百颜ECM中心",
+      "titleEnglish": "🥝 Memories of Beijing from the \"Belongs to Us...\" Tour by Jackson Yee｜ @Jackson Yee To Be Continued Back to the beginning of the story Back to \"Belongs to Us...\" HOME MEANS HERE Jackson Yee's \"Belongs to Us...\" Tour Beijing – Final Stop That is...",
+      "excerptEnglish": "Hou Minghao 🥝 Hou Minghao \"Belongs to Us\" Concert Tour Memories of Beijing｜ @Hou Minghao To Be Continued Back to the beginning of the story Back to \"Belongs to Us…\" HOME MEANS HERE Hou Minghao \"Belongs to Us…\" Concert Tour Beijing · Final Stop Tickets will soon be officially on sale! ⏰ Ticket sales start: November 16, 1:18 PM 🗓️ Performance dates: November 27–November 29 🎫 Official ticketing platform: @Damai App 📍 Venue: Bloomage Biotech – Biohyalux ECM Center"
+    },
     {
       "id": "a10708f3aa6d65f04b69",
       "platform": "X",
@@ -1311,8 +1412,7 @@
       "title": "W Annual Gala 2026 | Taking group photo 261109 | \"WFirst\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "excerpt": "W Annual Gala 2026 | Taking group photo 261109 | \"WFirst\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cc3b0f8c10195a9922fb5bbb.jpg",
-        "https://pbs.twimg.com/media/HWrnZn2acAAmgGH?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cc3b0f8c10195a9922fb5bbb.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-09T19:56:30+08:00",
@@ -1332,9 +1432,7 @@
       "excerpt": "Hou Minghao New Photos | W Annual Gala 2026 261109 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026 [1/_]",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/57700485e9ee7fe635fb8baf.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/13ef1a9c2adcab69a618319c.jpg",
-        "https://pbs.twimg.com/media/HWrh3X5aMAAsmN0?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWrh4hxa8AAhfLT?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/13ef1a9c2adcab69a618319c.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-09T19:32:16+08:00",
