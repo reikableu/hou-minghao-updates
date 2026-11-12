@@ -47,7 +47,7 @@ MOBILE_UA = (
 WEIBO_POST_LIMIT = 0
 WEIBO_MAX_AGE_DAYS = 60            # ignore Weibo posts older than this
 MAX_DETAIL_FETCHES_PER_RUN = 60    # extra requests used to get exact dates / full text
-WEIBO_PAGES_PER_ACCOUNT = 1           # Frequent scheduled runs: collect page 1 only
+WEIBO_PAGES_PER_ACCOUNT = 1           # scheduled frequently; only page 1
 MAX_BACKFILL_PER_RUN = 30          # old saved posts repaired per run (dates + videos)
 
 # Video / live photo caching. jsDelivr serves correct video MIME types + range requests
@@ -91,27 +91,6 @@ WEIBO_ACCOUNT_IDS = [
     "7857186930",  # FADEAWAY_L
     "7867201948",  # PLUG-INPET
 ]
-
-def load_discovered_weibo_accounts():
-    if not WEIBO_DISCOVERED_ACCOUNTS_FILE.exists():
-        return []
-    try:
-        payload = json.loads(WEIBO_DISCOVERED_ACCOUNTS_FILE.read_text(encoding="utf-8"))
-        accounts = payload.get("accounts", []) if isinstance(payload, dict) else []
-        return [item for item in accounts if isinstance(item, dict) and item.get("enabled", True)
-                and str(item.get("uid") or "").strip().isdigit()
-                and item.get("classification") != "Rejected"
-                and not any(h in (str(item.get("name") or "") + " " + str(item.get("verificationDescription") or ""))
-                            for h in ("粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主"))]
-    except Exception as error:
-        print("Could not read auto-discovered Weibo accounts:", error)
-        return []
-
-
-DISCOVERED_WEIBO_ACCOUNTS = {
-    str(item.get("uid")): item for item in load_discovered_weibo_accounts()
-}
-
 
 # Only keep posts from non-official Weibo accounts if they mention one of these.
 # Matching is case-insensitive and also checks reposted text and hashtags.
@@ -192,14 +171,26 @@ def friendly_weibo_source(value):
         return f"Weibo @{WEIBO_USERNAME_CACHE.get(uid, uid)}"
     return value
 
-# Merge auto-discovered accounts without changing the permanent account list.
-for discovered_uid, discovered_account in DISCOVERED_WEIBO_ACCOUNTS.items():
-    if discovered_uid not in WEIBO_ACCOUNT_IDS:
-        WEIBO_ACCOUNT_IDS.append(discovered_uid)
-    discovered_name = str(discovered_account.get("name") or "").strip()
-    if discovered_name:
-        WEIBO_ACCOUNT_NAMES.setdefault(discovered_uid, discovered_name)
-        WEIBO_USERNAME_CACHE.setdefault(discovered_uid, discovered_name)
+# Load dynamically discovered accounts and retain their classification.
+DISCOVERED_WEIBO_ACCOUNTS = {}
+if WEIBO_DISCOVERED_ACCOUNTS_FILE.exists():
+    try:
+        payload = json.loads(WEIBO_DISCOVERED_ACCOUNTS_FILE.read_text(encoding="utf-8"))
+        for item in payload.get("accounts", []):
+            if not isinstance(item, dict) or not item.get("enabled", True):
+                continue
+            uid = str(item.get("uid", "")).strip()
+            profile = str(item.get("name", "")) + " " + str(item.get("verificationDescription", ""))
+            if (not uid.isdigit() or item.get("classification") == "Rejected" or
+                any(word in profile for word in ("粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主"))):
+                continue
+            DISCOVERED_WEIBO_ACCOUNTS[uid] = item
+            if uid not in WEIBO_ACCOUNT_IDS:
+                WEIBO_ACCOUNT_IDS.append(uid)
+            if item.get("name"):
+                WEIBO_USERNAME_CACHE.setdefault(uid, str(item["name"]))
+    except (ValueError, OSError, AttributeError) as error:
+        print("Discovery account file unavailable:", error)
 
 SOURCES = [
     {
@@ -208,11 +199,8 @@ SOURCES = [
         "platform": "Weibo",
         "uid": account_id,
         "official": account_id in {"1831550987", "5763552342"},
-        "accountCategory": (
-            "Official" if account_id in {"1831550987", "5763552342"}
-            else DISCOVERED_WEIBO_ACCOUNTS.get(account_id, {}).get("classification", "Monitored Brand")
-        ),
-        "weiboVerified": DISCOVERED_WEIBO_ACCOUNTS.get(account_id, {}).get("verified", True),
+        "sourceCategory": ("Official" if account_id in {"1831550987", "5763552342"} else DISCOVERED_WEIBO_ACCOUNTS.get(account_id, {}).get("classification", "Monitored Brand")),
+        "weiboVerified": DISCOVERED_WEIBO_ACCOUNTS.get(account_id, {}).get("verified", False),
         "type": "sina_api_account",
     }
     for account_id in WEIBO_ACCOUNT_IDS
@@ -598,7 +586,6 @@ def weibo_cookies():
 
 
 def weibo_get_json(url, retries=2):
-    """Read Weibo JSON; do not retry authentication/challenge HTML responses."""
     if WEIBO_PAGE is None:
         raise RuntimeError("Browser session not available")
     last = None
@@ -607,32 +594,23 @@ def weibo_get_json(url, retries=2):
             response = WEIBO_PAGE.goto(url, wait_until="domcontentloaded", timeout=30000)
             if response is None:
                 raise RuntimeError("No response from Weibo")
-            status = response.status
-            content_type = response.headers.get("content-type", "unknown")
-            if status in (401, 403, 418, 429, 432):
-                raise PermissionError(f"HTTP {status}; access restricted (content-type: {content_type})")
-            if status != 200:
-                raise RuntimeError(f"HTTP {status}; content-type: {content_type}")
+            if response.status in (403, 418, 432):
+                raise PermissionError(f"HTTP {response.status} (Weibo blocked this request)")
+            if response.status != 200:
+                raise RuntimeError(f"HTTP {response.status}")
             body = (response.text() or "").strip()
             try:
-                payload = json.loads(body)
+                return json.loads(body)
             except ValueError:
-                # HTML pages are often authentication or bot challenges, not transient JSON errors.
-                if body.lower().startswith(("<!doctype html", "<html")) or "text/html" in content_type.lower():
-                    raise PermissionError(
-                        f"HTTP {status}; unexpected HTML response (content-type: {content_type}); "
-                        "possible login or verification page"
-                    )
-                raise RuntimeError(f"HTTP {status}; invalid JSON (content-type: {content_type})")
-            if not isinstance(payload, dict):
-                raise RuntimeError("Unexpected Weibo JSON structure")
-            return payload
+                try:
+                    return json.loads(re.sub(r"<[^>]+>", "", body))
+                except ValueError:
+                    raise RuntimeError(f"Non-JSON response (login/captcha page?): {body[:80]!r}")
         except PermissionError:
-            raise
+            raise  # blocked: retrying only makes it worse
         except Exception as error:
             last = error
-            if attempt < retries:
-                time.sleep(1.5 * (attempt + 1))
+            time.sleep(1.5 * (attempt + 1))
     raise RuntimeError(str(last))
 
 
@@ -907,8 +885,6 @@ def collect_sina_api_account(source_config):
     display_name = friendly_weibo_source(f"Weibo @{uid}")
     all_cards = []
     api_errors = []
-    pagination_status = "complete"
-    oldest_page_date = None
 
     # Explicit page and cache-buster prevent a stale first-page response. Scanning several
     # pages also avoids missing a new post when pinned items occupy the first cards.
@@ -922,10 +898,8 @@ def collect_sina_api_account(source_config):
             payload = weibo_get_json(target_url)
         except Exception as error:
             api_errors.append(f"page {page_number}: {error}")
-            pagination_status = "partial" if page_number > 1 else "failed"
             if page_number == 1:
                 raise
-            print(f"  {display_name}: preserving posts from earlier pages; pagination stopped at page {page_number}")
             break
         if payload.get("ok") not in (1, "1", True):
             msg = str(payload.get("msg") or "")
@@ -936,16 +910,6 @@ def collect_sina_api_account(source_config):
         if not cards:
             break
         all_cards.extend(cards)
-        # Stop only when every dated post on the page is outside the retention window.
-        # A pinned old post alone must not stop collection of newer posts.
-        page_posts = list(weibo_mblogs_from_cards(cards))
-        dated = [parse_weibo_created_at(item.get("created_at"))[0] for item in page_posts]
-        dated = [datetime.fromisoformat(value) for value in dated if value]
-        if page_number > 1 and page_posts and len(dated) == len(page_posts) and all(
-            value < cutoff for value in dated
-        ):
-            print(f"  {display_name}: stopping pagination; page {page_number} is older than {WEIBO_MAX_AGE_DAYS} days")
-            break
         time.sleep(0.6)
 
     for mblog in weibo_mblogs_from_cards(all_cards):
@@ -1017,19 +981,14 @@ def collect_sina_api_account(source_config):
             "id": make_id("Weibo", display_name, title, post_url), "platform": "Weibo",
             "source": display_name, "title": title or "New Weibo update",
             "excerpt": shorten(cleaned_content, 320), "images": image_urls[:9], "videos": videos,
-            "category": (
-                source_config.get("accountCategory")
-                if source_config.get("accountCategory") in {"Verified Brand", "Unverified"}
-                else determine_category(cleaned_content, "Weibo")
-            ),
-            "sourceCategory": source_config.get("accountCategory", "Official"), "date": date_iso,
+            "category": determine_category(cleaned_content, "Weibo"),
+            "sourceCategory": source_config.get("sourceCategory", "Monitored Brand"), "date": date_iso,
             "dateExact": date_exact, "dateSource": "detail" if date_exact else ("relative" if relative_time else "list"),
-            "url": post_url, "official": source_config["official"],
-            "verified": bool(source_config.get("weiboVerified", source_config["official"])),
+            "url": post_url, "official": source_config["official"], "verified": bool(source_config.get("weiboVerified", False)),
             "collectionMethod": "Weibo API",
         })
     if skipped or too_old or api_errors:
-        print(f"  {display_name}: pagination={pagination_status}; skipped {skipped} not mentioning Hou Minghao, {too_old} older than "
+        print(f"  {display_name}: skipped {skipped} not mentioning Hou Minghao, {too_old} older than "
               f"{WEIBO_MAX_AGE_DAYS} days, kept {len(collected)}; API notices: {api_errors}")
     return collected
 
@@ -1174,8 +1133,6 @@ def normalize_existing_post(post):
     post.setdefault("id", make_id(post.get("platform", ""), post.get("source", ""), post.get("title", ""), post.get("url", "")))
     post.setdefault("excerpt", ""); post.setdefault("category", "Other"); post.setdefault("official", False)
     post.setdefault("verified", False); post.setdefault("collectionMethod", "Manual")
-    if post.get("platform") == "Weibo":
-        post.setdefault("sourceCategory", "Official" if post.get("official") else "Monitored Brand")
     raw_images = post.get("images", [])
     if not isinstance(raw_images, list):
         raw_images = [raw_images] if raw_images else []
