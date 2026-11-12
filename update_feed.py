@@ -23,7 +23,7 @@ RAW_MEDIA_BASE = "https://raw.githubusercontent.com/reikableu/hou-minghao-update
 MAX_IMAGE_DOWNLOADS_PER_RUN = 40
 SINGAPORE = ZoneInfo("Asia/Singapore")
 UTC = ZoneInfo("UTC")
-MAX_POSTS = 250
+MAX_POSTS = 500
 MAX_TRANSLATED_POSTS_PER_RUN = 10  # Successful posts; Weibo is prioritized.
 TRANSLATION_DELAY_SECONDS = 5
 REQUEST_DELAY_SECONDS = 2
@@ -181,8 +181,22 @@ if WEIBO_DISCOVERED_ACCOUNTS_FILE.exists():
                 continue
             uid = str(item.get("uid", "")).strip()
             profile = str(item.get("name", "")) + " " + str(item.get("verificationDescription", ""))
-            if (not uid.isdigit() or item.get("classification") == "Rejected" or
-                any(word in profile for word in ("粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主"))):
+            classification = str(item.get("classification") or "").strip()
+            fan_or_personal = any(word in profile for word in (
+                "粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主",
+                "追星", "小友", "唯粉", "站姐", "饭圈", "产出", "打投"
+            ))
+            brand_evidence = any(word.lower() in profile.lower() for word in (
+                "官方", "品牌", "旗舰", "集团", "公司", "科技", "食品", "美妆", "护肤",
+                "服饰", "珠宝", "汽车", "手机", "家电", "旅游", "文旅", "工作室",
+                "传媒", "娱乐", "文化", "official", "inc.", "ltd", "company", "brand"
+            ))
+            # Strict gate: reject personal/fan profiles. An Unverified account must still
+            # show organization/brand evidence; "uncertain" alone is not sufficient.
+            if (not uid.isdigit() or classification == "Rejected" or fan_or_personal or
+                (classification == "Unverified" and not brand_evidence) or
+                classification not in {"Verified Brand", "Verified Brand/Organization", "Unverified"}):
+                print(f"Rejected discovered account @{item.get('name', uid)}: insufficient brand/organization evidence")
                 continue
             DISCOVERED_WEIBO_ACCOUNTS[uid] = item
             if uid not in WEIBO_ACCOUNT_IDS:
@@ -1329,7 +1343,35 @@ def main():
     collected = accepted_weibo + other_new
 
     merged = deduplicate_posts(existing + collected)
-    final_posts = sorted(merged, key=post_timestamp, reverse=True)[:MAX_POSTS]
+
+    # Unverified means: unverified account WITH explicit brand/organization evidence.
+    # Remove old or newly saved Unverified posts if their source did not pass the
+    # current strict discovery gate. This also cleans previously admitted personal accounts.
+    approved_unverified_sources = {
+        f"weibo @{str(item.get('name') or '').strip()}".lower()
+        for item in DISCOVERED_WEIBO_ACCOUNTS.values()
+        if str(item.get("classification") or "").strip() == "Unverified"
+        and str(item.get("name") or "").strip()
+    }
+    retained = []
+    rejected_personal_posts = 0
+    for post in merged:
+        source_category = str(post.get("sourceCategory") or "").strip().lower()
+        source_name = str(post.get("source") or "").strip().lower()
+        if post.get("platform") == "Weibo" and source_category == "unverified":
+            if source_name not in approved_unverified_sources:
+                rejected_personal_posts += 1
+                continue
+        retained.append(post)
+
+    # The 60-day setting is an intake boundary for newly fetched Weibo history,
+    # not a strict deletion rule for posts already saved in posts.json.
+    final_posts = sorted(retained, key=post_timestamp, reverse=True)[:MAX_POSTS]
+    print(
+        f"Feed retention: kept {len(final_posts)} posts, maximum {MAX_POSTS}; "
+        f"removed {rejected_personal_posts} unapproved Unverified Weibo post(s). "
+        f"The {WEIBO_MAX_AGE_DAYS}-day rule applies only when fetching older Weibo history."
+    )
     images_cached, image_cache_failures = localize_post_images(final_posts)
     localize_post_videos(final_posts)
     added, translated, limited, translation_providers = add_translations(final_posts)
