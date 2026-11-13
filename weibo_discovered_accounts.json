@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T15:38:59.200024+08:00",
+  "updatedAt": "2026-11-13T18:39:41.922515+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -427,6 +427,20 @@
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": "只喜欢追线下的肉松小贝🥝 一个小小崇拜侯明昊的人儿罢了。 仅此一个号。"
+    },
+    {
+      "uid": "3182423937",
+      "name": "腾讯娱乐",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "腾讯娱乐官方微博",
+      "firstSeen": "2026-11-13T18:39:41.922515+08:00",
+      "lastSeen": "2026-11-13T12:50:01+08:00",
+      "lastMentionPostId": "5364774603855631",
+      "discoveredBy": "侯明昊活动"
     },
     {
       "uid": "2384801381",
