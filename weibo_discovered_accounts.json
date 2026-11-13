@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T12:39:13.455858+08:00",
+  "updatedAt": "2026-11-13T15:38:59.200024+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -33,6 +33,20 @@
       "discoveredBy": "@侯明昊",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": "幸福的名号是明昊@侯明昊"
+    },
+    {
+      "uid": "8406103824",
+      "name": "Butterfly88u_摄影",
+      "classification": "Unverified",
+      "category": "Unverified",
+      "verified": false,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "📷R5 多年拍摄经验 常驻北京活动🉑约 自己拍 无需求不备用 备注艺人和活动 只出买断 🫧 XX8888888u两位数预算勿扰",
+      "firstSeen": "2026-11-13T15:38:59.200024+08:00",
+      "lastSeen": "2026-11-13T14:47:01+08:00",
+      "lastMentionPostId": "5364804046818133",
+      "discoveredBy": "侯明昊红毯"
     },
     {
       "uid": "7172100137",
