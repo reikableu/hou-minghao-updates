@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-13T09:32:36+08:00",
+  "lastUpdated": "2026-11-13T12:43:07+08:00",
   "status": "Completed: 30 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 2
     }
   },
   "sourceStatus": [
@@ -15,181 +15,181 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-13T09:29:34.376110+08:00"
+      "checkedAt": "2026-11-13T12:39:41.578770+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-13T09:29:39.993843+08:00"
+      "checkedAt": "2026-11-13T12:39:47.291853+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:29:45.004907+08:00"
+      "checkedAt": "2026-11-13T12:39:52.391426+08:00"
     },
     {
       "source": "Weibo @我嘞个胡豆er",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:29:47.339672+08:00"
+      "checkedAt": "2026-11-13T12:39:54.741212+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:29:51.354101+08:00"
+      "checkedAt": "2026-11-13T12:39:58.763791+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:29:53.689931+08:00"
+      "checkedAt": "2026-11-13T12:40:01.109233+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:29:56.014302+08:00"
+      "checkedAt": "2026-11-13T12:40:03.463764+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:29:58.342606+08:00"
+      "checkedAt": "2026-11-13T12:40:05.811223+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:01.267962+08:00"
+      "checkedAt": "2026-11-13T12:40:08.734140+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:03.600993+08:00"
+      "checkedAt": "2026-11-13T12:40:11.158479+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:10.158203+08:00"
+      "checkedAt": "2026-11-13T12:40:17.686153+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:12.530230+08:00"
+      "checkedAt": "2026-11-13T12:40:20.055566+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:15.453781+08:00"
+      "checkedAt": "2026-11-13T12:40:23.003915+08:00"
     },
     {
       "source": "Weibo @用户3923579353",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:18.369357+08:00"
+      "checkedAt": "2026-11-13T12:40:25.939988+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:21.451208+08:00"
+      "checkedAt": "2026-11-13T12:40:29.034834+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:24.590310+08:00"
+      "checkedAt": "2026-11-13T12:40:32.098431+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:26.959012+08:00"
+      "checkedAt": "2026-11-13T12:40:34.459995+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:29.296091+08:00"
+      "checkedAt": "2026-11-13T12:40:36.795007+08:00"
     },
     {
       "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:32.210511+08:00"
+      "checkedAt": "2026-11-13T12:40:39.734596+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:34.552761+08:00"
+      "checkedAt": "2026-11-13T12:40:42.123565+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:36.943305+08:00"
+      "checkedAt": "2026-11-13T12:40:44.638654+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:30:57.659981+08:00"
+      "checkedAt": "2026-11-13T12:41:05.384849+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:31:02.445998+08:00"
+      "checkedAt": "2026-11-13T12:41:10.322236+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:31:07.189577+08:00"
+      "checkedAt": "2026-11-13T12:41:15.185833+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-13T09:31:12.739865+08:00"
+      "checkedAt": "2026-11-13T12:41:21.615172+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:31:15.798479+08:00"
+      "checkedAt": "2026-11-13T12:41:24.701099+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:31:26.465489+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-13T12:41:35.424000+08:00"
     },
     {
       "source": "Weibo @新浪明星",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:31:48.606087+08:00"
+      "checkedAt": "2026-11-13T12:41:59.607848+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-13T09:32:03.176977+08:00"
+      "checkedAt": "2026-11-13T12:42:15.298284+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-13T09:32:17.775176+08:00"
+      "checkedAt": "2026-11-13T12:42:29.989984+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -224,6 +224,89 @@
     "1731986465": "爱奇艺"
   },
   "posts": [
+    {
+      "id": "96a7071972cd0d55210d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@neohou_feed",
+      "title": "NEW MELON new endorsement for #Houminghao Brand Clinique倩碧 #侯明昊 #NeoHou",
+      "excerpt": "NEW MELON new endorsement for #Houminghao Brand Clinique倩碧 #侯明昊 #NeoHou",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c372ea3931180b7b4685ed72.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9dad66f1b88dd7a099d4c37e.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-13T12:34:36+08:00",
+      "url": "https://x.com/neohou_feed/status/2121099385123565621",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "1da4b4a99e85615f05cf",
+      "platform": "Weibo",
+      "source": "Weibo @大象新闻",
+      "title": "【投票：你最期待哪一场演唱会？ 】 华晨宇 周深 侯明昊 王嘉尔 苏醒 曾沛慈 @曾沛慈 长沙演唱会 @种地吧鹭卓 深圳演唱会 @虞书欣Esther 上海演唱会 @程潇 上海演唱会 @侯明昊 北京演唱会 @石凯KAIK 深圳演唱会 @张颜…",
+      "excerpt": "【投票：你最期待哪一场演唱会？ 】 华晨宇 周深 侯明昊 王嘉尔 苏醒 曾沛慈 @曾沛慈 长沙演唱会 @种地吧鹭卓 深圳演唱会 @虞书欣Esther 上海演唱会 @程潇 上海演唱会 @侯明昊 北京演唱会 @石凯KAIK 深圳演唱会 @张颜齐 上海演唱会 @苏醒AllenSu 南京演唱会 @王嘉尔 广州演唱会 @徐良L 武汉演唱会 @华晨宇 南京演唱会 @周深 佛山演唱会 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-13T12:31:35+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5364769966261797",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：你最期待哪一场演唱会？ 】 华晨宇 周深 侯明昊 王嘉尔 苏醒 曾沛慈 @曾沛慈 长沙演唱会 @种地吧鹭卓 深圳演唱会 @虞书欣Esther 上海演唱会 @程潇 上海演唱会 @侯明昊 北京演唱会 @石凯KAIK 深圳演唱会 @张颜…",
+      "excerptOriginal": "【投票：你最期待哪一场演唱会？ 】 华晨宇 周深 侯明昊 王嘉尔 苏醒 曾沛慈 @曾沛慈 长沙演唱会 @种地吧鹭卓 深圳演唱会 @虞书欣Esther 上海演唱会 @程潇 上海演唱会 @侯明昊 北京演唱会 @石凯KAIK 深圳演唱会 @张颜齐 上海演唱会 @苏醒AllenSu 南京演唱会 @王嘉尔 广州演唱会 @徐良L 武汉演唱会 @华晨宇 南京演唱会 @周深 佛山演唱会 网页链接",
+      "titleEnglish": "[Poll: Which concert are you most looking forward to?] Hua Chenyu, Zhou Shen, Hou Minghao, Jackson Wang, Su Xing, Pets Tseng @Pets Tseng Changsha Concert @Zhongdiba Luzhuo Shenzhen Concert @Esther Yu Shuxin Shanghai Concert @Cheng Xiao Shanghai Concert @Hou Minghao Beijing Concert @Shi Kai KAIK Shenzhen Concert @Zhang Yan...",
+      "excerptEnglish": "[Poll: Which concert are you most looking forward to?] Hua Chenyu, Zhou Shen, Hou Minghao, Jackson Wang, Allen Su, Pets Tseng @Pets Tseng Changsha Concert @Zhongdiba Luzhuo Shenzhen Concert @Esther Yu Shanghai Concert @Cheng Xiao Shanghai Concert @Hou Minghao Beijing Concert @Shi Kai KAIK Shenzhen Concert @Zhang Yanqi Shanghai Concert @Allen Su Nanjing Concert @Jackson Wang Guangzhou Concert @Xu Liang L Wuhan Concert @Hua Chenyu Nanjing Concert @Zhou Shen Foshan Concert Web Link"
+    },
+    {
+      "id": "66d2a34b9d86a3ec7b8d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@neohou_feed",
+      "title": "6 Chinese Stars Named Top Brand Ambassadors of 2026 — #HouMinghao No. 1 Among Male Actors! #侯明昊",
+      "excerpt": "6 Chinese Stars Named Top Brand Ambassadors of 2026 — #HouMinghao No. 1 Among Male Actors! #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/523d32dabdb12706a9b06082.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8afef7241ac72be7851910ba.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7bdbbe5adf75279216a78d57.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-13T12:27:37+08:00",
+      "url": "https://x.com/neohou_feed/status/2121097627299148283",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "bbcfdc79ffecd124a9a1",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Xudong | Hou Minghao Wallpaper 261113 | \"Xudong (Xu Dong: One in a Hundred)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Xudong | Hou Minghao Wallpaper 261113 | \"Xudong (Xu Dong: One in a Hundred)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/11c7d724a664a39cdb387917.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/66f1572c4cf551fa33397af3.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-13T09:33:23+08:00",
+      "url": "https://x.com/HMH_Record/status/2121053780523528521",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
     {
       "id": "c9d8e9a896e7010039a7",
       "platform": "X",
@@ -427,6 +510,26 @@
       "category": "X Update",
       "date": "2026-11-12T16:33:39+08:00",
       "url": "https://x.com/HMH_Record/status/2120797156554719614",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "df82c4986f9c0d9f20bc",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@ncybear",
+      "title": "And of course, add #Glory to the list of “Best Web Series” at the 2026 22nd Chinese American TV Festival! https:// xhslink.com/o/9AxNajRXxdT #HouMing…",
+      "excerpt": "And of course, add #Glory to the list of “Best Web Series” at the 2026 22nd Chinese American TV Festival! https:// xhslink.com/o/9AxNajRXxdT #HouMinghao #LuJianglai #XiaoWuyi",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f326f9d4d4356e0f5350e58e.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8d0bfe76af0ba40addbb9cc9.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-12T16:28:44+08:00",
+      "url": "https://x.com/ncybear/status/2120795920925339969",
       "official": false,
       "verified": true,
       "collectionMethod": "Automatic",
@@ -778,7 +881,8 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/80c193e95757b6ef23913c45.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/01e76dd7fd5bc08a5ba62bde.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5b7a923c487aff3d8d11d4fe.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5b7a923c487aff3d8d11d4fe.jpg",
+        "https://pbs.twimg.com/media/HW0jC09aAAAYnBW?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-11T13:33:55+08:00",
@@ -877,7 +981,11 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bd4be2d097f2c35e920f165c.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/493fb2c5c0e100e285d5c69e.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/85d292c0ff398f5963ced38a.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/780ce4addee90989b8732f8a.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/780ce4addee90989b8732f8a.jpg",
+        "https://pbs.twimg.com/media/HWyH9-XawAAeqhF?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWyH9-UaAAA2A5L?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWyH9-WbkAAC8XG?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HWyH9-XacAAF5rb?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-11T02:16:27+08:00",
