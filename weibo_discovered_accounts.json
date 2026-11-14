@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T00:39:21.314364+08:00",
+  "updatedAt": "2026-11-15T02:29:09.222475+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -79,6 +79,20 @@
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": "所有的生命都应该被尊重"
+    },
+    {
+      "uid": "5648651333",
+      "name": "Neo-椰子",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "湖南诺舟大药房连锁公司",
+      "firstSeen": "2026-11-15T02:29:09.222475+08:00",
+      "lastSeen": "2026-11-15T00:26:54+08:00",
+      "lastMentionPostId": "5365312371556636",
+      "discoveredBy": "侯明昊活动"
     },
     {
       "uid": "3128572495",
