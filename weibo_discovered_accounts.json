@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T09:38:58.547177+08:00",
+  "updatedAt": "2026-11-14T12:39:01.598416+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -283,6 +283,20 @@
       "discoveredBy": "@侯明昊",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": "超喜欢🐱中……"
+    },
+    {
+      "uid": "1720962692",
+      "name": "极目新闻",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "楚天都市报极目新闻官方微博",
+      "firstSeen": "2026-11-14T12:39:01.598416+08:00",
+      "lastSeen": "2026-11-14T10:34:52+08:00",
+      "lastMentionPostId": "5365102985609613",
+      "discoveredBy": "侯明昊澳门"
     },
     {
       "uid": "6270404788",

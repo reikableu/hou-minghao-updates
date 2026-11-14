@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-11-14T09:42:43+08:00",
-  "status": "Completed: 31 sources successful, 0 failed",
+  "lastUpdated": "2026-11-14T12:43:05+08:00",
+  "status": "Completed: 32 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
     "postsTranslatedThisRun": 0,
@@ -15,187 +15,193 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-14T09:39:23.318786+08:00"
+      "checkedAt": "2026-11-14T12:39:27.394850+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-14T09:39:28.833984+08:00"
+      "checkedAt": "2026-11-14T12:39:32.834991+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:39:33.842346+08:00"
+      "checkedAt": "2026-11-14T12:39:37.879304+08:00"
     },
     {
       "source": "Weibo @我嘞个胡豆er",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:39:36.150609+08:00"
+      "checkedAt": "2026-11-14T12:39:40.175241+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:39:40.100506+08:00"
+      "checkedAt": "2026-11-14T12:39:44.137555+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:39:42.443708+08:00"
+      "checkedAt": "2026-11-14T12:39:46.492287+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:39:44.770519+08:00"
+      "checkedAt": "2026-11-14T12:39:48.800931+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:39:47.079885+08:00"
+      "checkedAt": "2026-11-14T12:39:51.120613+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:39:49.998233+08:00"
+      "checkedAt": "2026-11-14T12:39:54.000036+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:39:52.338654+08:00"
+      "checkedAt": "2026-11-14T12:39:56.303324+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:39:57.883269+08:00"
+      "checkedAt": "2026-11-14T12:40:00.986431+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:00.228733+08:00"
+      "checkedAt": "2026-11-14T12:40:03.307174+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:03.148535+08:00"
+      "checkedAt": "2026-11-14T12:40:06.336633+08:00"
     },
     {
       "source": "Weibo @用户3923579353",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:06.055673+08:00"
+      "checkedAt": "2026-11-14T12:40:09.229047+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:09.095273+08:00"
+      "checkedAt": "2026-11-14T12:40:12.292530+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:12.154514+08:00"
+      "checkedAt": "2026-11-14T12:40:15.324241+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:14.513031+08:00"
+      "checkedAt": "2026-11-14T12:40:17.636620+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:16.823282+08:00"
+      "checkedAt": "2026-11-14T12:40:19.955179+08:00"
     },
     {
       "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:19.772026+08:00"
+      "checkedAt": "2026-11-14T12:40:22.867892+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:22.131276+08:00"
+      "checkedAt": "2026-11-14T12:40:25.228760+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:24.497171+08:00"
+      "checkedAt": "2026-11-14T12:40:27.563174+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:42.103008+08:00"
+      "checkedAt": "2026-11-14T12:40:44.265337+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:46.919076+08:00"
+      "checkedAt": "2026-11-14T12:40:48.952667+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:40:51.620045+08:00"
+      "checkedAt": "2026-11-14T12:40:53.619805+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-14T09:40:58.757983+08:00"
+      "checkedAt": "2026-11-14T12:40:59.859058+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:41:01.854389+08:00"
+      "checkedAt": "2026-11-14T12:41:02.908025+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:41:12.235561+08:00"
+      "checkedAt": "2026-11-14T12:41:13.130858+08:00"
     },
     {
       "source": "Weibo @新浪明星",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:41:31.670421+08:00"
+      "checkedAt": "2026-11-14T12:41:35.549950+08:00"
+    },
+    {
+      "source": "Weibo @极目新闻",
+      "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-14T12:41:50.734550+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T09:41:47.013108+08:00"
+      "checkedAt": "2026-11-14T12:42:08.464105+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-14T09:42:01.522407+08:00"
+      "checkedAt": "2026-11-14T12:42:24.360209+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-14T09:42:24.354928+08:00"
+      "checkedAt": "2026-11-14T12:42:46.772110+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -227,10 +233,30 @@
     "5813211408": "Prada普拉达",
     "7308140398": "大象新闻",
     "2921243620": "新浪明星",
+    "1720962692": "极目新闻",
     "1731986465": "爱奇艺",
     "3182423937": "腾讯娱乐"
   },
   "posts": [
+    {
+      "id": "467f1b0a1f54cfadf941",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"So handsome, I'm speechless!\" #HouMinghaoBelongsToUs2026 Concert Tour 261113 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMin…",
+      "excerpt": "\"So handsome, I'm speechless!\" #HouMinghaoBelongsToUs2026 Concert Tour 261113 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5aaad489f7cf60fbb2d80cea.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-14T10:39:54+08:00",
+      "url": "https://x.com/HMH_Record/status/2121432910242934929",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
     {
       "id": "0ee3d032837517b25d7a",
       "platform": "X",
@@ -912,8 +938,7 @@
       "title": "Hou Minghao's 'Belongs To Us' Concert Tour Final Stop | Beijing 2ND ROUND TICKET SALE November 16, 2026 13:18 261112 | \"Hou Minghao Studio\" Weibo Upd…",
       "excerpt": "Hou Minghao's 'Belongs To Us' Concert Tour Final Stop | Beijing 2ND ROUND TICKET SALE November 16, 2026 13:18 261112 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #후명호 #侯明昊 #HouMinghaoBelongsToUs2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/43f888315948bd38de14afcf.jpg",
-        "https://pbs.twimg.com/media/HW5rwsebIAAW7Mv?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/43f888315948bd38de14afcf.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-12T13:30:07+08:00",
@@ -931,8 +956,7 @@
       "title": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 回到故事起点 回到「属于我们的…」 HOME MEANS HERE 侯明昊「属于我们的…」巡回演唱会 北京·收官站 即…",
       "excerpt": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 回到故事起点 回到「属于我们的…」 HOME MEANS HERE 侯明昊「属于我们的…」巡回演唱会 北京·收官站 即将正式开票！ ⏰开票时间：11月16日13:18 🗓️演出时间：11月27日-11月29日 🎫官方购票平台： @大麦APP 📍演出地点：华熙生物·润百颜ECM中心",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08be98eedb05bead18df5471.jpg",
-        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iizbjvabltj32802yo4qt.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08be98eedb05bead18df5471.jpg"
       ],
       "videos": [],
       "category": "Event",
@@ -1013,8 +1037,7 @@
       "title": "11月20日 @侯明昊 专属行程划重点📌 线下赴约，线上见面，桃妹们这次记得全程锁定！ ✨ 锁定 @fino芬浓官方微博 线下品牌活动 「芬浓HAO顺局」即将营业，和BOSS一起接住好顺气～ 🎁 惊喜周边也已就位 精致貌美的泡面吧唧、小卡…",
       "excerpt": "11月20日 @侯明昊 专属行程划重点📌 线下赴约，线上见面，桃妹们这次记得全程锁定！ ✨ 锁定 @fino芬浓官方微博 线下品牌活动 「芬浓HAO顺局」即将营业，和BOSS一起接住好顺气～ 🎁 惊喜周边也已就位 精致貌美的泡面吧唧、小卡、干发巾，还有直播限定抱枕等你来解锁！ 📺 线下活动结束还有惊喜直播继续接力 更多互动、福利，记得蹲住直播间！ 小室已经把11月20日圈好啦⭕ 桃妹们记得锁定 @fino芬浓官方微博 ，一起赴约「芬浓HAO顺局」，周边和惊喜都别错过！ 网页链接 #fino芬浓品牌代言人侯明昊# #芬浓HAO顺局# #fino双效洗发露# #头皮发丝都要HAO状态#",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a078fa0f1eb9c4145f753c8e.jpg",
-        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iiyiuuil56j31az1qi4qr.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a078fa0f1eb9c4145f753c8e.jpg"
       ],
       "videos": [],
       "category": "Event",
