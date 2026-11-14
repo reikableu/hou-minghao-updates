@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-14T21:43:38+08:00",
+  "lastUpdated": "2026-11-15T00:43:29+08:00",
   "status": "Completed: 32 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 2
     }
   },
   "sourceStatus": [
@@ -15,193 +15,193 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-14T21:40:06.177595+08:00"
+      "checkedAt": "2026-11-15T00:39:46.388277+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-14T21:40:11.700077+08:00"
+      "checkedAt": "2026-11-15T00:39:51.806373+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:16.638549+08:00"
+      "checkedAt": "2026-11-15T00:39:56.726545+08:00"
     },
     {
       "source": "Weibo @我嘞个胡豆er",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:18.940126+08:00"
+      "checkedAt": "2026-11-15T00:39:59.019703+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:23.829800+08:00"
+      "checkedAt": "2026-11-15T00:40:03.823776+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:26.129894+08:00"
+      "checkedAt": "2026-11-15T00:40:06.160167+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:28.470773+08:00"
+      "checkedAt": "2026-11-15T00:40:08.481171+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:30.764310+08:00"
+      "checkedAt": "2026-11-15T00:40:10.779815+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:33.650093+08:00"
+      "checkedAt": "2026-11-15T00:40:13.715601+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:36.021911+08:00"
+      "checkedAt": "2026-11-15T00:40:16.058357+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:39.897240+08:00"
+      "checkedAt": "2026-11-15T00:40:19.944120+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:42.250486+08:00"
+      "checkedAt": "2026-11-15T00:40:22.274687+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:45.171241+08:00"
+      "checkedAt": "2026-11-15T00:40:25.180987+08:00"
     },
     {
       "source": "Weibo @用户3923579353",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:48.043034+08:00"
+      "checkedAt": "2026-11-15T00:40:28.255457+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:51.145061+08:00"
+      "checkedAt": "2026-11-15T00:40:31.279200+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:54.179456+08:00"
+      "checkedAt": "2026-11-15T00:40:34.328437+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:56.531718+08:00"
+      "checkedAt": "2026-11-15T00:40:36.622964+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:40:58.835252+08:00"
+      "checkedAt": "2026-11-15T00:40:38.914011+08:00"
     },
     {
       "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:41:01.732462+08:00"
+      "checkedAt": "2026-11-15T00:40:41.796165+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:41:04.076579+08:00"
+      "checkedAt": "2026-11-15T00:40:44.150747+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:41:06.397993+08:00"
+      "checkedAt": "2026-11-15T00:40:46.496118+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:41:22.620659+08:00"
+      "checkedAt": "2026-11-15T00:41:03.975237+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:41:27.370102+08:00"
+      "checkedAt": "2026-11-15T00:41:08.764405+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:41:32.092854+08:00"
+      "checkedAt": "2026-11-15T00:41:13.465750+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-14T21:41:37.552915+08:00"
+      "checkedAt": "2026-11-15T00:41:17.388989+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:41:40.592672+08:00"
+      "checkedAt": "2026-11-15T00:41:20.407839+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:41:50.276600+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-15T00:41:30.012058+08:00"
     },
     {
       "source": "Weibo @新浪明星",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:42:10.532052+08:00"
+      "checkedAt": "2026-11-15T00:41:49.956978+08:00"
     },
     {
       "source": "Weibo @极目新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:42:25.249802+08:00"
+      "checkedAt": "2026-11-15T00:42:04.252470+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-14T21:42:44.732426+08:00"
+      "checkedAt": "2026-11-15T00:42:21.032410+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-14T21:42:59.347240+08:00"
+      "checkedAt": "2026-11-15T00:42:36.134558+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-14T21:43:18.101265+08:00"
+      "checkedAt": "2026-11-15T00:42:54.654842+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -238,6 +238,28 @@
     "7308140398": "大象新闻"
   },
   "posts": [
+    {
+      "id": "6dc80c8127f380e36530",
+      "platform": "Weibo",
+      "source": "Weibo @大象新闻",
+      "title": "【周末时光，你想听哪首晚安曲呢？】 #梓渝渝人码头由你榜日榜三连冠# #云旗临睡告白直抵人心# 梓渝 王一博 陈丽君 演员云旗 郝熠然 马嘉祺 张艺兴 《渝人码头》 @我是梓渝_ 《未来我来》 @王一博·YIBO 《秋风词》 @陈丽君_点…",
+      "excerpt": "【周末时光，你想听哪首晚安曲呢？】 #梓渝渝人码头由你榜日榜三连冠# #云旗临睡告白直抵人心# 梓渝 王一博 陈丽君 演员云旗 郝熠然 马嘉祺 张艺兴 《渝人码头》 @我是梓渝_ 《未来我来》 @王一博·YIBO 《秋风词》 @陈丽君_点绛唇 《小情歌》 @成毅 《节气颂》 @时代少年团队长-马嘉祺 《我的爱没前奏》 @云旗Yunqi 《想你就写信》 @郝熠然 《努力的人》 @摩登兄弟刘宇宁 《月半明时》 @侯明昊 《斗战胜佛》 @张艺兴 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-14T21:46:58+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365272124850248",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【周末时光，你想听哪首晚安曲呢？】 #梓渝渝人码头由你榜日榜三连冠# #云旗临睡告白直抵人心# 梓渝 王一博 陈丽君 演员云旗 郝熠然 马嘉祺 张艺兴 《渝人码头》 @我是梓渝_ 《未来我来》 @王一博·YIBO 《秋风词》 @陈丽君_点…",
+      "excerptOriginal": "【周末时光，你想听哪首晚安曲呢？】 #梓渝渝人码头由你榜日榜三连冠# #云旗临睡告白直抵人心# 梓渝 王一博 陈丽君 演员云旗 郝熠然 马嘉祺 张艺兴 《渝人码头》 @我是梓渝_ 《未来我来》 @王一博·YIBO 《秋风词》 @陈丽君_点绛唇 《小情歌》 @成毅 《节气颂》 @时代少年团队长-马嘉祺 《我的爱没前奏》 @云旗Yunqi 《想你就写信》 @郝熠然 《努力的人》 @摩登兄弟刘宇宁 《月半明时》 @侯明昊 《斗战胜佛》 @张艺兴 网页链接",
+      "titleEnglish": "【Which lullaby would you like to listen to on the weekend?】 Ziyu's \"Chongqing People's Wharf\" has topped the daily chart for three consecutive days. Yunqi's heartfelt confession before bedtime struck a chord with the audience. Ziyu, Wang Yibo, Chen Lijun, actor Yunqi, Hao Yiran, Ma Jiaqi, Zhang Yixing, \"Chongqing People's Wharf\" @I_am_Ziyu_ \"The Future Is Mine\" @Wang_Yibo·YIBO \"Ode to the Autumn Wind\" @Chen_Lijun_...",
+      "excerptEnglish": "[What lullaby would you like to listen to on the weekend?] Ziyu's \"Chongqing People's Wharf\" has topped the daily chart for three consecutive days. Yunqi's heartfelt confession before bedtime resonates deeply. Ziyu, Wang Yibo, Chen Lijun, actor Yunqi, Hao Yiran, Ma Jiaqi, Zhang Yixing. \"Chongqing People's Wharf\" @I_am_Ziyu_ \"The Future Is Mine\" @Wang Yibo·YIBO \"Ode to the Autumn Wind\" @Chen Lijun_Dianjiangchun \"Little Love Song\" @Cheng Yi \"Ode to the Solar Terms\" @TNT_MaJiaqi \"My Love Has No Prelude\" @YunqiYunqi \"I Write When I Think of You\" @Hao Yiran \"The Hardworking Person\" @Modern Brothers Liu Yuning \"When the Moon Is Bright\" @Hou Minghao \"Buddha of Victory in Battle\" @Zhang Yixing Web link"
+    },
     {
       "id": "c172be4ec7be0d6799d5",
       "platform": "X",
@@ -2009,8 +2031,8 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c21c176583a57695a41b3c7b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fcc3e63cd62d04c9ac50e63f.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg",
-        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9ch5sebj32dc35s4qs.jpg",
-        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iiw9cjstebj32c0340hdu.jpg"
+        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iiw9ciiyc9j31n426unpd.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9cogvomj32dc35s7wo.jpg"
       ],
       "videos": [
         {
