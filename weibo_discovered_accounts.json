@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T08:15:54.014814+08:00",
+  "updatedAt": "2026-11-15T09:39:09.526249+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -203,6 +203,20 @@
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": ""
+    },
+    {
+      "uid": "7928311916",
+      "name": "努力拍图的Bbbbetty",
+      "classification": "Unverified",
+      "category": "Unverified",
+      "verified": false,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "📷：r5 100-500/200-800 平常拍活动以500为主。一手出图 不出废片不出丑图",
+      "firstSeen": "2026-11-15T09:39:09.526249+08:00",
+      "lastSeen": "2026-11-15T09:06:59+08:00",
+      "lastMentionPostId": "5365443251931179",
+      "discoveredBy": "侯明昊尖叫之夜"
     },
     {
       "uid": "8019484509",
