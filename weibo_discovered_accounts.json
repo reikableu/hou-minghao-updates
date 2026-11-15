@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T09:39:09.526249+08:00",
+  "updatedAt": "2026-11-15T12:38:59.191750+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -63,6 +63,20 @@
       "discoveredBy": "侯明昊合作",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": ""
+    },
+    {
+      "uid": "9150715932",
+      "name": "GQofficial",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "GQ官方微博",
+      "firstSeen": "2026-11-15T12:38:59.191750+08:00",
+      "lastSeen": "2026-11-15T12:30:01+08:00",
+      "lastMentionPostId": "5365494347465570",
+      "discoveredBy": "侯明昊Prada"
     },
     {
       "uid": "2167115367",
