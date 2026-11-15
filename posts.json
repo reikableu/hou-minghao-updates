@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-15T21:45:21+08:00",
+  "lastUpdated": "2026-11-15T23:59:29+08:00",
   "status": "Completed: 37 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 6,
-    "postsTranslatedThisRun": 3,
+    "translationsAdded": 4,
+    "postsTranslatedThisRun": 2,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 6
+      "MyMemory": 4
     }
   },
   "sourceStatus": [
@@ -15,223 +15,223 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-15T21:39:31.133222+08:00"
+      "checkedAt": "2026-11-15T23:53:47.915722+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-15T21:39:36.864021+08:00"
+      "checkedAt": "2026-11-15T23:53:53.612712+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:39:42.014030+08:00"
+      "checkedAt": "2026-11-15T23:53:58.705455+08:00"
     },
     {
       "source": "Weibo @我嘞个胡豆er",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:39:44.371002+08:00"
+      "checkedAt": "2026-11-15T23:54:01.053993+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:39:49.307117+08:00"
+      "checkedAt": "2026-11-15T23:54:05.959922+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:39:51.657801+08:00"
+      "checkedAt": "2026-11-15T23:54:08.310159+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:39:54.001585+08:00"
+      "checkedAt": "2026-11-15T23:54:10.638308+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:39:56.363121+08:00"
+      "checkedAt": "2026-11-15T23:54:12.976862+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:39:59.301098+08:00"
+      "checkedAt": "2026-11-15T23:54:15.891787+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:01.710483+08:00"
+      "checkedAt": "2026-11-15T23:54:18.268604+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:06.566035+08:00"
+      "checkedAt": "2026-11-15T23:54:23.043256+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:08.948476+08:00"
+      "checkedAt": "2026-11-15T23:54:25.401344+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:11.895099+08:00"
+      "checkedAt": "2026-11-15T23:54:28.334111+08:00"
     },
     {
       "source": "Weibo @用户3923579353",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:14.837161+08:00"
+      "checkedAt": "2026-11-15T23:54:31.277630+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:17.864885+08:00"
+      "checkedAt": "2026-11-15T23:54:34.304947+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:20.932693+08:00"
+      "checkedAt": "2026-11-15T23:54:37.390762+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:23.262756+08:00"
+      "checkedAt": "2026-11-15T23:54:39.733894+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:25.586130+08:00"
+      "checkedAt": "2026-11-15T23:54:42.080991+08:00"
     },
     {
       "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:28.514772+08:00"
+      "checkedAt": "2026-11-15T23:54:45.019877+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:30.897764+08:00"
+      "checkedAt": "2026-11-15T23:54:47.415561+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:33.408839+08:00"
+      "checkedAt": "2026-11-15T23:54:49.824005+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:51.920447+08:00"
+      "checkedAt": "2026-11-15T23:55:08.192149+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:40:56.814949+08:00"
+      "checkedAt": "2026-11-15T23:55:13.097110+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:41:01.753333+08:00"
+      "checkedAt": "2026-11-15T23:55:17.867190+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-15T21:41:08.254294+08:00"
+      "checkedAt": "2026-11-15T23:55:23.575406+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:41:11.366712+08:00"
+      "checkedAt": "2026-11-15T23:55:26.684326+08:00"
     },
     {
       "source": "Weibo @GQofficial",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-15T21:41:21.234174+08:00"
+      "checkedAt": "2026-11-15T23:55:36.502421+08:00"
     },
     {
       "source": "Weibo @Neo-椰子",
       "status": "Success",
       "itemsFound": 7,
-      "checkedAt": "2026-11-15T21:41:41.191868+08:00"
+      "checkedAt": "2026-11-15T23:55:56.098065+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:41:55.060524+08:00"
+      "checkedAt": "2026-11-15T23:56:09.866255+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
-      "itemsFound": 2,
-      "checkedAt": "2026-11-15T21:42:16.593520+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-15T23:56:31.254342+08:00"
     },
     {
       "source": "Weibo @扒瓜菌",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:42:33.062926+08:00"
+      "checkedAt": "2026-11-15T23:56:47.531515+08:00"
     },
     {
       "source": "Weibo @新浪明星",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:42:46.744863+08:00"
+      "checkedAt": "2026-11-15T23:57:01.145464+08:00"
     },
     {
       "source": "Weibo @极目新闻",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-15T21:43:02.356902+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-15T23:57:16.543707+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-15T21:43:20.661285+08:00"
+      "checkedAt": "2026-11-15T23:57:36.215792+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-15T21:43:36.322044+08:00"
+      "checkedAt": "2026-11-15T23:57:51.701040+08:00"
     },
     {
       "source": "Weibo @薄荷车知道",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-15T21:44:00.415031+08:00"
+      "checkedAt": "2026-11-15T23:58:15.720638+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 28,
-      "checkedAt": "2026-11-15T21:44:18.662647+08:00"
+      "itemsFound": 27,
+      "checkedAt": "2026-11-15T23:58:35.368820+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -258,6 +258,7 @@
     "1677969704": "微博之夜",
     "1720962692": "极目新闻",
     "1731986465": "爱奇艺",
+    "1952433323": "平顶山身边事",
     "2155159645": "W中文版",
     "2183483187": "微博音乐盛典",
     "2810373291": "新华网",
@@ -269,10 +270,228 @@
     "6233497332": "薄荷车知道",
     "7010368671": "和颂传媒",
     "7308140398": "大象新闻",
-    "9150715932": "GQofficial",
-    "1952433323": "平顶山身边事"
+    "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "c510b20056b0be482484",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Studio has issued a formal notice regarding 'SNOWFLYING' selling tickets without authorization for Hou Minghao's upcoming offline event o…",
+      "excerpt": "Hou Minghao Studio has issued a formal notice regarding 'SNOWFLYING' selling tickets without authorization for Hou Minghao's upcoming offline event on November 21, 2026. 261115 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #후명호 #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6e82720f698060f37c8f61a4.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-15T23:40:09+08:00",
+      "url": "https://x.com/HMH_Record/status/2121991653930254568",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "0d83f31a2e92826ca613",
+      "platform": "Weibo",
+      "source": "Weibo @极目新闻",
+      "title": "#雪中飞向侯明昊道歉# 【 #侯明昊工作室谴责品牌违规售票# 】 #雪中飞上个月官宣侯明昊代言# 11月15日， @侯明昊工作室 发布声明：我方与雪中飞 @雪中飞 （下称“品牌”）就艺人2026年11月21日线下活动合作，合同中禁止品牌以…",
+      "excerpt": "#雪中飞向侯明昊道歉# 【 #侯明昊工作室谴责品牌违规售票# 】 #雪中飞上个月官宣侯明昊代言# 11月15日， @侯明昊工作室 发布声明：我方与雪中飞 @雪中飞 （下称“品牌”）就艺人2026年11月21日线下活动合作，合同中禁止品牌以任何有偿方式发放活动入场门票。 近日我方发现，品牌在未事先取得我方同意的前提下，公开对外售卖本次线下活动座位，该行为我方事前完全不知情，且该行为误导公众、损害粉丝权益，我方对此提出严厉谴责。 现正式敬告品牌：立即停止全部售票及座位售卖，撤下所有相关宣传物料，完成全部购票用户退款，并向我方提交书面说明及善后方案。 若品牌拒不整改，我方将通过一切法律手段维护我方合法权益。 同时提醒广大粉丝：保护好个人…",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/40fbd6c4b658acc348645b96.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7f34e63de1db4f57c27b75f0.jpg"
+      ],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-15T22:36:54+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365647072822184",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#雪中飞向侯明昊道歉# 【 #侯明昊工作室谴责品牌违规售票# 】 #雪中飞上个月官宣侯明昊代言# 11月15日， @侯明昊工作室 发布声明：我方与雪中飞 @雪中飞 （下称“品牌”）就艺人2026年11月21日线下活动合作，合同中禁止品牌以…",
+      "excerptOriginal": "#雪中飞向侯明昊道歉# 【 #侯明昊工作室谴责品牌违规售票# 】 #雪中飞上个月官宣侯明昊代言# 11月15日， @侯明昊工作室 发布声明：我方与雪中飞 @雪中飞 （下称“品牌”）就艺人2026年11月21日线下活动合作，合同中禁止品牌以任何有偿方式发放活动入场门票。 近日我方发现，品牌在未事先取得我方同意的前提下，公开对外售卖本次线下活动座位，该行为我方事前完全不知情，且该行为误导公众、损害粉丝权益，我方对此提出严厉谴责。 现正式敬告品牌：立即停止全部售票及座位售卖，撤下所有相关宣传物料，完成全部购票用户退款，并向我方提交书面说明及善后方案。 若品牌拒不整改，我方将通过一切法律手段维护我方合法权益。 同时提醒广大粉丝：保护好个人…",
+      "titleEnglish": "Xuezhongfei apologizes to Hou Minghao [Hou Minghao's Studio condemns the brand for selling tickets in violation of regulations] Last month, Xuezhongfei announced that Hou Minghao would be its brand ambassador. On November 15, @Hou Minghao's Studio issued a statement: We collaborated with Xuezhongfei @Xuezhongfei (hereinafter referred to as \"the brand\") for the artist's offline event on November 21, 2026. The contract prohibits the brand from...",
+      "excerptEnglish": "Xuezhongfei apologizes to Hou Minghao [Hou Minghao Studio condemns the brand for selling tickets in violation of regulations] Xuezhongfei officially announced Hou Minghao as its brand ambassador last month. On November 15, @Hou Minghao Studio issued a statement: We have partnered with Xuezhongfei @Xuezhongfei (hereinafter referred to as the \"Brand\") for the artist's in-person event on November 21, 2026. The contract prohibits the Brand from distributing event admission tickets in any form for compensation. Recently, we discovered that the brand publicly sold seats for this in-person event without obtaining our prior consent. We were completely unaware of this action beforehand, and it has misled the public and harmed the interests of fans. We strongly condemn this behavior. We hereby officially notify the brand to immediately cease all ticket and seat sales, remove all related promotional materials, issue refunds to all ticket purchasers, and submit a written explanation and remedial plan to us. If the brand refuses to rectify the situation, we will use all legal means to protect our legitimate rights and interests. At the same time, we would like to remind all fans to protect their personal..."
+    },
+    {
+      "id": "8019b95e1c8685c77362",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 06 I hope everyone remembers the presentremembers this very moment.\" #HouMinghaoBelongsToUs2026 Concert…",
+      "excerpt": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 06 I hope everyone remembers the presentremembers this very moment.\" #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/816cedb13851f6b485859bde.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6e7349e586eff9f0cd8dd5fd.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/52640afed07f95b5ad14db5f.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/932e445e55e453fc5e4398cd.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/880674032881c0491f7e977a.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-15T22:34:41+08:00",
+      "url": "https://x.com/HMH_Record/status/2121975178930573622",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "7a7d007f9589d26b8a2d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 05 Never say goodbye!!!\" #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Bel…",
+      "excerpt": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 05 Never say goodbye!!!\" #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8feeadce042f4220c69c40b7.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0558d7fce094058f016b92c6.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/808416e6d559674da0fd031a.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c2052de968c102525eaeba7c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1b54e0c5308b0131e7cc70a1.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/91aa684573c3a346f6c6899f.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/260e5dd29c6b9998adb9cb1c.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-15T22:32:03+08:00",
+      "url": "https://x.com/HMH_Record/status/2121974513391026218",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "2d74b375dbafc676e489",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 04 Is it good? Yes! \" #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Belong…",
+      "excerpt": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 04 Is it good? Yes! \" #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4a4e6f3a45c9348df47cf390.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ba30d9972cd9916b89619c2d.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5eb7606ee48a6752e17e44a0.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9b46ba2d24eebeec55c2ae61.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ada8e7841cab1b1e36eb7933.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2502e116fd9c1880fccce1fb.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a09a4f8153077d8530f11967.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/98cb0d9797bf219ba5ab2a6d.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-15T22:17:43+08:00",
+      "url": "https://x.com/HMH_Record/status/2121970909422530817",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "1355a8ed13285ee8d578",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 03 You guys are my light Love you all so much\" #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Min…",
+      "excerpt": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 03 You guys are my light Love you all so much\" #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ddd28500b2d5c67bb5889ec1.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ca52cf63736c01a3adcae09c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/efcabed485419483812439aa.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a6b76d1bd407ab86700bc68b.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/564fa928c0e092c39a56217c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2b947cf5bf590b43dd8c2dc2.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ac11152a0a773645c40ba40c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2bc232e68a4c0a335673e0ed.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/aacb2ce4259dc4c636cf8670.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-15T22:14:44+08:00",
+      "url": "https://x.com/HMH_Record/status/2121970158977929258",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "d09023dcf88832f7af98",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 02 We be endless...\" #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Belongs…",
+      "excerpt": "\"Memories \"That Belong to Us\" Zhengzhou Vol. 02 We be endless...\" #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2930ddda1a7aea00dcf5a0e0.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d88e680773cf675dc063c13c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ebf0b9b099a8704c34f31440.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e61c7975e10378c275b7d2ed.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bff968cee0bedf27f8426fa9.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/64cf681cedd115057ebb8fa9.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08d92f4a125862d363fada8d.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-15T22:10:48+08:00",
+      "url": "https://x.com/HMH_Record/status/2121969167054315942",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "f2e8cac1b718064ca8a3",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票： #2026首尔电视剧大赏# 亚洲明星奖？🏆】 #2026首尔电视剧大赏# 投票过半💥 亚洲明星奖中国区第十六日排名，你的最爱是！！！🏆🔥1：张凌赫 26% #首尔电视剧大赏中国演员排名# 2：杨洋 23%3：赵露思 11%4：钟…",
+      "excerpt": "【投票： #2026首尔电视剧大赏# 亚洲明星奖？🏆】 #2026首尔电视剧大赏# 投票过半💥 亚洲明星奖中国区第十六日排名，你的最爱是！！！🏆🔥1：张凌赫 26% #首尔电视剧大赏中国演员排名# 2：杨洋 23%3：赵露思 11%4：钟汉良 10%5：何健麒 5%6：侯明昊7：田曦薇8：白敬亭9：翟一莹10：成毅⭐前20名田嘉瑞、申浩男、王皓祯 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Drama",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-15T22:09:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365640051296553",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票： #2026首尔电视剧大赏# 亚洲明星奖？🏆】 #2026首尔电视剧大赏# 投票过半💥 亚洲明星奖中国区第十六日排名，你的最爱是！！！🏆🔥1：张凌赫 26% #首尔电视剧大赏中国演员排名# 2：杨洋 23%3：赵露思 11%4：钟…",
+      "excerptOriginal": "【投票： #2026首尔电视剧大赏# 亚洲明星奖？🏆】 #2026首尔电视剧大赏# 投票过半💥 亚洲明星奖中国区第十六日排名，你的最爱是！！！🏆🔥1：张凌赫 26% #首尔电视剧大赏中国演员排名# 2：杨洋 23%3：赵露思 11%4：钟汉良 10%5：何健麒 5%6：侯明昊7：田曦薇8：白敬亭9：翟一莹10：成毅⭐前20名田嘉瑞、申浩男、王皓祯 网页链接",
+      "titleEnglish": "[Voting: 2026 Seoul International Drama Awards Asian Star Award? 🏆】 2026 Seoul International Drama Awards Voting is more than halfway through💥 Asian Star Award China Region Day 16 Rankings. Who is your favorite!!! 🏆🔥1: Zhang Linghe 26% Seoul International Drama Awards Chinese Actor Rankings 2: Yang Yang 23% 3: Zhao Lusi 11% 4: Zhong…",
+      "excerptEnglish": "[Voting: 2026 Seoul International Drama Awards Asian Star Award? 🏆】 2026 Seoul International Drama Awards Voting is over halfway through💥 Day 16 rankings for the Asian Star Award in China. Who is your favorite?!!! 🏆🔥1: Zhang Linghe 26% Seoul International Drama Awards Chinese Actor Rankings 2: Yang Yang 23% 3: Zhao Lusi 11% 4: Wallace Chung 10% 5: He Jianqi 5% 6: Hou Minghao 7: Tian Xiwei 8: Bai Jingting 9: Zhai Yiying 10: Cheng Yi ⭐ Top 20: Tian Jiarui, Shen Haonan, Wang Haozhen Web link"
+    },
+    {
+      "id": "6101e151949678a7cf7d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Memories \"That Belong to Us\" Zhengzhou Vol. 01 #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongsh…",
+      "excerpt": "Memories \"That Belong to Us\" Zhengzhou Vol. 01 #HouMinghaoBelongsToUs2026 Concert Tour 261115 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a38b101a411b24b96f479839.jpg",
+        "https://pbs.twimg.com/media/HXK_I57akAAFAwP?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXK_Jina8AIvu32?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXK_KLRacAAgfHh?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXK_KwKbUAANC36?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXK_LWGaEAAXclL?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXK_L6FakAAtP-d?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXK_MeJa4AAJFej?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXK_NL2bAAAAbpo?format=jpg&name=large"
+      ],
+      "category": "X Update",
+      "date": "2026-11-15T22:08:38+08:00",
+      "url": "https://x.com/HMH_Record/status/2121968621035655203",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
     {
       "id": "156855e7d5732112233c",
       "platform": "Weibo",
@@ -313,6 +532,23 @@
       "dateExact": false
     },
     {
+      "id": "f084d470679ff6d4bc1c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@dfjules13",
+      "title": "This made me laugh so much. He is such a dude. #HouMinghao",
+      "excerpt": "This made me laugh so much. He is such a dude. #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-15T18:58:12+08:00",
+      "url": "https://x.com/dfjules13/status/2121920699959062890",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
       "id": "3cd6bc77773942b9146d",
       "platform": "Weibo",
       "source": "Weibo @平顶山身边事",
@@ -333,6 +569,23 @@
       "excerptOriginal": "【投票： #2026首尔电视剧大赏# 亚洲明星奖？🏆】 #2026首尔电视剧大赏# 首日结果出炉💥 亚洲明星奖投票正式开始，你的最爱是！！！🏆🔥1：张凌赫 24% #首尔电视剧大赏中国明星Top10# 2：侯明昊 17%3：赵露思 10%4：田曦薇 8%5：何健麒 8%6：陈星旭7：钟汉良8：田嘉瑞9：宋威龙10：魏大勋⭐前20名白敬亭、卢昱晓、申浩男 网页链接",
       "titleEnglish": "[Voting: 2026 Seoul International Drama Awards Asian Star Award? 🏆】 2026 Seoul International Drama Awards Day 1 results are in💥 Voting for the Asian Star Award has officially begun. Who is your favorite?!!! 🏆🔥1: Zhang Linghe 24% Seoul International Drama Awards Top 10 Chinese Stars 2: Hou Minghao 17% 3: Zhao Lusi 10%…",
       "excerptEnglish": "[Voting: 2026 Seoul International Drama Awards Asian Star Award? 🏆】 2026 Seoul International Drama Awards – Day 1 results are in💥 Voting for the Asian Star Award has officially begun. Who is your favorite?!!! 🏆🔥1: Zhang Linghe 24% Seoul International Drama Awards Top 10 Chinese Stars 2: Hou Minghao 17% 3: Zhao Lusi 10% 4: Tian Xiyi 8% 5: He Jianqi 8% 6: Chen Xingxu 7: Wallace Chung 8: Tian Jiarui 9: Song Weilong 10: Wei Daxun ⭐ Top 20: Bai Jingting, Lu Yuxiao, Shen Haonan Web link"
+    },
+    {
+      "id": "30e2f624124860805e26",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@ncybear",
+      "title": "Simplified trans of Cai laoshi’s reaction video for #HouMinghao's Reset on Zhengzhou Day 2 [Music starts] “The arrangement doesn't seem to have chang…",
+      "excerpt": "Simplified trans of Cai laoshi’s reaction video for #HouMinghao's Reset on Zhengzhou Day 2 [Music starts] “The arrangement doesn't seem to have changed much. Very rock opening. I feel like his face is so small...Wow, it’s different. There’s dynamic variation, and the chest voice",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-15T17:57:19+08:00",
+      "url": "https://x.com/ncybear/status/2121905377076039769",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
     },
     {
       "id": "693b9b5cb982babea131",
@@ -464,7 +717,8 @@
       "title": "\"Does Hou Minghao's love have an expiration date?\" 261115 | \"GQLab\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "excerpt": "\"Does Hou Minghao's love have an expiration date?\" 261115 | \"GQLab\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08b582f2a6c01072a89fb638.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08b582f2a6c01072a89fb638.jpg",
+        "https://pbs.twimg.com/media/HXJFd2PaYAAy5Ts?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T13:16:43+08:00",
@@ -483,7 +737,8 @@
       "title": "#HouMinghao x GQ Consultation Room (Step 1) The Thought: “Now, try to bring your attention back to yourself. Allow that recurring thought, the one th…",
       "excerpt": "#HouMinghao x GQ Consultation Room (Step 1) The Thought: “Now, try to bring your attention back to yourself. Allow that recurring thought, the one that keeps coming back but that you haven't properly answered yet, to surface.” : “How long can you persevere in doing something",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d8da5d06c58c2a41e9fa8f8b.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d8da5d06c58c2a41e9fa8f8b.jpg",
+        "https://pbs.twimg.com/media/HXJEkMTaYAATu1P?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T13:16:13+08:00",
@@ -525,7 +780,8 @@
       "title": "欢迎来到《GQ咨询室》vol.2，我们咨询一切得不到答案的问题。 @侯明昊 来咨询，从童年手风琴聊到热爱的延续。 喜欢一件事，可以持续多久？ 一件东西不再属于自己，又能不能拥有新的故事？ 侯明昊给出的答案是：让它换一种方式，继续发挥价值。…",
       "excerpt": "欢迎来到《GQ咨询室》vol.2，我们咨询一切得不到答案的问题。 @侯明昊 来咨询，从童年手风琴聊到热爱的延续。 喜欢一件事，可以持续多久？ 一件东西不再属于自己，又能不能拥有新的故事？ 侯明昊给出的答案是：让它换一种方式，继续发挥价值。 最后，PRADA 小包喜提第二人生。 看来，好东西不一定要从头开始，也可以从新开始。 #GQ咨询室# #侯明昊# #GQ# #PRADA# #手风琴# 监制Executive Producer：Romy Zeng 策划Creative：董阳Lawrence Dong 导演Director：肖涵 美术总监Art Director：刘轩 美术设计Art Editor：孙阳 制片Producer：浩楠…",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e48087fcf471bbd226362196.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e48087fcf471bbd226362196.jpg",
+        "https://wx2.sinaimg.cn/orj480/009Zhtesgy1ij1lafr0gwj30u01407gi.jpg"
       ],
       "videos": [
         {
@@ -583,7 +839,9 @@
       "excerpt": "Hou Minghao confirmed to attend IQIYI Scream Night on December 5, 2026 in Macau 261115 | \"IQIYI (爱奇艺)\" Weibo Update #HouMinghao #侯明昊 #후명호",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fccd81137ca948e1fb1220dd.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e96125994b4d16b4375aadd9.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e96125994b4d16b4375aadd9.jpg",
+        "https://pbs.twimg.com/media/HXIqwU0bYAAcsSO?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIqw9ebEAAbWo2?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T11:20:03+08:00",
@@ -602,7 +860,8 @@
       "title": "\"Quick, let's review this love song Gege is asking for your hands \" #HouMinghaoBelongsToUs2026 Concert Tour 261114 | \"Hou Minghao Concert Tour 'Belon…",
       "excerpt": "\"Quick, let's review this love song Gege is asking for your hands \" #HouMinghaoBelongsToUs2026 Concert Tour 261114 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a1af1dbe1889196c08d5d02e.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a1af1dbe1889196c08d5d02e.jpg",
+        "https://pbs.twimg.com/media/HXIoF09akAA9pAQ?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T11:08:24+08:00",
@@ -620,7 +879,8 @@
       "title": "#2026尖叫之夜首轮阵容# 首轮嘉宾名单正式解锁！ 12月5日中国澳门，和TA们一起相聚 #2026爱奇艺尖叫之夜# ！ #尖叫之夜OnMyWay# 敖瑞鹏 @敖瑞鹏的微博 奔赴少年CIIU @奔赴少年CIIU 白梦妍（白鹿） @白鹿m…",
       "excerpt": "#2026尖叫之夜首轮阵容# 首轮嘉宾名单正式解锁！ 12月5日中国澳门，和TA们一起相聚 #2026爱奇艺尖叫之夜# ！ #尖叫之夜OnMyWay# 敖瑞鹏 @敖瑞鹏的微博 奔赴少年CIIU @奔赴少年CIIU 白梦妍（白鹿） @白鹿my 陈艾米（艾米） @演员艾米 曹磊 @演員曹磊 程谢心（谢心） @谢心_ 段奥娟 @段奥娟_CLARE 董宝石（宝石Gem） @宝石Gem 邓凯 @邓凯-Kai 代旭 @代旭 付航 @付航脱口秀 费霞（林允） @林允Jelly 郭奇林（郭麒麟） @郭麒麟 关晓彤 @关晓彤 管乐 @管乐嘎嘎乐 韩东君 @韩东君ElvisHan 胡歌 @胡歌 胡军 @胡军 侯明昊 @侯明昊 合诗雨 @合诗雨Herm…",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/538cbaf38a9713a4cb8d5b59.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/538cbaf38a9713a4cb8d5b59.jpg",
+        "https://wx3.sinaimg.cn/mw2000/001TdeNzly1ij2mrr0bd5j60u03u7b2902.jpg"
       ],
       "videos": [],
       "category": "Official",
@@ -663,7 +923,9 @@
       "excerpt": "",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c080facd29c23361626ed45e.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4981a956682fa3c4f8a85a3e.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4981a956682fa3c4f8a85a3e.jpg",
+        "https://pbs.twimg.com/media/HXIiC-NbgAAJCug?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIiC-TaMAAUl3V?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T10:41:58+08:00",
@@ -703,7 +965,11 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9ed05c750ad089d0eeebd952.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ce6df7746d575bb5a0139674.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/953aa88ab5cc6a5975983f6d.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/afba5f5a0b3966684cc3cc6d.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/afba5f5a0b3966684cc3cc6d.jpg",
+        "https://pbs.twimg.com/media/HXIaKAHbUAACfNH?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIaKAma0AAzwWK?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIaKAKa8AAElo4?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIaKAKbAAE0RXQ?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T10:07:30+08:00",
@@ -792,7 +1058,8 @@
       "title": "就当你给我求婚了哈哈哈哈 Neo-椰子的微博视频",
       "excerpt": "侯明昊 就当你给我求婚了哈哈哈哈 Neo-椰子的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a9f87f8ad4604fa4ebf59372.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a9f87f8ad4604fa4ebf59372.jpg",
+        "https://wx2.sinaimg.cn/orj480/006ahafzly1ij26pqrq8jj30u01hcwgn.jpg"
       ],
       "videos": [
         {
@@ -847,7 +1114,8 @@
       "title": "Hou Minghao | Pan Yida Make Up Vlog for W Annual Gala 2026 261114 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
       "excerpt": "Hou Minghao | Pan Yida Make Up Vlog for W Annual Gala 2026 261114 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/00a1728b2f0d56fef2cbe451.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/00a1728b2f0d56fef2cbe451.jpg",
+        "https://pbs.twimg.com/media/HXFNn3qaMAAcc77?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-14T19:13:52+08:00",
@@ -893,7 +1161,8 @@
       "title": "IQIYI Scream Night Announcement November 15, 2026 11:00 AM CST #HouMinghao #侯明昊 #후명호",
       "excerpt": "IQIYI Scream Night Announcement November 15, 2026 11:00 AM CST #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e9ad25493603f50426fee3d.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e9ad25493603f50426fee3d.jpg",
+        "https://pbs.twimg.com/media/HXEG9JwbkAEKtPq?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-14T14:05:08+08:00",
@@ -939,7 +1208,8 @@
       "title": "\"So handsome, I'm speechless!\" #HouMinghaoBelongsToUs2026 Concert Tour 261113 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMin…",
       "excerpt": "\"So handsome, I'm speechless!\" #HouMinghaoBelongsToUs2026 Concert Tour 261113 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5aaad489f7cf60fbb2d80cea.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5aaad489f7cf60fbb2d80cea.jpg",
+        "https://pbs.twimg.com/media/HXDX_EqbsAAXJrS?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-14T10:39:54+08:00",
@@ -989,7 +1259,8 @@
       "title": "谁懂这两张",
       "excerpt": "侯明昊 谁懂这两张",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1e73c495c9b6747d4a8e1b67.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1e73c495c9b6747d4a8e1b67.jpg",
+        "https://wx3.sinaimg.cn/mw2000/006ahafzgy1ij110q3xchj31zp3ji1ky.jpg"
       ],
       "videos": [],
       "category": "Official",
@@ -1016,7 +1287,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/82c6c99c8a6c82dfda1ac5b1.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/81c5f1268b0563437431f2cc.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/43f2bc9a0f98814e54e57b1e.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/43f2bc9a0f98814e54e57b1e.jpg",
+        "https://pbs.twimg.com/media/HXBEdjLbAAETRG-?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXBKsYTbcAA7yXc?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXBKsYXakAA6leD?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-14T00:22:36+08:00",
@@ -1222,7 +1496,8 @@
       "title": "亲签回家",
       "excerpt": "侯明昊 亲签回家",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1dc8415b8c2f3371d7d75757.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1dc8415b8c2f3371d7d75757.jpg",
+        "https://wx2.sinaimg.cn/mw2000/006ahafzgy1ij0h4oe2dlj31rw35okjl.jpg"
       ],
       "videos": [],
       "category": "Official",
@@ -1248,7 +1523,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fb2927d6e91cec61d28709f0.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/843288b0d75cc2aea869e61f.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cad5e81e8f7027cf4bb51491.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cad5e81e8f7027cf4bb51491.jpg",
+        "https://wx2.sinaimg.cn/mw2000/bdafef81ly1ij0gtoo2vbj20u06st7wl.jpg",
+        "https://wx3.sinaimg.cn/mw2000/bdafef81ly1ij0gtpj4l0j20j4162gxf.jpg",
+        "https://wx3.sinaimg.cn/mw2000/bdafef81ly1ij0gtqu9afj20q01am1kx.jpg"
       ],
       "videos": [],
       "category": "Video",
@@ -1751,7 +2029,8 @@
       "title": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 回到故事起点 回到「属于我们的…」 HOME MEANS HERE 侯明昊「属于我们的…」巡回演唱会 北京·收官站 即…",
       "excerpt": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 回到故事起点 回到「属于我们的…」 HOME MEANS HERE 侯明昊「属于我们的…」巡回演唱会 北京·收官站 即将正式开票！ ⏰开票时间：11月16日13:18 🗓️演出时间：11月27日-11月29日 🎫官方购票平台： @大麦APP 📍演出地点：华熙生物·润百颜ECM中心",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08be98eedb05bead18df5471.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08be98eedb05bead18df5471.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iizbjvabltj32802yo4qt.jpg"
       ],
       "videos": [],
       "category": "Event",
@@ -1832,7 +2111,8 @@
       "title": "11月20日 @侯明昊 专属行程划重点📌 线下赴约，线上见面，桃妹们这次记得全程锁定！ ✨ 锁定 @fino芬浓官方微博 线下品牌活动 「芬浓HAO顺局」即将营业，和BOSS一起接住好顺气～ 🎁 惊喜周边也已就位 精致貌美的泡面吧唧、小卡…",
       "excerpt": "11月20日 @侯明昊 专属行程划重点📌 线下赴约，线上见面，桃妹们这次记得全程锁定！ ✨ 锁定 @fino芬浓官方微博 线下品牌活动 「芬浓HAO顺局」即将营业，和BOSS一起接住好顺气～ 🎁 惊喜周边也已就位 精致貌美的泡面吧唧、小卡、干发巾，还有直播限定抱枕等你来解锁！ 📺 线下活动结束还有惊喜直播继续接力 更多互动、福利，记得蹲住直播间！ 小室已经把11月20日圈好啦⭕ 桃妹们记得锁定 @fino芬浓官方微博 ，一起赴约「芬浓HAO顺局」，周边和惊喜都别错过！ 网页链接 #fino芬浓品牌代言人侯明昊# #芬浓HAO顺局# #fino双效洗发露# #头皮发丝都要HAO状态#",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a078fa0f1eb9c4145f753c8e.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a078fa0f1eb9c4145f753c8e.jpg",
+        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iiyiuuil56j31az1qi4qr.jpg"
       ],
       "videos": [],
       "category": "Event",
@@ -2437,7 +2717,8 @@
       "title": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "excerpt": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/74d48bcd5bfabc27b9489c18.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/74d48bcd5bfabc27b9489c18.jpg",
+        "https://wx4.sinaimg.cn/orj480/006i3hfEly1iiwai24a1mj3280191dwh.jpg"
       ],
       "videos": [
         {
@@ -2705,7 +2986,8 @@
       "title": "父子照 @宋威龙99",
       "excerpt": "父子照 @宋威龙99",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/df9e07d2aabac51443d1d871.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/df9e07d2aabac51443d1d871.jpg",
+        "https://wx3.sinaimg.cn/mw2000/6d2b400bgy1iiw9k3c34pj235s2dcu0x.jpg"
       ],
       "videos": [
         {
@@ -2739,7 +3021,10 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c21c176583a57695a41b3c7b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fcc3e63cd62d04c9ac50e63f.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg",
-        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9cogvomj32dc35s7wo.jpg"
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9cogvomj32dc35s7wo.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9ch5sebj32dc35s4qs.jpg",
+        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iiw9cjstebj32c0340hdu.jpg",
+        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iiw9ciiyc9j31n426unpd.jpg"
       ],
       "videos": [
         {
