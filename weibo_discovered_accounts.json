@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T15:38:57.550272+08:00",
+  "updatedAt": "2026-11-15T18:39:26.210032+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -277,6 +277,20 @@
       "discoveredBy": "侯明昊合作",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": ""
+    },
+    {
+      "uid": "6157379811",
+      "name": "扒瓜菌",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "扒瓜菌官方微博",
+      "firstSeen": "2026-11-15T18:39:26.210032+08:00",
+      "lastSeen": "2026-11-15T16:14:15+08:00",
+      "lastMentionPostId": "5365550780777338",
+      "discoveredBy": "侯明昊活动"
     },
     {
       "uid": "2921243620",
