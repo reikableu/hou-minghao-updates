@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T18:39:26.210032+08:00",
+  "updatedAt": "2026-11-15T21:39:07.134495+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -277,6 +277,20 @@
       "discoveredBy": "侯明昊合作",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": ""
+    },
+    {
+      "uid": "1952433323",
+      "name": "平顶山身边事",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "平顶山身边事官方微博",
+      "firstSeen": "2026-11-15T21:39:07.134495+08:00",
+      "lastSeen": "2026-11-15T17:04:00+08:00",
+      "lastMentionPostId": "5365563295532926",
+      "discoveredBy": "侯明昊颁奖"
     },
     {
       "uid": "6157379811",
