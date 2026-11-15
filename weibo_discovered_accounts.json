@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T12:38:59.191750+08:00",
+  "updatedAt": "2026-11-15T15:10:19.106519+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -513,6 +513,20 @@
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": "茫茫人生 好像荒野"
+    },
+    {
+      "uid": "6233497332",
+      "name": "薄荷车知道",
+      "classification": "Unverified",
+      "category": "Unverified",
+      "verified": false,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "汽车自媒体玩家",
+      "firstSeen": "2026-11-15T15:10:19.106519+08:00",
+      "lastSeen": "2026-11-15T15:02:07+08:00",
+      "lastMentionPostId": "5365532628090895",
+      "discoveredBy": "侯明昊尖叫之夜"
     },
     {
       "uid": "1650562741",
