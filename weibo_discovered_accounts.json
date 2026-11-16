@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T09:39:12.008431+08:00",
+  "updatedAt": "2026-11-16T12:39:37.257317+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -93,6 +93,20 @@
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": "所有的生命都应该被尊重"
+    },
+    {
+      "uid": "7431102825",
+      "name": "LovePig-",
+      "classification": "Unverified",
+      "category": "Unverified",
+      "verified": false,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "📷r52 所有活动都自己去拍 备注艺人和活动 只出买断 有需要的➕ Gwen090511CSH预算两位数的勿扰，所有已约已付定金临时不要的不退‼️",
+      "firstSeen": "2026-11-16T12:39:37.257317+08:00",
+      "lastSeen": "2026-11-16T11:24:53+08:00",
+      "lastMentionPostId": "5365840343729569",
+      "discoveredBy": "侯明昊红毯"
     },
     {
       "uid": "5648651333",
@@ -261,6 +275,20 @@
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": ""
+    },
+    {
+      "uid": "1751714412",
+      "name": "大皖新闻",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "新安晚报大皖新闻官方微博",
+      "firstSeen": "2026-11-16T12:39:37.257317+08:00",
+      "lastSeen": "2026-11-16T10:07:28+08:00",
+      "lastMentionPostId": "5365820859354548",
+      "discoveredBy": "侯明昊活动"
     },
     {
       "uid": "7308140398",
