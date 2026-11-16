@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-16T06:44:44+08:00",
-  "status": "Completed: 37 sources successful, 0 failed",
+  "lastUpdated": "2026-11-16T09:47:31+08:00",
+  "status": "Completed: 39 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 16,
+    "postsTranslatedThisRun": 8,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 16
     }
   },
   "sourceStatus": [
@@ -15,223 +15,235 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-16T06:39:45.861786+08:00"
+      "checkedAt": "2026-11-16T09:39:39.496973+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-16T06:39:51.369837+08:00"
+      "checkedAt": "2026-11-16T09:39:45.217854+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:39:56.240925+08:00"
+      "checkedAt": "2026-11-16T09:39:50.327663+08:00"
     },
     {
       "source": "Weibo @我嘞个胡豆er",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:39:58.538319+08:00"
+      "checkedAt": "2026-11-16T09:39:52.679015+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:03.245342+08:00"
+      "checkedAt": "2026-11-16T09:39:57.570876+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:05.559303+08:00"
+      "checkedAt": "2026-11-16T09:39:59.965733+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:07.870711+08:00"
+      "checkedAt": "2026-11-16T09:40:02.295355+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:10.179612+08:00"
+      "checkedAt": "2026-11-16T09:40:04.664244+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:13.069285+08:00"
+      "checkedAt": "2026-11-16T09:40:07.611960+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:15.382411+08:00"
+      "checkedAt": "2026-11-16T09:40:09.978209+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:19.995731+08:00"
+      "checkedAt": "2026-11-16T09:40:14.781473+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:22.330729+08:00"
+      "checkedAt": "2026-11-16T09:40:17.183710+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:25.245756+08:00"
+      "checkedAt": "2026-11-16T09:40:20.179207+08:00"
     },
     {
       "source": "Weibo @用户3923579353",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:28.134305+08:00"
+      "checkedAt": "2026-11-16T09:40:23.097312+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:31.121682+08:00"
+      "checkedAt": "2026-11-16T09:40:26.186275+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:34.162231+08:00"
+      "checkedAt": "2026-11-16T09:40:29.311105+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:36.460415+08:00"
+      "checkedAt": "2026-11-16T09:40:31.658510+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:38.761268+08:00"
+      "checkedAt": "2026-11-16T09:40:34.024369+08:00"
     },
     {
       "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:41.646529+08:00"
+      "checkedAt": "2026-11-16T09:40:36.976208+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:43.972719+08:00"
+      "checkedAt": "2026-11-16T09:40:39.375357+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:40:46.288299+08:00"
+      "checkedAt": "2026-11-16T09:40:41.782549+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:41:03.950870+08:00"
+      "checkedAt": "2026-11-16T09:40:59.392959+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:41:08.577896+08:00"
+      "checkedAt": "2026-11-16T09:41:04.261171+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:41:13.205630+08:00"
+      "checkedAt": "2026-11-16T09:41:09.159496+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T06:41:18.711991+08:00"
+      "checkedAt": "2026-11-16T09:41:14.739478+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:41:21.790394+08:00"
+      "checkedAt": "2026-11-16T09:41:17.844931+08:00"
     },
     {
       "source": "Weibo @GQofficial",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T06:41:31.226696+08:00"
+      "checkedAt": "2026-11-16T09:41:27.689480+08:00"
     },
     {
       "source": "Weibo @Neo-椰子",
       "status": "Success",
-      "itemsFound": 7,
-      "checkedAt": "2026-11-16T06:41:50.347301+08:00"
+      "itemsFound": 9,
+      "checkedAt": "2026-11-16T09:41:46.996210+08:00"
+    },
+    {
+      "source": "Weibo @剧然还没睡",
+      "status": "Success",
+      "itemsFound": 1,
+      "checkedAt": "2026-11-16T09:42:02.882521+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:42:03.911605+08:00"
+      "checkedAt": "2026-11-16T09:42:17.937744+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T06:42:24.653148+08:00"
+      "checkedAt": "2026-11-16T09:42:39.743753+08:00"
     },
     {
       "source": "Weibo @扒瓜菌",
       "status": "Success",
       "itemsFound": 4,
-      "checkedAt": "2026-11-16T06:42:40.640095+08:00"
+      "checkedAt": "2026-11-16T09:42:55.669890+08:00"
     },
     {
       "source": "Weibo @新浪明星",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T06:42:54.999994+08:00"
+      "checkedAt": "2026-11-16T09:43:09.800240+08:00"
     },
     {
       "source": "Weibo @极目新闻",
       "status": "Success",
+      "itemsFound": 0,
+      "checkedAt": "2026-11-16T09:43:24.844720+08:00"
+    },
+    {
+      "source": "Weibo @法治日报",
+      "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T06:43:10.187819+08:00"
+      "checkedAt": "2026-11-16T09:43:43.311003+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T06:43:28.577812+08:00"
+      "checkedAt": "2026-11-16T09:43:59.977858+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T06:43:43.725605+08:00"
+      "checkedAt": "2026-11-16T09:44:14.098267+08:00"
     },
     {
       "source": "Weibo @薄荷车知道",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-16T06:44:06.943613+08:00"
+      "checkedAt": "2026-11-16T09:44:37.584991+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-16T06:44:24.592001+08:00"
+      "checkedAt": "2026-11-16T09:44:55.470805+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -270,9 +282,222 @@
     "6233497332": "薄荷车知道",
     "7010368671": "和颂传媒",
     "7308140398": "大象新闻",
-    "9150715932": "GQofficial"
+    "9150715932": "GQofficial",
+    "1880710372": "剧然还没睡",
+    "2087169013": "法治日报"
   },
   "posts": [
+    {
+      "id": "93a94b83d08954c8db66",
+      "platform": "Weibo",
+      "source": "Weibo @法治日报",
+      "title": "【 #雪中飞就违规售票致歉侯明昊# #违规售卖侯明昊门票有违契约精神# 】11月15日， @侯明昊工作室 发布声明：我方与雪中飞 @雪中飞 （下称“品牌”）就艺人2026年11月21日线下活动合作，合同中禁止品牌以任何有偿方式发放活动入场…",
+      "excerpt": "【 #雪中飞就违规售票致歉侯明昊# #违规售卖侯明昊门票有违契约精神# 】11月15日， @侯明昊工作室 发布声明：我方与雪中飞 @雪中飞 （下称“品牌”）就艺人2026年11月21日线下活动合作，合同中禁止品牌以任何有偿方式发放活动入场门票。 近日我方发现，品牌在未事先取得我方同意的前提下，公开对外售卖本次线下活动座位，该行为我方事前完全不知情，且该行为误导公众、损害粉丝权益，我方对此提出严厉谴责。 现正式敬告品牌：立即停止全部售票及座位售卖，撤下所有相关宣传物料，完成全部购票用户退款，并向我方提交书面说明及善后方案。 若品牌拒不整改，我方将通过一切法律手段维护我方合法权益。 同时提醒广大粉丝：保护好个人财产，谨防上当受骗。 随…",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cb17640b4f38d9c536fafc4d.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f4e4d86895e92473473cd3cc.jpg"
+      ],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-16T09:35:02+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365812697240831",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【 #雪中飞就违规售票致歉侯明昊# #违规售卖侯明昊门票有违契约精神# 】11月15日， @侯明昊工作室 发布声明：我方与雪中飞 @雪中飞 （下称“品牌”）就艺人2026年11月21日线下活动合作，合同中禁止品牌以任何有偿方式发放活动入场…",
+      "excerptOriginal": "【 #雪中飞就违规售票致歉侯明昊# #违规售卖侯明昊门票有违契约精神# 】11月15日， @侯明昊工作室 发布声明：我方与雪中飞 @雪中飞 （下称“品牌”）就艺人2026年11月21日线下活动合作，合同中禁止品牌以任何有偿方式发放活动入场门票。 近日我方发现，品牌在未事先取得我方同意的前提下，公开对外售卖本次线下活动座位，该行为我方事前完全不知情，且该行为误导公众、损害粉丝权益，我方对此提出严厉谴责。 现正式敬告品牌：立即停止全部售票及座位售卖，撤下所有相关宣传物料，完成全部购票用户退款，并向我方提交书面说明及善后方案。 若品牌拒不整改，我方将通过一切法律手段维护我方合法权益。 同时提醒广大粉丝：保护好个人财产，谨防上当受骗。 随…",
+      "titleEnglish": "[Apology to Hou Minghao for Xuezhongfei's Unauthorized Ticket Sales. Xuezhongfei's Unauthorized Sale of Hou Minghao's Event Tickets Violates the Spirit of the Contract] On November 15, @Hou Minghao Studio issued a statement: We collaborated with Xuezhongfei @Xuezhongfei (hereinafter referred to as \"the Brand\") for the artist's offline event on November 21, 2026. The contract prohibits the Brand from distributing event tickets in any paid manner...",
+      "excerptEnglish": "[Xuezhongfei apologizes to Hou Minghao for unauthorized ticket sales. The unauthorized sale of Hou Minghao's tickets violates the spirit of the contract.] On November 15, @Hou Minghao Studio issued a statement: We collaborated with Xuezhongfei @Xuezhongfei (hereinafter referred to as the \"Brand\") for the artist's in-person event on November 21, 2026. The contract prohibits the Brand from distributing event tickets for any form of payment. Recently, we discovered that the brand publicly sold seats for this in-person event without obtaining our prior consent. We were completely unaware of this action beforehand, and it has misled the public and harmed the interests of fans. We strongly condemn this behavior. We hereby officially notify the brand to immediately cease all ticket and seat sales, remove all related promotional materials, issue refunds to all ticket purchasers, and submit a written explanation and remedial plan to us. If the brand refuses to rectify the situation, we will use all legal means to protect our legitimate rights and interests. At the same time, we would like to remind all fans to protect their personal property and be wary of scams. Attached..."
+    },
+    {
+      "id": "1cb1d4d1d9b9ab91e25a",
+      "platform": "Weibo",
+      "source": "Weibo @Neo-椰子",
+      "title": "#侯明昊工作室谴责品牌违规售票# 觉得没问题的去看看脑子吧 懂不懂什么叫违约呢",
+      "excerpt": "#侯明昊工作室谴责品牌违规售票# 觉得没问题的去看看脑子吧 懂不懂什么叫违约呢",
+      "images": [],
+      "videos": [],
+      "category": "Endorsement",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-16T08:42:24+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365799452674714",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#侯明昊工作室谴责品牌违规售票# 觉得没问题的去看看脑子吧 懂不懂什么叫违约呢",
+      "excerptOriginal": "#侯明昊工作室谴责品牌违规售票# 觉得没问题的去看看脑子吧 懂不懂什么叫违约呢",
+      "titleEnglish": "Hou Minghao's studio condemns the brand for selling tickets in violation of the rules. If you think there's nothing wrong with that, you should get your head examined. Do you even know what a breach of contract is?",
+      "excerptEnglish": "Hou Minghao's studio condemns the brand for selling tickets in violation of the rules. If you think there's no problem, you should get your head checked. Do you even understand what constitutes a breach of contract?"
+    },
+    {
+      "id": "ea6a56e9a1d0e1fa042c",
+      "platform": "Weibo",
+      "source": "Weibo @Neo-椰子",
+      "title": "#侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊…",
+      "excerpt": "侯明昊 #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间对信念执着坚守，始终秉持本心，尽显赤诚底色。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 |碧血蝉 | 容尘子 | 念相思 |",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e8c2667cc8048a77888cadbb.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a0faaf0af542e77915180cdc.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1bf4bf7c1731f3a770b20d8f.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d63bba71acde78771e64110a.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6c1d0b6e875d092af4085c06.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/00f4d03ebf2001d2d84c41cb.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/151646e6007cff0993f74139.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/de365aa894d9625683755525.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/512740b2d84d219c8212d233.jpg"
+      ],
+      "videos": [
+        {
+          "id": "db1bef3eafedfbea2e7432b6",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1da5ac7755aaae72c611c348.jpg",
+          "duration": 32.09,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/db1bef3eafedfbea2e7432b6.mp4"
+        }
+      ],
+      "category": "Video",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-16T07:56:54+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365788001176010",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊…",
+      "excerptOriginal": "侯明昊 #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间对信念执着坚守，始终秉持本心，尽显赤诚底色。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 |碧血蝉 | 容尘子 | 念相思 |",
+      "titleEnglish": "Hou Minghao as Yang Wujian | Hou Minghao as Bi Xuechan | Hou Minghao as Yang Wujian navigates through the mist, carrying a solitary courage to uncover the truth; standing firm in desperate situations. @Hou Minghao | Hou Minghao | Xiao Wuyi | Sparrow Bone | Yang Wujian | Green-Blooded Cicada | Rong Chenzi | Nian Xiangsi | Weibo video from Hou Minghao's Studio | #Hou Minghao...",
+      "excerptEnglish": "Hou Minghao Hou Minghao Yang Wujian | Hou Minghao Blood Cicada | Hou Minghao Yang Wujian walks through the fog, carrying his solitary courage to seek the truth; standing firm in desperate situations. @Hou Minghao | Hou Minghao | Xiao Wuyi | Sparrow Bone | Yang Wujian | Crimson Blood Cicada | Rong Chenzi | Nian Xiangsi | Weibo video from Hou Minghao's Studio | Hou Minghao Yang Wujian | Hou Minghao Crimson Blood Cicada | Hou Minghao Yang Wujian steadfastly adheres to his beliefs, always upholding his true nature, fully demonstrating his genuine character. @Hou Minghao | Hou Minghao | Xiao Wuyi | Sparrow Bone | Yang Wujian | Crimson Blood Cicada | Rong Chenzi | Nian Xiangsi |"
+    },
+    {
+      "id": "793e0bf644f71a4acf6d",
+      "platform": "Weibo",
+      "source": "Weibo @Neo-椰子",
+      "title": "#侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊…",
+      "excerpt": "侯明昊 #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间对信念执着坚守，始终秉持本心，尽显赤诚底色。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 |碧血蝉 | 容尘子 | 念相思 |",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bfe03d8c8833349b035c437b.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/171354d80831d825f3a18daa.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/075ab75c858f466792499582.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c92a6ac2bf53c7b7e240fb29.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fc017e1a03c1452b7fbc6601.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/916d6437c2ae270a2e736dbf.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1eb3f073fa2f8e8f5258941e.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/628a69fa93121c2936e80c85.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/85390ffbd111306b04c5decd.jpg"
+      ],
+      "videos": [
+        {
+          "id": "db1bef3eafedfbea2e7432b6",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1da5ac7755aaae72c611c348.jpg",
+          "duration": 32.09,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/db1bef3eafedfbea2e7432b6.mp4"
+        }
+      ],
+      "category": "Video",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-16T07:56:30+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365787900773417",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊…",
+      "excerptOriginal": "侯明昊 #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间对信念执着坚守，始终秉持本心，尽显赤诚底色。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 |碧血蝉 | 容尘子 | 念相思 |",
+      "titleEnglish": "Hou Minghao as Yang Wujian | Hou Minghao as Bixuechan | Hou Minghao as Yang Wujian navigates through the mist, carrying a solitary courage to uncover the truth; standing firm in desperate situations. @Hou Minghao | Hou Minghao | Xiao Wuyi | Sparrow Bone | Yang Wujian | Crimson Blood Cicada | Rong Chenzi | Nian Xiangsi | Weibo video from Hou Minghao's Studio | #Hou Minghao...",
+      "excerptEnglish": "Hou Minghao Hou Minghao Yang Wujian | Hou Minghao Bloodstained Cicada | Hou Minghao Yang Wujian navigates through the fog, carrying his solitary courage to uncover the truth; standing firm in the face of despair. @Hou Minghao | Hou Minghao | Xiao Wuyi | Sparrow Bone | Yang Wujian | Crimson Blood Cicada | Rong Chenzi | Nian Xiangsi | Weibo video from Hou Minghao's Studio | Hou Minghao Yang Wujian | Hou Minghao Crimson Blood Cicada | Hou Minghao Yang Wujian steadfastly adheres to his beliefs, always upholding his true nature, fully demonstrating his genuine character. @Hou Minghao | Hou Minghao | Xiao Wuyi | Sparrow Bone | Yang Wujian | Green-Blooded Cicada | Rong Chenzi | Nian Xiangsi |"
+    },
+    {
+      "id": "a963d213e14e5f39eb9c",
+      "platform": "Weibo",
+      "source": "Weibo @Neo-椰子",
+      "title": "#侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊…",
+      "excerpt": "侯明昊 #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间对信念执着坚守，始终秉持本心，尽显赤诚底色。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 |碧血蝉 | 容尘子 | 念相思 |",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3bb1e93ab140dd7044320d62.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/dd79dac473fffa4b4352c4c5.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c47fab918a9338617519a02a.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5aa8709a282df3079a2a97a5.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4748c460a09986df5e5970c9.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1f69f6239e77c9c8146aa17b.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/98e9ceaf00e4f4530fad4124.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1e454e8efb70dbfb42b245b0.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/933ae592bcf6b0d6aef587d4.jpg"
+      ],
+      "videos": [
+        {
+          "id": "db1bef3eafedfbea2e7432b6",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1da5ac7755aaae72c611c348.jpg",
+          "duration": 32.09,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/db1bef3eafedfbea2e7432b6.mp4"
+        }
+      ],
+      "category": "Video",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-16T07:56:23+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365787871412983",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊…",
+      "excerptOriginal": "侯明昊 #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间于迷雾中穿行，携一身孤勇探真相；于绝境中伫立。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 |杨无间 | 碧血蝉 |容尘子 | 念相思 | 侯明昊工作室的微博视频 | #侯明昊杨无间# | #侯明昊碧血蝉# | #侯明昊# 杨无间对信念执着坚守，始终秉持本心，尽显赤诚底色。 @侯明昊 | 侯明昊 | 萧无衣 | 雀骨 | 杨无间 |碧血蝉 | 容尘子 | 念相思 |",
+      "titleEnglish": "Hou Minghao as Yang Wujian | Hou Minghao as Bixuechan | Hou Minghao as Yang Wujian navigates through the fog, carrying a solitary courage to uncover the truth; standing firm in desperate situations. @Hou Minghao | Hou Minghao | Xiao Wuyi | Sparrow Bone | Yang Wujian | Green Blood Cicada | Rong Chenzi | Nian Xiangsi | Weibo video from Hou Minghao's Studio | #Hou Minghao…",
+      "excerptEnglish": "Hou Minghao Hou Minghao Yang Wujian | Hou Minghao Bloodstained Cicada | Hou Minghao Yang Wujian navigates through the fog, carrying his solitary courage to uncover the truth; standing firm in desperate situations. @Hou Minghao | Hou Minghao | Xiao Wuyi | Sparrow Bone | Yang Wujian | Crimson Blood Cicada | Rong Chenzi | Nian Xiangsi | Weibo video from Hou Minghao's Studio | Hou Minghao Yang Wujian | Hou Minghao Crimson Blood Cicada | Hou Minghao Yang Wujian steadfastly adheres to his beliefs, always upholding his true nature, fully demonstrating his genuine character. @Hou Minghao | Hou Minghao | Xiao Wuyi | Sparrow Bone | Yang Wujian | Crimson Blood Cicada | Rong Chenzi | Nian Xiangsi |"
+    },
+    {
+      "id": "bae43e5d78057b4fec39",
+      "platform": "Weibo",
+      "source": "Weibo @Neo-椰子",
+      "title": "转发微博",
+      "excerpt": "转发微博",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-16T07:55:03+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365787535871030",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "转发微博",
+      "excerptOriginal": "转发微博",
+      "titleEnglish": "Sina Weibo",
+      "excerptEnglish": "Sina Weibo"
+    },
+    {
+      "id": "3d7d59462c77411547e3",
+      "platform": "Weibo",
+      "source": "Weibo @Neo-椰子",
+      "title": "转发微博",
+      "excerpt": "转发微博",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-16T07:54:58+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365787518829204",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "转发微博",
+      "excerptOriginal": "转发微博",
+      "titleEnglish": "Sina Weibo",
+      "excerptEnglish": "Sina Weibo"
+    },
     {
       "id": "c510b20056b0be482484",
       "platform": "X",
@@ -366,6 +591,38 @@
       "dateExact": false
     },
     {
+      "id": "18a26c75213a60b0d798",
+      "platform": "Weibo",
+      "source": "Weibo @剧然还没睡",
+      "title": "支持工作室维护侯明昊权益！ 支持侯明昊维护粉丝和自己的权益！ #侯明昊工作室谴责品牌违规售票# #雪中飞向侯明昊道歉#",
+      "excerpt": "侯明昊 支持工作室维护侯明昊权益！ 支持侯明昊维护粉丝和自己的权益！ #侯明昊工作室谴责品牌违规售票# #雪中飞向侯明昊道歉#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4330e6df9577483456e8ae63.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/371b54400eca4ae418cb8302.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7df8d60dd9b40c679b7df4f8.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3d49295aa47d01cc51dcb129.jpg",
+        "https://wx2.sinaimg.cn/mw2000/70195ce4gy1ij39djqnuqj23of64pkk0.jpg",
+        "https://wx4.sinaimg.cn/mw2000/70195ce4gy1ij39dy94qpj224t3k0e83.jpg",
+        "https://wx2.sinaimg.cn/mw2000/70195ce4gy1ij39e52m5rj22773o0qv9.jpg",
+        "https://wx3.sinaimg.cn/mw2000/70195ce4gy1ij39e5qwxgj21jk2evdqd.jpg",
+        "https://wx4.sinaimg.cn/mw2000/70195ce4gy1ij39e6fnzpj21jk1110zm.jpg"
+      ],
+      "videos": [],
+      "category": "Endorsement",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-15T22:19:38+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365642729097603",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "支持工作室维护侯明昊权益！ 支持侯明昊维护粉丝和自己的权益！ #侯明昊工作室谴责品牌违规售票# #雪中飞向侯明昊道歉#",
+      "excerptOriginal": "侯明昊 支持工作室维护侯明昊权益！ 支持侯明昊维护粉丝和自己的权益！ #侯明昊工作室谴责品牌违规售票# #雪中飞向侯明昊道歉#",
+      "titleEnglish": "Support the studio in upholding Hou Minghao's rights! Support Hou Minghao in protecting the rights of his fans and himself! Hou Minghao's studio condemns the brand for selling tickets in violation of regulations. Xuezhongfei apologizes to Hou Minghao.",
+      "excerptEnglish": "Hou Minghao supports the studio in safeguarding Hou Minghao's rights and interests! Support Hou Minghao in protecting the rights of his fans and himself! Hou Minghao's studio condemns the brand for selling tickets in violation of regulations. Xuezhongfei apologizes to Hou Minghao."
+    },
+    {
       "id": "2d74b375dbafc676e489",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -380,7 +637,8 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ada8e7841cab1b1e36eb7933.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2502e116fd9c1880fccce1fb.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a09a4f8153077d8530f11967.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/98cb0d9797bf219ba5ab2a6d.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/98cb0d9797bf219ba5ab2a6d.jpg",
+        "https://pbs.twimg.com/media/HXLBO2QbEAAAQA4?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T22:17:43+08:00",
@@ -432,7 +690,9 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e61c7975e10378c275b7d2ed.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bff968cee0bedf27f8426fa9.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/64cf681cedd115057ebb8fa9.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08d92f4a125862d363fada8d.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08d92f4a125862d363fada8d.jpg",
+        "https://pbs.twimg.com/media/HXK_p41acAAZbhH?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXK_qbubcAAkeak?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T22:10:48+08:00",
@@ -640,7 +900,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7087b880bb070e2cca067e83.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c5efd28088abcf8d9b198bda.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/773d19a64470f34b0cc28b7b.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/773d19a64470f34b0cc28b7b.jpg",
+        "https://wx2.sinaimg.cn/mw2000/006IHJLBly1ij2y3u2y09j30j60eegng.jpg",
+        "https://wx3.sinaimg.cn/mw2000/006IHJLBly1ij2y3u3qxsj30j60eeq5i.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006IHJLBly1ij2y3u3txnj30j60j6n09.jpg"
       ],
       "videos": [],
       "category": "Drama",
@@ -743,7 +1006,8 @@
       "title": "\"Does Hou Minghao's love have an expiration date?\" 261115 | \"GQLab\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "excerpt": "\"Does Hou Minghao's love have an expiration date?\" 261115 | \"GQLab\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08b582f2a6c01072a89fb638.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08b582f2a6c01072a89fb638.jpg",
+        "https://pbs.twimg.com/media/HXJFd2PaYAAy5Ts?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T13:16:43+08:00",
@@ -762,7 +1026,8 @@
       "title": "#HouMinghao x GQ Consultation Room (Step 1) The Thought: “Now, try to bring your attention back to yourself. Allow that recurring thought, the one th…",
       "excerpt": "#HouMinghao x GQ Consultation Room (Step 1) The Thought: “Now, try to bring your attention back to yourself. Allow that recurring thought, the one that keeps coming back but that you haven't properly answered yet, to surface.” : “How long can you persevere in doing something",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d8da5d06c58c2a41e9fa8f8b.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d8da5d06c58c2a41e9fa8f8b.jpg",
+        "https://pbs.twimg.com/media/HXJEkMTaYAATu1P?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T13:16:13+08:00",
@@ -804,7 +1069,8 @@
       "title": "欢迎来到《GQ咨询室》vol.2，我们咨询一切得不到答案的问题。 @侯明昊 来咨询，从童年手风琴聊到热爱的延续。 喜欢一件事，可以持续多久？ 一件东西不再属于自己，又能不能拥有新的故事？ 侯明昊给出的答案是：让它换一种方式，继续发挥价值。…",
       "excerpt": "欢迎来到《GQ咨询室》vol.2，我们咨询一切得不到答案的问题。 @侯明昊 来咨询，从童年手风琴聊到热爱的延续。 喜欢一件事，可以持续多久？ 一件东西不再属于自己，又能不能拥有新的故事？ 侯明昊给出的答案是：让它换一种方式，继续发挥价值。 最后，PRADA 小包喜提第二人生。 看来，好东西不一定要从头开始，也可以从新开始。 #GQ咨询室# #侯明昊# #GQ# #PRADA# #手风琴# 监制Executive Producer：Romy Zeng 策划Creative：董阳Lawrence Dong 导演Director：肖涵 美术总监Art Director：刘轩 美术设计Art Editor：孙阳 制片Producer：浩楠…",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e48087fcf471bbd226362196.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e48087fcf471bbd226362196.jpg",
+        "https://wx2.sinaimg.cn/orj480/009Zhtesgy1ij1lafr0gwj30u01407gi.jpg"
       ],
       "videos": [
         {
@@ -862,7 +1128,9 @@
       "excerpt": "Hou Minghao confirmed to attend IQIYI Scream Night on December 5, 2026 in Macau 261115 | \"IQIYI (爱奇艺)\" Weibo Update #HouMinghao #侯明昊 #후명호",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fccd81137ca948e1fb1220dd.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e96125994b4d16b4375aadd9.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e96125994b4d16b4375aadd9.jpg",
+        "https://pbs.twimg.com/media/HXIqwU0bYAAcsSO?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIqw9ebEAAbWo2?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T11:20:03+08:00",
@@ -881,7 +1149,8 @@
       "title": "\"Quick, let's review this love song Gege is asking for your hands \" #HouMinghaoBelongsToUs2026 Concert Tour 261114 | \"Hou Minghao Concert Tour 'Belon…",
       "excerpt": "\"Quick, let's review this love song Gege is asking for your hands \" #HouMinghaoBelongsToUs2026 Concert Tour 261114 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a1af1dbe1889196c08d5d02e.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a1af1dbe1889196c08d5d02e.jpg",
+        "https://pbs.twimg.com/media/HXIoF09akAA9pAQ?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T11:08:24+08:00",
@@ -899,7 +1168,8 @@
       "title": "#2026尖叫之夜首轮阵容# 首轮嘉宾名单正式解锁！ 12月5日中国澳门，和TA们一起相聚 #2026爱奇艺尖叫之夜# ！ #尖叫之夜OnMyWay# 敖瑞鹏 @敖瑞鹏的微博 奔赴少年CIIU @奔赴少年CIIU 白梦妍（白鹿） @白鹿m…",
       "excerpt": "#2026尖叫之夜首轮阵容# 首轮嘉宾名单正式解锁！ 12月5日中国澳门，和TA们一起相聚 #2026爱奇艺尖叫之夜# ！ #尖叫之夜OnMyWay# 敖瑞鹏 @敖瑞鹏的微博 奔赴少年CIIU @奔赴少年CIIU 白梦妍（白鹿） @白鹿my 陈艾米（艾米） @演员艾米 曹磊 @演員曹磊 程谢心（谢心） @谢心_ 段奥娟 @段奥娟_CLARE 董宝石（宝石Gem） @宝石Gem 邓凯 @邓凯-Kai 代旭 @代旭 付航 @付航脱口秀 费霞（林允） @林允Jelly 郭奇林（郭麒麟） @郭麒麟 关晓彤 @关晓彤 管乐 @管乐嘎嘎乐 韩东君 @韩东君ElvisHan 胡歌 @胡歌 胡军 @胡军 侯明昊 @侯明昊 合诗雨 @合诗雨Herm…",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/538cbaf38a9713a4cb8d5b59.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/538cbaf38a9713a4cb8d5b59.jpg",
+        "https://wx3.sinaimg.cn/mw2000/001TdeNzly1ij2mrr0bd5j60u03u7b2902.jpg"
       ],
       "videos": [],
       "category": "Official",
@@ -942,7 +1212,9 @@
       "excerpt": "",
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c080facd29c23361626ed45e.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4981a956682fa3c4f8a85a3e.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4981a956682fa3c4f8a85a3e.jpg",
+        "https://pbs.twimg.com/media/HXIiC-NbgAAJCug?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIiC-TaMAAUl3V?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T10:41:58+08:00",
@@ -982,7 +1254,11 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9ed05c750ad089d0eeebd952.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ce6df7746d575bb5a0139674.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/953aa88ab5cc6a5975983f6d.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/afba5f5a0b3966684cc3cc6d.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/afba5f5a0b3966684cc3cc6d.jpg",
+        "https://pbs.twimg.com/media/HXIaKAHbUAACfNH?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIaKAma0AAzwWK?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIaKAKa8AAElo4?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXIaKAKbAAE0RXQ?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-15T10:07:30+08:00",
@@ -1071,7 +1347,8 @@
       "title": "就当你给我求婚了哈哈哈哈 Neo-椰子的微博视频",
       "excerpt": "侯明昊 就当你给我求婚了哈哈哈哈 Neo-椰子的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a9f87f8ad4604fa4ebf59372.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a9f87f8ad4604fa4ebf59372.jpg",
+        "https://wx2.sinaimg.cn/orj480/006ahafzly1ij26pqrq8jj30u01hcwgn.jpg"
       ],
       "videos": [
         {
@@ -1126,7 +1403,8 @@
       "title": "Hou Minghao | Pan Yida Make Up Vlog for W Annual Gala 2026 261114 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
       "excerpt": "Hou Minghao | Pan Yida Make Up Vlog for W Annual Gala 2026 261114 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/00a1728b2f0d56fef2cbe451.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/00a1728b2f0d56fef2cbe451.jpg",
+        "https://pbs.twimg.com/media/HXFNn3qaMAAcc77?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-14T19:13:52+08:00",
@@ -1172,7 +1450,8 @@
       "title": "IQIYI Scream Night Announcement November 15, 2026 11:00 AM CST #HouMinghao #侯明昊 #후명호",
       "excerpt": "IQIYI Scream Night Announcement November 15, 2026 11:00 AM CST #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e9ad25493603f50426fee3d.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8e9ad25493603f50426fee3d.jpg",
+        "https://pbs.twimg.com/media/HXEG9JwbkAEKtPq?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-14T14:05:08+08:00",
@@ -1218,7 +1497,8 @@
       "title": "\"So handsome, I'm speechless!\" #HouMinghaoBelongsToUs2026 Concert Tour 261113 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMin…",
       "excerpt": "\"So handsome, I'm speechless!\" #HouMinghaoBelongsToUs2026 Concert Tour 261113 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5aaad489f7cf60fbb2d80cea.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5aaad489f7cf60fbb2d80cea.jpg",
+        "https://pbs.twimg.com/media/HXDX_EqbsAAXJrS?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-14T10:39:54+08:00",
@@ -1295,7 +1575,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/82c6c99c8a6c82dfda1ac5b1.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/81c5f1268b0563437431f2cc.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/43f2bc9a0f98814e54e57b1e.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/43f2bc9a0f98814e54e57b1e.jpg",
+        "https://pbs.twimg.com/media/HXBEdjLbAAETRG-?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXBKsYTbcAA7yXc?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HXBKsYXakAA6leD?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-14T00:22:36+08:00",
@@ -1527,7 +1810,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fb2927d6e91cec61d28709f0.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/843288b0d75cc2aea869e61f.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cad5e81e8f7027cf4bb51491.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cad5e81e8f7027cf4bb51491.jpg",
+        "https://wx2.sinaimg.cn/mw2000/bdafef81ly1ij0gtoo2vbj20u06st7wl.jpg",
+        "https://wx3.sinaimg.cn/mw2000/bdafef81ly1ij0gtpj4l0j20j4162gxf.jpg",
+        "https://wx3.sinaimg.cn/mw2000/bdafef81ly1ij0gtqu9afj20q01am1kx.jpg"
       ],
       "videos": [],
       "category": "Video",

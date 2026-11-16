@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T06:39:21.720755+08:00",
+  "updatedAt": "2026-11-16T09:39:12.008431+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -219,6 +219,20 @@
       "verificationDescription": ""
     },
     {
+      "uid": "1880710372",
+      "name": "剧然还没睡",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "娱乐剧评人，微博电视团成员",
+      "firstSeen": "2026-11-16T09:39:12.008431+08:00",
+      "lastSeen": "2026-11-15T22:19:38+08:00",
+      "lastMentionPostId": "5365642729097603",
+      "discoveredBy": "侯明昊活动"
+    },
+    {
       "uid": "7928311916",
       "name": "努力拍图的Bbbbetty",
       "classification": "Unverified",
@@ -383,6 +397,20 @@
       "discoveredBy": "侯明昊代言",
       "classificationReason": "Weibo verification not present; organization type not confirmed (-1); no configured brand keyword",
       "verificationDescription": "为多多见面而努力！"
+    },
+    {
+      "uid": "2087169013",
+      "name": "法治日报",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "法治日报社官方微博",
+      "firstSeen": "2026-11-16T09:39:12.008431+08:00",
+      "lastSeen": "2026-11-16T09:35:02+08:00",
+      "lastMentionPostId": "5365812697240831",
+      "discoveredBy": "侯明昊活动"
     },
     {
       "uid": "7882701115",
