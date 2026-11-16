@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T15:15:14.243501+08:00",
+  "updatedAt": "2026-11-16T15:39:48.513885+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -305,6 +305,20 @@
       "discoveredBy": "侯明昊澳门"
     },
     {
+      "uid": "1496814565",
+      "name": "封面新闻",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "封面新闻华西都市报官方微博",
+      "firstSeen": "2026-11-16T15:39:48.513885+08:00",
+      "lastSeen": "2026-11-16T09:54:54+08:00",
+      "lastMentionPostId": "5365817696846544",
+      "discoveredBy": "侯明昊活动"
+    },
+    {
       "uid": "9027620626",
       "name": "小糖糖0117",
       "category": "Unverified",
@@ -346,6 +360,20 @@
       "firstSeen": "2026-11-15T18:39:26.210032+08:00",
       "lastSeen": "2026-11-15T16:14:15+08:00",
       "lastMentionPostId": "5365550780777338",
+      "discoveredBy": "侯明昊活动"
+    },
+    {
+      "uid": "1451977335",
+      "name": "新晚报",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "新晚报官方微博",
+      "firstSeen": "2026-11-16T15:39:48.513885+08:00",
+      "lastSeen": "2026-11-16T08:44:36+08:00",
+      "lastMentionPostId": "5365800005536827",
       "discoveredBy": "侯明昊活动"
     },
     {
