@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-16T18:46:54+08:00",
+  "lastUpdated": "2026-11-16T21:46:53+08:00",
   "status": "Completed: 42 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 6,
-    "postsTranslatedThisRun": 3,
+    "translationsAdded": 4,
+    "postsTranslatedThisRun": 2,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 6
+      "MyMemory": 4
     }
   },
   "sourceStatus": [
@@ -15,253 +15,253 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-16T18:39:42.327048+08:00"
+      "checkedAt": "2026-11-16T21:39:42.375244+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-16T18:39:47.813923+08:00"
+      "checkedAt": "2026-11-16T21:39:48.083222+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:39:51.835669+08:00"
+      "checkedAt": "2026-11-16T21:39:52.252756+08:00"
     },
     {
       "source": "Weibo @我嘞个胡豆er",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:39:54.213323+08:00"
+      "checkedAt": "2026-11-16T21:39:54.596967+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:39:59.038814+08:00"
+      "checkedAt": "2026-11-16T21:39:59.455937+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:01.329286+08:00"
+      "checkedAt": "2026-11-16T21:40:01.780010+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:03.679193+08:00"
+      "checkedAt": "2026-11-16T21:40:04.147496+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:05.980852+08:00"
+      "checkedAt": "2026-11-16T21:40:06.549696+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:08.883235+08:00"
+      "checkedAt": "2026-11-16T21:40:09.482002+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:11.218425+08:00"
+      "checkedAt": "2026-11-16T21:40:11.861369+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:15.921013+08:00"
+      "checkedAt": "2026-11-16T21:40:16.741727+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:18.243484+08:00"
+      "checkedAt": "2026-11-16T21:40:19.144844+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:21.173495+08:00"
+      "checkedAt": "2026-11-16T21:40:22.116897+08:00"
     },
     {
       "source": "Weibo @用户3923579353",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:24.059565+08:00"
+      "checkedAt": "2026-11-16T21:40:25.058376+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:27.073487+08:00"
+      "checkedAt": "2026-11-16T21:40:28.185700+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:30.080984+08:00"
+      "checkedAt": "2026-11-16T21:40:31.221500+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:32.430445+08:00"
+      "checkedAt": "2026-11-16T21:40:33.565538+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:34.736644+08:00"
+      "checkedAt": "2026-11-16T21:40:35.923411+08:00"
     },
     {
       "source": "Weibo @FADEAWAY_L",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:37.644309+08:00"
+      "checkedAt": "2026-11-16T21:40:38.838606+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:39.977151+08:00"
+      "checkedAt": "2026-11-16T21:40:41.201350+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:42.305462+08:00"
+      "checkedAt": "2026-11-16T21:40:43.598939+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:40:59.289573+08:00"
+      "checkedAt": "2026-11-16T21:41:01.866883+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:41:03.990064+08:00"
+      "checkedAt": "2026-11-16T21:41:06.722202+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:41:08.668061+08:00"
+      "checkedAt": "2026-11-16T21:41:11.548862+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T18:41:18.142158+08:00"
+      "checkedAt": "2026-11-16T21:41:17.191069+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:41:21.211771+08:00"
+      "checkedAt": "2026-11-16T21:41:20.324885+08:00"
     },
     {
       "source": "Weibo @GQofficial",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T18:41:30.623693+08:00"
+      "checkedAt": "2026-11-16T21:41:30.169680+08:00"
     },
     {
       "source": "Weibo @Neo-椰子",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-16T18:41:50.863408+08:00"
+      "checkedAt": "2026-11-16T21:41:51.646301+08:00"
     },
     {
       "source": "Weibo @剧然还没睡",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T18:42:06.339652+08:00"
+      "checkedAt": "2026-11-16T21:42:08.111774+08:00"
     },
     {
       "source": "Weibo @大皖新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:42:20.969043+08:00"
+      "checkedAt": "2026-11-16T21:42:23.703416+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:42:42.113121+08:00"
+      "checkedAt": "2026-11-16T21:42:45.317436+08:00"
     },
     {
       "source": "Weibo @封面新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:43:04.157087+08:00"
+      "checkedAt": "2026-11-16T21:43:07.719537+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-16T18:43:22.220581+08:00"
+      "checkedAt": "2026-11-16T21:43:29.207934+08:00"
     },
     {
       "source": "Weibo @扒瓜菌",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-16T18:43:38.628564+08:00"
+      "checkedAt": "2026-11-16T21:43:44.834348+08:00"
     },
     {
       "source": "Weibo @新晚报",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:43:52.535344+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-16T21:43:59.806365+08:00"
     },
     {
       "source": "Weibo @新浪明星",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:44:11.193980+08:00"
+      "checkedAt": "2026-11-16T21:44:19.576242+08:00"
     },
     {
       "source": "Weibo @极目新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-16T18:44:25.019337+08:00"
+      "checkedAt": "2026-11-16T21:44:35.259014+08:00"
     },
     {
       "source": "Weibo @法治日报",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T18:44:41.329320+08:00"
+      "checkedAt": "2026-11-16T21:44:52.497024+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-16T18:45:02.479985+08:00"
+      "checkedAt": "2026-11-16T21:45:15.936686+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-16T18:45:16.349118+08:00"
+      "checkedAt": "2026-11-16T21:45:30.673362+08:00"
     },
     {
       "source": "Weibo @薄荷车知道",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-16T18:45:33.595169+08:00"
+      "checkedAt": "2026-11-16T21:45:48.837095+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 27,
-      "checkedAt": "2026-11-16T18:45:50.747816+08:00"
+      "itemsFound": 26,
+      "checkedAt": "2026-11-16T21:46:07.014905+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -308,6 +308,88 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "57f2638f98f19ad05d62",
+      "platform": "Weibo",
+      "source": "Weibo @新晚报",
+      "title": "【投票： #尖叫之夜阵容# 公布，你最期待谁？】尖叫之夜首轮明星嘉宾名单今日发布。12月5日，共赴 #2026爱奇艺尖叫之夜# ！你最期待谁？ @敖瑞鹏的微博 @白鹿my @侯明昊 @李一桐Happy @十个勤天 @丞磊 敖瑞鹏 白鹿 侯…",
+      "excerpt": "【投票： #尖叫之夜阵容# 公布，你最期待谁？】尖叫之夜首轮明星嘉宾名单今日发布。12月5日，共赴 #2026爱奇艺尖叫之夜# ！你最期待谁？ @敖瑞鹏的微博 @白鹿my @侯明昊 @李一桐Happy @十个勤天 @丞磊 敖瑞鹏 白鹿 侯明昊 李一桐 十个勤天 丞磊 #原创# 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-16T20:41:48+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365980496661599",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票： #尖叫之夜阵容# 公布，你最期待谁？】尖叫之夜首轮明星嘉宾名单今日发布。12月5日，共赴 #2026爱奇艺尖叫之夜# ！你最期待谁？ @敖瑞鹏的微博 @白鹿my @侯明昊 @李一桐Happy @十个勤天 @丞磊 敖瑞鹏 白鹿 侯…",
+      "excerptOriginal": "【投票： #尖叫之夜阵容# 公布，你最期待谁？】尖叫之夜首轮明星嘉宾名单今日发布。12月5日，共赴 #2026爱奇艺尖叫之夜# ！你最期待谁？ @敖瑞鹏的微博 @白鹿my @侯明昊 @李一桐Happy @十个勤天 @丞磊 敖瑞鹏 白鹿 侯明昊 李一桐 十个勤天 丞磊 #原创# 网页链接",
+      "titleEnglish": "[Vote: The Scream Night lineup has been announced. Who are you most looking forward to seeing?] The first round of celebrity guests for Scream Night was announced today. On December 5th, let's all attend the 2026 iQiyi Scream Night! Who are you most looking forward to seeing? @Ao Ruipeng's Weibo @Bai Lu my @Hou Minghao @Li Yitong Happy @Shi Ge Qintian @Cheng Lei Ao Ruipeng Bai Lu Hou...",
+      "excerptEnglish": "[Vote: The Scream Night lineup has been announced. Who are you most looking forward to seeing?] The first round of celebrity guests for Scream Night was announced today. On December 5th, let's gather for the 2026 iQiyi Scream Night! Who are you most looking forward to seeing? @Ao Ruipeng's Weibo @Bai Lu my @Hou Minghao @Li Yitong Happy @10Q @Cheng Lei Ao Ruipeng Bai Lu Hou Minghao Li Yitong 10Q Cheng Lei Original Web Link"
+    },
+    {
+      "id": "85ad75867ab5dd679b4c",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "let’s play a little guessing game… who is he in these pictures? hints: loves basketball has a special soft spot for Kiwis dog dad with a collection o…",
+      "excerpt": "let’s play a little guessing game… who is he in these pictures? hints: loves basketball has a special soft spot for Kiwis dog dad with a collection of his own memes still can’t guess? look a little closer. those legs might give him away. #侯明昊 #HouMinghao",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5dc0049a7e69910219d2703c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e08f0373f37361846a8f2242.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e1d51ef1f68569362036f90d.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-16T20:00:33+08:00",
+      "url": "https://x.com/PopMinghao/status/2122298776882991473",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "7b4d6153da3d7bbf6209",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "16.11.2026 | Beijing Airport On his way to Crush of Music 3 recording this cat misses us just as much as we miss him look at him waving goodbye THREE…",
+      "excerpt": "16.11.2026 | Beijing Airport On his way to Crush of Music 3 recording this cat misses us just as much as we miss him look at him waving goodbye THREE times!! he walks, turns back to wave, takes a few more steps, then turns around to wave again. safe travels, our",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-16T19:43:19+08:00",
+      "url": "https://x.com/PopMinghao/status/2122294438198489486",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "f4da671c07f7ddf8ccaa",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票： #2026首尔电视剧大赏# 亚洲明星奖？🏆】 #2026首尔电视剧大赏# 首日结果出炉💥 亚洲明星奖投票正式开始，你的最爱是！！！🏆🔥1：张凌赫 24% #首尔电视剧大赏中国明星Top10# 2：侯明昊 17%3：赵露思 10%…",
+      "excerpt": "【投票： #2026首尔电视剧大赏# 亚洲明星奖？🏆】 #2026首尔电视剧大赏# 首日结果出炉💥 亚洲明星奖投票正式开始，你的最爱是！！！🏆🔥1：张凌赫 24% #首尔电视剧大赏中国明星Top10# 2：侯明昊 17%3：赵露思 10%4：田曦薇 8%5：何健麒 8%6：陈星旭7：钟汉良8：田嘉瑞9：宋威龙10：魏大勋⭐前20名白敬亭、卢昱晓、申浩男 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Drama",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-16T19:09:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5365957142776333",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票： #2026首尔电视剧大赏# 亚洲明星奖？🏆】 #2026首尔电视剧大赏# 首日结果出炉💥 亚洲明星奖投票正式开始，你的最爱是！！！🏆🔥1：张凌赫 24% #首尔电视剧大赏中国明星Top10# 2：侯明昊 17%3：赵露思 10%…",
+      "excerptOriginal": "【投票： #2026首尔电视剧大赏# 亚洲明星奖？🏆】 #2026首尔电视剧大赏# 首日结果出炉💥 亚洲明星奖投票正式开始，你的最爱是！！！🏆🔥1：张凌赫 24% #首尔电视剧大赏中国明星Top10# 2：侯明昊 17%3：赵露思 10%4：田曦薇 8%5：何健麒 8%6：陈星旭7：钟汉良8：田嘉瑞9：宋威龙10：魏大勋⭐前20名白敬亭、卢昱晓、申浩男 网页链接",
+      "titleEnglish": "[Voting: 2026 Seoul International Drama Awards Asian Star Award? 🏆】 2026 Seoul International Drama Awards Day 1 results are out💥 Voting for the Asian Star Award has officially begun. Who is your favorite?!!! 🏆🔥1: Zhang Linghe 24% Seoul International Drama Awards Top 10 Chinese Stars 2: Hou Minghao 17% 3: Zhao Lusi 10%…",
+      "excerptEnglish": "[Voting: 2026 Seoul International Drama Awards Asian Star Award? 🏆】 2026 Seoul International Drama Awards Day 1 results are out💥 Voting for the Asian Star Award has officially begun. Who is your favorite?!!! 🏆🔥1: Zhang Linghe 24% Seoul International Drama Awards Top 10 Chinese Stars 2: Hou Minghao 17% 3: Zhao Lusi 10% 4: Tian Xiyi 8% 5: He Jianqi 8% 6: Chen Xingxu 7: Wallace Chung 8: Tian Jiarui 9: Song Weilong 10: Wei Daxun ⭐ Top 20: Bai Jingting, Lu Yuxiao, Shen Haonan Web link"
+    },
     {
       "id": "fa80b0dc4c1749565bee",
       "platform": "X",
