@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T12:18:03.733496+08:00",
+  "updatedAt": "2026-11-17T12:29:08.632652+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -16,6 +16,21 @@
       "lastSeen": "2026-11-17T11:05:08+08:00",
       "lastMentionPostId": "5366197765800446",
       "discoveredBy": "侯明昊红毯"
+    },
+    {
+      "uid": "1952433323",
+      "name": "平顶山身边事",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "verifiedType": "3",
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "平顶山身边事官方微博",
+      "firstSeen": "2026-11-17T12:29:08.632652+08:00",
+      "lastSeen": "2026-11-17T04:09:00+08:00",
+      "lastMentionPostId": "5366093038485661",
+      "discoveredBy": "侯明昊颁奖"
     },
     {
       "uid": "5449334139",
