@@ -66,6 +66,7 @@ MAX_GIF_ITEMS = 150
 MAX_GIF_SIZE_BYTES = int(14.5 * 1024 * 1024)    # 14.5MB limit for final GIFs
 MAX_VIDEO_SIZE_BYTES = 40 * 1024 * 1024  # 40MB limit for live photo videos
 LIVE_PHOTO_MAX_SECONDS = 6               # trim live photo videos to this length
+DIAGNOSTIC_UIDS = {"8018666668"}          # temporarily inspect Live Photo API metadata
 DOWNLOAD_BUDGET_SECONDS = 30 * 60        # 30 mins budget limit
 REQUEST_TIMEOUT_MS = 20000               # per download attempt
 
@@ -236,7 +237,7 @@ def convert_video_to_gif(video_bytes):
 # WEIBO API FETCHING + PARSING
 # ============================================================
 
-def extract_candidates_from_cards(cards, stats, debug_state):
+def extract_candidates_from_cards(cards, stats, debug_state, diagnostic=False):
     candidates = []
 
     for card in cards:
@@ -264,6 +265,33 @@ def extract_candidates_from_cards(cards, stats, debug_state):
             post_url = f"https://m.weibo.cn/status/{post_id}"
 
             pics = mblog.get("pics") or []
+
+            # Focused diagnostics: reveal the actual API fields used by this account's
+            # Live Photos, without printing cookies, full post text, or unrelated data.
+            if diagnostic and pics:
+                print(f"[live-debug] post={post_id} user={user_name} pics_count={len(pics)}")
+                print(f"[live-debug] mblog_media_keys={[k for k in mblog.keys() if any(t in k.lower() for t in ('video', 'live', 'pic', 'page', 'media'))]}")
+                page_info = mblog.get("page_info")
+                if isinstance(page_info, dict):
+                    print(f"[live-debug] page_info_keys={list(page_info.keys())}")
+                    media_info = page_info.get("media_info")
+                    if isinstance(media_info, dict):
+                        print(f"[live-debug] page_media_keys={[k for k in media_info.keys() if any(t in k.lower() for t in ('url', 'stream', 'video', 'format', 'type'))]}")
+                for debug_idx, debug_pic in enumerate(pics):
+                    if isinstance(debug_pic, dict):
+                        interesting = {}
+                        for key, value in debug_pic.items():
+                            if any(token in key.lower() for token in ("video", "live", "motion", "type", "url", "media")):
+                                if isinstance(value, (str, int, float, bool)) or value is None:
+                                    interesting[key] = value
+                                elif isinstance(value, dict):
+                                    interesting[key] = {
+                                        subkey: subvalue for subkey, subvalue in value.items()
+                                        if any(token in subkey.lower() for token in ("video", "live", "motion", "url", "media", "type"))
+                                        and isinstance(subvalue, (str, int, float, bool))
+                                    }
+                        print(f"[live-debug] pic[{debug_idx}]={json.dumps(interesting, ensure_ascii=False)[:2500]}")
+
             for pic_idx, picture in enumerate(pics):
                 if not isinstance(picture, dict):
                     continue
@@ -331,12 +359,16 @@ async def fetch_api_pages(page, label, url_for_page, max_pages=3):
                 print(f"  API returned ok != 1 for {label}")
                 break
 
-            cards = (payload.get("data") or {}).get("cards") or []
+            data_obj = payload.get("data") or {}
+            if label == "profile 8018666668":
+                print(f"[live-debug] api_data_keys={list(data_obj.keys()) if isinstance(data_obj, dict) else type(data_obj).__name__}")
+                print(f"[live-debug] cards_type={type(data_obj.get('cards')).__name__ if isinstance(data_obj, dict) else 'n/a'}")
+            cards = data_obj.get("cards") or []
             if not cards:
                 print(f"  No more cards for {label}.")
                 break
 
-            candidates.extend(extract_candidates_from_cards(cards, stats, debug_state))
+            candidates.extend(extract_candidates_from_cards(cards, stats, debug_state, diagnostic=(label == "profile 8018666668")))
             await asyncio.sleep(1.5)
 
         except Exception as error:
