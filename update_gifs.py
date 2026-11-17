@@ -364,6 +364,26 @@ async def fetch_api_pages(page, label, url_for_page, max_pages=3):
                 print(f"[live-debug] api_data_keys={list(data_obj.keys()) if isinstance(data_obj, dict) else type(data_obj).__name__}")
                 print(f"[live-debug] cards_type={type(data_obj.get('cards')).__name__ if isinstance(data_obj, dict) else 'n/a'}")
             cards = data_obj.get("cards") or []
+            if label == "profile 8018666668":
+                print(f"[live-debug] cards_count={len(cards)}")
+                for card_idx, card in enumerate(cards[:5]):
+                    if not isinstance(card, dict):
+                        print(f"[live-debug] card[{card_idx}]_type={type(card).__name__}")
+                        continue
+                    print(f"[live-debug] card[{card_idx}]_keys={list(card.keys())}")
+                    print(f"[live-debug] card[{card_idx}]_card_type={card.get('card_type')!r}")
+                    group = card.get("card_group")
+                    if isinstance(group, list):
+                        print(f"[live-debug] card[{card_idx}]_group_count={len(group)}")
+                        for sub_idx, sub in enumerate(group[:5]):
+                            if isinstance(sub, dict):
+                                print(f"[live-debug] card[{card_idx}].group[{sub_idx}]_keys={list(sub.keys())}")
+                                nested = sub.get("mblog")
+                                if isinstance(nested, dict):
+                                    print(f"[live-debug] card[{card_idx}].group[{sub_idx}].mblog_keys={list(nested.keys())}")
+                    nested = card.get("mblog")
+                    if isinstance(nested, dict):
+                        print(f"[live-debug] card[{card_idx}].mblog_keys={list(nested.keys())}")
             if not cards:
                 print(f"  No more cards for {label}.")
                 break
