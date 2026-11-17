@@ -203,8 +203,15 @@ def load_history_state():
 WEIBO_HISTORY_STATE = load_history_state()
 NEW_HISTORY_UPDATES = {}
 DISCOVERED_WEIBO_ACCOUNTS = {}
-FAN_HINTS = ("粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主", "追星", "小友", "唯粉", "站姐", "饭圈", "产出", "打投")
-BRAND_HINTS = ("官方", "品牌", "旗舰", "集团", "公司", "科技", "食品", "美妆", "护肤", "服饰", "珠宝", "汽车", "手机", "家电", "旅游", "文旅", "工作室", "传媒", "娱乐", "文化", "official", "inc.", "ltd", "company", "brand")
+FAN_HINTS = ("粉丝", "后援", "超话", "资源站", "应援", "个人", "演员", "博主", "追星",
+             "小友", "唯粉", "站姐", "饭圈", "产出", "打投", "自媒体", "达人", "网红")
+BRAND_HINTS = ("官方", "品牌", "旗舰店", "集团", "有限公司", "有限责任公司",
+               "股份有限公司", "公司", "企业", "机构", "协会", "基金会", "商会",
+               "政府", "委员会", "电视台", "报社", "杂志社", "出版社", "传媒公司",
+               "文化传媒", "主办方", "承办方", "official", "company", "inc.", "ltd",
+               "brand", "corporation", "organization")
+ORG_VERIFIED_TYPES = {"2", "3", "5", "7"}
+AUTO_DISCOVERY_CLASSES = {"Verified Brand", "Verified Brand/Organization", "Verified Event"}
 if WEIBO_DISCOVERED_ACCOUNTS_FILE.exists():
     try:
         data = json.loads(WEIBO_DISCOVERED_ACCOUNTS_FILE.read_text(encoding="utf-8"))
@@ -212,12 +219,25 @@ if WEIBO_DISCOVERED_ACCOUNTS_FILE.exists():
             if not isinstance(item, dict) or not item.get("enabled", True):
                 continue
             uid = str(item.get("uid") or "").strip()
-            profile = f"{item.get('name', '')} {item.get('verificationDescription', '')}".lower()
+            profile = f"{item.get('name', '')} {item.get('verificationDescription', '')}".casefold()
             category = str(item.get("classification") or "")
+            verified_type = str(item.get("verifiedType") or "")
             if not uid.isdigit() or uid in OFFICIAL_WEIBO_UIDS:
                 continue
-            if uid not in KNOWN_BRAND_UIDS and uid not in KNOWN_EVENT_ACCOUNTS and (any(w in profile for w in FAN_HINTS) or category not in {"Verified Brand", "Verified Brand/Organization", "Verified Event", "Unverified"} or (category == "Unverified" and not any(w in profile for w in BRAND_HINTS))):
-                print(f"Rejecting personal or unconfirmed discovered account: {item.get('name', uid)}")
+            # Auto-discovery is fail-closed: a blue/personal verification badge,
+            # an old 'Unverified' label, or a broad profile keyword is not enough.
+            is_curated = uid in KNOWN_BRAND_UIDS or uid in KNOWN_EVENT_ACCOUNTS
+            has_personal_marker = any(w.casefold() in profile for w in FAN_HINTS)
+            has_org_marker = any(w.casefold() in profile for w in BRAND_HINTS)
+            is_verified_org = (
+                bool(item.get("verified"))
+                and verified_type in ORG_VERIFIED_TYPES
+                and category in AUTO_DISCOVERY_CLASSES
+                and has_org_marker
+                and not has_personal_marker
+            )
+            if not is_curated and not is_verified_org:
+                print(f"Rejecting personal or non-organization discovered account: {item.get('name', uid)}")
                 continue
             DISCOVERED_WEIBO_ACCOUNTS[uid] = item
             if uid not in WEIBO_ACCOUNT_IDS:
