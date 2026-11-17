@@ -56,6 +56,7 @@ TARGET_UIDS = [
     "7949460042",
     "6033450503",
     "7808870164",
+    "8018666668",
 ]
 
 # Login cookie, stored as a GitHub secret named WEIBO_COOKIE
