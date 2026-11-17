@@ -95,6 +95,7 @@ WEIBO_ACCOUNT_IDS = [
     "7541604928",  # CASETiFY
     "7857186930",  # FADEAWAY_L
     "7867201948",  # PLUG-INPET
+    "9072975151",  # Monkey是猪不是侯
 ]
 
 # Only keep posts from non-official Weibo accounts if they mention one of these.
