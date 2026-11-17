@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-18T00:44:03+08:00",
+  "lastUpdated": "2026-11-18T03:43:32+08:00",
   "status": "Completed: 29 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 2,
-    "postsTranslatedThisRun": 1,
+    "translationsAdded": 4,
+    "postsTranslatedThisRun": 2,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 2
+      "MyMemory": 4
     }
   },
   "sourceStatus": [
@@ -15,175 +15,175 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-18T00:40:46.651713+08:00"
+      "checkedAt": "2026-11-18T03:40:03.764176+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-18T00:40:52.837613+08:00"
+      "checkedAt": "2026-11-18T03:40:09.885018+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:40:55.852113+08:00"
+      "checkedAt": "2026-11-18T03:40:12.918760+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:40:58.726819+08:00"
+      "checkedAt": "2026-11-18T03:40:15.762894+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:01.043964+08:00"
+      "checkedAt": "2026-11-18T03:40:18.044168+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:03.325145+08:00"
+      "checkedAt": "2026-11-18T03:40:20.317936+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:05.624516+08:00"
+      "checkedAt": "2026-11-18T03:40:22.581421+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:07.917494+08:00"
+      "checkedAt": "2026-11-18T03:40:24.870142+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:10.788675+08:00"
+      "checkedAt": "2026-11-18T03:40:27.782533+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:13.165451+08:00"
+      "checkedAt": "2026-11-18T03:40:30.083561+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:17.799580+08:00"
+      "checkedAt": "2026-11-18T03:40:34.710686+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:20.162241+08:00"
+      "checkedAt": "2026-11-18T03:40:37.007358+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:23.044419+08:00"
+      "checkedAt": "2026-11-18T03:40:39.890065+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:25.916973+08:00"
+      "checkedAt": "2026-11-18T03:40:42.745282+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:28.911324+08:00"
+      "checkedAt": "2026-11-18T03:40:45.700497+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:31.214955+08:00"
+      "checkedAt": "2026-11-18T03:40:47.978599+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:33.528909+08:00"
+      "checkedAt": "2026-11-18T03:40:50.274027+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:36.405205+08:00"
+      "checkedAt": "2026-11-18T03:40:53.142080+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:38.750635+08:00"
+      "checkedAt": "2026-11-18T03:40:55.432800+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:47.397924+08:00"
+      "checkedAt": "2026-11-18T03:41:03.908083+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:52.205736+08:00"
+      "checkedAt": "2026-11-18T03:41:08.480572+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:41:56.887180+08:00"
+      "checkedAt": "2026-11-18T03:41:13.068458+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-18T00:42:03.067362+08:00"
+      "checkedAt": "2026-11-18T03:41:19.158945+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:42:06.094042+08:00"
+      "checkedAt": "2026-11-18T03:41:22.134954+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:42:16.376596+08:00"
+      "checkedAt": "2026-11-18T03:41:32.079796+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:42:36.619098+08:00"
+      "checkedAt": "2026-11-18T03:41:52.392045+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-18T00:42:57.702905+08:00"
+      "checkedAt": "2026-11-18T03:42:13.597100+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-18T00:43:12.310183+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-18T03:42:26.964807+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 26,
-      "checkedAt": "2026-11-18T00:43:29.362428+08:00"
+      "checkedAt": "2026-11-18T03:42:41.954946+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -228,6 +228,84 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "723fdf9cf1618d17c2bb",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票：你最期待哪位嘉宾的舞台？】 《音乐缘计划3》新一轮录制嘉宾阵容曝光，各路实力歌手集结，唱响不同风格旋律，你最期待哪位嘉宾的舞台？ 薛之谦丨周深丨刘宇宁丨黄子弘凡丨文俊辉丨侯明昊丨希林娜依高丨喻言丨刘端端丨姚晓棠丨王栎鑫丨王铮亮丨更…",
+      "excerpt": "【投票：你最期待哪位嘉宾的舞台？】 《音乐缘计划3》新一轮录制嘉宾阵容曝光，各路实力歌手集结，唱响不同风格旋律，你最期待哪位嘉宾的舞台？ 薛之谦丨周深丨刘宇宁丨黄子弘凡丨文俊辉丨侯明昊丨希林娜依高丨喻言丨刘端端丨姚晓棠丨王栎鑫丨王铮亮丨更多评论区见 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Music",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-18T03:22:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5366443596317208",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：你最期待哪位嘉宾的舞台？】 《音乐缘计划3》新一轮录制嘉宾阵容曝光，各路实力歌手集结，唱响不同风格旋律，你最期待哪位嘉宾的舞台？ 薛之谦丨周深丨刘宇宁丨黄子弘凡丨文俊辉丨侯明昊丨希林娜依高丨喻言丨刘端端丨姚晓棠丨王栎鑫丨王铮亮丨更…",
+      "excerptOriginal": "【投票：你最期待哪位嘉宾的舞台？】 《音乐缘计划3》新一轮录制嘉宾阵容曝光，各路实力歌手集结，唱响不同风格旋律，你最期待哪位嘉宾的舞台？ 薛之谦丨周深丨刘宇宁丨黄子弘凡丨文俊辉丨侯明昊丨希林娜依高丨喻言丨刘端端丨姚晓棠丨王栎鑫丨王铮亮丨更多评论区见 网页链接",
+      "titleEnglish": "[Poll: Which guest's performance are you most looking forward to?] The lineup of guests for the new round of recordings for \"Music Destiny Project 3\" has been revealed. A variety of talented singers have gathered to perform melodies in different styles. Which guest's performance are you most looking forward to? Joker Xue丨Chou Shen丨Allen Liu丨Huang Zihongfan丨Junhui Wen丨Leo Hou丨Siri丨Yu Yan丨Liu Duanduan丨Yao Xiaotang丨Wang Lixin丨Wang Zhengliang丨More...",
+      "excerptEnglish": "[Vote: Which guest's performance are you most looking forward to?] The lineup of guests for the new round of recordings for \"Music Connection Project 3\" has been revealed. A variety of talented singers have gathered to perform melodies in different styles. Which guest's performance are you most looking forward to? Joker Xue丨Zhou Shen丨Dylan Liu丨Huang Zihongfan丨Junhui Wen丨Leo Hou丨Xilinna Yi'gao丨Yu Yan丨Liu Duanduan丨Yao Xiaotang丨Wang Lixin丨Wang Zhengliang丨See the comments section for more. Web link"
+    },
+    {
+      "id": "0dba94a798a2b69e570f",
+      "platform": "Weibo",
+      "source": "Weibo @麦穗视频",
+      "title": "【投票：你最期待哪位嘉宾的舞台？】 《音乐缘计划3》新一轮录制嘉宾阵容曝光，各路实力歌手集结，唱响不同风格旋律，你最期待哪位嘉宾的舞台？ 薛之谦丨周深丨刘宇宁丨黄子弘凡丨文俊辉丨侯明昊丨希林娜依高丨喻言丨刘端端丨姚晓棠丨王栎鑫丨王铮亮丨更…",
+      "excerpt": "【投票：你最期待哪位嘉宾的舞台？】 《音乐缘计划3》新一轮录制嘉宾阵容曝光，各路实力歌手集结，唱响不同风格旋律，你最期待哪位嘉宾的舞台？ 薛之谦丨周深丨刘宇宁丨黄子弘凡丨文俊辉丨侯明昊丨希林娜依高丨喻言丨刘端端丨姚晓棠丨王栎鑫丨王铮亮丨更多评论区见 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Music",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-18T03:20:30+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5366443220664724",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：你最期待哪位嘉宾的舞台？】 《音乐缘计划3》新一轮录制嘉宾阵容曝光，各路实力歌手集结，唱响不同风格旋律，你最期待哪位嘉宾的舞台？ 薛之谦丨周深丨刘宇宁丨黄子弘凡丨文俊辉丨侯明昊丨希林娜依高丨喻言丨刘端端丨姚晓棠丨王栎鑫丨王铮亮丨更…",
+      "excerptOriginal": "【投票：你最期待哪位嘉宾的舞台？】 《音乐缘计划3》新一轮录制嘉宾阵容曝光，各路实力歌手集结，唱响不同风格旋律，你最期待哪位嘉宾的舞台？ 薛之谦丨周深丨刘宇宁丨黄子弘凡丨文俊辉丨侯明昊丨希林娜依高丨喻言丨刘端端丨姚晓棠丨王栎鑫丨王铮亮丨更多评论区见 网页链接",
+      "titleEnglish": "[Poll: Which guest's performance are you most looking forward to?] The lineup of guests for the new round of recordings for \"Music Destiny Project 3\" has been revealed. A variety of talented singers have gathered to perform melodies in different styles. Which guest's performance are you most looking forward to? Joker Xue丨Zhou Shen丨Liu Yuning丨Huang Zihongfan丨Wen Junhui丨Hou Minghao丨Xilin Naygao丨Yu Yan丨Liu Duanduan丨Yao Xiaotang丨Wang Luoxin丨Wang Zhengliang丨More...",
+      "excerptEnglish": "[Poll: Which guest's performance are you most looking forward to?] The lineup of guests for the new round of recordings for \"Music Destiny Project 3\" has been revealed. A variety of talented singers have gathered to perform melodies in different styles. Which guest's performance are you most looking forward to? Joker Xue丨Chou Shen丨Dylan Liu丨Huang Zihongfan丨Junhui Wen丨Leo Hou丨Xilin Naygao丨Yu Yan丨Liu Duanduan丨Yao Xiaotang丨Wang Lixin丨Wang Zhengliang丨See the comments section for more. Web link"
+    },
+    {
+      "id": "a3e0f4e1d320aebc183d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "18.11.2026 | Suzhou Crush of Music 3 — Recording Day 1 Completed Day 1 is finally done! Our cat is back at the hotel, and he even stopped to greet th…",
+      "excerpt": "18.11.2026 | Suzhou Crush of Music 3 — Recording Day 1 Completed Day 1 is finally done! Our cat is back at the hotel, and he even stopped to greet the Kiwis. thank you for always being so sweet to your fans. sleep well and recharge for tomorrow! #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-18T02:39:56+08:00",
+      "url": "https://x.com/PopMinghao/status/2122761673501257832",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "b66b12af239e66784ede",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "17.11.2026 | Suzhou Crush of Music 3 Recording Day Finally, he’s not walking alone like a lost cat Kiwis ments they're just pressing acupoint. #侯明昊 #…",
+      "excerpt": "17.11.2026 | Suzhou Crush of Music 3 Recording Day Finally, he’s not walking alone like a lost cat Kiwis ments they're just pressing acupoint. #侯明昊 #HouMinghao #CrushOfMusic3",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-18T02:35:43+08:00",
+      "url": "https://x.com/PopMinghao/status/2122760611113365999",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
     {
       "id": "d81ac69dd5c5ac2f7553",
       "platform": "Weibo",
@@ -4233,9 +4311,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6c7e41658f3bd2e468b1db6c.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c21c176583a57695a41b3c7b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fcc3e63cd62d04c9ac50e63f.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg",
-        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9ch5sebj32dc35s4qs.jpg",
-        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9cogvomj32dc35s7wo.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg"
       ],
       "videos": [
         {
@@ -4325,8 +4401,7 @@
       "title": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “启幕” 华章将启，风度翩然，在未知之境铺展一场神秘叙事。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "excerpt": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “启幕” 华章将启，风度翩然，在未知之境铺展一场神秘叙事。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d276130fbe2695a2e0e7e645.jpg",
-        "https://wx2.sinaimg.cn/orj480/006i3hfEly1iiw7tyhwcnj32yo1o01kx.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d276130fbe2695a2e0e7e645.jpg"
       ],
       "videos": [
         {
@@ -4487,8 +4562,7 @@
       "title": "09.11.2026 | W GALA · Golden Age Shanghai Our noble young master looks straight out of a royal family portrait!",
       "excerpt": "09.11.2026 | W GALA · Golden Age Shanghai Our noble young master looks straight out of a royal family portrait!",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/877bd28853a0b95376ec8b99.jpg",
-        "https://pbs.twimg.com/media/HWrUUvya4AAn_Af?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/877bd28853a0b95376ec8b99.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-09T18:33:03+08:00",
@@ -4510,8 +4584,6 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a1a6496e561b95e92403ab05.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/182b06dd6be23b158ae1ac67.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4dbc96d561a124d95fe977d1.jpg",
-        "https://pbs.twimg.com/media/HWrTYynbEAA0hyO?format=jpg&name=large",
-        "https://pbs.twimg.com/media/HWrTb4MboAIoHv_?format=jpg&name=large",
         "https://pbs.twimg.com/media/HWrTXvpa8AAOGD3?format=jpg&name=large"
       ],
       "category": "X Update",
