@@ -74,6 +74,7 @@ WEIBO_ACCOUNT_IDS = [
     # Official actor & studio accounts
     "5763552342",  # 侯明昊工作室 (Hou Minghao Studio)
     "1831550987",  # 侯明昊 (Hou Minghao personal account)
+    "9072975151",  # Monkey是猪不是侯
     # New endorsements (新增商务)
     "6453123896",  # 旭东食品 (Xudong Snacks)
     "1692125795",  # 乐事官方微博 (Lay's)
@@ -95,7 +96,6 @@ WEIBO_ACCOUNT_IDS = [
     "7541604928",  # CASETiFY
     "7857186930",  # FADEAWAY_L
     "7867201948",  # PLUG-INPET
-    "9072975151",  # Monkey是猪不是侯
 ]
 
 # Only keep posts from non-official Weibo accounts if they mention one of these.
@@ -112,6 +112,7 @@ def mentions_hou(*texts):
 WEIBO_ACCOUNT_NAMES = {
     "5763552342": "侯明昊工作室",
     "1831550987": "侯明昊",
+    "9072975151":  "Monkey是猪不是侯",
     "6453123896": "旭东食品",
     "1692125795": "乐事官方微博",
     "1734997034": "海信电视",
