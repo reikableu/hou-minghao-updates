@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-17T13:14:24+08:00",
+  "lastUpdated": "2026-11-17T13:57:47+08:00",
   "status": "Completed: 29 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 2
     }
   },
   "sourceStatus": [
@@ -15,175 +15,175 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-17T13:11:22.060655+08:00"
+      "checkedAt": "2026-11-17T13:54:27.048468+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-17T13:11:27.556692+08:00"
+      "checkedAt": "2026-11-17T13:54:33.262744+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:30.643553+08:00"
+      "checkedAt": "2026-11-17T13:54:36.353762+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:33.515482+08:00"
+      "checkedAt": "2026-11-17T13:54:39.246340+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:35.795214+08:00"
+      "checkedAt": "2026-11-17T13:54:41.550790+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:38.110354+08:00"
+      "checkedAt": "2026-11-17T13:54:43.895520+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:40.395924+08:00"
+      "checkedAt": "2026-11-17T13:54:46.217819+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:42.674248+08:00"
+      "checkedAt": "2026-11-17T13:54:48.512973+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:45.559690+08:00"
+      "checkedAt": "2026-11-17T13:54:51.402839+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:47.863844+08:00"
+      "checkedAt": "2026-11-17T13:54:53.708300+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:52.453596+08:00"
+      "checkedAt": "2026-11-17T13:54:58.392144+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:54.744625+08:00"
+      "checkedAt": "2026-11-17T13:55:00.712003+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:11:57.628930+08:00"
+      "checkedAt": "2026-11-17T13:55:03.614147+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:00.516956+08:00"
+      "checkedAt": "2026-11-17T13:55:06.524683+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:03.502185+08:00"
+      "checkedAt": "2026-11-17T13:55:09.537213+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:05.795989+08:00"
+      "checkedAt": "2026-11-17T13:55:11.857299+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:08.091065+08:00"
+      "checkedAt": "2026-11-17T13:55:14.147900+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:10.963527+08:00"
+      "checkedAt": "2026-11-17T13:55:17.039672+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:13.299074+08:00"
+      "checkedAt": "2026-11-17T13:55:19.376541+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:19.482149+08:00"
+      "checkedAt": "2026-11-17T13:55:25.626400+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:24.219872+08:00"
+      "checkedAt": "2026-11-17T13:55:30.433181+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:28.873505+08:00"
+      "checkedAt": "2026-11-17T13:55:35.140011+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-17T13:12:35.327782+08:00"
+      "checkedAt": "2026-11-17T13:55:43.076725+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:12:38.411377+08:00"
+      "checkedAt": "2026-11-17T13:55:46.103714+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-17T13:12:48.492023+08:00"
+      "checkedAt": "2026-11-17T13:55:56.335356+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:13:10.546835+08:00"
+      "checkedAt": "2026-11-17T13:56:18.606777+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:13:31.822924+08:00"
+      "checkedAt": "2026-11-17T13:56:40.611376+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-17T13:13:46.037610+08:00"
+      "checkedAt": "2026-11-17T13:56:54.489430+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-17T13:14:05.049854+08:00"
+      "checkedAt": "2026-11-17T13:57:13.078441+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -228,6 +228,30 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "65f7ea8950487fb6ad9d",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊工作室",
+      "title": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 所有途经的雨季 都会涌入最初的洋流 所有并肩的爱意 都将汇成同频的旋律 侯明昊「属于我们的...」演唱会北京·收官站…",
+      "excerpt": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 所有途经的雨季 都会涌入最初的洋流 所有并肩的爱意 都将汇成同频的旋律 侯明昊「属于我们的...」演唱会北京·收官站 倒计时10天 与你共唱《脸谱》 🗓️演出时间：11月27日-11月29日 📍演出地点：华熙生物·润百颜ECM中心",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b79a2e5ac9050dad84711079.jpg"
+      ],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Official",
+      "date": "2026-11-17T13:14:58+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5366230434709990",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 所有途经的雨季 都会涌入最初的洋流 所有并肩的爱意 都将汇成同频的旋律 侯明昊「属于我们的...」演唱会北京·收官站…",
+      "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 所有途经的雨季 都会涌入最初的洋流 所有并肩的爱意 都将汇成同频的旋律 侯明昊「属于我们的...」演唱会北京·收官站 倒计时10天 与你共唱《脸谱》 🗓️演出时间：11月27日-11月29日 📍演出地点：华熙生物·润百颜ECM中心",
+      "titleEnglish": "🥝 Neo Hou's \"Ours\" Tour: Memories of Beijing｜ @Neo Hou To Be Continued Every rainy season we've passed through will flow into the original ocean current. Every love we've shared side by side will converge into a melody on the same wavelength. Neo Hou's \"Ours...\" Concert Beijing • Final Stop…",
+      "excerptEnglish": "Hou Minghao 🥝 Hou Minghao \"Belongs to Us\" Tour Concert Memories of Beijing｜ @Hou Minghao To Be Continued Every rainy season we've passed through will flow into the original ocean current. Every love we've shared side by side will converge into a melody on the same wavelength. Hou Minghao \"Belongs to Us...\" Concert Beijing – Final Stop 10 days until the countdown. Let's sing \"Face\" together. 🗓️ Concert Dates: November 27–November 29 📍 Venue: Bloomage Biotech – Runbeauty ECM Center"
+    },
     {
       "id": "b6936b6c68d9f68b0ae3",
       "platform": "X",
@@ -3966,7 +3990,8 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/685df329a45274f55a46a8ff.jpg",
         "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9cogvomj32dc35s7wo.jpg",
         "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iiw9cjstebj32c0340hdu.jpg",
-        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iiw9ciiyc9j31n426unpd.jpg"
+        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iiw9ciiyc9j31n426unpd.jpg",
+        "https://wx1.sinaimg.cn/mw2000/006i3hfEly1iiw9ch5sebj32dc35s4qs.jpg"
       ],
       "videos": [
         {
