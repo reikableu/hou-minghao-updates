@@ -17,6 +17,7 @@ from deep_translator import GoogleTranslator
 
 POSTS_FILE = Path("posts.json")
 WEIBO_USERNAME_CACHE_FILE = Path("weibo_username_cache.json")
+REJECTED_PERSONAL_UIDS = {"5648651333", "5938174786", "7857186930", "1692125795", "1880710372"}
 WEIBO_DISCOVERED_ACCOUNTS_FILE = Path("weibo_discovered_accounts.json")
 WEIBO_HISTORY_STATE_FILE = Path("weibo_discovery_history_state.json")
 NEW_DISCOVERY_HISTORY_DAYS = 180
@@ -136,10 +137,10 @@ def load_weibo_username_cache():
         try:
             saved = json.loads(WEIBO_USERNAME_CACHE_FILE.read_text(encoding="utf-8"))
             if isinstance(saved, dict):
-                cache.update({str(uid): str(name).strip() for uid, name in saved.items() if str(name).strip()})
+                cache.update({str(uid): str(name).strip() for uid, name in saved.items() if str(name).strip() and str(uid) not in REJECTED_PERSONAL_UIDS})
         except Exception as error:
             print("Could not read Weibo username cache:", error)
-    return cache
+    return {uid: name for uid, name in cache.items() if uid not in REJECTED_PERSONAL_UIDS}
 
 
 WEIBO_USERNAME_CACHE = load_weibo_username_cache()
@@ -157,7 +158,7 @@ def save_weibo_username_cache():
 def cache_weibo_username(uid, username):
     uid = str(uid or "").strip()
     username = clean_text(str(username or "")).lstrip("@").strip()
-    if not uid or not username or username == uid:
+    if not uid or uid in REJECTED_PERSONAL_UIDS or not username or username == uid:
         return False
     if WEIBO_USERNAME_CACHE.get(uid) == username:
         return False
@@ -178,6 +179,7 @@ def friendly_weibo_source(value):
 # Explicitly monitored brand UIDs are trusted as known brand sources, independently
 # of discovery keywords or whether a search response includes verification metadata.
 OFFICIAL_WEIBO_UIDS = {"1831550987", "5763552342"}
+WEIBO_ACCOUNT_IDS[:] = [uid for uid in WEIBO_ACCOUNT_IDS if str(uid) not in REJECTED_PERSONAL_UIDS]
 KNOWN_BRAND_UIDS = set(WEIBO_ACCOUNT_IDS) - OFFICIAL_WEIBO_UIDS
 # Verified organizers and an official fashion house; UIDs confirmed from their Weibo posts.
 KNOWN_EVENT_ACCOUNTS = {
@@ -222,7 +224,7 @@ if WEIBO_DISCOVERED_ACCOUNTS_FILE.exists():
             profile = f"{item.get('name', '')} {item.get('verificationDescription', '')}".casefold()
             category = str(item.get("classification") or "")
             verified_type = str(item.get("verifiedType") or "")
-            if not uid.isdigit() or uid in OFFICIAL_WEIBO_UIDS:
+            if not uid.isdigit() or uid in OFFICIAL_WEIBO_UIDS or uid in REJECTED_PERSONAL_UIDS:
                 continue
             # Auto-discovery is fail-closed: a blue/personal verification badge,
             # an old 'Unverified' label, or a broad profile keyword is not enough.
