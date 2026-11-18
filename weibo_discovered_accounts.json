@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T15:56:30.677734+08:00",
+  "updatedAt": "2026-11-18T18:39:34.059292+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -61,6 +61,21 @@
       "lastSeen": "2026-11-18T12:42:52+08:00",
       "lastMentionPostId": "5366584744609369",
       "discoveredBy": "侯明昊尖叫之夜"
+    },
+    {
+      "uid": "1644358851",
+      "name": "杭州日报",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "verifiedType": "3",
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "《杭州日报》官方微博",
+      "firstSeen": "2026-11-18T18:39:34.059292+08:00",
+      "lastSeen": "2026-11-18T16:00:00+08:00",
+      "lastMentionPostId": "5366634354051444",
+      "discoveredBy": "侯明昊颁奖"
     },
     {
       "uid": "1731986465",
