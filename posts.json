@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-18T07:42:50+08:00",
+  "lastUpdated": "2026-11-18T09:43:48+08:00",
   "status": "Completed: 29 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 8,
+    "postsTranslatedThisRun": 4,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 8
     }
   },
   "sourceStatus": [
@@ -15,175 +15,175 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-18T07:39:44.488969+08:00"
+      "checkedAt": "2026-11-18T09:39:50.584320+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-18T07:39:50.910860+08:00"
+      "checkedAt": "2026-11-18T09:39:57.076722+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:39:53.976162+08:00"
+      "checkedAt": "2026-11-18T09:40:00.163521+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:39:56.923880+08:00"
+      "checkedAt": "2026-11-18T09:40:03.096139+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:39:59.262596+08:00"
+      "checkedAt": "2026-11-18T09:40:05.419985+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:01.608816+08:00"
+      "checkedAt": "2026-11-18T09:40:07.748316+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:03.948954+08:00"
+      "checkedAt": "2026-11-18T09:40:10.089942+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:06.286976+08:00"
+      "checkedAt": "2026-11-18T09:40:12.445490+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:09.234336+08:00"
+      "checkedAt": "2026-11-18T09:40:15.396498+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:11.616198+08:00"
+      "checkedAt": "2026-11-18T09:40:17.748123+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:16.435189+08:00"
+      "checkedAt": "2026-11-18T09:40:22.533542+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:18.780383+08:00"
+      "checkedAt": "2026-11-18T09:40:24.920754+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:21.695152+08:00"
+      "checkedAt": "2026-11-18T09:40:27.849607+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:24.605807+08:00"
+      "checkedAt": "2026-11-18T09:40:30.787016+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:27.634335+08:00"
+      "checkedAt": "2026-11-18T09:40:33.833320+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:29.987570+08:00"
+      "checkedAt": "2026-11-18T09:40:36.165392+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:32.346604+08:00"
+      "checkedAt": "2026-11-18T09:40:38.543709+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:35.283337+08:00"
+      "checkedAt": "2026-11-18T09:40:41.459675+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:37.637521+08:00"
+      "checkedAt": "2026-11-18T09:40:43.855818+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:46.577591+08:00"
+      "checkedAt": "2026-11-18T09:40:52.914689+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:51.422401+08:00"
+      "checkedAt": "2026-11-18T09:40:57.721972+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:40:56.212857+08:00"
+      "checkedAt": "2026-11-18T09:41:02.527193+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-18T07:41:01.795694+08:00"
+      "checkedAt": "2026-11-18T09:41:06.474148+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:41:04.875817+08:00"
+      "checkedAt": "2026-11-18T09:41:09.622282+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:41:15.460488+08:00"
+      "checkedAt": "2026-11-18T09:41:20.286975+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-18T07:41:38.223390+08:00"
+      "checkedAt": "2026-11-18T09:41:41.894453+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-18T07:41:59.749377+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-18T09:42:05.116501+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-18T07:42:13.583938+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-18T09:42:18.935391+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 26,
-      "checkedAt": "2026-11-18T07:42:27.419207+08:00"
+      "checkedAt": "2026-11-18T09:42:33.662479+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -228,6 +228,94 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "796982bf30da5928d84b",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "excerpt": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Photos",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-18T08:04:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5366514564990441",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "excerptOriginal": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "titleEnglish": "[Poll: Male Celebrities with Headbands] Who do you think looks the best? Yu Shi｜Li Yunrui｜Hou Minghao｜Zhang Linghe｜Song Yaxuan｜Wang Hedi｜Zhou Keyu｜Zhang Zhenyuan｜He Yu｜Luo Yunxi｜Mu Zhicheng｜Yan Haoxiang... Web link",
+      "excerptEnglish": "[Vote: Male Celebrity Headband Styles] Who do you think looks the most handsome? Yu Shi｜Li Yunrui｜Hou Minghao｜Zhang Linghe｜Song Yaxuan｜Wang Hedi｜Zhou Keyu｜Zhang Zhenyuan｜He Yu｜Luo Yunxi｜Mu Zhicheng｜Yan Haoxiang…… Web link"
+    },
+    {
+      "id": "bb85b41d6e569ff4b9fc",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "excerpt": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Photos",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-18T08:04:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5366514564990089",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "excerptOriginal": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "titleEnglish": "[Vote: Male Celebrities with Headbands] Who do you think looks the most handsome? Yu Shi｜Li Yunrui｜Hou Minghao｜Zhang Linghe｜Song Yaxuan｜Wang Hedi｜Zhou Keyu｜Zhang Zhenyuan｜He Yu｜Luo Yunxi｜Mu Zhicheng｜Yan Haoxiang…… Web link",
+      "excerptEnglish": "[Poll: Male Celebrities with Headbands] Who do you think looks the best? Yu Shi｜Li Yunrui｜Hou Minghao｜Zhang Linghe｜Song Yaxuan｜Wang Hedi｜Zhou Keyu｜Zhang Zhenyuan｜He Yu｜Luo Yunxi｜Mu Zhicheng｜Yan Haoxiang…… Web link"
+    },
+    {
+      "id": "88bc05e58525dd01a516",
+      "platform": "Weibo",
+      "source": "Weibo @麦穗视频",
+      "title": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "excerpt": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Photos",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-18T08:01:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5366513810802249",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "excerptOriginal": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "titleEnglish": "[Poll: Male Celebrities with Headbands] Who do you think looks the most handsome? Yu Shi｜Li Yunrui｜Hou Minghao｜Zhang Linghe｜Song Yaxuan｜Wang Hedi｜Zhou Keyu｜Zhang Zhenyuan｜He Yu｜Luo Yunxi｜Mu Zhicheng｜Yan Haoxiang…… Web link",
+      "excerptEnglish": "[Poll: Male Celebrities with Headbands] Who do you think looks the best? Yu Shi｜Li Yunrui｜Hou Minghao｜Zhang Linghe｜Song Yaxuan｜Wang Hedi｜Zhou Keyu｜Zhang Zhenyuan｜He Yu｜Luo Yunxi｜Mu Zhicheng｜Yan Haoxiang... Web link"
+    },
+    {
+      "id": "e0abbff2ded6b32c70d2",
+      "platform": "Weibo",
+      "source": "Weibo @麦穗视频",
+      "title": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "excerpt": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Photos",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-18T08:01:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5366513810015395",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "excerptOriginal": "【投票：男星发带造型】 谁帅到你了呢？于适｜李昀锐｜侯明昊｜张凌赫｜宋亚轩｜王鹤棣｜周柯宇｜张真源｜何与｜罗云熙｜穆祉丞｜严浩翔…… 网页链接",
+      "titleEnglish": "[Poll: Male Celebrities with Headbands] Who do you think looks the most handsome? Yu Shi｜Li Yunrui｜Hou Minghao｜Zhang Linghe｜Song Yaxuan｜Wang Hedi｜Zhou Keyu｜Zhang Zhenyuan｜He Yu｜Luo Yunxi｜Mu Zhicheng｜Yan Haoxiang…… Web link",
+      "excerptEnglish": "[Poll: Male Celebrities with Headbands] Who do you think looks the most handsome? Yu Shi｜Li Yunrui｜Hou Minghao｜Zhang Linghe｜Song Yaxuan｜Wang Herdi｜Zhou Keyu｜Zhang Zhenyuan｜He Yu｜Luo Yunxi｜Mu Zhicheng｜Yan Haoxiang…… Web link"
+    },
     {
       "id": "886215709c8e72c0e400",
       "platform": "Weibo",
@@ -4743,8 +4831,7 @@
       "title": "Hou Minghao Live Photos | W Annual Gala 2026 261109 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "excerpt": "Hou Minghao Live Photos | W Annual Gala 2026 261109 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoWGala2026",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/342e5afb0a8f20bf42ceb899.jpg",
-        "https://pbs.twimg.com/media/HWrLNDxaUAAT-ez?format=jpg&name=large"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/342e5afb0a8f20bf42ceb899.jpg"
       ],
       "category": "X Update",
       "date": "2026-11-09T17:53:11+08:00",
@@ -4834,8 +4921,8 @@
       "title": "#侯明昊金发丝绒西装# 在光影交错间，丝绒的纹理显得格外迷人，金发少年伫立其中，像是一件精心雕琢的艺术品，每一处线条都恰到好处",
       "excerpt": "#侯明昊金发丝绒西装# 在光影交错间，丝绒的纹理显得格外迷人，金发少年伫立其中，像是一件精心雕琢的艺术品，每一处线条都恰到好处",
       "images": [
-        "https://wx1.sinaimg.cn/mw2000/006IHJLBly1iivxp7plg9j30u01917ax.jpg",
-        "https://wx3.sinaimg.cn/mw2000/006IHJLBly1iivxp76rhoj30j60u8q5c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/08c7309ebc78f2c22796dd58.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/29e3a6bd59e6dbc4724a1dba.jpg",
         "https://wx3.sinaimg.cn/mw2000/006IHJLBly1iivxp7axwpj30in0vkt9u.jpg",
         "https://wx2.sinaimg.cn/mw2000/006IHJLBly1iivxp75jr1j30j60j60ux.jpg",
         "https://wx4.sinaimg.cn/mw2000/006IHJLBly1iivxp7r5tzj30u0197n32.jpg",
