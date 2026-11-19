@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-19T18:49:03+08:00",
+  "lastUpdated": "2026-11-19T21:46:21+08:00",
   "status": "Completed: 33 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 14,
+    "postsTranslatedThisRun": 7,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 14
     }
   },
   "sourceStatus": [
@@ -15,199 +15,199 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-19T18:44:52.238614+08:00"
+      "checkedAt": "2026-11-19T21:40:15.742949+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-19T18:44:58.527920+08:00"
+      "checkedAt": "2026-11-19T21:40:22.294788+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:01.536186+08:00"
+      "checkedAt": "2026-11-19T21:40:25.445961+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:04.390872+08:00"
+      "checkedAt": "2026-11-19T21:40:28.380552+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:06.665866+08:00"
+      "checkedAt": "2026-11-19T21:40:30.737980+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:08.971976+08:00"
+      "checkedAt": "2026-11-19T21:40:33.082867+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:11.250399+08:00"
+      "checkedAt": "2026-11-19T21:40:35.433686+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:13.529697+08:00"
+      "checkedAt": "2026-11-19T21:40:37.804107+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:16.402389+08:00"
+      "checkedAt": "2026-11-19T21:40:40.740847+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:18.735937+08:00"
+      "checkedAt": "2026-11-19T21:40:43.126167+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:24.069763+08:00"
+      "checkedAt": "2026-11-19T21:40:49.652333+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:26.408417+08:00"
+      "checkedAt": "2026-11-19T21:40:52.024964+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:29.270341+08:00"
+      "checkedAt": "2026-11-19T21:40:54.964445+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:32.163387+08:00"
+      "checkedAt": "2026-11-19T21:40:57.901332+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:35.150131+08:00"
+      "checkedAt": "2026-11-19T21:41:00.980866+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:37.478628+08:00"
+      "checkedAt": "2026-11-19T21:41:03.345084+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:39.757663+08:00"
+      "checkedAt": "2026-11-19T21:41:05.691758+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:42.623145+08:00"
+      "checkedAt": "2026-11-19T21:41:08.611167+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:44.924024+08:00"
+      "checkedAt": "2026-11-19T21:41:11.016307+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:55.225813+08:00"
+      "checkedAt": "2026-11-19T21:41:21.866946+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:45:59.895816+08:00"
+      "checkedAt": "2026-11-19T21:41:26.767519+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:46:04.567607+08:00"
+      "checkedAt": "2026-11-19T21:41:31.660173+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-19T18:46:10.840759+08:00"
+      "checkedAt": "2026-11-19T21:41:39.877234+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:46:13.901323+08:00"
+      "checkedAt": "2026-11-19T21:41:43.025737+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:46:23.928996+08:00"
+      "checkedAt": "2026-11-19T21:41:53.950349+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-19T18:46:42.895841+08:00"
+      "checkedAt": "2026-11-19T21:42:13.903295+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:47:03.326722+08:00"
+      "checkedAt": "2026-11-19T21:42:35.627534+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:47:24.698625+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-19T21:42:57.273054+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-19T18:47:39.708551+08:00"
+      "checkedAt": "2026-11-19T21:43:12.862860+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:47:53.130608+08:00"
+      "checkedAt": "2026-11-19T21:43:26.798251+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-19T18:48:11.290662+08:00"
+      "checkedAt": "2026-11-19T21:43:46.969091+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-19T18:48:26.256854+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-19T21:44:03.470345+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 25,
-      "checkedAt": "2026-11-19T18:48:44.448310+08:00"
+      "itemsFound": 26,
+      "checkedAt": "2026-11-19T21:44:20.951619+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -255,6 +255,232 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "5859bb80c289dd6eb3a9",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊工作室",
+      "title": "致敬一代代航天人！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了# // @侯明昊 :27年神舟飞天路，为中国航天喝彩！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了#",
+      "excerpt": "致敬一代代航天人！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了# // @侯明昊 :27年神舟飞天路，为中国航天喝彩！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了#",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Official",
+      "date": "2026-11-19T21:20:22+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5367077365613449",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "致敬一代代航天人！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了# // @侯明昊 :27年神舟飞天路，为中国航天喝彩！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了#",
+      "excerptOriginal": "致敬一代代航天人！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了# // @侯明昊 :27年神舟飞天路，为中国航天喝彩！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了#",
+      "titleEnglish": "A tribute to generations of space pioneers! 27th Anniversary of the Successful First Flight of Shenzhou 1. China's space program has turned one legend after another into reality. // @Hou Minghao: 27 years of Shenzhou's journey to space. Let's cheer for China's space program! The 27th anniversary of the successful maiden flight of Shenzhou 1. China's space program has turned one legend after another into reality.",
+      "excerptEnglish": "A tribute to generations of space pioneers! 27th Anniversary of the Successful First Flight of Shenzhou 1. China's space program has turned one legend after another into reality. // @Hou Minghao: 27 years of Shenzhou's journey to space. Let's cheer for China's space program! The 27th anniversary of the successful maiden flight of Shenzhou 1. China's space program has made one legend after another come true."
+    },
+    {
+      "id": "b1aff4ade90d9b198192",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊",
+      "title": "27年神舟飞天路，为中国航天喝彩！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了#",
+      "excerpt": "27年神舟飞天路，为中国航天喝彩！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了#",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Official",
+      "date": "2026-11-19T21:19:25+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5367077130993993",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "27年神舟飞天路，为中国航天喝彩！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了#",
+      "excerptOriginal": "27年神舟飞天路，为中国航天喝彩！ #神舟一号首飞成功27周年# #中国航天让一个个神话实现了#",
+      "titleEnglish": "27 years of Shenzhou's journey to space – let's cheer for China's space program! The 27th anniversary of the successful maiden flight of Shenzhou 1. China's space program has made one legend after another come true.",
+      "excerptEnglish": "27 years of Shenzhou's journey to space – let's cheer for China's space program! The 27th anniversary of the successful maiden flight of Shenzhou 1. China's space program has made one legend after another come true."
+    },
+    {
+      "id": "5ef2adc2d2dfc286c8f7",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "19.11.2026 | HOKA Official Livestream Full Livestream — 57 Minutes here’s the complete livestream of our cute teddy mi for Kiwis to enjoy. #侯明昊 #HouM…",
+      "excerpt": "19.11.2026 | HOKA Official Livestream Full Livestream — 57 Minutes here’s the complete livestream of our cute teddy mi for Kiwis to enjoy. #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-19T21:11:01+08:00",
+      "url": "https://x.com/PopMinghao/status/2123403674416488949",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "2f37802674bde6e22c16",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票： #2026首尔电视剧大赏# 亚洲明星奖你会pick哪位？】 @张凌赫z 、 @侯明昊 、 @赵露思工作室官微 @田曦薇 、 @何健麒7 、 @陈星旭--CHEN先生 @田嘉瑞6 、 @宋威龙99 、 @魏大勋 @白敬亭 、 @卢…",
+      "excerpt": "【投票： #2026首尔电视剧大赏# 亚洲明星奖你会pick哪位？】 @张凌赫z 、 @侯明昊 、 @赵露思工作室官微 @田曦薇 、 @何健麒7 、 @陈星旭--CHEN先生 @田嘉瑞6 、 @宋威龙99 、 @魏大勋 @白敬亭 、 @卢昱晓_ 、 @钟汉良 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Drama",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-19T21:06:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5367073748552068",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票： #2026首尔电视剧大赏# 亚洲明星奖你会pick哪位？】 @张凌赫z 、 @侯明昊 、 @赵露思工作室官微 @田曦薇 、 @何健麒7 、 @陈星旭--CHEN先生 @田嘉瑞6 、 @宋威龙99 、 @魏大勋 @白敬亭 、 @卢…",
+      "excerptOriginal": "【投票： #2026首尔电视剧大赏# 亚洲明星奖你会pick哪位？】 @张凌赫z 、 @侯明昊 、 @赵露思工作室官微 @田曦薇 、 @何健麒7 、 @陈星旭--CHEN先生 @田嘉瑞6 、 @宋威龙99 、 @魏大勋 @白敬亭 、 @卢昱晓_ 、 @钟汉良 网页链接",
+      "titleEnglish": "[Vote: Who would you pick for the Asian Star Award at the 2026 Seoul International Drama Awards?] @Zhang Linghe z, @Hou Minghao, @Zhao Lusi Studio Official Weibo, @Tian Xiwei, @He Jianqi 7, @Chen Xingxu--Mr. Chen, @Tian Jiarui 6, @Song Weilong 99, @Wei Daxun, @Bai Jingting, @Lu...",
+      "excerptEnglish": "[Vote: Who would you pick for the Asian Star Award at the 2026 Seoul International Drama Awards?] @Zhang Linghe z, @Hou Minghao, @Zhao Lusi Studio Official Weibo @Tian Xiwei, @He Jianqi 7, @Chen Xingxu--Mr. Chen @Tian Jiarui 6, @Song Weilong 99, @Wei Daxun @Bai Jingting, @Lu Yuxiao_, @Zhong Hanliang Web link"
+    },
+    {
+      "id": "317a15eef4a6d19f938d",
+      "platform": "Weibo",
+      "source": "Weibo @麦穗视频",
+      "title": "【投票： #2026首尔电视剧大赏# 亚洲明星奖你会pick哪位？】 @张凌赫z 、 @侯明昊 、 @赵露思工作室官微 @田曦薇 、 @何健麒7 、 @陈星旭--CHEN先生 @田嘉瑞6 、 @宋威龙99 、 @魏大勋 @白敬亭 、 @卢…",
+      "excerpt": "【投票： #2026首尔电视剧大赏# 亚洲明星奖你会pick哪位？】 @张凌赫z 、 @侯明昊 、 @赵露思工作室官微 @田曦薇 、 @何健麒7 、 @陈星旭--CHEN先生 @田嘉瑞6 、 @宋威龙99 、 @魏大勋 @白敬亭 、 @卢昱晓_ 、 @钟汉良 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Drama",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-19T21:03:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5367072994627755",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票： #2026首尔电视剧大赏# 亚洲明星奖你会pick哪位？】 @张凌赫z 、 @侯明昊 、 @赵露思工作室官微 @田曦薇 、 @何健麒7 、 @陈星旭--CHEN先生 @田嘉瑞6 、 @宋威龙99 、 @魏大勋 @白敬亭 、 @卢…",
+      "excerptOriginal": "【投票： #2026首尔电视剧大赏# 亚洲明星奖你会pick哪位？】 @张凌赫z 、 @侯明昊 、 @赵露思工作室官微 @田曦薇 、 @何健麒7 、 @陈星旭--CHEN先生 @田嘉瑞6 、 @宋威龙99 、 @魏大勋 @白敬亭 、 @卢昱晓_ 、 @钟汉良 网页链接",
+      "titleEnglish": "[Vote: Who would you pick for the Asian Star Award at the 2026 Seoul International Drama Awards?] @Zhang Linghe z, @Hou Minghao, @Zhao Lusi Studio Official Account @Tian Xiwei, @He Jianqi 7, @Chen Xingxu--Mr. Chen @Tian Jiarui 6, @Song Weilong 99, @Wei Daxun @Bai Jingting, @Lu...",
+      "excerptEnglish": "[Vote: Who would you pick for the Asian Star Award at the 2026 Seoul International Drama Awards?] @Zhang Linghe z, @Hou Minghao, @Zhao Lusi Studio Official Weibo @Tian Xiwei, @He Jianqi 7, @Chen Xingxu--Mr. Chen @Tian Jiarui 6, @Song Weilong 99, @Wei Daxun @Bai Jingting, @Lu Yuxiao_, @Zhong Hanliang Web link"
+    },
+    {
+      "id": "687fe4500a0a8e23adfd",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "19.11.2026 | HOKA Official Livestream can we just appreciate how adorable he is??? #侯明昊 #HouMinghao",
+      "excerpt": "19.11.2026 | HOKA Official Livestream can we just appreciate how adorable he is??? #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-19T20:55:42+08:00",
+      "url": "https://x.com/PopMinghao/status/2123399820706767090",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "8501db958224d2557447",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "19.11.2026 | HOKA Official Livestream NOT HIM SHOWING US HIS LITTLE PIMPLE ON LIVE #侯明昊 #HouMinghao",
+      "excerpt": "19.11.2026 | HOKA Official Livestream NOT HIM SHOWING US HIS LITTLE PIMPLE ON LIVE #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-19T20:23:33+08:00",
+      "url": "https://x.com/PopMinghao/status/2123391726790594905",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "e44549610d614c721594",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "19.11.2026 | HOKA Official Livestream why does he look so tiny and adorable in that brown puffer jacket??? like a little fluffy bear all bundled up!…",
+      "excerpt": "19.11.2026 | HOKA Official Livestream why does he look so tiny and adorable in that brown puffer jacket??? like a little fluffy bear all bundled up! the jacket makes him look extra cute and small. #侯明昊 #HouMinghao #HOKA",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-19T20:11:40+08:00",
+      "url": "https://x.com/PopMinghao/status/2123388736906080728",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "6211da5ca22a3b0efde4",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票： #W盛典红毯# 男星W盛典造型，你pick哪一套？】 #W盛典红毯# @白敬亭 @侯明昊 @井柏然 @赖伟明很酷 @宋威龙99 @张凌赫z @郑云龙DL @朱一龙 ……男星W盛典造型，你pick哪一套？ #W盛典阵容 开盲盒#…",
+      "excerpt": "【投票： #W盛典红毯# 男星W盛典造型，你pick哪一套？】 #W盛典红毯# @白敬亭 @侯明昊 @井柏然 @赖伟明很酷 @宋威龙99 @张凌赫z @郑云龙DL @朱一龙 ……男星W盛典造型，你pick哪一套？ #W盛典阵容 开盲盒# 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-19T19:08:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5367044053929699",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票： #W盛典红毯# 男星W盛典造型，你pick哪一套？】 #W盛典红毯# @白敬亭 @侯明昊 @井柏然 @赖伟明很酷 @宋威龙99 @张凌赫z @郑云龙DL @朱一龙 ……男星W盛典造型，你pick哪一套？ #W盛典阵容 开盲盒#…",
+      "excerptOriginal": "【投票： #W盛典红毯# 男星W盛典造型，你pick哪一套？】 #W盛典红毯# @白敬亭 @侯明昊 @井柏然 @赖伟明很酷 @宋威龙99 @张凌赫z @郑云龙DL @朱一龙 ……男星W盛典造型，你pick哪一套？ #W盛典阵容 开盲盒# 网页链接",
+      "titleEnglish": "[Vote: W Awards Red Carpet Which male celebrity's W Awards look do you prefer?] W Gala Red Carpet @Bai Jingting @Hou Minghao @Jing Boran @Lai Weiming is cool @Song Weilong99 @Zhang Linghe z @Zheng Yunlong DL @Zhu Yilong …… Which male celebrity's W Gala outfit do you pick? W Gala Lineup - Opening the Mystery Box...",
+      "excerptEnglish": "[Vote: W Awards Red Carpet Which male celebrity's W Awards outfit do you prefer?] W Gala Red Carpet @Bai Jingting @Hou Minghao @Jing Boran @Lai Weiming is cool @Song Weilong99 @Zhang Linghe z @Zheng Yunlong DL @Zhu Yilong …… Which male celebrity's W Gala outfit do you pick? W Gala Lineup Mystery Box Opening Web Link"
+    },
+    {
+      "id": "da1369db41977bd04942",
+      "platform": "Weibo",
+      "source": "Weibo @麦穗视频",
+      "title": "【投票： #W盛典红毯# 男星W盛典造型，你pick哪一套？】 #W盛典红毯# @白敬亭 @侯明昊 @井柏然 @赖伟明很酷 @宋威龙99 @张凌赫z @郑云龙DL @朱一龙 ……男星W盛典造型，你pick哪一套？ #W盛典阵容 开盲盒#…",
+      "excerpt": "【投票： #W盛典红毯# 男星W盛典造型，你pick哪一套？】 #W盛典红毯# @白敬亭 @侯明昊 @井柏然 @赖伟明很酷 @宋威龙99 @张凌赫z @郑云龙DL @朱一龙 ……男星W盛典造型，你pick哪一套？ #W盛典阵容 开盲盒# 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Event",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-19T19:05:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5367043297643488",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票： #W盛典红毯# 男星W盛典造型，你pick哪一套？】 #W盛典红毯# @白敬亭 @侯明昊 @井柏然 @赖伟明很酷 @宋威龙99 @张凌赫z @郑云龙DL @朱一龙 ……男星W盛典造型，你pick哪一套？ #W盛典阵容 开盲盒#…",
+      "excerptOriginal": "【投票： #W盛典红毯# 男星W盛典造型，你pick哪一套？】 #W盛典红毯# @白敬亭 @侯明昊 @井柏然 @赖伟明很酷 @宋威龙99 @张凌赫z @郑云龙DL @朱一龙 ……男星W盛典造型，你pick哪一套？ #W盛典阵容 开盲盒# 网页链接",
+      "titleEnglish": "[Vote: W Awards Red Carpet Which male celebrity's W Awards look do you prefer?] W Gala Red Carpet @Bai Jingting @Hou Minghao @Jing Boran @Lai Weiming is cool @Song Weilong99 @Zhang Linghe z @Zheng Yunlong DL @Zhu Yilong …… Which male celebrity's W Gala outfit do you pick? W Gala Lineup - Open the Mystery Box...",
+      "excerptEnglish": "[Vote: W Awards Red Carpet Which male celebrity's W Awards outfit do you prefer?] W Gala Red Carpet @Bai Jingting @Hou Minghao @Jing Boran @Lai Weiming is cool @Song Weilong99 @Zhang Linghe z @Zheng Yunlong DL @Zhu Yilong …… Which male celebrity's W Gala outfit do you pick? W Gala Lineup Mystery Box Opening Web Link"
+    },
+    {
+      "id": "784fb8b0a680bca65b31",
+      "platform": "Weibo",
+      "source": "Weibo @fino芬浓官方微博",
+      "title": "fino芬浓品牌代言人 @侯明昊 10城大屏已就位！ 📍马上戳海报解锁坐标！ 11月20日-11月22日拍下你和侯明昊的大屏合影， 带话题 #fino芬浓品牌代言人侯明昊# #芬浓HAO顺局# #fino双效洗发露# ，发布打卡照并 @f…",
+      "excerpt": "侯明昊 fino芬浓品牌代言人 @侯明昊 10城大屏已就位！ 📍马上戳海报解锁坐标！ 11月20日-11月22日拍下你和侯明昊的大屏合影， 带话题 #fino芬浓品牌代言人侯明昊# #芬浓HAO顺局# #fino双效洗发露# ，发布打卡照并 @fino芬浓官方微博 我们将随机抽3位幸运HAO友，各送出精美代言人周边1份！ 期待大家的精彩返图哦~",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cb23ea876cfffcc47de9ae74.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c1a3199a737a9b848b3a476c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a6ec408760927533b1c6047f.jpg"
+      ],
+      "videos": [],
+      "category": "Endorsement",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-19T18:51:08+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5367039809029928",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "fino芬浓品牌代言人 @侯明昊 10城大屏已就位！ 📍马上戳海报解锁坐标！ 11月20日-11月22日拍下你和侯明昊的大屏合影， 带话题 #fino芬浓品牌代言人侯明昊# #芬浓HAO顺局# #fino双效洗发露# ，发布打卡照并 @f…",
+      "excerptOriginal": "侯明昊 fino芬浓品牌代言人 @侯明昊 10城大屏已就位！ 📍马上戳海报解锁坐标！ 11月20日-11月22日拍下你和侯明昊的大屏合影， 带话题 #fino芬浓品牌代言人侯明昊# #芬浓HAO顺局# #fino双效洗发露# ，发布打卡照并 @fino芬浓官方微博 我们将随机抽3位幸运HAO友，各送出精美代言人周边1份！ 期待大家的精彩返图哦~",
+      "titleEnglish": "fino Brand Ambassador @Hou Minghao's large screens are now in place in 10 cities! 📍 Tap the poster now to unlock the locations! From November 20 to November 22, take a photo of yourself with Hou Minghao on the big screen. Use the hashtags \"fino Brand Ambassador Hou Minghao,\" \"fino HAO Smooth,\" and \"fino Dual-Action Shampoo.\" Post your check-in photo and tag @f...",
+      "excerptEnglish": "Fino brand ambassador, Hou Minghao @Hou Minghao, is now featured on large screens in 10 cities! 📍 Tap the poster now to unlock the locations! From November 20 to November 22, take a photo of yourself with Hou Minghao on the big screen. Use the hashtags \"Fino Brand Ambassador Hou Minghao,\" \"Fino HAO Smooth,\" and \"Fino Dual-Action Shampoo.\" Post your check-in photo and tag @Fino Official Weibo. We will randomly select 3 lucky HAO friends, each of whom will receive 1 piece of exquisite ambassador merchandise! We look forward to seeing everyone's fantastic photos!"
+    },
     {
       "id": "07ae9350b8325a33135e",
       "platform": "Weibo",
@@ -4984,7 +5210,8 @@
       "title": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “启幕” 华章将启，风度翩然，在未知之境铺展一场神秘叙事。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "excerpt": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “启幕” 华章将启，风度翩然，在未知之境铺展一场神秘叙事。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d276130fbe2695a2e0e7e645.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d276130fbe2695a2e0e7e645.jpg",
+        "https://wx2.sinaimg.cn/orj480/006i3hfEly1iiw7tyhwcnj32yo1o01kx.jpg"
       ],
       "videos": [
         {
