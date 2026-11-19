@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T09:43:43+08:00",
+  "lastUpdated": "2026-11-19T10:25:10+08:00",
   "status": "Completed: 32 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -15,193 +15,193 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-19T09:39:46.145772+08:00"
+      "checkedAt": "2026-11-19T10:21:07.053172+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-19T09:39:52.439560+08:00"
+      "checkedAt": "2026-11-19T10:21:13.541397+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:39:55.523569+08:00"
+      "checkedAt": "2026-11-19T10:21:16.615619+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:39:58.410466+08:00"
+      "checkedAt": "2026-11-19T10:21:19.624345+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:00.704754+08:00"
+      "checkedAt": "2026-11-19T10:21:21.947927+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:03.008517+08:00"
+      "checkedAt": "2026-11-19T10:21:24.276636+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:05.337471+08:00"
+      "checkedAt": "2026-11-19T10:21:26.616396+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:07.629205+08:00"
+      "checkedAt": "2026-11-19T10:21:28.977175+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:10.498923+08:00"
+      "checkedAt": "2026-11-19T10:21:31.953309+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:12.840042+08:00"
+      "checkedAt": "2026-11-19T10:21:34.300806+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:18.263801+08:00"
+      "checkedAt": "2026-11-19T10:21:39.955790+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:20.606304+08:00"
+      "checkedAt": "2026-11-19T10:21:42.300898+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:23.492930+08:00"
+      "checkedAt": "2026-11-19T10:21:45.233616+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:26.412744+08:00"
+      "checkedAt": "2026-11-19T10:21:48.158090+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:29.443627+08:00"
+      "checkedAt": "2026-11-19T10:21:51.255260+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:31.724292+08:00"
+      "checkedAt": "2026-11-19T10:21:53.625828+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:34.028132+08:00"
+      "checkedAt": "2026-11-19T10:21:55.948412+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:36.959243+08:00"
+      "checkedAt": "2026-11-19T10:21:58.859841+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:39.286231+08:00"
+      "checkedAt": "2026-11-19T10:22:01.217261+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:49.569467+08:00"
+      "checkedAt": "2026-11-19T10:22:11.821268+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:54.309773+08:00"
+      "checkedAt": "2026-11-19T10:22:16.597656+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:40:59.072012+08:00"
+      "checkedAt": "2026-11-19T10:22:21.321607+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-19T09:41:06.145200+08:00"
+      "checkedAt": "2026-11-19T10:22:27.654806+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:41:09.182904+08:00"
+      "checkedAt": "2026-11-19T10:22:30.683587+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:41:19.509061+08:00"
+      "checkedAt": "2026-11-19T10:22:41.240905+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:41:38.253077+08:00"
+      "checkedAt": "2026-11-19T10:23:00.435813+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:42:00.740466+08:00"
+      "checkedAt": "2026-11-19T10:23:24.204659+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-19T09:42:16.812658+08:00"
+      "checkedAt": "2026-11-19T10:23:40.335865+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:42:30.469370+08:00"
+      "checkedAt": "2026-11-19T10:23:54.079246+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-19T09:42:47.367205+08:00"
+      "checkedAt": "2026-11-19T10:24:12.823385+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-19T09:43:03.518306+08:00"
+      "checkedAt": "2026-11-19T10:24:31.684127+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 26,
-      "checkedAt": "2026-11-19T09:43:22.738413+08:00"
+      "itemsFound": 25,
+      "checkedAt": "2026-11-19T10:24:52.046342+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -248,6 +248,25 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "438ed6ea55ddc7f78345",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao Endorsement | CASETiFY \"Pick a cloud and turn it into a phone case.\" 261119 \"CASETiFY\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Hou Minghao Endorsement | CASETiFY \"Pick a cloud and turn it into a phone case.\" 261119 \"CASETiFY\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f3084c9ceb47298782db0766.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-19T10:19:58+08:00",
+      "url": "https://x.com/HMH_Record/status/2123239831413383513",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
     {
       "id": "bc301b715717e0c4bf98",
       "platform": "X",
