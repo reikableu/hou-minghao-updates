@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T15:39:16.244753+08:00",
+  "updatedAt": "2026-11-20T18:39:30.035786+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -120,7 +120,22 @@
       "firstSeen": "2026-11-18T12:49:23.961400+08:00",
       "lastSeen": "2026-11-20T14:00:01+08:00",
       "lastMentionPostId": "5367328935774421",
-      "discoveredBy": "侯明昊尖叫之夜"
+      "discoveredBy": "侯明昊澳门"
+    },
+    {
+      "uid": "6525010965",
+      "name": "狐厂大拷问",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "verifiedType": "3",
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "搜狐娱乐《狐厂大拷问》官方微博",
+      "firstSeen": "2026-11-20T18:39:30.035786+08:00",
+      "lastSeen": "2026-11-20T15:54:28+08:00",
+      "lastMentionPostId": "5367357736486945",
+      "discoveredBy": "侯明昊活动"
     },
     {
       "uid": "3182423937",

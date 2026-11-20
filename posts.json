@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-20T15:45:38+08:00",
-  "status": "Completed: 35 sources successful, 0 failed",
+  "lastUpdated": "2026-11-20T18:45:32+08:00",
+  "status": "Completed: 36 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 6,
-    "postsTranslatedThisRun": 3,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 6
+      "MyMemory": 2
     }
   },
   "sourceStatus": [
@@ -15,211 +15,217 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-20T15:39:39.044277+08:00"
+      "checkedAt": "2026-11-20T18:39:54.486359+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-20T15:39:45.417973+08:00"
+      "checkedAt": "2026-11-20T18:40:00.846256+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:39:48.538538+08:00"
+      "checkedAt": "2026-11-20T18:40:03.997323+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:39:51.434976+08:00"
+      "checkedAt": "2026-11-20T18:40:06.872412+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:39:53.739379+08:00"
+      "checkedAt": "2026-11-20T18:40:09.186467+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:39:56.055580+08:00"
+      "checkedAt": "2026-11-20T18:40:11.504865+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:39:58.364595+08:00"
+      "checkedAt": "2026-11-20T18:40:13.808984+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:00.670319+08:00"
+      "checkedAt": "2026-11-20T18:40:16.101077+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:03.564111+08:00"
+      "checkedAt": "2026-11-20T18:40:18.973502+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:05.916541+08:00"
+      "checkedAt": "2026-11-20T18:40:21.310856+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:10.632743+08:00"
+      "checkedAt": "2026-11-20T18:40:25.995094+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:12.967416+08:00"
+      "checkedAt": "2026-11-20T18:40:28.439185+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:15.856288+08:00"
+      "checkedAt": "2026-11-20T18:40:31.324625+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:18.743271+08:00"
+      "checkedAt": "2026-11-20T18:40:34.203880+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:21.776020+08:00"
+      "checkedAt": "2026-11-20T18:40:37.240076+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:24.096898+08:00"
+      "checkedAt": "2026-11-20T18:40:39.557492+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:26.421276+08:00"
+      "checkedAt": "2026-11-20T18:40:41.858124+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:29.334298+08:00"
+      "checkedAt": "2026-11-20T18:40:44.742150+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:31.686506+08:00"
+      "checkedAt": "2026-11-20T18:40:47.075079+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:42.954042+08:00"
+      "checkedAt": "2026-11-20T18:40:58.128336+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:47.810628+08:00"
+      "checkedAt": "2026-11-20T18:41:02.769467+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:40:52.503614+08:00"
+      "checkedAt": "2026-11-20T18:41:07.517542+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-20T15:40:57.237852+08:00"
+      "checkedAt": "2026-11-20T18:41:12.096904+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:41:00.296936+08:00"
+      "checkedAt": "2026-11-20T18:41:15.136827+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:41:10.684206+08:00"
+      "checkedAt": "2026-11-20T18:41:25.429224+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-20T15:41:33.107127+08:00"
+      "checkedAt": "2026-11-20T18:41:46.737936+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:41:54.106786+08:00"
+      "checkedAt": "2026-11-20T18:42:07.384894+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-20T15:42:17.553098+08:00"
+      "checkedAt": "2026-11-20T18:42:30.708300+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-20T15:42:33.616340+08:00"
+      "checkedAt": "2026-11-20T18:42:46.619915+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:42:47.305153+08:00"
+      "checkedAt": "2026-11-20T18:43:00.153017+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-20T15:43:05.028461+08:00"
+      "checkedAt": "2026-11-20T18:43:19.316691+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-20T15:43:27.645400+08:00"
+      "checkedAt": "2026-11-20T18:43:41.600263+08:00"
+    },
+    {
+      "source": "Weibo @狐厂大拷问",
+      "status": "Success",
+      "itemsFound": 1,
+      "checkedAt": "2026-11-20T18:43:59.099095+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-20T15:43:46.978097+08:00"
+      "itemsFound": 0,
+      "checkedAt": "2026-11-20T18:44:12.663554+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-20T15:44:10.586371+08:00"
+      "checkedAt": "2026-11-20T18:44:34.930269+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-20T15:44:30.859323+08:00"
+      "checkedAt": "2026-11-20T18:44:54.102935+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -265,9 +271,161 @@
     "7010368671": "和颂传媒",
     "7308140398": "大象新闻",
     "7754553930": "fino芬浓官方微博",
-    "9150715932": "GQofficial"
+    "9150715932": "GQofficial",
+    "6525010965": "狐厂大拷问"
   },
   "posts": [
+    {
+      "id": "679799ef506efb70e8d9",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "20.11.2026 | FINO Official Livestream Full Livestream Cut — 44 Minutes come enjoy 44 minutes of our funny, handsome, and endlessly lovable Minghao! #…",
+      "excerpt": "20.11.2026 | FINO Official Livestream Full Livestream Cut — 44 Minutes come enjoy 44 minutes of our funny, handsome, and endlessly lovable Minghao! #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-20T18:44:01+08:00",
+      "url": "https://x.com/PopMinghao/status/2123729067388395802",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "497f7626bdc311db2169",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "20.11.2026 | FINO Event A little reminder from Minghao ahead of his upcoming 3-day Beijing concerts he’s already thinking about everyone’s safety. kn…",
+      "excerpt": "20.11.2026 | FINO Event A little reminder from Minghao ahead of his upcoming 3-day Beijing concerts he’s already thinking about everyone’s safety. knowing that Kiwis will be travelling from different countries and cities to see him, he reminded everyone to take good",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-20T18:18:40+08:00",
+      "url": "https://x.com/PopMinghao/status/2123722686664773661",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "6d32b50f90e7b774b1b7",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "20.11.2026 | FINO Official Livestream THE WAY HE SAID IT WAS TOO UGLY AND JUST WIPED THE WHOLE THING OFF!!! our cat is such a comedian without even t…",
+      "excerpt": "20.11.2026 | FINO Official Livestream THE WAY HE SAID IT WAS TOO UGLY AND JUST WIPED THE WHOLE THING OFF!!! our cat is such a comedian without even trying. #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-20T18:06:25+08:00",
+      "url": "https://x.com/PopMinghao/status/2123719606582059018",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "3b1a67757a208bdf084a",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "20.11.2026 | FINO Official Livestream and now our handsome white-suit prince is live!!! the electric shock wire-loop challenge!!! come on, cat! stead…",
+      "excerpt": "20.11.2026 | FINO Official Livestream and now our handsome white-suit prince is live!!! the electric shock wire-loop challenge!!! come on, cat! steady hands, you can do it!! #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-20T17:59:23+08:00",
+      "url": "https://x.com/PopMinghao/status/2123717836313165876",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "279f53292e1bb3f8672e",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "20.11.2026 | FINO Brand Event our cat is TOO handsome today!!! #侯明昊 #HouMinghao",
+      "excerpt": "20.11.2026 | FINO Brand Event our cat is TOO handsome today!!! #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-20T16:56:58+08:00",
+      "url": "https://x.com/PopMinghao/status/2123702127344439448",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "09c677f63b285ee7b17e",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMHdataHQ",
+      "title": "Update: FINO livestream is slightly delayed as the onsite event just ended, let's wait patiently for #houminghao !",
+      "excerpt": "Update: FINO livestream is slightly delayed as the onsite event just ended, let's wait patiently for #houminghao !",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-20T16:49:33+08:00",
+      "url": "https://x.com/HMHdataHQ/status/2123700262229680227",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "d68ae671bb3480ac7864",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "20.11.2026 | FINO Brand Event Arriving at the FINO event OUR WHITE-SUIT PRINCE HAS ARRIVED!!! giving us full prince charming energy today. #侯明昊 #HouM…",
+      "excerpt": "20.11.2026 | FINO Brand Event Arriving at the FINO event OUR WHITE-SUIT PRINCE HAS ARRIVED!!! giving us full prince charming energy today. #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-20T15:56:13+08:00",
+      "url": "https://x.com/PopMinghao/status/2123686838259073322",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "2a5b8bb5087fd5316c2f",
+      "platform": "Weibo",
+      "source": "Weibo @狐厂大拷问",
+      "title": "今日线下活动路透，现场好多人啊 狐厂大拷问的微博视频",
+      "excerpt": "侯明昊今日线下活动路透，现场好多人啊 狐厂大拷问的微博视频",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/883e37aa7176ba3c81c20b27.jpg"
+      ],
+      "videos": [
+        {
+          "id": "81d54743771830880effbde8",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/883e37aa7176ba3c81c20b27.jpg",
+          "duration": 21.153,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/81d54743771830880effbde8.mp4"
+        }
+      ],
+      "category": "Event",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-20T15:54:28+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5367357736486945",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "今日线下活动路透，现场好多人啊 狐厂大拷问的微博视频",
+      "excerptOriginal": "侯明昊今日线下活动路透，现场好多人啊 狐厂大拷问的微博视频",
+      "titleEnglish": "A sneak peek at today's offline event. There are so many people there! A Weibo video of the intense questioning at Tencent.",
+      "excerptEnglish": "A sneak peek of Hou Minghao's offline event today. There are so many people at the venue. A Weibo video of the intense questioning session at Tencent."
+    },
     {
       "id": "35f2788711076593b554",
       "platform": "X",
@@ -4773,10 +4931,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3fd8392c6549e9b802f7a754.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a42fd47d9fac4e9bddec932b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fff4709f762a02c4799df834.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9e892645342d3ac39aa435e1.jpg",
-        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1iiybq29m1aj30xc18gb29.jpg",
-        "https://wx4.sinaimg.cn/mw2000/008sNjIugy1iiybq06k16j30xc18ge81.jpg",
-        "https://wx1.sinaimg.cn/mw2000/008sNjIugy1iiybq36i80j30xc18ge81.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9e892645342d3ac39aa435e1.jpg"
       ],
       "videos": [],
       "category": "Endorsement",
@@ -5293,8 +5448,7 @@
       "title": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "excerpt": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/74d48bcd5bfabc27b9489c18.jpg",
-        "https://wx4.sinaimg.cn/orj480/006i3hfEly1iiwai24a1mj3280191dwh.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/74d48bcd5bfabc27b9489c18.jpg"
       ],
       "videos": [
         {
@@ -5562,8 +5716,7 @@
       "title": "父子照 @宋威龙99",
       "excerpt": "父子照 @宋威龙99",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/df9e07d2aabac51443d1d871.jpg",
-        "https://wx3.sinaimg.cn/mw2000/6d2b400bgy1iiw9k3c34pj235s2dcu0x.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/df9e07d2aabac51443d1d871.jpg"
       ],
       "videos": [
         {
@@ -6404,8 +6557,7 @@
       "title": "立冬🧊风干物燥，很多HAO友们留言说最近都会碰到头发嘶啦嘶啦起静电，头皮总是干涩紧绷的情况 想要同时保持头皮和发丝HAO状态不掉线，洗和护都很关键📝 快试试fino芬浓洗护组合🙋♀️ 芬浓滋润修护洗发露，拥有13种美容液修护成分，修护毛躁…",
       "excerpt": "立冬🧊风干物燥，很多HAO友们留言说最近都会碰到头发嘶啦嘶啦起静电，头皮总是干涩紧绷的情况 想要同时保持头皮和发丝HAO状态不掉线，洗和护都很关键📝 快试试fino芬浓洗护组合🙋♀️ 芬浓滋润修护洗发露，拥有13种美容液修护成分，修护毛躁发丝的同时也能水润头皮，一瓶赶走发丝静电和头皮紧绷问题 洗完记得用芬浓银钻发膜，深入修护严重受损发丝，给头发SPA般奢养体验，持续焕发钻光柔顺的妈生HAO发质 📢11月20日，fino芬浓品牌代言人 @侯明昊 即将现身线下品牌活动&直播间，等你一起暖心碰头🙆♀️ #芬浓HAO顺局# #fino芬浓品牌代言人侯明昊# #fino双效洗发露# #头皮发丝都要HAO状态#",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/de18b662f45cf78efc7ce887.jpg",
-        "https://wx1.sinaimg.cn/mw2000/008sNjIugy1iituxkcfaej30xc18ggyg.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/de18b662f45cf78efc7ce887.jpg"
       ],
       "videos": [],
       "category": "Event",
