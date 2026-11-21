@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-21T15:46:26+08:00",
+  "lastUpdated": "2026-11-21T18:45:27+08:00",
   "status": "Completed: 36 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 12,
-    "postsTranslatedThisRun": 6,
+    "translationsAdded": 2,
+    "postsTranslatedThisRun": 1,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 12
+      "MyMemory": 2
     }
   },
   "sourceStatus": [
@@ -15,217 +15,217 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-21T15:39:53.933652+08:00"
+      "checkedAt": "2026-11-21T18:39:45.991924+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-21T15:40:00.122447+08:00"
+      "checkedAt": "2026-11-21T18:39:52.479140+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:03.183225+08:00"
+      "checkedAt": "2026-11-21T18:39:55.633805+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:06.061464+08:00"
+      "checkedAt": "2026-11-21T18:39:58.557395+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:08.324072+08:00"
+      "checkedAt": "2026-11-21T18:40:00.892830+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:10.609800+08:00"
+      "checkedAt": "2026-11-21T18:40:03.223228+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:12.891810+08:00"
+      "checkedAt": "2026-11-21T18:40:05.583464+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:15.211923+08:00"
+      "checkedAt": "2026-11-21T18:40:07.968857+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:18.073526+08:00"
+      "checkedAt": "2026-11-21T18:40:10.908585+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:20.371126+08:00"
+      "checkedAt": "2026-11-21T18:40:13.320951+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:24.192712+08:00"
+      "checkedAt": "2026-11-21T18:40:17.263469+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:26.513139+08:00"
+      "checkedAt": "2026-11-21T18:40:19.651393+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:29.400383+08:00"
+      "checkedAt": "2026-11-21T18:40:22.577539+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:32.275827+08:00"
+      "checkedAt": "2026-11-21T18:40:25.512803+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:35.276183+08:00"
+      "checkedAt": "2026-11-21T18:40:28.663973+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:37.559685+08:00"
+      "checkedAt": "2026-11-21T18:40:31.020237+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:39.846778+08:00"
+      "checkedAt": "2026-11-21T18:40:33.366032+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:42.720104+08:00"
+      "checkedAt": "2026-11-21T18:40:36.296460+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:45.043554+08:00"
+      "checkedAt": "2026-11-21T18:40:38.695772+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:40:55.939033+08:00"
+      "checkedAt": "2026-11-21T18:40:50.537285+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:41:00.546280+08:00"
+      "checkedAt": "2026-11-21T18:40:55.440363+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:41:05.143239+08:00"
+      "checkedAt": "2026-11-21T18:41:00.198687+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-21T15:41:12.057402+08:00"
+      "checkedAt": "2026-11-21T18:41:04.936416+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:41:15.118184+08:00"
+      "checkedAt": "2026-11-21T18:41:08.013100+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:41:25.262671+08:00"
+      "checkedAt": "2026-11-21T18:41:18.880829+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-21T15:41:45.649445+08:00"
+      "checkedAt": "2026-11-21T18:41:40.308961+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:42:06.069049+08:00"
+      "checkedAt": "2026-11-21T18:42:01.797620+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-21T15:42:26.832956+08:00"
+      "checkedAt": "2026-11-21T18:42:26.066724+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:42:41.064294+08:00"
+      "checkedAt": "2026-11-21T18:42:41.613175+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:42:54.453073+08:00"
+      "checkedAt": "2026-11-21T18:42:55.426027+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-21T15:43:12.679234+08:00"
+      "checkedAt": "2026-11-21T18:43:16.049166+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-21T15:43:34.617541+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-21T18:43:39.252890+08:00"
     },
     {
       "source": "Weibo @狐厂大拷问",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-21T15:43:50.426323+08:00"
+      "checkedAt": "2026-11-21T18:43:56.449188+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-21T15:44:03.846723+08:00"
+      "checkedAt": "2026-11-21T18:44:10.333306+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
-      "itemsFound": 2,
-      "checkedAt": "2026-11-21T15:44:26.559303+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-21T18:44:34.310058+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 31,
-      "checkedAt": "2026-11-21T15:44:42.337958+08:00"
+      "checkedAt": "2026-11-21T18:44:52.321761+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -275,6 +275,30 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "38ba322f18efc7717c25",
+      "platform": "Weibo",
+      "source": "Weibo @爱奇艺",
+      "title": "#桃厂福利加载中# 今日尖叫福利已就位 小奇带着这张超帅的 @侯明昊 签名来抓幸运儿啦！现在关注并转发，聊聊你对 #2026爱奇艺尖叫之夜# 的小巧思，就有机会把这份惊喜带回家哦～锁定 @爱奇艺 每日尖叫福利持续加载中！",
+      "excerpt": "#桃厂福利加载中# 今日尖叫福利已就位 小奇带着这张超帅的 @侯明昊 签名来抓幸运儿啦！现在关注并转发，聊聊你对 #2026爱奇艺尖叫之夜# 的小巧思，就有机会把这份惊喜带回家哦～锁定 @爱奇艺 每日尖叫福利持续加载中！",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3e7eee5f556b2a4f682a6d0a.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-21T17:00:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5367736617406010",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#桃厂福利加载中# 今日尖叫福利已就位 小奇带着这张超帅的 @侯明昊 签名来抓幸运儿啦！现在关注并转发，聊聊你对 #2026爱奇艺尖叫之夜# 的小巧思，就有机会把这份惊喜带回家哦～锁定 @爱奇艺 每日尖叫福利持续加载中！",
+      "excerptOriginal": "#桃厂福利加载中# 今日尖叫福利已就位 小奇带着这张超帅的 @侯明昊 签名来抓幸运儿啦！现在关注并转发，聊聊你对 #2026爱奇艺尖叫之夜# 的小巧思，就有机会把这份惊喜带回家哦～锁定 @爱奇艺 每日尖叫福利持续加载中！",
+      "titleEnglish": "iQIYI perks loading... Today's Scream Night perks are ready! Xiaoqi is here with this super cool @Hou Minghao autograph to find the lucky winner! Follow and retweet now, and share your thoughts on the 2026 iQiyi Scream Night for a chance to take this surprise home! Stay tuned to @iQiyi for daily Scream Night giveaways – more are on the way!",
+      "excerptEnglish": "iQIYI perks loading... Today's Scream Night perks are ready! Xiaoqi is here with this super cool @Hou Minghao autograph to find the lucky winner! Follow and retweet now, and share your thoughts on the 2026 iQiyi Scream Night for a chance to take this surprise home! Stay tuned to @iQiyi for daily Scream Night giveaways – more are on the way!"
+    },
     {
       "id": "64c836f1eb488eaf578b",
       "platform": "X",
@@ -5504,9 +5528,7 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3fd8392c6549e9b802f7a754.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a42fd47d9fac4e9bddec932b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fff4709f762a02c4799df834.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9e892645342d3ac39aa435e1.jpg",
-        "https://wx4.sinaimg.cn/mw2000/008sNjIugy1iiybq06k16j30xc18ge81.jpg",
-        "https://wx1.sinaimg.cn/mw2000/008sNjIugy1iiybq36i80j30xc18ge81.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9e892645342d3ac39aa435e1.jpg"
       ],
       "videos": [],
       "category": "Endorsement",
@@ -6023,8 +6045,7 @@
       "title": "📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "excerpt": "侯明昊 📷 #W中文版年度盛典# 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “片刻” 在古典与摩登的交汇处，续写一场未完的绮丽篇章。 #WGALA此刻即黄金时代# #WGALA双城记# @W中文版 @MixWei 侯明昊工作室的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/74d48bcd5bfabc27b9489c18.jpg",
-        "https://wx4.sinaimg.cn/orj480/006i3hfEly1iiwai24a1mj3280191dwh.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/74d48bcd5bfabc27b9489c18.jpg"
       ],
       "videos": [
         {
@@ -6292,8 +6313,7 @@
       "title": "父子照 @宋威龙99",
       "excerpt": "父子照 @宋威龙99",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/df9e07d2aabac51443d1d871.jpg",
-        "https://wx3.sinaimg.cn/mw2000/6d2b400bgy1iiw9k3c34pj235s2dcu0x.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/df9e07d2aabac51443d1d871.jpg"
       ],
       "videos": [
         {
