@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-23T18:48:29+08:00",
+  "lastUpdated": "2026-11-23T21:57:46+08:00",
   "status": "Completed: 36 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 2,
-    "postsTranslatedThisRun": 1,
+    "translationsAdded": 4,
+    "postsTranslatedThisRun": 2,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 2
+      "MyMemory": 4
     }
   },
   "sourceStatus": [
@@ -15,217 +15,217 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-23T18:42:58.995132+08:00"
+      "checkedAt": "2026-11-23T21:52:03.497799+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-23T18:43:03.895126+08:00"
+      "checkedAt": "2026-11-23T21:52:08.244057+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:07.070409+08:00"
+      "checkedAt": "2026-11-23T21:52:11.452455+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:10.018700+08:00"
+      "checkedAt": "2026-11-23T21:52:14.374388+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:12.364020+08:00"
+      "checkedAt": "2026-11-23T21:52:16.703009+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:14.695729+08:00"
+      "checkedAt": "2026-11-23T21:52:19.023875+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:17.041300+08:00"
+      "checkedAt": "2026-11-23T21:52:21.346292+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:19.402984+08:00"
+      "checkedAt": "2026-11-23T21:52:23.675628+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:22.348372+08:00"
+      "checkedAt": "2026-11-23T21:52:26.582974+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:24.822489+08:00"
+      "checkedAt": "2026-11-23T21:52:28.966922+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:31.449772+08:00"
+      "checkedAt": "2026-11-23T21:52:35.695797+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:33.860486+08:00"
+      "checkedAt": "2026-11-23T21:52:38.066465+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:36.792641+08:00"
+      "checkedAt": "2026-11-23T21:52:41.086583+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:39.738254+08:00"
+      "checkedAt": "2026-11-23T21:52:44.142301+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:42.822411+08:00"
+      "checkedAt": "2026-11-23T21:52:47.200092+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:45.170236+08:00"
+      "checkedAt": "2026-11-23T21:52:49.540397+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:47.538338+08:00"
+      "checkedAt": "2026-11-23T21:52:51.873274+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:50.477275+08:00"
+      "checkedAt": "2026-11-23T21:52:54.790956+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:43:52.872231+08:00"
+      "checkedAt": "2026-11-23T21:52:57.149479+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:44:05.383068+08:00"
+      "checkedAt": "2026-11-23T21:53:09.413184+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:44:10.194386+08:00"
+      "checkedAt": "2026-11-23T21:53:14.188783+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:44:15.082602+08:00"
+      "checkedAt": "2026-11-23T21:53:19.073667+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-23T18:44:24.150995+08:00"
+      "checkedAt": "2026-11-23T21:53:27.114566+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:44:27.220574+08:00"
+      "checkedAt": "2026-11-23T21:53:30.154917+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:44:38.110676+08:00"
+      "checkedAt": "2026-11-23T21:53:40.741505+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-23T18:44:55.051626+08:00"
+      "checkedAt": "2026-11-23T21:53:57.287776+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-23T18:45:16.572654+08:00"
+      "itemsFound": 0,
+      "checkedAt": "2026-11-23T21:54:18.682845+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
-      "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:45:37.563593+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-23T21:54:38.245778+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:45:52.317098+08:00"
+      "checkedAt": "2026-11-23T21:54:53.771439+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:46:06.257421+08:00"
+      "checkedAt": "2026-11-23T21:55:07.487184+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-23T18:46:26.180571+08:00"
+      "checkedAt": "2026-11-23T21:55:27.246789+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:46:49.380429+08:00"
+      "checkedAt": "2026-11-23T21:55:50.344453+08:00"
     },
     {
       "source": "Weibo @狐厂大拷问",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:47:04.162889+08:00"
+      "checkedAt": "2026-11-23T21:56:06.569970+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
-      "itemsFound": 2,
-      "checkedAt": "2026-11-23T18:47:18.900428+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-23T21:56:21.267898+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-23T18:47:37.128196+08:00"
+      "checkedAt": "2026-11-23T21:56:38.371255+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-23T18:47:55.436000+08:00"
+      "checkedAt": "2026-11-23T21:56:57.969865+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -276,6 +276,139 @@
   },
   "posts": [
     {
+      "id": "393879584e043bf6ca31",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "Kiwis said this is either a real-life frostbite looks like i just want to scoop him up, take him home #侯明昊 #HouMinghao",
+      "excerpt": "Kiwis said this is either a real-life frostbite looks like i just want to scoop him up, take him home #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-23T21:01:41+08:00",
+      "url": "https://x.com/PopMinghao/status/2124850877836272044",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "7c1d0df07bf9b18c837d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "let’s take a moment to admire this kitten’s beauty… those pretty eyelashes, his tiny ears still a little red from the cold, and cheek how can one cat…",
+      "excerpt": "let’s take a moment to admire this kitten’s beauty… those pretty eyelashes, his tiny ears still a little red from the cold, and cheek how can one cat be this adorable and beautiful at the same time??? #侯明昊 #HouMinghao",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5741dab34f796ca60a1a5999.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-23T20:53:51+08:00",
+      "url": "https://x.com/PopMinghao/status/2124848906026803293",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "3a928f0c6391fedc39b1",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "4 DAYS TO GO! Belonging to Us — Beijing Final Stop BACK TO 0815 SHENZHEN Home Means Here. another city, another beautiful memory to look back on. eve…",
+      "excerpt": "4 DAYS TO GO! Belonging to Us — Beijing Final Stop BACK TO 0815 SHENZHEN Home Means Here. another city, another beautiful memory to look back on. every stop has given us something special, and now we’re getting closer to our final reunion in Beijing! see you soon,",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-23T20:51:32+08:00",
+      "url": "https://x.com/PopMinghao/status/2124848321017831698",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "07997f943ada15acede1",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Countdown: 4 days left! | 'Belongs To Us' Final Stop: Beijing Back to 0815 Shenzhen HOME MEANS HERE #HouMinghaoBelongsToUs2026 Concert Tour 261123 |…",
+      "excerpt": "Countdown: 4 days left! | 'Belongs To Us' Final Stop: Beijing Back to 0815 Shenzhen HOME MEANS HERE #HouMinghaoBelongsToUs2026 Concert Tour 261123 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-23T20:41:52+08:00",
+      "url": "https://x.com/HMH_Record/status/2124845890867499246",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "8f40f64b25bf365bc4d5",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票：花少四帅，你心中的颜值担当是谁？】 杨洋丨龚俊丨邓为丨王安宇丨侯明昊丨丁程鑫丨王星越丨张晚意丨田嘉瑞丨井柏然丨华晨宇丨陈柏霖 #花少8 无聊# 网页链接",
+      "excerpt": "【投票：花少四帅，你心中的颜值担当是谁？】 杨洋丨龚俊丨邓为丨王安宇丨侯明昊丨丁程鑫丨王星越丨张晚意丨田嘉瑞丨井柏然丨华晨宇丨陈柏霖 #花少8 无聊# 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-23T20:08:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5368508705671595",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：花少四帅，你心中的颜值担当是谁？】 杨洋丨龚俊丨邓为丨王安宇丨侯明昊丨丁程鑫丨王星越丨张晚意丨田嘉瑞丨井柏然丨华晨宇丨陈柏霖 #花少8 无聊# 网页链接",
+      "excerptOriginal": "【投票：花少四帅，你心中的颜值担当是谁？】 杨洋丨龚俊丨邓为丨王安宇丨侯明昊丨丁程鑫丨王星越丨张晚意丨田嘉瑞丨井柏然丨华晨宇丨陈柏霖 #花少8 无聊# 网页链接",
+      "titleEnglish": "[Vote: Among the four handsome men of \"Divas Hit the Road\", who do you think is the most attractive?] Yang Yang 丨 Gong Jun 丨 Deng Wei 丨 Wang Anyu 丨 Hou Minghao 丨 Ding Chengxin 丨 Wang Xingyue 丨 Zhang Wanyi 丨 Tian Jiarui 丨 Jing Boran 丨 Hua Chenyu 丨 Chen Bolin 丨 Flower Boys 8 丨 Boring 丨 Web Link",
+      "excerptEnglish": "[Poll: Among the four handsome men of Flower Boys, who do you think is the most attractive?] Yang Yang 丨 Gong Jun 丨 Deng Wei 丨 Wang Anyu 丨 Hou Minghao 丨 Ding Chengxin 丨 Wang Xingyue 丨 Zhang Wanyi 丨 Tian Jiarui 丨 Jing Boran 丨 Hua Chenyu 丨 Chen Bolin 丨 Flower Boys 8 丨 Boring 丨 Web Link"
+    },
+    {
+      "id": "63128ecae10a4831d3a3",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票：你心目中的古偶CP天花板是哪一对？】 你心目中的古偶CP天花板是哪一对？ 《入青云》 @卢昱晓_ @侯明昊 《国色芳华》 @杨紫 @李现ing 《逐玉》 @张凌赫z @田曦薇 《九重紫》 @孟子义 @小林是李昀锐 《佳偶天成》 @…",
+      "excerpt": "【投票：你心目中的古偶CP天花板是哪一对？】 你心目中的古偶CP天花板是哪一对？ 《入青云》 @卢昱晓_ @侯明昊 《国色芳华》 @杨紫 @李现ing 《逐玉》 @张凌赫z @田曦薇 《九重紫》 @孟子义 @小林是李昀锐 《佳偶天成》 @任嘉伦Allen @王鹤润rain 《一笑随歌》 @李沁 @陈哲远- 《白日提灯》 @Dear-迪丽热巴 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-23T19:09:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5368493858098976",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：你心目中的古偶CP天花板是哪一对？】 你心目中的古偶CP天花板是哪一对？ 《入青云》 @卢昱晓_ @侯明昊 《国色芳华》 @杨紫 @李现ing 《逐玉》 @张凌赫z @田曦薇 《九重紫》 @孟子义 @小林是李昀锐 《佳偶天成》 @…",
+      "excerptOriginal": "【投票：你心目中的古偶CP天花板是哪一对？】 你心目中的古偶CP天花板是哪一对？ 《入青云》 @卢昱晓_ @侯明昊 《国色芳华》 @杨紫 @李现ing 《逐玉》 @张凌赫z @田曦薇 《九重紫》 @孟子义 @小林是李昀锐 《佳偶天成》 @任嘉伦Allen @王鹤润rain 《一笑随歌》 @李沁 @陈哲远- 《白日提灯》 @Dear-迪丽热巴 网页链接",
+      "titleEnglish": "[Poll: Which couple do you consider the ultimate historical romance couple?] Which couple do you consider the ultimate historical romance couple? \"Soaring to the Sky\" @Luyu Xia_ @Hou Minghao \"The Beauty of the Nation\" @Yang Zi @Li Xian \"Chasing Jade\" @Zhang Linghe @Tian Xiwei \"Nine Layers of Purple\" @Meng Ziyi @Xiaolin is Li Yunrui \"A Perfect Match\" @...",
+      "excerptEnglish": "[Poll: Which couple do you consider to be the ultimate historical romance couple?] Which couple do you consider the ultimate in historical romance dramas? \"Soaring to the Sky\" @Lu Yuxiao_ @Hou Minghao \"The Beauty of the Nation\" @Yang Zi @Li Xian \"Chasing Jade\" @Zhang Linghe @Tian Xiwei \"Nine Layers of Purple\" @Meng Ziyi @Xiaolin is Li Yunrui \"A Perfect Match\" @Ren Jialun Allen @Wang Herun \"A Smile with a Song\" @Li Qin @Chen Zheyuan \"Lantern in the Daytime\" @Dear-Dilraba Dilmurat Web link"
+    },
+    {
+      "id": "ea06ec928ecb991a8a98",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao new video from Snowflying brand event 261123 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "excerpt": "Hou Minghao new video from Snowflying brand event 261123 | \"SNOWFLYING (雪中飞)\" Weibo Update #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7164dadbfc33810a350d38a7.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-23T18:53:48+08:00",
+      "url": "https://x.com/HMH_Record/status/2124818691875610704",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
       "id": "ab42cd0ee5300a890785",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -313,6 +446,23 @@
       "excerptOriginal": "【投票：你最pick谁的演唱会现场？ 】 #梓渝成首个热爱值破10万超话# 华晨宇 肖战 王力宏 梓渝 @我是梓渝_ @郝熠然 @云旗Yunqi @肖战 @华晨宇yu @王力宏 @单依纯 @侯明昊 @卡布叻_周深 网页链接",
       "titleEnglish": "[Poll: Whose live concert do you like the most?] Ziyu becomes the first Super Topic to surpass 100,000 in Love Points. Hua Chenyu, Xiao Zhan, Wang Leehom, Ziyu @I_am_Ziyu_ @Hao Yiran @Yunqi @Xiao Zhan @Hua Chenyu @Wang Leehom @Dan Yichun @Hou Minghao @Kabula_Zhou Shen Web link",
       "excerptEnglish": "[Poll: Whose live concert do you like the most?] Ziyu becomes the first Super Topic to surpass 100,000 in Love Points. Hua Chenyu, Xiao Zhan, Wang Leehom, Ziyu @I_am_Ziyu_ @Hao_Yiran @Yunqi_Yunqi @Xiao_Zhan @Hua_Chenyu_yu @Wang_Leehom @Shan_Yichun @Hou_Minghao @Kabula__Zhou_Shen Web link"
+    },
+    {
+      "id": "a8c792af8b8be5e56b13",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@LemonAesthete",
+      "title": "[ENG] 261030 Behind the scenes of Hou Minghao's hair and makeup for Shenzhen Concert Tour by Shi Hui. #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026",
+      "excerpt": "[ENG] 261030 Behind the scenes of Hou Minghao's hair and makeup for Shenzhen Concert Tour by Shi Hui. #HouMinghao #侯明昊 #HouMinghaoBelongsToUs2026",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-23T15:30:10+08:00",
+      "url": "https://x.com/LemonAesthete/status/2124767448679493753",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
     },
     {
       "id": "9d867dd4490a57605b6c",
@@ -3913,8 +4063,6 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a1544cfe7b7ab0c33487c4dc.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cbdfba873bcdd27d16456637.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e590913837f87d670f5fa509.jpg",
-        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49llgxybj30xc18gngc.jpg",
-        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49lm3ax3j30xc18gttb.jpg",
         "https://wx1.sinaimg.cn/mw2000/008sNjIugy1ij49lk6i9fj30xc18g1bh.jpg",
         "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49lkuqpjj30xc18g1d4.jpg"
       ],
