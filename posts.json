@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T06:45:18+08:00",
+  "lastUpdated": "2026-11-24T09:45:12+08:00",
   "status": "Completed: 36 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 4,
@@ -15,217 +15,217 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-24T06:39:44.532737+08:00"
+      "checkedAt": "2026-11-24T09:39:40.607258+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-24T06:39:49.253657+08:00"
+      "checkedAt": "2026-11-24T09:39:45.341864+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:39:52.414208+08:00"
+      "checkedAt": "2026-11-24T09:39:48.510914+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:39:55.355064+08:00"
+      "checkedAt": "2026-11-24T09:39:51.405530+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:39:57.678979+08:00"
+      "checkedAt": "2026-11-24T09:39:53.728999+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:39:59.999900+08:00"
+      "checkedAt": "2026-11-24T09:39:56.058479+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:02.343535+08:00"
+      "checkedAt": "2026-11-24T09:39:58.375812+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:04.669256+08:00"
+      "checkedAt": "2026-11-24T09:40:00.704410+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:07.611260+08:00"
+      "checkedAt": "2026-11-24T09:40:03.614042+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:09.960254+08:00"
+      "checkedAt": "2026-11-24T09:40:06.022405+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:16.393730+08:00"
+      "checkedAt": "2026-11-24T09:40:12.386946+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:18.792832+08:00"
+      "checkedAt": "2026-11-24T09:40:14.744863+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:21.724016+08:00"
+      "checkedAt": "2026-11-24T09:40:17.657217+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:24.642413+08:00"
+      "checkedAt": "2026-11-24T09:40:20.559239+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:27.675489+08:00"
+      "checkedAt": "2026-11-24T09:40:23.601031+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:29.998516+08:00"
+      "checkedAt": "2026-11-24T09:40:25.959307+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:32.331911+08:00"
+      "checkedAt": "2026-11-24T09:40:28.287218+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:35.258139+08:00"
+      "checkedAt": "2026-11-24T09:40:31.198870+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:37.599988+08:00"
+      "checkedAt": "2026-11-24T09:40:33.537336+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:49.787784+08:00"
+      "checkedAt": "2026-11-24T09:40:45.694503+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:54.604583+08:00"
+      "checkedAt": "2026-11-24T09:40:50.444780+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:40:59.433177+08:00"
+      "checkedAt": "2026-11-24T09:40:55.162520+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-24T06:41:04.987490+08:00"
+      "checkedAt": "2026-11-24T09:40:58.277134+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:41:08.027457+08:00"
+      "checkedAt": "2026-11-24T09:41:01.306830+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:41:18.553147+08:00"
+      "checkedAt": "2026-11-24T09:41:11.793338+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-24T06:41:35.451208+08:00"
+      "checkedAt": "2026-11-24T09:41:28.008409+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:41:56.659981+08:00"
+      "checkedAt": "2026-11-24T09:41:49.293716+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-24T06:42:14.633213+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-24T09:42:11.208182+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:42:28.430915+08:00"
+      "checkedAt": "2026-11-24T09:42:24.891754+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:42:42.270924+08:00"
+      "checkedAt": "2026-11-24T09:42:38.637368+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-24T06:43:01.863709+08:00"
+      "checkedAt": "2026-11-24T09:42:55.725537+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:43:24.808575+08:00"
+      "checkedAt": "2026-11-24T09:43:18.601384+08:00"
     },
     {
       "source": "Weibo @狐厂大拷问",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T06:43:41.058955+08:00"
+      "checkedAt": "2026-11-24T09:43:34.865307+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-24T06:43:55.699577+08:00"
+      "checkedAt": "2026-11-24T09:43:49.461899+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-24T06:44:12.862011+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-24T09:44:06.478636+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-24T06:44:26.619107+08:00"
+      "checkedAt": "2026-11-24T09:44:21.804037+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -275,6 +275,50 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "a9475f6935586db9587b",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票：谁的发带造型，最让你心动？】 @云旗Yunqi @TF_ING穆祉丞MUA @于适Yosh @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @闫桉 @张凌赫z @丞磊 @陈星旭--CHEN先生 @TFBOYS-王俊凯 @小林…",
+      "excerpt": "【投票：谁的发带造型，最让你心动？】 @云旗Yunqi @TF_ING穆祉丞MUA @于适Yosh @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @闫桉 @张凌赫z @丞磊 @陈星旭--CHEN先生 @TFBOYS-王俊凯 @小林是李昀锐 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Photos",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-24T07:04:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5368673791640831",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：谁的发带造型，最让你心动？】 @云旗Yunqi @TF_ING穆祉丞MUA @于适Yosh @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @闫桉 @张凌赫z @丞磊 @陈星旭--CHEN先生 @TFBOYS-王俊凯 @小林…",
+      "excerptOriginal": "【投票：谁的发带造型，最让你心动？】 @云旗Yunqi @TF_ING穆祉丞MUA @于适Yosh @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @闫桉 @张凌赫z @丞磊 @陈星旭--CHEN先生 @TFBOYS-王俊凯 @小林是李昀锐 网页链接",
+      "titleEnglish": "[Poll: Whose headband style do you find most appealing?] @Yunqi @TF_ING Mu Zhicheng MUA @Yosh @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang @Yan An @Zhang Linghe z @Cheng Lei @Chen Xingxu--Mr. Chen @TFBOYS-Wang Junkai @Xiaolin...",
+      "excerptEnglish": "[Poll: Whose headband style do you find most appealing?] @Yunqi @TF_ING Mu Zhicheng MUA @Yosh @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang @Yan An @Zhang Linghe z @Cheng Lei @Chen Xingxu--Mr. Chen @TFBOYS-Wang Junkai @Xiaolin is Li Yunrui Web link"
+    },
+    {
+      "id": "4d741ada2bf2ab6a63b3",
+      "platform": "Weibo",
+      "source": "Weibo @麦穗视频",
+      "title": "【投票：谁的发带造型，最让你心动？】 @云旗Yunqi @TF_ING穆祉丞MUA @于适Yosh @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @闫桉 @张凌赫z @丞磊 @陈星旭--CHEN先生 @TFBOYS-王俊凯 @小林…",
+      "excerpt": "【投票：谁的发带造型，最让你心动？】 @云旗Yunqi @TF_ING穆祉丞MUA @于适Yosh @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @闫桉 @张凌赫z @丞磊 @陈星旭--CHEN先生 @TFBOYS-王俊凯 @小林是李昀锐 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Photos",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-24T07:01:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5368673036404002",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：谁的发带造型，最让你心动？】 @云旗Yunqi @TF_ING穆祉丞MUA @于适Yosh @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @闫桉 @张凌赫z @丞磊 @陈星旭--CHEN先生 @TFBOYS-王俊凯 @小林…",
+      "excerptOriginal": "【投票：谁的发带造型，最让你心动？】 @云旗Yunqi @TF_ING穆祉丞MUA @于适Yosh @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @闫桉 @张凌赫z @丞磊 @陈星旭--CHEN先生 @TFBOYS-王俊凯 @小林是李昀锐 网页链接",
+      "titleEnglish": "[Poll: Whose headband style do you find most appealing?] @Yunqi @TF_ING Mu Zhicheng MUA @Yosh @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang @Yan An @Zhang Linghe @Cheng Lei @Chen Xingxu--Mr. Chen @TFBOYS-Wang Junkai @Xiaolin...",
+      "excerptEnglish": "[Poll: Whose headband style do you find most appealing?] @Yunqi @TF_ING Mu Zhicheng MUA @Yosh @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang @Yan An @Zhang Linghe z @Cheng Lei @Chen Xingxu--Mr. Chen @TFBOYS-Wang Junkai @Xiaolin is Li Yunrui Web link"
+    },
     {
       "id": "5bd7f7f67e22660556d7",
       "platform": "Weibo",
@@ -4107,8 +4151,8 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a1544cfe7b7ab0c33487c4dc.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cbdfba873bcdd27d16456637.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e590913837f87d670f5fa509.jpg",
-        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49lkuqpjj30xc18g1d4.jpg",
-        "https://wx1.sinaimg.cn/mw2000/008sNjIugy1ij49lk6i9fj30xc18g1bh.jpg"
+        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49llgxybj30xc18gngc.jpg",
+        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49lm3ax3j30xc18gttb.jpg"
       ],
       "videos": [],
       "category": "Event",
