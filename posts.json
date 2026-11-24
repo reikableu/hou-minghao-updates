@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-24T13:04:31+08:00",
+  "lastUpdated": "2026-11-24T16:01:50+08:00",
   "status": "Completed: 36 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 0,
@@ -15,217 +15,217 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-24T12:59:20.273199+08:00"
+      "checkedAt": "2026-11-24T15:56:29.272189+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-24T12:59:25.037387+08:00"
+      "checkedAt": "2026-11-24T15:56:34.063750+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:28.149780+08:00"
+      "checkedAt": "2026-11-24T15:56:37.240000+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:31.068011+08:00"
+      "checkedAt": "2026-11-24T15:56:40.160173+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:33.377614+08:00"
+      "checkedAt": "2026-11-24T15:56:42.485732+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:35.672540+08:00"
+      "checkedAt": "2026-11-24T15:56:44.800942+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:38.121621+08:00"
+      "checkedAt": "2026-11-24T15:56:47.134960+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:40.453342+08:00"
+      "checkedAt": "2026-11-24T15:56:49.466748+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:43.338653+08:00"
+      "checkedAt": "2026-11-24T15:56:52.403517+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:45.684552+08:00"
+      "checkedAt": "2026-11-24T15:56:54.824528+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:51.228311+08:00"
+      "checkedAt": "2026-11-24T15:57:00.409674+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:53.570432+08:00"
+      "checkedAt": "2026-11-24T15:57:02.810350+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:56.474372+08:00"
+      "checkedAt": "2026-11-24T15:57:05.716865+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T12:59:59.385684+08:00"
+      "checkedAt": "2026-11-24T15:57:08.666927+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:02.419774+08:00"
+      "checkedAt": "2026-11-24T15:57:11.744977+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:04.720772+08:00"
+      "checkedAt": "2026-11-24T15:57:14.067290+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:07.017534+08:00"
+      "checkedAt": "2026-11-24T15:57:16.388583+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:09.914166+08:00"
+      "checkedAt": "2026-11-24T15:57:19.304337+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:12.224919+08:00"
+      "checkedAt": "2026-11-24T15:57:21.665473+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:24.255634+08:00"
+      "checkedAt": "2026-11-24T15:57:33.912676+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:29.213405+08:00"
+      "checkedAt": "2026-11-24T15:57:38.721964+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:33.955757+08:00"
+      "checkedAt": "2026-11-24T15:57:43.455483+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-24T13:00:38.694144+08:00"
+      "checkedAt": "2026-11-24T15:57:49.790367+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:41.789996+08:00"
+      "checkedAt": "2026-11-24T15:57:52.877242+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:00:52.258922+08:00"
+      "checkedAt": "2026-11-24T15:58:03.439083+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-24T13:01:08.472995+08:00"
+      "checkedAt": "2026-11-24T15:58:20.644377+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:01:29.487469+08:00"
+      "checkedAt": "2026-11-24T15:58:42.012978+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-24T13:01:49.725154+08:00"
+      "checkedAt": "2026-11-24T15:59:04.124357+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:02:04.115788+08:00"
+      "checkedAt": "2026-11-24T15:59:18.631138+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:02:17.720020+08:00"
+      "checkedAt": "2026-11-24T15:59:32.423910+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-24T13:02:37.867815+08:00"
+      "checkedAt": "2026-11-24T15:59:52.854520+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:03:00.413106+08:00"
+      "checkedAt": "2026-11-24T16:00:15.722738+08:00"
     },
     {
       "source": "Weibo @狐厂大拷问",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:03:16.713101+08:00"
+      "checkedAt": "2026-11-24T16:00:32.022931+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:03:30.367025+08:00"
+      "checkedAt": "2026-11-24T16:00:47.530170+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-24T13:03:51.476383+08:00"
+      "checkedAt": "2026-11-24T16:01:10.431176+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-24T13:04:10.946413+08:00"
+      "checkedAt": "2026-11-24T16:01:29.903521+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -276,6 +276,25 @@
   },
   "posts": [
     {
+      "id": "3c9745641473fac3d9b1",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "TICKET SELLING ROUND 3 | Hou Minghao 'Belongs To Us' Final Stop: Beijing November 25, 2026 20:18 Damai App 261124 | \"Youling Culture (幽伶文化)\" Weibo Up…",
+      "excerpt": "TICKET SELLING ROUND 3 | Hou Minghao 'Belongs To Us' Final Stop: Beijing November 25, 2026 20:18 Damai App 261124 | \"Youling Culture (幽伶文化)\" Weibo Update #HouMinghaoBelongsToUs2026 #HouMinghao #侯明昊 #후명호",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3547cde09845f3f8686e9d6c.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-24T14:34:45+08:00",
+      "url": "https://x.com/HMH_Record/status/2125115890907963870",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
       "id": "d67c396574fc27378e27",
       "platform": "X",
       "source": "Hou Minghao X Updates",
@@ -315,6 +334,23 @@
       "excerptOriginal": "【投票：vogue男明星最佳红毯着装投票结果，你支持谁？】 vogue男明星最佳红毯着装投票结果出炉：蔡徐坤 肖战 华晨宇 王一博 易烊千玺 王俊凯 侯明昊 丁禹兮 于适 宋威龙 张凌赫 刘宇 你喜欢谁？ 网页链接",
       "titleEnglish": "【Voting: Vogue's Best Dressed Male Celebrity on the Red Carpet – Who Do You Support?】 Vogue's Best Dressed Male Celebrity on the Red Carpet voting results are in: Cai Xukun, Xiao Zhan, Hua Chenyu, Wang Yibo, Jackson Yee, Wang Junkai, Hou Minghao, Ding Yuxi, Yu Shi, Song Weilong, Zhang Linghe, Liu Yu. Who do you like? Web link",
       "excerptEnglish": "【Poll: Vogue's Best Dressed Male Celebrity on the Red Carpet – Who Do You Support?】 Vogue's Best Dressed Male Celebrity on the Red Carpet poll results are in: Cai Xukun, Xiao Zhan, Hua Chenyu, Wang Yibo, Jackson Yee, Wang Junkai, Hou Minghao, Ding Yuxi, Yu Shi, Song Weilong, Zhang Linghe, Liu Yu. Who do you like? Web link"
+    },
+    {
+      "id": "e4c0a29b5eb84aa20f29",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@GianneSkyKiwiPH",
+      "title": "Actually one thing I like about him is how cute he is but also how he is so fierce, charismatic and aura farming onscreen. He is so cute offscreen wi…",
+      "excerpt": "Actually one thing I like about him is how cute he is but also how he is so fierce, charismatic and aura farming onscreen. He is so cute offscreen with that boba eyes and childish laugh.",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-24T07:43:09+08:00",
+      "url": "https://x.com/GianneSkyKiwiPH/status/2125012307029930178",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
     },
     {
       "id": "a9475f6935586db9587b",
@@ -6686,8 +6722,9 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a42fd47d9fac4e9bddec932b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fff4709f762a02c4799df834.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9e892645342d3ac39aa435e1.jpg",
-        "https://wx4.sinaimg.cn/mw2000/008sNjIugy1iiybq12xbrj30xc18g4qp.jpg",
-        "https://wx1.sinaimg.cn/mw2000/008sNjIugy1iiybq36i80j30xc18ge81.jpg"
+        "https://wx1.sinaimg.cn/mw2000/008sNjIugy1iiybq36i80j30xc18ge81.jpg",
+        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1iiybq29m1aj30xc18gb29.jpg",
+        "https://wx4.sinaimg.cn/mw2000/008sNjIugy1iiybq06k16j30xc18ge81.jpg"
       ],
       "videos": [],
       "category": "Endorsement",
