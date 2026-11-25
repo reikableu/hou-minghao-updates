@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T18:39:54.698037+08:00",
+  "updatedAt": "2026-11-25T21:39:14.540078+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -30,6 +30,36 @@
       "firstSeen": "2026-11-19T15:46:00.373237+08:00",
       "lastSeen": "2026-11-19T18:51:08+08:00",
       "lastMentionPostId": "5367039809029928",
+      "discoveredBy": "侯明昊活动"
+    },
+    {
+      "uid": "3196915580",
+      "name": "olayks立时",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "verifiedType": "2",
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "广东立时电器科技有限公司",
+      "firstSeen": "2026-11-25T21:39:14.540078+08:00",
+      "lastSeen": "2026-11-25T18:00:00+08:00",
+      "lastMentionPostId": "5369201268359928",
+      "discoveredBy": "侯明昊活动"
+    },
+    {
+      "uid": "1847173797",
+      "name": "北京晚报时尚",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "verifiedType": "3",
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "北京晚报时尚官方微博",
+      "firstSeen": "2026-11-25T21:39:14.540078+08:00",
+      "lastSeen": "2026-11-25T20:35:52+08:00",
+      "lastMentionPostId": "5369240494540077",
       "discoveredBy": "侯明昊活动"
     },
     {
