@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T15:39:21.031165+08:00",
+  "updatedAt": "2026-11-25T18:39:54.698037+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -150,6 +150,21 @@
       "firstSeen": "2026-11-20T15:39:16.244753+08:00",
       "lastSeen": "2026-11-25T12:34:00+08:00",
       "lastMentionPostId": "5369119228560376",
+      "discoveredBy": "侯明昊活动"
+    },
+    {
+      "uid": "1223849864",
+      "name": "风度mensuno",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "verifiedType": "3",
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "《风度men's uno》官方微博",
+      "firstSeen": "2026-11-25T18:39:54.698037+08:00",
+      "lastSeen": "2026-11-25T17:57:24+08:00",
+      "lastMentionPostId": "5369200613791874",
       "discoveredBy": "侯明昊活动"
     },
     {
