@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-26T03:47:16+08:00",
+  "lastUpdated": "2026-11-26T06:46:14+08:00",
   "status": "Completed: 39 sources successful, 0 failed",
   "translationStatus": {
     "translationsAdded": 4,
@@ -15,235 +15,235 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-26T03:40:39.324127+08:00"
+      "checkedAt": "2026-11-26T06:39:42.975502+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-26T03:40:44.057895+08:00"
+      "checkedAt": "2026-11-26T06:39:47.541885+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:40:47.159971+08:00"
+      "checkedAt": "2026-11-26T06:39:50.658208+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:40:50.127463+08:00"
+      "checkedAt": "2026-11-26T06:39:53.531615+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:40:52.444349+08:00"
+      "checkedAt": "2026-11-26T06:39:55.796788+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:40:54.775711+08:00"
+      "checkedAt": "2026-11-26T06:39:58.069901+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:40:57.105900+08:00"
+      "checkedAt": "2026-11-26T06:40:00.373912+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:40:59.462254+08:00"
+      "checkedAt": "2026-11-26T06:40:02.651535+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:02.394454+08:00"
+      "checkedAt": "2026-11-26T06:40:05.574382+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:04.759657+08:00"
+      "checkedAt": "2026-11-26T06:40:07.846528+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:10.326355+08:00"
+      "checkedAt": "2026-11-26T06:40:13.229793+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:12.680920+08:00"
+      "checkedAt": "2026-11-26T06:40:15.523476+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:15.594894+08:00"
+      "checkedAt": "2026-11-26T06:40:18.382431+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:18.503402+08:00"
+      "checkedAt": "2026-11-26T06:40:21.267732+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:21.551041+08:00"
+      "checkedAt": "2026-11-26T06:40:24.225010+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:23.886451+08:00"
+      "checkedAt": "2026-11-26T06:40:26.498702+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:26.204659+08:00"
+      "checkedAt": "2026-11-26T06:40:28.795339+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:29.134522+08:00"
+      "checkedAt": "2026-11-26T06:40:31.660900+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:31.479962+08:00"
+      "checkedAt": "2026-11-26T06:40:33.960234+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:43.558402+08:00"
+      "checkedAt": "2026-11-26T06:40:45.625498+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:48.345899+08:00"
+      "checkedAt": "2026-11-26T06:40:50.218161+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:41:53.078556+08:00"
+      "checkedAt": "2026-11-26T06:40:54.764171+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-26T03:41:57.829948+08:00"
+      "checkedAt": "2026-11-26T06:40:59.316961+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:42:00.861781+08:00"
+      "checkedAt": "2026-11-26T06:41:02.282858+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:42:12.117411+08:00"
+      "checkedAt": "2026-11-26T06:41:13.045104+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-26T03:42:28.858458+08:00"
+      "checkedAt": "2026-11-26T06:41:29.604961+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-26T03:42:49.379269+08:00"
+      "checkedAt": "2026-11-26T06:41:49.974422+08:00"
     },
     {
       "source": "Weibo @北京晚报时尚",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T03:43:04.980139+08:00"
+      "checkedAt": "2026-11-26T06:42:05.750605+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:43:26.284652+08:00"
+      "checkedAt": "2026-11-26T06:42:26.892930+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-26T03:43:46.932467+08:00"
+      "checkedAt": "2026-11-26T06:42:47.342199+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:44:01.745955+08:00"
+      "checkedAt": "2026-11-26T06:43:01.528243+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:44:14.900291+08:00"
+      "checkedAt": "2026-11-26T06:43:14.974609+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-26T03:44:35.526049+08:00"
+      "checkedAt": "2026-11-26T06:43:35.324547+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T03:44:57.765243+08:00"
+      "checkedAt": "2026-11-26T06:43:57.355218+08:00"
     },
     {
       "source": "Weibo @狐厂大拷问",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T03:45:11.760494+08:00"
+      "checkedAt": "2026-11-26T06:44:11.545537+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T03:45:25.783402+08:00"
+      "checkedAt": "2026-11-26T06:44:25.846599+08:00"
     },
     {
       "source": "Weibo @风度mensuno",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T03:45:47.231402+08:00"
+      "checkedAt": "2026-11-26T06:44:47.049555+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-26T03:46:10.243720+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-26T06:45:09.714719+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-26T03:46:27.590239+08:00"
+      "checkedAt": "2026-11-26T06:45:26.196548+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -296,6 +296,50 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "fe7721aed0f5672859f5",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票： #内娱男明星原声台词# 】 提名内娱台词好的生，评论区高赞人选，认同吗？肖战、檀健次、刘宇宁、丁禹兮罗云熙、陈飞宇、于适、丞磊侯明昊、范丞丞、李昀锐、张晚意 网页链接",
+      "excerpt": "【投票： #内娱男明星原声台词# 】 提名内娱台词好的生，评论区高赞人选，认同吗？肖战、檀健次、刘宇宁、丁禹兮罗云熙、陈飞宇、于适、丞磊侯明昊、范丞丞、李昀锐、张晚意 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-26T05:05:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369368621089863",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票： #内娱男明星原声台词# 】 提名内娱台词好的生，评论区高赞人选，认同吗？肖战、檀健次、刘宇宁、丁禹兮罗云熙、陈飞宇、于适、丞磊侯明昊、范丞丞、李昀锐、张晚意 网页链接",
+      "excerptOriginal": "【投票： #内娱男明星原声台词# 】 提名内娱台词好的生，评论区高赞人选，认同吗？肖战、檀健次、刘宇宁、丁禹兮罗云熙、陈飞宇、于适、丞磊侯明昊、范丞丞、李昀锐、张晚意 网页链接",
+      "titleEnglish": "[Poll: Chinese Male Celebrities' Original Voice Acting] Nominations for Chinese male celebrities with good voice acting. Do you agree with the top-voted choices in the comments section? Xiao Zhan, Dylan Wang, Allen Liu, Leo Wu, Leo Luo, Chen Feiyu, Yu Shi, William Chan, Howard Hou, Fan Chengcheng, Li Yunrui, Zhang Wanyi Web link",
+      "excerptEnglish": "[Vote: Chinese Male Celebrities' Original Voice Acting] Nominees for Chinese male celebrities with good voice acting, and the most-liked choices in the comments section. Do you agree? Xiao Zhan, Joseph Zeng, Liu Yuning, Dylan Wang, Leo Luo, Chen Feiyu, Yu Shi, William Chan, Hou Minghao,范丞丞, Li Yunrui, Zhang Wanyi Web link"
+    },
+    {
+      "id": "8dd1a4b56a1698cc38d2",
+      "platform": "Weibo",
+      "source": "Weibo @麦穗视频",
+      "title": "【投票： #内娱男明星原声台词# 】 提名内娱台词好的生，评论区高赞人选，认同吗？肖战、檀健次、刘宇宁、丁禹兮罗云熙、陈飞宇、于适、丞磊侯明昊、范丞丞、李昀锐、张晚意 网页链接",
+      "excerpt": "【投票： #内娱男明星原声台词# 】 提名内娱台词好的生，评论区高赞人选，认同吗？肖战、檀健次、刘宇宁、丁禹兮罗云熙、陈飞宇、于适、丞磊侯明昊、范丞丞、李昀锐、张晚意 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-26T05:02:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369367867162875",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票： #内娱男明星原声台词# 】 提名内娱台词好的生，评论区高赞人选，认同吗？肖战、檀健次、刘宇宁、丁禹兮罗云熙、陈飞宇、于适、丞磊侯明昊、范丞丞、李昀锐、张晚意 网页链接",
+      "excerptOriginal": "【投票： #内娱男明星原声台词# 】 提名内娱台词好的生，评论区高赞人选，认同吗？肖战、檀健次、刘宇宁、丁禹兮罗云熙、陈飞宇、于适、丞磊侯明昊、范丞丞、李昀锐、张晚意 网页链接",
+      "titleEnglish": "[Poll: Chinese Male Celebrities' Original Voice Acting] Nominations for Chinese male celebrities with good voice acting. Do you agree with the top-voted choices in the comments section? Xiao Zhan, Dylan Wang, Dylan Wang, Leo Wu, Leo Wu, Chen Feiyu, Yu Shi, Cheng Lei, Hou Minghao, Fan Chengcheng, Li Yunrui, Zhang Wanyi Web link",
+      "excerptEnglish": "[Vote: Chinese Male Celebrities' Original Voice Acting] Nominations for Chinese male celebrities with good voice acting. The most-liked choices in the comments section. Do you agree? Xiao Zhan, Dylan Wang, Dylan Liu, Leo Wu, Leo Luo, Chen Feiyu, Yu Shi, William Chan, Hou Minghao, Fan Chengcheng, Li Yunrui, Zhang Wanyi Web link"
+    },
     {
       "id": "6dee79f8f1cdd8966052",
       "platform": "Weibo",
@@ -10879,55 +10923,6 @@
       "collectionMethod": "Automatic",
       "videos": [],
       "dateExact": false
-    },
-    {
-      "id": "76ae592517a5ee5f2920",
-      "platform": "X",
-      "source": "Hou Minghao X Updates",
-      "author": "@PopMinghao",
-      "title": "HouMinghao Base: 03.11.2026 | H&M 2026 Autumn/Winter Collection Livestream full livestream recording from today for anyone who missed the live or wants to watch it again! enjoy wa…",
-      "excerpt": "03.11.2026 | H&M 2026 Autumn/Winter Collection Livestream full livestream recording from today for anyone who missed the live or wants to watch it again! enjoy watching our cat~ 🤏🏻 #HouMinghao #侯明昊 — @PopMinghao Nov 3, 2026",
-      "images": [],
-      "category": "X Update",
-      "date": "2026-11-03T22:32:00+08:00",
-      "url": "https://x.com/PopMinghao/status/2117625906600784279",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Automatic",
-      "videos": [],
-      "dateExact": false
-    },
-    {
-      "id": "f2f6b16756efd349469b",
-      "platform": "Weibo",
-      "source": "Weibo @侯明昊",
-      "title": "感谢 @ELLEMEN 让这次相遇有了形状。",
-      "excerpt": "感谢 @ELLEMEN 让这次相遇有了形状。",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b544830c0913f86c076fe876.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/dccab9c0a3a315088216d6b2.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ae211721db736cb72b68664f.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/084dd1c1b7a7fee5763c07c7.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/69c92db91f2d03ee6b6d0f7e.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8282e67c0e056fe51e886892.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9d9c7a018c3f1be030deaba8.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/61ccb41921bb65d7a6ca3fc5.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/98c43751afd79f559939fdb5.jpg"
-      ],
-      "videos": [],
-      "category": "Official",
-      "sourceCategory": "Official",
-      "date": "2026-11-03T15:36:39+08:00",
-      "dateExact": true,
-      "dateSource": "detail",
-      "url": "https://m.weibo.cn/status/5361192660897215",
-      "official": true,
-      "verified": false,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "感谢 @ELLEMEN 让这次相遇有了形状。",
-      "excerptOriginal": "感谢 @ELLEMEN 让这次相遇有了形状。",
-      "titleEnglish": "Thanks to @ELLEMEN for making this encounter possible.",
-      "excerptEnglish": "Thanks to @ELLEMEN for making this encounter possible."
     }
   ]
 }
