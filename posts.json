@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-25T09:44:51+08:00",
+  "lastUpdated": "2026-11-25T11:50:58+08:00",
   "status": "Completed: 36 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 6,
+    "postsTranslatedThisRun": 3,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 6
     }
   },
   "sourceStatus": [
@@ -15,217 +15,217 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-25T09:39:39.775638+08:00"
+      "checkedAt": "2026-11-25T11:45:00.020762+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 10,
-      "checkedAt": "2026-11-25T09:39:44.524375+08:00"
+      "checkedAt": "2026-11-25T11:45:04.773213+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:39:47.678435+08:00"
+      "checkedAt": "2026-11-25T11:45:07.846952+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:39:50.591246+08:00"
+      "checkedAt": "2026-11-25T11:45:10.792696+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:39:52.930896+08:00"
+      "checkedAt": "2026-11-25T11:45:13.090280+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:39:55.264904+08:00"
+      "checkedAt": "2026-11-25T11:45:15.408885+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:39:57.577686+08:00"
+      "checkedAt": "2026-11-25T11:45:17.685583+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:39:59.919275+08:00"
+      "checkedAt": "2026-11-25T11:45:19.994644+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:02.838313+08:00"
+      "checkedAt": "2026-11-25T11:45:22.862473+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:05.208569+08:00"
+      "checkedAt": "2026-11-25T11:45:25.164905+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:10.814255+08:00"
+      "checkedAt": "2026-11-25T11:45:30.553028+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:13.177300+08:00"
+      "checkedAt": "2026-11-25T11:45:32.901956+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:16.096907+08:00"
+      "checkedAt": "2026-11-25T11:45:35.793453+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:19.007488+08:00"
+      "checkedAt": "2026-11-25T11:45:38.672446+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:22.039412+08:00"
+      "checkedAt": "2026-11-25T11:45:41.744384+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:24.356499+08:00"
+      "checkedAt": "2026-11-25T11:45:44.026677+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:26.695796+08:00"
+      "checkedAt": "2026-11-25T11:45:46.318406+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:29.619797+08:00"
+      "checkedAt": "2026-11-25T11:45:49.192595+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:31.980955+08:00"
+      "checkedAt": "2026-11-25T11:45:51.553057+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:44.204692+08:00"
+      "checkedAt": "2026-11-25T11:46:03.357068+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:49.043398+08:00"
+      "checkedAt": "2026-11-25T11:46:08.004782+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:40:53.839659+08:00"
+      "checkedAt": "2026-11-25T11:46:12.627836+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-25T09:40:57.699408+08:00"
+      "checkedAt": "2026-11-25T11:46:18.764846+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:41:00.800112+08:00"
+      "checkedAt": "2026-11-25T11:46:21.794569+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:41:11.348871+08:00"
+      "checkedAt": "2026-11-25T11:46:32.008708+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-25T09:41:28.791571+08:00"
+      "checkedAt": "2026-11-25T11:46:47.377432+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:41:49.473545+08:00"
+      "checkedAt": "2026-11-25T11:47:07.600809+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-25T09:42:11.931147+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-25T11:47:30.171068+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:42:27.623910+08:00"
+      "checkedAt": "2026-11-25T11:47:44.771098+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:42:40.809606+08:00"
+      "checkedAt": "2026-11-25T11:47:57.822399+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-25T09:42:57.351233+08:00"
+      "checkedAt": "2026-11-25T11:48:16.545109+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
-      "itemsFound": 1,
-      "checkedAt": "2026-11-25T09:43:19.697327+08:00"
+      "itemsFound": 0,
+      "checkedAt": "2026-11-25T11:48:38.226724+08:00"
     },
     {
       "source": "Weibo @狐厂大拷问",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:43:35.376062+08:00"
+      "checkedAt": "2026-11-25T11:48:53.549732+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T09:43:50.279859+08:00"
+      "checkedAt": "2026-11-25T11:49:07.398470+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-25T09:44:11.867082+08:00"
+      "checkedAt": "2026-11-25T11:49:28.686893+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
-      "itemsFound": 26,
-      "checkedAt": "2026-11-25T09:44:29.248860+08:00"
+      "itemsFound": 27,
+      "checkedAt": "2026-11-25T11:49:44.996334+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -276,6 +276,139 @@
   },
   "posts": [
     {
+      "id": "22f5a62a5d7e90924a82",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao New Pics | Fino Brand Event 261125 | \"Fino (芬浓官方微博)\" Weibo Update #HouMinghao #후명호 #侯明昊",
+      "excerpt": "Hou Minghao New Pics | Fino Brand Event 261125 | \"Fino (芬浓官方微博)\" Weibo Update #HouMinghao #후명호 #侯明昊",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bbbb9dd810d04513265620bb.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/19aab2442d1e3e44e2066d02.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/aac24f9a1cdd1e870b6afac1.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5d00cba33342ce4cecf0f7d7.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f9184512473e14bb69fd0864.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-25T11:45:36+08:00",
+      "url": "https://x.com/HMH_Record/status/2125435711239422089",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "e26af42b6f17315a46f4",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔…",
+      "excerpt": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @于适Yosh @宋威龙99 @小鬼-王琳凯 @蒋奇明微博号 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-25T11:42:44+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369106328978582",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔…",
+      "excerptOriginal": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @于适Yosh @宋威龙99 @小鬼-王琳凯 @蒋奇明微博号 网页链接",
+      "titleEnglish": "[Poll: Who is the ultimate cool guy in your eyes, the one who makes your heart skip a beat at first sight?] There's a kind of handsomeness called \"cool.\" There's no need to be deliberately showy; style has its own narrative. Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight? @Wang Yibo·YIBO @MIC Tan Jianci JC-T @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang…",
+      "excerptEnglish": "[Poll: Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight?] There's a kind of handsomeness called \"cool.\" There's no need to be deliberately showy; style speaks for itself. Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight? @Wang Yibo·YIBO @MIC Tan Jianci JC-T @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang @Yu Shu Yosh @Song Weilong99 @Xiao Gui-Wang Linkai @Jiang Qiming Weibo Account Web Link"
+    },
+    {
+      "id": "25f50ee1a50ba33d9e6f",
+      "platform": "Weibo",
+      "source": "Weibo @麦穗视频",
+      "title": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔…",
+      "excerpt": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @于适Yosh @宋威龙99 @小鬼-王琳凯 @蒋奇明微博号 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-25T11:41:11+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369105940218809",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔…",
+      "excerptOriginal": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @于适Yosh @宋威龙99 @小鬼-王琳凯 @蒋奇明微博号 网页链接",
+      "titleEnglish": "[Poll: Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight?] There's a kind of handsomeness called \"cool.\" There's no need to be deliberately showy; style has its own narrative. Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight? @Wang Yibo·YIBO @MIC Tan Jianci JC-T @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang…",
+      "excerptEnglish": "[Poll: Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight?] There's a kind of handsomeness called \"cool.\" There's no need to be deliberately showy; style speaks for itself. Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight? @Wang Yibo·YIBO @MIC Tan Jianci JC-T @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang @Yu Shu Yosh @Song Weilong99 @Little Ghost-Wang Linkai @Jiang Qiming Weibo Account Web Link"
+    },
+    {
+      "id": "39b43783057803458238",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "2 Days left! | 'Belongs To Us' Final Stop: Beijing Back to 1031 Zhengzhou HOME MEANS HERE #HouMinghaoBelongsToUs2026 Concert Tour 261125 | \"Hou Mingh…",
+      "excerpt": "2 Days left! | 'Belongs To Us' Final Stop: Beijing Back to 1031 Zhengzhou HOME MEANS HERE #HouMinghaoBelongsToUs2026 Concert Tour 261125 | \"Hou Minghao Concert Tour 'Belongs to Us'\" Xiaohongshu Update #HouMinghao #侯明昊 #후명호",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-25T11:09:50+08:00",
+      "url": "https://x.com/HMH_Record/status/2125426706978885910",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "8768bcf50d1f46ccf10f",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "2 DAYS TO GO! Belonging to Us — Beijing Final Stop BACK TO 1031 ZHENGZHOU Home Means Here. just TWO more days until the final reunion in Beijing! ano…",
+      "excerpt": "2 DAYS TO GO! Belonging to Us — Beijing Final Stop BACK TO 1031 ZHENGZHOU Home Means Here. just TWO more days until the final reunion in Beijing! another beautiful memory from Zhengzhou, another little piece of this journey to treasure. #侯明昊 #HouMinghao",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-25T11:03:53+08:00",
+      "url": "https://x.com/PopMinghao/status/2125425210115739858",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "97d5acac65b4bdc87cf7",
+      "platform": "Weibo",
+      "source": "Weibo @fino芬浓官方微博",
+      "title": "#芬浓HAO顺局# 圆满收官 🎉 那些心动、欢笑与惊喜， 都被一一珍藏进这份九宫格回忆里📸 现场同款 HAO 物也来给大家狠狠种草！ 从洗到护再到润，把 HAO 状态一整个拿捏住👇 洗｜ 芬浓全新双效洗发露，从头皮到发丝一瓶双效兼顾，HA…",
+      "excerpt": "#芬浓HAO顺局# 圆满收官 🎉 那些心动、欢笑与惊喜， 都被一一珍藏进这份九宫格回忆里📸 现场同款 HAO 物也来给大家狠狠种草！ 从洗到护再到润，把 HAO 状态一整个拿捏住👇 洗｜ 芬浓全新双效洗发露，从头皮到发丝一瓶双效兼顾，HAO状态一顺到底🫧 护｜ 芬浓银钻发膜，奢养体验，修护受损发丝，焕变钻光HAO发质💎 润｜ 芬浓护发精油，滋润不黏腻，瀑布发HAO持久🤩 快乐的碰面虽然暂告一段落， 但和 HAO 友们的美好回忆还在继续💗 把这份 HAO 状态延续下去， 期待与 @侯明昊 再次HAO顺相聚！✨ #fino芬浓品牌代言人侯明昊# #fino双效洗发露#",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6bb46ce42c6860796a6af632.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/350bd71c57961c9873604c0c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a2acf33fe651b7040441e5d3.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b11f903c23e3b573663e51ea.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/edfd3cc9437a445b302bbbdf.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b2f7d8c1f1e46dadc250579e.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e51206047289372b37f8c22b.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/91b60df8b22f134e5437ae57.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/49c6b53c900a7e6a591c23a5.jpg"
+      ],
+      "videos": [],
+      "category": "Endorsement",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-25T10:52:40+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369093731123214",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "#芬浓HAO顺局# 圆满收官 🎉 那些心动、欢笑与惊喜， 都被一一珍藏进这份九宫格回忆里📸 现场同款 HAO 物也来给大家狠狠种草！ 从洗到护再到润，把 HAO 状态一整个拿捏住👇 洗｜ 芬浓全新双效洗发露，从头皮到发丝一瓶双效兼顾，HA…",
+      "excerptOriginal": "#芬浓HAO顺局# 圆满收官 🎉 那些心动、欢笑与惊喜， 都被一一珍藏进这份九宫格回忆里📸 现场同款 HAO 物也来给大家狠狠种草！ 从洗到护再到润，把 HAO 状态一整个拿捏住👇 洗｜ 芬浓全新双效洗发露，从头皮到发丝一瓶双效兼顾，HAO状态一顺到底🫧 护｜ 芬浓银钻发膜，奢养体验，修护受损发丝，焕变钻光HAO发质💎 润｜ 芬浓护发精油，滋润不黏腻，瀑布发HAO持久🤩 快乐的碰面虽然暂告一段落， 但和 HAO 友们的美好回忆还在继续💗 把这份 HAO 状态延续下去， 期待与 @侯明昊 再次HAO顺相聚！✨ #fino芬浓品牌代言人侯明昊# #fino双效洗发露#",
+      "titleEnglish": "The FINO HAO Smoothness Event has come to a successful close 🎉 All those moments of excitement, laughter, and surprise have been captured in this nine-grid collage of memories📸 The same HAO products used at the event are also here to tempt you! From cleansing to nourishing and moisturizing, achieve the perfect HAO state.👇 Cleanse｜ Fineno's all-new dual-action shampoo offers dual benefits in one bottle, caring for both the scalp and the hair, HA…",
+      "excerptEnglish": "Fino HAO Smooth Event Successfully Concludes 🎉 All those moments of excitement, laughter, and surprise have been carefully preserved in this nine-grid memory collage.📸 The same HAO products used at the event are also here to tempt you! From cleansing to nourishing to moisturizing, achieve the perfect HAO look.👇 Cleanse｜Fino's new Dual-Action Shampoo offers dual benefits in one bottle, caring for both scalp and hair, ensuring a smooth and silky HAO finish.🫧 Nourish｜Fino's Silver Diamond Hair Mask provides a luxurious treatment, repairing damaged hair and restoring a radiant, diamond-like HAO shine.💎 Moisturize｜Fino's Hair Essential Oil delivers lightweight, non-greasy hydration, keeping your hair beautifully smooth and HAO for longer.🤩 Although our joyful gathering has come to an end, the wonderful memories with our HAO friends will continue.💗 Let's keep this HAO look going and look forward to another delightful reunion with @Hou Minghao!✨ Fino Brand Ambassador Hou Minghao Fino Dual-Action Shampoo"
+    },
+    {
       "id": "9d0462fde01ab000c003",
       "platform": "Weibo",
       "source": "Weibo @平顶山身边事",
@@ -318,6 +451,23 @@
       "excerptOriginal": "【投票：谁戴发带最戳你】 @云旗Yunqi @TF_ING穆祉丞MUA @于适Yosh @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @闫桉 @张凌赫z @丞磊 @陈星旭--CHEN先生 @TFBOYS-王俊凯 @小林是李昀锐 网页链接",
       "titleEnglish": "[Poll: Who wears a headband the best?] @Yunqi @TF_INGMuzhichengMUA @YushiYosh @HouMinghao @TNT-LiuYaowen @TNT-YanHaoxiang @YanAn @ZhangLingheZ @Chenglei @ChenXingxu--Mr. Chen @TFBOYS-WangJunkai @XiaolinshiLiyunrui Net...",
       "excerptEnglish": "【Poll: Who wears a headband the best?】 @Yunqi @TF_INGMuzhichengMUA @YushiYosh @HouMinghao @TIMESBOYS-LiuYaowen @TIMESBOYS-YanHaoxiang @YanAn @ZhangLingheZ @Chenglei @ChenXingxu--Mr. Chen @TFBOYS-WangJunkai @XiaolinisLiYunrui Web link"
+    },
+    {
+      "id": "5eae291a639af4b0456d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@LemonAesthete",
+      "title": "[ENG] 261124 Hou Minghao's Look for HOKA Livestream by Pan Yida. #HouMinghao #侯明昊",
+      "excerpt": "[ENG] 261124 Hou Minghao's Look for HOKA Livestream by Pan Yida. #HouMinghao #侯明昊",
+      "images": [],
+      "category": "X Update",
+      "date": "2026-11-24T22:06:30+08:00",
+      "url": "https://x.com/LemonAesthete/status/2125229575110324697",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
     },
     {
       "id": "5bc0ff05478ce028def1",
@@ -3868,7 +4018,8 @@
       "title": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 所有途经的雨季 都会涌入最初的洋流 所有并肩的爱意 都将汇成同频的旋律 侯明昊「属于我们的...」演唱会北京·收官站…",
       "excerpt": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 所有途经的雨季 都会涌入最初的洋流 所有并肩的爱意 都将汇成同频的旋律 侯明昊「属于我们的...」演唱会北京·收官站 倒计时10天 与你共唱《脸谱》 🗓️演出时间：11月27日-11月29日 📍演出地点：华熙生物·润百颜ECM中心",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b79a2e5ac9050dad84711079.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b79a2e5ac9050dad84711079.jpg",
+        "https://wx4.sinaimg.cn/mw2000/006i3hfEly1ij538gugcmj31gu1yge82.jpg"
       ],
       "videos": [],
       "category": "Event",
@@ -3952,7 +4103,8 @@
       "title": "#和颂传媒# 侯明昊 音律为途，探寻声音边界。 @侯明昊 官宣加盟音乐缘计划3，每周五20:00爱奇艺、ai荔枝&21:00点江苏卫视，不见不散。 #音乐缘计划#",
       "excerpt": "#和颂传媒# 侯明昊 音律为途，探寻声音边界。 @侯明昊 官宣加盟音乐缘计划3，每周五20:00爱奇艺、ai荔枝&21:00点江苏卫视，不见不散。 #音乐缘计划#",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1e8483de252c1665b6f6bd9a.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1e8483de252c1665b6f6bd9a.jpg",
+        "https://wx4.sinaimg.cn/mw2000/007EqN8rly1ij5045x83gj32dc47qnph.jpg"
       ],
       "videos": [],
       "category": "Music",
@@ -4037,7 +4189,8 @@
       "title": "即将再次站上 #音乐缘计划# 的舞台，继续唱歌给你们听🎤",
       "excerpt": "即将再次站上 #音乐缘计划# 的舞台，继续唱歌给你们听🎤",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fccd9ecfa0190052b351387b.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/fccd9ecfa0190052b351387b.jpg",
+        "https://wx4.sinaimg.cn/mw2000/6d2b400bgy1ij4p54e8u4j22dc47qnph.jpg"
       ],
       "videos": [],
       "category": "Music",
@@ -4419,7 +4572,8 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e590913837f87d670f5fa509.jpg",
         "https://wx1.sinaimg.cn/mw2000/008sNjIugy1ij49lk6i9fj30xc18g1bh.jpg",
         "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49lkuqpjj30xc18g1d4.jpg",
-        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49llgxybj30xc18gngc.jpg"
+        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49llgxybj30xc18gngc.jpg",
+        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49lm3ax3j30xc18gttb.jpg"
       ],
       "videos": [],
       "category": "Event",
