@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-25T12:45:36+08:00",
+  "lastUpdated": "2026-11-25T15:46:54+08:00",
   "status": "Completed: 36 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 14,
+    "postsTranslatedThisRun": 7,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 14
     }
   },
   "sourceStatus": [
@@ -15,217 +15,217 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-25T12:39:55.375766+08:00"
+      "checkedAt": "2026-11-25T15:39:49.740378+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
-      "itemsFound": 10,
-      "checkedAt": "2026-11-25T12:40:00.319000+08:00"
+      "itemsFound": 11,
+      "checkedAt": "2026-11-25T15:39:54.608689+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:03.481409+08:00"
+      "checkedAt": "2026-11-25T15:39:57.944697+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:06.430540+08:00"
+      "checkedAt": "2026-11-25T15:40:00.882094+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:08.781646+08:00"
+      "checkedAt": "2026-11-25T15:40:03.232670+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:11.156028+08:00"
+      "checkedAt": "2026-11-25T15:40:05.572143+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:13.524525+08:00"
+      "checkedAt": "2026-11-25T15:40:07.914243+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:15.912357+08:00"
+      "checkedAt": "2026-11-25T15:40:10.281975+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:18.883813+08:00"
+      "checkedAt": "2026-11-25T15:40:13.225588+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:21.287302+08:00"
+      "checkedAt": "2026-11-25T15:40:15.689078+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:27.156124+08:00"
+      "checkedAt": "2026-11-25T15:40:20.491157+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:29.543023+08:00"
+      "checkedAt": "2026-11-25T15:40:22.881631+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:32.509355+08:00"
+      "checkedAt": "2026-11-25T15:40:25.827997+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:35.448379+08:00"
+      "checkedAt": "2026-11-25T15:40:28.755780+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:38.614107+08:00"
+      "checkedAt": "2026-11-25T15:40:31.838618+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:40.962771+08:00"
+      "checkedAt": "2026-11-25T15:40:34.185018+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:43.311933+08:00"
+      "checkedAt": "2026-11-25T15:40:36.544484+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:46.244820+08:00"
+      "checkedAt": "2026-11-25T15:40:39.487784+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:40:48.709194+08:00"
+      "checkedAt": "2026-11-25T15:40:41.868805+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:41:01.236889+08:00"
+      "checkedAt": "2026-11-25T15:40:54.500838+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:41:06.141528+08:00"
+      "checkedAt": "2026-11-25T15:40:59.344785+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:41:11.121629+08:00"
+      "checkedAt": "2026-11-25T15:41:04.395487+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-25T12:41:17.657086+08:00"
+      "checkedAt": "2026-11-25T15:41:11.714759+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:41:20.768173+08:00"
+      "checkedAt": "2026-11-25T15:41:14.903508+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:41:31.591942+08:00"
+      "checkedAt": "2026-11-25T15:41:25.897311+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-25T12:41:48.368861+08:00"
+      "checkedAt": "2026-11-25T15:41:42.892413+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:42:09.960942+08:00"
+      "checkedAt": "2026-11-25T15:42:03.915175+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
-      "itemsFound": 3,
-      "checkedAt": "2026-11-25T12:42:33.342818+08:00"
+      "itemsFound": 2,
+      "checkedAt": "2026-11-25T15:42:25.858921+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:42:48.948642+08:00"
+      "checkedAt": "2026-11-25T15:42:39.978989+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:43:02.859591+08:00"
+      "checkedAt": "2026-11-25T15:42:53.355177+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-25T12:43:23.591130+08:00"
+      "checkedAt": "2026-11-25T15:43:14.355551+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:43:46.923683+08:00"
+      "checkedAt": "2026-11-25T15:43:37.131324+08:00"
     },
     {
       "source": "Weibo @狐厂大拷问",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-25T12:44:02.565283+08:00"
+      "checkedAt": "2026-11-25T15:43:53.176296+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
-      "itemsFound": 2,
-      "checkedAt": "2026-11-25T12:44:17.369288+08:00"
+      "itemsFound": 1,
+      "checkedAt": "2026-11-25T15:44:07.406003+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
-      "itemsFound": 2,
-      "checkedAt": "2026-11-25T12:44:41.867681+08:00"
+      "itemsFound": 0,
+      "checkedAt": "2026-11-25T15:44:30.991535+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-25T12:44:59.143541+08:00"
+      "checkedAt": "2026-11-25T15:44:51.278058+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -276,6 +276,50 @@
   },
   "posts": [
     {
+      "id": "d356dc3ad7c6fcf4e227",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊工作室",
+      "title": "星辰大海，永不止步，祝航天员平安凯旋！ #一次次圆满成功是中国航天的底气# #为中国航天点赞# // @侯明昊 :每一次飞天都是新征程，为中国航天点赞！ #一次次圆满成功是中国航天的底气# #为中国航天点赞#",
+      "excerpt": "星辰大海，永不止步，祝航天员平安凯旋！ #一次次圆满成功是中国航天的底气# #为中国航天点赞# // @侯明昊 :每一次飞天都是新征程，为中国航天点赞！ #一次次圆满成功是中国航天的底气# #为中国航天点赞#",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Official",
+      "date": "2026-11-25T13:12:03+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369128804419149",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "星辰大海，永不止步，祝航天员平安凯旋！ #一次次圆满成功是中国航天的底气# #为中国航天点赞# // @侯明昊 :每一次飞天都是新征程，为中国航天点赞！ #一次次圆满成功是中国航天的底气# #为中国航天点赞#",
+      "excerptOriginal": "星辰大海，永不止步，祝航天员平安凯旋！ #一次次圆满成功是中国航天的底气# #为中国航天点赞# // @侯明昊 :每一次飞天都是新征程，为中国航天点赞！ #一次次圆满成功是中国航天的底气# #为中国航天点赞#",
+      "titleEnglish": "The stars and the vast ocean, never ceasing. Wishing the astronauts a safe and triumphant return! The repeated successes are the confidence of China's space program. Let's applaud China's space program! // @Hou Minghao: Every space mission is a new journey. Let's applaud China's space program! Repeated successes are the confidence of China's space program. Let's applaud China's space program!",
+      "excerptEnglish": "The stars and the vast ocean, never ceasing. Wishing the astronauts a safe and triumphant return! The repeated successes are the confidence of China's space program. Let's applaud China's space program! // @Hou Minghao: Every space mission is a new journey. Let's applaud China's space program! Repeated successes are the confidence of China's space program. Let's applaud China's space program!"
+    },
+    {
+      "id": "932501ce5b8bfe5fb8b8",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊",
+      "title": "每一次飞天都是新征程，为中国航天点赞！ #一次次圆满成功是中国航天的底气# #为中国航天点赞#",
+      "excerpt": "每一次飞天都是新征程，为中国航天点赞！ #一次次圆满成功是中国航天的底气# #为中国航天点赞#",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Official",
+      "date": "2026-11-25T13:11:12+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369128594440445",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "每一次飞天都是新征程，为中国航天点赞！ #一次次圆满成功是中国航天的底气# #为中国航天点赞#",
+      "excerptOriginal": "每一次飞天都是新征程，为中国航天点赞！ #一次次圆满成功是中国航天的底气# #为中国航天点赞#",
+      "titleEnglish": "Every space mission is a new journey. Kudos to China's space program! The repeated successes are the confidence of China's space program. Let's applaud China's space program!",
+      "excerptEnglish": "Every space mission is a new journey. Kudos to China's space program! The repeated successes are the confidence of China's space program. Let's applaud China's space program!"
+    },
+    {
       "id": "9f776beb3f6e9018b062",
       "platform": "Weibo",
       "source": "Weibo @腾讯娱乐",
@@ -297,7 +341,9 @@
       "verified": true,
       "collectionMethod": "Weibo API",
       "titleOriginal": "#侯明昊演唱会北京站收官倒计时# #侯明昊属于我们的巡回演唱会# 倒计时一天！🔥腾讯娱乐 #超级LIVE计划# 十一月舞台心动派进行中！ @侯明昊「属于我们的…」巡回演唱会本周即将迎来收官 ，舞台魅力持续升级！💗扫描海报二维码，即可为侯明…",
-      "excerptOriginal": "#侯明昊演唱会北京站收官倒计时# #侯明昊属于我们的巡回演唱会# 倒计时一天！🔥腾讯娱乐 #超级LIVE计划# 十一月舞台心动派进行中！ @侯明昊「属于我们的…」巡回演唱会本周即将迎来收官 ，舞台魅力持续升级！💗扫描海报二维码，即可为侯明昊点亮心动值❤️ 每日每个账号拥有20次点亮机会。11月26日心动值排名前三的舞台将获得【腾讯娱乐资源推荐】 🎬内容共创通道现已开启！欢迎将侯明昊的舞台高光视频投稿至指定邮箱，优质作品将有机会获得腾讯娱乐资源推荐～不方便扫码的小伙伴，可下载腾讯新闻app，参考图三步骤搜索直达页面~（点击下方图片了解详情） @侯明昊的书局小喇叭"
+      "excerptOriginal": "#侯明昊演唱会北京站收官倒计时# #侯明昊属于我们的巡回演唱会# 倒计时一天！🔥腾讯娱乐 #超级LIVE计划# 十一月舞台心动派进行中！ @侯明昊「属于我们的…」巡回演唱会本周即将迎来收官 ，舞台魅力持续升级！💗扫描海报二维码，即可为侯明昊点亮心动值❤️ 每日每个账号拥有20次点亮机会。11月26日心动值排名前三的舞台将获得【腾讯娱乐资源推荐】 🎬内容共创通道现已开启！欢迎将侯明昊的舞台高光视频投稿至指定邮箱，优质作品将有机会获得腾讯娱乐资源推荐～不方便扫码的小伙伴，可下载腾讯新闻app，参考图三步骤搜索直达页面~（点击下方图片了解详情） @侯明昊的书局小喇叭",
+      "titleEnglish": "Countdown to the final show of Hou Minghao's concert tour in Beijing. One day left until the finale of Hou Minghao's \"Belongs to Us\" concert tour! 🔥 Tencent Entertainment Super LIVE Program November Stage Heartthrob Party is underway! @Hou Minghao's \"Belongs to Us...\" concert tour is coming to a close this week, and the stage charisma continues to escalate! 💗 Scan the QR code on the poster to support Hou Ming...",
+      "excerptEnglish": "Countdown to the finale of Hou Minghao's concert in Beijing. One day left until the finale of Hou Minghao's \"Belongs to Us\" tour! 🔥 Tencent Entertainment Super LIVE Program November Stage Heartbeat Party is underway! @Hou Minghao's \"Belongs to Us...\" concert tour is set to conclude this week, with the stage charisma continuing to escalate! 💗 Scan the QR code on the poster to increase Hou Minghao's Heartbeat Score❤️ Each account has 20 opportunities to increase the score every day. On November 26, the top three performances in terms of Heartbeat Points will receive [Tencent Entertainment Resource Recommendations]. 🎬 The Content Co-Creation Channel is now open! You are welcome to submit videos of Neo Hou's stage highlights to the designated email address. Outstanding submissions will have the opportunity to be featured in Tencent Entertainment's recommendations. If scanning the QR code is inconvenient, you can download the Tencent News app and follow the steps in Figure 3 to search and access the page directly. (Click on the image below for more details.) @Neo Hou's Bookstore Bulletin"
     },
     {
       "id": "92156b12013b42d05ce3",
@@ -321,7 +367,9 @@
       "verified": true,
       "collectionMethod": "Weibo API",
       "titleOriginal": "⚠️倒计时1天啦！腾讯娱乐 #超级LIVE计划# 十一月舞台心动派心动榜单战况激烈！目前的前五名是： 1. @我是梓渝_ ：464,785票 2. @曹骏JunCao ：446,914票 3. @黄星Eliot ：219,744票 4.…",
-      "excerptOriginal": "⚠️倒计时1天啦！腾讯娱乐 #超级LIVE计划# 十一月舞台心动派心动榜单战况激烈！目前的前五名是： 1. @我是梓渝_ ：464,785票 2. @曹骏JunCao ：446,914票 3. @黄星Eliot ：219,744票 4. @杨冰怡_Suvi ：125,025票 5. @刘宪华Henry-Lau ：111,663票 （截至 11 月 25 日 11:00） 🚀本阶段心动值增长前五名： 1. @曹骏JunCao ：+44,662票 2. @我是梓渝_ ：+38,634票 3. @黄星Eliot ：+9,042票 4. @杨冰怡_Suvi ：+8,139票 5. @林忆莲 ：+6,111票 （截至 11 月 25 日 1…"
+      "excerptOriginal": "⚠️倒计时1天啦！腾讯娱乐 #超级LIVE计划# 十一月舞台心动派心动榜单战况激烈！目前的前五名是： 1. @我是梓渝_ ：464,785票 2. @曹骏JunCao ：446,914票 3. @黄星Eliot ：219,744票 4. @杨冰怡_Suvi ：125,025票 5. @刘宪华Henry-Lau ：111,663票 （截至 11 月 25 日 11:00） 🚀本阶段心动值增长前五名： 1. @曹骏JunCao ：+44,662票 2. @我是梓渝_ ：+38,634票 3. @黄星Eliot ：+9,042票 4. @杨冰怡_Suvi ：+8,139票 5. @林忆莲 ：+6,111票 （截至 11 月 25 日 1…",
+      "titleEnglish": "⚠️ Only 1 day left! Tencent Entertainment Super LIVE Program November Stage Heartthrob Party Heartthrob Rankings – The competition is fierce! The current top five are: 1. @I_am_Ziyu_: 464,785 votes 2. @Cao Jun JunCao: 446,914 votes 3. @Huang Xing Eliot: 219,744 votes 4.…",
+      "excerptEnglish": "⚠️ Only 1 day left! Tencent Entertainment Super LIVE Program – The competition for the November Stage Heartthrob Party Heartthrob Rankings is fierce! The current top five are: 1. @I_am_ZIYU_: 464,785 votes 2. @Cao Jun JunCao: 446,914 votes 3. @Huang Xing Eliot: 219,744 votes 4. @Yang Bingyi_Suvi: 125,025 votes 5. @Henry-Lau: 111,663 votes (as of 11:00 AM on November 25) 🚀 Top 5 in terms of increase in Heartbeat Points during this phase: 1. @曹骏JunCao: +44,662 votes 2. @我是梓渝_ ：+38,634 votes 3. @Huang Xing Eliot: +9,042 votes 4. @Yang Bingyi_Suvi: +8,139 votes 5. @Sandy Lam: +6,111 votes (as of November 25, 1…"
     },
     {
       "id": "7cf56ee79ebba10a969d",
@@ -343,7 +391,9 @@
       "verified": true,
       "collectionMethod": "Weibo API",
       "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 初冬风微凉，赴约记得添衣 北京·收官站观演指南✉️请查收！ 🔔温馨提示🔔 请勿携带带字应援物品、发光应援物 怀揣暖意赴…",
-      "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 初冬风微凉，赴约记得添衣 北京·收官站观演指南✉️请查收！ 🔔温馨提示🔔 请勿携带带字应援物品、发光应援物 怀揣暖意赴约，文明观演 ⏰11月27日-11月29日 「属于我们的...」舞台见！"
+      "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 初冬风微凉，赴约记得添衣 北京·收官站观演指南✉️请查收！ 🔔温馨提示🔔 请勿携带带字应援物品、发光应援物 怀揣暖意赴约，文明观演 ⏰11月27日-11月29日 「属于我们的...」舞台见！",
+      "titleEnglish": "🥝 Memories of Beijing: A Tour for Our Neo Hou｜ @Neo Hou To Be Continued The early winter breeze is a little chilly. Remember to dress warmly when you come to the show. Beijing · Final Stop Concert Guide✉️ Please check! 🔔Friendly Reminder🔔 Please do not bring fan support items with text or glowing fan support items. Come with warmth in your heart…",
+      "excerptEnglish": "Hou Minghao 🥝 Hou Minghao's \"Belonging to Us\" Concert Tour Memories of Beijing｜ @Hou Minghao To Be Continued The early winter breeze is a bit chilly. Remember to dress warmly when coming to the show. Beijing · Final Stop Concert Guide✉️ Please check! 🔔Friendly Reminder🔔 Please do not bring fan support items with text or glowing fan support items. Come to the show warmly dressed and behave in a civilized manner. ⏰November 27–November 29. See you at the \"Belongs to Us...\" concert!"
     },
     {
       "id": "d56d5b083193af26c333",
@@ -363,7 +413,9 @@
       "verified": true,
       "collectionMethod": "Weibo API",
       "titleOriginal": "【投票：谁是你心中内娱男星扛剧王】 内娱男星扛剧王大盘点： @肖战 @成毅 @任嘉伦Allen @敖瑞鹏的微博 @邓为D @UNIQ-王一博 @摩登兄弟刘宇宁 @张凌赫z @王鹤棣_Dylan @侯明昊 @MIC檀健次JC-T @丁禹兮…",
-      "excerptOriginal": "【投票：谁是你心中内娱男星扛剧王】 内娱男星扛剧王大盘点： @肖战 @成毅 @任嘉伦Allen @敖瑞鹏的微博 @邓为D @UNIQ-王一博 @摩登兄弟刘宇宁 @张凌赫z @王鹤棣_Dylan @侯明昊 @MIC檀健次JC-T @丁禹兮 ……播前攒足期待，播中稳住热度，播后锁住口碑谁是你心中内娱男星扛剧王，快来投票 网页链接"
+      "excerptOriginal": "【投票：谁是你心中内娱男星扛剧王】 内娱男星扛剧王大盘点： @肖战 @成毅 @任嘉伦Allen @敖瑞鹏的微博 @邓为D @UNIQ-王一博 @摩登兄弟刘宇宁 @张凌赫z @王鹤棣_Dylan @侯明昊 @MIC檀健次JC-T @丁禹兮 ……播前攒足期待，播中稳住热度，播后锁住口碑谁是你心中内娱男星扛剧王，快来投票 网页链接",
+      "titleEnglish": "【Poll: Who do you think is the leading man in Chinese entertainment?】 A roundup of the leading men in Chinese entertainment: @Xiao Zhan @Cheng Yi @Ren Jialun Allen @Ao Ruipeng's Weibo @Deng Wei D @UNIQ-Wang Yibo @Modern Brothers Liu Yuning @Zhang Linghe z @Wang Hedi_Dylan @Hou Minghao @MIC Tan Jianci JC-T @Ding Yuxi…",
+      "excerptEnglish": "[Voting: Who is the leading male actor in Chinese entertainment in your opinion?] A roundup of the leading male actors in Chinese entertainment: @Xiao Zhan @Cheng Yi @Ren Jialun Allen @Ao Ruipeng's Weibo @Deng Wei D @UNIQ-Wang Yibo @Modern Brothers Liu Yuning @Zhang Linghe z @Wang Hedi_Dylan @Hou Minghao @MIC Tan Jianci JC-T @Ding Yuxi... Building up anticipation before the broadcast, maintaining popularity during the broadcast, and securing a good reputation after the broadcast. Who is the leading male actor in Chinese entertainment in your opinion? Come and vote! Web link"
     },
     {
       "id": "caeb31cb7991fa81f02d",
@@ -383,7 +435,9 @@
       "verified": true,
       "collectionMethod": "Weibo API",
       "titleOriginal": "【投票：谁是你心中内娱男星扛剧王】 内娱男星扛剧王大盘点： @肖战 @成毅 @任嘉伦Allen @敖瑞鹏的微博 @邓为D @UNIQ-王一博 @摩登兄弟刘宇宁 @张凌赫z @王鹤棣_Dylan @侯明昊 @MIC檀健次JC-T @丁禹兮…",
-      "excerptOriginal": "【投票：谁是你心中内娱男星扛剧王】 内娱男星扛剧王大盘点： @肖战 @成毅 @任嘉伦Allen @敖瑞鹏的微博 @邓为D @UNIQ-王一博 @摩登兄弟刘宇宁 @张凌赫z @王鹤棣_Dylan @侯明昊 @MIC檀健次JC-T @丁禹兮 ……播前攒足期待，播中稳住热度，播后锁住口碑谁是你心中内娱男星扛剧王，快来投票 网页链接"
+      "excerptOriginal": "【投票：谁是你心中内娱男星扛剧王】 内娱男星扛剧王大盘点： @肖战 @成毅 @任嘉伦Allen @敖瑞鹏的微博 @邓为D @UNIQ-王一博 @摩登兄弟刘宇宁 @张凌赫z @王鹤棣_Dylan @侯明昊 @MIC檀健次JC-T @丁禹兮 ……播前攒足期待，播中稳住热度，播后锁住口碑谁是你心中内娱男星扛剧王，快来投票 网页链接",
+      "titleEnglish": "[Poll: Who is your favorite leading man in Chinese entertainment?] A roundup of leading men in Chinese entertainment: @Xiao Zhan @Cheng Yi @Ren Jialun Allen @Ao Ruipeng's Weibo @Deng Wei D @UNIQ-Wang Yibo @Modern Brothers Liu Yuning @Zhang Linghe z @Wang Hedi_Dylan @Hou Minghao @MIC Tan Jianci JC-T @Ding Yuxi...",
+      "excerptEnglish": "[Poll: Who is your favorite leading man in Chinese entertainment?] A roundup of leading men in Chinese entertainment: @Xiao Zhan @Cheng Yi @Ren Jialun Allen @Ao Ruipeng's Weibo @Deng Wei D @UNIQ-Wang Yibo @Modern Brothers Liu Yuning @Zhang Linghe z @Wang Hedi_Dylan @Hou Minghao @MIC Tan Jianci JC-T @Ding Yuxi... Building anticipation before the broadcast, maintaining popularity during the broadcast, and securing a good reputation after the broadcast. Who is your favorite leading man in Chinese entertainment? Come and vote! Web link"
     },
     {
       "id": "22f5a62a5d7e90924a82",
@@ -4677,9 +4731,6 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a1544cfe7b7ab0c33487c4dc.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/cbdfba873bcdd27d16456637.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/e590913837f87d670f5fa509.jpg",
-        "https://wx1.sinaimg.cn/mw2000/008sNjIugy1ij49lk6i9fj30xc18g1bh.jpg",
-        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49lkuqpjj30xc18g1d4.jpg",
-        "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49llgxybj30xc18gngc.jpg",
         "https://wx2.sinaimg.cn/mw2000/008sNjIugy1ij49lm3ax3j30xc18gttb.jpg"
       ],
       "videos": [],
