@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T21:39:14.540078+08:00",
+  "updatedAt": "2026-11-25T22:56:23.299940+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -148,8 +148,8 @@
       "autoDiscovered": true,
       "verificationDescription": "爱奇艺官方微博",
       "firstSeen": "2026-11-18T12:49:23.961400+08:00",
-      "lastSeen": "2026-11-21T17:00:00+08:00",
-      "lastMentionPostId": "5367736617406010",
+      "lastSeen": "2026-11-25T22:00:00+08:00",
+      "lastMentionPostId": "5369261666343776",
       "discoveredBy": "侯明昊尖叫之夜"
     },
     {
