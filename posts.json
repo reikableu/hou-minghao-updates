@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-26T00:45:46+08:00",
+  "lastUpdated": "2026-11-26T03:47:16+08:00",
   "status": "Completed: 39 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 0,
-    "postsTranslatedThisRun": 0,
+    "translationsAdded": 4,
+    "postsTranslatedThisRun": 2,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 0
+      "MyMemory": 4
     }
   },
   "sourceStatus": [
@@ -15,235 +15,235 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-26T00:39:36.543301+08:00"
+      "checkedAt": "2026-11-26T03:40:39.324127+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-26T00:39:41.441591+08:00"
+      "checkedAt": "2026-11-26T03:40:44.057895+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:39:44.615207+08:00"
+      "checkedAt": "2026-11-26T03:40:47.159971+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:39:47.532787+08:00"
+      "checkedAt": "2026-11-26T03:40:50.127463+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:39:49.887265+08:00"
+      "checkedAt": "2026-11-26T03:40:52.444349+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:39:52.218173+08:00"
+      "checkedAt": "2026-11-26T03:40:54.775711+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:39:54.564080+08:00"
+      "checkedAt": "2026-11-26T03:40:57.105900+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:39:56.879499+08:00"
+      "checkedAt": "2026-11-26T03:40:59.462254+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:39:59.827291+08:00"
+      "checkedAt": "2026-11-26T03:41:02.394454+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:02.205125+08:00"
+      "checkedAt": "2026-11-26T03:41:04.759657+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:07.849014+08:00"
+      "checkedAt": "2026-11-26T03:41:10.326355+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:10.191106+08:00"
+      "checkedAt": "2026-11-26T03:41:12.680920+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:13.124766+08:00"
+      "checkedAt": "2026-11-26T03:41:15.594894+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:16.071288+08:00"
+      "checkedAt": "2026-11-26T03:41:18.503402+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:19.221619+08:00"
+      "checkedAt": "2026-11-26T03:41:21.551041+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:21.574573+08:00"
+      "checkedAt": "2026-11-26T03:41:23.886451+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:23.893810+08:00"
+      "checkedAt": "2026-11-26T03:41:26.204659+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:26.920832+08:00"
+      "checkedAt": "2026-11-26T03:41:29.134522+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:29.338523+08:00"
+      "checkedAt": "2026-11-26T03:41:31.479962+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:41.652210+08:00"
+      "checkedAt": "2026-11-26T03:41:43.558402+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:46.471844+08:00"
+      "checkedAt": "2026-11-26T03:41:48.345899+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:51.251863+08:00"
+      "checkedAt": "2026-11-26T03:41:53.078556+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-26T00:40:56.149932+08:00"
+      "checkedAt": "2026-11-26T03:41:57.829948+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:40:59.195658+08:00"
+      "checkedAt": "2026-11-26T03:42:00.861781+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:41:10.693292+08:00"
+      "checkedAt": "2026-11-26T03:42:12.117411+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-26T00:41:27.343256+08:00"
+      "checkedAt": "2026-11-26T03:42:28.858458+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-26T00:41:48.171153+08:00"
+      "checkedAt": "2026-11-26T03:42:49.379269+08:00"
     },
     {
       "source": "Weibo @北京晚报时尚",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T00:42:03.825378+08:00"
+      "checkedAt": "2026-11-26T03:43:04.980139+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:42:25.317520+08:00"
+      "checkedAt": "2026-11-26T03:43:26.284652+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-26T00:42:46.059549+08:00"
+      "checkedAt": "2026-11-26T03:43:46.932467+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:43:00.091341+08:00"
+      "checkedAt": "2026-11-26T03:44:01.745955+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:43:13.291349+08:00"
+      "checkedAt": "2026-11-26T03:44:14.900291+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-26T00:43:33.944724+08:00"
+      "checkedAt": "2026-11-26T03:44:35.526049+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T00:43:56.246939+08:00"
+      "checkedAt": "2026-11-26T03:44:57.765243+08:00"
     },
     {
       "source": "Weibo @狐厂大拷问",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T00:44:10.266531+08:00"
+      "checkedAt": "2026-11-26T03:45:11.760494+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T00:44:24.336078+08:00"
+      "checkedAt": "2026-11-26T03:45:25.783402+08:00"
     },
     {
       "source": "Weibo @风度mensuno",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T00:44:45.893487+08:00"
+      "checkedAt": "2026-11-26T03:45:47.231402+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T00:45:09.032287+08:00"
+      "checkedAt": "2026-11-26T03:46:10.243720+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 27,
-      "checkedAt": "2026-11-26T00:45:25.539365+08:00"
+      "checkedAt": "2026-11-26T03:46:27.590239+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -296,6 +296,50 @@
     "9150715932": "GQofficial"
   },
   "posts": [
+    {
+      "id": "6dee79f8f1cdd8966052",
+      "platform": "Weibo",
+      "source": "Weibo @平顶山身边事",
+      "title": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔…",
+      "excerpt": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @于适Yosh @宋威龙99 @小鬼-王琳凯 @蒋奇明微博号 檀健次超话 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-26T01:05:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369308221801510",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔…",
+      "excerptOriginal": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @于适Yosh @宋威龙99 @小鬼-王琳凯 @蒋奇明微博号 檀健次超话 网页链接",
+      "titleEnglish": "[Poll: Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight?] There's a kind of handsomeness called \"cool.\" There's no need to be deliberately showy; style has its own narrative. Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight? @Wang Yibo·YIBO @MIC Tan Jianci JC-T @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang…",
+      "excerptEnglish": "[Poll: Who is the ultimate cool guy in your heart, the one who makes you fall for him at first sight?] There's a kind of handsomeness called \"cool.\" There's no need to be deliberately showy; style has its own narrative. Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight? @Wang Yibo·YIBO @MIC Tan Jianci JC-T @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang @Yu Shushi Yosh @Song Weilong99 @Xiao Gui-Wang Linkai @Jiang Qiming Weibo Account Tan Jianci Super Topic Web Link"
+    },
+    {
+      "id": "be196a6b9255767d1261",
+      "platform": "Weibo",
+      "source": "Weibo @麦穗视频",
+      "title": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔…",
+      "excerpt": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @于适Yosh @宋威龙99 @小鬼-王琳凯 @蒋奇明微博号 檀健次超话 网页链接",
+      "images": [],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-26T01:02:00+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369307469186213",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔…",
+      "excerptOriginal": "【投票：谁是你心中的酷guy天花板，让你一眼心动？】 有一种帅，叫酷。不必刻意张扬，风格自有叙事。谁是你心中的酷guy天花板，让你一眼心动？ @王一博·YIBO @MIC檀健次JC-T @侯明昊 @时代少年团-刘耀文 @时代少年团-严浩翔 @于适Yosh @宋威龙99 @小鬼-王琳凯 @蒋奇明微博号 檀健次超话 网页链接",
+      "titleEnglish": "[Poll: Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight?] There's a kind of handsomeness called \"cool.\" There's no need to be deliberately showy; style has its own narrative. Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight? @Wang Yibo·YIBO @MIC Tan Jianci JC-T @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang…",
+      "excerptEnglish": "[Poll: Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight?] There's a kind of handsomeness called \"cool.\" There's no need to be deliberately showy; style speaks for itself. Who is the ultimate cool guy in your heart, the one who makes your heart skip a beat at first sight? @Wang Yibo·YIBO @MIC Tan Jianci JC-T @Hou Minghao @TNT-Liu Yaowen @TNT-Yan Haoxiang @Yu Shi Yosh @Song Weilong99 @Xiao Gui-Wang Linkai @Jiang Qiming Weibo Account Tan Jianci Super Topic Web Link"
+    },
     {
       "id": "3345a88ec462518802da",
       "platform": "X",
@@ -10884,66 +10928,6 @@
       "excerptOriginal": "感谢 @ELLEMEN 让这次相遇有了形状。",
       "titleEnglish": "Thanks to @ELLEMEN for making this encounter possible.",
       "excerptEnglish": "Thanks to @ELLEMEN for making this encounter possible."
-    },
-    {
-      "id": "2dcbb576de8714dc26c4",
-      "platform": "Weibo",
-      "source": "Weibo @侯明昊",
-      "title": "下次 北京见🥝 #微博演出季# 侯明昊的微博视频",
-      "excerpt": "下次 北京见🥝 #微博演出季# 侯明昊的微博视频",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/496e9c121a5f2101d7da6009.jpg",
-        "https://wx4.sinaimg.cn/orj480/6d2b400bly1iin3j16p0jj20u0141alt.jpg"
-      ],
-      "videos": [
-        {
-          "id": "bdbe8aded29dfbd4a339dd77",
-          "kind": "video",
-          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/496e9c121a5f2101d7da6009.jpg",
-          "duration": 28.746,
-          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/bdbe8aded29dfbd4a339dd77.mp4"
-        }
-      ],
-      "category": "Video",
-      "sourceCategory": "Official",
-      "date": "2026-11-01T23:12:48+08:00",
-      "dateExact": true,
-      "dateSource": "detail",
-      "url": "https://m.weibo.cn/status/5360582676972831",
-      "official": true,
-      "verified": false,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "下次 北京见🥝 #微博演出季# 侯明昊的微博视频",
-      "excerptOriginal": "下次 北京见🥝 #微博演出季# 侯明昊的微博视频",
-      "titleEnglish": "See you next time in Beijing🥝 Weibo Performance Season Hou Minghao's Weibo Video",
-      "excerptEnglish": "See you next time in Beijing🥝 Weibo Performance Season Hou Minghao's Weibo Video"
-    },
-    {
-      "id": "10252de17d31204b23e8",
-      "platform": "Weibo",
-      "source": "Weibo @侯明昊工作室",
-      "title": "晚风携霜，时序向清冬，敛藏满心期待。 @侯明昊 十一月行程送达",
-      "excerpt": "侯明昊 晚风携霜，时序向清冬，敛藏满心期待。 @侯明昊 十一月行程送达",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6b19629421130c51d549073d.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b82250e9f79d53d8d4c5c350.jpg",
-        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1iilat2wfgmj32s01k91l2.jpg",
-        "https://wx2.sinaimg.cn/mw2000/006i3hfEly1iilat85jhxj35jx3pcb2f.jpg"
-      ],
-      "videos": [],
-      "category": "Official",
-      "sourceCategory": "Official",
-      "date": "2026-10-31T10:00:10+08:00",
-      "dateExact": true,
-      "dateSource": "detail",
-      "url": "https://m.weibo.cn/status/5360020816397554",
-      "official": true,
-      "verified": false,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "晚风携霜，时序向清冬，敛藏满心期待。 @侯明昊 十一月行程送达",
-      "excerptOriginal": "侯明昊 晚风携霜，时序向清冬，敛藏满心期待。 @侯明昊 十一月行程送达",
-      "titleEnglish": "The evening breeze carries frost, and the season turns towards clear winter, concealing a heart full of anticipation. @Hou Minghao November Schedule Delivered",
-      "excerptEnglish": "Hou Minghao: The evening breeze carries frost, and the season turns towards clear winter, concealing a heart full of anticipation. @Hou Minghao November Schedule Delivered"
     }
   ]
 }
