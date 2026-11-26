@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-11-26T18:47:59+08:00",
-  "status": "Completed: 39 sources successful, 0 failed",
+  "lastUpdated": "2026-11-26T21:47:35+08:00",
+  "status": "Completed: 40 sources successful, 0 failed",
   "translationStatus": {
-    "translationsAdded": 2,
-    "postsTranslatedThisRun": 1,
+    "translationsAdded": 6,
+    "postsTranslatedThisRun": 3,
     "rateLimited": false,
     "providersUsed": {
       "Google": 0,
-      "MyMemory": 2
+      "MyMemory": 6
     }
   },
   "sourceStatus": [
@@ -15,235 +15,241 @@
       "source": "Weibo @侯明昊工作室",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-26T18:41:12.056115+08:00"
+      "checkedAt": "2026-11-26T21:39:54.694805+08:00"
     },
     {
       "source": "Weibo @侯明昊",
       "status": "Success",
       "itemsFound": 11,
-      "checkedAt": "2026-11-26T18:41:15.957360+08:00"
+      "checkedAt": "2026-11-26T21:39:58.748738+08:00"
     },
     {
       "source": "Weibo @Monkey是猪不是侯",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:19.249144+08:00"
+      "checkedAt": "2026-11-26T21:40:01.889492+08:00"
     },
     {
       "source": "Weibo @旭东食品",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:22.153699+08:00"
+      "checkedAt": "2026-11-26T21:40:04.820110+08:00"
     },
     {
       "source": "Weibo @海信电视",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:24.502955+08:00"
+      "checkedAt": "2026-11-26T21:40:07.152418+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:26.825982+08:00"
+      "checkedAt": "2026-11-26T21:40:09.475983+08:00"
     },
     {
       "source": "Weibo @美肤宝MEIFUBAO",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:29.174775+08:00"
+      "checkedAt": "2026-11-26T21:40:11.807628+08:00"
     },
     {
       "source": "Weibo @DearIrean独特艾琳",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:31.508275+08:00"
+      "checkedAt": "2026-11-26T21:40:14.125096+08:00"
     },
     {
       "source": "Weibo @好流Official",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:34.428927+08:00"
+      "checkedAt": "2026-11-26T21:40:17.037436+08:00"
     },
     {
       "source": "Weibo @雷军",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:36.821240+08:00"
+      "checkedAt": "2026-11-26T21:40:19.385217+08:00"
     },
     {
       "source": "Weibo @珀芙研",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:41.529075+08:00"
+      "checkedAt": "2026-11-26T21:40:24.265944+08:00"
     },
     {
       "source": "Weibo @棉致MIANZHI",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:43.870975+08:00"
+      "checkedAt": "2026-11-26T21:40:26.642687+08:00"
     },
     {
       "source": "Weibo @千层雪Viennetta",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:46.775718+08:00"
+      "checkedAt": "2026-11-26T21:40:29.564772+08:00"
     },
     {
       "source": "Weibo @李肥双圆",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:49.728988+08:00"
+      "checkedAt": "2026-11-26T21:40:32.466835+08:00"
     },
     {
       "source": "Weibo @fino芬浓",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:52.789509+08:00"
+      "checkedAt": "2026-11-26T21:40:35.506227+08:00"
     },
     {
       "source": "Weibo @珍宝珠ChupaChups",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:55.112826+08:00"
+      "checkedAt": "2026-11-26T21:40:37.859296+08:00"
     },
     {
       "source": "Weibo @CASETiFY",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:41:57.420951+08:00"
+      "checkedAt": "2026-11-26T21:40:40.217698+08:00"
     },
     {
       "source": "Weibo @PLUG-INPET",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:42:00.346888+08:00"
+      "checkedAt": "2026-11-26T21:40:43.133141+08:00"
     },
     {
       "source": "Weibo @W中文版",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:42:02.699768+08:00"
+      "checkedAt": "2026-11-26T21:40:45.516735+08:00"
     },
     {
       "source": "Weibo @微博之夜",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:42:15.032605+08:00"
+      "checkedAt": "2026-11-26T21:40:57.636951+08:00"
     },
     {
       "source": "Weibo @微博音乐盛典",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:42:19.802755+08:00"
+      "checkedAt": "2026-11-26T21:41:02.412996+08:00"
     },
     {
       "source": "Weibo @新华网",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:42:24.724470+08:00"
+      "checkedAt": "2026-11-26T21:41:07.247004+08:00"
     },
     {
       "source": "Weibo @和颂传媒",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-26T18:42:33.694123+08:00"
+      "checkedAt": "2026-11-26T21:41:14.666696+08:00"
     },
     {
       "source": "Weibo @Prada普拉达",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:42:36.757619+08:00"
+      "checkedAt": "2026-11-26T21:41:17.746461+08:00"
     },
     {
       "source": "Weibo @VOGUE服饰与美容",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:42:48.947681+08:00"
+      "checkedAt": "2026-11-26T21:41:29.967023+08:00"
+    },
+    {
+      "source": "Weibo @Z视介",
+      "status": "Success",
+      "itemsFound": 1,
+      "checkedAt": "2026-11-26T21:41:49.040201+08:00"
     },
     {
       "source": "Weibo @fino芬浓官方微博",
       "status": "Success",
       "itemsFound": 8,
-      "checkedAt": "2026-11-26T18:43:09.460261+08:00"
+      "checkedAt": "2026-11-26T21:42:04.688739+08:00"
     },
     {
       "source": "Weibo @olayks立时",
       "status": "Success",
       "itemsFound": 3,
-      "checkedAt": "2026-11-26T18:43:30.049299+08:00"
+      "checkedAt": "2026-11-26T21:42:25.377946+08:00"
     },
     {
       "source": "Weibo @北京晚报时尚",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T18:43:45.665312+08:00"
+      "checkedAt": "2026-11-26T21:42:41.140789+08:00"
     },
     {
       "source": "Weibo @大象新闻",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:44:07.076291+08:00"
+      "checkedAt": "2026-11-26T21:43:02.534782+08:00"
     },
     {
       "source": "Weibo @平顶山身边事",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:44:27.795773+08:00"
+      "checkedAt": "2026-11-26T21:43:22.617032+08:00"
     },
     {
       "source": "Weibo @戏骨",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:44:42.637273+08:00"
+      "checkedAt": "2026-11-26T21:43:36.621162+08:00"
     },
     {
       "source": "Weibo @杭州日报",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:44:55.803411+08:00"
+      "checkedAt": "2026-11-26T21:43:49.822937+08:00"
     },
     {
       "source": "Weibo @润百颜",
       "status": "Success",
       "itemsFound": 2,
-      "checkedAt": "2026-11-26T18:45:14.773341+08:00"
+      "checkedAt": "2026-11-26T21:44:08.858566+08:00"
     },
     {
       "source": "Weibo @爱奇艺",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:45:37.105273+08:00"
+      "checkedAt": "2026-11-26T21:44:31.240165+08:00"
     },
     {
       "source": "Weibo @狐厂大拷问",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:45:52.042487+08:00"
+      "checkedAt": "2026-11-26T21:44:46.075094+08:00"
     },
     {
       "source": "Weibo @腾讯娱乐",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:46:06.850942+08:00"
+      "checkedAt": "2026-11-26T21:45:00.170137+08:00"
     },
     {
       "source": "Weibo @风度mensuno",
       "status": "Success",
       "itemsFound": 1,
-      "checkedAt": "2026-11-26T18:46:27.606076+08:00"
+      "checkedAt": "2026-11-26T21:45:20.901020+08:00"
     },
     {
       "source": "Weibo @麦穗视频",
       "status": "Success",
       "itemsFound": 0,
-      "checkedAt": "2026-11-26T18:46:48.899712+08:00"
+      "checkedAt": "2026-11-26T21:45:42.335949+08:00"
     },
     {
       "source": "Hou Minghao X List",
       "status": "Success",
       "itemsFound": 28,
-      "checkedAt": "2026-11-26T18:47:07.114718+08:00"
+      "checkedAt": "2026-11-26T21:45:59.078670+08:00"
     }
   ],
   "weiboUsernameCache": {
@@ -293,9 +299,166 @@
     "7010368671": "和颂传媒",
     "7308140398": "大象新闻",
     "7754553930": "fino芬浓官方微博",
-    "9150715932": "GQofficial"
+    "9150715932": "GQofficial",
+    "5594216204": "Z视介"
   },
   "posts": [
+    {
+      "id": "baa16bd4e93f7e5ea6f4",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Flower Bouquet sent by Brands, Friends, and Colleagues to support Hou Minghao's 'Belongs To Us' Concert Tour Final Stop: Beijing [Part 1] #HouMinghao…",
+      "excerpt": "Flower Bouquet sent by Brands, Friends, and Colleagues to support Hou Minghao's 'Belongs To Us' Concert Tour Final Stop: Beijing [Part 1] #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ddad80530fa2cf8dae201a41.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4017df7cae8b6d4b0936717c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/91ac68f07db6955245ec6e5c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c6763d31ba717ae1f0124769.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/81c0a293ebb4ccbe41d9aed7.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6d11daba8cb20b824e00da93.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/db98932482afc65e77e7bdee.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/13b190022286bf86e02e4fca.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ae2db9bab38858b337e05343.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-26T21:31:11+08:00",
+      "url": "https://x.com/HMH_Record/status/2125945464759726174",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "70ad5377a4cb5e59ca6d",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@PopMinghao",
+      "title": "So… he was supposed to wear this cute little ribbon hair clip , but did our cat reject IT??? #侯明昊 #HouMinghaoBelongToUs2026 #HouMinghao",
+      "excerpt": "So… he was supposed to wear this cute little ribbon hair clip , but did our cat reject IT??? #侯明昊 #HouMinghaoBelongToUs2026 #HouMinghao",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3cabf8b890704049f3dfb947.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-26T20:49:14+08:00",
+      "url": "https://x.com/PopMinghao/status/2125934906564026628",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "49f0beca4ed660abefb9",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "Hou Minghao 'Belongs To Us' Final Stop: Beijing | Countdown: 01 Day 261126 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelon…",
+      "excerpt": "Hou Minghao 'Belongs To Us' Final Stop: Beijing | Countdown: 01 Day 261126 | \"Hou Minghao Studio\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/7cfbba85ed102640393a8946.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-26T19:32:49+08:00",
+      "url": "https://x.com/HMH_Record/status/2125915675130765377",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "3f310c9200f3d9fec1f1",
+      "platform": "X",
+      "source": "Hou Minghao X Updates",
+      "author": "@HMH_Record",
+      "title": "\"Some of our archives See you tomorrow\" 261126 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
+      "excerpt": "\"Some of our archives See you tomorrow\" 261126 | \"Hou Minghao\" Weibo Update #HouMinghao #侯明昊 #후명호 #HouMinghaoBelongsToUs2026",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8518fee0073967f985fb0f91.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/753207b329ef5897ed3bda85.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3fdc28a3a0ac8beba302806f.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/de959fc3d7a7dd4abcf0fae1.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ffe8481b7c8bfa5b6470b671.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/34019cdf78c7b21f2dff98fd.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/141347358644824734905690.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ab6577acb8fc720ba3e5464f.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/4e78192051ea0a3c60b65241.jpg"
+      ],
+      "category": "X Update",
+      "date": "2026-11-26T19:29:43+08:00",
+      "url": "https://x.com/HMH_Record/status/2125914897603350766",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Automatic",
+      "videos": [],
+      "dateExact": false
+    },
+    {
+      "id": "b814eca474509ebffcec",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊工作室",
+      "title": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 声浪回响，万里归途 WE WILL BE ENDLESS... 倒计时1天，舞台见！ 侯明昊工作室的微博视频",
+      "excerpt": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 声浪回响，万里归途 WE WILL BE ENDLESS... 倒计时1天，舞台见！ 侯明昊工作室的微博视频",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/49d0fb754c36940c8ec7df0c.jpg"
+      ],
+      "videos": [
+        {
+          "id": "b8b5a35dd258cd13de06df9b",
+          "kind": "video",
+          "poster": "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/49d0fb754c36940c8ec7df0c.jpg",
+          "duration": 19.922,
+          "url": "https://cdn.jsdelivr.net/gh/reikableu/hou-minghao-updates@main/media/b8b5a35dd258cd13de06df9b.mp4"
+        }
+      ],
+      "category": "Event",
+      "sourceCategory": "Official",
+      "date": "2026-11-26T19:15:18+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369582604782784",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 声浪回响，万里归途 WE WILL BE ENDLESS... 倒计时1天，舞台见！ 侯明昊工作室的微博视频",
+      "excerptOriginal": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 声浪回响，万里归途 WE WILL BE ENDLESS... 倒计时1天，舞台见！ 侯明昊工作室的微博视频",
+      "titleEnglish": "🥝 Memories of Beijing: The Tour for Our Neo Hou｜ @Neo Hou To Be Continued The sound waves echo, and we're on a journey home across thousands of miles. WE WILL BE ENDLESS... Just 1 day left until the countdown. See you on stage! Weibo video from Hou Minghao's Studio",
+      "excerptEnglish": "Hou Minghao 🥝 Hou Minghao Belongs to Us Tour Memories of Beijing｜ @Hou Minghao To Be Continued The sound waves echo, a journey of thousands of miles WE WILL BE ENDLESS... 1 day until the countdown, see you on stage! Weibo video from Hou Minghao's Studio"
+    },
+    {
+      "id": "84896fbc77f29295b244",
+      "platform": "Weibo",
+      "source": "Weibo @侯明昊",
+      "title": "一些属于我们的存档🥝明天见",
+      "excerpt": "一些属于我们的存档🥝明天见",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/15cac56e4faf40d56a6555d2.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/dbca344674754445f87dbf2c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/61f4aded668ff564f0e88ec1.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/d98df9a836ebd5f73a61faeb.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ef22469950b59472a51050df.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2bb1b6cd1278491d41d5bb7c.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/82cc652041b2f3f1df1273f6.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/21ac3c9ecfec04f788a60943.jpg",
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0040c7dbb5519dfd96c25584.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Official",
+      "date": "2026-11-26T19:05:09+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369580052550340",
+      "official": true,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "一些属于我们的存档🥝明天见",
+      "excerptOriginal": "一些属于我们的存档🥝明天见",
+      "titleEnglish": "Some of our archives🥝 See you tomorrow.",
+      "excerptEnglish": "Some of our archives🥝 See you tomorrow."
+    },
     {
       "id": "d84b0f9b634469dc98f0",
       "platform": "Weibo",
@@ -327,6 +490,30 @@
       "excerptOriginal": "桃妹速来🥝！空间今日开启✨ 到店入手猕猴桃能量套餐🍔 即可带走小猫哥限量周边🎁 评论区再揪 5 位桃妹送同款套餐🥤 满载期待，我们现场见✌️ #侯明昊# 侯明昊 #侯明昊立时全球品牌代言人#",
       "titleEnglish": "Kiwi girls, come quickly!🥝 The space opens today✨ Come to the store to get the Kiwi Energy Combo🍔 and take home limited-edition Neo merchandise🎁 We'll also select 5 lucky Kiwi Girls from the comments section to receive the same combo🥤 We're looking forward to seeing you there✌️ Neo Hou Neo Hou Neo Hou is now the global brand ambassador for LISHI",
       "excerptEnglish": "Kiwifruit lovers, come quickly!🥝 The space opens today✨ Come to the store to get the Kiwi Energy Combo🍔 and take home limited-edition Neo merchandise🎁 We'll also select 5 lucky Kiwi Girls from the comments section to receive the same combo🥤 We're looking forward to seeing you there✌️ Neo Hou Neo Hou Neo Hou is now the global brand ambassador for Lishi"
+    },
+    {
+      "id": "1eebd8cfed3b4f5496e3",
+      "platform": "Weibo",
+      "source": "Weibo @Z视介",
+      "title": "小Z来送福利啦！即日起，关注 @Z视介 ，转发并评论此条微博，12月7日，我们将抽取2位小伙伴，每人获得侯明昊天赐名场面限定live相卡一份。 *兑奖期限：开奖日当天内，过期不补，不得转让。",
+      "excerpt": "小Z来送福利啦！即日起，关注 @Z视介 ，转发并评论此条微博，12月7日，我们将抽取2位小伙伴，每人获得侯明昊天赐名场面限定live相卡一份。 *兑奖期限：开奖日当天内，过期不补，不得转让。",
+      "images": [
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5b2ef44590d8ba3808b88fe3.jpg"
+      ],
+      "videos": [],
+      "category": "Official",
+      "sourceCategory": "Verified Brand",
+      "date": "2026-11-26T16:44:56+08:00",
+      "dateExact": true,
+      "dateSource": "detail",
+      "url": "https://m.weibo.cn/status/5369544765869141",
+      "official": false,
+      "verified": true,
+      "collectionMethod": "Weibo API",
+      "titleOriginal": "小Z来送福利啦！即日起，关注 @Z视介 ，转发并评论此条微博，12月7日，我们将抽取2位小伙伴，每人获得侯明昊天赐名场面限定live相卡一份。 *兑奖期限：开奖日当天内，过期不补，不得转让。",
+      "excerptOriginal": "小Z来送福利啦！即日起，关注 @Z视介 ，转发并评论此条微博，12月7日，我们将抽取2位小伙伴，每人获得侯明昊天赐名场面限定live相卡一份。 *兑奖期限：开奖日当天内，过期不补，不得转让。",
+      "titleEnglish": "Little Z is here to give away some goodies! Starting today, follow @Z视介, retweet and comment on this Weibo post. On December 7, we will randomly select 2 lucky fans, each of whom will receive a limited-edition live photo card featuring a memorable scene from Hou Minghao's \"Tianci.\" * Prize redemption period: Within the day of the prize draw. No compensation will be provided after the deadline, and the prize is non-transferable.",
+      "excerptEnglish": "Little Z is here with some perks! Starting today, follow @Z视介, retweet and comment on this Weibo post. On December 7, we will randomly select 2 lucky winners, each of whom will receive a limited-edition live photo card featuring a memorable scene from Hou Minghao's \"Tianci.\" * Prize redemption period: Within the day of the prize draw. No compensation will be provided after the deadline, and the prize is non-transferable."
     },
     {
       "id": "ed26e8fdc7d608b79a50",
@@ -732,7 +919,10 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/2ae94355977dc8eaf27731e7.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/14155d1b3a139da56474801b.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/0ae9b8d7a395f0448c2b28a3.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/33c5b3931889f39fd3a35e06.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/33c5b3931889f39fd3a35e06.jpg",
+        "https://wx3.sinaimg.cn/mw2000/48f27788ly1ijel1wlf8fj22dx1m61kx.jpg",
+        "https://wx4.sinaimg.cn/mw2000/48f27788ly1ijel1vuvl9j24d62wse87.jpg",
+        "https://wx4.sinaimg.cn/mw2000/48f27788ly1ijel22ys22j224c2tr4qs.jpg"
       ],
       "videos": [],
       "category": "Event",
@@ -896,7 +1086,8 @@
       "title": "🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 初冬风微凉，赴约记得添衣 北京·收官站观演指南✉️请查收！ 🔔温馨提示🔔 请勿携带带字应援物品、发光应援物 怀揣暖意赴…",
       "excerpt": "侯明昊 🥝 #侯明昊属于我们的巡回演唱会# 𝗠𝗲𝗺𝗼𝗿𝗶𝗲𝘀 𝗼𝗳 𝐁𝐞𝐢𝐣𝐢𝐧𝐠｜ @侯明昊 𝙏𝙤 𝘽𝙚 𝘾𝙤𝙣𝙩𝙞𝙣𝙪𝙚𝙙 初冬风微凉，赴约记得添衣 北京·收官站观演指南✉️请查收！ 🔔温馨提示🔔 请勿携带带字应援物品、发光应援物 怀揣暖意赴约，文明观演 ⏰11月27日-11月29日 「属于我们的...」舞台见！",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a56925019351b7e22d65f33e.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a56925019351b7e22d65f33e.jpg",
+        "https://wx3.sinaimg.cn/mw2000/006i3hfEly1ije7yqyeyij30l9bkm4qq.jpg"
       ],
       "videos": [],
       "category": "Event",
@@ -969,7 +1160,11 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/19aab2442d1e3e44e2066d02.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/aac24f9a1cdd1e870b6afac1.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5d00cba33342ce4cecf0f7d7.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f9184512473e14bb69fd0864.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f9184512473e14bb69fd0864.jpg",
+        "https://pbs.twimg.com/media/HX8QeIWaQAA3I_j?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HX8Qe6La8AAuLc2?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HX8Qfcmb0AAszaU?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HX8QgDQbsAAtdur?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-25T11:45:36+08:00",
@@ -1210,7 +1405,8 @@
       "title": "\"Learn with Hou Minghao! Fluffy and natural textured side-swept hair\" 261124 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
       "excerpt": "\"Learn with Hou Minghao! Fluffy and natural textured side-swept hair\" 261124 | \"Makeup Artist Pan Yida\" Xiaohongshu Update #HouMinghao #후명호 #侯明昊",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bb131eb9c2f849c4bdf8f8e9.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bb131eb9c2f849c4bdf8f8e9.jpg",
+        "https://pbs.twimg.com/media/HX4iELtaoAAIgWu?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-24T18:23:50+08:00",
@@ -1261,7 +1457,8 @@
       "title": "TICKET SELLING ROUND 3 | Hou Minghao 'Belongs To Us' Final Stop: Beijing November 25, 2026 20:18 Damai App 261124 | \"Youling Culture (幽伶文化)\" Weibo Up…",
       "excerpt": "TICKET SELLING ROUND 3 | Hou Minghao 'Belongs To Us' Final Stop: Beijing November 25, 2026 20:18 Damai App 261124 | \"Youling Culture (幽伶文化)\" Weibo Update #HouMinghaoBelongsToUs2026 #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3547cde09845f3f8686e9d6c.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3547cde09845f3f8686e9d6c.jpg",
+        "https://pbs.twimg.com/media/HX3tosRagAA2LnA?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-24T14:34:45+08:00",
@@ -1280,7 +1477,8 @@
       "title": "VOTE!!! #HouMinghao #侯明昊 #후명호",
       "excerpt": "VOTE!!! #HouMinghao #侯明昊 #후명호",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/acf74fb3669e7d597394d391.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/acf74fb3669e7d597394d391.jpg",
+        "https://pbs.twimg.com/media/HX2uGidaoAAShEG?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-24T10:52:00+08:00",
@@ -1299,7 +1497,8 @@
       "title": "Vote for #HouMinghao’s Super Topic! Link: https:// m.weibo.cn/c/wbox?fromyea r=2026&id=c0p9sg9tw9&last_page=select_super_post&luicode=40000385&page=p…",
       "excerpt": "Vote for #HouMinghao’s Super Topic! Link: https:// m.weibo.cn/c/wbox?fromyea r=2026&id=c0p9sg9tw9&last_page=select_super_post&luicode=40000385&page=pages%2Fyearlyprecious%2Fyearlyprecious&source=wbox&s_trans=EjL6w2FTXAV26bptHVdeGg%3D%3D__s&s_channel=4&_T_WM=28868014076 …",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/acf74fb3669e7d597394d391.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/acf74fb3669e7d597394d391.jpg",
+        "https://pbs.twimg.com/media/HX2uGidaoAAShEG?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-24T09:57:09+08:00",
@@ -1345,7 +1544,10 @@
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/343cbb9ac4efa6d717d2307e.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1b7f921f31bbdac5b45775fa.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/ffdbd34a9774a97de3319fa2.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1174ed08d9f1e002ba89355c.png"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/1174ed08d9f1e002ba89355c.png",
+        "https://pbs.twimg.com/media/HX2cTBSaIAAG6No?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HX2cTZ6a8AAg6Nw?format=jpg&name=large",
+        "https://pbs.twimg.com/media/HX2cT3DawAA99pT?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-24T08:43:11+08:00",
@@ -1486,7 +1688,8 @@
       "title": "let’s take a moment to admire this kitten’s beauty… those pretty eyelashes, his tiny ears still a little red from the cold, and cheek how can one cat…",
       "excerpt": "let’s take a moment to admire this kitten’s beauty… those pretty eyelashes, his tiny ears still a little red from the cold, and cheek how can one cat be this adorable and beautiful at the same time??? #侯明昊 #HouMinghao",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5741dab34f796ca60a1a5999.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/5741dab34f796ca60a1a5999.jpg",
+        "https://pbs.twimg.com/media/HXz60DIagAAq4qn?format=jpg&name=large"
       ],
       "category": "X Update",
       "date": "2026-11-23T20:53:51+08:00",
@@ -1764,7 +1967,10 @@
       "images": [
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8eecb2c96eacd25a93eaf196.jpg",
         "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/9853cb17238c1028ed63503b.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f16d0427b286a2fa535606b0.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/f16d0427b286a2fa535606b0.jpg",
+        "https://wx4.sinaimg.cn/mw2000/be8d0f7cgy1ijc040hrb3j22bc334x6p.jpg",
+        "https://wx3.sinaimg.cn/mw2000/be8d0f7cgy1ijbz826rcoj22bc3347wh.jpg",
+        "https://wx1.sinaimg.cn/mw2000/be8d0f7cgy1ijbz81vr21j22bc3341kx.jpg"
       ],
       "videos": [],
       "category": "Event",
@@ -1861,7 +2067,8 @@
       "title": "𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “迹” 消弭边界，时序重叠，穿行在没有定数的时空褶皱里。 侯明昊工作室的微博视频",
       "excerpt": "侯明昊 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “迹” 消弭边界，时序重叠，穿行在没有定数的时空褶皱里。 侯明昊工作室的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/02cd28762c5d2859383ea62e.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/02cd28762c5d2859383ea62e.jpg",
+        "https://wx4.sinaimg.cn/orj480/006i3hfEly1ijb2b4m4oyj32yo1o01kx.jpg"
       ],
       "videos": [
         {
@@ -2010,7 +2217,8 @@
       "title": "𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “知” 万物各有频率，而此刻，所有微妙的共振都指向同一种在场。 侯明昊工作室的微博视频",
       "excerpt": "侯明昊 𝗥𝗘𝗖𝗢𝗥𝗗｜ @侯明昊 “知” 万物各有频率，而此刻，所有微妙的共振都指向同一种在场。 侯明昊工作室的微博视频",
       "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b4ad541151fc58cb4b669040.jpg"
+        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/b4ad541151fc58cb4b669040.jpg",
+        "https://wx3.sinaimg.cn/orj480/006i3hfEly1ijasvxf47vj32yo1o04qp.jpg"
       ],
       "videos": [
         {
@@ -10793,170 +11001,6 @@
       "videos": [],
       "dateExact": false,
       "sourceCategory": "Monitored Brand"
-    },
-    {
-      "id": "7318096295bc677b1d2b",
-      "platform": "Weibo",
-      "source": "Weibo @雪中飞",
-      "title": "如伞随行，共阅山海。 二十年前，灯光下的你翻开书页， 秦岭的幽暗、青铜门的冷雾、蛇沼的骤雨、沙海的风暴， 一幕幕诡谲奇观在脑海里铺展开来。 那些年，故事是纸上的远方，你是灯下的少年。✨ 二十年后，你已不再仅仅只是读者， 你开始收拾行囊，想…",
-      "excerpt": "如伞随行，共阅山海。 二十年前，灯光下的你翻开书页， 秦岭的幽暗、青铜门的冷雾、蛇沼的骤雨、沙海的风暴， 一幕幕诡谲奇观在脑海里铺展开来。 那些年，故事是纸上的远方，你是灯下的少年。✨ 二十年后，你已不再仅仅只是读者， 你开始收拾行囊，想亲眼去看一看云顶的雪，亲身去淋一场蛇沼的雨。? ... 全文",
-      "images": [],
-      "category": "Official",
-      "date": "2026-11-04T10:25:08.910893+08:00",
-      "url": "https://m.weibo.cn/status/5321607662015980",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "如伞随行，共阅山海。 二十年前，灯光下的你翻开书页， 秦岭的幽暗、青铜门的冷雾、蛇沼的骤雨、沙海的风暴， 一幕幕诡谲奇观在脑海里铺展开来。 那些年，故事是纸上的远方，你是灯下的少年。✨ 二十年后，你已不再仅仅只是读者， 你开始收拾行囊，想…",
-      "excerptOriginal": "如伞随行，共阅山海。 二十年前，灯光下的你翻开书页， 秦岭的幽暗、青铜门的冷雾、蛇沼的骤雨、沙海的风暴， 一幕幕诡谲奇观在脑海里铺展开来。 那些年，故事是纸上的远方，你是灯下的少年。✨ 二十年后，你已不再仅仅只是读者， 你开始收拾行囊，想亲眼去看一看云顶的雪，亲身去淋一场蛇沼的雨。? ... 全文",
-      "titleEnglish": "As an umbrella, you can see the mountains and the sea. Twenty years ago, you opened the page under the light, the darkness of Qinling, the cold fog of the bronze door, the heavy rain of the snake marsh, the storm of the sand sea, a curious spectacle unfolded in your mind. In those years, stories were far away on paper, and you were a teenager under a lamp.✨ Twenty years later, you're no longer just a reader, you're packing your bags and thinking...",
-      "excerptEnglish": "As an umbrella, you can see the mountains and the sea. Twenty years ago, you opened the page under the light, the darkness of Qinling, the cold fog of the bronze door, the heavy rain of the snake marsh, the storm of the sand sea, a curious spectacle unfolded in your mind. In those years, stories were far away on paper, and you were a teenager under a lamp.✨ Twenty years later, you are no longer just a reader. You start packing your bags and want to see the snow in the clouds and rain down on the snake marsh.?...",
-      "videos": [],
-      "dateExact": false,
-      "sourceCategory": "Monitored Brand"
-    },
-    {
-      "id": "db1f767f2cd901a84163",
-      "platform": "Weibo",
-      "source": "Weibo @天美意官方微博",
-      "title": "天美意TEENMIX | 托特包 麂皮&老花印花包身，展现老钱格调 包型挺阔，随性又自带摩登气场 可拆卸流苏挂饰，百变时髦细节 #teenmix天美意# #天美意托特包# #托特包#",
-      "excerpt": "天美意TEENMIX | 托特包 麂皮&老花印花包身，展现老钱格调 包型挺阔，随性又自带摩登气场 可拆卸流苏挂饰，百变时髦细节 #teenmix天美意# #天美意托特包# #托特包#",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6c150f3c30198f4326b254a9.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/81f720083111c4f57ae0b94a.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/8577cb62ef727f5dde3f3263.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/a230afb6c1d70342e08f30cb.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6b970729a263db26b24e40b9.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/511ce8367928387adf4a4b51.jpg"
-      ],
-      "category": "Official",
-      "date": "2026-11-04T10:25:01.812116+08:00",
-      "url": "https://m.weibo.cn/status/5359673487918533",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "天美意TEENMIX | 托特包 麂皮&老花印花包身，展现老钱格调 包型挺阔，随性又自带摩登气场 可拆卸流苏挂饰，百变时髦细节 #teenmix天美意# #天美意托特包# #托特包#",
-      "excerptOriginal": "天美意TEENMIX | 托特包 麂皮&老花印花包身，展现老钱格调 包型挺阔，随性又自带摩登气场 可拆卸流苏挂饰，百变时髦细节 #teenmix天美意# #天美意托特包# #托特包#",
-      "titleEnglish": "TEENMIX | Tote bag suede & old-fashioned printed body, showing the old style of the bag is quite broad, casual and comes with modern aerospace detachable tassel hanging, changing fashionable details # teenmix # # Tote bag # # Tote bag #",
-      "excerptEnglish": "TEENMIX | Tote bag suede & old-fashioned printed body, showing the old style of the bag is quite broad, casual and comes with modern aerospace detachable tassel hanging, changing fashionable details # teenmix # # Tote bag # # Tote bag #",
-      "videos": [],
-      "dateExact": false,
-      "sourceCategory": "Verified Brand"
-    },
-    {
-      "id": "b38de0ff3cc0258527c4",
-      "platform": "Weibo",
-      "source": "Weibo @天美意官方微博",
-      "title": "旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天…",
-      "excerpt": "旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ... 全文",
-      "images": [],
-      "category": "Endorsement",
-      "date": "2026-11-04T10:25:01.811391+08:00",
-      "url": "https://m.weibo.cn/status/5359771636993741",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天…",
-      "excerptOriginal": "旅行跟小侯穿同款！出片kpi轻松拿下 如果旅行只能带一双鞋 那必须是小侯同款天美意日落大道 西部靴 细腻皮质搭配绒面牛皮拼接，复古感拉满 内置猪皮鞋垫，上脚软糯暴走也不累 兼顾时髦出片感与舒适脚感 城野漫游、旅途出行一双靴搞定 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ... 全文",
-      "titleEnglish": "Travel in the same style as Xiaohou! If you can only take one pair of shoes when traveling, it must be the same Tian Mei Sunset Avenue western boots with fine leather and suede cowhide splicing, the vintage feeling is full of built-in pig leather insole, the upper foot is soft and sticky, and the walk is not tireless, taking into account the trendy appearance and comfortable feeling of the footWalking in the city, traveling a pair of boots to get things done # Hou Minghaotian...",
-      "excerptEnglish": "Travel in the same style as Xiaohou! If you can only take one pair of shoes when traveling, it must be the same Tianmei Sunset Avenue western boots with fine leather and suede cowhide splicing. The vintage feeling is full of built-in pig leather insole, and the soft and sticky foot walks are not tired of taking into account the fashionable sense of appearance and comfort. City wild roaming, traveling A pair of boots # Hou Minghao Tianmei brand spokesperson # # teenmix Tianmei # # Follow the wind when you are small #... Full text",
-      "videos": [],
-      "dateExact": false,
-      "sourceCategory": "Verified Brand"
-    },
-    {
-      "id": "9777c0767334d2b7449e",
-      "platform": "Weibo",
-      "source": "Weibo @天美意官方微博",
-      "title": "小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人#…",
-      "excerpt": "小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ... 全文",
-      "images": [],
-      "category": "Endorsement",
-      "date": "2026-11-04T10:25:01.810643+08:00",
-      "url": "https://m.weibo.cn/status/5360134030622740",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人#…",
-      "excerptOriginal": "小侯的通勤鞋搭子，真的好穿又好搭！ 不愧是小侯推荐的通勤老爹鞋，好看又舒服 双鞋带设计打破常规，自带辨识度 深灰做旧色调复古耐看，适配秋冬氛围 橡胶软底，久走暴走也不易累脚 5分钟通勤穿搭，轻松拿捏舒适&时髦 #侯明昊天美意品牌代言人# #teenmix天美意# #跟着小侯去追风# ... 全文",
-      "titleEnglish": "Xiao Hou's commuting shoes are really easy to wear and fit! As expected, it is the commuter father's shoes recommended by Xiaohou. It is beautiful and comfortable. The design of the double laces breaks the routine. It comes with identification, dark gray, old tones, vintage and durable. It is suitable for the rubber soft sole of the autumn and winter atmosphere. It is not easy to get tired from walking for a long time, and it is easy to wear for commuting for 5 minutes. It is comfortable and stylish # Hou Minghaotian Beauty Brand Spokesperson #...",
-      "excerptEnglish": "Xiao Hou's commuting shoes are really easy to wear and fit! As expected, it is the commuter father's shoes recommended by Xiaohou. It is beautiful and comfortable. The design of the double shoelaces breaks the routine. It comes with identification, dark gray, old tones, vintage and durable. It is suitable for the soft sole of rubber in the autumn and winter atmosphere. It is not easy to get tired from walking for a long time, and it is easy to wear for commuting for 5 minutes. It is comfortable and stylish. Huming Haotian Beauty Brand spokesperson teenmix Tianmei will follow Xiaohou to chase the wind... Full text",
-      "videos": [],
-      "dateExact": false,
-      "sourceCategory": "Verified Brand"
-    },
-    {
-      "id": "42a9cd93a22e3626bb03",
-      "platform": "Weibo",
-      "source": "Weibo @天美意官方微博",
-      "title": "天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&…",
-      "excerpt": "天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&GISMOW周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ... 全文",
-      "images": [],
-      "category": "Endorsement",
-      "date": "2026-11-04T10:25:01.809902+08:00",
-      "url": "https://m.weibo.cn/status/5360496412983784",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&…",
-      "excerptOriginal": "天气渐凉，穿上天美意暖羊羊毛毛鞋 5G入秋冬 柔软毛绒锁温，温暖步步随行 脚感柔软舒适，暴走不累脚 鞋身小羊装饰可爱讨喜，百搭出片 秋冬city walk松弛演绎自在新风格 即日起至月底，互动榜单TOP1-TOP4的粉丝可获得玩总周边礼&GISMOW周边礼一份。 #侯明昊天美意品牌代言人# #teenmix天美意# ... 全文",
-      "titleEnglish": "The weather is getting cooler, wear Tian Mei Yi Warm Sheep Wool Shoes 5G into the fall and winter soft plush lock warm, warm walking with the foot feeling soft and comfortable, the shoe body is not tiring, the lamb decoration is cute and pleasing, the all-match autumn and winter city walk relaxed interpretation Since the new style is from now until the end of the month, fans of the interactive list TOP1-TOP4 can get a total peripheral gift & …",
-      "excerptEnglish": "The weather is getting cooler. Wear Tian Mei Warm Sheep Wool Shoes 5G into autumn and winter, soft and plush locks, warm walks, soft and comfortable feet, brutal walks, non-stop shoes, lambs, cute and pleasant decorations, all-match autumn and winter city walks, relaxed interpretation Since the new style is from now until the end of the month, fans of the interactive list TOP1-TOP4 can get a total peripheral gift & GISMOW peripheral gift. # HouMingHaoTian MeiYi brand spokesperson # # teenmix #... full text",
-      "videos": [],
-      "dateExact": false,
-      "sourceCategory": "Verified Brand"
-    },
-    {
-      "id": "9cd50d595df66701c055",
-      "platform": "Weibo",
-      "source": "Weibo @天美意官方微博",
-      "title": "天美意TEENMIX | 雕塑家 复刻立体轮廓美学，靴型挺阔利落 简约设计语言，百搭更显瘦 甄选质感小羊皮，软糯脚感越穿越爱 驾驭摩登新风，都市场景无缝衔接 #teenmix天美意# #天美意时装靴#",
-      "excerpt": "天美意TEENMIX | 雕塑家 复刻立体轮廓美学，靴型挺阔利落 简约设计语言，百搭更显瘦 甄选质感小羊皮，软糯脚感越穿越爱 驾驭摩登新风，都市场景无缝衔接 #teenmix天美意# #天美意时装靴#",
-      "images": [
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/af60c3014e2f7cc4eef51f1c.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/c8fc7ac945afc2c266684a81.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/215a516d85fbd1ef067cfd8c.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/3be19e3946389bc052cc6b6b.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/bebf5357541d2f5f06d303c4.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/11e2c07cf85c05012b2ed49a.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/620ee7b31f78a0f0739d0410.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/6b1b1ec82982abb0fd06846a.jpg",
-        "https://raw.githubusercontent.com/reikableu/hou-minghao-updates/main/media/733286163c83b401af6ffe7f.jpg"
-      ],
-      "category": "Official",
-      "date": "2026-11-04T10:25:01.808902+08:00",
-      "url": "https://m.weibo.cn/status/5360760650990550",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "天美意TEENMIX | 雕塑家 复刻立体轮廓美学，靴型挺阔利落 简约设计语言，百搭更显瘦 甄选质感小羊皮，软糯脚感越穿越爱 驾驭摩登新风，都市场景无缝衔接 #teenmix天美意# #天美意时装靴#",
-      "excerptOriginal": "天美意TEENMIX | 雕塑家 复刻立体轮廓美学，靴型挺阔利落 简约设计语言，百搭更显瘦 甄选质感小羊皮，软糯脚感越穿越爱 驾驭摩登新风，都市场景无缝衔接 #teenmix天美意# #天美意时装靴#",
-      "titleEnglish": "TEENMIX | The sculptor immediately resurrected the three-dimensional contour aesthetics, the boot shape is quite sharp and simple design language, the versatile and lean texture of the lambskin is selected, the soft and glutinous foot feeling passes through the love to drive the modern fresh air, and the market scene is seamlessly connected # teenmix # # TEMIYI fashion boots #",
-      "excerptEnglish": "TEENMIX | The sculptor immediately resurrected the three-dimensional contour aesthetics, the boot shape is quite sharp and simple design language, the versatile and lean texture of the lambskin is selected, the soft and glutinous foot feeling passes through the love to drive the modern fresh air, and the market scene is seamlessly connected # teenmix # # TEMIYI fashion boots #",
-      "videos": [],
-      "dateExact": false,
-      "sourceCategory": "Verified Brand"
-    },
-    {
-      "id": "0511b9be110bbc8aff5b",
-      "platform": "Weibo",
-      "source": "Weibo @天美意官方微博",
-      "title": "恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于7个工作日内来找小天领取哦！逾期中奖资格失效哦~",
-      "excerpt": "恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于7个工作日内来找小天领取哦！逾期中奖资格失效哦~",
-      "images": [],
-      "category": "Endorsement",
-      "date": "2026-11-04T10:25:01.808303+08:00",
-      "url": "https://m.weibo.cn/status/5360765460808520",
-      "official": false,
-      "verified": true,
-      "collectionMethod": "Weibo API",
-      "titleOriginal": "恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于7个工作日内来找小天领取哦！逾期中奖资格失效哦~",
-      "excerptOriginal": "恭喜【10.1-10.31互动榜TOP1-TOP4】@相柳和萱萱 @青云直上三千米 @逗你是我的宝 @夕阳西下-断肠人在天涯- 获得玩总周边礼&代言人周边礼各1份 ，请于7个工作日内来找小天领取哦！逾期中奖资格失效哦~",
-      "titleEnglish": "Congratulations to [10.1-10.31 Interaction List TOP1-TOP4] @ Xiangliu and Xuanxuan @ Qingyun straight up 3,000 meters @ teasing you is my treasure @ sunset westward - broken intestines people in the sky - get a total peripheral gift & spokesperson peripheral gift, please come to find a small day within 7 working days to claim it! Overdue winning qualification expired ~",
-      "excerptEnglish": "Congratulations to [10.1-10.31 Interaction List TOP1-TOP4] @ Xiangliu and Xuanxuan @ Qingyun straight up 3,000 meters @ teasing you is my treasure @ sunset westward - broken intestines people in the sky - get a total peripheral gift & spokesperson peripheral gift, please come to find a small day within 7 working days to claim it! Overdue winning qualification expired ~",
-      "videos": [],
-      "dateExact": false,
-      "sourceCategory": "Verified Brand"
     }
   ]
 }
