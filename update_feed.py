@@ -98,6 +98,7 @@ WEIBO_ACCOUNT_IDS = [
     "7867201948",  # PLUG-INPET
     "4003537683", #Immortalis
     "6941933193", # Verified brand account
+    "7029283411", # Verified brand account
 ]
 
 # Only keep posts from non-official Weibo accounts if they mention one of these.
@@ -134,6 +135,8 @@ WEIBO_ACCOUNT_NAMES = {
     "7857186930": "FADEAWAY_L",
     "7867201948": "PLUG-INPET",
     "4003537683": "Immortalis",
+    "6941933193": "Verified Brand Account",
+    "7029283411": "Verified Brand Account",
 }
 
 def load_weibo_username_cache():
@@ -187,7 +190,7 @@ OFFICIAL_WEIBO_UIDS = {"1831550987", "5763552342"}
 WEIBO_ACCOUNT_IDS[:] = [uid for uid in WEIBO_ACCOUNT_IDS if str(uid) not in REJECTED_PERSONAL_UIDS]
 KNOWN_BRAND_UIDS = set(WEIBO_ACCOUNT_IDS) - OFFICIAL_WEIBO_UIDS
 # User-curated verified brand accounts: monitor all posts without Hou Minghao keyword filtering.
-TRUSTED_BRAND_UIDS = {"4003537683", "6941933193"}
+TRUSTED_BRAND_UIDS = {"4003537683", "6941933193", "7029283411"}
 KNOWN_BRAND_UIDS.update(TRUSTED_BRAND_UIDS)
 # Verified organizers and an official fashion house; UIDs confirmed from their Weibo posts.
 KNOWN_EVENT_ACCOUNTS = {
@@ -1073,7 +1076,9 @@ def collect_sina_api_account(source_config):
         for video in videos:
             if video["kind"] == "video" and video["poster"] and video["poster"] not in image_urls and len(image_urls) < 9:
                 image_urls.append(video["poster"])
-        if (FILTER_OFFICIAL_ACCOUNTS or not source_config.get("official")) and not source_config.get("trusted_brand"):
+        if FILTER_OFFICIAL_ACCOUNTS or not source_config.get("official"):
+            # Verified/curated brands are monitored, but still must mention Hou Minghao.
+            # trusted_brand controls classification/curation only, not keyword-filter exemption.
             retweet = mblog.get("retweeted_status") or {}
             page_info = mblog.get("page_info") or {}
             topics = " ".join(str(t.get("topic_title") or "") for t in (mblog.get("topic_struct") or []) if isinstance(t, dict))
