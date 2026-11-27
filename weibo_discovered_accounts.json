@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T09:54:29.131752+08:00",
+  "updatedAt": "2026-11-27T10:24:44.712257+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -61,6 +61,21 @@
       "lastSeen": "2026-11-25T18:00:00+08:00",
       "lastMentionPostId": "5369201268359928",
       "discoveredBy": "侯明昊活动"
+    },
+    {
+      "uid": "1738393562",
+      "name": "三福百货",
+      "classification": "Verified Brand",
+      "category": "Verified Brand",
+      "verified": true,
+      "verifiedType": "2",
+      "enabled": true,
+      "autoDiscovered": true,
+      "verificationDescription": "三福百货官方微博",
+      "firstSeen": "2026-11-27T10:24:44.712257+08:00",
+      "lastSeen": "2026-11-27T10:00:00+08:00",
+      "lastMentionPostId": "5369805248140881",
+      "discoveredBy": "侯明昊盛典"
     },
     {
       "uid": "1847173797",
