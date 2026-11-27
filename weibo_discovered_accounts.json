@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T15:39:24.663222+08:00",
+  "updatedAt": "2026-11-27T18:39:20.646565+08:00",
   "windowHours": 24,
   "accounts": [
     {
@@ -208,8 +208,8 @@
       "autoDiscovered": true,
       "verificationDescription": "腾讯娱乐官方微博",
       "firstSeen": "2026-11-20T15:39:16.244753+08:00",
-      "lastSeen": "2026-11-25T12:34:00+08:00",
-      "lastMentionPostId": "5369119228560376",
+      "lastSeen": "2026-11-27T17:15:09+08:00",
+      "lastMentionPostId": "5369914756959962",
       "discoveredBy": "侯明昊活动"
     },
     {
