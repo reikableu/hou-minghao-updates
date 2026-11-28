@@ -169,6 +169,9 @@ def cache_weibo_username(uid, username):
     username = clean_text(str(username or "")).lstrip("@").strip()
     if not uid or uid in REJECTED_PERSONAL_UIDS or not username or username == uid:
         return False
+    if uid in WEIBO_ACCOUNT_NAMES:
+        # Curated account names are authoritative; do not let stale cache/API names replace them.
+        return False
     if WEIBO_USERNAME_CACHE.get(uid) == username:
         return False
     WEIBO_USERNAME_CACHE[uid] = username
@@ -182,7 +185,7 @@ def friendly_weibo_source(value):
     match = re.fullmatch(r"Weibo (?:account |@)(\d+)", value, re.I)
     if match:
         uid = match.group(1)
-        return f"Weibo @{WEIBO_USERNAME_CACHE.get(uid, uid)}"
+        return f"Weibo @{WEIBO_ACCOUNT_NAMES.get(uid) or WEIBO_USERNAME_CACHE.get(uid, uid)}"
     return value
 
 # Explicitly monitored brand UIDs are trusted as known brand sources, independently
@@ -947,6 +950,28 @@ def backfill_weibo_details(posts):
     print(f"Backfilled details for {fixed} saved Weibo posts")
 
 
+def weibo_ajax_mymblog_fallback(uid, page=1):
+    """Fallback timeline endpoint; normalize status objects into card/mblog structures."""
+    url = f"https://weibo.com/ajax/statuses/mymblog?uid={urllib.parse.quote(str(uid))}&page={page}&feature=0"
+    try:
+        payload = weibo_get_json(url)
+    except Exception as error:
+        print(f"  Weibo AJAX fallback for {uid} failed: {type(error).__name__}: {str(error)[:180]}")
+        return []
+    data = payload.get("data") if isinstance(payload, dict) else None
+    statuses = (data.get("list") or data.get("statuses") or data.get("cards") or []) if isinstance(data, dict) else []
+    if isinstance(statuses, dict):
+        statuses = statuses.get("list") or statuses.get("statuses") or []
+    normalized = []
+    for status in statuses if isinstance(statuses, list) else []:
+        if not isinstance(status, dict):
+            continue
+        mblog = status.get("mblog") if isinstance(status.get("mblog"), dict) else status
+        normalized.append({"mblog": mblog})
+    print(f"  Weibo AJAX fallback for {uid}: statuses={len(normalized)}")
+    return normalized
+
+
 def collect_sina_api_account(source_config):
     uid = source_config["uid"]
     collected, skipped, too_old = [], 0, 0
@@ -1028,7 +1053,19 @@ def collect_sina_api_account(source_config):
 
     parsed_mblogs = list(weibo_mblogs_from_cards(all_cards))
     parsed_ids = {str(m.get("id") or m.get("mid") or "").strip() for m in parsed_mblogs}
+    # For Biorrier, try a second timeline endpoint when the mobile-card endpoint
+    # yielded no parsed posts or missed the specifically diagnosed post.
     target_ids = DEBUG_WEIBO_POST_IDS if uid == "6941933193" else set()
+    if uid == "6941933193" and (not parsed_mblogs or not (target_ids & parsed_ids)):
+        fallback_cards = weibo_ajax_mymblog_fallback(uid, page=1)
+        fallback_mblogs = list(weibo_mblogs_from_cards(fallback_cards))
+        fallback_ids = {str(m.get("id") or m.get("mid") or "").strip() for m in fallback_mblogs}
+        print(f"  [DIAGNOSTIC] Biorrier fallback parsed mblogs={len(fallback_mblogs)}; target found={bool(target_ids & fallback_ids)}")
+        if fallback_mblogs:
+            combined = {str(m.get("id") or m.get("mid") or "").strip(): m for m in parsed_mblogs}
+            combined.update({str(m.get("id") or m.get("mid") or "").strip(): m for m in fallback_mblogs})
+            parsed_mblogs = list(combined.values())
+            parsed_ids = set(combined)
     if target_ids:
         print(f"  [DIAGNOSTIC] Biorrier UID {uid}: API pages/cards collected={len(all_cards)}; parsed mblogs={len(parsed_mblogs)}; target post returned={bool(target_ids & parsed_ids)}")
         if target_ids & parsed_ids:
