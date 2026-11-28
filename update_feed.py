@@ -135,7 +135,7 @@ WEIBO_ACCOUNT_NAMES = {
     "7857186930": "FADEAWAY_L",
     "7867201948": "PLUG-INPET",
     "4003537683": "Immortalis",
-    "6941933193": "Verified Brand Account",
+    "6941933193": "Biorrier",
     "7029283411": "Verified Brand Account",
 }
 
@@ -189,7 +189,7 @@ def friendly_weibo_source(value):
 OFFICIAL_WEIBO_UIDS = {"1831550987", "5763552342"}
 WEIBO_ACCOUNT_IDS[:] = [uid for uid in WEIBO_ACCOUNT_IDS if str(uid) not in REJECTED_PERSONAL_UIDS]
 KNOWN_BRAND_UIDS = set(WEIBO_ACCOUNT_IDS) - OFFICIAL_WEIBO_UIDS
-# User-curated verified brand accounts: monitor all posts without Hou Minghao keyword filtering.
+# User-curated verified brands. These accounts are monitored but still must mention Hou Minghao.
 TRUSTED_BRAND_UIDS = {"4003537683", "6941933193", "7029283411"}
 KNOWN_BRAND_UIDS.update(TRUSTED_BRAND_UIDS)
 # Verified organizers and an official fashion house; UIDs confirmed from their Weibo posts.
@@ -1099,7 +1099,7 @@ def collect_sina_api_account(source_config):
             "category": determine_category(cleaned_content, "Weibo"), "sourceCategory": source_config.get("sourceCategory", "Unverified"), "date": date_iso,
             "dateExact": date_exact, "dateSource": "detail" if date_exact else ("relative" if relative_time else "list"),
             "url": post_url, "official": source_config["official"], "verified": True,
-            "collectionMethod": "Weibo API",
+            "sourceUid": uid, "collectionMethod": "Weibo API",
         })
     if skipped or too_old or api_errors:
         print(f"  {display_name}: skipped {skipped} not mentioning Hou Minghao, {too_old} older than "
@@ -1448,7 +1448,7 @@ def main():
     known_names.discard("")
     # Historical brand source names can predate the UID-based configuration.
     # These exact aliases are only for existing saved posts, not new account discovery.
-    known_names.update({"乐事官方微博", "旭东食品", "mac魅可", "天美意官方微博", "天美意", "teenmix", "prada普拉达"})
+    known_names.update({"乐事官方微博", "旭东食品", "mac魅可", "天美意官方微博", "天美意", "teenmix", "prada普拉达", "biorrier"})
     event_names = {name.lower() for name in KNOWN_EVENT_ACCOUNTS.values()}
     event_names.update({"w中文版", "微博之夜", "微博音乐盛典", "新华网", "和颂传媒"})
     approved_unverified = {str(item.get("name") or "").strip().lower() for item in DISCOVERED_WEIBO_ACCOUNTS.values() if item.get("classification") == "Unverified"}
@@ -1456,11 +1456,12 @@ def main():
     cleaned = []
     for post in merged:
         if post.get("platform") == "Weibo":
+            source_uid = str(post.get("sourceUid") or "").strip()
             source = str(post.get("source") or "").strip().lower()
             name = source.removeprefix("weibo @").removeprefix("weibo account ").strip()
-            if name in event_names or name in KNOWN_EVENT_ACCOUNTS:
+            if source_uid in KNOWN_EVENT_ACCOUNTS or name in event_names or name in KNOWN_EVENT_ACCOUNTS:
                 post["sourceCategory"] = "Verified Event"
-            elif name in known_names or name in KNOWN_BRAND_UIDS:
+            elif source_uid in KNOWN_BRAND_UIDS or name in known_names or name in KNOWN_BRAND_UIDS:
                 post["sourceCategory"] = "Verified Brand"
             elif post.get("official") or name in {"侯明昊", "侯明昊工作室", "侯明昊neo"}:
                 post["sourceCategory"] = "Official"
