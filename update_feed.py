@@ -97,8 +97,8 @@ WEIBO_ACCOUNT_IDS = [
     "7857186930",  # FADEAWAY_L
     "7867201948",  # PLUG-INPET
     "4003537683", #Immortalis
-    "6941933193", # Verified brand account
-    "7029283411", # Verified brand account
+    "6941933193", # Biorrier
+    "7029283411", # 旭东百里挑一
 ]
 
 # Only keep posts from non-official Weibo accounts if they mention one of these.
@@ -136,7 +136,7 @@ WEIBO_ACCOUNT_NAMES = {
     "7867201948": "PLUG-INPET",
     "4003537683": "Immortalis",
     "6941933193": "Biorrier",
-    "7029283411": "Verified Brand Account",
+    "7029283411": "旭东百里挑一",
 }
 
 def load_weibo_username_cache():
