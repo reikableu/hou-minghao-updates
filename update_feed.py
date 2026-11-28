@@ -52,8 +52,9 @@ MOBILE_UA = (
 WEIBO_POST_LIMIT = 0
 WEIBO_MAX_AGE_DAYS = 60            # ignore Weibo posts older than this
 MAX_DETAIL_FETCHES_PER_RUN = 60    # extra requests used to get exact dates / full text
-WEIBO_PAGES_PER_ACCOUNT = 1           # page 1 can contain pinned/cached items; scan newer pages too
-MAX_BACKFILL_PER_RUN = 30          # old saved posts repaired per run (dates + videos)
+WEIBO_PAGES_PER_ACCOUNT = 1           # first timeline page; diagnostics will verify whether target posts are returned
+MAX_BACKFILL_PER_RUN = 30          # old saved posts repaired per run
+DEBUG_WEIBO_POST_IDS = {"5370252588221331"}  # temporary diagnostics for missing Biorrier post (dates + videos)
 
 # Video / live photo caching. jsDelivr serves correct video MIME types + range requests
 # (raw.githubusercontent.com is unreliable for <video>). jsDelivr's per-file limit is 20 MB.
@@ -1025,7 +1026,16 @@ def collect_sina_api_account(source_config):
         }
         print(f"  Backfill status for {uid}: {new_status}; pages scanned={last_successful_page}; next={next_unscanned}; retries={retries}")
 
-    for mblog in weibo_mblogs_from_cards(all_cards):
+    parsed_mblogs = list(weibo_mblogs_from_cards(all_cards))
+    parsed_ids = {str(m.get("id") or m.get("mid") or "").strip() for m in parsed_mblogs}
+    target_ids = DEBUG_WEIBO_POST_IDS if uid == "6941933193" else set()
+    if target_ids:
+        print(f"  [DIAGNOSTIC] Biorrier UID {uid}: API pages/cards collected={len(all_cards)}; parsed mblogs={len(parsed_mblogs)}; target post returned={bool(target_ids & parsed_ids)}")
+        if target_ids & parsed_ids:
+            print(f"  [DIAGNOSTIC] Target post ID found in timeline response: {sorted(target_ids & parsed_ids)}")
+        else:
+            print(f"  [DIAGNOSTIC] Target post ID absent from parsed timeline IDs (sample): {sorted(parsed_ids)[:12]}")
+    for mblog in parsed_mblogs:
         user = mblog.get("user") or {}
         if user.get("screen_name"):
             cache_weibo_username(uid, user.get("screen_name"))
@@ -1037,7 +1047,11 @@ def collect_sina_api_account(source_config):
         if mblog.get("isLongText") or "全文</a>" in text_html:
             text_html = fetch_weibo_long_text(post_id) or text_html
         raw_text = clean_text(text_html or mblog.get("raw_text") or "")
+        if post_id in DEBUG_WEIBO_POST_IDS and uid == "6941933193":
+            print(f"  [DIAGNOSTIC] Target {post_id} extracted raw text: {raw_text!r}")
         if not raw_text:
+            if post_id in DEBUG_WEIBO_POST_IDS and uid == "6941933193":
+                print(f"  [DIAGNOSTIC] Target {post_id} rejected: extracted text is empty")
             continue
 
         date_iso, date_exact = parse_weibo_created_at(mblog.get("created_at"))
@@ -1082,16 +1096,23 @@ def collect_sina_api_account(source_config):
             retweet = mblog.get("retweeted_status") or {}
             page_info = mblog.get("page_info") or {}
             topics = " ".join(str(t.get("topic_title") or "") for t in (mblog.get("topic_struct") or []) if isinstance(t, dict))
-            if not mentions_hou(raw_text, clean_text(mblog.get("text") or ""),
+            mention_result = mentions_hou(raw_text, clean_text(mblog.get("text") or ""),
                                 clean_text(retweet.get("raw_text") or retweet.get("text") or ""),
-                                str(page_info.get("title") or ""), topics):
+                                str(page_info.get("title") or ""), topics)
+            if post_id in DEBUG_WEIBO_POST_IDS and uid == "6941933193":
+                print(f"  [DIAGNOSTIC] Target {post_id} Hou Minghao keyword filter={mention_result}; topics={topics!r}; page title={str(page_info.get('title') or '')!r}")
+            if not mention_result:
                 skipped += 1
+                if post_id in DEBUG_WEIBO_POST_IDS and uid == "6941933193":
+                    print(f"  [DIAGNOSTIC] Target {post_id} rejected: keyword filter")
                 continue
         cleaned_content = clean_weibo_content(raw_text)
         title = shorten(re.sub(r"^\s*(侯明昊工作室|侯明昊)\s*", "", cleaned_content), 120)
         post_url = f"https://m.weibo.cn/status/{post_id}"
         source_config["source"] = display_name
         source_config["name"] = display_name
+        if post_id in DEBUG_WEIBO_POST_IDS and uid == "6941933193":
+            print(f"  [DIAGNOSTIC] Target {post_id} accepted by collector; category={source_config.get('sourceCategory')}; source={display_name}")
         collected.append({
             "id": make_id("Weibo", display_name, title, post_url), "platform": "Weibo",
             "source": display_name, "title": title or "New Weibo update",
